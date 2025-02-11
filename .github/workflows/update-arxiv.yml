@@ -19,6 +19,7 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
+          git pull --rebase  # Pull latest changes before pushing
           git add papers.xml
           git commit -m "Auto-update arXiv papers"
           git push
