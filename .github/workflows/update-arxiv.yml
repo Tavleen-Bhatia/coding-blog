@@ -1,9 +1,9 @@
 name: Update arXiv Papers
 
 on:
-  schedule:
-    - cron: '0 0 * * *'  # Runs every night at midnight UTC
-
+    workflow_dispatch:  # Enables manual run button
+    schedule:
+      - cron: '0 0 * * *'  # Runs at midnight UTC  
 jobs:
   update:
     runs-on: ubuntu-latest
