@@ -1,9 +1,317 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <entry>
-        <title>Example Paper on Machine Learning</title>
-        <author><name>John Doe</name></author>
-        <summary>This is a sample summary for testing.</summary>
-        <id>https://arxiv.org/pdf/1234.5678</id>
-    </entry>
+  <link href="http://arxiv.org/api/query?search_query%3Dall%3Amachine%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: search_query=all:machine learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
+  <id>http://arxiv.org/api//dkG5b88mXElQQnClGWfHBor05o</id>
+  <updated>2025-02-11T00:00:00-05:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">382243</opensearch:totalResults>
+  <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
+  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
+  <entry>
+    <id>http://arxiv.org/abs/2502.06786v1</id>
+    <updated>2025-02-10T18:59:10Z</updated>
+    <published>2025-02-10T18:59:10Z</published>
+    <title>Matryoshka Quantization</title>
+    <summary>  Quantizing model weights is critical for reducing the communication and
+inference costs of large models. However, quantizing models -- especially to
+low precisions like int4 or int2 -- requires a trade-off in model quality;
+int2, in particular, is known to severely degrade model quality. Consequently,
+practitioners are often forced to maintain multiple models with different
+quantization levels or serve a single model that best satisfies the
+quality-latency trade-off. On the other hand, integer data types, such as int8,
+inherently possess a nested (Matryoshka) structure where smaller bit-width
+integers, like int4 or int2, are nested within the most significant bits. This
+paper proposes Matryoshka Quantization (MatQuant), a novel multi-scale
+quantization technique that addresses the challenge of needing multiple
+quantized models. It allows training and maintaining just one model, which can
+then be served at different precision levels. Furthermore, due to the
+co-training and co-distillation regularization provided by MatQuant, the int2
+precision models extracted by MatQuant can be up to $10\%$ more accurate than
+standard int2 quantization (using techniques like QAT or OmniQuant). This
+represents significant progress in model quantization, demonstrated by the fact
+that, with the same recipe, an int2 FFN-quantized Gemma-2 9B model is more
+accurate than an int8 FFN-quantized Gemma-2 2B model.
+</summary>
+    <author>
+      <name>Pranav Nair</name>
+    </author>
+    <author>
+      <name>Puranjay Datta</name>
+    </author>
+    <author>
+      <name>Jeff Dean</name>
+    </author>
+    <author>
+      <name>Prateek Jain</name>
+    </author>
+    <author>
+      <name>Aditya Kusupati</name>
+    </author>
+    <link href="http://arxiv.org/abs/2502.06786v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.06786v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.06785v1</id>
+    <updated>2025-02-10T18:58:52Z</updated>
+    <published>2025-02-10T18:58:52Z</published>
+    <title>DeepCrossAttention: Supercharging Transformer Residual Connections</title>
+    <summary>  Transformer networks have achieved remarkable success across diverse domains,
+leveraging a variety of architectural innovations, including residual
+connections. However, traditional residual connections, which simply sum the
+outputs of previous layers, can dilute crucial information. This work
+introduces DeepCrossAttention (DCA), an approach that enhances residual
+learning in transformers. DCA employs learnable, input-dependent weights to
+dynamically combine layer outputs, enabling the model to selectively focus on
+the most relevant information in any of the previous layers. Furthermore, DCA
+incorporates depth-wise cross-attention, allowing for richer interactions
+between layers at different depths. Our language modeling experiments show that
+DCA achieves improved perplexity for a given training time. Moreover, DCA
+obtains the same model quality up to 3x faster while adding a negligible number
+of parameters. Theoretical analysis confirms that DCA provides an improved
+trade-off between accuracy and model size when the ratio of collective layer
+ranks to the ambient dimension falls below a critical threshold.
+</summary>
+    <author>
+      <name>Mike Heddes</name>
+    </author>
+    <author>
+      <name>Adel Javanmard</name>
+    </author>
+    <author>
+      <name>Kyriakos Axiotis</name>
+    </author>
+    <author>
+      <name>Gang Fu</name>
+    </author>
+    <author>
+      <name>MohammadHossein Bateni</name>
+    </author>
+    <author>
+      <name>Vahab Mirrokni</name>
+    </author>
+    <link href="http://arxiv.org/abs/2502.06785v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.06785v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.06784v1</id>
+    <updated>2025-02-10T18:58:40Z</updated>
+    <published>2025-02-10T18:58:40Z</published>
+    <title>RelGNN: Composite Message Passing for Relational Deep Learning</title>
+    <summary>  Predictive tasks on relational databases are critical in real-world
+applications spanning e-commerce, healthcare, and social media. To address
+these tasks effectively, Relational Deep Learning (RDL) encodes relational data
+as graphs, enabling Graph Neural Networks (GNNs) to exploit relational
+structures for improved predictions. However, existing heterogeneous GNNs often
+overlook the intrinsic structural properties of relational databases, leading
+to modeling inefficiencies. Here we introduce RelGNN, a novel GNN framework
+specifically designed to capture the unique characteristics of relational
+databases. At the core of our approach is the introduction of atomic routes,
+which are sequences of nodes forming high-order tripartite structures. Building
+upon these atomic routes, RelGNN designs new composite message passing
+mechanisms between heterogeneous nodes, allowing direct single-hop interactions
+between them. This approach avoids redundant aggregations and mitigates
+information entanglement, ultimately leading to more efficient and accurate
+predictive modeling. RelGNN is evaluated on 30 diverse real-world tasks from
+RelBench (Fey et al., 2024), and consistently achieves state-of-the-art
+accuracy with up to 25% improvement.
+</summary>
+    <author>
+      <name>Tianlang Chen</name>
+    </author>
+    <author>
+      <name>Charilaos Kanatsoulis</name>
+    </author>
+    <author>
+      <name>Jure Leskovec</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">14 pages</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.06784v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.06784v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DB" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.06782v1</id>
+    <updated>2025-02-10T18:58:11Z</updated>
+    <published>2025-02-10T18:58:11Z</published>
+    <title>Lumina-Video: Efficient and Flexible Video Generation with Multi-scale
+  Next-DiT</title>
+    <summary>  Recent advancements have established Diffusion Transformers (DiTs) as a
+dominant framework in generative modeling. Building on this success,
+Lumina-Next achieves exceptional performance in the generation of
+photorealistic images with Next-DiT. However, its potential for video
+generation remains largely untapped, with significant challenges in modeling
+the spatiotemporal complexity inherent to video data. To address this, we
+introduce Lumina-Video, a framework that leverages the strengths of Next-DiT
+while introducing tailored solutions for video synthesis. Lumina-Video
+incorporates a Multi-scale Next-DiT architecture, which jointly learns multiple
+patchifications to enhance both efficiency and flexibility. By incorporating
+the motion score as an explicit condition, Lumina-Video also enables direct
+control of generated videos' dynamic degree. Combined with a progressive
+training scheme with increasingly higher resolution and FPS, and a multi-source
+training scheme with mixed natural and synthetic data, Lumina-Video achieves
+remarkable aesthetic quality and motion smoothness at high training and
+inference efficiency. We additionally propose Lumina-V2A, a video-to-audio
+model based on Next-DiT, to create synchronized sounds for generated videos.
+Codes are released at https://www.github.com/Alpha-VLLM/Lumina-Video.
+</summary>
+    <author>
+      <name>Dongyang Liu</name>
+    </author>
+    <author>
+      <name>Shicheng Li</name>
+    </author>
+    <author>
+      <name>Yutong Liu</name>
+    </author>
+    <author>
+      <name>Zhen Li</name>
+    </author>
+    <author>
+      <name>Kai Wang</name>
+    </author>
+    <author>
+      <name>Xinyue Li</name>
+    </author>
+    <author>
+      <name>Qi Qin</name>
+    </author>
+    <author>
+      <name>Yufei Liu</name>
+    </author>
+    <author>
+      <name>Yi Xin</name>
+    </author>
+    <author>
+      <name>Zhongyu Li</name>
+    </author>
+    <author>
+      <name>Bin Fu</name>
+    </author>
+    <author>
+      <name>Chenyang Si</name>
+    </author>
+    <author>
+      <name>Yuewen Cao</name>
+    </author>
+    <author>
+      <name>Conghui He</name>
+    </author>
+    <author>
+      <name>Ziwei Liu</name>
+    </author>
+    <author>
+      <name>Yu Qiao</name>
+    </author>
+    <author>
+      <name>Qibin Hou</name>
+    </author>
+    <author>
+      <name>Hongsheng Li</name>
+    </author>
+    <author>
+      <name>Peng Gao</name>
+    </author>
+    <link href="http://arxiv.org/abs/2502.06782v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.06782v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.06781v1</id>
+    <updated>2025-02-10T18:57:29Z</updated>
+    <published>2025-02-10T18:57:29Z</published>
+    <title>Exploring the Limit of Outcome Reward for Learning Mathematical
+  Reasoning</title>
+    <summary>  Reasoning abilities, especially those for solving complex math problems, are
+crucial components of general intelligence. Recent advances by proprietary
+companies, such as o-series models of OpenAI, have made remarkable progress on
+reasoning tasks. However, the complete technical details remain unrevealed, and
+the techniques that are believed certainly to be adopted are only reinforcement
+learning (RL) and the long chain of thoughts. This paper proposes a new RL
+framework, termed OREAL, to pursue the performance limit that can be achieved
+through \textbf{O}utcome \textbf{RE}w\textbf{A}rd-based reinforcement
+\textbf{L}earning for mathematical reasoning tasks, where only binary outcome
+rewards are easily accessible. We theoretically prove that behavior cloning on
+positive trajectories from best-of-N (BoN) sampling is sufficient to learn the
+KL-regularized optimal policy in binary feedback environments. This formulation
+further implies that the rewards of negative samples should be reshaped to
+ensure the gradient consistency between positive and negative samples. To
+alleviate the long-existing difficulties brought by sparse rewards in RL, which
+are even exacerbated by the partial correctness of the long chain of thought
+for reasoning tasks, we further apply a token-level reward model to sample
+important tokens in reasoning trajectories for learning. With OREAL, for the
+first time, a 7B model can obtain 94.0 pass@1 accuracy on MATH-500 through RL,
+being on par with 32B models. OREAL-32B also surpasses previous 32B models
+trained by distillation with 95.0 pass@1 accuracy on MATH-500. Our
+investigation also indicates the importance of initial policy models and
+training queries for RL. Code, models, and data will be released to benefit
+future research\footnote{https://github.com/InternLM/OREAL}.
+</summary>
+    <author>
+      <name>Chengqi Lyu</name>
+    </author>
+    <author>
+      <name>Songyang Gao</name>
+    </author>
+    <author>
+      <name>Yuzhe Gu</name>
+    </author>
+    <author>
+      <name>Wenwei Zhang</name>
+    </author>
+    <author>
+      <name>Jianfei Gao</name>
+    </author>
+    <author>
+      <name>Kuikun Liu</name>
+    </author>
+    <author>
+      <name>Ziyi Wang</name>
+    </author>
+    <author>
+      <name>Shuaibin Li</name>
+    </author>
+    <author>
+      <name>Qian Zhao</name>
+    </author>
+    <author>
+      <name>Haian Huang</name>
+    </author>
+    <author>
+      <name>Weihan Cao</name>
+    </author>
+    <author>
+      <name>Jiangning Liu</name>
+    </author>
+    <author>
+      <name>Hongwei Liu</name>
+    </author>
+    <author>
+      <name>Junnan Liu</name>
+    </author>
+    <author>
+      <name>Songyang Zhang</name>
+    </author>
+    <author>
+      <name>Dahua Lin</name>
+    </author>
+    <author>
+      <name>Kai Chen</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">We released our code, data, and model on
+  https://github.com/InternLM/OREAL</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.06781v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.06781v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
 </feed>
