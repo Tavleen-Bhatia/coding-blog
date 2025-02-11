@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <entry>
+        <title>Example Paper on Machine Learning</title>
+        <author><name>John Doe</name></author>
+        <summary>This is a sample summary for testing.</summary>
+        <id>https://arxiv.org/pdf/1234.5678</id>
+    </entry>
+</feed>

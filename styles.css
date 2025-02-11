@@ -1,0 +1,73 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    padding: 20px;
+    background-color: #222;
+    color: yellow;
+}
+
+/* Navigation */
+nav a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px;
+}
+
+/* Styling for Pac-Man Page */
+canvas {
+    background-color: black;
+    border: 2px solid yellow;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Scoreboard Styling */
+#scoreboard {
+    font-size: 20px;
+    color: yellow;
+    margin: 10px;
+}
+
+#gameOver {
+    display: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styling for arXiv Page */
+#papers-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    color: black;
+    border-radius: 10px;
+}
+
+.paper {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.paper h3 a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.paper p {
+    font-size: 14px;
+    line-height: 1.5;
+}

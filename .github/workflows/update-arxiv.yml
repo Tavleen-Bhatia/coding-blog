@@ -1,0 +1,24 @@
+name: Update arXiv Papers
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs every night at midnight UTC
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Fetch Latest Papers
+        run: |
+          curl -s "http://export.arxiv.org/api/query?search_query=all:machine+learning&start=0&max_results=5&sortBy=submittedDate&sortOrder=descending" > papers.xml
+
+      - name: Commit and Push Updates
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add papers.xml
+          git commit -m "Auto-update arXiv papers"
+          git push
