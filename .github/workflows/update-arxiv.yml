@@ -19,12 +19,24 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git pull --rebase  # Pull latest changes before pushing
+          # Stash local changes (to avoid conflict with pull)
+          git stash
+    
+          # Pull latest changes from remote
+          git pull --rebase
+    
+          # Apply the stashed changes back
+          git stash pop
+    
+          # Add papers.xml
           git add papers.xml
+
           # Check if there are actual changes before committing
           if git diff --cached --quiet; then
             echo "No changes detected"
-            exit 0
+          exit 0
           fi
+
+          # Commit and push updates
           git commit -m "Auto-update arXiv papers"
           git push
