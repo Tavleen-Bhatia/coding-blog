@@ -1,27 +1,38 @@
-document.addEventListener("DOMContentLoaded", fetchPapers);
+document.addEventListener("DOMContentLoaded", () => fetchPapers(false));
 
-async function fetchPapers() {
+async function fetchPapers(isSearch) {
     const container = document.getElementById("papers-container");
     container.innerHTML = "<h2>Fetching papers...</h2>";
+    
+    let apiUrl = "papers.xml"; // Default: Use daily updated list
+
+    if (isSearch) {
+        // Fetch from arXiv API based on user input
+        const keyword = document.getElementById("keywordInput").value.trim();
+        if (!keyword) {
+            container.innerHTML = "<p>Please enter a keyword.</p>";
+            return;
+        }
+        apiUrl = `https://export.arxiv.org/api/query?search_query=all:${encodeURIComponent(keyword)}&start=0&max_results=5&sortBy=submittedDate&sortOrder=descending`;
+    }
 
     try {
-        console.log("Fetching papers.xml...");
-        const response = await fetch("papers.xml"); // Load from stored XML instead of API
+        console.log(`Fetching from: ${apiUrl}`);
+        const response = await fetch(apiUrl);
 
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
 
         const text = await response.text();
-
         const parser = new DOMParser();
         const xmlDoc = parser.parseFromString(text, "text/xml");
         const entries = xmlDoc.getElementsByTagName("entry");
 
-        container.innerHTML = "<h2>Latest Papers</h2>";
+        container.innerHTML = `<h2>${isSearch ? "Search Results" : "Latest Papers (Auto-updated daily)"}</h2>`;
 
         if (entries.length === 0) {
-            container.innerHTML += "<p>No new papers found.</p>";
+            container.innerHTML += "<p>No papers found.</p>";
             return;
         }
 
@@ -44,9 +55,8 @@ async function fetchPapers() {
         }
 
         console.log("Papers successfully loaded.");
-
     } catch (error) {
-        container.innerHTML = "<p>Error fetching papers. Try again later.</p>";
+        container.innerHTML = `<p>Error fetching papers: ${error.message}</p>`;
         console.error("Error fetching arXiv data:", error);
     }
 }

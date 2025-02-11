@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latest arXiv Papers</title>
+    <title>arXiv Papers</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Latest Research Papers from arXiv</h1>
+        <h1>Latest arXiv Papers</h1>
         <nav>
-            <a href="index.html" class="big-button">🏠 Go back home</a>
+            <a href="index.html">Home</a>
         </nav>
     </header>
+    
     <main>
+        <input type="text" id="keywordInput" placeholder="Enter keyword (e.g., deep learning)">
+        <button onclick="fetchPapers(true)">Search</button>
+
         <div id="papers-container">
-            <h2>Loading latest papers...</h2>
+            <h2>Latest Papers (Auto-updated daily)</h2>
         </div>
     </main>
+
     <script src="arxiv.js"></script>
 </body>
 </html>
