@@ -3,315 +3,210 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-02-11T00:00:00-05:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">403788</opensearch:totalResults>
+  <updated>2025-02-12T00:00:00-05:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">404174</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2502.06786v1</id>
-    <updated>2025-02-10T18:59:10Z</updated>
-    <published>2025-02-10T18:59:10Z</published>
-    <title>Matryoshka Quantization</title>
-    <summary>  Quantizing model weights is critical for reducing the communication and
-inference costs of large models. However, quantizing models -- especially to
-low precisions like int4 or int2 -- requires a trade-off in model quality;
-int2, in particular, is known to severely degrade model quality. Consequently,
-practitioners are often forced to maintain multiple models with different
-quantization levels or serve a single model that best satisfies the
-quality-latency trade-off. On the other hand, integer data types, such as int8,
-inherently possess a nested (Matryoshka) structure where smaller bit-width
-integers, like int4 or int2, are nested within the most significant bits. This
-paper proposes Matryoshka Quantization (MatQuant), a novel multi-scale
-quantization technique that addresses the challenge of needing multiple
-quantized models. It allows training and maintaining just one model, which can
-then be served at different precision levels. Furthermore, due to the
-co-training and co-distillation regularization provided by MatQuant, the int2
-precision models extracted by MatQuant can be up to $10\%$ more accurate than
-standard int2 quantization (using techniques like QAT or OmniQuant). This
-represents significant progress in model quantization, demonstrated by the fact
-that, with the same recipe, an int2 FFN-quantized Gemma-2 9B model is more
-accurate than an int8 FFN-quantized Gemma-2 2B model.
+    <id>http://arxiv.org/abs/2502.07784v1</id>
+    <updated>2025-02-11T18:59:59Z</updated>
+    <published>2025-02-11T18:59:59Z</published>
+    <title>MatSwap: Light-aware material transfers in images</title>
+    <summary>  We present MatSwap, a method to transfer materials to designated surfaces in
+an image photorealistically. Such a task is non-trivial due to the large
+entanglement of material appearance, geometry, and lighting in a photograph. In
+the literature, material editing methods typically rely on either cumbersome
+text engineering or extensive manual annotations requiring artist knowledge and
+3D scene properties that are impractical to obtain. In contrast, we propose to
+directly learn the relationship between the input material -- as observed on a
+flat surface -- and its appearance within the scene, without the need for
+explicit UV mapping. To achieve this, we rely on a custom light- and
+geometry-aware diffusion model. We fine-tune a large-scale pre-trained
+text-to-image model for material transfer using our synthetic dataset,
+preserving its strong priors to ensure effective generalization to real images.
+As a result, our method seamlessly integrates a desired material into the
+target location in the photograph while retaining the identity of the scene. We
+evaluate our method on synthetic and real images and show that it compares
+favorably to recent work both qualitatively and quantitatively. We will release
+our code and data upon publication.
 </summary>
     <author>
-      <name>Pranav Nair</name>
+      <name>Ivan Lopes</name>
     </author>
     <author>
-      <name>Puranjay Datta</name>
+      <name>Valentin Deschaintre</name>
     </author>
     <author>
-      <name>Jeff Dean</name>
+      <name>Yannick Hold-Geoffroy</name>
     </author>
     <author>
-      <name>Prateek Jain</name>
+      <name>Raoul de Charette</name>
     </author>
-    <author>
-      <name>Aditya Kusupati</name>
-    </author>
-    <link href="http://arxiv.org/abs/2502.06786v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.06786v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <link href="http://arxiv.org/abs/2502.07784v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.07784v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.GR" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2502.06785v1</id>
-    <updated>2025-02-10T18:58:52Z</updated>
-    <published>2025-02-10T18:58:52Z</published>
-    <title>DeepCrossAttention: Supercharging Transformer Residual Connections</title>
-    <summary>  Transformer networks have achieved remarkable success across diverse domains,
-leveraging a variety of architectural innovations, including residual
-connections. However, traditional residual connections, which simply sum the
-outputs of previous layers, can dilute crucial information. This work
-introduces DeepCrossAttention (DCA), an approach that enhances residual
-learning in transformers. DCA employs learnable, input-dependent weights to
-dynamically combine layer outputs, enabling the model to selectively focus on
-the most relevant information in any of the previous layers. Furthermore, DCA
-incorporates depth-wise cross-attention, allowing for richer interactions
-between layers at different depths. Our language modeling experiments show that
-DCA achieves improved perplexity for a given training time. Moreover, DCA
-obtains the same model quality up to 3x faster while adding a negligible number
-of parameters. Theoretical analysis confirms that DCA provides an improved
-trade-off between accuracy and model size when the ratio of collective layer
-ranks to the ambient dimension falls below a critical threshold.
+    <id>http://arxiv.org/abs/2502.07783v1</id>
+    <updated>2025-02-11T18:59:57Z</updated>
+    <published>2025-02-11T18:59:57Z</published>
+    <title>Curvature Tuning: Provable Training-free Model Steering From a Single
+  Parameter</title>
+    <summary>  The scaling of model size and data size has reshaped the paradigm of AI. As a
+result, the common protocol to leverage the latest models is to steer them
+towards a specific downstream task of interest through {\em fine-tuning}.
+Despite its importance, the main methods for fine-tuning remain limited to full
+or low-rank adapters--containing countless hyper-parameters and lacking
+interpretability. In this paper, we take a step back and demonstrate how novel
+and explainable post-training steering solutions can be derived theoretically
+from {\em spline operators}, a rich mathematical framing of Deep Networks that
+was recently developed. Our method--coined \textbf{Curvature Tuning (CT)}--has
+a single parameter that provably modulates the curvature of the model's
+decision boundary henceforth allowing training-free steering. This makes CT
+both more efficient and interpretable than conventional fine-tuning methods. We
+empirically validate its effectiveness in improving generalization and
+robustness of pretrained models. For example, CT improves out-of-distribution
+transfer performances of ResNet-18/50 by 2.57\%/1.74\% across seventeen
+downstream datasets, and improves RobustBench robust accuracy by
+11.76\%/348.44\%. Additionally, we apply CT to ReLU-based Swin-T/S, improving
+their generalization on nine downstream datasets by 2.43\%/3.33\%. Our code is
+available at
+\href{https://github.com/Leon-Leyang/curvature-tuning}{https://github.com/Leon-Leyang/curvature-tuning}.
 </summary>
     <author>
-      <name>Mike Heddes</name>
+      <name>Leyang Hu</name>
     </author>
     <author>
-      <name>Adel Javanmard</name>
+      <name>Randall Balestriero</name>
     </author>
-    <author>
-      <name>Kyriakos Axiotis</name>
-    </author>
-    <author>
-      <name>Gang Fu</name>
-    </author>
-    <author>
-      <name>MohammadHossein Bateni</name>
-    </author>
-    <author>
-      <name>Vahab Mirrokni</name>
-    </author>
-    <link href="http://arxiv.org/abs/2502.06785v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.06785v1" rel="related" type="application/pdf"/>
+    <link href="http://arxiv.org/abs/2502.07783v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.07783v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2502.06784v1</id>
-    <updated>2025-02-10T18:58:40Z</updated>
-    <published>2025-02-10T18:58:40Z</published>
-    <title>RelGNN: Composite Message Passing for Relational Deep Learning</title>
-    <summary>  Predictive tasks on relational databases are critical in real-world
-applications spanning e-commerce, healthcare, and social media. To address
-these tasks effectively, Relational Deep Learning (RDL) encodes relational data
-as graphs, enabling Graph Neural Networks (GNNs) to exploit relational
-structures for improved predictions. However, existing heterogeneous GNNs often
-overlook the intrinsic structural properties of relational databases, leading
-to modeling inefficiencies. Here we introduce RelGNN, a novel GNN framework
-specifically designed to capture the unique characteristics of relational
-databases. At the core of our approach is the introduction of atomic routes,
-which are sequences of nodes forming high-order tripartite structures. Building
-upon these atomic routes, RelGNN designs new composite message passing
-mechanisms between heterogeneous nodes, allowing direct single-hop interactions
-between them. This approach avoids redundant aggregations and mitigates
-information entanglement, ultimately leading to more efficient and accurate
-predictive modeling. RelGNN is evaluated on 30 diverse real-world tasks from
-RelBench (Fey et al., 2024), and consistently achieves state-of-the-art
-accuracy with up to 25% improvement.
+    <id>http://arxiv.org/abs/2502.07782v1</id>
+    <updated>2025-02-11T18:59:52Z</updated>
+    <published>2025-02-11T18:59:52Z</published>
+    <title>A Flag Decomposition for Hierarchical Datasets</title>
+    <summary>  Flag manifolds encode hierarchical nested sequences of subspaces and serve as
+powerful structures for various computer vision and machine learning
+applications. Despite their utility in tasks such as dimensionality reduction,
+motion averaging, and subspace clustering, current applications are often
+restricted to extracting flags using common matrix decomposition methods like
+the singular value decomposition. Here, we address the need for a general
+algorithm to factorize and work with hierarchical datasets. In particular, we
+propose a novel, flag-based method that decomposes arbitrary hierarchical
+real-valued data into a hierarchy-preserving flag representation in Stiefel
+coordinates. Our work harnesses the potential of flag manifolds in applications
+including denoising, clustering, and few-shot learning.
 </summary>
     <author>
-      <name>Tianlang Chen</name>
+      <name>Nathan Mankovich</name>
     </author>
     <author>
-      <name>Charilaos Kanatsoulis</name>
+      <name>Ignacio Santamaria</name>
     </author>
     <author>
-      <name>Jure Leskovec</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">14 pages</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.06784v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.06784v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.DB" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2502.06782v1</id>
-    <updated>2025-02-10T18:58:11Z</updated>
-    <published>2025-02-10T18:58:11Z</published>
-    <title>Lumina-Video: Efficient and Flexible Video Generation with Multi-scale
-  Next-DiT</title>
-    <summary>  Recent advancements have established Diffusion Transformers (DiTs) as a
-dominant framework in generative modeling. Building on this success,
-Lumina-Next achieves exceptional performance in the generation of
-photorealistic images with Next-DiT. However, its potential for video
-generation remains largely untapped, with significant challenges in modeling
-the spatiotemporal complexity inherent to video data. To address this, we
-introduce Lumina-Video, a framework that leverages the strengths of Next-DiT
-while introducing tailored solutions for video synthesis. Lumina-Video
-incorporates a Multi-scale Next-DiT architecture, which jointly learns multiple
-patchifications to enhance both efficiency and flexibility. By incorporating
-the motion score as an explicit condition, Lumina-Video also enables direct
-control of generated videos' dynamic degree. Combined with a progressive
-training scheme with increasingly higher resolution and FPS, and a multi-source
-training scheme with mixed natural and synthetic data, Lumina-Video achieves
-remarkable aesthetic quality and motion smoothness at high training and
-inference efficiency. We additionally propose Lumina-V2A, a video-to-audio
-model based on Next-DiT, to create synchronized sounds for generated videos.
-Codes are released at https://www.github.com/Alpha-VLLM/Lumina-Video.
-</summary>
-    <author>
-      <name>Dongyang Liu</name>
+      <name>Gustau Camps-Valls</name>
     </author>
     <author>
-      <name>Shicheng Li</name>
+      <name>Tolga Birdal</name>
     </author>
-    <author>
-      <name>Yutong Liu</name>
-    </author>
-    <author>
-      <name>Zhen Li</name>
-    </author>
-    <author>
-      <name>Kai Wang</name>
-    </author>
-    <author>
-      <name>Xinyue Li</name>
-    </author>
-    <author>
-      <name>Qi Qin</name>
-    </author>
-    <author>
-      <name>Yufei Liu</name>
-    </author>
-    <author>
-      <name>Yi Xin</name>
-    </author>
-    <author>
-      <name>Zhongyu Li</name>
-    </author>
-    <author>
-      <name>Bin Fu</name>
-    </author>
-    <author>
-      <name>Chenyang Si</name>
-    </author>
-    <author>
-      <name>Yuewen Cao</name>
-    </author>
-    <author>
-      <name>Conghui He</name>
-    </author>
-    <author>
-      <name>Ziwei Liu</name>
-    </author>
-    <author>
-      <name>Yu Qiao</name>
-    </author>
-    <author>
-      <name>Qibin Hou</name>
-    </author>
-    <author>
-      <name>Hongsheng Li</name>
-    </author>
-    <author>
-      <name>Peng Gao</name>
-    </author>
-    <link href="http://arxiv.org/abs/2502.06782v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.06782v1" rel="related" type="application/pdf"/>
+    <link href="http://arxiv.org/abs/2502.07782v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.07782v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2502.06781v1</id>
-    <updated>2025-02-10T18:57:29Z</updated>
-    <published>2025-02-10T18:57:29Z</published>
-    <title>Exploring the Limit of Outcome Reward for Learning Mathematical
-  Reasoning</title>
-    <summary>  Reasoning abilities, especially those for solving complex math problems, are
-crucial components of general intelligence. Recent advances by proprietary
-companies, such as o-series models of OpenAI, have made remarkable progress on
-reasoning tasks. However, the complete technical details remain unrevealed, and
-the techniques that are believed certainly to be adopted are only reinforcement
-learning (RL) and the long chain of thoughts. This paper proposes a new RL
-framework, termed OREAL, to pursue the performance limit that can be achieved
-through \textbf{O}utcome \textbf{RE}w\textbf{A}rd-based reinforcement
-\textbf{L}earning for mathematical reasoning tasks, where only binary outcome
-rewards are easily accessible. We theoretically prove that behavior cloning on
-positive trajectories from best-of-N (BoN) sampling is sufficient to learn the
-KL-regularized optimal policy in binary feedback environments. This formulation
-further implies that the rewards of negative samples should be reshaped to
-ensure the gradient consistency between positive and negative samples. To
-alleviate the long-existing difficulties brought by sparse rewards in RL, which
-are even exacerbated by the partial correctness of the long chain of thought
-for reasoning tasks, we further apply a token-level reward model to sample
-important tokens in reasoning trajectories for learning. With OREAL, for the
-first time, a 7B model can obtain 94.0 pass@1 accuracy on MATH-500 through RL,
-being on par with 32B models. OREAL-32B also surpasses previous 32B models
-trained by distillation with 95.0 pass@1 accuracy on MATH-500. Our
-investigation also indicates the importance of initial policy models and
-training queries for RL. Code, models, and data will be released to benefit
-future research\footnote{https://github.com/InternLM/OREAL}.
+    <id>http://arxiv.org/abs/2502.07780v1</id>
+    <updated>2025-02-11T18:59:35Z</updated>
+    <published>2025-02-11T18:59:35Z</published>
+    <title>DarwinLM: Evolutionary Structured Pruning of Large Language Models</title>
+    <summary>  Large Language Models (LLMs) have achieved significant success across various
+NLP tasks. However, their massive computational costs limit their widespread
+use, particularly in real-time applications. Structured pruning offers an
+effective solution by compressing models and directly providing end-to-end
+speed improvements, regardless of the hardware environment. Meanwhile,
+different components of the model exhibit varying sensitivities towards
+pruning, calling for \emph{non-uniform} model compression. However, a pruning
+method should not only identify a capable substructure, but also account for
+post-compression training. To this end, we propose \sysname, a method for
+\emph{training-aware} structured pruning. \sysname builds upon an evolutionary
+search process, generating multiple offspring models in each generation through
+mutation, and selecting the fittest for survival. To assess the effect of
+post-training, we incorporate a lightweight, multistep training process within
+the offspring population, progressively increasing the number of tokens and
+eliminating poorly performing models in each selection stage. We validate our
+method through extensive experiments on Llama-2-7B, Llama-3.1-8B and
+Qwen-2.5-14B-Instruct, achieving state-of-the-art performance for structured
+pruning. For instance, \sysname surpasses ShearedLlama while requiring
+$5\times$ less training data during post-compression training.
 </summary>
     <author>
-      <name>Chengqi Lyu</name>
+      <name>Shengkun Tang</name>
     </author>
     <author>
-      <name>Songyang Gao</name>
+      <name>Oliver Sieberling</name>
     </author>
     <author>
-      <name>Yuzhe Gu</name>
+      <name>Eldar Kurtic</name>
     </author>
     <author>
-      <name>Wenwei Zhang</name>
+      <name>Zhiqiang Shen</name>
     </author>
     <author>
-      <name>Jianfei Gao</name>
+      <name>Dan Alistarh</name>
     </author>
-    <author>
-      <name>Kuikun Liu</name>
-    </author>
-    <author>
-      <name>Ziyi Wang</name>
-    </author>
-    <author>
-      <name>Shuaibin Li</name>
-    </author>
-    <author>
-      <name>Qian Zhao</name>
-    </author>
-    <author>
-      <name>Haian Huang</name>
-    </author>
-    <author>
-      <name>Weihan Cao</name>
-    </author>
-    <author>
-      <name>Jiangning Liu</name>
-    </author>
-    <author>
-      <name>Hongwei Liu</name>
-    </author>
-    <author>
-      <name>Junnan Liu</name>
-    </author>
-    <author>
-      <name>Songyang Zhang</name>
-    </author>
-    <author>
-      <name>Dahua Lin</name>
-    </author>
-    <author>
-      <name>Kai Chen</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">We released our code, data, and model on
-  https://github.com/InternLM/OREAL</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.06781v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.06781v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <link href="http://arxiv.org/abs/2502.07780v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.07780v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.07777v1</id>
+    <updated>2025-02-11T18:58:16Z</updated>
+    <published>2025-02-11T18:58:16Z</published>
+    <title>Feasibility study of multiplexing analog signals from SiPMs for a single
+  layer monolithic PET detector design</title>
+    <summary>  Semi monolithic detector designs with a series of stacked thin monolithic
+scintillator plates and side readout are an attractive approach for potentially
+achieving very high performance in a positron emission tomography (PET)
+scanner. In this work, a simulation study of a single layer monolithic detector
+module was performed with side read out of scintillation light using GATEv8.2.
+In this design, a single layer LSO crystal was used with dimensions 40 mm*40
+mm*40 mm, with 0.60 mm thickness of the ESR (enhanced specular reflector) films
+covering the crystal's top and bottom surfaces. The photons generated in the
+scintillation process induced by the gamma ray hitting the crystal were
+detected by four 1*8 SiPM (silicon photomultiplier) arrays placed along the
+four sides of the crystal. The scintillation light distribution detected by all
+of the 32 SiPMs surrounding the crystal layer was then used to extract the
+gamma-crystal interaction location based on machine learning analysis. In this
+work, the spatial resolution of the detector module was explored when analog
+signals from each of the 32 SiPMs were summed to 28, 24, 20, 16, 12, 8, and 4
+total outputs. This study showed that good spatial resolution can be achieved
+even when the number of read out channels is decreased by multiplexing, which
+can reduce the overall detector manufacturing cost.
+</summary>
+    <author>
+      <name>Shiv K. Subedi</name>
+    </author>
+    <author>
+      <name>Simon R. Cherry</name>
+    </author>
+    <author>
+      <name>Yi Qiang</name>
+    </author>
+    <author>
+      <name>Peng Peng</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">23 pages, 22 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.07777v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.07777v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.ins-det" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.ins-det" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
