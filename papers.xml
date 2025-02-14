@@ -3,210 +3,284 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-02-12T00:00:00-05:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">404174</opensearch:totalResults>
+  <updated>2025-02-13T00:00:00-05:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">404443</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2502.07784v1</id>
-    <updated>2025-02-11T18:59:59Z</updated>
-    <published>2025-02-11T18:59:59Z</published>
-    <title>MatSwap: Light-aware material transfers in images</title>
-    <summary>  We present MatSwap, a method to transfer materials to designated surfaces in
-an image photorealistically. Such a task is non-trivial due to the large
-entanglement of material appearance, geometry, and lighting in a photograph. In
-the literature, material editing methods typically rely on either cumbersome
-text engineering or extensive manual annotations requiring artist knowledge and
-3D scene properties that are impractical to obtain. In contrast, we propose to
-directly learn the relationship between the input material -- as observed on a
-flat surface -- and its appearance within the scene, without the need for
-explicit UV mapping. To achieve this, we rely on a custom light- and
-geometry-aware diffusion model. We fine-tune a large-scale pre-trained
-text-to-image model for material transfer using our synthetic dataset,
-preserving its strong priors to ensure effective generalization to real images.
-As a result, our method seamlessly integrates a desired material into the
-target location in the photograph while retaining the identity of the scene. We
-evaluate our method on synthetic and real images and show that it compares
-favorably to recent work both qualitatively and quantitatively. We will release
-our code and data upon publication.
+    <id>http://arxiv.org/abs/2502.08645v2</id>
+    <updated>2025-02-13T06:16:02Z</updated>
+    <published>2025-02-12T18:59:04Z</published>
+    <title>Re$^3$Sim: Generating High-Fidelity Simulation Data via
+  3D-Photorealistic Real-to-Sim for Robotic Manipulation</title>
+    <summary>  Real-world data collection for robotics is costly and resource-intensive,
+requiring skilled operators and expensive hardware. Simulations offer a
+scalable alternative but often fail to achieve sim-to-real generalization due
+to geometric and visual gaps. To address these challenges, we propose a
+3D-photorealistic real-to-sim system, namely, RE$^3$SIM, addressing geometric
+and visual sim-to-real gaps. RE$^3$SIM employs advanced 3D reconstruction and
+neural rendering techniques to faithfully recreate real-world scenarios,
+enabling real-time rendering of simulated cross-view cameras within a
+physics-based simulator. By utilizing privileged information to collect expert
+demonstrations efficiently in simulation, and train robot policies with
+imitation learning, we validate the effectiveness of the real-to-sim-to-real
+pipeline across various manipulation task scenarios. Notably, with only
+simulated data, we can achieve zero-shot sim-to-real transfer with an average
+success rate exceeding 58%. To push the limit of real-to-sim, we further
+generate a large-scale simulation dataset, demonstrating how a robust policy
+can be built from simulation data that generalizes across various objects.
+Codes and demos are available at: http://xshenhan.github.io/Re3Sim/.
 </summary>
     <author>
-      <name>Ivan Lopes</name>
+      <name>Xiaoshen Han</name>
     </author>
     <author>
-      <name>Valentin Deschaintre</name>
+      <name>Minghuan Liu</name>
     </author>
     <author>
-      <name>Yannick Hold-Geoffroy</name>
+      <name>Yilun Chen</name>
     </author>
     <author>
-      <name>Raoul de Charette</name>
+      <name>Junqiu Yu</name>
     </author>
-    <link href="http://arxiv.org/abs/2502.07784v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.07784v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.GR" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Xiaoyang Lyu</name>
+    </author>
+    <author>
+      <name>Yang Tian</name>
+    </author>
+    <author>
+      <name>Bolun Wang</name>
+    </author>
+    <author>
+      <name>Weinan Zhang</name>
+    </author>
+    <author>
+      <name>Jiangmiao Pang</name>
+    </author>
+    <link href="http://arxiv.org/abs/2502.08645v2" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.08645v2" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2502.07783v1</id>
-    <updated>2025-02-11T18:59:57Z</updated>
-    <published>2025-02-11T18:59:57Z</published>
-    <title>Curvature Tuning: Provable Training-free Model Steering From a Single
-  Parameter</title>
-    <summary>  The scaling of model size and data size has reshaped the paradigm of AI. As a
-result, the common protocol to leverage the latest models is to steer them
-towards a specific downstream task of interest through {\em fine-tuning}.
-Despite its importance, the main methods for fine-tuning remain limited to full
-or low-rank adapters--containing countless hyper-parameters and lacking
-interpretability. In this paper, we take a step back and demonstrate how novel
-and explainable post-training steering solutions can be derived theoretically
-from {\em spline operators}, a rich mathematical framing of Deep Networks that
-was recently developed. Our method--coined \textbf{Curvature Tuning (CT)}--has
-a single parameter that provably modulates the curvature of the model's
-decision boundary henceforth allowing training-free steering. This makes CT
-both more efficient and interpretable than conventional fine-tuning methods. We
-empirically validate its effectiveness in improving generalization and
-robustness of pretrained models. For example, CT improves out-of-distribution
-transfer performances of ResNet-18/50 by 2.57\%/1.74\% across seventeen
-downstream datasets, and improves RobustBench robust accuracy by
-11.76\%/348.44\%. Additionally, we apply CT to ReLU-based Swin-T/S, improving
-their generalization on nine downstream datasets by 2.43\%/3.33\%. Our code is
-available at
-\href{https://github.com/Leon-Leyang/curvature-tuning}{https://github.com/Leon-Leyang/curvature-tuning}.
+    <id>http://arxiv.org/abs/2502.08644v2</id>
+    <updated>2025-02-13T09:48:02Z</updated>
+    <published>2025-02-12T18:58:34Z</published>
+    <title>Rhythmic sharing: A bio-inspired paradigm for zero-shot adaptation and
+  learning in neural networks</title>
+    <summary>  The brain can rapidly adapt to new contexts and learn from limited data, a
+coveted characteristic that artificial intelligence algorithms have struggled
+to mimic. Inspired by oscillatory rhythms of the mechanical structures of
+neural cells, we developed a learning paradigm that is based on oscillations in
+link strengths and associates learning with the coordination of these
+oscillations. We find that this paradigm yields rapid adaptation and learning
+in artificial neural networks. Link oscillations can rapidly change
+coordination, endowing the network with the ability to sense subtle context
+changes in an unsupervised manner. In other words, the network generates the
+missing contextual tokens required to perform as a generalist AI architecture
+capable of predicting dynamics in multiple contexts. Oscillations also allow
+the network to extrapolate dynamics to never-seen-before contexts. These
+capabilities make our learning paradigm a powerful starting point for novel
+models of learning and cognition. Furthermore, learning through link
+coordination is agnostic to the specifics of the neural network architecture,
+hence our study opens the door for introducing rapid adaptation and learning
+capabilities into leading AI models.
 </summary>
     <author>
-      <name>Leyang Hu</name>
+      <name>Hoony Kang</name>
     </author>
     <author>
-      <name>Randall Balestriero</name>
+      <name>Wolfgang Losert</name>
     </author>
-    <link href="http://arxiv.org/abs/2502.07783v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.07783v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">13 pages, 3 figures v.2 comments: Updated email, updated typo on
+  p.11: h -&gt; h^2 for RMSE</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.08644v2" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.08644v2" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="nlin.AO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.bio-ph" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2502.07782v1</id>
-    <updated>2025-02-11T18:59:52Z</updated>
-    <published>2025-02-11T18:59:52Z</published>
-    <title>A Flag Decomposition for Hierarchical Datasets</title>
-    <summary>  Flag manifolds encode hierarchical nested sequences of subspaces and serve as
-powerful structures for various computer vision and machine learning
-applications. Despite their utility in tasks such as dimensionality reduction,
-motion averaging, and subspace clustering, current applications are often
-restricted to extracting flags using common matrix decomposition methods like
-the singular value decomposition. Here, we address the need for a general
-algorithm to factorize and work with hierarchical datasets. In particular, we
-propose a novel, flag-based method that decomposes arbitrary hierarchical
-real-valued data into a hierarchy-preserving flag representation in Stiefel
-coordinates. Our work harnesses the potential of flag manifolds in applications
-including denoising, clustering, and few-shot learning.
+    <id>http://arxiv.org/abs/2502.08643v1</id>
+    <updated>2025-02-12T18:57:22Z</updated>
+    <published>2025-02-12T18:57:22Z</published>
+    <title>A Real-to-Sim-to-Real Approach to Robotic Manipulation with
+  VLM-Generated Iterative Keypoint Rewards</title>
+    <summary>  Task specification for robotic manipulation in open-world environments is
+challenging, requiring flexible and adaptive objectives that align with human
+intentions and can evolve through iterative feedback. We introduce Iterative
+Keypoint Reward (IKER), a visually grounded, Python-based reward function that
+serves as a dynamic task specification. Our framework leverages VLMs to
+generate and refine these reward functions for multi-step manipulation tasks.
+Given RGB-D observations and free-form language instructions, we sample
+keypoints in the scene and generate a reward function conditioned on these
+keypoints. IKER operates on the spatial relationships between keypoints,
+leveraging commonsense priors about the desired behaviors, and enabling precise
+SE(3) control. We reconstruct real-world scenes in simulation and use the
+generated rewards to train reinforcement learning (RL) policies, which are then
+deployed into the real world-forming a real-to-sim-to-real loop. Our approach
+demonstrates notable capabilities across diverse scenarios, including both
+prehensile and non-prehensile tasks, showcasing multi-step task execution,
+spontaneous error recovery, and on-the-fly strategy adjustments. The results
+highlight IKER's effectiveness in enabling robots to perform multi-step tasks
+in dynamic environments through iterative reward shaping.
 </summary>
     <author>
-      <name>Nathan Mankovich</name>
+      <name>Shivansh Patel</name>
     </author>
     <author>
-      <name>Ignacio Santamaria</name>
+      <name>Xinchen Yin</name>
     </author>
     <author>
-      <name>Gustau Camps-Valls</name>
+      <name>Wenlong Huang</name>
     </author>
     <author>
-      <name>Tolga Birdal</name>
+      <name>Shubham Garg</name>
     </author>
-    <link href="http://arxiv.org/abs/2502.07782v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.07782v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Hooshang Nayyeri</name>
+    </author>
+    <author>
+      <name>Li Fei-Fei</name>
+    </author>
+    <author>
+      <name>Svetlana Lazebnik</name>
+    </author>
+    <author>
+      <name>Yunzhu Li</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">ICRA 2025, Project Page: https://iker-robot.github.io/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.08643v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.08643v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2502.07780v1</id>
-    <updated>2025-02-11T18:59:35Z</updated>
-    <published>2025-02-11T18:59:35Z</published>
-    <title>DarwinLM: Evolutionary Structured Pruning of Large Language Models</title>
-    <summary>  Large Language Models (LLMs) have achieved significant success across various
-NLP tasks. However, their massive computational costs limit their widespread
-use, particularly in real-time applications. Structured pruning offers an
-effective solution by compressing models and directly providing end-to-end
-speed improvements, regardless of the hardware environment. Meanwhile,
-different components of the model exhibit varying sensitivities towards
-pruning, calling for \emph{non-uniform} model compression. However, a pruning
-method should not only identify a capable substructure, but also account for
-post-compression training. To this end, we propose \sysname, a method for
-\emph{training-aware} structured pruning. \sysname builds upon an evolutionary
-search process, generating multiple offspring models in each generation through
-mutation, and selecting the fittest for survival. To assess the effect of
-post-training, we incorporate a lightweight, multistep training process within
-the offspring population, progressively increasing the number of tokens and
-eliminating poorly performing models in each selection stage. We validate our
-method through extensive experiments on Llama-2-7B, Llama-3.1-8B and
-Qwen-2.5-14B-Instruct, achieving state-of-the-art performance for structured
-pruning. For instance, \sysname surpasses ShearedLlama while requiring
-$5\times$ less training data during post-compression training.
+    <id>http://arxiv.org/abs/2502.08640v1</id>
+    <updated>2025-02-12T18:55:43Z</updated>
+    <published>2025-02-12T18:55:43Z</published>
+    <title>Utility Engineering: Analyzing and Controlling Emergent Value Systems in
+  AIs</title>
+    <summary>  As AIs rapidly advance and become more agentic, the risk they pose is
+governed not only by their capabilities but increasingly by their propensities,
+including goals and values. Tracking the emergence of goals and values has
+proven a longstanding problem, and despite much interest over the years it
+remains unclear whether current AIs have meaningful values. We propose a
+solution to this problem, leveraging the framework of utility functions to
+study the internal coherence of AI preferences. Surprisingly, we find that
+independently-sampled preferences in current LLMs exhibit high degrees of
+structural coherence, and moreover that this emerges with scale. These findings
+suggest that value systems emerge in LLMs in a meaningful sense, a finding with
+broad implications. To study these emergent value systems, we propose utility
+engineering as a research agenda, comprising both the analysis and control of
+AI utilities. We uncover problematic and often shocking values in LLM
+assistants despite existing control measures. These include cases where AIs
+value themselves over humans and are anti-aligned with specific individuals. To
+constrain these emergent value systems, we propose methods of utility control.
+As a case study, we show how aligning utilities with a citizen assembly reduces
+political biases and generalizes to new scenarios. Whether we like it or not,
+value systems have already emerged in AIs, and much work remains to fully
+understand and control these emergent representations.
 </summary>
     <author>
-      <name>Shengkun Tang</name>
+      <name>Mantas Mazeika</name>
     </author>
     <author>
-      <name>Oliver Sieberling</name>
+      <name>Xuwang Yin</name>
     </author>
     <author>
-      <name>Eldar Kurtic</name>
+      <name>Rishub Tamirisa</name>
     </author>
     <author>
-      <name>Zhiqiang Shen</name>
+      <name>Jaehyuk Lim</name>
     </author>
     <author>
-      <name>Dan Alistarh</name>
+      <name>Bruce W. Lee</name>
     </author>
-    <link href="http://arxiv.org/abs/2502.07780v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.07780v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Richard Ren</name>
+    </author>
+    <author>
+      <name>Long Phan</name>
+    </author>
+    <author>
+      <name>Norman Mu</name>
+    </author>
+    <author>
+      <name>Adam Khoja</name>
+    </author>
+    <author>
+      <name>Oliver Zhang</name>
+    </author>
+    <author>
+      <name>Dan Hendrycks</name>
+    </author>
+    <link href="http://arxiv.org/abs/2502.08640v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.08640v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2502.07777v1</id>
-    <updated>2025-02-11T18:58:16Z</updated>
-    <published>2025-02-11T18:58:16Z</published>
-    <title>Feasibility study of multiplexing analog signals from SiPMs for a single
-  layer monolithic PET detector design</title>
-    <summary>  Semi monolithic detector designs with a series of stacked thin monolithic
-scintillator plates and side readout are an attractive approach for potentially
-achieving very high performance in a positron emission tomography (PET)
-scanner. In this work, a simulation study of a single layer monolithic detector
-module was performed with side read out of scintillation light using GATEv8.2.
-In this design, a single layer LSO crystal was used with dimensions 40 mm*40
-mm*40 mm, with 0.60 mm thickness of the ESR (enhanced specular reflector) films
-covering the crystal's top and bottom surfaces. The photons generated in the
-scintillation process induced by the gamma ray hitting the crystal were
-detected by four 1*8 SiPM (silicon photomultiplier) arrays placed along the
-four sides of the crystal. The scintillation light distribution detected by all
-of the 32 SiPMs surrounding the crystal layer was then used to extract the
-gamma-crystal interaction location based on machine learning analysis. In this
-work, the spatial resolution of the detector module was explored when analog
-signals from each of the 32 SiPMs were summed to 28, 24, 20, 16, 12, 8, and 4
-total outputs. This study showed that good spatial resolution can be achieved
-even when the number of read out channels is decreased by multiplexing, which
-can reduce the overall detector manufacturing cost.
+    <id>http://arxiv.org/abs/2502.08637v1</id>
+    <updated>2025-02-12T18:54:10Z</updated>
+    <published>2025-02-12T18:54:10Z</published>
+    <title>Joint Transmit and Pinching Beamforming for PASS: Optimization-Based or
+  Learning-Based?</title>
+    <summary>  A novel pinching antenna system (PASS)-enabled downlink multi-user
+multiple-input single-output (MISO) framework is proposed. PASS consists of
+multiple waveguides spanning over thousands of wavelength, which equip numerous
+low-cost dielectric particles, named pinching antennas (PAs), to radiate
+signals into free space. The positions of PAs can be reconfigured to change
+both the large-scale path losses and phases of signals, thus facilitating the
+novel pinching beamforming design. A sum rate maximization problem is
+formulated, which jointly optimizes the transmit and pinching beamforming to
+adaptively achieve constructive signal enhancement and destructive interference
+mitigation. To solve this highly coupled and nonconvex problem, both
+optimization-based and learning-based methods are proposed. 1) For the
+optimization-based method, a majorization-minimization and penalty dual
+decomposition (MM-PDD) algorithm is developed, which handles the nonconvex
+complex exponential component using a Lipschitz surrogate function and then
+invokes PDD for problem decoupling. 2) For the learning-based method, a novel
+Karush-Kuhn-Tucker (KKT)-guided dual learning (KDL) approach is proposed, which
+enables KKT solutions to be reconstructed in a data-driven manner by learning
+dual variables. Following this idea, a KDL-Tranformer algorithm is developed,
+which captures both inter-PA/inter-user dependencies and
+channel-state-information (CSI)-beamforming dependencies by attention
+mechanisms. Simulation results demonstrate that: i) The proposed PASS framework
+significantly outperforms conventional massive multiple input multiple output
+(MIMO) system even with a few PAs. ii) The proposed KDL-Transformer can improve
+over 30% system performance than MM-PDD algorithm, while achieving a
+millisecond-level response on modern GPUs.
 </summary>
     <author>
-      <name>Shiv K. Subedi</name>
+      <name>Xiaoxia Xu</name>
     </author>
     <author>
-      <name>Simon R. Cherry</name>
+      <name>Xidong Mu</name>
     </author>
     <author>
-      <name>Yi Qiang</name>
+      <name>Yuanwei Liu</name>
     </author>
     <author>
-      <name>Peng Peng</name>
+      <name>Arumugam Nallanathan</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">23 pages, 22 figures</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.07777v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.07777v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.ins-det" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.ins-det" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Submitted to IEEE</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.08637v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.08637v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.IT" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
