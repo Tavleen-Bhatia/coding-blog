@@ -3,284 +3,213 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-02-13T00:00:00-05:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">404443</opensearch:totalResults>
+  <updated>2025-02-14T00:00:00-05:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">404747</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2502.08645v2</id>
-    <updated>2025-02-13T06:16:02Z</updated>
-    <published>2025-02-12T18:59:04Z</published>
-    <title>Re$^3$Sim: Generating High-Fidelity Simulation Data via
-  3D-Photorealistic Real-to-Sim for Robotic Manipulation</title>
-    <summary>  Real-world data collection for robotics is costly and resource-intensive,
-requiring skilled operators and expensive hardware. Simulations offer a
-scalable alternative but often fail to achieve sim-to-real generalization due
-to geometric and visual gaps. To address these challenges, we propose a
-3D-photorealistic real-to-sim system, namely, RE$^3$SIM, addressing geometric
-and visual sim-to-real gaps. RE$^3$SIM employs advanced 3D reconstruction and
-neural rendering techniques to faithfully recreate real-world scenarios,
-enabling real-time rendering of simulated cross-view cameras within a
-physics-based simulator. By utilizing privileged information to collect expert
-demonstrations efficiently in simulation, and train robot policies with
-imitation learning, we validate the effectiveness of the real-to-sim-to-real
-pipeline across various manipulation task scenarios. Notably, with only
-simulated data, we can achieve zero-shot sim-to-real transfer with an average
-success rate exceeding 58%. To push the limit of real-to-sim, we further
-generate a large-scale simulation dataset, demonstrating how a robust policy
-can be built from simulation data that generalizes across various objects.
-Codes and demos are available at: http://xshenhan.github.io/Re3Sim/.
+    <id>http://arxiv.org/abs/2502.09623v1</id>
+    <updated>2025-02-13T18:59:50Z</updated>
+    <published>2025-02-13T18:59:50Z</published>
+    <title>Embed Any NeRF: Graph Meta-Networks for Neural Tasks on Arbitrary NeRF
+  Architectures</title>
+    <summary>  Neural Radiance Fields (NeRFs) have emerged as a groundbreaking paradigm for
+representing 3D objects and scenes by encoding shape and appearance information
+into the weights of a neural network. Recent works have shown how such weights
+can be used as input to frameworks processing them to solve deep learning
+tasks. Yet, these frameworks can only process NeRFs with a specific, predefined
+architecture. In this paper, we present the first framework that can ingest
+NeRFs with multiple architectures and perform inference on architectures unseen
+at training time. We achieve this goal by training a Graph Meta-Network in a
+representation learning framework. Moreover, we show how a contrastive
+objective is conducive to obtaining an architecture-agnostic latent space. In
+experiments on both MLP-based and tri-planar NeRFs, our approach demonstrates
+robust performance in classification and retrieval tasks that either matches or
+exceeds that of existing frameworks constrained to single architectures, thus
+providing the first architecture-agnostic method to perform tasks on NeRFs by
+processing their weights.
 </summary>
     <author>
-      <name>Xiaoshen Han</name>
+      <name>Francesco Ballerini</name>
     </author>
     <author>
-      <name>Minghuan Liu</name>
+      <name>Pierluigi Zama Ramirez</name>
     </author>
     <author>
-      <name>Yilun Chen</name>
+      <name>Samuele Salti</name>
     </author>
     <author>
-      <name>Junqiu Yu</name>
+      <name>Luigi Di Stefano</name>
     </author>
-    <author>
-      <name>Xiaoyang Lyu</name>
-    </author>
-    <author>
-      <name>Yang Tian</name>
-    </author>
-    <author>
-      <name>Bolun Wang</name>
-    </author>
-    <author>
-      <name>Weinan Zhang</name>
-    </author>
-    <author>
-      <name>Jiangmiao Pang</name>
-    </author>
-    <link href="http://arxiv.org/abs/2502.08645v2" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.08645v2" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2502.08644v2</id>
-    <updated>2025-02-13T09:48:02Z</updated>
-    <published>2025-02-12T18:58:34Z</published>
-    <title>Rhythmic sharing: A bio-inspired paradigm for zero-shot adaptation and
-  learning in neural networks</title>
-    <summary>  The brain can rapidly adapt to new contexts and learn from limited data, a
-coveted characteristic that artificial intelligence algorithms have struggled
-to mimic. Inspired by oscillatory rhythms of the mechanical structures of
-neural cells, we developed a learning paradigm that is based on oscillations in
-link strengths and associates learning with the coordination of these
-oscillations. We find that this paradigm yields rapid adaptation and learning
-in artificial neural networks. Link oscillations can rapidly change
-coordination, endowing the network with the ability to sense subtle context
-changes in an unsupervised manner. In other words, the network generates the
-missing contextual tokens required to perform as a generalist AI architecture
-capable of predicting dynamics in multiple contexts. Oscillations also allow
-the network to extrapolate dynamics to never-seen-before contexts. These
-capabilities make our learning paradigm a powerful starting point for novel
-models of learning and cognition. Furthermore, learning through link
-coordination is agnostic to the specifics of the neural network architecture,
-hence our study opens the door for introducing rapid adaptation and learning
-capabilities into leading AI models.
-</summary>
-    <author>
-      <name>Hoony Kang</name>
-    </author>
-    <author>
-      <name>Wolfgang Losert</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">13 pages, 3 figures v.2 comments: Updated email, updated typo on
-  p.11: h -&gt; h^2 for RMSE</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.08644v2" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.08644v2" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.DS" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="nlin.AO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.bio-ph" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2502.08643v1</id>
-    <updated>2025-02-12T18:57:22Z</updated>
-    <published>2025-02-12T18:57:22Z</published>
-    <title>A Real-to-Sim-to-Real Approach to Robotic Manipulation with
-  VLM-Generated Iterative Keypoint Rewards</title>
-    <summary>  Task specification for robotic manipulation in open-world environments is
-challenging, requiring flexible and adaptive objectives that align with human
-intentions and can evolve through iterative feedback. We introduce Iterative
-Keypoint Reward (IKER), a visually grounded, Python-based reward function that
-serves as a dynamic task specification. Our framework leverages VLMs to
-generate and refine these reward functions for multi-step manipulation tasks.
-Given RGB-D observations and free-form language instructions, we sample
-keypoints in the scene and generate a reward function conditioned on these
-keypoints. IKER operates on the spatial relationships between keypoints,
-leveraging commonsense priors about the desired behaviors, and enabling precise
-SE(3) control. We reconstruct real-world scenes in simulation and use the
-generated rewards to train reinforcement learning (RL) policies, which are then
-deployed into the real world-forming a real-to-sim-to-real loop. Our approach
-demonstrates notable capabilities across diverse scenarios, including both
-prehensile and non-prehensile tasks, showcasing multi-step task execution,
-spontaneous error recovery, and on-the-fly strategy adjustments. The results
-highlight IKER's effectiveness in enabling robots to perform multi-step tasks
-in dynamic environments through iterative reward shaping.
-</summary>
-    <author>
-      <name>Shivansh Patel</name>
-    </author>
-    <author>
-      <name>Xinchen Yin</name>
-    </author>
-    <author>
-      <name>Wenlong Huang</name>
-    </author>
-    <author>
-      <name>Shubham Garg</name>
-    </author>
-    <author>
-      <name>Hooshang Nayyeri</name>
-    </author>
-    <author>
-      <name>Li Fei-Fei</name>
-    </author>
-    <author>
-      <name>Svetlana Lazebnik</name>
-    </author>
-    <author>
-      <name>Yunzhu Li</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">ICRA 2025, Project Page: https://iker-robot.github.io/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.08643v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.08643v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Under review</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.09623v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.09623v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2502.08640v1</id>
-    <updated>2025-02-12T18:55:43Z</updated>
-    <published>2025-02-12T18:55:43Z</published>
-    <title>Utility Engineering: Analyzing and Controlling Emergent Value Systems in
-  AIs</title>
-    <summary>  As AIs rapidly advance and become more agentic, the risk they pose is
-governed not only by their capabilities but increasingly by their propensities,
-including goals and values. Tracking the emergence of goals and values has
-proven a longstanding problem, and despite much interest over the years it
-remains unclear whether current AIs have meaningful values. We propose a
-solution to this problem, leveraging the framework of utility functions to
-study the internal coherence of AI preferences. Surprisingly, we find that
-independently-sampled preferences in current LLMs exhibit high degrees of
-structural coherence, and moreover that this emerges with scale. These findings
-suggest that value systems emerge in LLMs in a meaningful sense, a finding with
-broad implications. To study these emergent value systems, we propose utility
-engineering as a research agenda, comprising both the analysis and control of
-AI utilities. We uncover problematic and often shocking values in LLM
-assistants despite existing control measures. These include cases where AIs
-value themselves over humans and are anti-aligned with specific individuals. To
-constrain these emergent value systems, we propose methods of utility control.
-As a case study, we show how aligning utilities with a citizen assembly reduces
-political biases and generalizes to new scenarios. Whether we like it or not,
-value systems have already emerged in AIs, and much work remains to fully
-understand and control these emergent representations.
+    <id>http://arxiv.org/abs/2502.09622v1</id>
+    <updated>2025-02-13T18:59:47Z</updated>
+    <published>2025-02-13T18:59:47Z</published>
+    <title>Theoretical Benefit and Limitation of Diffusion Language Model</title>
+    <summary>  Diffusion language models have emerged as a promising approach for text
+generation. One would naturally expect this method to be an efficient
+replacement for autoregressive models since multiple tokens can be sampled in
+parallel during each diffusion step. However, its efficiency-accuracy trade-off
+is not yet well understood. In this paper, we present a rigorous theoretical
+analysis of a widely used type of diffusion language model, the Masked
+Diffusion Model (MDM), and find that its effectiveness heavily depends on the
+target evaluation metric. Under mild conditions, we prove that when using
+perplexity as the metric, MDMs can achieve near-optimal perplexity in sampling
+steps regardless of sequence length, demonstrating that efficiency can be
+achieved without sacrificing performance. However, when using the sequence
+error rate--which is important for understanding the "correctness" of a
+sequence, such as a reasoning chain--we show that the required sampling steps
+must scale linearly with sequence length to obtain "correct" sequences, thereby
+eliminating MDM's efficiency advantage over autoregressive models. Our analysis
+establishes the first theoretical foundation for understanding the benefits and
+limitations of MDMs. All theoretical findings are supported by empirical
+studies.
 </summary>
     <author>
-      <name>Mantas Mazeika</name>
+      <name>Guhao Feng</name>
     </author>
     <author>
-      <name>Xuwang Yin</name>
+      <name>Yihan Geng</name>
     </author>
     <author>
-      <name>Rishub Tamirisa</name>
+      <name>Jian Guan</name>
     </author>
     <author>
-      <name>Jaehyuk Lim</name>
+      <name>Wei Wu</name>
     </author>
     <author>
-      <name>Bruce W. Lee</name>
+      <name>Liwei Wang</name>
     </author>
     <author>
-      <name>Richard Ren</name>
+      <name>Di He</name>
     </author>
-    <author>
-      <name>Long Phan</name>
-    </author>
-    <author>
-      <name>Norman Mu</name>
-    </author>
-    <author>
-      <name>Adam Khoja</name>
-    </author>
-    <author>
-      <name>Oliver Zhang</name>
-    </author>
-    <author>
-      <name>Dan Hendrycks</name>
-    </author>
-    <link href="http://arxiv.org/abs/2502.08640v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.08640v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">32 pages, 3 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.09622v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.09622v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2502.08637v1</id>
-    <updated>2025-02-12T18:54:10Z</updated>
-    <published>2025-02-12T18:54:10Z</published>
-    <title>Joint Transmit and Pinching Beamforming for PASS: Optimization-Based or
-  Learning-Based?</title>
-    <summary>  A novel pinching antenna system (PASS)-enabled downlink multi-user
-multiple-input single-output (MISO) framework is proposed. PASS consists of
-multiple waveguides spanning over thousands of wavelength, which equip numerous
-low-cost dielectric particles, named pinching antennas (PAs), to radiate
-signals into free space. The positions of PAs can be reconfigured to change
-both the large-scale path losses and phases of signals, thus facilitating the
-novel pinching beamforming design. A sum rate maximization problem is
-formulated, which jointly optimizes the transmit and pinching beamforming to
-adaptively achieve constructive signal enhancement and destructive interference
-mitigation. To solve this highly coupled and nonconvex problem, both
-optimization-based and learning-based methods are proposed. 1) For the
-optimization-based method, a majorization-minimization and penalty dual
-decomposition (MM-PDD) algorithm is developed, which handles the nonconvex
-complex exponential component using a Lipschitz surrogate function and then
-invokes PDD for problem decoupling. 2) For the learning-based method, a novel
-Karush-Kuhn-Tucker (KKT)-guided dual learning (KDL) approach is proposed, which
-enables KKT solutions to be reconstructed in a data-driven manner by learning
-dual variables. Following this idea, a KDL-Tranformer algorithm is developed,
-which captures both inter-PA/inter-user dependencies and
-channel-state-information (CSI)-beamforming dependencies by attention
-mechanisms. Simulation results demonstrate that: i) The proposed PASS framework
-significantly outperforms conventional massive multiple input multiple output
-(MIMO) system even with a few PAs. ii) The proposed KDL-Transformer can improve
-over 30% system performance than MM-PDD algorithm, while achieving a
-millisecond-level response on modern GPUs.
+    <id>http://arxiv.org/abs/2502.09619v1</id>
+    <updated>2025-02-13T18:59:44Z</updated>
+    <published>2025-02-13T18:59:44Z</published>
+    <title>Can this Model Also Recognize Dogs? Zero-Shot Model Search from Weights</title>
+    <summary>  With the increasing numbers of publicly available models, there are probably
+pretrained, online models for most tasks users require. However, current model
+search methods are rudimentary, essentially a text-based search in the
+documentation, thus users cannot find the relevant models. This paper presents
+ProbeLog, a method for retrieving classification models that can recognize a
+target concept, such as "Dog", without access to model metadata or training
+data. Differently from previous probing methods, ProbeLog computes a descriptor
+for each output dimension (logit) of each model, by observing its responses on
+a fixed set of inputs (probes). Our method supports both logit-based retrieval
+("find more logits like this") and zero-shot, text-based retrieval ("find all
+logits corresponding to dogs"). As probing-based representations require
+multiple costly feedforward passes through the model, we develop a method,
+based on collaborative filtering, that reduces the cost of encoding
+repositories by 3x. We demonstrate that ProbeLog achieves high retrieval
+accuracy, both in real-world and fine-grained search tasks and is scalable to
+full-size repositories.
 </summary>
     <author>
-      <name>Xiaoxia Xu</name>
+      <name>Jonathan Kahana</name>
     </author>
     <author>
-      <name>Xidong Mu</name>
+      <name>Or Nathan</name>
     </author>
     <author>
-      <name>Yuanwei Liu</name>
+      <name>Eliahu Horwitz</name>
     </author>
     <author>
-      <name>Arumugam Nallanathan</name>
+      <name>Yedid Hoshen</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Submitted to IEEE</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.08637v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.08637v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <link href="http://arxiv.org/abs/2502.09619v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.09619v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.09617v1</id>
+    <updated>2025-02-13T18:59:19Z</updated>
+    <published>2025-02-13T18:59:19Z</published>
+    <title>LIFe-GoM: Generalizable Human Rendering with Learned Iterative Feedback
+  Over Multi-Resolution Gaussians-on-Mesh</title>
+    <summary>  Generalizable rendering of an animatable human avatar from sparse inputs
+relies on data priors and inductive biases extracted from training on large
+data to avoid scene-specific optimization and to enable fast reconstruction.
+This raises two main challenges: First, unlike iterative gradient-based
+adjustment in scene-specific optimization, generalizable methods must
+reconstruct the human shape representation in a single pass at inference time.
+Second, rendering is preferably computationally efficient yet of high
+resolution. To address both challenges we augment the recently proposed dual
+shape representation, which combines the benefits of a mesh and Gaussian
+points, in two ways. To improve reconstruction, we propose an iterative
+feedback update framework, which successively improves the canonical human
+shape representation during reconstruction. To achieve computationally
+efficient yet high-resolution rendering, we study a coupled-multi-resolution
+Gaussians-on-Mesh representation. We evaluate the proposed approach on the
+challenging THuman2.0, XHuman and AIST++ data. Our approach reconstructs an
+animatable representation from sparse inputs in less than 1s, renders views
+with 95.1FPS at $1024 \times 1024$, and achieves PSNR/LPIPS*/FID of
+24.65/110.82/51.27 on THuman2.0, outperforming the state-of-the-art in
+rendering quality.
+</summary>
+    <author>
+      <name>Jing Wen</name>
+    </author>
+    <author>
+      <name>Alexander G. Schwing</name>
+    </author>
+    <author>
+      <name>Shenlong Wang</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">ICLR 2025; Project page: https://wenj.github.io/LIFe-GoM/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.09617v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.09617v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.09616v1</id>
+    <updated>2025-02-13T18:59:15Z</updated>
+    <published>2025-02-13T18:59:15Z</published>
+    <title>Variational Rectified Flow Matching</title>
+    <summary>  We study Variational Rectified Flow Matching, a framework that enhances
+classic rectified flow matching by modeling multi-modal velocity vector-fields.
+At inference time, classic rectified flow matching 'moves' samples from a
+source distribution to the target distribution by solving an ordinary
+differential equation via integration along a velocity vector-field. At
+training time, the velocity vector-field is learnt by linearly interpolating
+between coupled samples one drawn from the source and one drawn from the target
+distribution randomly. This leads to ''ground-truth'' velocity vector-fields
+that point in different directions at the same location, i.e., the velocity
+vector-fields are multi-modal/ambiguous. However, since training uses a
+standard mean-squared-error loss, the learnt velocity vector-field averages
+''ground-truth'' directions and isn't multi-modal. In contrast, variational
+rectified flow matching learns and samples from multi-modal flow directions. We
+show on synthetic data, MNIST, CIFAR-10, and ImageNet that variational
+rectified flow matching leads to compelling results.
+</summary>
+    <author>
+      <name>Pengsheng Guo</name>
+    </author>
+    <author>
+      <name>Alexander G. Schwing</name>
+    </author>
+    <link href="http://arxiv.org/abs/2502.09616v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.09616v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
