@@ -3,238 +3,279 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-02-17T00:00:00-05:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">404994</opensearch:totalResults>
+  <updated>2025-02-18T00:00:00-05:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">405587</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2502.10392v1</id>
-    <updated>2025-02-14T18:59:59Z</updated>
-    <published>2025-02-14T18:59:59Z</published>
-    <title>Text-guided Sparse Voxel Pruning for Efficient 3D Visual Grounding</title>
-    <summary>  In this paper, we propose an efficient multi-level convolution architecture
-for 3D visual grounding. Conventional methods are difficult to meet the
-requirements of real-time inference due to the two-stage or point-based
-architecture. Inspired by the success of multi-level fully sparse convolutional
-architecture in 3D object detection, we aim to build a new 3D visual grounding
-framework following this technical route. However, as in 3D visual grounding
-task the 3D scene representation should be deeply interacted with text
-features, sparse convolution-based architecture is inefficient for this
-interaction due to the large amount of voxel features. To this end, we propose
-text-guided pruning (TGP) and completion-based addition (CBA) to deeply fuse 3D
-scene representation and text features in an efficient way by gradual region
-pruning and target completion. Specifically, TGP iteratively sparsifies the 3D
-scene representation and thus efficiently interacts the voxel features with
-text features by cross-attention. To mitigate the affect of pruning on delicate
-geometric information, CBA adaptively fixes the over-pruned region by voxel
-completion with negligible computational overhead. Compared with previous
-single-stage methods, our method achieves top inference speed and surpasses
-previous fastest method by 100\% FPS. Our method also achieves state-of-the-art
-accuracy even compared with two-stage methods, with $+1.13$ lead of Acc@0.5 on
-ScanRefer, and $+2.6$ and $+3.2$ leads on NR3D and SR3D respectively. The code
-is available at
-\href{https://github.com/GWxuan/TSP3D}{https://github.com/GWxuan/TSP3D}.
+    <id>http://arxiv.org/abs/2502.12154v1</id>
+    <updated>2025-02-17T18:59:50Z</updated>
+    <published>2025-02-17T18:59:50Z</published>
+    <title>Diffusion Models without Classifier-free Guidance</title>
+    <summary>  This paper presents Model-guidance (MG), a novel objective for training
+diffusion model that addresses and removes of the commonly used Classifier-free
+guidance (CFG). Our innovative approach transcends the standard modeling of
+solely data distribution to incorporating the posterior probability of
+conditions. The proposed technique originates from the idea of CFG and is easy
+yet effective, making it a plug-and-play module for existing models. Our method
+significantly accelerates the training process, doubles the inference speed,
+and achieve exceptional quality that parallel and even surpass concurrent
+diffusion models with CFG. Extensive experiments demonstrate the effectiveness,
+efficiency, scalability on different models and datasets. Finally, we establish
+state-of-the-art performance on ImageNet 256 benchmarks with an FID of 1.34.
+Our code is available at https://github.com/tzco/Diffusion-wo-CFG.
 </summary>
     <author>
-      <name>Wenxuan Guo</name>
+      <name>Zhicong Tang</name>
     </author>
     <author>
-      <name>Xiuwei Xu</name>
+      <name>Jianmin Bao</name>
     </author>
     <author>
-      <name>Ziwei Wang</name>
+      <name>Dong Chen</name>
     </author>
     <author>
-      <name>Jianjiang Feng</name>
+      <name>Baining Guo</name>
     </author>
-    <author>
-      <name>Jie Zhou</name>
-    </author>
-    <author>
-      <name>Jiwen Lu</name>
-    </author>
-    <link href="http://arxiv.org/abs/2502.10392v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.10392v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2502.10390v1</id>
-    <updated>2025-02-14T18:59:40Z</updated>
-    <published>2025-02-14T18:59:40Z</published>
-    <title>(How) Can Transformers Predict Pseudo-Random Numbers?</title>
-    <summary>  Transformers excel at discovering patterns in sequential data, yet their
-fundamental limitations and learning mechanisms remain crucial topics of
-investigation. In this paper, we study the ability of Transformers to learn
-pseudo-random number sequences from linear congruential generators (LCGs),
-defined by the recurrence relation $x_{t+1} = a x_t + c \;\mathrm{mod}\; m$.
-Our analysis reveals that with sufficient architectural capacity and training
-data variety, Transformers can perform in-context prediction of LCG sequences
-with unseen moduli ($m$) and parameters ($a,c$). Through analysis of embedding
-layers and attention patterns, we uncover how Transformers develop algorithmic
-structures to learn these sequences in two scenarios of increasing complexity.
-First, we analyze how Transformers learn LCG sequences with unseen ($a, c$) but
-fixed modulus, and we demonstrate successful learning up to $m = 2^{32}$. Our
-analysis reveals that models learn to factorize the modulus and utilize
-digit-wise number representations to make sequential predictions. In the
-second, more challenging scenario of unseen moduli, we show that Transformers
-can generalize to unseen moduli up to $m_{\text{test}} = 2^{16}$. In this case,
-the model employs a two-step strategy: first estimating the unknown modulus
-from the context, then utilizing prime factorizations to generate predictions.
-For this task, we observe a sharp transition in the accuracy at a critical
-depth $=3$. We also find that the number of in-context sequence elements needed
-to reach high accuracy scales sublinearly with the modulus.
-</summary>
-    <author>
-      <name>Tao Tao</name>
-    </author>
-    <author>
-      <name>Darshil Doshi</name>
-    </author>
-    <author>
-      <name>Dayal Singh Kalra</name>
-    </author>
-    <author>
-      <name>Tianyu He</name>
-    </author>
-    <author>
-      <name>Maissam Barkeshli</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">10+16 pages, 12+20 figures</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.10390v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.10390v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cond-mat.dis-nn" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2502.10385v1</id>
-    <updated>2025-02-14T18:58:04Z</updated>
-    <published>2025-02-14T18:58:04Z</published>
-    <title>Simplifying DINO via Coding Rate Regularization</title>
-    <summary>  DINO and DINOv2 are two model families being widely used to learn
-representations from unlabeled imagery data at large scales. Their learned
-representations often enable state-of-the-art performance for downstream tasks,
-such as image classification and segmentation. However, they employ many
-empirically motivated design choices and their training pipelines are highly
-complex and unstable -- many hyperparameters need to be carefully tuned to
-ensure that the representations do not collapse -- which poses considerable
-difficulty to improving them or adapting them to new domains. In this work, we
-posit that we can remove most such-motivated idiosyncrasies in the pre-training
-pipelines, and only need to add an explicit coding rate term in the loss
-function to avoid collapse of the representations. As a result, we obtain
-highly simplified variants of the DINO and DINOv2 which we call SimDINO and
-SimDINOv2, respectively. Remarkably, these simplified models are more robust to
-different design choices, such as network architecture and hyperparameters, and
-they learn even higher-quality representations, measured by performance on
-downstream tasks, offering a Pareto improvement over the corresponding DINO and
-DINOv2 models. This work highlights the potential of using simplifying design
-principles to improve the empirical practice of deep learning.
-</summary>
-    <author>
-      <name>Ziyang Wu</name>
-    </author>
-    <author>
-      <name>Jingyuan Zhang</name>
-    </author>
-    <author>
-      <name>Druv Pai</name>
-    </author>
-    <author>
-      <name>XuDong Wang</name>
-    </author>
-    <author>
-      <name>Chandan Singh</name>
-    </author>
-    <author>
-      <name>Jianwei Yang</name>
-    </author>
-    <author>
-      <name>Jianfeng Gao</name>
-    </author>
-    <author>
-      <name>Yi Ma</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">17 pages, 5 figures</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.10385v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.10385v1" rel="related" type="application/pdf"/>
+    <link href="http://arxiv.org/abs/2502.12154v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.12154v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2502.10380v1</id>
-    <updated>2025-02-14T18:57:16Z</updated>
-    <published>2025-02-14T18:57:16Z</published>
-    <title>A new and flexible class of sharp asymptotic time-uniform confidence
-  sequences</title>
-    <summary>  Confidence sequences are anytime-valid analogues of classical confidence
-intervals that do not suffer from multiplicity issues under optional
-continuation of the data collection. As in classical statistics, asymptotic
-confidence sequences are a nonparametric tool showing under which high-level
-assumptions asymptotic coverage is achieved so that they also give a certain
-robustness guarantee against distributional deviations. In this paper, we
-propose a new flexible class of confidence sequences yielding sharp asymptotic
-time-uniform confidence sequences under mild assumptions. Furthermore, we
-highlight the connection to corresponding sequential testing problems and
-detail the underlying limit theorem.
-</summary>
-    <author>
-      <name>Felix Gnettner</name>
-    </author>
-    <author>
-      <name>Claudia Kirch</name>
-    </author>
-    <link href="http://arxiv.org/abs/2502.10380v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.10380v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="stat.ME" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="stat.TH" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="62G15 (Primary) 62G10, 62G20, 62L10 (Secondary)" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2502.10381v1</id>
-    <updated>2025-02-14T18:57:16Z</updated>
-    <published>2025-02-14T18:57:16Z</published>
-    <title>Balancing the Scales: A Theoretical and Algorithmic Framework for
-  Learning from Imbalanced Data</title>
-    <summary>  Class imbalance remains a major challenge in machine learning, especially in
-multi-class problems with long-tailed distributions. Existing methods, such as
-data resampling, cost-sensitive techniques, and logistic loss modifications,
-though popular and often effective, lack solid theoretical foundations. As an
-example, we demonstrate that cost-sensitive methods are not Bayes consistent.
-This paper introduces a novel theoretical framework for analyzing
-generalization in imbalanced classification. We propose a new class-imbalanced
-margin loss function for both binary and multi-class settings, prove its strong
-$H$-consistency, and derive corresponding learning guarantees based on
-empirical loss and a new notion of class-sensitive Rademacher complexity.
-Leveraging these theoretical results, we devise novel and general learning
-algorithms, IMMAX (Imbalanced Margin Maximization), which incorporate
-confidence margins and are applicable to various hypothesis sets. While our
-focus is theoretical, we also present extensive empirical results demonstrating
-the effectiveness of our algorithms compared to existing baselines.
-</summary>
-    <author>
-      <name>Corinna Cortes</name>
-    </author>
-    <author>
-      <name>Anqi Mao</name>
-    </author>
-    <author>
-      <name>Mehryar Mohri</name>
-    </author>
-    <author>
-      <name>Yutao Zhong</name>
-    </author>
-    <link href="http://arxiv.org/abs/2502.10381v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.10381v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.12152v1</id>
+    <updated>2025-02-17T18:59:06Z</updated>
+    <published>2025-02-17T18:59:06Z</published>
+    <title>Learning Getting-Up Policies for Real-World Humanoid Robots</title>
+    <summary>  Automatic fall recovery is a crucial prerequisite before humanoid robots can
+be reliably deployed. Hand-designing controllers for getting up is difficult
+because of the varied configurations a humanoid can end up in after a fall and
+the challenging terrains humanoid robots are expected to operate on. This paper
+develops a learning framework to produce controllers that enable humanoid
+robots to get up from varying configurations on varying terrains. Unlike
+previous successful applications of humanoid locomotion learning, the
+getting-up task involves complex contact patterns, which necessitates
+accurately modeling the collision geometry and sparser rewards. We address
+these challenges through a two-phase approach that follows a curriculum. The
+first stage focuses on discovering a good getting-up trajectory under minimal
+constraints on smoothness or speed / torque limits. The second stage then
+refines the discovered motions into deployable (i.e. smooth and slow) motions
+that are robust to variations in initial configuration and terrains. We find
+these innovations enable a real-world G1 humanoid robot to get up from two main
+situations that we considered: a) lying face up and b) lying face down, both
+tested on flat, deformable, slippery surfaces and slopes (e.g., sloppy grass
+and snowfield). To the best of our knowledge, this is the first successful
+demonstration of learned getting-up policies for human-sized humanoid robots in
+the real world. Project page: https://humanoid-getup.github.io/
+</summary>
+    <author>
+      <name>Xialin He</name>
+    </author>
+    <author>
+      <name>Runpei Dong</name>
+    </author>
+    <author>
+      <name>Zixuan Chen</name>
+    </author>
+    <author>
+      <name>Saurabh Gupta</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://humanoid-getup.github.io/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.12152v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.12152v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.12147v1</id>
+    <updated>2025-02-17T18:57:32Z</updated>
+    <published>2025-02-17T18:57:32Z</published>
+    <title>Learning Smooth and Expressive Interatomic Potentials for Physical
+  Property Prediction</title>
+    <summary>  Machine learning interatomic potentials (MLIPs) have become increasingly
+effective at approximating quantum mechanical calculations at a fraction of the
+computational cost. However, lower errors on held out test sets do not always
+translate to improved results on downstream physical property prediction tasks.
+In this paper, we propose testing MLIPs on their practical ability to conserve
+energy during molecular dynamic simulations. If passed, improved correlations
+are found between test errors and their performance on physical property
+prediction tasks. We identify choices which may lead to models failing this
+test, and use these observations to improve upon highly-expressive models. The
+resulting model, eSEN, provides state-of-the-art results on a range of physical
+property prediction tasks, including materials stability prediction, thermal
+conductivity prediction, and phonon calculations.
+</summary>
+    <author>
+      <name>Xiang Fu</name>
+    </author>
+    <author>
+      <name>Brandon M. Wood</name>
+    </author>
+    <author>
+      <name>Luis Barroso-Luque</name>
+    </author>
+    <author>
+      <name>Daniel S. Levine</name>
+    </author>
+    <author>
+      <name>Meng Gao</name>
+    </author>
+    <author>
+      <name>Misko Dzamba</name>
+    </author>
+    <author>
+      <name>C. Lawrence Zitnick</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">19 pages, 14 figures, 5 tables</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.12147v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.12147v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.comp-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.comp-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.12143v1</id>
+    <updated>2025-02-17T18:56:15Z</updated>
+    <published>2025-02-17T18:56:15Z</published>
+    <title>Small Models Struggle to Learn from Strong Reasoners</title>
+    <summary>  Large language models (LLMs) excel in complex reasoning tasks, and distilling
+their reasoning capabilities into smaller models has shown promise. However, we
+uncover an interesting phenomenon, which we term the Small Model Learnability
+Gap: small models ($\leq$3B parameters) do not consistently benefit from long
+chain-of-thought (CoT) reasoning or distillation from larger models. Instead,
+they perform better when fine-tuned on shorter, simpler reasoning chains that
+better align with their intrinsic learning capacity. To address this, we
+propose Mix Distillation, a simple yet effective strategy that balances
+reasoning complexity by combining long and short CoT examples or reasoning from
+both larger and smaller models. Our experiments demonstrate that Mix
+Distillation significantly improves small model reasoning performance compared
+to training on either data alone. These findings highlight the limitations of
+direct strong model distillation and underscore the importance of adapting
+reasoning complexity for effective reasoning capability transfer.
+</summary>
+    <author>
+      <name>Yuetai Li</name>
+    </author>
+    <author>
+      <name>Xiang Yue</name>
+    </author>
+    <author>
+      <name>Zhangchen Xu</name>
+    </author>
+    <author>
+      <name>Fengqing Jiang</name>
+    </author>
+    <author>
+      <name>Luyao Niu</name>
+    </author>
+    <author>
+      <name>Bill Yuchen Lin</name>
+    </author>
+    <author>
+      <name>Bhaskar Ramasubramanian</name>
+    </author>
+    <author>
+      <name>Radha Poovendran</name>
+    </author>
+    <link href="http://arxiv.org/abs/2502.12143v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.12143v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.12140v1</id>
+    <updated>2025-02-17T18:55:09Z</updated>
+    <published>2025-02-17T18:55:09Z</published>
+    <title>Correlative X-ray and electron tomography for scale-bridging,
+  quantitative analysis of complex, hierarchical particle systems</title>
+    <summary>  This study presents a comprehensive workflow for investigating particulate
+materials through combined 360{\deg} electron tomography (ET), nano-computed
+X-ray tomography (nanoCT), and micro-computed X-ray tomography (microCT),
+alongside a versatile sample preparation routine. The workflow enables the
+investigation of size, morphology, and pore systems across multiple scales,
+from individual particles to large hierarchical structures. A customized
+tapered sample shape is fabricated using focused ion beam milling with the aim
+to optimize each imaging technique's field of view, facilitating
+high-resolution analysis of small volumes containing single particles, while
+also allowing for large-scale studies of thousands of particles for statistical
+relevance. By correlating data from same locations in different imaging
+modalities, the approach enhances the precision of quantitative analyses. The
+study highlights the importance of cross-scale, correlative three-dimensional
+microscopy for a comprehensive understanding of complex hierarchical materials.
+Precise data registration, segmentation using machine learning, and multimodal
+imaging techniques are crucial for unlocking insights into
+process-structure-property relationships and thus to optimize functional,
+hierarchical materials.
+</summary>
+    <author>
+      <name>Alexander Götz</name>
+    </author>
+    <author>
+      <name>Fabian Lutter</name>
+    </author>
+    <author>
+      <name>Dennis Simon Possart</name>
+    </author>
+    <author>
+      <name>Daniel Augsburger</name>
+    </author>
+    <author>
+      <name>Usman Arslan</name>
+    </author>
+    <author>
+      <name>Sabrina Pechmann</name>
+    </author>
+    <author>
+      <name>Carmen Rubach</name>
+    </author>
+    <author>
+      <name>Moritz Buwen</name>
+    </author>
+    <author>
+      <name>Umair Sultan</name>
+    </author>
+    <author>
+      <name>Alexander Kichigin</name>
+    </author>
+    <author>
+      <name>Johannes Böhmer</name>
+    </author>
+    <author>
+      <name>Nora Vorlaufer</name>
+    </author>
+    <author>
+      <name>Peter Suter</name>
+    </author>
+    <author>
+      <name>Tor Hildebrand</name>
+    </author>
+    <author>
+      <name>Matthias Thommes</name>
+    </author>
+    <author>
+      <name>Peter Felfer</name>
+    </author>
+    <author>
+      <name>Nicolas Vogel</name>
+    </author>
+    <author>
+      <name>Katharina Breininger</name>
+    </author>
+    <author>
+      <name>Silke Christiansen</name>
+    </author>
+    <author>
+      <name>Benjamin Apeleo Zubiri</name>
+    </author>
+    <author>
+      <name>Erdmann Spiecker</name>
+    </author>
+    <link href="http://arxiv.org/abs/2502.12140v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.12140v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cond-mat.mtrl-sci" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.mtrl-sci" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
