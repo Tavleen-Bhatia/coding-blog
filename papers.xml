@@ -3,279 +3,315 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-02-18T00:00:00-05:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">405587</opensearch:totalResults>
+  <updated>2025-02-19T00:00:00-05:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">405924</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2502.12154v1</id>
-    <updated>2025-02-17T18:59:50Z</updated>
-    <published>2025-02-17T18:59:50Z</published>
-    <title>Diffusion Models without Classifier-free Guidance</title>
-    <summary>  This paper presents Model-guidance (MG), a novel objective for training
-diffusion model that addresses and removes of the commonly used Classifier-free
-guidance (CFG). Our innovative approach transcends the standard modeling of
-solely data distribution to incorporating the posterior probability of
-conditions. The proposed technique originates from the idea of CFG and is easy
-yet effective, making it a plug-and-play module for existing models. Our method
-significantly accelerates the training process, doubles the inference speed,
-and achieve exceptional quality that parallel and even surpass concurrent
-diffusion models with CFG. Extensive experiments demonstrate the effectiveness,
-efficiency, scalability on different models and datasets. Finally, we establish
-state-of-the-art performance on ImageNet 256 benchmarks with an FID of 1.34.
-Our code is available at https://github.com/tzco/Diffusion-wo-CFG.
+    <id>http://arxiv.org/abs/2502.13146v1</id>
+    <updated>2025-02-18T18:59:57Z</updated>
+    <published>2025-02-18T18:59:57Z</published>
+    <title>Re-Align: Aligning Vision Language Models via Retrieval-Augmented Direct
+  Preference Optimization</title>
+    <summary>  The emergence of large Vision Language Models (VLMs) has broadened the scope
+and capabilities of single-modal Large Language Models (LLMs) by integrating
+visual modalities, thereby unlocking transformative cross-modal applications in
+a variety of real-world scenarios. Despite their impressive performance, VLMs
+are prone to significant hallucinations, particularly in the form of
+cross-modal inconsistencies. Building on the success of Reinforcement Learning
+from Human Feedback (RLHF) in aligning LLMs, recent advancements have focused
+on applying direct preference optimization (DPO) on carefully curated datasets
+to mitigate these issues. Yet, such approaches typically introduce preference
+signals in a brute-force manner, neglecting the crucial role of visual
+information in the alignment process. In this paper, we introduce Re-Align, a
+novel alignment framework that leverages image retrieval to construct a
+dual-preference dataset, effectively incorporating both textual and visual
+preference signals. We further introduce rDPO, an extension of the standard
+direct preference optimization that incorporates an additional visual
+preference objective during fine-tuning. Our experimental results demonstrate
+that Re-Align not only mitigates hallucinations more effectively than previous
+methods but also yields significant performance gains in general visual
+question-answering (VQA) tasks. Moreover, we show that Re-Align maintains
+robustness and scalability across a wide range of VLM sizes and architectures.
+This work represents a significant step forward in aligning multimodal LLMs,
+paving the way for more reliable and effective cross-modal applications. We
+release all the code in https://github.com/taco-group/Re-Align.
 </summary>
     <author>
-      <name>Zhicong Tang</name>
+      <name>Shuo Xing</name>
     </author>
     <author>
-      <name>Jianmin Bao</name>
+      <name>Yuping Wang</name>
     </author>
     <author>
-      <name>Dong Chen</name>
+      <name>Peiran Li</name>
     </author>
     <author>
-      <name>Baining Guo</name>
+      <name>Ruizheng Bai</name>
     </author>
-    <link href="http://arxiv.org/abs/2502.12154v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.12154v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Yueqi Wang</name>
+    </author>
+    <author>
+      <name>Chengxuan Qian</name>
+    </author>
+    <author>
+      <name>Huaxiu Yao</name>
+    </author>
+    <author>
+      <name>Zhengzhong Tu</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">15 pages</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.13146v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.13146v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2502.12152v1</id>
-    <updated>2025-02-17T18:59:06Z</updated>
-    <published>2025-02-17T18:59:06Z</published>
-    <title>Learning Getting-Up Policies for Real-World Humanoid Robots</title>
-    <summary>  Automatic fall recovery is a crucial prerequisite before humanoid robots can
-be reliably deployed. Hand-designing controllers for getting up is difficult
-because of the varied configurations a humanoid can end up in after a fall and
-the challenging terrains humanoid robots are expected to operate on. This paper
-develops a learning framework to produce controllers that enable humanoid
-robots to get up from varying configurations on varying terrains. Unlike
-previous successful applications of humanoid locomotion learning, the
-getting-up task involves complex contact patterns, which necessitates
-accurately modeling the collision geometry and sparser rewards. We address
-these challenges through a two-phase approach that follows a curriculum. The
-first stage focuses on discovering a good getting-up trajectory under minimal
-constraints on smoothness or speed / torque limits. The second stage then
-refines the discovered motions into deployable (i.e. smooth and slow) motions
-that are robust to variations in initial configuration and terrains. We find
-these innovations enable a real-world G1 humanoid robot to get up from two main
-situations that we considered: a) lying face up and b) lying face down, both
-tested on flat, deformable, slippery surfaces and slopes (e.g., sloppy grass
-and snowfield). To the best of our knowledge, this is the first successful
-demonstration of learned getting-up policies for human-sized humanoid robots in
-the real world. Project page: https://humanoid-getup.github.io/
+    <id>http://arxiv.org/abs/2502.13144v1</id>
+    <updated>2025-02-18T18:59:21Z</updated>
+    <published>2025-02-18T18:59:21Z</published>
+    <title>RAD: Training an End-to-End Driving Policy via Large-Scale 3DGS-based
+  Reinforcement Learning</title>
+    <summary>  Existing end-to-end autonomous driving (AD) algorithms typically follow the
+Imitation Learning (IL) paradigm, which faces challenges such as causal
+confusion and the open-loop gap. In this work, we establish a 3DGS-based
+closed-loop Reinforcement Learning (RL) training paradigm. By leveraging 3DGS
+techniques, we construct a photorealistic digital replica of the real physical
+world, enabling the AD policy to extensively explore the state space and learn
+to handle out-of-distribution scenarios through large-scale trial and error. To
+enhance safety, we design specialized rewards that guide the policy to
+effectively respond to safety-critical events and understand real-world causal
+relationships. For better alignment with human driving behavior, IL is
+incorporated into RL training as a regularization term. We introduce a
+closed-loop evaluation benchmark consisting of diverse, previously unseen 3DGS
+environments. Compared to IL-based methods, RAD achieves stronger performance
+in most closed-loop metrics, especially 3x lower collision rate. Abundant
+closed-loop results are presented at https://hgao-cv.github.io/RAD.
 </summary>
     <author>
-      <name>Xialin He</name>
+      <name>Hao Gao</name>
     </author>
     <author>
-      <name>Runpei Dong</name>
+      <name>Shaoyu Chen</name>
     </author>
     <author>
-      <name>Zixuan Chen</name>
+      <name>Bo Jiang</name>
     </author>
     <author>
-      <name>Saurabh Gupta</name>
+      <name>Bencheng Liao</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://humanoid-getup.github.io/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.12152v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.12152v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Yiang Shi</name>
+    </author>
+    <author>
+      <name>Xiaoyang Guo</name>
+    </author>
+    <author>
+      <name>Yuechuan Pu</name>
+    </author>
+    <author>
+      <name>Haoran Yin</name>
+    </author>
+    <author>
+      <name>Xiangyu Li</name>
+    </author>
+    <author>
+      <name>Xinbang Zhang</name>
+    </author>
+    <author>
+      <name>Ying Zhang</name>
+    </author>
+    <author>
+      <name>Wenyu Liu</name>
+    </author>
+    <author>
+      <name>Qian Zhang</name>
+    </author>
+    <author>
+      <name>Xinggang Wang</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://hgao-cv.github.io/RAD</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.13144v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.13144v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.13142v1</id>
+    <updated>2025-02-18T18:59:01Z</updated>
+    <published>2025-02-18T18:59:01Z</published>
+    <title>Pre-training Auto-regressive Robotic Models with 4D Representations</title>
+    <summary>  Foundation models pre-trained on massive unlabeled datasets have
+revolutionized natural language and computer vision, exhibiting remarkable
+generalization capabilities, thus highlighting the importance of pre-training.
+Yet, efforts in robotics have struggled to achieve similar success, limited by
+either the need for costly robotic annotations or the lack of representations
+that effectively model the physical world. In this paper, we introduce ARM4R,
+an Auto-regressive Robotic Model that leverages low-level 4D Representations
+learned from human video data to yield a better pre-trained robotic model.
+Specifically, we focus on utilizing 3D point tracking representations from
+videos derived by lifting 2D representations into 3D space via monocular depth
+estimation across time. These 4D representations maintain a shared geometric
+structure between the points and robot state representations up to a linear
+transformation, enabling efficient transfer learning from human video data to
+low-level robotic control. Our experiments show that ARM4R can transfer
+efficiently from human video data to robotics and consistently improves
+performance on tasks across various robot environments and configurations.
+</summary>
+    <author>
+      <name>Dantong Niu</name>
+    </author>
+    <author>
+      <name>Yuvan Sharma</name>
+    </author>
+    <author>
+      <name>Haoru Xue</name>
+    </author>
+    <author>
+      <name>Giscard Biamby</name>
+    </author>
+    <author>
+      <name>Junyi Zhang</name>
+    </author>
+    <author>
+      <name>Ziteng Ji</name>
+    </author>
+    <author>
+      <name>Trevor Darrell</name>
+    </author>
+    <author>
+      <name>Roei Herzig</name>
+    </author>
+    <link href="http://arxiv.org/abs/2502.13142v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.13142v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2502.12147v1</id>
-    <updated>2025-02-17T18:57:32Z</updated>
-    <published>2025-02-17T18:57:32Z</published>
-    <title>Learning Smooth and Expressive Interatomic Potentials for Physical
-  Property Prediction</title>
-    <summary>  Machine learning interatomic potentials (MLIPs) have become increasingly
-effective at approximating quantum mechanical calculations at a fraction of the
-computational cost. However, lower errors on held out test sets do not always
-translate to improved results on downstream physical property prediction tasks.
-In this paper, we propose testing MLIPs on their practical ability to conserve
-energy during molecular dynamic simulations. If passed, improved correlations
-are found between test errors and their performance on physical property
-prediction tasks. We identify choices which may lead to models failing this
-test, and use these observations to improve upon highly-expressive models. The
-resulting model, eSEN, provides state-of-the-art results on a range of physical
-property prediction tasks, including materials stability prediction, thermal
-conductivity prediction, and phonon calculations.
-</summary>
-    <author>
-      <name>Xiang Fu</name>
-    </author>
-    <author>
-      <name>Brandon M. Wood</name>
-    </author>
-    <author>
-      <name>Luis Barroso-Luque</name>
-    </author>
-    <author>
-      <name>Daniel S. Levine</name>
-    </author>
-    <author>
-      <name>Meng Gao</name>
-    </author>
-    <author>
-      <name>Misko Dzamba</name>
-    </author>
-    <author>
-      <name>C. Lawrence Zitnick</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">19 pages, 14 figures, 5 tables</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.12147v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.12147v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.comp-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.comp-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2502.12143v1</id>
-    <updated>2025-02-17T18:56:15Z</updated>
-    <published>2025-02-17T18:56:15Z</published>
-    <title>Small Models Struggle to Learn from Strong Reasoners</title>
-    <summary>  Large language models (LLMs) excel in complex reasoning tasks, and distilling
-their reasoning capabilities into smaller models has shown promise. However, we
-uncover an interesting phenomenon, which we term the Small Model Learnability
-Gap: small models ($\leq$3B parameters) do not consistently benefit from long
-chain-of-thought (CoT) reasoning or distillation from larger models. Instead,
-they perform better when fine-tuned on shorter, simpler reasoning chains that
-better align with their intrinsic learning capacity. To address this, we
-propose Mix Distillation, a simple yet effective strategy that balances
-reasoning complexity by combining long and short CoT examples or reasoning from
-both larger and smaller models. Our experiments demonstrate that Mix
-Distillation significantly improves small model reasoning performance compared
-to training on either data alone. These findings highlight the limitations of
-direct strong model distillation and underscore the importance of adapting
-reasoning complexity for effective reasoning capability transfer.
-</summary>
-    <author>
-      <name>Yuetai Li</name>
-    </author>
-    <author>
-      <name>Xiang Yue</name>
-    </author>
-    <author>
-      <name>Zhangchen Xu</name>
-    </author>
-    <author>
-      <name>Fengqing Jiang</name>
-    </author>
-    <author>
-      <name>Luyao Niu</name>
-    </author>
-    <author>
-      <name>Bill Yuchen Lin</name>
-    </author>
-    <author>
-      <name>Bhaskar Ramasubramanian</name>
-    </author>
-    <author>
-      <name>Radha Poovendran</name>
-    </author>
-    <link href="http://arxiv.org/abs/2502.12143v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.12143v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2502.12140v1</id>
-    <updated>2025-02-17T18:55:09Z</updated>
-    <published>2025-02-17T18:55:09Z</published>
-    <title>Correlative X-ray and electron tomography for scale-bridging,
-  quantitative analysis of complex, hierarchical particle systems</title>
-    <summary>  This study presents a comprehensive workflow for investigating particulate
-materials through combined 360{\deg} electron tomography (ET), nano-computed
-X-ray tomography (nanoCT), and micro-computed X-ray tomography (microCT),
-alongside a versatile sample preparation routine. The workflow enables the
-investigation of size, morphology, and pore systems across multiple scales,
-from individual particles to large hierarchical structures. A customized
-tapered sample shape is fabricated using focused ion beam milling with the aim
-to optimize each imaging technique's field of view, facilitating
-high-resolution analysis of small volumes containing single particles, while
-also allowing for large-scale studies of thousands of particles for statistical
-relevance. By correlating data from same locations in different imaging
-modalities, the approach enhances the precision of quantitative analyses. The
-study highlights the importance of cross-scale, correlative three-dimensional
-microscopy for a comprehensive understanding of complex hierarchical materials.
-Precise data registration, segmentation using machine learning, and multimodal
-imaging techniques are crucial for unlocking insights into
-process-structure-property relationships and thus to optimize functional,
-hierarchical materials.
+    <id>http://arxiv.org/abs/2502.13141v1</id>
+    <updated>2025-02-18T18:59:00Z</updated>
+    <published>2025-02-18T18:59:00Z</published>
+    <title>UniGuardian: A Unified Defense for Detecting Prompt Injection, Backdoor
+  Attacks and Adversarial Attacks in Large Language Models</title>
+    <summary>  Large Language Models (LLMs) are vulnerable to attacks like prompt injection,
+backdoor attacks, and adversarial attacks, which manipulate prompts or models
+to generate harmful outputs. In this paper, departing from traditional deep
+learning attack paradigms, we explore their intrinsic relationship and
+collectively term them Prompt Trigger Attacks (PTA). This raises a key
+question: Can we determine if a prompt is benign or poisoned? To address this,
+we propose UniGuardian, the first unified defense mechanism designed to detect
+prompt injection, backdoor attacks, and adversarial attacks in LLMs.
+Additionally, we introduce a single-forward strategy to optimize the detection
+pipeline, enabling simultaneous attack detection and text generation within a
+single forward pass. Our experiments confirm that UniGuardian accurately and
+efficiently identifies malicious prompts in LLMs.
 </summary>
     <author>
-      <name>Alexander Götz</name>
+      <name>Huawei Lin</name>
     </author>
     <author>
-      <name>Fabian Lutter</name>
+      <name>Yingjie Lao</name>
     </author>
     <author>
-      <name>Dennis Simon Possart</name>
+      <name>Tong Geng</name>
     </author>
     <author>
-      <name>Daniel Augsburger</name>
+      <name>Tan Yu</name>
     </author>
     <author>
-      <name>Usman Arslan</name>
+      <name>Weijie Zhao</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">18 Pages, 8 Figures, 5 Tables, Keywords: Attack Defending, Security,
+  Prompt Injection, Backdoor Attacks, Adversarial Attacks, Prompt Trigger
+  Attacks</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.13141v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.13141v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.13140v1</id>
+    <updated>2025-02-18T18:58:35Z</updated>
+    <published>2025-02-18T18:58:35Z</published>
+    <title>Towards Quantum Tensor Decomposition in Biomedical Applications</title>
+    <summary>  Tensor decomposition has emerged as a powerful framework for feature
+extraction in multi-modal biomedical data. In this review, we present a
+comprehensive analysis of tensor decomposition methods such as Tucker,
+CANDECOMP/PARAFAC, spiked tensor decomposition, etc. and their diverse
+applications across biomedical domains such as imaging, multi-omics, and
+spatial transcriptomics. To systematically investigate the literature, we
+applied a topic modeling-based approach that identifies and groups distinct
+thematic sub-areas in biomedicine where tensor decomposition has been used,
+thereby revealing key trends and research directions. We evaluated challenges
+related to the scalability of latent spaces along with obtaining the optimal
+rank of the tensor, which often hinder the extraction of meaningful features
+from increasingly large and complex datasets. Additionally, we discuss recent
+advances in quantum algorithms for tensor decomposition, exploring how quantum
+computing can be leveraged to address these challenges. Our study includes a
+preliminary resource estimation analysis for quantum computing platforms and
+examines the feasibility of implementing quantum-enhanced tensor decomposition
+methods on near-term quantum devices. Collectively, this review not only
+synthesizes current applications and challenges of tensor decomposition in
+biomedical analyses but also outlines promising quantum computing strategies to
+enhance its impact on deriving actionable insights from complex biomedical
+data.
+</summary>
+    <author>
+      <name>Myson Burch</name>
     </author>
     <author>
-      <name>Sabrina Pechmann</name>
+      <name>Jiasen Zhang</name>
     </author>
     <author>
-      <name>Carmen Rubach</name>
+      <name>Gideon Idumah</name>
     </author>
     <author>
-      <name>Moritz Buwen</name>
+      <name>Hakan Doga</name>
     </author>
     <author>
-      <name>Umair Sultan</name>
+      <name>Richard Lartey</name>
     </author>
     <author>
-      <name>Alexander Kichigin</name>
+      <name>Lamis Yehia</name>
     </author>
     <author>
-      <name>Johannes Böhmer</name>
+      <name>Mingrui Yang</name>
     </author>
     <author>
-      <name>Nora Vorlaufer</name>
+      <name>Murat Yildirim</name>
     </author>
     <author>
-      <name>Peter Suter</name>
+      <name>Mihriban Karaayvaz</name>
     </author>
     <author>
-      <name>Tor Hildebrand</name>
+      <name>Omar Shehab</name>
     </author>
     <author>
-      <name>Matthias Thommes</name>
+      <name>Weihong Guo</name>
     </author>
     <author>
-      <name>Peter Felfer</name>
+      <name>Ying Ni</name>
     </author>
     <author>
-      <name>Nicolas Vogel</name>
+      <name>Laxmi Parida</name>
     </author>
     <author>
-      <name>Katharina Breininger</name>
+      <name>Xiaojuan Li</name>
     </author>
     <author>
-      <name>Silke Christiansen</name>
+      <name>Aritra Bose</name>
     </author>
-    <author>
-      <name>Benjamin Apeleo Zubiri</name>
-    </author>
-    <author>
-      <name>Erdmann Spiecker</name>
-    </author>
-    <link href="http://arxiv.org/abs/2502.12140v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.12140v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cond-mat.mtrl-sci" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cond-mat.mtrl-sci" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">31 pages, 7 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.13140v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.13140v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
