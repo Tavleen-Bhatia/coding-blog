@@ -3,315 +3,264 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-02-19T00:00:00-05:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">405924</opensearch:totalResults>
+  <updated>2025-02-20T00:00:00-05:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">406166</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2502.13146v1</id>
-    <updated>2025-02-18T18:59:57Z</updated>
-    <published>2025-02-18T18:59:57Z</published>
-    <title>Re-Align: Aligning Vision Language Models via Retrieval-Augmented Direct
-  Preference Optimization</title>
-    <summary>  The emergence of large Vision Language Models (VLMs) has broadened the scope
-and capabilities of single-modal Large Language Models (LLMs) by integrating
-visual modalities, thereby unlocking transformative cross-modal applications in
-a variety of real-world scenarios. Despite their impressive performance, VLMs
-are prone to significant hallucinations, particularly in the form of
-cross-modal inconsistencies. Building on the success of Reinforcement Learning
-from Human Feedback (RLHF) in aligning LLMs, recent advancements have focused
-on applying direct preference optimization (DPO) on carefully curated datasets
-to mitigate these issues. Yet, such approaches typically introduce preference
-signals in a brute-force manner, neglecting the crucial role of visual
-information in the alignment process. In this paper, we introduce Re-Align, a
-novel alignment framework that leverages image retrieval to construct a
-dual-preference dataset, effectively incorporating both textual and visual
-preference signals. We further introduce rDPO, an extension of the standard
-direct preference optimization that incorporates an additional visual
-preference objective during fine-tuning. Our experimental results demonstrate
-that Re-Align not only mitigates hallucinations more effectively than previous
-methods but also yields significant performance gains in general visual
-question-answering (VQA) tasks. Moreover, we show that Re-Align maintains
-robustness and scalability across a wide range of VLM sizes and architectures.
-This work represents a significant step forward in aligning multimodal LLMs,
-paving the way for more reliable and effective cross-modal applications. We
-release all the code in https://github.com/taco-group/Re-Align.
+    <id>http://arxiv.org/abs/2502.13967v1</id>
+    <updated>2025-02-19T18:59:44Z</updated>
+    <published>2025-02-19T18:59:44Z</published>
+    <title>FlexTok: Resampling Images into 1D Token Sequences of Flexible Length</title>
+    <summary>  Image tokenization has enabled major advances in autoregressive image
+generation by providing compressed, discrete representations that are more
+efficient to process than raw pixels. While traditional approaches use 2D grid
+tokenization, recent methods like TiTok have shown that 1D tokenization can
+achieve high generation quality by eliminating grid redundancies. However,
+these methods typically use a fixed number of tokens and thus cannot adapt to
+an image's inherent complexity. We introduce FlexTok, a tokenizer that projects
+2D images into variable-length, ordered 1D token sequences. For example, a
+256x256 image can be resampled into anywhere from 1 to 256 discrete tokens,
+hierarchically and semantically compressing its information. By training a
+rectified flow model as the decoder and using nested dropout, FlexTok produces
+plausible reconstructions regardless of the chosen token sequence length. We
+evaluate our approach in an autoregressive generation setting using a simple
+GPT-style Transformer. On ImageNet, this approach achieves an FID&lt;2 across 8 to
+128 tokens, outperforming TiTok and matching state-of-the-art methods with far
+fewer tokens. We further extend the model to support to text-conditioned image
+generation and examine how FlexTok relates to traditional 2D tokenization. A
+key finding is that FlexTok enables next-token prediction to describe images in
+a coarse-to-fine "visual vocabulary", and that the number of tokens to generate
+depends on the complexity of the generation task.
 </summary>
     <author>
-      <name>Shuo Xing</name>
+      <name>Roman Bachmann</name>
     </author>
     <author>
-      <name>Yuping Wang</name>
+      <name>Jesse Allardice</name>
     </author>
     <author>
-      <name>Peiran Li</name>
+      <name>David Mizrahi</name>
     </author>
     <author>
-      <name>Ruizheng Bai</name>
+      <name>Enrico Fini</name>
     </author>
     <author>
-      <name>Yueqi Wang</name>
+      <name>Oğuzhan Fatih Kar</name>
     </author>
     <author>
-      <name>Chengxuan Qian</name>
+      <name>Elmira Amirloo</name>
     </author>
     <author>
-      <name>Huaxiu Yao</name>
+      <name>Alaaeldin El-Nouby</name>
     </author>
     <author>
-      <name>Zhengzhong Tu</name>
+      <name>Amir Zamir</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">15 pages</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.13146v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.13146v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Afshin Dehghan</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page at https://flextok.epfl.ch/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.13967v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.13967v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2502.13144v1</id>
-    <updated>2025-02-18T18:59:21Z</updated>
-    <published>2025-02-18T18:59:21Z</published>
-    <title>RAD: Training an End-to-End Driving Policy via Large-Scale 3DGS-based
-  Reinforcement Learning</title>
-    <summary>  Existing end-to-end autonomous driving (AD) algorithms typically follow the
-Imitation Learning (IL) paradigm, which faces challenges such as causal
-confusion and the open-loop gap. In this work, we establish a 3DGS-based
-closed-loop Reinforcement Learning (RL) training paradigm. By leveraging 3DGS
-techniques, we construct a photorealistic digital replica of the real physical
-world, enabling the AD policy to extensively explore the state space and learn
-to handle out-of-distribution scenarios through large-scale trial and error. To
-enhance safety, we design specialized rewards that guide the policy to
-effectively respond to safety-critical events and understand real-world causal
-relationships. For better alignment with human driving behavior, IL is
-incorporated into RL training as a regularization term. We introduce a
-closed-loop evaluation benchmark consisting of diverse, previously unseen 3DGS
-environments. Compared to IL-based methods, RAD achieves stronger performance
-in most closed-loop metrics, especially 3x lower collision rate. Abundant
-closed-loop results are presented at https://hgao-cv.github.io/RAD.
+    <id>http://arxiv.org/abs/2502.13966v2</id>
+    <updated>2025-02-20T02:29:19Z</updated>
+    <published>2025-02-19T18:59:32Z</published>
+    <title>Where's the Bug? Attention Probing for Scalable Fault Localization</title>
+    <summary>  Ensuring code correctness remains a challenging problem even as large
+language models (LLMs) become increasingly capable at code-related tasks. While
+LLM-based program repair systems can propose bug fixes using only a user's bug
+report, their effectiveness is fundamentally limited by their ability to
+perform fault localization (FL), a challenging problem for both humans and
+LLMs. Existing FL approaches rely on executable test cases, require training on
+costly and often noisy line-level annotations, or demand resource-intensive
+LLMs. In this paper, we present Bug Attention Probe (BAP), a method which
+learns state-of-the-art fault localization without any direct localization
+labels, outperforming traditional FL baselines and prompting of large-scale
+LLMs. We evaluate our approach across a variety of code settings, including
+real-world Java bugs from the standard Defects4J dataset as well as seven other
+datasets which span a diverse set of bug types and languages. Averaged across
+all eight datasets, BAP improves by 34.6% top-1 accuracy compared to the
+strongest baseline and 93.4% over zero-shot prompting GPT-4o. BAP is also
+significantly more efficient than prompting, outperforming large open-weight
+models at a small fraction of the computational cost.
 </summary>
     <author>
-      <name>Hao Gao</name>
+      <name>Adam Stein</name>
     </author>
     <author>
-      <name>Shaoyu Chen</name>
+      <name>Arthur Wayne</name>
     </author>
     <author>
-      <name>Bo Jiang</name>
+      <name>Aaditya Naik</name>
     </author>
     <author>
-      <name>Bencheng Liao</name>
+      <name>Mayur Naik</name>
     </author>
     <author>
-      <name>Yiang Shi</name>
+      <name>Eric Wong</name>
     </author>
-    <author>
-      <name>Xiaoyang Guo</name>
-    </author>
-    <author>
-      <name>Yuechuan Pu</name>
-    </author>
-    <author>
-      <name>Haoran Yin</name>
-    </author>
-    <author>
-      <name>Xiangyu Li</name>
-    </author>
-    <author>
-      <name>Xinbang Zhang</name>
-    </author>
-    <author>
-      <name>Ying Zhang</name>
-    </author>
-    <author>
-      <name>Wenyu Liu</name>
-    </author>
-    <author>
-      <name>Qian Zhang</name>
-    </author>
-    <author>
-      <name>Xinggang Wang</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://hgao-cv.github.io/RAD</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.13144v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.13144v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">14 pages, 5 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.13966v2" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.13966v2" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2502.13142v1</id>
-    <updated>2025-02-18T18:59:01Z</updated>
-    <published>2025-02-18T18:59:01Z</published>
-    <title>Pre-training Auto-regressive Robotic Models with 4D Representations</title>
-    <summary>  Foundation models pre-trained on massive unlabeled datasets have
-revolutionized natural language and computer vision, exhibiting remarkable
-generalization capabilities, thus highlighting the importance of pre-training.
-Yet, efforts in robotics have struggled to achieve similar success, limited by
-either the need for costly robotic annotations or the lack of representations
-that effectively model the physical world. In this paper, we introduce ARM4R,
-an Auto-regressive Robotic Model that leverages low-level 4D Representations
-learned from human video data to yield a better pre-trained robotic model.
-Specifically, we focus on utilizing 3D point tracking representations from
-videos derived by lifting 2D representations into 3D space via monocular depth
-estimation across time. These 4D representations maintain a shared geometric
-structure between the points and robot state representations up to a linear
-transformation, enabling efficient transfer learning from human video data to
-low-level robotic control. Our experiments show that ARM4R can transfer
-efficiently from human video data to robotics and consistently improves
-performance on tasks across various robot environments and configurations.
+    <id>http://arxiv.org/abs/2502.13965v1</id>
+    <updated>2025-02-19T18:59:30Z</updated>
+    <published>2025-02-19T18:59:30Z</published>
+    <title>Autellix: An Efficient Serving Engine for LLM Agents as General Programs</title>
+    <summary>  Large language model (LLM) applications are evolving beyond simple chatbots
+into dynamic, general-purpose agentic programs, which scale LLM calls and
+output tokens to help AI agents reason, explore, and solve complex tasks.
+However, existing LLM serving systems ignore dependencies between programs and
+calls, missing significant opportunities for optimization. Our analysis reveals
+that programs submitted to LLM serving engines experience long cumulative wait
+times, primarily due to head-of-line blocking at both the individual LLM
+request and the program. To address this, we introduce Autellix, an LLM serving
+system that treats programs as first-class citizens to minimize their
+end-to-end latencies. Autellix intercepts LLM calls submitted by programs,
+enriching schedulers with program-level context. We propose two scheduling
+algorithms-for single-threaded and distributed programs-that preempt and
+prioritize LLM calls based on their programs' previously completed calls. Our
+evaluation demonstrates that across diverse LLMs and agentic workloads,
+Autellix improves throughput of programs by 4-15x at the same latency compared
+to state-of-the-art systems, such as vLLM.
 </summary>
     <author>
-      <name>Dantong Niu</name>
+      <name>Michael Luo</name>
     </author>
     <author>
-      <name>Yuvan Sharma</name>
+      <name>Xiaoxiang Shi</name>
     </author>
     <author>
-      <name>Haoru Xue</name>
+      <name>Colin Cai</name>
     </author>
     <author>
-      <name>Giscard Biamby</name>
+      <name>Tianjun Zhang</name>
     </author>
     <author>
-      <name>Junyi Zhang</name>
+      <name>Justin Wong</name>
     </author>
     <author>
-      <name>Ziteng Ji</name>
+      <name>Yichuan Wang</name>
     </author>
     <author>
-      <name>Trevor Darrell</name>
+      <name>Chi Wang</name>
     </author>
     <author>
-      <name>Roei Herzig</name>
+      <name>Yanping Huang</name>
     </author>
-    <link href="http://arxiv.org/abs/2502.13142v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.13142v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Zhifeng Chen</name>
+    </author>
+    <author>
+      <name>Joseph E. Gonzalez</name>
+    </author>
+    <author>
+      <name>Ion Stoica</name>
+    </author>
+    <link href="http://arxiv.org/abs/2502.13965v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.13965v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.13964v1</id>
+    <updated>2025-02-19T18:59:17Z</updated>
+    <published>2025-02-19T18:59:17Z</published>
+    <title>A Training-Free Framework for Precise Mobile Manipulation of Small
+  Everyday Objects</title>
+    <summary>  Many everyday mobile manipulation tasks require precise interaction with
+small objects, such as grasping a knob to open a cabinet or pressing a light
+switch. In this paper, we develop Servoing with Vision Models (SVM), a
+closed-loop training-free framework that enables a mobile manipulator to tackle
+such precise tasks involving the manipulation of small objects. SVM employs an
+RGB-D wrist camera and uses visual servoing for control. Our novelty lies in
+the use of state-of-the-art vision models to reliably compute 3D targets from
+the wrist image for diverse tasks and under occlusion due to the end-effector.
+To mitigate occlusion artifacts, we employ vision models to out-paint the
+end-effector thereby significantly enhancing target localization. We
+demonstrate that aided by out-painting methods, open-vocabulary object
+detectors can serve as a drop-in module to identify semantic targets (e.g.
+knobs) and point tracking methods can reliably track interaction sites
+indicated by user clicks. This training-free method obtains an 85% zero-shot
+success rate on manipulating unseen objects in novel environments in the real
+world, outperforming an open-loop control method and an imitation learning
+baseline trained on 1000+ demonstrations by an absolute success rate of 50%.
+</summary>
+    <author>
+      <name>Arjun Gupta</name>
+    </author>
+    <author>
+      <name>Rishik Sathua</name>
+    </author>
+    <author>
+      <name>Saurabh Gupta</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project webpage: https://arjung128.github.io/svm</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.13964v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.13964v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2502.13141v1</id>
-    <updated>2025-02-18T18:59:00Z</updated>
-    <published>2025-02-18T18:59:00Z</published>
-    <title>UniGuardian: A Unified Defense for Detecting Prompt Injection, Backdoor
-  Attacks and Adversarial Attacks in Large Language Models</title>
-    <summary>  Large Language Models (LLMs) are vulnerable to attacks like prompt injection,
-backdoor attacks, and adversarial attacks, which manipulate prompts or models
-to generate harmful outputs. In this paper, departing from traditional deep
-learning attack paradigms, we explore their intrinsic relationship and
-collectively term them Prompt Trigger Attacks (PTA). This raises a key
-question: Can we determine if a prompt is benign or poisoned? To address this,
-we propose UniGuardian, the first unified defense mechanism designed to detect
-prompt injection, backdoor attacks, and adversarial attacks in LLMs.
-Additionally, we introduce a single-forward strategy to optimize the detection
-pipeline, enabling simultaneous attack detection and text generation within a
-single forward pass. Our experiments confirm that UniGuardian accurately and
-efficiently identifies malicious prompts in LLMs.
+    <id>http://arxiv.org/abs/2502.13963v1</id>
+    <updated>2025-02-19T18:59:15Z</updated>
+    <published>2025-02-19T18:59:15Z</published>
+    <title>MuDAF: Long-Context Multi-Document Attention Focusing through
+  Contrastive Learning on Attention Heads</title>
+    <summary>  Large Language Models (LLMs) frequently show distracted attention due to
+irrelevant information in the input, which severely impairs their long-context
+capabilities. Inspired by recent studies on the effectiveness of retrieval
+heads in long-context factutality, we aim at addressing this distraction issue
+through improving such retrieval heads directly. We propose Multi-Document
+Attention Focusing (MuDAF), a novel method that explicitly optimizes the
+attention distribution at the head level through contrastive learning.
+According to the experimental results, MuDAF can significantly improve the
+long-context question answering performance of LLMs, especially in
+multi-document question answering. Extensive evaluations on retrieval scores
+and attention visualizations show that MuDAF possesses great potential in
+making attention heads more focused on relevant information and reducing
+attention distractions.
 </summary>
     <author>
-      <name>Huawei Lin</name>
+      <name>Weihao Liu</name>
     </author>
     <author>
-      <name>Yingjie Lao</name>
+      <name>Ning Wu</name>
     </author>
     <author>
-      <name>Tong Geng</name>
+      <name>Shiping Yang</name>
     </author>
     <author>
-      <name>Tan Yu</name>
+      <name>Wenbiao Ding</name>
     </author>
     <author>
-      <name>Weijie Zhao</name>
+      <name>Shining Liang</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">18 Pages, 8 Figures, 5 Tables, Keywords: Attack Defending, Security,
-  Prompt Injection, Backdoor Attacks, Adversarial Attacks, Prompt Trigger
-  Attacks</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.13141v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.13141v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Ming Gong</name>
+    </author>
+    <author>
+      <name>Dongmei Zhang</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">18 pages</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.13963v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.13963v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2502.13140v1</id>
-    <updated>2025-02-18T18:58:35Z</updated>
-    <published>2025-02-18T18:58:35Z</published>
-    <title>Towards Quantum Tensor Decomposition in Biomedical Applications</title>
-    <summary>  Tensor decomposition has emerged as a powerful framework for feature
-extraction in multi-modal biomedical data. In this review, we present a
-comprehensive analysis of tensor decomposition methods such as Tucker,
-CANDECOMP/PARAFAC, spiked tensor decomposition, etc. and their diverse
-applications across biomedical domains such as imaging, multi-omics, and
-spatial transcriptomics. To systematically investigate the literature, we
-applied a topic modeling-based approach that identifies and groups distinct
-thematic sub-areas in biomedicine where tensor decomposition has been used,
-thereby revealing key trends and research directions. We evaluated challenges
-related to the scalability of latent spaces along with obtaining the optimal
-rank of the tensor, which often hinder the extraction of meaningful features
-from increasingly large and complex datasets. Additionally, we discuss recent
-advances in quantum algorithms for tensor decomposition, exploring how quantum
-computing can be leveraged to address these challenges. Our study includes a
-preliminary resource estimation analysis for quantum computing platforms and
-examines the feasibility of implementing quantum-enhanced tensor decomposition
-methods on near-term quantum devices. Collectively, this review not only
-synthesizes current applications and challenges of tensor decomposition in
-biomedical analyses but also outlines promising quantum computing strategies to
-enhance its impact on deriving actionable insights from complex biomedical
-data.
-</summary>
-    <author>
-      <name>Myson Burch</name>
-    </author>
-    <author>
-      <name>Jiasen Zhang</name>
-    </author>
-    <author>
-      <name>Gideon Idumah</name>
-    </author>
-    <author>
-      <name>Hakan Doga</name>
-    </author>
-    <author>
-      <name>Richard Lartey</name>
-    </author>
-    <author>
-      <name>Lamis Yehia</name>
-    </author>
-    <author>
-      <name>Mingrui Yang</name>
-    </author>
-    <author>
-      <name>Murat Yildirim</name>
-    </author>
-    <author>
-      <name>Mihriban Karaayvaz</name>
-    </author>
-    <author>
-      <name>Omar Shehab</name>
-    </author>
-    <author>
-      <name>Weihong Guo</name>
-    </author>
-    <author>
-      <name>Ying Ni</name>
-    </author>
-    <author>
-      <name>Laxmi Parida</name>
-    </author>
-    <author>
-      <name>Xiaojuan Li</name>
-    </author>
-    <author>
-      <name>Aritra Bose</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">31 pages, 7 figures</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.13140v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.13140v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
