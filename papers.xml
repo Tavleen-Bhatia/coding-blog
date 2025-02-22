@@ -3,264 +3,297 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-02-20T00:00:00-05:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">406166</opensearch:totalResults>
+  <updated>2025-02-21T00:00:00-05:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">406463</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2502.13967v1</id>
-    <updated>2025-02-19T18:59:44Z</updated>
-    <published>2025-02-19T18:59:44Z</published>
-    <title>FlexTok: Resampling Images into 1D Token Sequences of Flexible Length</title>
-    <summary>  Image tokenization has enabled major advances in autoregressive image
-generation by providing compressed, discrete representations that are more
-efficient to process than raw pixels. While traditional approaches use 2D grid
-tokenization, recent methods like TiTok have shown that 1D tokenization can
-achieve high generation quality by eliminating grid redundancies. However,
-these methods typically use a fixed number of tokens and thus cannot adapt to
-an image's inherent complexity. We introduce FlexTok, a tokenizer that projects
-2D images into variable-length, ordered 1D token sequences. For example, a
-256x256 image can be resampled into anywhere from 1 to 256 discrete tokens,
-hierarchically and semantically compressing its information. By training a
-rectified flow model as the decoder and using nested dropout, FlexTok produces
-plausible reconstructions regardless of the chosen token sequence length. We
-evaluate our approach in an autoregressive generation setting using a simple
-GPT-style Transformer. On ImageNet, this approach achieves an FID&lt;2 across 8 to
-128 tokens, outperforming TiTok and matching state-of-the-art methods with far
-fewer tokens. We further extend the model to support to text-conditioned image
-generation and examine how FlexTok relates to traditional 2D tokenization. A
-key finding is that FlexTok enables next-token prediction to describe images in
-a coarse-to-fine "visual vocabulary", and that the number of tokens to generate
-depends on the complexity of the generation task.
+    <id>http://arxiv.org/abs/2502.14866v1</id>
+    <updated>2025-02-20T18:59:52Z</updated>
+    <published>2025-02-20T18:59:52Z</published>
+    <title>LServe: Efficient Long-sequence LLM Serving with Unified Sparse
+  Attention</title>
+    <summary>  Large language models (LLMs) have shown remarkable potential in processing
+long sequences, yet efficiently serving these long-context models remains
+challenging due to the quadratic computational complexity of attention in the
+prefilling stage and the large memory footprint of the KV cache in the decoding
+stage. To address these issues, we introduce LServe, an efficient system that
+accelerates long-sequence LLM serving via hybrid sparse attention. This method
+unifies different hardware-friendly, structured sparsity patterns for both
+prefilling and decoding attention into a single framework, where computations
+on less important tokens are skipped block-wise. LServe demonstrates the
+compatibility of static and dynamic sparsity in long-context LLM attention.
+This design enables multiplicative speedups by combining these optimizations.
+Specifically, we convert half of the attention heads to nearly free streaming
+heads in both the prefilling and decoding stages. Additionally, we find that
+only a constant number of KV pages is required to preserve long-context
+capabilities, irrespective of context length. We then design a hierarchical KV
+page selection policy that dynamically prunes KV pages based on query-centric
+similarity. On average, LServe accelerates LLM prefilling by up to 2.9x and
+decoding by 1.3-2.1x over vLLM, maintaining long-context accuracy. Code is
+released at https://github.com/mit-han-lab/omniserve.
 </summary>
     <author>
-      <name>Roman Bachmann</name>
+      <name>Shang Yang</name>
     </author>
     <author>
-      <name>Jesse Allardice</name>
+      <name>Junxian Guo</name>
     </author>
     <author>
-      <name>David Mizrahi</name>
+      <name>Haotian Tang</name>
     </author>
     <author>
-      <name>Enrico Fini</name>
+      <name>Qinghao Hu</name>
     </author>
     <author>
-      <name>Oğuzhan Fatih Kar</name>
+      <name>Guangxuan Xiao</name>
     </author>
     <author>
-      <name>Elmira Amirloo</name>
+      <name>Jiaming Tang</name>
     </author>
     <author>
-      <name>Alaaeldin El-Nouby</name>
+      <name>Yujun Lin</name>
     </author>
     <author>
-      <name>Amir Zamir</name>
+      <name>Zhijian Liu</name>
     </author>
     <author>
-      <name>Afshin Dehghan</name>
+      <name>Yao Lu</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page at https://flextok.epfl.ch/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.13967v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.13967v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Song Han</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted by MLSys 2025. Code available at:
+  https://github.com/mit-han-lab/omniserve</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.14866v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.14866v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.PF" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.14865v1</id>
+    <updated>2025-02-20T18:59:51Z</updated>
+    <published>2025-02-20T18:59:51Z</published>
+    <title>Time Travel: A Comprehensive Benchmark to Evaluate LMMs on Historical
+  and Cultural Artifacts</title>
+    <summary>  Understanding historical and cultural artifacts demands human expertise and
+advanced computational techniques, yet the process remains complex and
+time-intensive. While large multimodal models offer promising support, their
+evaluation and improvement require a standardized benchmark. To address this,
+we introduce TimeTravel, a benchmark of 10,250 expert-verified samples spanning
+266 distinct cultures across 10 major historical regions. Designed for
+AI-driven analysis of manuscripts, artworks, inscriptions, and archaeological
+discoveries, TimeTravel provides a structured dataset and robust evaluation
+framework to assess AI models' capabilities in classification, interpretation,
+and historical comprehension. By integrating AI with historical research,
+TimeTravel fosters AI-powered tools for historians, archaeologists,
+researchers, and cultural tourists to extract valuable insights while ensuring
+technology contributes meaningfully to historical discovery and cultural
+heritage preservation. We evaluate contemporary AI models on TimeTravel,
+highlighting their strengths and identifying areas for improvement. Our goal is
+to establish AI as a reliable partner in preserving cultural heritage, ensuring
+that technological advancements contribute meaningfully to historical
+discovery. Our code is available at:
+\url{https://github.com/mbzuai-oryx/TimeTravel}.
+</summary>
+    <author>
+      <name>Sara Ghaboura</name>
+    </author>
+    <author>
+      <name>Ketan More</name>
+    </author>
+    <author>
+      <name>Ritesh Thawkar</name>
+    </author>
+    <author>
+      <name>Wafa Alghallabi</name>
+    </author>
+    <author>
+      <name>Omkar Thawakar</name>
+    </author>
+    <author>
+      <name>Fahad Shahbaz Khan</name>
+    </author>
+    <author>
+      <name>Hisham Cholakkal</name>
+    </author>
+    <author>
+      <name>Salman Khan</name>
+    </author>
+    <author>
+      <name>Rao Muhammad Anwer</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">4 pages, 6 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.14865v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.14865v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2502.13966v2</id>
-    <updated>2025-02-20T02:29:19Z</updated>
-    <published>2025-02-19T18:59:32Z</published>
-    <title>Where's the Bug? Attention Probing for Scalable Fault Localization</title>
-    <summary>  Ensuring code correctness remains a challenging problem even as large
-language models (LLMs) become increasingly capable at code-related tasks. While
-LLM-based program repair systems can propose bug fixes using only a user's bug
-report, their effectiveness is fundamentally limited by their ability to
-perform fault localization (FL), a challenging problem for both humans and
-LLMs. Existing FL approaches rely on executable test cases, require training on
-costly and often noisy line-level annotations, or demand resource-intensive
-LLMs. In this paper, we present Bug Attention Probe (BAP), a method which
-learns state-of-the-art fault localization without any direct localization
-labels, outperforming traditional FL baselines and prompting of large-scale
-LLMs. We evaluate our approach across a variety of code settings, including
-real-world Java bugs from the standard Defects4J dataset as well as seven other
-datasets which span a diverse set of bug types and languages. Averaged across
-all eight datasets, BAP improves by 34.6% top-1 accuracy compared to the
-strongest baseline and 93.4% over zero-shot prompting GPT-4o. BAP is also
-significantly more efficient than prompting, outperforming large open-weight
-models at a small fraction of the computational cost.
+    <id>http://arxiv.org/abs/2502.14860v1</id>
+    <updated>2025-02-20T18:59:31Z</updated>
+    <published>2025-02-20T18:59:31Z</published>
+    <title>Aligning LLMs to Ask Good Questions A Case Study in Clinical Reasoning</title>
+    <summary>  Large language models (LLMs) often fail to ask effective questions under
+uncertainty, making them unreliable in domains where proactive
+information-gathering is essential for decisionmaking. We present ALFA, a
+framework that improves LLM question-asking by (i) decomposing the notion of a
+"good" question into a set of theory-grounded attributes (e.g., clarity,
+relevance), (ii) controllably synthesizing attribute-specific question
+variations, and (iii) aligning models via preference-based optimization to
+explicitly learn to ask better questions along these fine-grained attributes.
+Focusing on clinical reasoning as a case study, we introduce the MediQ-AskDocs
+dataset, composed of 17k real-world clinical interactions augmented with 80k
+attribute-specific preference pairs of follow-up questions, as well as a novel
+expert-annotated interactive healthcare QA task to evaluate question-asking
+abilities. Models aligned with ALFA reduce diagnostic errors by 56.6% on
+MediQ-AskDocs compared to SOTA instruction-tuned LLMs, with a question-level
+win-rate of 64.4% and strong generalizability. Our findings suggest that
+explicitly guiding question-asking with structured, fine-grained attributes
+offers a scalable path to improve LLMs, especially in expert application
+domains.
 </summary>
     <author>
-      <name>Adam Stein</name>
+      <name>Shuyue Stella Li</name>
     </author>
     <author>
-      <name>Arthur Wayne</name>
+      <name>Jimin Mun</name>
     </author>
     <author>
-      <name>Aaditya Naik</name>
+      <name>Faeze Brahman</name>
     </author>
     <author>
-      <name>Mayur Naik</name>
+      <name>Jonathan S. Ilgen</name>
     </author>
     <author>
-      <name>Eric Wong</name>
+      <name>Yulia Tsvetkov</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">14 pages, 5 figures</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.13966v2" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.13966v2" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Maarten Sap</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">22 pages, 8 figures, 8 tables</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.14860v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.14860v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.14856v1</id>
+    <updated>2025-02-20T18:58:10Z</updated>
+    <published>2025-02-20T18:58:10Z</published>
+    <title>FR-Spec: Accelerating Large-Vocabulary Language Models via
+  Frequency-Ranked Speculative Sampling</title>
+    <summary>  Speculative sampling has emerged as an important technique for accelerating
+the auto-regressive generation process of large language models (LLMs) by
+utilizing a draft-then-verify mechanism to produce multiple tokens per forward
+pass. While state-of-the-art speculative sampling methods use only a single
+layer and a language modeling (LM) head as the draft model to achieve
+impressive layer compression, their efficiency gains are substantially reduced
+for large-vocabulary LLMs, such as Llama-3-8B with a vocabulary of 128k tokens.
+To address this, we present FR-Spec, a frequency-ranked speculative sampling
+framework that optimizes draft candidate selection through vocabulary space
+compression. By constraining the draft search to a frequency-prioritized token
+subset, our method reduces LM Head computation overhead by 75% while ensuring
+the equivalence of the final output distribution. Experiments across multiple
+datasets demonstrate an average of 1.12$\times$ speedup over the
+state-of-the-art speculative sampling method EAGLE-2.
+</summary>
+    <author>
+      <name>Weilin Zhao</name>
+    </author>
+    <author>
+      <name>Tengyu Pan</name>
+    </author>
+    <author>
+      <name>Xu Han</name>
+    </author>
+    <author>
+      <name>Yudi Zhang</name>
+    </author>
+    <author>
+      <name>Ao Sun</name>
+    </author>
+    <author>
+      <name>Yuxiang Huang</name>
+    </author>
+    <author>
+      <name>Kaihuo Zhang</name>
+    </author>
+    <author>
+      <name>Weilun Zhao</name>
+    </author>
+    <author>
+      <name>Yuxuan Li</name>
+    </author>
+    <author>
+      <name>Jianyong Wang</name>
+    </author>
+    <author>
+      <name>Zhiyuan Liu</name>
+    </author>
+    <author>
+      <name>Maosong Sun</name>
+    </author>
+    <link href="http://arxiv.org/abs/2502.14856v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.14856v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2502.13965v1</id>
-    <updated>2025-02-19T18:59:30Z</updated>
-    <published>2025-02-19T18:59:30Z</published>
-    <title>Autellix: An Efficient Serving Engine for LLM Agents as General Programs</title>
-    <summary>  Large language model (LLM) applications are evolving beyond simple chatbots
-into dynamic, general-purpose agentic programs, which scale LLM calls and
-output tokens to help AI agents reason, explore, and solve complex tasks.
-However, existing LLM serving systems ignore dependencies between programs and
-calls, missing significant opportunities for optimization. Our analysis reveals
-that programs submitted to LLM serving engines experience long cumulative wait
-times, primarily due to head-of-line blocking at both the individual LLM
-request and the program. To address this, we introduce Autellix, an LLM serving
-system that treats programs as first-class citizens to minimize their
-end-to-end latencies. Autellix intercepts LLM calls submitted by programs,
-enriching schedulers with program-level context. We propose two scheduling
-algorithms-for single-threaded and distributed programs-that preempt and
-prioritize LLM calls based on their programs' previously completed calls. Our
-evaluation demonstrates that across diverse LLMs and agentic workloads,
-Autellix improves throughput of programs by 4-15x at the same latency compared
-to state-of-the-art systems, such as vLLM.
+    <id>http://arxiv.org/abs/2502.14855v1</id>
+    <updated>2025-02-20T18:58:07Z</updated>
+    <published>2025-02-20T18:58:07Z</published>
+    <title>Prompt-to-Leaderboard</title>
+    <summary>  Large language model (LLM) evaluations typically rely on aggregated metrics
+like accuracy or human preference, averaging across users and prompts. This
+averaging obscures user- and prompt-specific variations in model performance.
+To address this, we propose Prompt-to-Leaderboard (P2L), a method that produces
+leaderboards specific to a prompt. The core idea is to train an LLM taking
+natural language prompts as input to output a vector of Bradley-Terry
+coefficients which are then used to predict the human preference vote. The
+resulting prompt-dependent leaderboards allow for unsupervised task-specific
+evaluation, optimal routing of queries to models, personalization, and
+automated evaluation of model strengths and weaknesses. Data from Chatbot Arena
+suggest that P2L better captures the nuanced landscape of language model
+performance than the averaged leaderboard. Furthermore, our findings suggest
+that P2L's ability to produce prompt-specific evaluations follows a power law
+scaling similar to that observed in LLMs themselves. In January 2025, the
+router we trained based on this methodology achieved the \#1 spot in the
+Chatbot Arena leaderboard. Our code is available at this GitHub link:
+https://github.com/lmarena/p2l.
 </summary>
     <author>
-      <name>Michael Luo</name>
+      <name>Evan Frick</name>
     </author>
     <author>
-      <name>Xiaoxiang Shi</name>
+      <name>Connor Chen</name>
     </author>
     <author>
-      <name>Colin Cai</name>
+      <name>Joseph Tennyson</name>
     </author>
     <author>
-      <name>Tianjun Zhang</name>
+      <name>Tianle Li</name>
     </author>
     <author>
-      <name>Justin Wong</name>
+      <name>Wei-Lin Chiang</name>
     </author>
     <author>
-      <name>Yichuan Wang</name>
-    </author>
-    <author>
-      <name>Chi Wang</name>
-    </author>
-    <author>
-      <name>Yanping Huang</name>
-    </author>
-    <author>
-      <name>Zhifeng Chen</name>
-    </author>
-    <author>
-      <name>Joseph E. Gonzalez</name>
+      <name>Anastasios N. Angelopoulos</name>
     </author>
     <author>
       <name>Ion Stoica</name>
     </author>
-    <link href="http://arxiv.org/abs/2502.13965v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.13965v1" rel="related" type="application/pdf"/>
+    <link href="http://arxiv.org/abs/2502.14855v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.14855v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2502.13964v1</id>
-    <updated>2025-02-19T18:59:17Z</updated>
-    <published>2025-02-19T18:59:17Z</published>
-    <title>A Training-Free Framework for Precise Mobile Manipulation of Small
-  Everyday Objects</title>
-    <summary>  Many everyday mobile manipulation tasks require precise interaction with
-small objects, such as grasping a knob to open a cabinet or pressing a light
-switch. In this paper, we develop Servoing with Vision Models (SVM), a
-closed-loop training-free framework that enables a mobile manipulator to tackle
-such precise tasks involving the manipulation of small objects. SVM employs an
-RGB-D wrist camera and uses visual servoing for control. Our novelty lies in
-the use of state-of-the-art vision models to reliably compute 3D targets from
-the wrist image for diverse tasks and under occlusion due to the end-effector.
-To mitigate occlusion artifacts, we employ vision models to out-paint the
-end-effector thereby significantly enhancing target localization. We
-demonstrate that aided by out-painting methods, open-vocabulary object
-detectors can serve as a drop-in module to identify semantic targets (e.g.
-knobs) and point tracking methods can reliably track interaction sites
-indicated by user clicks. This training-free method obtains an 85% zero-shot
-success rate on manipulating unseen objects in novel environments in the real
-world, outperforming an open-loop control method and an imitation learning
-baseline trained on 1000+ demonstrations by an absolute success rate of 50%.
-</summary>
-    <author>
-      <name>Arjun Gupta</name>
-    </author>
-    <author>
-      <name>Rishik Sathua</name>
-    </author>
-    <author>
-      <name>Saurabh Gupta</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project webpage: https://arjung128.github.io/svm</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.13964v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.13964v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2502.13963v1</id>
-    <updated>2025-02-19T18:59:15Z</updated>
-    <published>2025-02-19T18:59:15Z</published>
-    <title>MuDAF: Long-Context Multi-Document Attention Focusing through
-  Contrastive Learning on Attention Heads</title>
-    <summary>  Large Language Models (LLMs) frequently show distracted attention due to
-irrelevant information in the input, which severely impairs their long-context
-capabilities. Inspired by recent studies on the effectiveness of retrieval
-heads in long-context factutality, we aim at addressing this distraction issue
-through improving such retrieval heads directly. We propose Multi-Document
-Attention Focusing (MuDAF), a novel method that explicitly optimizes the
-attention distribution at the head level through contrastive learning.
-According to the experimental results, MuDAF can significantly improve the
-long-context question answering performance of LLMs, especially in
-multi-document question answering. Extensive evaluations on retrieval scores
-and attention visualizations show that MuDAF possesses great potential in
-making attention heads more focused on relevant information and reducing
-attention distractions.
-</summary>
-    <author>
-      <name>Weihao Liu</name>
-    </author>
-    <author>
-      <name>Ning Wu</name>
-    </author>
-    <author>
-      <name>Shiping Yang</name>
-    </author>
-    <author>
-      <name>Wenbiao Ding</name>
-    </author>
-    <author>
-      <name>Shining Liang</name>
-    </author>
-    <author>
-      <name>Ming Gong</name>
-    </author>
-    <author>
-      <name>Dongmei Zhang</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">18 pages</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.13963v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.13963v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
