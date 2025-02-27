@@ -3,254 +3,235 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-02-25T00:00:00-05:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">407321</opensearch:totalResults>
+  <updated>2025-02-26T00:00:00-05:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">407655</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2502.17437v1</id>
-    <updated>2025-02-24T18:59:56Z</updated>
-    <published>2025-02-24T18:59:56Z</published>
-    <title>Fractal Generative Models</title>
-    <summary>  Modularization is a cornerstone of computer science, abstracting complex
-functions into atomic building blocks. In this paper, we introduce a new level
-of modularization by abstracting generative models into atomic generative
-modules. Analogous to fractals in mathematics, our method constructs a new type
-of generative model by recursively invoking atomic generative modules,
-resulting in self-similar fractal architectures that we call fractal generative
-models. As a running example, we instantiate our fractal framework using
-autoregressive models as the atomic generative modules and examine it on the
-challenging task of pixel-by-pixel image generation, demonstrating strong
-performance in both likelihood estimation and generation quality. We hope this
-work could open a new paradigm in generative modeling and provide a fertile
-ground for future research. Code is available at
-https://github.com/LTH14/fractalgen.
+    <id>http://arxiv.org/abs/2502.18464v1</id>
+    <updated>2025-02-25T18:59:58Z</updated>
+    <published>2025-02-25T18:59:58Z</published>
+    <title>Unveiling the Aromatic and Aliphatic Universe at Redshifts
+  $z\sim$0.2--0.5 with JWST/NIRCam</title>
+    <summary>  Utilizing deep NIRCam/WFSS data from JWST's FRESCO program, we
+spectroscopically survey the 3.3 $\mu m$ aromatic and 3.4 $\mu m$ aliphatic
+C--H stretching emission bands of polycyclic aromatic hydrocarbon (PAH)
+molecules in galaxies at redshifts $z$$\sim$0.2--0.5. Unlike pre-JWST studies,
+largely limited to infrared (IR)-bright galaxies ($L_{\rm
+IR}\gtrsim10^{11}~L_\odot$) at $z\lesssim0.1$, we probe 200 galaxies down to
+$L_{\rm IR}$$\sim$$10^{8.5}$--$10^{10}~L_\odot$ well beyond the local Universe.
+The 3.3 $\mu m$ emission is detected at $\geq$3-$\sigma$ in 88 out of 187
+galaxies, correlating tightly with galaxy IR luminosity and star formation rate
+(SFR) and confirming the 3.3 $\mu m$ PAH as a viable SFR tracer. Despite a
+large scatter, the 3.3 $\mu m$-to-IR luminosity ratio ($L_{3.3}/L_{\rm IR}$)
+exhibits a strong metallicity dependence with a drop of $L_{3.3}/L_{\rm IR}$ by
+a factor of $\gtrsim10$ at 12+log(O/H)$\sim$8.4--8.5 towards lower
+metallicities. The 3.4 $\mu m$ emission is detected in 37 out of 159 galaxies,
+with the 3.4 $\mu m$-to-3.3 $\mu m$ luminosity ratio ($L_{3.4}/L_{3.3}$)
+spanning from $\sim$0.05 to $\sim$0.58 (median $\sim$0.19), corresponding to
+PAH aliphatic fractions of $\sim$0.78%--8.3% (median $\sim$2.9%) in terms of
+fractional carbon atoms in aliphatic units. While $L_{3.4}/L_{3.3}$ does not
+depend significantly on redshift, stellar mass, metallicity, or galaxy
+morphology, it does decrease with various SFR tracers, suggesting that
+ultraviolet photons in active star-forming regions may strip aliphatic
+sidegroups from PAH molecules. Our study showcases the unique power of JWST's
+NIRCam/WFSS to systematically map PAH aromatic and aliphatic content in
+statistically significant, less-biased galaxy samples, providing critical
+insights into PAH chemistry and its connection to galaxy properties.
 </summary>
     <author>
-      <name>Tianhong Li</name>
+      <name>Jianwei Lyu</name>
     </author>
     <author>
-      <name>Qinyi Sun</name>
+      <name>Xuejuan Yang</name>
     </author>
     <author>
-      <name>Lijie Fan</name>
+      <name>Aigen Li</name>
     </author>
     <author>
-      <name>Kaiming He</name>
+      <name>Fengwu Sun</name>
     </author>
-    <link href="http://arxiv.org/abs/2502.17437v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.17437v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>George H. Rieke</name>
+    </author>
+    <author>
+      <name>Stacey Alberts</name>
+    </author>
+    <author>
+      <name>Irene Shivaei</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">14 pages, 8 figures, 2 tables; submitted to ApJ</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.18464v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.18464v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.18463v1</id>
+    <updated>2025-02-25T18:59:46Z</updated>
+    <published>2025-02-25T18:59:46Z</published>
+    <title>Allocating Variance to Maximize Expectation</title>
+    <summary>  We design efficient approximation algorithms for maximizing the expectation
+of the supremum of families of Gaussian random variables. In particular, let
+$\mathrm{OPT}:=\max_{\sigma_1,\cdots,\sigma_n}\mathbb{E}\left[\sum_{j=1}^{m}\max_{i\in
+S_j} X_i\right]$, where $X_i$ are Gaussian, $S_j\subset[n]$ and
+$\sum_i\sigma_i^2=1$, then our theoretical results include:
+  - We characterize the optimal variance allocation -- it concentrates on a
+small subset of variables as $|S_j|$ increases,
+  - A polynomial time approximation scheme (PTAS) for computing $\mathrm{OPT}$
+when $m=1$, and
+  - An $O(\log n)$ approximation algorithm for computing $\mathrm{OPT}$ for
+general $m&gt;1$.
+  Such expectation maximization problems occur in diverse applications, ranging
+from utility maximization in auctions markets to learning mixture models in
+quantitative genetics.
+</summary>
+    <author>
+      <name>Renato Purita Paes Leme</name>
+    </author>
+    <author>
+      <name>Cliff Stein</name>
+    </author>
+    <author>
+      <name>Yifeng Teng</name>
+    </author>
+    <author>
+      <name>Pratik Worah</name>
+    </author>
+    <link href="http://arxiv.org/abs/2502.18463v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.18463v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2502.17436v1</id>
-    <updated>2025-02-24T18:59:55Z</updated>
-    <published>2025-02-24T18:59:55Z</published>
-    <title>Towards Hierarchical Rectified Flow</title>
-    <summary>  We formulate a hierarchical rectified flow to model data distributions. It
-hierarchically couples multiple ordinary differential equations (ODEs) and
-defines a time-differentiable stochastic process that generates a data
-distribution from a known source distribution. Each ODE resembles the ODE that
-is solved in a classic rectified flow, but differs in its domain, i.e.,
-location, velocity, acceleration, etc. Unlike the classic rectified flow
-formulation, which formulates a single ODE in the location domain and only
-captures the expected velocity field (sufficient to capture a multi-modal data
-distribution), the hierarchical rectified flow formulation models the
-multi-modal random velocity field, acceleration field, etc., in their entirety.
-This more faithful modeling of the random velocity field enables integration
-paths to intersect when the underlying ODE is solved during data generation.
-Intersecting paths in turn lead to integration trajectories that are more
-straight than those obtained in the classic rectified flow formulation, where
-integration paths cannot intersect. This leads to modeling of data
-distributions with fewer neural function evaluations. We empirically verify
-this on synthetic 1D and 2D data as well as MNIST, CIFAR-10, and ImageNet-32
-data. Code is available at: https://riccizz.github.io/HRF/.
+    <id>http://arxiv.org/abs/2502.18462v1</id>
+    <updated>2025-02-25T18:59:13Z</updated>
+    <published>2025-02-25T18:59:13Z</published>
+    <title>Scalable Equilibrium Sampling with Sequential Boltzmann Generators</title>
+    <summary>  Scalable sampling of molecular states in thermodynamic equilibrium is a
+long-standing challenge in statistical physics. Boltzmann generators tackle
+this problem by pairing powerful normalizing flows with importance sampling to
+obtain statistically independent samples under the target distribution. In this
+paper, we extend the Boltzmann generator framework and introduce Sequential
+Boltzmann generators (SBG) with two key improvements. The first is a highly
+efficient non-equivariant Transformer-based normalizing flow operating directly
+on all-atom Cartesian coordinates. In contrast to equivariant continuous flows
+of prior methods, we leverage exactly invertible non-equivariant architectures
+which are highly efficient both during sample generation and likelihood
+computation. As a result, this unlocks more sophisticated inference strategies
+beyond standard importance sampling. More precisely, as a second key
+improvement we perform inference-time scaling of flow samples using annealed
+Langevin dynamics which transports samples toward the target distribution
+leading to lower variance (annealed) importance weights which enable higher
+fidelity resampling with sequential Monte Carlo. SBG achieves state-of-the-art
+performance w.r.t. all metrics on molecular systems, demonstrating the first
+equilibrium sampling in Cartesian coordinates of tri, tetra, and hexapeptides
+that were so far intractable for prior Boltzmann generators.
 </summary>
     <author>
-      <name>Yichi Zhang</name>
+      <name>Charlie B. Tan</name>
     </author>
     <author>
-      <name>Yici Yan</name>
+      <name>Avishek Joey Bose</name>
     </author>
     <author>
-      <name>Alex Schwing</name>
+      <name>Chen Lin</name>
     </author>
     <author>
-      <name>Zhizhen Zhao</name>
+      <name>Leon Klein</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">ICLR 2025; Project Page: https://riccizz.github.io/HRF/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.17436v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.17436v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Michael M. Bronstein</name>
+    </author>
+    <author>
+      <name>Alexander Tong</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Preprint</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.18462v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.18462v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2502.17433v1</id>
-    <updated>2025-02-24T18:59:10Z</updated>
-    <published>2025-02-24T18:59:10Z</published>
-    <title>Dynamical phases of short-term memory mechanisms in RNNs</title>
-    <summary>  Short-term memory is essential for cognitive processing, yet our
-understanding of its neural mechanisms remains unclear. A key focus in
-neuroscience has been the study of sequential activity patterns, where neurons
-fire one after another within large networks, to explain how information is
-maintained. While recurrent connections were shown to drive sequential
-dynamics, a mechanistic understanding of this process still remains unknown. In
-this work, we first introduce two unique mechanisms that can subserve
-short-term memory: slow-point manifolds generating direct sequences or limit
-cycles providing temporally localized approximations. Then, through analytical
-models, we identify fundamental properties that govern the selection of these
-mechanisms, \textit{i.e.}, we derive theoretical scaling laws for critical
-learning rates as a function of the delay period length, beyond which no
-learning is possible. We empirically verify these observations by training and
-evaluating more than 35,000 recurrent neural networks (RNNs) that we will
-publicly release upon publication. Overall, our work provides new insights into
-short-term memory mechanisms and proposes experimentally testable predictions
-for systems neuroscience.
-</summary>
-    <author>
-      <name>Bariscan Kurtkaya</name>
-    </author>
-    <author>
-      <name>Fatih Dinc</name>
-    </author>
-    <author>
-      <name>Mert Yuksekgonul</name>
-    </author>
-    <author>
-      <name>Marta Blanco-Pozo</name>
-    </author>
-    <author>
-      <name>Ege Cirakman</name>
-    </author>
-    <author>
-      <name>Mark Schnitzer</name>
-    </author>
-    <author>
-      <name>Yucel Yemez</name>
-    </author>
-    <author>
-      <name>Hidenori Tanaka</name>
-    </author>
-    <author>
-      <name>Peng Yuan</name>
-    </author>
-    <author>
-      <name>Nina Miolane</name>
-    </author>
-    <link href="http://arxiv.org/abs/2502.17433v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.17433v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="q-bio.NC" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="q-bio.NC" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2502.17432v1</id>
-    <updated>2025-02-24T18:59:07Z</updated>
-    <published>2025-02-24T18:59:07Z</published>
-    <title>FACTR: Force-Attending Curriculum Training for Contact-Rich Policy
-  Learning</title>
-    <summary>  Many contact-rich tasks humans perform, such as box pickup or rolling dough,
-rely on force feedback for reliable execution. However, this force information,
-which is readily available in most robot arms, is not commonly used in
-teleoperation and policy learning. Consequently, robot behavior is often
-limited to quasi-static kinematic tasks that do not require intricate
-force-feedback. In this paper, we first present a low-cost, intuitive,
-bilateral teleoperation setup that relays external forces of the follower arm
-back to the teacher arm, facilitating data collection for complex, contact-rich
-tasks. We then introduce FACTR, a policy learning method that employs a
-curriculum which corrupts the visual input with decreasing intensity throughout
-training. The curriculum prevents our transformer-based policy from
-over-fitting to the visual input and guides the policy to properly attend to
-the force modality. We demonstrate that by fully utilizing the force
-information, our method significantly improves generalization to unseen objects
-by 43\% compared to baseline approaches without a curriculum. Video results and
-instructions at https://jasonjzliu.com/factr/
-</summary>
-    <author>
-      <name>Jason Jingzhou Liu</name>
-    </author>
-    <author>
-      <name>Yulong Li</name>
-    </author>
-    <author>
-      <name>Kenneth Shaw</name>
-    </author>
-    <author>
-      <name>Tony Tao</name>
-    </author>
-    <author>
-      <name>Ruslan Salakhutdinov</name>
-    </author>
-    <author>
-      <name>Deepak Pathak</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Website at https://jasonjzliu.com/factr/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.17432v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.17432v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2502.17429v1</id>
-    <updated>2025-02-24T18:58:58Z</updated>
-    <published>2025-02-24T18:58:58Z</published>
-    <title>CLIMB-3D: Continual Learning for Imbalanced 3D Instance Segmentation</title>
-    <summary>  While 3D instance segmentation has made significant progress, current methods
-struggle to address realistic scenarios where new categories emerge over time
-with natural class imbalance. This limitation stems from existing datasets,
-which typically feature few well-balanced classes. Although few datasets
-include unbalanced class annotations, they lack the diverse incremental
-scenarios necessary for evaluating methods under incremental settings.
-Addressing these challenges requires frameworks that handle both incremental
-learning and class imbalance. However, existing methods for 3D incremental
-segmentation rely heavily on large exemplar replay, focusing only on
-incremental learning while neglecting class imbalance. Moreover,
-frequency-based tuning for balanced learning is impractical in these setups due
-to the lack of prior class statistics. To overcome these limitations, we
-propose a framework to tackle both \textbf{C}ontinual \textbf{L}earning and
-class \textbf{Imb}alance for \textbf{3D} instance segmentation
-(\textbf{CLIMB-3D}). Our proposed approach combines Exemplar Replay (ER),
-Knowledge Distillation (KD), and a novel Imbalance Correction (IC) module.
-Unlike prior methods, our framework minimizes ER usage, with KD preventing
-forgetting and supporting the IC module in compiling past class statistics to
-balance learning of rare classes during incremental updates. To evaluate our
-framework, we design three incremental scenarios based on class frequency,
-semantic similarity, and random grouping that aim to mirror real-world dynamics
-in 3D environments. Experimental results show that our proposed framework
-achieves state-of-the-art performance, with an increase of up to 16.76\% in mAP
-compared to the baseline. Code will be available at:
-\href{https://github.com/vgthengane/CLIMB3D}{https://github.com/vgthengane/CLIMB3D}
+    <id>http://arxiv.org/abs/2502.18461v1</id>
+    <updated>2025-02-25T18:59:12Z</updated>
+    <published>2025-02-25T18:59:12Z</published>
+    <title>K-LoRA: Unlocking Training-Free Fusion of Any Subject and Style LoRAs</title>
+    <summary>  Recent studies have explored combining different LoRAs to jointly generate
+learned style and content. However, existing methods either fail to effectively
+preserve both the original subject and style simultaneously or require
+additional training. In this paper, we argue that the intrinsic properties of
+LoRA can effectively guide diffusion models in merging learned subject and
+style. Building on this insight, we propose K-LoRA, a simple yet effective
+training-free LoRA fusion approach. In each attention layer, K-LoRA compares
+the Top-K elements in each LoRA to be fused, determining which LoRA to select
+for optimal fusion. This selection mechanism ensures that the most
+representative features of both subject and style are retained during the
+fusion process, effectively balancing their contributions. Experimental results
+demonstrate that the proposed method effectively integrates the subject and
+style information learned by the original LoRAs, outperforming state-of-the-art
+training-based approaches in both qualitative and quantitative results.
 </summary>
     <author>
-      <name>Vishal Thengane</name>
+      <name>Ziheng Ouyang</name>
     </author>
     <author>
-      <name>Jean Lahoud</name>
+      <name>Zhen Li</name>
     </author>
     <author>
-      <name>Hisham Cholakkal</name>
+      <name>Qibin Hou</name>
     </author>
-    <author>
-      <name>Rao Muhammad Anwer</name>
-    </author>
-    <author>
-      <name>Lu Yin</name>
-    </author>
-    <author>
-      <name>Xiatian Zhu</name>
-    </author>
-    <author>
-      <name>Salman Khan</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Code: https://github.com/vgthengane/CLIMB3D</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.17429v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.17429v1" rel="related" type="application/pdf"/>
+    <link href="http://arxiv.org/abs/2502.18461v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.18461v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.18460v1</id>
+    <updated>2025-02-25T18:59:07Z</updated>
+    <published>2025-02-25T18:59:07Z</published>
+    <title>DRAMA: Diverse Augmentation from Large Language Models to Smaller Dense
+  Retrievers</title>
+    <summary>  Large language models (LLMs) have demonstrated strong effectiveness and
+robustness while fine-tuned as dense retrievers. However, their large parameter
+size brings significant inference time computational challenges, including high
+encoding costs for large-scale corpora and increased query latency, limiting
+their practical deployment. While smaller retrievers offer better efficiency,
+they often fail to generalize effectively with limited supervised fine-tuning
+data. In this work, we introduce DRAMA, a training framework that leverages
+LLMs to train smaller generalizable dense retrievers. In particular, we adopt
+pruned LLMs as the backbone and train on diverse LLM-augmented data in a
+single-stage contrastive learning setup. Experiments show that DRAMA offers
+better multilingual and long-context capabilities than traditional
+encoder-based retrievers, and achieves strong performance across multiple tasks
+and languages. These highlight the potential of connecting the training of
+smaller retrievers with the growing advancements in LLMs, bridging the gap
+between efficiency and generalization.
+</summary>
+    <author>
+      <name>Xueguang Ma</name>
+    </author>
+    <author>
+      <name>Xi Victoria Lin</name>
+    </author>
+    <author>
+      <name>Barlas Oguz</name>
+    </author>
+    <author>
+      <name>Jimmy Lin</name>
+    </author>
+    <author>
+      <name>Wen-tau Yih</name>
+    </author>
+    <author>
+      <name>Xilun Chen</name>
+    </author>
+    <link href="http://arxiv.org/abs/2502.18460v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.18460v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
