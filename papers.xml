@@ -3,308 +3,252 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-02-27T00:00:00-05:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">407970</opensearch:totalResults>
+  <updated>2025-02-28T00:00:00-05:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">408295</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2502.19417v1</id>
-    <updated>2025-02-26T18:58:41Z</updated>
-    <published>2025-02-26T18:58:41Z</published>
-    <title>Hi Robot: Open-Ended Instruction Following with Hierarchical
-  Vision-Language-Action Models</title>
-    <summary>  Generalist robots that can perform a range of different tasks in open-world
-settings must be able to not only reason about the steps needed to accomplish
-their goals, but also process complex instructions, prompts, and even feedback
-during task execution. Intricate instructions (e.g., "Could you make me a
-vegetarian sandwich?" or "I don't like that one") require not just the ability
-to physically perform the individual steps, but the ability to situate complex
-commands and feedback in the physical world. In this work, we describe a system
-that uses vision-language models in a hierarchical structure, first reasoning
-over complex prompts and user feedback to deduce the most appropriate next step
-to fulfill the task, and then performing that step with low-level actions. In
-contrast to direct instruction following methods that can fulfill simple
-commands ("pick up the cup"), our system can reason through complex prompts and
-incorporate situated feedback during task execution ("that's not trash"). We
-evaluate our system across three robotic platforms, including single-arm,
-dual-arm, and dual-arm mobile robots, demonstrating its ability to handle tasks
-such as cleaning messy tables, making sandwiches, and grocery shopping.
+    <id>http://arxiv.org/abs/2502.20398v1</id>
+    <updated>2025-02-27T18:59:59Z</updated>
+    <published>2025-02-27T18:59:59Z</published>
+    <title>A physically motivated galaxy size definition across different
+  state-of-the-art hydrodynamical simulations</title>
+    <summary>  Galaxy sizes are a key parameter to distinguishing between different galaxy
+types and morphologies, reflecting their formation and assembly histories.
+Several methods define galaxy boundaries, often relying on light concentration
+or isophotal densities. However, these approaches were often constrained by
+observational limitations and did not necessarily provide a clear physical
+boundary for galaxy outskirts. With modern deep imaging surveys, a new
+physically motivated definition has emerged using the radial position of the
+star formation threshold as the galaxy size, approximated by the stellar mass
+density contour at 1 Msun pc^-2 (R_1). We test this definition using three
+state-of-the-art hydrodynamical simulation suites, analyzing stellar surface
+density profiles across a wide range of stellar masses and redshifts. We
+measure the galaxy sizes according to this new definition and compare them with
+the most traditional size metric, the stellar half-mass radius. Our analysis
+demonstrates that the R_1-M_star relation exhibits consistent behaviour across
+both low and high-stellar mass galaxies, with remarkably low scatter. This
+relation is independent of redshift and holds across the three different
+cosmological hydrodynamical simulation suites, highlighting its robustness to
+variations in galaxy formation models. Furthermore, we explore the connection
+between a galaxy's total mass within R1 and its stellar mass, finding very
+little scatter in this relation. This suggests that R1 could serve as a
+reliable observational tracer for the galaxy's dynamical mass. The size-stellar
+mass relation proposed provides a reliable and physically motivated method for
+defining the outskirts of galaxies. This method remains consistent not only at
+z=0 but also throughout the evolutionary history of galaxies, offering a robust
+and meaningful framework for galaxy evolution studies.
 </summary>
     <author>
-      <name>Lucy Xiaoyang Shi</name>
+      <name>Elena Arjona-Galvez</name>
     </author>
     <author>
-      <name>Brian Ichter</name>
+      <name>Salvador Cardona-Barrero</name>
     </author>
     <author>
-      <name>Michael Equi</name>
+      <name>Robert J. J. Grand</name>
     </author>
     <author>
-      <name>Liyiming Ke</name>
+      <name>Arianna Di Cintio</name>
     </author>
     <author>
-      <name>Karl Pertsch</name>
+      <name>Claudio Dalla Vecchia</name>
     </author>
     <author>
-      <name>Quan Vuong</name>
+      <name>Jose A. Benavides</name>
     </author>
     <author>
-      <name>James Tanner</name>
+      <name>Andrea V. Maccio</name>
     </author>
     <author>
-      <name>Anna Walling</name>
+      <name>Noam Libeskind</name>
     </author>
     <author>
-      <name>Haohuan Wang</name>
+      <name>Alexander Knebe</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">11 pages, 8 figures, 1 table and 3 appendices</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.20398v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.20398v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.20396v1</id>
+    <updated>2025-02-27T18:59:52Z</updated>
+    <published>2025-02-27T18:59:52Z</published>
+    <title>Sim-to-Real Reinforcement Learning for Vision-Based Dexterous
+  Manipulation on Humanoids</title>
+    <summary>  Reinforcement learning has delivered promising results in achieving human- or
+even superhuman-level capabilities across diverse problem domains, but success
+in dexterous robot manipulation remains limited. This work investigates the key
+challenges in applying reinforcement learning to solve a collection of
+contact-rich manipulation tasks on a humanoid embodiment. We introduce novel
+techniques to overcome the identified challenges with empirical validation. Our
+main contributions include an automated real-to-sim tuning module that brings
+the simulated environment closer to the real world, a generalized reward design
+scheme that simplifies reward engineering for long-horizon contact-rich
+manipulation tasks, a divide-and-conquer distillation process that improves the
+sample efficiency of hard-exploration problems while maintaining sim-to-real
+performance, and a mixture of sparse and dense object representations to bridge
+the sim-to-real perception gap. We show promising results on three humanoid
+dexterous manipulation tasks, with ablation studies on each technique. Our work
+presents a successful approach to learning humanoid dexterous manipulation
+using sim-to-real reinforcement learning, achieving robust generalization and
+high performance without the need for human demonstration.
+</summary>
+    <author>
+      <name>Toru Lin</name>
     </author>
     <author>
-      <name>Niccolo Fusai</name>
+      <name>Kartik Sachdev</name>
     </author>
     <author>
-      <name>Adrian Li-Bell</name>
+      <name>Linxi Fan</name>
     </author>
     <author>
-      <name>Danny Driess</name>
+      <name>Jitendra Malik</name>
     </author>
     <author>
-      <name>Lachy Groom</name>
+      <name>Yuke Zhu</name>
     </author>
-    <author>
-      <name>Sergey Levine</name>
-    </author>
-    <author>
-      <name>Chelsea Finn</name>
-    </author>
-    <link href="http://arxiv.org/abs/2502.19417v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.19417v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page can be found at https://toruowo.github.io/recipe/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.20396v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.20396v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2502.19414v1</id>
-    <updated>2025-02-26T18:58:13Z</updated>
-    <published>2025-02-26T18:58:13Z</published>
-    <title>Can Language Models Falsify? Evaluating Algorithmic Reasoning with
-  Counterexample Creation</title>
-    <summary>  There is growing excitement about the potential of Language Models (LMs) to
-accelerate scientific discovery. Falsifying hypotheses is key to scientific
-progress, as it allows claims to be iteratively refined over time. This process
-requires significant researcher effort, reasoning, and ingenuity. Yet current
-benchmarks for LMs predominantly assess their ability to generate solutions
-rather than challenge them. We advocate for developing benchmarks that evaluate
-this inverse capability - creating counterexamples for subtly incorrect
-solutions. To demonstrate this approach, we start with the domain of
-algorithmic problem solving, where counterexamples can be evaluated
-automatically using code execution. Specifically, we introduce REFUTE, a
-dynamically updating benchmark that includes recent problems and incorrect
-submissions from programming competitions, where human experts successfully
-identified counterexamples. Our analysis finds that the best reasoning agents,
-even OpenAI o3-mini (high) with code execution feedback, can create
-counterexamples for only &lt;9% of incorrect solutions in REFUTE, even though
-ratings indicate its ability to solve up to 48% of these problems from scratch.
-We hope our work spurs progress in evaluating and enhancing LMs' ability to
-falsify incorrect solutions - a capability that is crucial for both
-accelerating research and making models self-improve through reliable
-reflective reasoning.
-</summary>
-    <author>
-      <name>Shiven Sinha</name>
-    </author>
-    <author>
-      <name>Shashwat Goel</name>
-    </author>
-    <author>
-      <name>Ponnurangam Kumaraguru</name>
-    </author>
-    <author>
-      <name>Jonas Geiping</name>
-    </author>
-    <author>
-      <name>Matthias Bethge</name>
-    </author>
-    <author>
-      <name>Ameya Prabhu</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Technical Report</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.19414v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.19414v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2502.19413v1</id>
-    <updated>2025-02-26T18:56:52Z</updated>
-    <published>2025-02-26T18:56:52Z</published>
-    <title>Project Alexandria: Towards Freeing Scientific Knowledge from Copyright
-  Burdens via LLMs</title>
-    <summary>  Paywalls, licenses and copyright rules often restrict the broad dissemination
-and reuse of scientific knowledge. We take the position that it is both legally
-and technically feasible to extract the scientific knowledge in scholarly
-texts. Current methods, like text embeddings, fail to reliably preserve factual
-content, and simple paraphrasing may not be legally sound. We urge the
-community to adopt a new idea: convert scholarly documents into Knowledge Units
-using LLMs. These units use structured data capturing entities, attributes and
-relationships without stylistic content. We provide evidence that Knowledge
-Units: (1) form a legally defensible framework for sharing knowledge from
-copyrighted research texts, based on legal analyses of German copyright law and
-U.S. Fair Use doctrine, and (2) preserve most (~95%) factual knowledge from
-original text, measured by MCQ performance on facts from the original
-copyrighted text across four research domains. Freeing scientific knowledge
-from copyright promises transformative benefits for scientific research and
-education by allowing language models to reuse important facts from copyrighted
-text. To support this, we share open-source tools for converting research
-documents into Knowledge Units. Overall, our work posits the feasibility of
-democratizing access to scientific knowledge while respecting copyright.
-</summary>
-    <author>
-      <name>Christoph Schuhmann</name>
-    </author>
-    <author>
-      <name>Gollam Rabby</name>
-    </author>
-    <author>
-      <name>Ameya Prabhu</name>
-    </author>
-    <author>
-      <name>Tawsif Ahmed</name>
-    </author>
-    <author>
-      <name>Andreas Hochlehnert</name>
-    </author>
-    <author>
-      <name>Huu Nguyen</name>
-    </author>
-    <author>
-      <name>Nick Akinci Heidrich</name>
-    </author>
-    <author>
-      <name>Ludwig Schmidt</name>
-    </author>
-    <author>
-      <name>Robert Kaczmarczyk</name>
-    </author>
-    <author>
-      <name>Sören Auer</name>
-    </author>
-    <author>
-      <name>Jenia Jitsev</name>
-    </author>
-    <author>
-      <name>Matthias Bethge</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Technical Report</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.19413v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.19413v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2502.19411v1</id>
-    <updated>2025-02-26T18:55:42Z</updated>
-    <published>2025-02-26T18:55:42Z</published>
-    <title>Code to Think, Think to Code: A Survey on Code-Enhanced Reasoning and
-  Reasoning-Driven Code Intelligence in LLMs</title>
-    <summary>  In large language models (LLMs), code and reasoning reinforce each other:
-code offers an abstract, modular, and logic-driven structure that supports
-reasoning, while reasoning translates high-level goals into smaller, executable
-steps that drive more advanced code intelligence. In this study, we examine how
-code serves as a structured medium for enhancing reasoning: it provides
-verifiable execution paths, enforces logical decomposition, and enables runtime
-validation. We also explore how improvements in reasoning have transformed code
-intelligence from basic completion to advanced capabilities, enabling models to
-address complex software engineering tasks through planning and debugging.
-Finally, we identify key challenges and propose future research directions to
-strengthen this synergy, ultimately improving LLM's performance in both areas.
-</summary>
-    <author>
-      <name>Dayu Yang</name>
-    </author>
-    <author>
-      <name>Tianyang Liu</name>
-    </author>
-    <author>
-      <name>Daoan Zhang</name>
-    </author>
-    <author>
-      <name>Antoine Simoulin</name>
-    </author>
-    <author>
-      <name>Xiaoyi Liu</name>
-    </author>
-    <author>
-      <name>Yuwei Cao</name>
-    </author>
-    <author>
-      <name>Zhaopu Teng</name>
-    </author>
-    <author>
-      <name>Xin Qian</name>
-    </author>
-    <author>
-      <name>Grey Yang</name>
-    </author>
-    <author>
-      <name>Jiebo Luo</name>
-    </author>
-    <author>
-      <name>Julian McAuley</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Repo: https://github.com/dayuyang1999/Awesome-Code-Reasoning</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.19411v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.19411v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2502.19409v1</id>
-    <updated>2025-02-26T18:55:06Z</updated>
-    <published>2025-02-26T18:55:06Z</published>
-    <title>ImageChain: Advancing Sequential Image-to-Text Reasoning in Multimodal
-  Large Language Models</title>
-    <summary>  Reasoning over sequences of images remains a challenge for multimodal large
-language models (MLLMs). While recent models incorporate multi-image data
-during pre-training, they still struggle to recognize sequential structures,
-often treating images independently. This work introduces ImageChain, a
-framework that enhances MLLMs with sequential reasoning capabilities over image
-data by modeling visual sequences as a multi-turn conversation. In ImageChain,
-images are interleaved with corresponding textual descriptions to form a
-controlled dialogue that explicitly captures temporal dependencies and
-narrative progression. Our method optimizes for the task of next-scene
-description, where the model generates a context-aware description of an
-upcoming scene based on preceding visual and textual cues. We demonstrate that
-our approach improves performance on the next-scene description task --
-achieving an average improvement from 3.7% to 19% in SimRate, a metric that
-quantifies semantic similarity to human-annotated ground truths. Moreover,
-ImageChain achieves robust zero-shot out-of-domain performance in applications
-ranging from comics to robotics. Extensive experiments validate that
-instruction-tuning in a multimodal, multi-turn conversation design is key to
-bridging the gap between static image understanding and temporally-aware
-reasoning.
-</summary>
-    <author>
-      <name>Danae Sánchez Villegas</name>
-    </author>
-    <author>
-      <name>Ingo Ziegler</name>
-    </author>
-    <author>
-      <name>Desmond Elliott</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Code, dataset, and checkpoints are publicly available at
-  https://github.com/danaesavi/ImageChain</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.19409v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.19409v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.20394v1</id>
+    <updated>2025-02-27T18:59:32Z</updated>
+    <published>2025-02-27T18:59:32Z</published>
+    <title>Superconductivity in doped planar Dirac insulators: A renormalization
+  group study</title>
+    <summary>  From a leading-order unbiased renormalization group analysis we here showcase
+the emergence of superconductivity (including the topological ones) from purely
+repulsive electron-electron interactions in two-dimensional doped Dirac
+insulators, featuring a Fermi surface. In the absence of chemical doping, such
+systems describe quantum anomalous or spin Hall and normal insulators.
+Otherwise a simply connected Fermi surface becomes annular deep inside the
+topological regime. By considering all symmetry allowed repulsive local
+four-fermion interactions, we show that the nature of the resulting
+superconducting states at low temperature follows certain Clifford algebraic
+selection rules, irrespective of the underlying Fermi surface topology. Within
+the framework of a microscopic Hubbard model, on-site repulsion among fermions
+with opposite orbitals (spin projections) typically favors topological $p$-wave
+(conventional $s$-wave) pairing. Theoretically predicted superconductivity can
+in principle be observed in experiments once the promising candidate materials
+for quantum anomalous and spin Hall insulators are doped to foster Fermi
+surfaces.
+</summary>
+    <author>
+      <name>Sk Asrap Murshed</name>
+    </author>
+    <author>
+      <name>Sanjib Kumar Das</name>
+    </author>
+    <author>
+      <name>Bitan Roy</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">21 Pages, 9 Figures, and 4 Tables</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.20394v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.20394v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cond-mat.supr-con" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.supr-con" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.mes-hall" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.mtrl-sci" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.str-el" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.20395v1</id>
+    <updated>2025-02-27T18:59:32Z</updated>
+    <published>2025-02-27T18:59:32Z</published>
+    <title>R2-T2: Re-Routing in Test-Time for Multimodal Mixture-of-Experts</title>
+    <summary>  In large multimodal models (LMMs), the perception of non-language modalities
+(e.g., visual representations) is usually not on par with the large language
+models (LLMs)' powerful reasoning capabilities, deterring LMMs' performance on
+challenging downstream tasks. This weakness has been recently mitigated by
+replacing the vision encoder with a mixture-of-experts (MoE), which provides
+rich, multi-granularity, and diverse representations required by diverse
+downstream tasks. The performance of multimodal MoE largely depends on its
+router, which reweights and mixes the representations of different experts for
+each input. However, we find that the end-to-end trained router does not always
+produce the optimal routing weights for every test sample. To bridge the gap,
+we propose a novel and efficient method "Re-Routing in Test-Time(R2-T2) that
+locally optimizes the vector of routing weights in test-time by moving it
+toward those vectors of the correctly predicted samples in a neighborhood of
+the test sample. We propose three R2-T2 strategies with different optimization
+objectives and neighbor-search spaces. R2-T2 consistently and greatly improves
+state-of-the-art LMMs' performance on challenging benchmarks of diverse tasks,
+without training any base-model parameters.
+</summary>
+    <author>
+      <name>Zhongyang Li</name>
+    </author>
+    <author>
+      <name>Ziyue Li</name>
+    </author>
+    <author>
+      <name>Tianyi Zhou</name>
+    </author>
+    <link href="http://arxiv.org/abs/2502.20395v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.20395v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.20393v1</id>
+    <updated>2025-02-27T18:59:29Z</updated>
+    <published>2025-02-27T18:59:29Z</published>
+    <title>Walking the Web of Concept-Class Relationships in Incrementally Trained
+  Interpretable Models</title>
+    <summary>  Concept-based methods have emerged as a promising direction to develop
+interpretable neural networks in standard supervised settings. However, most
+works that study them in incremental settings assume either a static concept
+set across all experiences or assume that each experience relies on a distinct
+set of concepts. In this work, we study concept-based models in a more
+realistic, dynamic setting where new classes may rely on older concepts in
+addition to introducing new concepts themselves. We show that concepts and
+classes form a complex web of relationships, which is susceptible to
+degradation and needs to be preserved and augmented across experiences. We
+introduce new metrics to show that existing concept-based models cannot
+preserve these relationships even when trained using methods to prevent
+catastrophic forgetting, since they cannot handle forgetting at concept, class,
+and concept-class relationship levels simultaneously. To address these issues,
+we propose a novel method - MuCIL - that uses multimodal concepts to perform
+classification without increasing the number of trainable parameters across
+experiences. The multimodal concepts are aligned to concepts provided in
+natural language, making them interpretable by design. Through extensive
+experimentation, we show that our approach obtains state-of-the-art
+classification performance compared to other concept-based models, achieving
+over 2$\times$ the classification performance in some cases. We also study the
+ability of our model to perform interventions on concepts, and show that it can
+localize visual concepts in input images, providing post-hoc interpretations.
+</summary>
+    <author>
+      <name>Susmit Agrawal</name>
+    </author>
+    <author>
+      <name>Deepika Vemuri</name>
+    </author>
+    <author>
+      <name>Sri Siddarth Chakaravarthy P</name>
+    </author>
+    <author>
+      <name>Vineeth N. Balasubramanian</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">8 pages of main text, 6 figures in main text, 11 pages of Appendix,
+  published in AAAI 2025</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.20393v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.20393v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
