@@ -3,252 +3,232 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-03-02T00:00:00-05:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">408295</opensearch:totalResults>
+  <updated>2025-03-03T00:00:00-05:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">408554</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2502.20398v1</id>
-    <updated>2025-02-27T18:59:59Z</updated>
-    <published>2025-02-27T18:59:59Z</published>
-    <title>A physically motivated galaxy size definition across different
-  state-of-the-art hydrodynamical simulations</title>
-    <summary>  Galaxy sizes are a key parameter to distinguishing between different galaxy
-types and morphologies, reflecting their formation and assembly histories.
-Several methods define galaxy boundaries, often relying on light concentration
-or isophotal densities. However, these approaches were often constrained by
-observational limitations and did not necessarily provide a clear physical
-boundary for galaxy outskirts. With modern deep imaging surveys, a new
-physically motivated definition has emerged using the radial position of the
-star formation threshold as the galaxy size, approximated by the stellar mass
-density contour at 1 Msun pc^-2 (R_1). We test this definition using three
-state-of-the-art hydrodynamical simulation suites, analyzing stellar surface
-density profiles across a wide range of stellar masses and redshifts. We
-measure the galaxy sizes according to this new definition and compare them with
-the most traditional size metric, the stellar half-mass radius. Our analysis
-demonstrates that the R_1-M_star relation exhibits consistent behaviour across
-both low and high-stellar mass galaxies, with remarkably low scatter. This
-relation is independent of redshift and holds across the three different
-cosmological hydrodynamical simulation suites, highlighting its robustness to
-variations in galaxy formation models. Furthermore, we explore the connection
-between a galaxy's total mass within R1 and its stellar mass, finding very
-little scatter in this relation. This suggests that R1 could serve as a
-reliable observational tracer for the galaxy's dynamical mass. The size-stellar
-mass relation proposed provides a reliable and physically motivated method for
-defining the outskirts of galaxies. This method remains consistent not only at
-z=0 but also throughout the evolutionary history of galaxies, offering a robust
-and meaningful framework for galaxy evolution studies.
+    <id>http://arxiv.org/abs/2502.21321v1</id>
+    <updated>2025-02-28T18:59:54Z</updated>
+    <published>2025-02-28T18:59:54Z</published>
+    <title>LLM Post-Training: A Deep Dive into Reasoning Large Language Models</title>
+    <summary>  Large Language Models (LLMs) have transformed the natural language processing
+landscape and brought to life diverse applications. Pretraining on vast
+web-scale data has laid the foundation for these models, yet the research
+community is now increasingly shifting focus toward post-training techniques to
+achieve further breakthroughs. While pretraining provides a broad linguistic
+foundation, post-training methods enable LLMs to refine their knowledge,
+improve reasoning, enhance factual accuracy, and align more effectively with
+user intents and ethical considerations. Fine-tuning, reinforcement learning,
+and test-time scaling have emerged as critical strategies for optimizing LLMs
+performance, ensuring robustness, and improving adaptability across various
+real-world tasks. This survey provides a systematic exploration of
+post-training methodologies, analyzing their role in refining LLMs beyond
+pretraining, addressing key challenges such as catastrophic forgetting, reward
+hacking, and inference-time trade-offs. We highlight emerging directions in
+model alignment, scalable adaptation, and inference-time reasoning, and outline
+future research directions. We also provide a public repository to continually
+track developments in this fast-evolving field:
+https://github.com/mbzuai-oryx/Awesome-LLM-Post-training.
 </summary>
     <author>
-      <name>Elena Arjona-Galvez</name>
+      <name>Komal Kumar</name>
     </author>
     <author>
-      <name>Salvador Cardona-Barrero</name>
+      <name>Tajamul Ashraf</name>
     </author>
     <author>
-      <name>Robert J. J. Grand</name>
+      <name>Omkar Thawakar</name>
     </author>
     <author>
-      <name>Arianna Di Cintio</name>
+      <name>Rao Muhammad Anwer</name>
     </author>
     <author>
-      <name>Claudio Dalla Vecchia</name>
+      <name>Hisham Cholakkal</name>
     </author>
     <author>
-      <name>Jose A. Benavides</name>
+      <name>Mubarak Shah</name>
     </author>
     <author>
-      <name>Andrea V. Maccio</name>
+      <name>Ming-Hsuan Yang</name>
     </author>
     <author>
-      <name>Noam Libeskind</name>
+      <name>Phillip H. S. Torr</name>
     </author>
     <author>
-      <name>Alexander Knebe</name>
+      <name>Salman Khan</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">11 pages, 8 figures, 1 table and 3 appendices</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.20398v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.20398v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Fahad Shahbaz Khan</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">31 pages, 7 figures, 3 tables, 375 references</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.21321v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.21321v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2502.20396v1</id>
-    <updated>2025-02-27T18:59:52Z</updated>
-    <published>2025-02-27T18:59:52Z</published>
-    <title>Sim-to-Real Reinforcement Learning for Vision-Based Dexterous
-  Manipulation on Humanoids</title>
-    <summary>  Reinforcement learning has delivered promising results in achieving human- or
-even superhuman-level capabilities across diverse problem domains, but success
-in dexterous robot manipulation remains limited. This work investigates the key
-challenges in applying reinforcement learning to solve a collection of
-contact-rich manipulation tasks on a humanoid embodiment. We introduce novel
-techniques to overcome the identified challenges with empirical validation. Our
-main contributions include an automated real-to-sim tuning module that brings
-the simulated environment closer to the real world, a generalized reward design
-scheme that simplifies reward engineering for long-horizon contact-rich
-manipulation tasks, a divide-and-conquer distillation process that improves the
-sample efficiency of hard-exploration problems while maintaining sim-to-real
-performance, and a mixture of sparse and dense object representations to bridge
-the sim-to-real perception gap. We show promising results on three humanoid
-dexterous manipulation tasks, with ablation studies on each technique. Our work
-presents a successful approach to learning humanoid dexterous manipulation
-using sim-to-real reinforcement learning, achieving robust generalization and
-high performance without the need for human demonstration.
+    <id>http://arxiv.org/abs/2502.21320v1</id>
+    <updated>2025-02-28T18:59:52Z</updated>
+    <published>2025-02-28T18:59:52Z</published>
+    <title>TomoSelfDEQ: Self-Supervised Deep Equilibrium Learning for Sparse-Angle
+  CT Reconstruction</title>
+    <summary>  Deep learning has emerged as a powerful tool for solving inverse problems in
+imaging, including computed tomography (CT). However, most approaches require
+paired training data with ground truth images, which can be difficult to
+obtain, e.g., in medical applications. We present TomoSelfDEQ, a
+self-supervised Deep Equilibrium (DEQ) framework for sparse-angle CT
+reconstruction that trains directly on undersampled measurements. We establish
+theoretical guarantees showing that, under suitable assumptions, our
+self-supervised updates match those of fully-supervised training with a loss
+including the (possibly non-unitary) forward operator like the CT forward map.
+Numerical experiments on sparse-angle CT data confirm this finding, also
+demonstrating that TomoSelfDEQ outperforms existing self-supervised methods,
+achieving state-of-the-art results with as few as 16 projection angles.
 </summary>
     <author>
-      <name>Toru Lin</name>
+      <name>Tatiana A. Bubba</name>
     </author>
     <author>
-      <name>Kartik Sachdev</name>
+      <name>Matteo Santacesaria</name>
     </author>
     <author>
-      <name>Linxi Fan</name>
+      <name>Andrea Sebastiani</name>
+    </author>
+    <link href="http://arxiv.org/abs/2502.21320v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.21320v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.21317v1</id>
+    <updated>2025-02-28T18:59:28Z</updated>
+    <published>2025-02-28T18:59:28Z</published>
+    <title>Assessing zero-shot generalisation behaviour in graph-neural-network
+  interatomic potentials</title>
+    <summary>  With the rapidly growing availability of machine-learned interatomic
+potential (MLIP) models for chemistry, much current research focuses on the
+development of generally applicable and ``foundational'' MLIPs. An important
+question in this context is whether, and how well, such models can transfer
+from one application domain to another. Here, we assess this transferability
+for an MLIP model at the interface of materials and molecular chemistry.
+Specifically, we study GO-MACE-23, a model designed for the extended covalent
+network of graphene oxide, and quantify its zero-shot performance for small,
+isolated molecules and chemical reactions outside its direct scope--in direct
+comparison with a state-of-the-art model which has been trained in-domain. Our
+work provides quantitative insight into the transfer and generalisation ability
+of graph-neural-network potentials and, more generally, makes a step towards
+the more widespread applicability of MLIPs in chemistry.
+</summary>
+    <author>
+      <name>Chiheb Ben Mahmoud</name>
     </author>
     <author>
-      <name>Jitendra Malik</name>
+      <name>Zakariya El-Machachi</name>
     </author>
     <author>
-      <name>Yuke Zhu</name>
+      <name>Krystian A. Gierczak</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page can be found at https://toruowo.github.io/recipe/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.20396v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.20396v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>John L. A. Gardner</name>
+    </author>
+    <author>
+      <name>Volker L. Deringer</name>
+    </author>
+    <link href="http://arxiv.org/abs/2502.21317v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.21317v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.chem-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.chem-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.mtrl-sci" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.21313v1</id>
+    <updated>2025-02-28T18:54:51Z</updated>
+    <published>2025-02-28T18:54:51Z</published>
+    <title>Unsupervised Parameter Efficient Source-free Post-pretraining</title>
+    <summary>  Following the success in NLP, the best vision models are now in the billion
+parameter ranges. Adapting these large models to a target distribution has
+become computationally and economically prohibitive. Addressing this challenge,
+we introduce UpStep, an Unsupervised Parameter-efficient Source-free
+post-pretraining approach, designed to efficiently adapt a base model from a
+source domain to a target domain: i) we design a self-supervised training
+scheme to adapt a pretrained model on an unlabeled target domain in a setting
+where source domain data is unavailable. Such source-free setting comes with
+the risk of catastrophic forgetting, hence, ii) we propose center vector
+regularization (CVR), a set of auxiliary operations that minimize catastrophic
+forgetting and additionally reduces the computational cost by skipping
+backpropagation in 50\% of the training iterations. Finally iii) we perform
+this adaptation process in a parameter-efficient way by adapting the pretrained
+model through low-rank adaptation methods, resulting in a fraction of
+parameters to optimize. We utilize various general backbone architectures, both
+supervised and unsupervised, trained on Imagenet as our base model and adapt
+them to a diverse set of eight target domains demonstrating the adaptability
+and generalizability of our proposed approach.
+</summary>
+    <author>
+      <name>Abhishek Jha</name>
+    </author>
+    <author>
+      <name>Tinne Tuytelaars</name>
+    </author>
+    <author>
+      <name>Yuki M. Asano</name>
+    </author>
+    <link href="http://arxiv.org/abs/2502.21313v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.21313v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.SY" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2502.20394v1</id>
-    <updated>2025-02-27T18:59:32Z</updated>
-    <published>2025-02-27T18:59:32Z</published>
-    <title>Superconductivity in doped planar Dirac insulators: A renormalization
-  group study</title>
-    <summary>  From a leading-order unbiased renormalization group analysis we here showcase
-the emergence of superconductivity (including the topological ones) from purely
-repulsive electron-electron interactions in two-dimensional doped Dirac
-insulators, featuring a Fermi surface. In the absence of chemical doping, such
-systems describe quantum anomalous or spin Hall and normal insulators.
-Otherwise a simply connected Fermi surface becomes annular deep inside the
-topological regime. By considering all symmetry allowed repulsive local
-four-fermion interactions, we show that the nature of the resulting
-superconducting states at low temperature follows certain Clifford algebraic
-selection rules, irrespective of the underlying Fermi surface topology. Within
-the framework of a microscopic Hubbard model, on-site repulsion among fermions
-with opposite orbitals (spin projections) typically favors topological $p$-wave
-(conventional $s$-wave) pairing. Theoretically predicted superconductivity can
-in principle be observed in experiments once the promising candidate materials
-for quantum anomalous and spin Hall insulators are doped to foster Fermi
-surfaces.
+    <id>http://arxiv.org/abs/2502.21311v1</id>
+    <updated>2025-02-28T18:53:32Z</updated>
+    <published>2025-02-28T18:53:32Z</published>
+    <title>AutoComb: Automated Comb Sign Detector for 3D CTE Scans</title>
+    <summary>  Comb Sign is an important imaging biomarker to detect multiple
+gastrointestinal diseases. It shows up as increased blood flow along the
+intestinal wall indicating potential abnormality, which helps doctors diagnose
+inflammatory conditions. Despite its clinical significance, current detection
+methods are manual, time-intensive, and prone to subjective interpretation due
+to the need for multi-planar image-orientation. To the best of our knowledge,
+we are the first to propose a fully automated technique for the detection of
+Comb Sign from CTE scans. Our novel approach is based on developing a
+probabilistic map that shows areas of pathological hypervascularity by
+identifying fine vascular bifurcations and wall enhancement via processing
+through stepwise algorithmic modules. These modules include utilising deep
+learning segmentation model, a Gaussian Mixture Model (GMM), vessel extraction
+using vesselness filter, iterative probabilistic enhancement of vesselness via
+neighborhood maximization and a distance-based weighting scheme over the
+vessels. Experimental results demonstrate that our pipeline effectively
+identifies Comb Sign, offering an objective, accurate, and reliable tool to
+enhance diagnostic accuracy in Crohn's disease and related hypervascular
+conditions where Comb Sign is considered as one of the important biomarkers.
 </summary>
     <author>
-      <name>Sk Asrap Murshed</name>
+      <name>Shashwat Gupta</name>
     </author>
     <author>
-      <name>Sanjib Kumar Das</name>
+      <name>Sarthak Gupta</name>
     </author>
     <author>
-      <name>Bitan Roy</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">21 Pages, 9 Figures, and 4 Tables</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.20394v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.20394v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cond-mat.supr-con" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cond-mat.supr-con" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cond-mat.mes-hall" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cond-mat.mtrl-sci" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cond-mat.str-el" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2502.20395v1</id>
-    <updated>2025-02-27T18:59:32Z</updated>
-    <published>2025-02-27T18:59:32Z</published>
-    <title>R2-T2: Re-Routing in Test-Time for Multimodal Mixture-of-Experts</title>
-    <summary>  In large multimodal models (LMMs), the perception of non-language modalities
-(e.g., visual representations) is usually not on par with the large language
-models (LLMs)' powerful reasoning capabilities, deterring LMMs' performance on
-challenging downstream tasks. This weakness has been recently mitigated by
-replacing the vision encoder with a mixture-of-experts (MoE), which provides
-rich, multi-granularity, and diverse representations required by diverse
-downstream tasks. The performance of multimodal MoE largely depends on its
-router, which reweights and mixes the representations of different experts for
-each input. However, we find that the end-to-end trained router does not always
-produce the optimal routing weights for every test sample. To bridge the gap,
-we propose a novel and efficient method "Re-Routing in Test-Time(R2-T2) that
-locally optimizes the vector of routing weights in test-time by moving it
-toward those vectors of the correctly predicted samples in a neighborhood of
-the test sample. We propose three R2-T2 strategies with different optimization
-objectives and neighbor-search spaces. R2-T2 consistently and greatly improves
-state-of-the-art LMMs' performance on challenging benchmarks of diverse tasks,
-without training any base-model parameters.
-</summary>
-    <author>
-      <name>Zhongyang Li</name>
+      <name>Akshan Agrawal</name>
     </author>
     <author>
-      <name>Ziyue Li</name>
+      <name>Mahim Naaz</name>
     </author>
     <author>
-      <name>Tianyi Zhou</name>
-    </author>
-    <link href="http://arxiv.org/abs/2502.20395v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.20395v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2502.20393v1</id>
-    <updated>2025-02-27T18:59:29Z</updated>
-    <published>2025-02-27T18:59:29Z</published>
-    <title>Walking the Web of Concept-Class Relationships in Incrementally Trained
-  Interpretable Models</title>
-    <summary>  Concept-based methods have emerged as a promising direction to develop
-interpretable neural networks in standard supervised settings. However, most
-works that study them in incremental settings assume either a static concept
-set across all experiences or assume that each experience relies on a distinct
-set of concepts. In this work, we study concept-based models in a more
-realistic, dynamic setting where new classes may rely on older concepts in
-addition to introducing new concepts themselves. We show that concepts and
-classes form a complex web of relationships, which is susceptible to
-degradation and needs to be preserved and augmented across experiences. We
-introduce new metrics to show that existing concept-based models cannot
-preserve these relationships even when trained using methods to prevent
-catastrophic forgetting, since they cannot handle forgetting at concept, class,
-and concept-class relationship levels simultaneously. To address these issues,
-we propose a novel method - MuCIL - that uses multimodal concepts to perform
-classification without increasing the number of trainable parameters across
-experiences. The multimodal concepts are aligned to concepts provided in
-natural language, making them interpretable by design. Through extensive
-experimentation, we show that our approach obtains state-of-the-art
-classification performance compared to other concept-based models, achieving
-over 2$\times$ the classification performance in some cases. We also study the
-ability of our model to perform interventions on concepts, and show that it can
-localize visual concepts in input images, providing post-hoc interpretations.
-</summary>
-    <author>
-      <name>Susmit Agrawal</name>
+      <name>Rajanikanth Yadav</name>
     </author>
     <author>
-      <name>Deepika Vemuri</name>
+      <name>Priyanka Bagade</name>
     </author>
-    <author>
-      <name>Sri Siddarth Chakaravarthy P</name>
-    </author>
-    <author>
-      <name>Vineeth N. Balasubramanian</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">8 pages of main text, 6 figures in main text, 11 pages of Appendix,
-  published in AAAI 2025</arxiv:comment>
-    <link href="http://arxiv.org/abs/2502.20393v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2502.20393v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">10 pages, 5 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2502.21311v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2502.21311v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
