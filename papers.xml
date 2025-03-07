@@ -3,226 +3,288 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-03-05T00:00:00-05:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">409531</opensearch:totalResults>
+  <updated>2025-03-06T00:00:00-05:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">409779</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2503.02881v1</id>
-    <updated>2025-03-04T18:58:21Z</updated>
-    <published>2025-03-04T18:58:21Z</published>
-    <title>Reactive Diffusion Policy: Slow-Fast Visual-Tactile Policy Learning for
-  Contact-Rich Manipulation</title>
-    <summary>  Humans can accomplish complex contact-rich tasks using vision and touch, with
-highly reactive capabilities such as quick adjustments to environmental changes
-and adaptive control of contact forces; however, this remains challenging for
-robots. Existing visual imitation learning (IL) approaches rely on action
-chunking to model complex behaviors, which lacks the ability to respond
-instantly to real-time tactile feedback during the chunk execution.
-Furthermore, most teleoperation systems struggle to provide fine-grained
-tactile / force feedback, which limits the range of tasks that can be
-performed. To address these challenges, we introduce TactAR, a low-cost
-teleoperation system that provides real-time tactile feedback through Augmented
-Reality (AR), along with Reactive Diffusion Policy (RDP), a novel slow-fast
-visual-tactile imitation learning algorithm for learning contact-rich
-manipulation skills. RDP employs a two-level hierarchy: (1) a slow latent
-diffusion policy for predicting high-level action chunks in latent space at low
-frequency, (2) a fast asymmetric tokenizer for closed-loop tactile feedback
-control at high frequency. This design enables both complex trajectory modeling
-and quick reactive behavior within a unified framework. Through extensive
-evaluation across three challenging contact-rich tasks, RDP significantly
-improves performance compared to state-of-the-art visual IL baselines through
-rapid response to tactile / force feedback. Furthermore, experiments show that
-RDP is applicable across different tactile / force sensors. Code and videos are
-available on https://reactive-diffusion-policy.github.io/.
+    <id>http://arxiv.org/abs/2503.03750v1</id>
+    <updated>2025-03-05T18:59:23Z</updated>
+    <published>2025-03-05T18:59:23Z</published>
+    <title>The MASK Benchmark: Disentangling Honesty From Accuracy in AI Systems</title>
+    <summary>  As large language models (LLMs) become more capable and agentic, the
+requirement for trust in their outputs grows significantly, yet at the same
+time concerns have been mounting that models may learn to lie in pursuit of
+their goals. To address these concerns, a body of work has emerged around the
+notion of "honesty" in LLMs, along with interventions aimed at mitigating
+deceptive behaviors. However, evaluations of honesty are currently highly
+limited, with no benchmark combining large scale and applicability to all
+models. Moreover, many benchmarks claiming to measure honesty in fact simply
+measure accuracy--the correctness of a model's beliefs--in disguise. In this
+work, we introduce a large-scale human-collected dataset for measuring honesty
+directly, allowing us to disentangle accuracy from honesty for the first time.
+Across a diverse set of LLMs, we find that while larger models obtain higher
+accuracy on our benchmark, they do not become more honest. Surprisingly, while
+most frontier LLMs obtain high scores on truthfulness benchmarks, we find a
+substantial propensity in frontier LLMs to lie when pressured to do so,
+resulting in low honesty scores on our benchmark. We find that simple methods,
+such as representation engineering interventions, can improve honesty. These
+results underscore the growing need for robust evaluations and effective
+interventions to ensure LLMs remain trustworthy.
 </summary>
     <author>
-      <name>Han Xue</name>
+      <name>Richard Ren</name>
     </author>
     <author>
-      <name>Jieji Ren</name>
+      <name>Arunim Agarwal</name>
     </author>
     <author>
-      <name>Wendi Chen</name>
+      <name>Mantas Mazeika</name>
     </author>
     <author>
-      <name>Gu Zhang</name>
+      <name>Cristina Menghini</name>
     </author>
     <author>
-      <name>Yuan Fang</name>
+      <name>Robert Vacareanu</name>
     </author>
     <author>
-      <name>Guoying Gu</name>
+      <name>Brad Kenstler</name>
     </author>
     <author>
-      <name>Huazhe Xu</name>
+      <name>Mick Yang</name>
     </author>
     <author>
-      <name>Cewu Lu</name>
+      <name>Isabelle Barrass</name>
     </author>
-    <link href="http://arxiv.org/abs/2503.02881v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.02881v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Alice Gatti</name>
+    </author>
+    <author>
+      <name>Xuwang Yin</name>
+    </author>
+    <author>
+      <name>Eduardo Trevino</name>
+    </author>
+    <author>
+      <name>Matias Geralnik</name>
+    </author>
+    <author>
+      <name>Adam Khoja</name>
+    </author>
+    <author>
+      <name>Dean Lee</name>
+    </author>
+    <author>
+      <name>Summer Yue</name>
+    </author>
+    <author>
+      <name>Dan Hendrycks</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Website: https://www.mask-benchmark.ai</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.03750v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.03750v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.03747v1</id>
+    <updated>2025-03-05T18:58:58Z</updated>
+    <published>2025-03-05T18:58:58Z</published>
+    <title>PacketCLIP: Multi-Modal Embedding of Network Traffic and Language for
+  Cybersecurity Reasoning</title>
+    <summary>  Traffic classification is vital for cybersecurity, yet encrypted traffic
+poses significant challenges. We present PacketCLIP, a multi-modal framework
+combining packet data with natural language semantics through contrastive
+pretraining and hierarchical Graph Neural Network (GNN) reasoning. PacketCLIP
+integrates semantic reasoning with efficient classification, enabling robust
+detection of anomalies in encrypted network flows. By aligning textual
+descriptions with packet behaviors, it offers enhanced interpretability,
+scalability, and practical applicability across diverse security scenarios.
+PacketCLIP achieves a 95% mean AUC, outperforms baselines by 11.6%, and reduces
+model size by 92%, making it ideal for real-time anomaly detection. By bridging
+advanced machine learning techniques and practical cybersecurity needs,
+PacketCLIP provides a foundation for scalable, efficient, and interpretable
+solutions to tackle encrypted traffic classification and network intrusion
+detection challenges in resource-constrained environments.
+</summary>
+    <author>
+      <name>Ryozo Masukawa</name>
+    </author>
+    <author>
+      <name>Sanggeon Yun</name>
+    </author>
+    <author>
+      <name>Sungheon Jeong</name>
+    </author>
+    <author>
+      <name>Wenjun Huang</name>
+    </author>
+    <author>
+      <name>Yang Ni</name>
+    </author>
+    <author>
+      <name>Ian Bryant</name>
+    </author>
+    <author>
+      <name>Nathaniel D. Bastian</name>
+    </author>
+    <author>
+      <name>Mohsen Imani</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">7 pages, 7 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.03747v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.03747v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.03744v1</id>
+    <updated>2025-03-05T18:56:48Z</updated>
+    <published>2025-03-05T18:56:48Z</published>
+    <title>Constrained Gaussian Wasserstein Optimal Transport with Commutative
+  Covariance Matrices</title>
+    <summary>  Optimal transport has found widespread applications in signal processing and
+machine learning. Among its many equivalent formulations, optimal transport
+seeks to reconstruct a random variable/vector with a prescribed distribution at
+the destination while minimizing the expected distortion relative to a given
+random variable/vector at the source. However, in practice, certain constraints
+may render the optimal transport plan infeasible. In this work, we consider
+three types of constraints: rate constraints, dimension constraints, and
+channel constraints, motivated by perception-aware lossy compression,
+generative principal component analysis, and deep joint source-channel coding,
+respectively. Special attenion is given to the setting termed Gaussian
+Wasserstein optimal transport, where both the source and reconstruction
+variables are multivariate Gaussian, and the end-to-end distortion is measured
+by the mean squared error. We derive explicit results for the minimum
+achievable mean squared error under the three aforementioned constraints when
+the covariance matrices of the source and reconstruction variables commute.
+</summary>
+    <author>
+      <name>Jun Chen</name>
+    </author>
+    <author>
+      <name>Jia Wang</name>
+    </author>
+    <author>
+      <name>Ruibin Li</name>
+    </author>
+    <author>
+      <name>Han Zhou</name>
+    </author>
+    <author>
+      <name>Wei Dong</name>
+    </author>
+    <author>
+      <name>Huan Liu</name>
+    </author>
+    <author>
+      <name>Yuanhao Yu</name>
+    </author>
+    <link href="http://arxiv.org/abs/2503.03744v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.03744v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.IT" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.03736v1</id>
+    <updated>2025-03-05T18:44:56Z</updated>
+    <published>2025-03-05T18:44:56Z</published>
+    <title>Opportunistic Routing in Wireless Communications via Learnable
+  State-Augmented Policies</title>
+    <summary>  This paper addresses the challenge of packet-based information routing in
+large-scale wireless communication networks. The problem is framed as a
+constrained statistical learning task, where each network node operates using
+only local information. Opportunistic routing exploits the broadcast nature of
+wireless communication to dynamically select optimal forwarding nodes, enabling
+the information to reach the destination through multiple relay nodes
+simultaneously. To solve this, we propose a State-Augmentation (SA) based
+distributed optimization approach aimed at maximizing the total information
+handled by the source nodes in the network. The problem formulation leverages
+Graph Neural Networks (GNNs), which perform graph convolutions based on the
+topological connections between network nodes. Using an unsupervised learning
+paradigm, we extract routing policies from the GNN architecture, enabling
+optimal decisions for source nodes across various flows. Numerical experiments
+demonstrate that the proposed method achieves superior performance when
+training a GNN-parameterized model, particularly when compared to baseline
+algorithms. Additionally, applying the method to real-world network topologies
+and wireless ad-hoc network test beds validates its effectiveness, highlighting
+the robustness and transferability of GNNs.
+</summary>
+    <author>
+      <name>Sourajit Das</name>
+    </author>
+    <author>
+      <name>Navid NaderiAlizadeh</name>
+    </author>
+    <author>
+      <name>Rahul Mangharam</name>
+    </author>
+    <author>
+      <name>Alejandro Ribeiro</name>
+    </author>
+    <link href="http://arxiv.org/abs/2503.03736v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.03736v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.03734v1</id>
+    <updated>2025-03-05T18:44:48Z</updated>
+    <published>2025-03-05T18:44:48Z</published>
+    <title>OTTER: A Vision-Language-Action Model with Text-Aware Visual Feature
+  Extraction</title>
+    <summary>  Vision-Language-Action (VLA) models aim to predict robotic actions based on
+visual observations and language instructions. Existing approaches require
+fine-tuning pre-trained visionlanguage models (VLMs) as visual and language
+features are independently fed into downstream policies, degrading the
+pre-trained semantic alignments. We propose OTTER, a novel VLA architecture
+that leverages these existing alignments through explicit, text-aware visual
+feature extraction. Instead of processing all visual features, OTTER
+selectively extracts and passes only task-relevant visual features that are
+semantically aligned with the language instruction to the policy transformer.
+This allows OTTER to keep the pre-trained vision-language encoders frozen.
+Thereby, OTTER preserves and utilizes the rich semantic understanding learned
+from large-scale pre-training, enabling strong zero-shot generalization
+capabilities. In simulation and real-world experiments, OTTER significantly
+outperforms existing VLA models, demonstrating strong zeroshot generalization
+to novel objects and environments. Video, code, checkpoints, and dataset:
+https://ottervla.github.io/.
+</summary>
+    <author>
+      <name>Huang Huang</name>
+    </author>
+    <author>
+      <name>Fangchen Liu</name>
+    </author>
+    <author>
+      <name>Letian Fu</name>
+    </author>
+    <author>
+      <name>Tingfan Wu</name>
+    </author>
+    <author>
+      <name>Mustafa Mukadam</name>
+    </author>
+    <author>
+      <name>Jitendra Malik</name>
+    </author>
+    <author>
+      <name>Ken Goldberg</name>
+    </author>
+    <author>
+      <name>Pieter Abbeel</name>
+    </author>
+    <link href="http://arxiv.org/abs/2503.03734v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.03734v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.02880v1</id>
-    <updated>2025-03-04T18:58:15Z</updated>
-    <published>2025-03-04T18:58:15Z</published>
-    <title>A New $\sim 5σ$ Tension at Characteristic Redshift from DESI DR1
-  and DES-SN5YR observations</title>
-    <summary>  We perform a model-independent reconstruction of the angular diameter
-distance ($D_{A}$) using the Multi-Task Gaussian Process (MTGP) framework with
-DESI-DR1 BAO and DES-SN5YR datasets. We calibrate the comoving sound horizon at
-the baryon drag epoch $r_d$ to the Planck best-fit value, ensuring consistency
-with early-universe physics. With the reconstructed $D_A$ at two key redshifts,
-$z\sim 1.63$ (where $D_{A}^{\prime} =0$) and at $z\sim 0.512$ (where
-$D_{A}^{\prime} = D_{A}$), we derive the expansion rate of the Universe $H(z)$
-at these redshifts. Our findings reveal that at $z\sim 1.63$, the $H(z)$ is
-fully consistent with the Planck-2018 $\Lambda$CDM prediction, confirming no
-new physics at that redshift. However, at $z \sim 0.512$, the derived $H(z)$
-shows a more than $5\sigma$ discrepancy with the Planck-2018 $\Lambda$CDM
-prediction, suggesting a possible breakdown of the $\Lambda$CDM model as
-constrained by Planck-2018 at this lower redshift. This emerging $\sim 5\sigma$
-tension at $z\sim 0.512$, distinct from the existing ``Hubble Tension'', may
-signal the first strong evidence for new physics at low redshifts.
-</summary>
-    <author>
-      <name>Purba Mukherjee</name>
-    </author>
-    <author>
-      <name>Anjan A Sen</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">4 pages, 1 table, 1 figure. Comments are welcome</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.02880v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.02880v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.02879v1</id>
-    <updated>2025-03-04T18:58:13Z</updated>
-    <published>2025-03-04T18:58:13Z</published>
-    <title>Wikipedia in the Era of LLMs: Evolution and Risks</title>
-    <summary>  In this paper, we present a thorough analysis of the impact of Large Language
-Models (LLMs) on Wikipedia, examining the evolution of Wikipedia through
-existing data and using simulations to explore potential risks. We begin by
-analyzing page views and article content to study Wikipedia's recent changes
-and assess the impact of LLMs. Subsequently, we evaluate how LLMs affect
-various Natural Language Processing (NLP) tasks related to Wikipedia, including
-machine translation and retrieval-augmented generation (RAG). Our findings and
-simulation results reveal that Wikipedia articles have been influenced by LLMs,
-with an impact of approximately 1%-2% in certain categories. If the machine
-translation benchmark based on Wikipedia is influenced by LLMs, the scores of
-the models may become inflated, and the comparative results among models might
-shift as well. Moreover, the effectiveness of RAG might decrease if the
-knowledge base becomes polluted by LLM-generated content. While LLMs have not
-yet fully changed Wikipedia's language and knowledge structures, we believe
-that our empirical findings signal the need for careful consideration of
-potential future risks.
-</summary>
-    <author>
-      <name>Siming Huang</name>
-    </author>
-    <author>
-      <name>Yuliang Xu</name>
-    </author>
-    <author>
-      <name>Mingmeng Geng</name>
-    </author>
-    <author>
-      <name>Yao Wan</name>
-    </author>
-    <author>
-      <name>Dongping Chen</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">We release all the experimental dataset and source code at:
-  https://github.com/HSM316/LLM_Wikipedia</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.02879v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.02879v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.02878v1</id>
-    <updated>2025-03-04T18:58:11Z</updated>
-    <published>2025-03-04T18:58:11Z</published>
-    <title>Language Models can Self-Improve at State-Value Estimation for Better
-  Search</title>
-    <summary>  Collecting ground truth task completion rewards or human demonstrations for
-multi-step reasoning tasks is often cost-prohibitive and time-consuming,
-especially in interactive domains like web tasks. To address this bottleneck,
-we present self-taught lookahead, a self-supervised method that leverages
-state-transition dynamics to train a value model capable of effectively guiding
-language model-controlled search. We find that moderately sized (8 billion
-parameters) open-weight value models improved with self-taught lookahead can
-match the performance of using a frontier LLM such as gpt-4o as the value
-model. Furthermore, we find that self-taught lookahead improves performance by
-20% while reducing costs 37x compared to previous LLM-based tree search,
-without relying on ground truth rewards.
-</summary>
-    <author>
-      <name>Ethan Mendes</name>
-    </author>
-    <author>
-      <name>Alan Ritter</name>
-    </author>
-    <link href="http://arxiv.org/abs/2503.02878v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.02878v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.02877v1</id>
-    <updated>2025-03-04T18:58:00Z</updated>
-    <published>2025-03-04T18:58:00Z</published>
-    <title>Weak-to-Strong Generalization Even in Random Feature Networks, Provably</title>
-    <summary>  Weak-to-Strong Generalization (Burns et al., 2024) is the phenomenon whereby
-a strong student, say GPT-4, learns a task from a weak teacher, say GPT-2, and
-ends up significantly outperforming the teacher. We show that this phenomenon
-does not require a strong learner like GPT-4. We consider student and teacher
-that are random feature models, described by two-layer networks with a random
-and fixed bottom layer and a trained top layer. A "weak" teacher, with a small
-number of units (i.e. random features), is trained on the population, and a
-"strong" student, with a much larger number of units (i.e. random features), is
-trained only on labels generated by the weak teacher. We demonstrate, prove,
-and understand how the student can outperform the teacher, even though trained
-only on data labeled by the teacher. We also explain how such weak-to-strong
-generalization is enabled by early stopping. Importantly, we also show the
-quantitative limits of weak-to-strong generalization in this model.
-</summary>
-    <author>
-      <name>Marko Medvedev</name>
-    </author>
-    <author>
-      <name>Kaifeng Lyu</name>
-    </author>
-    <author>
-      <name>Dingli Yu</name>
-    </author>
-    <author>
-      <name>Sanjeev Arora</name>
-    </author>
-    <author>
-      <name>Zhiyuan Li</name>
-    </author>
-    <author>
-      <name>Nathan Srebro</name>
-    </author>
-    <link href="http://arxiv.org/abs/2503.02877v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.02877v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
