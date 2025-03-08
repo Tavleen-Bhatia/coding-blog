@@ -3,288 +3,288 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-03-06T00:00:00-05:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">409779</opensearch:totalResults>
+  <updated>2025-03-07T00:00:00-05:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">410078</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2503.03750v1</id>
-    <updated>2025-03-05T18:59:23Z</updated>
-    <published>2025-03-05T18:59:23Z</published>
-    <title>The MASK Benchmark: Disentangling Honesty From Accuracy in AI Systems</title>
-    <summary>  As large language models (LLMs) become more capable and agentic, the
-requirement for trust in their outputs grows significantly, yet at the same
-time concerns have been mounting that models may learn to lie in pursuit of
-their goals. To address these concerns, a body of work has emerged around the
-notion of "honesty" in LLMs, along with interventions aimed at mitigating
-deceptive behaviors. However, evaluations of honesty are currently highly
-limited, with no benchmark combining large scale and applicability to all
-models. Moreover, many benchmarks claiming to measure honesty in fact simply
-measure accuracy--the correctness of a model's beliefs--in disguise. In this
-work, we introduce a large-scale human-collected dataset for measuring honesty
-directly, allowing us to disentangle accuracy from honesty for the first time.
-Across a diverse set of LLMs, we find that while larger models obtain higher
-accuracy on our benchmark, they do not become more honest. Surprisingly, while
-most frontier LLMs obtain high scores on truthfulness benchmarks, we find a
-substantial propensity in frontier LLMs to lie when pressured to do so,
-resulting in low honesty scores on our benchmark. We find that simple methods,
-such as representation engineering interventions, can improve honesty. These
-results underscore the growing need for robust evaluations and effective
-interventions to ensure LLMs remain trustworthy.
+    <id>http://arxiv.org/abs/2503.04725v1</id>
+    <updated>2025-03-06T18:59:48Z</updated>
+    <published>2025-03-06T18:59:48Z</published>
+    <title>L$^2$M: Mutual Information Scaling Law for Long-Context Language
+  Modeling</title>
+    <summary>  We rigorously establish a bipartite mutual information scaling law in natural
+language that governs long-range dependencies. This scaling law, which we show
+is distinct from and scales independently of the conventional two-point mutual
+information, is the key to understanding long-context language modeling. Using
+this scaling law, we formulate the Long-context Language Modeling (L$^2$M)
+condition, which relates a model's capacity for effective long context length
+modeling to the scaling of its latent state size for storing past information.
+Our results are validated through experiments on both transformers and state
+space models. This work establishes a theoretical foundation that guides the
+development of large language models toward longer context lengths.
 </summary>
     <author>
-      <name>Richard Ren</name>
+      <name>Zhuo Chen</name>
     </author>
     <author>
-      <name>Arunim Agarwal</name>
+      <name>Oriol Mayné i Comas</name>
     </author>
     <author>
-      <name>Mantas Mazeika</name>
+      <name>Zhuotao Jin</name>
     </author>
     <author>
-      <name>Cristina Menghini</name>
+      <name>Di Luo</name>
     </author>
     <author>
-      <name>Robert Vacareanu</name>
+      <name>Marin Soljačić</name>
     </author>
-    <author>
-      <name>Brad Kenstler</name>
-    </author>
-    <author>
-      <name>Mick Yang</name>
-    </author>
-    <author>
-      <name>Isabelle Barrass</name>
-    </author>
-    <author>
-      <name>Alice Gatti</name>
-    </author>
-    <author>
-      <name>Xuwang Yin</name>
-    </author>
-    <author>
-      <name>Eduardo Trevino</name>
-    </author>
-    <author>
-      <name>Matias Geralnik</name>
-    </author>
-    <author>
-      <name>Adam Khoja</name>
-    </author>
-    <author>
-      <name>Dean Lee</name>
-    </author>
-    <author>
-      <name>Summer Yue</name>
-    </author>
-    <author>
-      <name>Dan Hendrycks</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Website: https://www.mask-benchmark.ai</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.03750v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.03750v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">29 pages, 12 figures, 1 table</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.04725v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.04725v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.03747v1</id>
-    <updated>2025-03-05T18:58:58Z</updated>
-    <published>2025-03-05T18:58:58Z</published>
-    <title>PacketCLIP: Multi-Modal Embedding of Network Traffic and Language for
-  Cybersecurity Reasoning</title>
-    <summary>  Traffic classification is vital for cybersecurity, yet encrypted traffic
-poses significant challenges. We present PacketCLIP, a multi-modal framework
-combining packet data with natural language semantics through contrastive
-pretraining and hierarchical Graph Neural Network (GNN) reasoning. PacketCLIP
-integrates semantic reasoning with efficient classification, enabling robust
-detection of anomalies in encrypted network flows. By aligning textual
-descriptions with packet behaviors, it offers enhanced interpretability,
-scalability, and practical applicability across diverse security scenarios.
-PacketCLIP achieves a 95% mean AUC, outperforms baselines by 11.6%, and reduces
-model size by 92%, making it ideal for real-time anomaly detection. By bridging
-advanced machine learning techniques and practical cybersecurity needs,
-PacketCLIP provides a foundation for scalable, efficient, and interpretable
-solutions to tackle encrypted traffic classification and network intrusion
-detection challenges in resource-constrained environments.
-</summary>
-    <author>
-      <name>Ryozo Masukawa</name>
-    </author>
-    <author>
-      <name>Sanggeon Yun</name>
-    </author>
-    <author>
-      <name>Sungheon Jeong</name>
-    </author>
-    <author>
-      <name>Wenjun Huang</name>
-    </author>
-    <author>
-      <name>Yang Ni</name>
-    </author>
-    <author>
-      <name>Ian Bryant</name>
-    </author>
-    <author>
-      <name>Nathaniel D. Bastian</name>
-    </author>
-    <author>
-      <name>Mohsen Imani</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">7 pages, 7 figures</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.03747v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.03747v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.03744v1</id>
-    <updated>2025-03-05T18:56:48Z</updated>
-    <published>2025-03-05T18:56:48Z</published>
-    <title>Constrained Gaussian Wasserstein Optimal Transport with Commutative
-  Covariance Matrices</title>
-    <summary>  Optimal transport has found widespread applications in signal processing and
-machine learning. Among its many equivalent formulations, optimal transport
-seeks to reconstruct a random variable/vector with a prescribed distribution at
-the destination while minimizing the expected distortion relative to a given
-random variable/vector at the source. However, in practice, certain constraints
-may render the optimal transport plan infeasible. In this work, we consider
-three types of constraints: rate constraints, dimension constraints, and
-channel constraints, motivated by perception-aware lossy compression,
-generative principal component analysis, and deep joint source-channel coding,
-respectively. Special attenion is given to the setting termed Gaussian
-Wasserstein optimal transport, where both the source and reconstruction
-variables are multivariate Gaussian, and the end-to-end distortion is measured
-by the mean squared error. We derive explicit results for the minimum
-achievable mean squared error under the three aforementioned constraints when
-the covariance matrices of the source and reconstruction variables commute.
-</summary>
-    <author>
-      <name>Jun Chen</name>
-    </author>
-    <author>
-      <name>Jia Wang</name>
-    </author>
-    <author>
-      <name>Ruibin Li</name>
-    </author>
-    <author>
-      <name>Han Zhou</name>
-    </author>
-    <author>
-      <name>Wei Dong</name>
-    </author>
-    <author>
-      <name>Huan Liu</name>
-    </author>
-    <author>
-      <name>Yuanhao Yu</name>
-    </author>
-    <link href="http://arxiv.org/abs/2503.03744v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.03744v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="math.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.data-an" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2503.03736v1</id>
-    <updated>2025-03-05T18:44:56Z</updated>
-    <published>2025-03-05T18:44:56Z</published>
-    <title>Opportunistic Routing in Wireless Communications via Learnable
-  State-Augmented Policies</title>
-    <summary>  This paper addresses the challenge of packet-based information routing in
-large-scale wireless communication networks. The problem is framed as a
-constrained statistical learning task, where each network node operates using
-only local information. Opportunistic routing exploits the broadcast nature of
-wireless communication to dynamically select optimal forwarding nodes, enabling
-the information to reach the destination through multiple relay nodes
-simultaneously. To solve this, we propose a State-Augmentation (SA) based
-distributed optimization approach aimed at maximizing the total information
-handled by the source nodes in the network. The problem formulation leverages
-Graph Neural Networks (GNNs), which perform graph convolutions based on the
-topological connections between network nodes. Using an unsupervised learning
-paradigm, we extract routing policies from the GNN architecture, enabling
-optimal decisions for source nodes across various flows. Numerical experiments
-demonstrate that the proposed method achieves superior performance when
-training a GNN-parameterized model, particularly when compared to baseline
-algorithms. Additionally, applying the method to real-world network topologies
-and wireless ad-hoc network test beds validates its effectiveness, highlighting
-the robustness and transferability of GNNs.
+    <id>http://arxiv.org/abs/2503.04722v1</id>
+    <updated>2025-03-06T18:59:23Z</updated>
+    <published>2025-03-06T18:59:23Z</published>
+    <title>Enough Coin Flips Can Make LLMs Act Bayesian</title>
+    <summary>  Large language models (LLMs) exhibit the ability to generalize given few-shot
+examples in their input prompt, an emergent capability known as in-context
+learning (ICL). We investigate whether LLMs utilize ICL to perform structured
+reasoning in ways that are consistent with a Bayesian framework or rely on
+pattern matching. Using a controlled setting of biased coin flips, we find
+that: (1) LLMs often possess biased priors, causing initial divergence in
+zero-shot settings, (2) in-context evidence outweighs explicit bias
+instructions, (3) LLMs broadly follow Bayesian posterior updates, with
+deviations primarily due to miscalibrated priors rather than flawed updates,
+and (4) attention magnitude has negligible effect on Bayesian inference. With
+sufficient demonstrations of biased coin flips via ICL, LLMs update their
+priors in a Bayesian manner.
 </summary>
     <author>
-      <name>Sourajit Das</name>
+      <name>Ritwik Gupta</name>
     </author>
     <author>
-      <name>Navid NaderiAlizadeh</name>
+      <name>Rodolfo Corona</name>
     </author>
     <author>
-      <name>Rahul Mangharam</name>
+      <name>Jiaxin Ge</name>
     </author>
     <author>
-      <name>Alejandro Ribeiro</name>
+      <name>Eric Wang</name>
     </author>
-    <link href="http://arxiv.org/abs/2503.03736v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.03736v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Dan Klein</name>
+    </author>
+    <author>
+      <name>Trevor Darrell</name>
+    </author>
+    <author>
+      <name>David M. Chan</name>
+    </author>
+    <link href="http://arxiv.org/abs/2503.04722v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.04722v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2503.03734v1</id>
-    <updated>2025-03-05T18:44:48Z</updated>
-    <published>2025-03-05T18:44:48Z</published>
-    <title>OTTER: A Vision-Language-Action Model with Text-Aware Visual Feature
-  Extraction</title>
-    <summary>  Vision-Language-Action (VLA) models aim to predict robotic actions based on
-visual observations and language instructions. Existing approaches require
-fine-tuning pre-trained visionlanguage models (VLMs) as visual and language
-features are independently fed into downstream policies, degrading the
-pre-trained semantic alignments. We propose OTTER, a novel VLA architecture
-that leverages these existing alignments through explicit, text-aware visual
-feature extraction. Instead of processing all visual features, OTTER
-selectively extracts and passes only task-relevant visual features that are
-semantically aligned with the language instruction to the policy transformer.
-This allows OTTER to keep the pre-trained vision-language encoders frozen.
-Thereby, OTTER preserves and utilizes the rich semantic understanding learned
-from large-scale pre-training, enabling strong zero-shot generalization
-capabilities. In simulation and real-world experiments, OTTER significantly
-outperforms existing VLA models, demonstrating strong zeroshot generalization
-to novel objects and environments. Video, code, checkpoints, and dataset:
-https://ottervla.github.io/.
+    <id>http://arxiv.org/abs/2503.04718v1</id>
+    <updated>2025-03-06T18:58:45Z</updated>
+    <published>2025-03-06T18:58:45Z</published>
+    <title>Floxels: Fast Unsupervised Voxel Based Scene Flow Estimation</title>
+    <summary>  Scene flow estimation is a foundational task for many robotic applications,
+including robust dynamic object detection, automatic labeling, and sensor
+synchronization. Two types of approaches to the problem have evolved: 1)
+Supervised and 2) optimization-based methods. Supervised methods are fast
+during inference and achieve high-quality results, however, they are limited by
+the need for large amounts of labeled training data and are susceptible to
+domain gaps. In contrast, unsupervised test-time optimization methods do not
+face the problem of domain gaps but usually suffer from substantial runtime,
+exhibit artifacts, or fail to converge to the right solution. In this work, we
+mitigate several limitations of existing optimization-based methods. To this
+end, we 1) introduce a simple voxel grid-based model that improves over the
+standard MLP-based formulation in multiple dimensions and 2) introduce a new
+multiframe loss formulation. 3) We combine both contributions in our new
+method, termed Floxels. On the Argoverse 2 benchmark, Floxels is surpassed only
+by EulerFlow among unsupervised methods while achieving comparable performance
+at a fraction of the computational cost. Floxels achieves a massive speedup of
+more than ~60 - 140x over EulerFlow, reducing the runtime from a day to 10
+minutes per sequence. Over the faster but low-quality baseline, NSFP, Floxels
+achieves a speedup of ~14x.
 </summary>
     <author>
-      <name>Huang Huang</name>
+      <name>David T. Hoffmann</name>
     </author>
     <author>
-      <name>Fangchen Liu</name>
+      <name>Syed Haseeb Raza</name>
     </author>
     <author>
-      <name>Letian Fu</name>
+      <name>Hanqiu Jiang</name>
     </author>
     <author>
-      <name>Tingfan Wu</name>
+      <name>Denis Tananaev</name>
     </author>
     <author>
-      <name>Mustafa Mukadam</name>
+      <name>Steffen Klingenhoefer</name>
     </author>
     <author>
-      <name>Jitendra Malik</name>
+      <name>Martin Meinke</name>
     </author>
-    <author>
-      <name>Ken Goldberg</name>
-    </author>
-    <author>
-      <name>Pieter Abbeel</name>
-    </author>
-    <link href="http://arxiv.org/abs/2503.03734v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.03734v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted at CVPR 2025</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.04718v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.04718v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.04717v1</id>
+    <updated>2025-03-06T18:58:44Z</updated>
+    <published>2025-03-06T18:58:44Z</published>
+    <title>MIGHTEE: exploring the relationship between spectral index, redshift and
+  radio luminosity</title>
+    <summary>  It has been known for many years that there is an apparent trend for the
+spectral index ({\alpha}) of radio sources to steepen with redshift z, which
+has led to attempts to select high-redshift objects by searching for radio
+sources with steep spectra. In this study we use data from the MeerKAT, LOFAR,
+GMRT, and uGMRT telescopes, particularly using the MIGHTEE and superMIGHTEE
+surveys, to select compact sources over a wide range of redshifts and
+luminosities. We investigate the relationship between spectral index,
+luminosity and redshift and compare our results to those of previous studies.
+Although there is a correlation between {\alpha} and z in our sample for some
+combinations of frequency where good data are available, there is a clear
+offset between the {\alpha}-z relations in our sample and those derived
+previously from samples of more luminous objects; in other words, the
+{\alpha}-z relation is different for low and high luminosity sources. The
+relationships between {\alpha} and luminosity are also weak in our sample but
+in general the most luminous sources are steeper-spectrum and this trend is
+extended by samples from previous studies. In detail, we argue that both a
+{\alpha}-luminosity relation and an {\alpha}-z relation can be found in the
+data, but it is the former that drives the apparent {\alpha}-z relation
+observed in earlier work, which only appears because of the strong
+redshift-luminosity relation in bright, flux density-limited samples.
+Steep-spectrum selection should be applied with caution in searching for high-z
+sources in future deep surveys.
+</summary>
+    <author>
+      <name>Siddhant Pinjarkar</name>
+    </author>
+    <author>
+      <name>Martin J. Hardcastle</name>
+    </author>
+    <author>
+      <name>Dharam V. Lal</name>
+    </author>
+    <author>
+      <name>Daniel J. B. Smith</name>
+    </author>
+    <author>
+      <name>José Afonso</name>
+    </author>
+    <author>
+      <name>Davi Barbosa</name>
+    </author>
+    <author>
+      <name>Catherine L. Hale</name>
+    </author>
+    <author>
+      <name>Matt J. Jarvis</name>
+    </author>
+    <author>
+      <name>Sthabile Kolwa</name>
+    </author>
+    <author>
+      <name>Eric Murphy</name>
+    </author>
+    <author>
+      <name>Mattia Vaccari</name>
+    </author>
+    <author>
+      <name>Imogen H. Whittam</name>
+    </author>
+    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1093/mnras/staf209</arxiv:doi>
+    <link title="doi" href="http://dx.doi.org/10.1093/mnras/staf209" rel="related"/>
+    <link href="http://arxiv.org/abs/2503.04717v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.04717v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.04715v1</id>
+    <updated>2025-03-06T18:58:29Z</updated>
+    <published>2025-03-06T18:58:29Z</published>
+    <title>Predictable Scale: Part I -- Optimal Hyperparameter Scaling Law in Large
+  Language Model Pretraining</title>
+    <summary>  The impressive capabilities of Large Language Models (LLMs) across diverse
+tasks are now well-established, yet their effective deployment necessitates
+careful hyperparameter optimization. Through extensive empirical studies
+involving grid searches across diverse configurations, we discover universal
+scaling laws governing these hyperparameters: optimal learning rate follows a
+power-law relationship with both model parameters and data sizes, while optimal
+batch size scales primarily with data sizes. Our analysis reveals a convex
+optimization landscape for hyperparameters under fixed models and data size
+conditions. This convexity implies an optimal hyperparameter plateau. We
+contribute a universal, plug-and-play optimal hyperparameter tool for the
+community. Its estimated values on the test set are merely 0.07\% away from the
+globally optimal LLM performance found via an exhaustive search. These laws
+demonstrate remarkable robustness across variations in model sparsity, training
+data distribution, and model shape. To our best known, this is the first work
+that unifies different model shapes and structures, such as Mixture-of-Experts
+models and dense transformers, as well as establishes optimal hyperparameter
+scaling laws across diverse data distributions. This exhaustive optimization
+process demands substantial computational resources, utilizing nearly one
+million NVIDIA H800 GPU hours to train 3,700 LLMs of varying sizes and
+hyperparameters from scratch and consuming approximately 100 trillion tokens in
+total. To facilitate reproducibility and further research, we will
+progressively release all loss measurements and model checkpoints through our
+designated repository https://step-law.github.io/
+</summary>
+    <author>
+      <name>Houyi Li</name>
+    </author>
+    <author>
+      <name>Wenzheng Zheng</name>
+    </author>
+    <author>
+      <name>Jingcheng Hu</name>
+    </author>
+    <author>
+      <name>Qiufeng Wang</name>
+    </author>
+    <author>
+      <name>Hanshan Zhang</name>
+    </author>
+    <author>
+      <name>Zili Wang</name>
+    </author>
+    <author>
+      <name>Yangshijie Xu</name>
+    </author>
+    <author>
+      <name>Shuigeng Zhou</name>
+    </author>
+    <author>
+      <name>Xiangyu Zhang</name>
+    </author>
+    <author>
+      <name>Daxin Jiang</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">19 pages</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.04715v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.04715v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="F.2.2; I.2.7" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
