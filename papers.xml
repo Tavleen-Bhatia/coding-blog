@@ -3,288 +3,253 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-03-09T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">410078</opensearch:totalResults>
+  <updated>2025-03-10T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">410356</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2503.04725v1</id>
-    <updated>2025-03-06T18:59:48Z</updated>
-    <published>2025-03-06T18:59:48Z</published>
-    <title>L$^2$M: Mutual Information Scaling Law for Long-Context Language
-  Modeling</title>
-    <summary>  We rigorously establish a bipartite mutual information scaling law in natural
-language that governs long-range dependencies. This scaling law, which we show
-is distinct from and scales independently of the conventional two-point mutual
-information, is the key to understanding long-context language modeling. Using
-this scaling law, we formulate the Long-context Language Modeling (L$^2$M)
-condition, which relates a model's capacity for effective long context length
-modeling to the scaling of its latent state size for storing past information.
-Our results are validated through experiments on both transformers and state
-space models. This work establishes a theoretical foundation that guides the
-development of large language models toward longer context lengths.
+    <id>http://arxiv.org/abs/2503.05696v1</id>
+    <updated>2025-03-07T18:58:23Z</updated>
+    <published>2025-03-07T18:58:23Z</published>
+    <title>Multi-Fidelity Policy Gradient Algorithms</title>
+    <summary>  Many reinforcement learning (RL) algorithms require large amounts of data,
+prohibiting their use in applications where frequent interactions with
+operational systems are infeasible, or high-fidelity simulations are expensive
+or unavailable. Meanwhile, low-fidelity simulators--such as reduced-order
+models, heuristic reward functions, or generative world models--can cheaply
+provide useful data for RL training, even if they are too coarse for direct
+sim-to-real transfer. We propose multi-fidelity policy gradients (MFPGs), an RL
+framework that mixes a small amount of data from the target environment with a
+large volume of low-fidelity simulation data to form unbiased, reduced-variance
+estimators (control variates) for on-policy policy gradients. We instantiate
+the framework by developing multi-fidelity variants of two policy gradient
+algorithms: REINFORCE and proximal policy optimization. Experimental results
+across a suite of simulated robotics benchmark problems demonstrate that when
+target-environment samples are limited, MFPG achieves up to 3.9x higher reward
+and improves training stability when compared to baselines that only use
+high-fidelity data. Moreover, even when the baselines are given more
+high-fidelity samples--up to 10x as many interactions with the target
+environment--MFPG continues to match or outperform them. Finally, we observe
+that MFPG is capable of training effective policies even when the low-fidelity
+environment is drastically different from the target environment. MFPG thus not
+only offers a novel paradigm for efficient sim-to-real transfer but also
+provides a principled approach to managing the trade-off between policy
+performance and data collection costs.
 </summary>
     <author>
-      <name>Zhuo Chen</name>
+      <name>Xinjie Liu</name>
     </author>
     <author>
-      <name>Oriol Mayné i Comas</name>
+      <name>Cyrus Neary</name>
     </author>
     <author>
-      <name>Zhuotao Jin</name>
+      <name>Kushagra Gupta</name>
     </author>
     <author>
-      <name>Di Luo</name>
+      <name>Christian Ellis</name>
     </author>
     <author>
-      <name>Marin Soljačić</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">29 pages, 12 figures, 1 table</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.04725v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.04725v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.IT" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.data-an" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.04722v1</id>
-    <updated>2025-03-06T18:59:23Z</updated>
-    <published>2025-03-06T18:59:23Z</published>
-    <title>Enough Coin Flips Can Make LLMs Act Bayesian</title>
-    <summary>  Large language models (LLMs) exhibit the ability to generalize given few-shot
-examples in their input prompt, an emergent capability known as in-context
-learning (ICL). We investigate whether LLMs utilize ICL to perform structured
-reasoning in ways that are consistent with a Bayesian framework or rely on
-pattern matching. Using a controlled setting of biased coin flips, we find
-that: (1) LLMs often possess biased priors, causing initial divergence in
-zero-shot settings, (2) in-context evidence outweighs explicit bias
-instructions, (3) LLMs broadly follow Bayesian posterior updates, with
-deviations primarily due to miscalibrated priors rather than flawed updates,
-and (4) attention magnitude has negligible effect on Bayesian inference. With
-sufficient demonstrations of biased coin flips via ICL, LLMs update their
-priors in a Bayesian manner.
-</summary>
-    <author>
-      <name>Ritwik Gupta</name>
+      <name>Ufuk Topcu</name>
     </author>
     <author>
-      <name>Rodolfo Corona</name>
+      <name>David Fridovich-Keil</name>
     </author>
-    <author>
-      <name>Jiaxin Ge</name>
-    </author>
-    <author>
-      <name>Eric Wang</name>
-    </author>
-    <author>
-      <name>Dan Klein</name>
-    </author>
-    <author>
-      <name>Trevor Darrell</name>
-    </author>
-    <author>
-      <name>David M. Chan</name>
-    </author>
-    <link href="http://arxiv.org/abs/2503.04722v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.04722v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.04718v1</id>
-    <updated>2025-03-06T18:58:45Z</updated>
-    <published>2025-03-06T18:58:45Z</published>
-    <title>Floxels: Fast Unsupervised Voxel Based Scene Flow Estimation</title>
-    <summary>  Scene flow estimation is a foundational task for many robotic applications,
-including robust dynamic object detection, automatic labeling, and sensor
-synchronization. Two types of approaches to the problem have evolved: 1)
-Supervised and 2) optimization-based methods. Supervised methods are fast
-during inference and achieve high-quality results, however, they are limited by
-the need for large amounts of labeled training data and are susceptible to
-domain gaps. In contrast, unsupervised test-time optimization methods do not
-face the problem of domain gaps but usually suffer from substantial runtime,
-exhibit artifacts, or fail to converge to the right solution. In this work, we
-mitigate several limitations of existing optimization-based methods. To this
-end, we 1) introduce a simple voxel grid-based model that improves over the
-standard MLP-based formulation in multiple dimensions and 2) introduce a new
-multiframe loss formulation. 3) We combine both contributions in our new
-method, termed Floxels. On the Argoverse 2 benchmark, Floxels is surpassed only
-by EulerFlow among unsupervised methods while achieving comparable performance
-at a fraction of the computational cost. Floxels achieves a massive speedup of
-more than ~60 - 140x over EulerFlow, reducing the runtime from a day to 10
-minutes per sequence. Over the faster but low-quality baseline, NSFP, Floxels
-achieves a speedup of ~14x.
-</summary>
-    <author>
-      <name>David T. Hoffmann</name>
-    </author>
-    <author>
-      <name>Syed Haseeb Raza</name>
-    </author>
-    <author>
-      <name>Hanqiu Jiang</name>
-    </author>
-    <author>
-      <name>Denis Tananaev</name>
-    </author>
-    <author>
-      <name>Steffen Klingenhoefer</name>
-    </author>
-    <author>
-      <name>Martin Meinke</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted at CVPR 2025</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.04718v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.04718v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.04717v1</id>
-    <updated>2025-03-06T18:58:44Z</updated>
-    <published>2025-03-06T18:58:44Z</published>
-    <title>MIGHTEE: exploring the relationship between spectral index, redshift and
-  radio luminosity</title>
-    <summary>  It has been known for many years that there is an apparent trend for the
-spectral index ({\alpha}) of radio sources to steepen with redshift z, which
-has led to attempts to select high-redshift objects by searching for radio
-sources with steep spectra. In this study we use data from the MeerKAT, LOFAR,
-GMRT, and uGMRT telescopes, particularly using the MIGHTEE and superMIGHTEE
-surveys, to select compact sources over a wide range of redshifts and
-luminosities. We investigate the relationship between spectral index,
-luminosity and redshift and compare our results to those of previous studies.
-Although there is a correlation between {\alpha} and z in our sample for some
-combinations of frequency where good data are available, there is a clear
-offset between the {\alpha}-z relations in our sample and those derived
-previously from samples of more luminous objects; in other words, the
-{\alpha}-z relation is different for low and high luminosity sources. The
-relationships between {\alpha} and luminosity are also weak in our sample but
-in general the most luminous sources are steeper-spectrum and this trend is
-extended by samples from previous studies. In detail, we argue that both a
-{\alpha}-luminosity relation and an {\alpha}-z relation can be found in the
-data, but it is the former that drives the apparent {\alpha}-z relation
-observed in earlier work, which only appears because of the strong
-redshift-luminosity relation in bright, flux density-limited samples.
-Steep-spectrum selection should be applied with caution in searching for high-z
-sources in future deep surveys.
-</summary>
-    <author>
-      <name>Siddhant Pinjarkar</name>
-    </author>
-    <author>
-      <name>Martin J. Hardcastle</name>
-    </author>
-    <author>
-      <name>Dharam V. Lal</name>
-    </author>
-    <author>
-      <name>Daniel J. B. Smith</name>
-    </author>
-    <author>
-      <name>José Afonso</name>
-    </author>
-    <author>
-      <name>Davi Barbosa</name>
-    </author>
-    <author>
-      <name>Catherine L. Hale</name>
-    </author>
-    <author>
-      <name>Matt J. Jarvis</name>
-    </author>
-    <author>
-      <name>Sthabile Kolwa</name>
-    </author>
-    <author>
-      <name>Eric Murphy</name>
-    </author>
-    <author>
-      <name>Mattia Vaccari</name>
-    </author>
-    <author>
-      <name>Imogen H. Whittam</name>
-    </author>
-    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1093/mnras/staf209</arxiv:doi>
-    <link title="doi" href="http://dx.doi.org/10.1093/mnras/staf209" rel="related"/>
-    <link href="http://arxiv.org/abs/2503.04717v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.04717v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.04715v1</id>
-    <updated>2025-03-06T18:58:29Z</updated>
-    <published>2025-03-06T18:58:29Z</published>
-    <title>Predictable Scale: Part I -- Optimal Hyperparameter Scaling Law in Large
-  Language Model Pretraining</title>
-    <summary>  The impressive capabilities of Large Language Models (LLMs) across diverse
-tasks are now well-established, yet their effective deployment necessitates
-careful hyperparameter optimization. Through extensive empirical studies
-involving grid searches across diverse configurations, we discover universal
-scaling laws governing these hyperparameters: optimal learning rate follows a
-power-law relationship with both model parameters and data sizes, while optimal
-batch size scales primarily with data sizes. Our analysis reveals a convex
-optimization landscape for hyperparameters under fixed models and data size
-conditions. This convexity implies an optimal hyperparameter plateau. We
-contribute a universal, plug-and-play optimal hyperparameter tool for the
-community. Its estimated values on the test set are merely 0.07\% away from the
-globally optimal LLM performance found via an exhaustive search. These laws
-demonstrate remarkable robustness across variations in model sparsity, training
-data distribution, and model shape. To our best known, this is the first work
-that unifies different model shapes and structures, such as Mixture-of-Experts
-models and dense transformers, as well as establishes optimal hyperparameter
-scaling laws across diverse data distributions. This exhaustive optimization
-process demands substantial computational resources, utilizing nearly one
-million NVIDIA H800 GPU hours to train 3,700 LLMs of varying sizes and
-hyperparameters from scratch and consuming approximately 100 trillion tokens in
-total. To facilitate reproducibility and further research, we will
-progressively release all loss measurements and model checkpoints through our
-designated repository https://step-law.github.io/
-</summary>
-    <author>
-      <name>Houyi Li</name>
-    </author>
-    <author>
-      <name>Wenzheng Zheng</name>
-    </author>
-    <author>
-      <name>Jingcheng Hu</name>
-    </author>
-    <author>
-      <name>Qiufeng Wang</name>
-    </author>
-    <author>
-      <name>Hanshan Zhang</name>
-    </author>
-    <author>
-      <name>Zili Wang</name>
-    </author>
-    <author>
-      <name>Yangshijie Xu</name>
-    </author>
-    <author>
-      <name>Shuigeng Zhou</name>
-    </author>
-    <author>
-      <name>Xiangyu Zhang</name>
-    </author>
-    <author>
-      <name>Daxin Jiang</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">19 pages</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.04715v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.04715v1" rel="related" type="application/pdf"/>
+    <link href="http://arxiv.org/abs/2503.05696v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.05696v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="F.2.2; I.2.7" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.05684v1</id>
+    <updated>2025-03-07T18:49:57Z</updated>
+    <published>2025-03-07T18:49:57Z</published>
+    <title>Fairness-Aware Low-Rank Adaptation Under Demographic Privacy Constraints</title>
+    <summary>  Pre-trained foundation models can be adapted for specific tasks using
+Low-Rank Adaptation (LoRA). However, the fairness properties of these adapted
+classifiers remain underexplored. Existing fairness-aware fine-tuning methods
+rely on direct access to sensitive attributes or their predictors, but in
+practice, these sensitive attributes are often held under strict consumer
+privacy controls, and neither the attributes nor their predictors are available
+to model developers, hampering the development of fair models. To address this
+issue, we introduce a set of LoRA-based fine-tuning methods that can be trained
+in a distributed fashion, where model developers and fairness auditors
+collaborate without sharing sensitive attributes or predictors. In this paper,
+we evaluate three such methods - sensitive unlearning, adversarial training,
+and orthogonality loss - against a fairness-unaware baseline, using experiments
+on the CelebA and UTK-Face datasets with an ImageNet pre-trained ViT-Base
+model. We find that orthogonality loss consistently reduces bias while
+maintaining or improving utility, whereas adversarial training improves False
+Positive Rate Parity and Demographic Parity in some cases, and sensitive
+unlearning provides no clear benefit. In tasks where significant biases are
+present, distributed fairness-aware fine-tuning methods can effectively
+eliminate bias without compromising consumer privacy and, in most cases,
+improve model utility.
+</summary>
+    <author>
+      <name>Parameswaran Kamalaruban</name>
+    </author>
+    <author>
+      <name>Mark Anderson</name>
+    </author>
+    <author>
+      <name>Stuart Burrell</name>
+    </author>
+    <author>
+      <name>Maeve Madigan</name>
+    </author>
+    <author>
+      <name>Piotr Skalski</name>
+    </author>
+    <author>
+      <name>David Sutton</name>
+    </author>
+    <link href="http://arxiv.org/abs/2503.05684v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.05684v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.05683v1</id>
+    <updated>2025-03-07T18:45:42Z</updated>
+    <published>2025-03-07T18:45:42Z</published>
+    <title>Understanding the Limits of Lifelong Knowledge Editing in LLMs</title>
+    <summary>  Keeping large language models factually up-to-date is crucial for deployment,
+yet costly retraining remains a challenge. Knowledge editing offers a promising
+alternative, but methods are only tested on small-scale or synthetic edit
+benchmarks. In this work, we aim to bridge research into lifelong knowledge
+editing to real-world edits at practically relevant scale. We first introduce
+WikiBigEdit; a large-scale benchmark of real-world Wikidata edits, built to
+automatically extend lifelong for future-proof benchmarking. In its first
+instance, it includes over 500K question-answer pairs for knowledge editing
+alongside a comprehensive evaluation pipeline. Finally, we use WikiBigEdit to
+study existing knowledge editing techniques' ability to incorporate large
+volumes of real-world facts and contrast their capabilities to generic
+modification techniques such as retrieval augmentation and continual finetuning
+to acquire a complete picture of the practical extent of current lifelong
+knowledge editing.
+</summary>
+    <author>
+      <name>Lukas Thede</name>
+    </author>
+    <author>
+      <name>Karsten Roth</name>
+    </author>
+    <author>
+      <name>Matthias Bethge</name>
+    </author>
+    <author>
+      <name>Zeynep Akata</name>
+    </author>
+    <author>
+      <name>Tom Hartvigsen</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Preprint</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.05683v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.05683v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.05682v1</id>
+    <updated>2025-03-07T18:44:53Z</updated>
+    <published>2025-03-07T18:44:53Z</published>
+    <title>Task-oriented Uncertainty Collaborative Learning for Label-Efficient
+  Brain Tumor Segmentation</title>
+    <summary>  Multi-contrast magnetic resonance imaging (MRI) plays a vital role in brain
+tumor segmentation and diagnosis by leveraging complementary information from
+different contrasts. Each contrast highlights specific tumor characteristics,
+enabling a comprehensive understanding of tumor morphology, edema, and
+pathological heterogeneity. However, existing methods still face the challenges
+of multi-level specificity perception across different contrasts, especially
+with limited annotations. These challenges include data heterogeneity,
+granularity differences, and interference from redundant information. To
+address these limitations, we propose a Task-oriented Uncertainty Collaborative
+Learning (TUCL) framework for multi-contrast MRI segmentation. TUCL introduces
+a task-oriented prompt attention (TPA) module with intra-prompt and
+cross-prompt attention mechanisms to dynamically model feature interactions
+across contrasts and tasks. Additionally, a cyclic process is designed to map
+the predictions back to the prompt to ensure that the prompts are effectively
+utilized. In the decoding stage, the TUCL framework proposes a dual-path
+uncertainty refinement (DUR) strategy which ensures robust segmentation by
+refining predictions iteratively. Extensive experimental results on limited
+labeled data demonstrate that TUCL significantly improves segmentation accuracy
+(88.2\% in Dice and 10.853 mm in HD95). It shows that TUCL has the potential to
+extract multi-contrast information and reduce the reliance on extensive
+annotations. The code is available at:
+https://github.com/Zhenxuan-Zhang/TUCL_BrainSeg.
+</summary>
+    <author>
+      <name>Zhenxuan Zhang</name>
+    </author>
+    <author>
+      <name>Hongjie Wu</name>
+    </author>
+    <author>
+      <name>Jiahao Huang</name>
+    </author>
+    <author>
+      <name>Baihong Xie</name>
+    </author>
+    <author>
+      <name>Zhifan Gao</name>
+    </author>
+    <author>
+      <name>Junxian Du</name>
+    </author>
+    <author>
+      <name>Pete Lally</name>
+    </author>
+    <author>
+      <name>Guang Yang</name>
+    </author>
+    <link href="http://arxiv.org/abs/2503.05682v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.05682v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.05681v1</id>
+    <updated>2025-03-07T18:43:45Z</updated>
+    <published>2025-03-07T18:43:45Z</published>
+    <title>Defining Determinism</title>
+    <summary>  Determinism is the thesis that the past determines the future, but efforts to
+define it precisely have exposed deep methodological disagreements. Standard
+possible-worlds formulations of determinism presuppose an "agreement" relation
+between worlds, but this relation can be understood in multiple ways -- none of
+which is particularly clear. We critically examine the proliferation of
+definitions of determinism in the recent literature, arguing that these
+definitions fail to deliver clear verdicts about actual scientific theories. We
+advocate a return to a formal approach, in the logical tradition of Carnap,
+that treats determinism as a property of scientific theories, rather than an
+elusive metaphysical doctrine.
+  We highlight two key distinctions: (1) the difference between qualitative and
+"full" determinism, as emphasized in recent discussions of physics and
+metaphysics, and (2) the distinction between weak and strong formal conditions
+on the uniqueness of world extensions. We argue that defining determinism in
+terms of metaphysical notions such as haecceities is unhelpful, whereas
+rigorous formal criteria -- such as Belot's D1 and D3 -- offer a tractable and
+scientifically relevant account. By clarifying what it means for a theory to be
+deterministic, we set the stage for a fruitful interaction between physics and
+metaphysics.
+</summary>
+    <author>
+      <name>Hans Halvorson</name>
+    </author>
+    <author>
+      <name>JB Manchak</name>
+    </author>
+    <author>
+      <name>James Owen Weatherall</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">46 pages</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.05681v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.05681v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
