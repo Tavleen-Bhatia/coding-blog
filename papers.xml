@@ -3,253 +3,1041 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-03-10T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">410356</opensearch:totalResults>
+  <updated>2025-03-11T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">410946</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2503.05696v1</id>
-    <updated>2025-03-07T18:58:23Z</updated>
-    <published>2025-03-07T18:58:23Z</published>
-    <title>Multi-Fidelity Policy Gradient Algorithms</title>
-    <summary>  Many reinforcement learning (RL) algorithms require large amounts of data,
-prohibiting their use in applications where frequent interactions with
-operational systems are infeasible, or high-fidelity simulations are expensive
-or unavailable. Meanwhile, low-fidelity simulators--such as reduced-order
-models, heuristic reward functions, or generative world models--can cheaply
-provide useful data for RL training, even if they are too coarse for direct
-sim-to-real transfer. We propose multi-fidelity policy gradients (MFPGs), an RL
-framework that mixes a small amount of data from the target environment with a
-large volume of low-fidelity simulation data to form unbiased, reduced-variance
-estimators (control variates) for on-policy policy gradients. We instantiate
-the framework by developing multi-fidelity variants of two policy gradient
-algorithms: REINFORCE and proximal policy optimization. Experimental results
-across a suite of simulated robotics benchmark problems demonstrate that when
-target-environment samples are limited, MFPG achieves up to 3.9x higher reward
-and improves training stability when compared to baselines that only use
-high-fidelity data. Moreover, even when the baselines are given more
-high-fidelity samples--up to 10x as many interactions with the target
-environment--MFPG continues to match or outperform them. Finally, we observe
-that MFPG is capable of training effective policies even when the low-fidelity
-environment is drastically different from the target environment. MFPG thus not
-only offers a novel paradigm for efficient sim-to-real transfer but also
-provides a principled approach to managing the trade-off between policy
-performance and data collection costs.
+    <id>http://arxiv.org/abs/2503.07493v1</id>
+    <updated>2025-03-10T16:12:50Z</updated>
+    <published>2025-03-10T16:12:50Z</published>
+    <title>V2Flow: Unifying Visual Tokenization and Large Language Model
+  Vocabularies for Autoregressive Image Generation</title>
+    <summary>  We propose V2Flow, a novel tokenizer that produces discrete visual tokens
+capable of high-fidelity reconstruction, while ensuring structural and latent
+distribution alignment with the vocabulary space of large language models
+(LLMs). Leveraging this tight visual-vocabulary coupling, V2Flow enables
+autoregressive visual generation on top of existing LLMs. Our approach
+formulates visual tokenization as a flow-matching problem, aiming to learn a
+mapping from a standard normal prior to the continuous image distribution,
+conditioned on token sequences embedded within the LLMs vocabulary space. The
+effectiveness of V2Flow stems from two core designs. First, we propose a Visual
+Vocabulary resampler, which compresses visual data into compact token
+sequences, with each represented as a soft categorical distribution over LLM's
+vocabulary. This allows seamless integration of visual tokens into existing
+LLMs for autoregressive visual generation. Second, we present a masked
+autoregressive Rectified-Flow decoder, employing a masked transformer
+encoder-decoder to refine visual tokens into contextually enriched embeddings.
+These embeddings then condition a dedicated velocity field for precise
+reconstruction. Additionally, an autoregressive rectified-flow sampling
+strategy is incorporated, ensuring flexible sequence lengths while preserving
+competitive reconstruction quality. Extensive experiments show that V2Flow
+outperforms mainstream VQ-based tokenizers and facilitates autoregressive
+visual generation on top of existing. https://github.com/zhangguiwei610/V2Flow
 </summary>
     <author>
-      <name>Xinjie Liu</name>
+      <name>Guiwei Zhang</name>
     </author>
     <author>
-      <name>Cyrus Neary</name>
+      <name>Tianyu Zhang</name>
     </author>
     <author>
-      <name>Kushagra Gupta</name>
+      <name>Mohan Zhou</name>
     </author>
     <author>
-      <name>Christian Ellis</name>
+      <name>Yalong Bai</name>
     </author>
     <author>
-      <name>Ufuk Topcu</name>
+      <name>Biye Li</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">11 pages, 6 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.07493v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.07493v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.07484v1</id>
+    <updated>2025-03-10T16:00:36Z</updated>
+    <published>2025-03-10T16:00:36Z</published>
+    <title>Euclid: Early Release Observations -- The Intracluster Light of Abell
+  2390</title>
+    <summary>  Intracluster light (ICL) provides a record of the dynamical interactions
+undergone by clusters, giving clues on cluster formation and evolution. Here,
+we analyse the properties of ICL in the massive cluster Abell 2390 at redshift
+z=0.228. Our analysis is based on the deep images obtained by the Euclid
+mission as part of the Early Release Observations in the near-infrared (Y, J, H
+bands), using the NISP instrument in a 0.75 deg$^2$ field. We subtracted a
+point--spread function (PSF) model and removed the Galactic cirrus contribution
+in each band after modelling it with the DAWIS software. We then applied three
+methods to detect, characterise, and model the ICL and the brightest cluster
+galaxy (BCG): the CICLE 2D multi-galaxy fitting; the DAWIS wavelet-based
+multiscale software; and a mask-based 1D profile fitting. We detect ICL out to
+600 kpc. The ICL fractions derived by our three methods range between 18% and
+36% (average of 24%), while the BCG+ICL fractions are between 21% and 41%
+(average of 29%), depending on the band and method. A galaxy density map based
+on 219 selected cluster members shows a strong cluster substructure to the
+south-east and a smaller feature to the north-west. Based on colours, the ICL
+(out to about 400 kpc) seems to be built by the accretion of small systems (M ~
+$10^{9.5}$ solar mass), or from stars coming from the outskirts of Milky
+Way-type galaxies (M ~ $10^{10}$ solar mass). Though Abell 2390 does not seem
+to be undergoing a merger, it is not yet fully relaxed, since it has accreted
+two groups that have not fully merged with the cluster core. We estimate that
+the contributions to the inner 300 kpc of the ICL of the north-west and
+south-east subgroups are 21% and 9% respectively.
+</summary>
+    <author>
+      <name>A. Ellien</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">OCA, P.H.C Boulevard de l'Observatoire CS 34229, 06304 Nice Cedex 4, France</arxiv:affiliation>
     </author>
     <author>
-      <name>David Fridovich-Keil</name>
+      <name>M. Montes</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Institute of Space Sciences</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Instituto de Astrofísica de Canarias, Vía Láctea, 38205 La Laguna, Tenerife, Spain</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Universidad de La Laguna, Departamento de Astrofísica, 38206 La Laguna, Tenerife, Spain</arxiv:affiliation>
     </author>
-    <link href="http://arxiv.org/abs/2503.05696v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.05696v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>S. L. Ahad</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Waterloo Centre for Astrophysics, University of Waterloo, Waterloo, Ontario N2L 3G1, Canada</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Department of Physics and Astronomy, University of Waterloo, Waterloo, Ontario N2L 3G1, Canada</arxiv:affiliation>
+    </author>
+    <author>
+      <name>P. Dimauro</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Roma, Via Frascati 33, 00078 Monteporzio Catone, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Observatorio Nacional, Rua General Jose Cristino, 77-Bairro Imperial de Sao Cristovao, Rio de Janeiro, 20921-400, Brazil</arxiv:affiliation>
+    </author>
+    <author>
+      <name>J. B. Golden-Marx</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">School of Physics and Astronomy, University of Nottingham, University Park, Nottingham NG7 2RD, UK</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Y. Jimenez-Teja</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Instituto de Astrofísica de Andalucía, CSIC, Glorieta de la Astronomí a, 18080, Granada, Spain</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Observatorio Nacional, Rua General Jose Cristino, 77-Bairro Imperial de Sao Cristovao, Rio de Janeiro, 20921-400, Brazil</arxiv:affiliation>
+    </author>
+    <author>
+      <name>F. Durret</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Institut d'Astrophysique de Paris, 98bis Boulevard Arago, 75014, Paris, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>C. Bellhouse</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">School of Physics and Astronomy, University of Nottingham, University Park, Nottingham NG7 2RD, UK</arxiv:affiliation>
+    </author>
+    <author>
+      <name>J. M. Diego</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Instituto de Física de Cantabria, Edificio Juan Jordá, Avenida de los Castros, 39005 Santander, Spain</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. P. Bamford</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">School of Physics and Astronomy, University of Nottingham, University Park, Nottingham NG7 2RD, UK</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. H. Gonzalez</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Department of Astronomy, University of Florida, Bryant Space Science Center, Gainesville, FL 32611, USA</arxiv:affiliation>
+    </author>
+    <author>
+      <name>N. A. Hatch</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">School of Physics and Astronomy, University of Nottingham, University Park, Nottingham NG7 2RD, UK</arxiv:affiliation>
+    </author>
+    <author>
+      <name>M. Kluge</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Max Planck Institute for Extraterrestrial Physics, Giessenbachstr. 1, 85748 Garching, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>R. Ragusa</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Capodimonte, Via Moiariello 16, 80131 Napoli, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>E. Slezak</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Université Côte d'Azur, Observatoire de la Côte d'Azur, CNRS, Laboratoire Lagrange, Bd de l'Observatoire, CS 34229, 06304 Nice cedex 4, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>J. -C. Cuillandre</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Université Paris-Saclay, Université Paris Cité, CEA, CNRS, AIM, 91191, Gif-sur-Yvette, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>R. Gavazzi</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Aix-Marseille Université, CNRS, CNES, LAM, Marseille, France</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Institut d'Astrophysique de Paris, UMR 7095, CNRS, and Sorbonne Université, 98 bis boulevard Arago, 75014 Paris, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>H. Dole</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Université Paris-Saclay, CNRS, Institut d'astrophysique spatiale, 91405, Orsay, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>G. Mahler</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">STAR Institute, University of Liège, Quartier Agora, Allée du six Août 19c, 4000 Liège, Belgium</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Department of Physics, Centre for Extragalactic Astronomy, Durham University, South Road, Durham, DH1 3LE, UK</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Department of Physics, Institute for Computational Cosmology, Durham University, South Road, Durham, DH1 3LE, UK</arxiv:affiliation>
+    </author>
+    <author>
+      <name>G. Congedo</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Institute for Astronomy, University of Edinburgh, Royal Observatory, Blackford Hill, Edinburgh EH9 3HJ, UK</arxiv:affiliation>
+    </author>
+    <author>
+      <name>T. Saifollahi</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Université de Strasbourg, CNRS, Observatoire astronomique de Strasbourg, UMR 7550, 67000 Strasbourg, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>N. Aghanim</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Université Paris-Saclay, CNRS, Institut d'astrophysique spatiale, 91405, Orsay, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>B. Altieri</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">ESAC/ESA, Camino Bajo del Castillo, s/n., Urb. Villafranca del Castillo, 28692 Villanueva de la Cañada, Madrid, Spain</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Amara</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">School of Mathematics and Physics, University of Surrey, Guildford, Surrey, GU2 7XH, UK</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Andreon</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Brera, Via Brera 28, 20122 Milano, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>N. Auricchio</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio di Astrofisica e Scienza dello Spazio di Bologna, Via Piero Gobetti 93/3, 40129 Bologna, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>C. Baccigalupi</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">IFPU, Institute for Fundamental Physics of the Universe, via Beirut 2, 34151 Trieste, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Trieste, Via G. B. Tiepolo 11, 34143 Trieste, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INFN, Sezione di Trieste, Via Valerio 2, 34127 Trieste TS, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">SISSA, International School for Advanced Studies, Via Bonomea 265, 34136 Trieste TS, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>M. Baldi</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Dipartimento di Fisica e Astronomia, Università di Bologna, Via Gobetti 93/2, 40129 Bologna, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio di Astrofisica e Scienza dello Spazio di Bologna, Via Piero Gobetti 93/3, 40129 Bologna, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INFN-Sezione di Bologna, Viale Berti Pichat 6/2, 40127 Bologna, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Balestra</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Padova, Via dell'Osservatorio 5, 35122 Padova, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Bardelli</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio di Astrofisica e Scienza dello Spazio di Bologna, Via Piero Gobetti 93/3, 40129 Bologna, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Basset</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Centre National d'Etudes Spatiales -- Centre spatial de Toulouse, 18 avenue Edouard Belin, 31401 Toulouse Cedex 9, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>P. Battaglia</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio di Astrofisica e Scienza dello Spazio di Bologna, Via Piero Gobetti 93/3, 40129 Bologna, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Biviano</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Trieste, Via G. B. Tiepolo 11, 34143 Trieste, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">IFPU, Institute for Fundamental Physics of the Universe, via Beirut 2, 34151 Trieste, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Bonchi</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Space Science Data Center, Italian Space Agency, via del Politecnico snc, 00133 Roma, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>D. Bonino</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astrofisico di Torino, Via Osservatorio 20, 10025 Pino Torinese</arxiv:affiliation>
+    </author>
+    <author>
+      <name>E. Branchini</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Dipartimento di Fisica, Università di Genova, Via Dodecaneso 33, 16146, Genova, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INFN-Sezione di Genova, Via Dodecaneso 33, 16146, Genova, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Brera, Via Brera 28, 20122 Milano, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>M. Brescia</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Department of Physics "E. Pancini", University Federico II, Via Cinthia 6, 80126, Napoli, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Capodimonte, Via Moiariello 16, 80131 Napoli, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INFN section of Naples, Via Cinthia 6, 80126, Napoli, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>J. Brinchmann</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Instituto de Astrofísica e Ciências do Espaço, Universidade do Porto, CAUP, Rua das Estrelas, PT4150-762 Porto, Portugal</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Faculdade de Ciências da Universidade do Porto, Rua do Campo de Alegre, 4150-007 Porto, Portugal</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Caillat</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Aix-Marseille Université, CNRS, CNES, LAM, Marseille, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Camera</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Dipartimento di Fisica, Università degli Studi di Torino, Via P. Giuria 1, 10125 Torino, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INFN-Sezione di Torino, Via P. Giuria 1, 10125 Torino, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astrofisico di Torino, Via Osservatorio 20, 10025 Pino Torinese</arxiv:affiliation>
+    </author>
+    <author>
+      <name>V. Capobianco</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astrofisico di Torino, Via Osservatorio 20, 10025 Pino Torinese</arxiv:affiliation>
+    </author>
+    <author>
+      <name>C. Carbone</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-IASF Milano, Via Alfonso Corti 12, 20133 Milano, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>V. F. Cardone</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Roma, Via Frascati 33, 00078 Monteporzio Catone, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INFN-Sezione di Roma, Piazzale Aldo Moro, 2 - c/o Dipartimento di Fisica, Edificio G. Marconi, 00185 Roma, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>J. Carretero</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Port d'Informació Científica, Campus UAB, C. Albareda s/n, 08193 Bellaterra</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Casas</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Institute for Theoretical Particle Physics and Cosmology</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Institute of Cosmology and Gravitation, University of Portsmouth, Portsmouth PO1 3FX, UK</arxiv:affiliation>
+    </author>
+    <author>
+      <name>M. Castellano</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Roma, Via Frascati 33, 00078 Monteporzio Catone, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>G. Castignani</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio di Astrofisica e Scienza dello Spazio di Bologna, Via Piero Gobetti 93/3, 40129 Bologna, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Cavuoti</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Capodimonte, Via Moiariello 16, 80131 Napoli, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INFN section of Naples, Via Cinthia 6, 80126, Napoli, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Cimatti</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Dipartimento di Fisica e Astronomia "Augusto Righi" - Alma Mater Studiorum Università di Bologna, Viale Berti Pichat 6/2, 40127 Bologna, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>C. Colodro-Conde</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Instituto de Astrofísica de Canarias, Vía Láctea, 38205 La Laguna, Tenerife, Spain</arxiv:affiliation>
+    </author>
+    <author>
+      <name>C. J. Conselice</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Jodrell Bank Centre for Astrophysics, Department of Physics and Astronomy, University of Manchester, Oxford Road, Manchester M13 9PL, UK</arxiv:affiliation>
+    </author>
+    <author>
+      <name>L. Conversi</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">European Space Agency/ESRIN, Largo Galileo Galilei 1, 00044 Frascati, Roma, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">ESAC/ESA, Camino Bajo del Castillo, s/n., Urb. Villafranca del Castillo, 28692 Villanueva de la Cañada, Madrid, Spain</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Y. Copin</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Université Claude Bernard Lyon 1, CNRS/IN2P3, IP2I Lyon, UMR 5822, Villeurbanne, F-69100, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>F. Courbin</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Institut de Ciències del Cosmos</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Institució Catalana de Recerca i Estudis Avançats</arxiv:affiliation>
+    </author>
+    <author>
+      <name>H. M. Courtois</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">UCB Lyon 1, CNRS/IN2P3, IUF, IP2I Lyon, 4 rue Enrico Fermi, 69622 Villeurbanne, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>M. Cropper</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Mullard Space Science Laboratory, University College London, Holmbury St Mary, Dorking, Surrey RH5 6NT, UK</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Da Silva</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Departamento de Física, Faculdade de Ciências, Universidade de Lisboa, Edifício C8, Campo Grande, PT1749-016 Lisboa, Portugal</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Instituto de Astrofísica e Ciências do Espaço, Faculdade de Ciências, Universidade de Lisboa, Campo Grande, 1749-016 Lisboa, Portugal</arxiv:affiliation>
+    </author>
+    <author>
+      <name>H. Degaudenzi</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Department of Astronomy, University of Geneva, ch. d'Ecogia 16, 1290 Versoix, Switzerland</arxiv:affiliation>
+    </author>
+    <author>
+      <name>G. De Lucia</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Trieste, Via G. B. Tiepolo 11, 34143 Trieste, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. M. Di Giorgio</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Istituto di Astrofisica e Planetologia Spaziali, via del Fosso del Cavaliere, 100, 00100 Roma, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>J. Dinis</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Departamento de Física, Faculdade de Ciências, Universidade de Lisboa, Edifício C8, Campo Grande, PT1749-016 Lisboa, Portugal</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Instituto de Astrofísica e Ciências do Espaço, Faculdade de Ciências, Universidade de Lisboa, Campo Grande, 1749-016 Lisboa, Portugal</arxiv:affiliation>
+    </author>
+    <author>
+      <name>F. Dubath</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Department of Astronomy, University of Geneva, ch. d'Ecogia 16, 1290 Versoix, Switzerland</arxiv:affiliation>
+    </author>
+    <author>
+      <name>C. A. J. Duncan</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Jodrell Bank Centre for Astrophysics, Department of Physics and Astronomy, University of Manchester, Oxford Road, Manchester M13 9PL, UK</arxiv:affiliation>
+    </author>
+    <author>
+      <name>X. Dupac</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">ESAC/ESA, Camino Bajo del Castillo, s/n., Urb. Villafranca del Castillo, 28692 Villanueva de la Cañada, Madrid, Spain</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Dusini</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INFN-Padova, Via Marzolo 8, 35131 Padova, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>M. Farina</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Istituto di Astrofisica e Planetologia Spaziali, via del Fosso del Cavaliere, 100, 00100 Roma, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>F. Faustini</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Space Science Data Center, Italian Space Agency, via del Politecnico snc, 00133 Roma, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Roma, Via Frascati 33, 00078 Monteporzio Catone, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Ferriol</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Université Claude Bernard Lyon 1, CNRS/IN2P3, IP2I Lyon, UMR 5822, Villeurbanne, F-69100, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Fotopoulou</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">School of Physics, HH Wills Physics Laboratory, University of Bristol, Tyndall Avenue, Bristol, BS8 1TL, UK</arxiv:affiliation>
+    </author>
+    <author>
+      <name>M. Frailis</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Trieste, Via G. B. Tiepolo 11, 34143 Trieste, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>E. Franceschi</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio di Astrofisica e Scienza dello Spazio di Bologna, Via Piero Gobetti 93/3, 40129 Bologna, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Galeotta</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Trieste, Via G. B. Tiepolo 11, 34143 Trieste, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>K. George</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Universitäts-Sternwarte München, Fakultät für Physik, Ludwig-Maximilians-Universität München, Scheinerstrasse 1, 81679 München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>B. Gillis</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Institute for Astronomy, University of Edinburgh, Royal Observatory, Blackford Hill, Edinburgh EH9 3HJ, UK</arxiv:affiliation>
+    </author>
+    <author>
+      <name>C. Giocoli</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio di Astrofisica e Scienza dello Spazio di Bologna, Via Piero Gobetti 93/3, 40129 Bologna, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INFN-Sezione di Bologna, Viale Berti Pichat 6/2, 40127 Bologna, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>P. Gómez-Alvarez</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">FRACTAL S.L.N.E., calle Tulipán 2, Portal 13 1A, 28231, Las Rozas de Madrid, Spain</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">ESAC/ESA, Camino Bajo del Castillo, s/n., Urb. Villafranca del Castillo, 28692 Villanueva de la Cañada, Madrid, Spain</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Grazian</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Padova, Via dell'Osservatorio 5, 35122 Padova, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>F. Grupp</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Max Planck Institute for Extraterrestrial Physics, Giessenbachstr. 1, 85748 Garching, Germany</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Universitäts-Sternwarte München, Fakultät für Physik, Ludwig-Maximilians-Universität München, Scheinerstrasse 1, 81679 München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>L. Guzzo</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Dipartimento di Fisica "Aldo Pontremoli", Università degli Studi di Milano, Via Celoria 16, 20133 Milano, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Brera, Via Brera 28, 20122 Milano, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. V. H. Haugan</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Institute of Theoretical Astrophysics, University of Oslo, P.O. Box 1029 Blindern, 0315 Oslo, Norway</arxiv:affiliation>
+    </author>
+    <author>
+      <name>J. Hoar</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">ESAC/ESA, Camino Bajo del Castillo, s/n., Urb. Villafranca del Castillo, 28692 Villanueva de la Cañada, Madrid, Spain</arxiv:affiliation>
+    </author>
+    <author>
+      <name>H. Hoekstra</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Leiden Observatory, Leiden University, Einsteinweg 55, 2333 CC Leiden, The Netherlands</arxiv:affiliation>
+    </author>
+    <author>
+      <name>W. Holmes</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Jet Propulsion Laboratory, California Institute of Technology, 4800 Oak Grove Drive, Pasadena, CA, 91109, USA</arxiv:affiliation>
+    </author>
+    <author>
+      <name>F. Hormuth</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Felix Hormuth Engineering, Goethestr. 17, 69181 Leimen, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Hornstrup</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Technical University of Denmark, Elektrovej 327, 2800 Kgs. Lyngby, Denmark</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Cosmic Dawn Center</arxiv:affiliation>
+    </author>
+    <author>
+      <name>P. Hudelot</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Institut d'Astrophysique de Paris, UMR 7095, CNRS, and Sorbonne Université, 98 bis boulevard Arago, 75014 Paris, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>K. Jahnke</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Max-Planck-Institut für Astronomie, Königstuhl 17, 69117 Heidelberg, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>M. Jhabvala</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">NASA Goddard Space Flight Center, Greenbelt, MD 20771, USA</arxiv:affiliation>
+    </author>
+    <author>
+      <name>B. Joachimi</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Department of Physics and Astronomy, University College London, Gower Street, London WC1E 6BT, UK</arxiv:affiliation>
+    </author>
+    <author>
+      <name>E. Keihänen</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Department of Physics and Helsinki Institute of Physics, Gustaf Hällströmin katu 2, 00014 University of Helsinki, Finland</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Kermiche</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Aix-Marseille Université, CNRS/IN2P3, CPPM, Marseille, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Kiessling</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Jet Propulsion Laboratory, California Institute of Technology, 4800 Oak Grove Drive, Pasadena, CA, 91109, USA</arxiv:affiliation>
+    </author>
+    <author>
+      <name>B. Kubik</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Université Claude Bernard Lyon 1, CNRS/IN2P3, IP2I Lyon, UMR 5822, Villeurbanne, F-69100, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>K. Kuijken</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Leiden Observatory, Leiden University, Einsteinweg 55, 2333 CC Leiden, The Netherlands</arxiv:affiliation>
+    </author>
+    <author>
+      <name>M. Kümmel</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Universitäts-Sternwarte München, Fakultät für Physik, Ludwig-Maximilians-Universität München, Scheinerstrasse 1, 81679 München, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>M. Kunz</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Université de Genève, Département de Physique Théorique and Centre for Astroparticle Physics, 24 quai Ernest-Ansermet, CH-1211 Genève 4, Switzerland</arxiv:affiliation>
+    </author>
+    <author>
+      <name>H. Kurki-Suonio</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Department of Physics, P.O. Box 64, 00014 University of Helsinki, Finland</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Helsinki Institute of Physics, Gustaf Hällströmin katu 2, University of Helsinki, Helsinki, Finland</arxiv:affiliation>
+    </author>
+    <author>
+      <name>R. Laureijs</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">European Space Agency/ESTEC, Keplerlaan 1, 2201 AZ Noordwijk, The Netherlands</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Kapteyn Astronomical Institute, University of Groningen, PO Box 800, 9700 AV Groningen, The Netherlands</arxiv:affiliation>
+    </author>
+    <author>
+      <name>D. Le Mignant</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Aix-Marseille Université, CNRS, CNES, LAM, Marseille, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Ligori</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astrofisico di Torino, Via Osservatorio 20, 10025 Pino Torinese</arxiv:affiliation>
+    </author>
+    <author>
+      <name>P. B. Lilje</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Institute of Theoretical Astrophysics, University of Oslo, P.O. Box 1029 Blindern, 0315 Oslo, Norway</arxiv:affiliation>
+    </author>
+    <author>
+      <name>V. Lindholm</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Department of Physics, P.O. Box 64, 00014 University of Helsinki, Finland</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Helsinki Institute of Physics, Gustaf Hällströmin katu 2, University of Helsinki, Helsinki, Finland</arxiv:affiliation>
+    </author>
+    <author>
+      <name>I. Lloro</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">NOVA optical infrared instrumentation group at ASTRON, Oude Hoogeveensedijk 4, 7991PD, Dwingeloo, The Netherlands</arxiv:affiliation>
+    </author>
+    <author>
+      <name>G. Mainetti</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Centre de Calcul de l'IN2P3/CNRS, 21 avenue Pierre de Coubertin 69627 Villeurbanne Cedex, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>D. Maino</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Dipartimento di Fisica "Aldo Pontremoli", Università degli Studi di Milano, Via Celoria 16, 20133 Milano, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-IASF Milano, Via Alfonso Corti 12, 20133 Milano, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INFN-Sezione di Milano, Via Celoria 16, 20133 Milano, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>E. Maiorano</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio di Astrofisica e Scienza dello Spazio di Bologna, Via Piero Gobetti 93/3, 40129 Bologna, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>O. Mansutti</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Trieste, Via G. B. Tiepolo 11, 34143 Trieste, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Marcin</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">University of Applied Sciences and Arts of Northwestern Switzerland, School of Computer Science, 5210 Windisch, Switzerland</arxiv:affiliation>
+    </author>
+    <author>
+      <name>O. Marggraf</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Universität Bonn, Argelander-Institut für Astronomie, Auf dem Hügel 71, 53121 Bonn, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>K. Markovic</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Jet Propulsion Laboratory, California Institute of Technology, 4800 Oak Grove Drive, Pasadena, CA, 91109, USA</arxiv:affiliation>
+    </author>
+    <author>
+      <name>M. Martinelli</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Roma, Via Frascati 33, 00078 Monteporzio Catone, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INFN-Sezione di Roma, Piazzale Aldo Moro, 2 - c/o Dipartimento di Fisica, Edificio G. Marconi, 00185 Roma, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>N. Martinet</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Aix-Marseille Université, CNRS, CNES, LAM, Marseille, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>F. Marulli</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Dipartimento di Fisica e Astronomia "Augusto Righi" - Alma Mater Studiorum Università di Bologna, via Piero Gobetti 93/2, 40129 Bologna, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio di Astrofisica e Scienza dello Spazio di Bologna, Via Piero Gobetti 93/3, 40129 Bologna, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INFN-Sezione di Bologna, Viale Berti Pichat 6/2, 40127 Bologna, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>R. Massey</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Department of Physics, Institute for Computational Cosmology, Durham University, South Road, Durham, DH1 3LE, UK</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Maurogordato</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Université Côte d'Azur, Observatoire de la Côte d'Azur, CNRS, Laboratoire Lagrange, Bd de l'Observatoire, CS 34229, 06304 Nice cedex 4, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>E. Medinaceli</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio di Astrofisica e Scienza dello Spazio di Bologna, Via Piero Gobetti 93/3, 40129 Bologna, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Mei</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Université Paris Cité, CNRS, Astroparticule et Cosmologie, 75013 Paris, France</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">CNRS-UCB International Research Laboratory, Centre Pierre Binetruy, IRL2007, CPB-IN2P3, Berkeley, USA</arxiv:affiliation>
+    </author>
+    <author>
+      <name>M. Melchior</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">University of Applied Sciences and Arts of Northwestern Switzerland, School of Engineering, 5210 Windisch, Switzerland</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Y. Mellier</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Institut d'Astrophysique de Paris, 98bis Boulevard Arago, 75014, Paris, France</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Institut d'Astrophysique de Paris, UMR 7095, CNRS, and Sorbonne Université, 98 bis boulevard Arago, 75014 Paris, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>M. Meneghetti</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio di Astrofisica e Scienza dello Spazio di Bologna, Via Piero Gobetti 93/3, 40129 Bologna, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INFN-Sezione di Bologna, Viale Berti Pichat 6/2, 40127 Bologna, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>E. Merlin</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Roma, Via Frascati 33, 00078 Monteporzio Catone, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>G. Meylan</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Institute of Physics, Laboratory of Astrophysics, Ecole Polytechnique Fédérale de Lausanne</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Mora</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Aurora Technology for European Space Agency</arxiv:affiliation>
+    </author>
+    <author>
+      <name>M. Moresco</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Dipartimento di Fisica e Astronomia "Augusto Righi" - Alma Mater Studiorum Università di Bologna, via Piero Gobetti 93/2, 40129 Bologna, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio di Astrofisica e Scienza dello Spazio di Bologna, Via Piero Gobetti 93/3, 40129 Bologna, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>L. Moscardini</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Dipartimento di Fisica e Astronomia "Augusto Righi" - Alma Mater Studiorum Università di Bologna, via Piero Gobetti 93/2, 40129 Bologna, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio di Astrofisica e Scienza dello Spazio di Bologna, Via Piero Gobetti 93/3, 40129 Bologna, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INFN-Sezione di Bologna, Viale Berti Pichat 6/2, 40127 Bologna, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>R. Nakajima</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Universität Bonn, Argelander-Institut für Astronomie, Auf dem Hügel 71, 53121 Bonn, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>C. Neissner</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Institut de Física d'Altes Energies</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Port d'Informació Científica, Campus UAB, C. Albareda s/n, 08193 Bellaterra</arxiv:affiliation>
+    </author>
+    <author>
+      <name>R. C. Nichol</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">School of Mathematics and Physics, University of Surrey, Guildford, Surrey, GU2 7XH, UK</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. -M. Niemi</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">European Space Agency/ESTEC, Keplerlaan 1, 2201 AZ Noordwijk, The Netherlands</arxiv:affiliation>
+    </author>
+    <author>
+      <name>J. W. Nightingale</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">School of Mathematics, Statistics and Physics, Newcastle University, Herschel Building, Newcastle-upon-Tyne, NE1 7RU, UK</arxiv:affiliation>
+    </author>
+    <author>
+      <name>C. Padilla</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Institut de Física d'Altes Energies</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Paltani</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Department of Astronomy, University of Geneva, ch. d'Ecogia 16, 1290 Versoix, Switzerland</arxiv:affiliation>
+    </author>
+    <author>
+      <name>F. Pasian</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Trieste, Via G. B. Tiepolo 11, 34143 Trieste, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>K. Pedersen</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">DARK, Niels Bohr Institute, University of Copenhagen, Jagtvej 155, 2200 Copenhagen, Denmark</arxiv:affiliation>
+    </author>
+    <author>
+      <name>W. J. Percival</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Waterloo Centre for Astrophysics, University of Waterloo, Waterloo, Ontario N2L 3G1, Canada</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Department of Physics and Astronomy, University of Waterloo, Waterloo, Ontario N2L 3G1, Canada</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Perimeter Institute for Theoretical Physics, Waterloo, Ontario N2L 2Y5, Canada</arxiv:affiliation>
+    </author>
+    <author>
+      <name>V. Pettorino</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">European Space Agency/ESTEC, Keplerlaan 1, 2201 AZ Noordwijk, The Netherlands</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Pires</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Université Paris-Saclay, Université Paris Cité, CEA, CNRS, AIM, 91191, Gif-sur-Yvette, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>G. Polenta</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Space Science Data Center, Italian Space Agency, via del Politecnico snc, 00133 Roma, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>M. Poncet</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Centre National d'Etudes Spatiales -- Centre spatial de Toulouse, 18 avenue Edouard Belin, 31401 Toulouse Cedex 9, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>L. A. Popa</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Institute of Space Science, Str. Atomistilor, nr. 409 Măgurele, Ilfov, 077125, Romania</arxiv:affiliation>
+    </author>
+    <author>
+      <name>L. Pozzetti</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio di Astrofisica e Scienza dello Spazio di Bologna, Via Piero Gobetti 93/3, 40129 Bologna, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>F. Raison</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Max Planck Institute for Extraterrestrial Physics, Giessenbachstr. 1, 85748 Garching, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>R. Rebolo</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Instituto de Astrofísica de Canarias, Vía Láctea, 38205 La Laguna, Tenerife, Spain</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Consejo Superior de Investigaciones Cientificas, Calle Serrano 117, 28006 Madrid, Spain</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Universidad de La Laguna, Departamento de Astrofísica, 38206 La Laguna, Tenerife, Spain</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Renzi</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Dipartimento di Fisica e Astronomia "G. Galilei", Università di Padova, Via Marzolo 8, 35131 Padova, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INFN-Padova, Via Marzolo 8, 35131 Padova, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>J. Rhodes</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Jet Propulsion Laboratory, California Institute of Technology, 4800 Oak Grove Drive, Pasadena, CA, 91109, USA</arxiv:affiliation>
+    </author>
+    <author>
+      <name>G. Riccio</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Capodimonte, Via Moiariello 16, 80131 Napoli, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>E. Romelli</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Trieste, Via G. B. Tiepolo 11, 34143 Trieste, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>M. Roncarelli</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio di Astrofisica e Scienza dello Spazio di Bologna, Via Piero Gobetti 93/3, 40129 Bologna, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>E. Rossetti</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Dipartimento di Fisica e Astronomia, Università di Bologna, Via Gobetti 93/2, 40129 Bologna, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>R. Saglia</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Universitäts-Sternwarte München, Fakultät für Physik, Ludwig-Maximilians-Universität München, Scheinerstrasse 1, 81679 München, Germany</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Max Planck Institute for Extraterrestrial Physics, Giessenbachstr. 1, 85748 Garching, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Z. Sakr</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Institut für Theoretische Physik, University of Heidelberg, Philosophenweg 16, 69120 Heidelberg, Germany</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Institut de Recherche en Astrophysique et Planétologie</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Université St Joseph, Faculty of Sciences, Beirut, Lebanon</arxiv:affiliation>
+    </author>
+    <author>
+      <name>D. Sapone</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Departamento de Física, FCFM, Universidad de Chile, Blanco Encalada 2008, Santiago, Chile</arxiv:affiliation>
+    </author>
+    <author>
+      <name>B. Sartoris</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Universitäts-Sternwarte München, Fakultät für Physik, Ludwig-Maximilians-Universität München, Scheinerstrasse 1, 81679 München, Germany</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Trieste, Via G. B. Tiepolo 11, 34143 Trieste, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>R. Scaramella</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Roma, Via Frascati 33, 00078 Monteporzio Catone, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INFN-Sezione di Roma, Piazzale Aldo Moro, 2 - c/o Dipartimento di Fisica, Edificio G. Marconi, 00185 Roma, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>M. Schirmer</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Max-Planck-Institut für Astronomie, Königstuhl 17, 69117 Heidelberg, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>P. Schneider</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Universität Bonn, Argelander-Institut für Astronomie, Auf dem Hügel 71, 53121 Bonn, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>T. Schrabback</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Universität Innsbruck, Institut für Astro- und Teilchenphysik, Technikerstr. 25/8, 6020 Innsbruck, Austria</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Secroun</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Aix-Marseille Université, CNRS/IN2P3, CPPM, Marseille, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>E. Sefusatti</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Trieste, Via G. B. Tiepolo 11, 34143 Trieste, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">IFPU, Institute for Fundamental Physics of the Universe, via Beirut 2, 34151 Trieste, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INFN, Sezione di Trieste, Via Valerio 2, 34127 Trieste TS, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>G. Seidel</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Max-Planck-Institut für Astronomie, Königstuhl 17, 69117 Heidelberg, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>M. Seiffert</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Jet Propulsion Laboratory, California Institute of Technology, 4800 Oak Grove Drive, Pasadena, CA, 91109, USA</arxiv:affiliation>
+    </author>
+    <author>
+      <name>S. Serrano</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Institut d'Estudis Espacials de Catalunya</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Satlantis, University Science Park, Sede Bld 48940, Leioa-Bilbao, Spain</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Institute of Space Sciences</arxiv:affiliation>
+    </author>
+    <author>
+      <name>C. Sirignano</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Dipartimento di Fisica e Astronomia "G. Galilei", Università di Padova, Via Marzolo 8, 35131 Padova, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INFN-Padova, Via Marzolo 8, 35131 Padova, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>G. Sirri</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INFN-Sezione di Bologna, Viale Berti Pichat 6/2, 40127 Bologna, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>L. Stanco</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INFN-Padova, Via Marzolo 8, 35131 Padova, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>J. -L. Starck</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Université Paris-Saclay, Université Paris Cité, CEA, CNRS, AIM, 91191, Gif-sur-Yvette, France</arxiv:affiliation>
+    </author>
+    <author>
+      <name>J. Steinwagner</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Max Planck Institute for Extraterrestrial Physics, Giessenbachstr. 1, 85748 Garching, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>P. Tallada-Crespí</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Port d'Informació Científica, Campus UAB, C. Albareda s/n, 08193 Bellaterra</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. N. Taylor</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Institute for Astronomy, University of Edinburgh, Royal Observatory, Blackford Hill, Edinburgh EH9 3HJ, UK</arxiv:affiliation>
+    </author>
+    <author>
+      <name>H. I. Teplitz</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Infrared Processing and Analysis Center, California Institute of Technology, Pasadena, CA 91125, USA</arxiv:affiliation>
+    </author>
+    <author>
+      <name>I. Tereno</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Departamento de Física, Faculdade de Ciências, Universidade de Lisboa, Edifício C8, Campo Grande, PT1749-016 Lisboa, Portugal</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Instituto de Astrofísica e Ciências do Espaço, Faculdade de Ciências, Universidade de Lisboa, Tapada da Ajuda, 1349-018 Lisboa, Portugal</arxiv:affiliation>
+    </author>
+    <author>
+      <name>R. Toledo-Moreo</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Universidad Politécnica de Cartagena, Departamento de Electrónica y Tecnología de Computadoras, Plaza del Hospital 1, 30202 Cartagena, Spain</arxiv:affiliation>
+    </author>
+    <author>
+      <name>F. Torradeflot</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Port d'Informació Científica, Campus UAB, C. Albareda s/n, 08193 Bellaterra</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Tsyganov</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Centre for Information Technology, University of Groningen, P.O. Box 11044, 9700 CA Groningen, The Netherlands</arxiv:affiliation>
+    </author>
+    <author>
+      <name>I. Tutusaus</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Institut de Recherche en Astrophysique et Planétologie</arxiv:affiliation>
+    </author>
+    <author>
+      <name>L. Valenziano</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio di Astrofisica e Scienza dello Spazio di Bologna, Via Piero Gobetti 93/3, 40129 Bologna, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INFN-Bologna, Via Irnerio 46, 40126 Bologna, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>T. Vassallo</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Universitäts-Sternwarte München, Fakultät für Physik, Ludwig-Maximilians-Universität München, Scheinerstrasse 1, 81679 München, Germany</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Trieste, Via G. B. Tiepolo 11, 34143 Trieste, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>G. Verdoes Kleijn</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Kapteyn Astronomical Institute, University of Groningen, PO Box 800, 9700 AV Groningen, The Netherlands</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. Veropalumbo</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio Astronomico di Brera, Via Brera 28, 20122 Milano, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INFN-Sezione di Genova, Via Dodecaneso 33, 16146, Genova, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Dipartimento di Fisica, Università di Genova, Via Dodecaneso 33, 16146, Genova, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Y. Wang</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Infrared Processing and Analysis Center, California Institute of Technology, Pasadena, CA 91125, USA</arxiv:affiliation>
+    </author>
+    <author>
+      <name>J. Weller</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Universitäts-Sternwarte München, Fakultät für Physik, Ludwig-Maximilians-Universität München, Scheinerstrasse 1, 81679 München, Germany</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Max Planck Institute for Extraterrestrial Physics, Giessenbachstr. 1, 85748 Garching, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>O. R. Williams</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Centre for Information Technology, University of Groningen, P.O. Box 11044, 9700 CA Groningen, The Netherlands</arxiv:affiliation>
+    </author>
+    <author>
+      <name>E. Zucca</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio di Astrofisica e Scienza dello Spazio di Bologna, Via Piero Gobetti 93/3, 40129 Bologna, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>M. Bolzonella</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF-Osservatorio di Astrofisica e Scienza dello Spazio di Bologna, Via Piero Gobetti 93/3, 40129 Bologna, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>C. Burigana</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INAF, Istituto di Radioastronomia, Via Piero Gobetti 101, 40129 Bologna, Italy</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">INFN-Bologna, Via Irnerio 46, 40126 Bologna, Italy</arxiv:affiliation>
+    </author>
+    <author>
+      <name>V. Scottez</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Institut d'Astrophysique de Paris, 98bis Boulevard Arago, 75014, Paris, France</arxiv:affiliation>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">ICL, Junia, Université Catholique de Lille, LITL, 59000 Lille, France</arxiv:affiliation>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">23 pages, 20 figures, 2 tables submitted to A\&amp;A</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.07484v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.07484v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.07482v1</id>
+    <updated>2025-03-10T15:58:43Z</updated>
+    <published>2025-03-10T15:58:43Z</published>
+    <title>Efficient Membership Inference Attacks by Bayesian Neural Network</title>
+    <summary>  Membership Inference Attacks (MIAs) aim to estimate whether a specific data
+point was used in the training of a given model. Previous attacks often utilize
+multiple reference models to approximate the conditional score distribution,
+leading to significant computational overhead. While recent work leverages
+quantile regression to estimate conditional thresholds, it fails to capture
+epistemic uncertainty, resulting in bias in low-density regions. In this work,
+we propose a novel approach - Bayesian Membership Inference Attack (BMIA),
+which performs conditional attack through Bayesian inference. In particular, we
+transform a trained reference model into Bayesian neural networks by Laplace
+approximation, enabling the direct estimation of the conditional score
+distribution by probabilistic model parameters. Our method addresses both
+epistemic and aleatoric uncertainty with only a reference model, enabling
+efficient and powerful MIA. Extensive experiments on five datasets demonstrate
+the effectiveness and efficiency of BMIA.
+</summary>
+    <author>
+      <name>Zhenlong Liu</name>
+    </author>
+    <author>
+      <name>Wenyu Jiang</name>
+    </author>
+    <author>
+      <name>Feng Zhou</name>
+    </author>
+    <author>
+      <name>Hongxin Wei</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">8 pages, under review</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.07482v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.07482v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.07481v1</id>
+    <updated>2025-03-10T15:56:38Z</updated>
+    <published>2025-03-10T15:56:38Z</published>
+    <title>Learning Physics-Based Full-Body Human Reaching and Grasping from Brief
+  Walking References</title>
+    <summary>  Existing motion generation methods based on mocap data are often limited by
+data quality and coverage. In this work, we propose a framework that generates
+diverse, physically feasible full-body human reaching and grasping motions
+using only brief walking mocap data. Base on the observation that walking data
+captures valuable movement patterns transferable across tasks and, on the other
+hand, the advanced kinematic methods can generate diverse grasping poses, which
+can then be interpolated into motions to serve as task-specific guidance. Our
+approach incorporates an active data generation strategy to maximize the
+utility of the generated motions, along with a local feature alignment
+mechanism that transfers natural movement patterns from walking data to enhance
+both the success rate and naturalness of the synthesized motions. By combining
+the fidelity and stability of natural walking with the flexibility and
+generalizability of task-specific generated data, our method demonstrates
+strong performance and robust adaptability in diverse scenes and with unseen
+objects.
+</summary>
+    <author>
+      <name>Yitang Li</name>
+    </author>
+    <author>
+      <name>Mingxian Lin</name>
+    </author>
+    <author>
+      <name>Zhuo Lin</name>
+    </author>
+    <author>
+      <name>Yipeng Deng</name>
+    </author>
+    <author>
+      <name>Yue Cao</name>
+    </author>
+    <author>
+      <name>Li Yi</name>
+    </author>
+    <link href="http://arxiv.org/abs/2503.07481v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.07481v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2503.05684v1</id>
-    <updated>2025-03-07T18:49:57Z</updated>
-    <published>2025-03-07T18:49:57Z</published>
-    <title>Fairness-Aware Low-Rank Adaptation Under Demographic Privacy Constraints</title>
-    <summary>  Pre-trained foundation models can be adapted for specific tasks using
-Low-Rank Adaptation (LoRA). However, the fairness properties of these adapted
-classifiers remain underexplored. Existing fairness-aware fine-tuning methods
-rely on direct access to sensitive attributes or their predictors, but in
-practice, these sensitive attributes are often held under strict consumer
-privacy controls, and neither the attributes nor their predictors are available
-to model developers, hampering the development of fair models. To address this
-issue, we introduce a set of LoRA-based fine-tuning methods that can be trained
-in a distributed fashion, where model developers and fairness auditors
-collaborate without sharing sensitive attributes or predictors. In this paper,
-we evaluate three such methods - sensitive unlearning, adversarial training,
-and orthogonality loss - against a fairness-unaware baseline, using experiments
-on the CelebA and UTK-Face datasets with an ImageNet pre-trained ViT-Base
-model. We find that orthogonality loss consistently reduces bias while
-maintaining or improving utility, whereas adversarial training improves False
-Positive Rate Parity and Demographic Parity in some cases, and sensitive
-unlearning provides no clear benefit. In tasks where significant biases are
-present, distributed fairness-aware fine-tuning methods can effectively
-eliminate bias without compromising consumer privacy and, in most cases,
-improve model utility.
+    <id>http://arxiv.org/abs/2503.07479v1</id>
+    <updated>2025-03-10T15:54:15Z</updated>
+    <published>2025-03-10T15:54:15Z</published>
+    <title>QBIT: Quality-Aware Cloud-Based Benchmarking for Robotic Insertion Tasks</title>
+    <summary>  Insertion tasks are fundamental yet challenging for robots, particularly in
+autonomous operations, due to their continuous interaction with the
+environment. AI-based approaches appear to be up to the challenge, but in
+production they must not only achieve high success rates. They must also ensure
+insertion quality and reliability. To address this, we introduce QBIT, a
+quality-aware benchmarking framework that incorporates additional metrics such
+as force energy, force smoothness and completion time to provide a
+comprehensive assessment. To ensure statistical significance and minimize the
+sim-to-real gap, we randomize contact parameters in the MuJoCo simulator,
+account for perceptual uncertainty, and conduct large-scale experiments on a
+Kubernetes-based infrastructure. Our microservice-oriented architecture ensures
+extensibility, broad applicability, and improved reproducibility. To facilitate
+seamless transitions to physical robotic testing, we use ROS2 with
+containerization to reduce integration barriers. We evaluate QBIT using three
+insertion approaches: geometricbased, force-based, and learning-based, in both
+simulated and real-world environments. In simulation, we compare the accuracy
+of contact simulation using different mesh decomposition techniques. Our
+results demonstrate the effectiveness of QBIT in comparing different insertion
+approaches and accelerating the transition from laboratory to real-world
+applications. Code is available on GitHub.
 </summary>
     <author>
-      <name>Parameswaran Kamalaruban</name>
+      <name>Constantin Schempp</name>
     </author>
     <author>
-      <name>Mark Anderson</name>
+      <name>Yongzhou Zhang</name>
     </author>
     <author>
-      <name>Stuart Burrell</name>
+      <name>Christian Friedrich</name>
     </author>
     <author>
-      <name>Maeve Madigan</name>
+      <name>Bjorn Hein</name>
     </author>
-    <author>
-      <name>Piotr Skalski</name>
-    </author>
-    <author>
-      <name>David Sutton</name>
-    </author>
-    <link href="http://arxiv.org/abs/2503.05684v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.05684v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.05683v1</id>
-    <updated>2025-03-07T18:45:42Z</updated>
-    <published>2025-03-07T18:45:42Z</published>
-    <title>Understanding the Limits of Lifelong Knowledge Editing in LLMs</title>
-    <summary>  Keeping large language models factually up-to-date is crucial for deployment,
-yet costly retraining remains a challenge. Knowledge editing offers a promising
-alternative, but methods are only tested on small-scale or synthetic edit
-benchmarks. In this work, we aim to bridge research into lifelong knowledge
-editing to real-world edits at practically relevant scale. We first introduce
-WikiBigEdit; a large-scale benchmark of real-world Wikidata edits, built to
-automatically extend lifelong for future-proof benchmarking. In its first
-instance, it includes over 500K question-answer pairs for knowledge editing
-alongside a comprehensive evaluation pipeline. Finally, we use WikiBigEdit to
-study existing knowledge editing techniques' ability to incorporate large
-volumes of real-world facts and contrast their capabilities to generic
-modification techniques such as retrieval augmentation and continual finetuning
-to acquire a complete picture of the practical extent of current lifelong
-knowledge editing.
-</summary>
-    <author>
-      <name>Lukas Thede</name>
-    </author>
-    <author>
-      <name>Karsten Roth</name>
-    </author>
-    <author>
-      <name>Matthias Bethge</name>
-    </author>
-    <author>
-      <name>Zeynep Akata</name>
-    </author>
-    <author>
-      <name>Tom Hartvigsen</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Preprint</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.05683v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.05683v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.05682v1</id>
-    <updated>2025-03-07T18:44:53Z</updated>
-    <published>2025-03-07T18:44:53Z</published>
-    <title>Task-oriented Uncertainty Collaborative Learning for Label-Efficient
-  Brain Tumor Segmentation</title>
-    <summary>  Multi-contrast magnetic resonance imaging (MRI) plays a vital role in brain
-tumor segmentation and diagnosis by leveraging complementary information from
-different contrasts. Each contrast highlights specific tumor characteristics,
-enabling a comprehensive understanding of tumor morphology, edema, and
-pathological heterogeneity. However, existing methods still face the challenges
-of multi-level specificity perception across different contrasts, especially
-with limited annotations. These challenges include data heterogeneity,
-granularity differences, and interference from redundant information. To
-address these limitations, we propose a Task-oriented Uncertainty Collaborative
-Learning (TUCL) framework for multi-contrast MRI segmentation. TUCL introduces
-a task-oriented prompt attention (TPA) module with intra-prompt and
-cross-prompt attention mechanisms to dynamically model feature interactions
-across contrasts and tasks. Additionally, a cyclic process is designed to map
-the predictions back to the prompt to ensure that the prompts are effectively
-utilized. In the decoding stage, the TUCL framework proposes a dual-path
-uncertainty refinement (DUR) strategy which ensures robust segmentation by
-refining predictions iteratively. Extensive experimental results on limited
-labeled data demonstrate that TUCL significantly improves segmentation accuracy
-(88.2\% in Dice and 10.853 mm in HD95). It shows that TUCL has the potential to
-extract multi-contrast information and reduce the reliance on extensive
-annotations. The code is available at:
-https://github.com/Zhenxuan-Zhang/TUCL_BrainSeg.
-</summary>
-    <author>
-      <name>Zhenxuan Zhang</name>
-    </author>
-    <author>
-      <name>Hongjie Wu</name>
-    </author>
-    <author>
-      <name>Jiahao Huang</name>
-    </author>
-    <author>
-      <name>Baihong Xie</name>
-    </author>
-    <author>
-      <name>Zhifan Gao</name>
-    </author>
-    <author>
-      <name>Junxian Du</name>
-    </author>
-    <author>
-      <name>Pete Lally</name>
-    </author>
-    <author>
-      <name>Guang Yang</name>
-    </author>
-    <link href="http://arxiv.org/abs/2503.05682v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.05682v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.05681v1</id>
-    <updated>2025-03-07T18:43:45Z</updated>
-    <published>2025-03-07T18:43:45Z</published>
-    <title>Defining Determinism</title>
-    <summary>  Determinism is the thesis that the past determines the future, but efforts to
-define it precisely have exposed deep methodological disagreements. Standard
-possible-worlds formulations of determinism presuppose an "agreement" relation
-between worlds, but this relation can be understood in multiple ways -- none of
-which is particularly clear. We critically examine the proliferation of
-definitions of determinism in the recent literature, arguing that these
-definitions fail to deliver clear verdicts about actual scientific theories. We
-advocate a return to a formal approach, in the logical tradition of Carnap,
-that treats determinism as a property of scientific theories, rather than an
-elusive metaphysical doctrine.
-  We highlight two key distinctions: (1) the difference between qualitative and
-"full" determinism, as emphasized in recent discussions of physics and
-metaphysics, and (2) the distinction between weak and strong formal conditions
-on the uniqueness of world extensions. We argue that defining determinism in
-terms of metaphysical notions such as haecceities is unhelpful, whereas
-rigorous formal criteria -- such as Belot's D1 and D3 -- offer a tractable and
-scientifically relevant account. By clarifying what it means for a theory to be
-deterministic, we set the stage for a fruitful interaction between physics and
-metaphysics.
-</summary>
-    <author>
-      <name>Hans Halvorson</name>
-    </author>
-    <author>
-      <name>JB Manchak</name>
-    </author>
-    <author>
-      <name>James Owen Weatherall</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">46 pages</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.05681v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.05681v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.hist-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">This work has been submitted to the IEEE for possible publication</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.07479v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.07479v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
