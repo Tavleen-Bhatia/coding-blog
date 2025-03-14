@@ -3,253 +3,238 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-03-12T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">411338</opensearch:totalResults>
+  <updated>2025-03-13T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">411613</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2503.08684v1</id>
-    <updated>2025-03-11T17:59:00Z</updated>
-    <published>2025-03-11T17:59:00Z</published>
-    <title>Perplexity Trap: PLM-Based Retrievers Overrate Low Perplexity Documents</title>
-    <summary>  Previous studies have found that PLM-based retrieval models exhibit a
-preference for LLM-generated content, assigning higher relevance scores to
-these documents even when their semantic quality is comparable to human-written
-ones. This phenomenon, known as source bias, threatens the sustainable
-development of the information access ecosystem. However, the underlying causes
-of source bias remain unexplored. In this paper, we explain the process of
-information retrieval with a causal graph and discover that PLM-based
-retrievers learn perplexity features for relevance estimation, causing source
-bias by ranking the documents with low perplexity higher. Theoretical analysis
-further reveals that the phenomenon stems from the positive correlation between
-the gradients of the loss functions in language modeling task and retrieval
-task. Based on the analysis, a causal-inspired inference-time debiasing method
-is proposed, called Causal Diagnosis and Correction (CDC). CDC first diagnoses
-the bias effect of the perplexity and then separates the bias effect from the
-overall estimated relevance score. Experimental results across three domains
-demonstrate the superior debiasing effectiveness of CDC, emphasizing the
-validity of our proposed explanatory framework. Source codes are available at
-https://github.com/WhyDwelledOnAi/Perplexity-Trap.
+    <id>http://arxiv.org/abs/2503.09592v1</id>
+    <updated>2025-03-12T17:57:48Z</updated>
+    <published>2025-03-12T17:57:48Z</published>
+    <title>Parsing the Language of Expression: Enhancing Symbolic Regression with
+  Domain-Aware Symbolic Priors</title>
+    <summary>  Symbolic regression is essential for deriving interpretable expressions that
+elucidate complex phenomena by exposing the underlying mathematical and
+physical relationships in data. In this paper, we present an advanced symbolic
+regression method that integrates symbol priors from diverse scientific domains
+- including physics, biology, chemistry, and engineering - into the regression
+process. By systematically analyzing domain-specific expressions, we derive
+probability distributions of symbols to guide expression generation. We propose
+novel tree-structured recurrent neural networks (RNNs) that leverage these
+symbol priors, enabling domain knowledge to steer the learning process.
+Additionally, we introduce a hierarchical tree structure for representing
+expressions, where unary and binary operators are organized to facilitate more
+efficient learning. To further accelerate training, we compile characteristic
+expression blocks from each domain and include them in the operator dictionary,
+providing relevant building blocks. Experimental results demonstrate that
+leveraging symbol priors significantly enhances the performance of symbolic
+regression, resulting in faster convergence and higher accuracy.
 </summary>
     <author>
-      <name>Haoyu Wang</name>
+      <name>Sikai Huang</name>
     </author>
     <author>
-      <name>Sunhao Dai</name>
+      <name>Yixin Berry Wen</name>
     </author>
     <author>
-      <name>Haiyuan Zhao</name>
+      <name>Tara Adusumilli</name>
     </author>
     <author>
-      <name>Liang Pang</name>
+      <name>Kusum Choudhary</name>
     </author>
     <author>
-      <name>Xiao Zhang</name>
+      <name>Haizhao Yang</name>
     </author>
-    <author>
-      <name>Gang Wang</name>
-    </author>
-    <author>
-      <name>Zhenhua Dong</name>
-    </author>
-    <author>
-      <name>Jun Xu</name>
-    </author>
-    <author>
-      <name>Ji-Rong Wen</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">ICLR 2025</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.08684v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.08684v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.08681v1</id>
-    <updated>2025-03-11T17:57:44Z</updated>
-    <published>2025-03-11T17:57:44Z</published>
-    <title>Self-Taught Self-Correction for Small Language Models</title>
-    <summary>  Although large language models (LLMs) have achieved remarkable performance
-across various tasks, they remain prone to errors. A key challenge is enabling
-them to self-correct. While prior research has relied on external tools or
-large proprietary models, this work explores self-correction in small language
-models (SLMs) through iterative fine-tuning using solely self-generated data.
-We introduce the Self-Taught Self-Correction (STaSC) algorithm, which
-incorporates multiple algorithmic design choices. Experimental results on a
-question-answering task demonstrate that STaSC effectively learns
-self-correction, leading to significant performance improvements. Our analysis
-further provides insights into the mechanisms of self-correction and the impact
-of different design choices on learning dynamics and overall performance. To
-support future research, we release our user-friendly codebase and lightweight
-models.
-</summary>
-    <author>
-      <name>Viktor Moskvoretskii</name>
-    </author>
-    <author>
-      <name>Chris Biemann</name>
-    </author>
-    <author>
-      <name>Irina Nikishina</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Code is available at https://github.com/VityaVitalich/STASC</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.08681v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.08681v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.08679v1</id>
-    <updated>2025-03-11T17:56:30Z</updated>
-    <published>2025-03-11T17:56:30Z</published>
-    <title>Chain-of-Thought Reasoning In The Wild Is Not Always Faithful</title>
-    <summary>  Chain-of-Thought (CoT) reasoning has significantly advanced state-of-the-art
-AI capabilities. However, recent studies have shown that CoT reasoning is not
-always faithful, i.e. CoT reasoning does not always reflect how models arrive
-at conclusions. So far, most of these studies have focused on unfaithfulness in
-unnatural contexts where an explicit bias has been introduced. In contrast, we
-show that unfaithful CoT can occur on realistic prompts with no artificial
-bias. Our results reveal concerning rates of several forms of unfaithful
-reasoning in frontier models: Sonnet 3.7 (30.6%), DeepSeek R1 (15.8%) and
-ChatGPT-4o (12.6%) all answer a high proportion of question pairs unfaithfully.
-Specifically, we find that models rationalize their implicit biases in answers
-to binary questions ("implicit post-hoc rationalization"). For example, when
-separately presented with the questions "Is X bigger than Y?" and "Is Y bigger
-than X?", models sometimes produce superficially coherent arguments to justify
-answering Yes to both questions or No to both questions, despite such responses
-being logically contradictory. We also investigate restoration errors (Dziri et
-al., 2023), where models make and then silently correct errors in their
-reasoning, and unfaithful shortcuts, where models use clearly illogical
-reasoning to simplify solving problems in Putnam questions (a hard benchmark).
-Our findings raise challenges for AI safety work that relies on monitoring CoT
-to detect undesired behavior.
-</summary>
-    <author>
-      <name>Iván Arcuschin</name>
-    </author>
-    <author>
-      <name>Jett Janiak</name>
-    </author>
-    <author>
-      <name>Robert Krzyzanowski</name>
-    </author>
-    <author>
-      <name>Senthooran Rajamanoharan</name>
-    </author>
-    <author>
-      <name>Neel Nanda</name>
-    </author>
-    <author>
-      <name>Arthur Conmy</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted to the ICLR 2025 Workshop, 10 main paper pages, 38 appendix
-  pages</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.08679v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.08679v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.08674v1</id>
-    <updated>2025-03-11T17:54:29Z</updated>
-    <published>2025-03-11T17:54:29Z</published>
-    <title>Understanding and Mitigating Distribution Shifts For Machine Learning
-  Force Fields</title>
-    <summary>  Machine Learning Force Fields (MLFFs) are a promising alternative to
-expensive ab initio quantum mechanical molecular simulations. Given the
-diversity of chemical spaces that are of interest and the cost of generating
-new data, it is important to understand how MLFFs generalize beyond their
-training distributions. In order to characterize and better understand
-distribution shifts in MLFFs, we conduct diagnostic experiments on chemical
-datasets, revealing common shifts that pose significant challenges, even for
-large foundation models trained on extensive data. Based on these observations,
-we hypothesize that current supervised training methods inadequately regularize
-MLFFs, resulting in overfitting and learning poor representations of
-out-of-distribution systems. We then propose two new methods as initial steps
-for mitigating distribution shifts for MLFFs. Our methods focus on test-time
-refinement strategies that incur minimal computational cost and do not use
-expensive ab initio reference labels. The first strategy, based on spectral
-graph theory, modifies the edges of test graphs to align with graph structures
-seen during training. Our second strategy improves representations for
-out-of-distribution systems at test-time by taking gradient steps using an
-auxiliary objective, such as a cheap physical prior. Our test-time refinement
-strategies significantly reduce errors on out-of-distribution systems,
-suggesting that MLFFs are capable of and can move towards modeling diverse
-chemical spaces, but are not being effectively trained to do so. Our
-experiments establish clear benchmarks for evaluating the generalization
-capabilities of the next generation of MLFFs. Our code is available at
-https://tkreiman.github.io/projects/mlff_distribution_shifts/.
-</summary>
-    <author>
-      <name>Tobias Kreiman</name>
-    </author>
-    <author>
-      <name>Aditi S. Krishnapriyan</name>
-    </author>
-    <link href="http://arxiv.org/abs/2503.08674v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.08674v1" rel="related" type="application/pdf"/>
+    <link href="http://arxiv.org/abs/2503.09592v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.09592v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cond-mat.mtrl-sci" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.chem-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="q-bio.BM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SC" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2503.08665v1</id>
-    <updated>2025-03-11T17:51:07Z</updated>
-    <published>2025-03-11T17:51:07Z</published>
-    <title>REGEN: Learning Compact Video Embedding with (Re-)Generative Decoder</title>
-    <summary>  We present a novel perspective on learning video embedders for generative
-modeling: rather than requiring an exact reproduction of an input video, an
-effective embedder should focus on synthesizing visually plausible
-reconstructions. This relaxed criterion enables substantial improvements in
-compression ratios without compromising the quality of downstream generative
-models. Specifically, we propose replacing the conventional encoder-decoder
-video embedder with an encoder-generator framework that employs a diffusion
-transformer (DiT) to synthesize missing details from a compact latent space.
-Therein, we develop a dedicated latent conditioning module to condition the DiT
-decoder on the encoded video latent embedding. Our experiments demonstrate that
-our approach enables superior encoding-decoding performance compared to
-state-of-the-art methods, particularly as the compression ratio increases. To
-demonstrate the efficacy of our approach, we report results from our video
-embedders achieving a temporal compression ratio of up to 32x (8x higher than
-leading video embedders) and validate the robustness of this ultra-compact
-latent space for text-to-video generation, providing a significant efficiency
-boost in latent diffusion model training and inference.
+    <id>http://arxiv.org/abs/2503.09590v2</id>
+    <updated>2025-03-13T17:14:31Z</updated>
+    <published>2025-03-12T17:57:32Z</published>
+    <title>BIMBA: Selective-Scan Compression for Long-Range Video Question
+  Answering</title>
+    <summary>  Video Question Answering (VQA) in long videos poses the key challenge of
+extracting relevant information and modeling long-range dependencies from many
+redundant frames. The self-attention mechanism provides a general solution for
+sequence modeling, but it has a prohibitive cost when applied to a massive
+number of spatiotemporal tokens in long videos. Most prior methods rely on
+compression strategies to lower the computational cost, such as reducing the
+input length via sparse frame sampling or compressing the output sequence
+passed to the large language model (LLM) via space-time pooling. However, these
+naive approaches over-represent redundant information and often miss salient
+events or fast-occurring space-time patterns. In this work, we introduce BIMBA,
+an efficient state-space model to handle long-form videos. Our model leverages
+the selective scan algorithm to learn to effectively select critical
+information from high-dimensional video and transform it into a reduced token
+sequence for efficient LLM processing. Extensive experiments demonstrate that
+BIMBA achieves state-of-the-art accuracy on multiple long-form VQA benchmarks,
+including PerceptionTest, NExT-QA, EgoSchema, VNBench, LongVideoBench, and
+Video-MME. Code, and models are publicly available at
+https://sites.google.com/view/bimba-mllm.
 </summary>
     <author>
-      <name>Yitian Zhang</name>
+      <name>Md Mohaiminul Islam</name>
     </author>
     <author>
-      <name>Long Mai</name>
+      <name>Tushar Nagarajan</name>
     </author>
     <author>
-      <name>Aniruddha Mahapatra</name>
+      <name>Huiyu Wang</name>
     </author>
     <author>
-      <name>David Bourgin</name>
+      <name>Gedas Bertasius</name>
     </author>
     <author>
-      <name>Yicong Hong</name>
+      <name>Lorenzo Torresani</name>
     </author>
-    <author>
-      <name>Jonah Casebeer</name>
-    </author>
-    <author>
-      <name>Feng Liu</name>
-    </author>
-    <author>
-      <name>Yun Fu</name>
-    </author>
-    <link href="http://arxiv.org/abs/2503.08665v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.08665v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted by CVPR 2025</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.09590v2" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.09590v2" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.09587v1</id>
+    <updated>2025-03-12T17:56:28Z</updated>
+    <published>2025-03-12T17:56:28Z</published>
+    <title>Fair Federated Medical Image Classification Against Quality Shift via
+  Inter-Client Progressive State Matching</title>
+    <summary>  Despite the potential of federated learning in medical applications,
+inconsistent imaging quality across institutions-stemming from lower-quality
+data from a minority of clients-biases federated models toward more common
+high-quality images. This raises significant fairness concerns. Existing fair
+federated learning methods have demonstrated some effectiveness in solving this
+problem by aligning a single 0th- or 1st-order state of convergence (e.g.,
+training loss or sharpness). However, we argue in this work that fairness based
+on such a single state is still not an adequate surrogate for fairness during
+testing, as these single metrics fail to fully capture the convergence
+characteristics, making them suboptimal for guiding fair learning. To address
+this limitation, we develop a generalized framework. Specifically, we propose
+assessing convergence using multiple states, defined as sharpness or perturbed
+loss computed at varying search distances. Building on this comprehensive
+assessment, we propose promoting fairness for these states across clients to
+achieve our ultimate fairness objective. This is accomplished through the
+proposed method, FedISM+. In FedISM+, the search distance evolves over time,
+progressively focusing on different states. We then incorporate two components
+in local training and global aggregation to ensure cross-client fairness for
+each state. This gradually makes convergence equitable for all states, thereby
+improving fairness during testing. Our empirical evaluations, performed on the
+well-known RSNA ICH and ISIC 2019 datasets, demonstrate the superiority of
+FedISM+ over existing state-of-the-art methods for fair federated learning. The
+code is available at https://github.com/wnn2000/FFL4MIA.
+</summary>
+    <author>
+      <name>Nannan Wu</name>
+    </author>
+    <author>
+      <name>Zhuo Kuang</name>
+    </author>
+    <author>
+      <name>Zengqiang Yan</name>
+    </author>
+    <author>
+      <name>Ping Wang</name>
+    </author>
+    <author>
+      <name>Li Yu</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Preprint</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.09587v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.09587v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.09583v1</id>
+    <updated>2025-03-12T17:51:29Z</updated>
+    <published>2025-03-12T17:51:29Z</published>
+    <title>Minimax Optimality of the Probability Flow ODE for Diffusion Models</title>
+    <summary>  Score-based diffusion models have become a foundational paradigm for modern
+generative modeling, demonstrating exceptional capability in generating samples
+from complex high-dimensional distributions. Despite the dominant adoption of
+probability flow ODE-based samplers in practice due to their superior sampling
+efficiency and precision, rigorous statistical guarantees for these methods
+have remained elusive in the literature. This work develops the first
+end-to-end theoretical framework for deterministic ODE-based samplers that
+establishes near-minimax optimal guarantees under mild assumptions on target
+data distributions. Specifically, focusing on subgaussian distributions with
+$\beta$-H\"older smooth densities for $\beta\leq 2$, we propose a smooth
+regularized score estimator that simultaneously controls both the $L^2$ score
+error and the associated mean Jacobian error. Leveraging this estimator within
+a refined convergence analysis of the ODE-based sampling process, we
+demonstrate that the resulting sampler achieves the minimax rate in total
+variation distance, modulo logarithmic factors. Notably, our theory
+comprehensively accounts for all sources of error in the sampling process and
+does not require strong structural conditions such as density lower bounds or
+Lipschitz/smooth scores on target distributions, thereby covering a broad range
+of practical data distributions.
+</summary>
+    <author>
+      <name>Changxiao Cai</name>
+    </author>
+    <author>
+      <name>Gen Li</name>
+    </author>
+    <link href="http://arxiv.org/abs/2503.09583v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.09583v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.TH" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.09579v1</id>
+    <updated>2025-03-12T17:50:42Z</updated>
+    <published>2025-03-12T17:50:42Z</published>
+    <title>Cost-Optimal Grouped-Query Attention for Long-Context LLMs</title>
+    <summary>  Building effective and efficient Transformer-based large language models
+(LLMs) has recently become a research focus, requiring maximizing model
+language capabilities and minimizing training and deployment costs. Existing
+efforts have primarily described complex relationships among model performance,
+parameter size, and data size, as well as searched for the optimal compute
+allocation to train LLMs. However, they overlook the impacts of context length
+and attention head configuration (the number of query and key-value heads in
+grouped-query attention) on training and inference. In this paper, we
+systematically compare models with different parameter sizes, context lengths,
+and attention head configurations in terms of model performance, computational
+cost, and memory cost. Then, we extend the existing scaling methods, which are
+based solely on parameter size and training compute, to guide the construction
+of cost-optimal LLMs during both training and inference. Our quantitative
+scaling studies show that, when processing sufficiently long sequences, a
+larger model with fewer attention heads can achieve a lower loss while
+incurring lower computational and memory costs. Our findings provide valuable
+insights for developing practical LLMs, especially in long-context processing
+scenarios. We will publicly release our code and data.
+</summary>
+    <author>
+      <name>Yingfa Chen</name>
+    </author>
+    <author>
+      <name>Yutong Wu</name>
+    </author>
+    <author>
+      <name>Xu Han</name>
+    </author>
+    <author>
+      <name>Zhiyuan Liu</name>
+    </author>
+    <author>
+      <name>Maosong Sun</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">16 pages, 17 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.09579v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.09579v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
