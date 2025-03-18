@@ -3,228 +3,264 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-03-16T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">411938</opensearch:totalResults>
+  <updated>2025-03-17T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">412232</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2503.10638v1</id>
-    <updated>2025-03-13T17:59:59Z</updated>
-    <published>2025-03-13T17:59:59Z</published>
-    <title>Studying Classifier(-Free) Guidance From a Classifier-Centric
-  Perspective</title>
-    <summary>  Classifier-free guidance has become a staple for conditional generation with
-denoising diffusion models. However, a comprehensive understanding of
-classifier-free guidance is still missing. In this work, we carry out an
-empirical study to provide a fresh perspective on classifier-free guidance.
-Concretely, instead of solely focusing on classifier-free guidance, we trace
-back to the root, i.e., classifier guidance, pinpoint the key assumption for
-the derivation, and conduct a systematic study to understand the role of the
-classifier. We find that both classifier guidance and classifier-free guidance
-achieve conditional generation by pushing the denoising diffusion trajectories
-away from decision boundaries, i.e., areas where conditional information is
-usually entangled and is hard to learn. Based on this classifier-centric
-understanding, we propose a generic postprocessing step built upon
-flow-matching to shrink the gap between the learned distribution for a
-pre-trained denoising diffusion model and the real data distribution, majorly
-around the decision boundaries. Experiments on various datasets verify the
-effectiveness of the proposed approach.
+    <id>http://arxiv.org/abs/2503.11650v1</id>
+    <updated>2025-03-14T17:59:41Z</updated>
+    <published>2025-03-14T17:59:41Z</published>
+    <title>Centaur: Robust End-to-End Autonomous Driving with Test-Time Training</title>
+    <summary>  How can we rely on an end-to-end autonomous vehicle's complex decision-making
+system during deployment? One common solution is to have a ``fallback layer''
+that checks the planned trajectory for rule violations and replaces it with a
+pre-defined safe action if necessary. Another approach involves adjusting the
+planner's decisions to minimize a pre-defined ``cost function'' using
+additional system predictions such as road layouts and detected obstacles.
+However, these pre-programmed rules or cost functions cannot learn and improve
+with new training data, often resulting in overly conservative behaviors. In
+this work, we propose Centaur (Cluster Entropy for Test-time trAining using
+Uncertainty) which updates a planner's behavior via test-time training, without
+relying on hand-engineered rules or cost functions. Instead, we measure and
+minimize the uncertainty in the planner's decisions. For this, we develop a
+novel uncertainty measure, called Cluster Entropy, which is simple,
+interpretable, and compatible with state-of-the-art planning algorithms. Using
+data collected at prior test-time time-steps, we perform an update to the
+model's parameters using a gradient that minimizes the Cluster Entropy. With
+only this sole gradient update prior to inference, Centaur exhibits significant
+improvements, ranking first on the navtest leaderboard with notable gains in
+safety-critical metrics such as time to collision. To provide detailed insights
+on a per-scenario basis, we also introduce navsafe, a challenging new
+benchmark, which highlights previously undiscovered failure modes of driving
+models.
 </summary>
     <author>
-      <name>Xiaoming Zhao</name>
+      <name>Chonghao Sima</name>
     </author>
     <author>
-      <name>Alexander G. Schwing</name>
+      <name>Kashyap Chitta</name>
     </author>
-    <link href="http://arxiv.org/abs/2503.10638v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.10638v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Zhiding Yu</name>
+    </author>
+    <author>
+      <name>Shiyi Lan</name>
+    </author>
+    <author>
+      <name>Ping Luo</name>
+    </author>
+    <author>
+      <name>Andreas Geiger</name>
+    </author>
+    <author>
+      <name>Hongyang Li</name>
+    </author>
+    <author>
+      <name>Jose M. Alvarez</name>
+    </author>
+    <link href="http://arxiv.org/abs/2503.11650v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.11650v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2503.10636v2</id>
-    <updated>2025-03-14T06:35:23Z</updated>
-    <published>2025-03-13T17:59:56Z</published>
-    <title>The Curse of Conditions: Analyzing and Improving Optimal Transport for
-  Conditional Flow-Based Generation</title>
-    <summary>  Minibatch optimal transport coupling straightens paths in unconditional flow
-matching. This leads to computationally less demanding inference as fewer
-integration steps and less complex numerical solvers can be employed when
-numerically solving an ordinary differential equation at test time. However, in
-the conditional setting, minibatch optimal transport falls short. This is
-because the default optimal transport mapping disregards conditions, resulting
-in a conditionally skewed prior distribution during training. In contrast, at
-test time, we have no access to the skewed prior, and instead sample from the
-full, unbiased prior distribution. This gap between training and testing leads
-to a subpar performance. To bridge this gap, we propose conditional optimal
-transport C^2OT that adds a conditional weighting term in the cost matrix when
-computing the optimal transport assignment. Experiments demonstrate that this
-simple fix works with both discrete and continuous conditions in
-8gaussians-to-moons, CIFAR-10, ImageNet-32x32, and ImageNet-256x256. Our method
-performs better overall compared to the existing baselines across different
-function evaluation budgets. Code is available at
-https://hkchengrex.github.io/C2OT
+    <id>http://arxiv.org/abs/2503.11646v1</id>
+    <updated>2025-03-14T17:59:07Z</updated>
+    <published>2025-03-14T17:59:07Z</published>
+    <title>Adversarial Data Collection: Human-Collaborative Perturbations for
+  Efficient and Robust Robotic Imitation Learning</title>
+    <summary>  The pursuit of data efficiency, where quality outweighs quantity, has emerged
+as a cornerstone in robotic manipulation, especially given the high costs
+associated with real-world data collection. We propose that maximizing the
+informational density of individual demonstrations can dramatically reduce
+reliance on large-scale datasets while improving task performance. To this end,
+we introduce Adversarial Data Collection, a Human-in-the-Loop (HiL) framework
+that redefines robotic data acquisition through real-time, bidirectional
+human-environment interactions. Unlike conventional pipelines that passively
+record static demonstrations, ADC adopts a collaborative perturbation paradigm:
+during a single episode, an adversarial operator dynamically alters object
+states, environmental conditions, and linguistic commands, while the
+tele-operator adaptively adjusts actions to overcome these evolving challenges.
+This process compresses diverse failure-recovery behaviors, compositional task
+variations, and environmental perturbations into minimal demonstrations. Our
+experiments demonstrate that ADC-trained models achieve superior compositional
+generalization to unseen task instructions, enhanced robustness to perceptual
+perturbations, and emergent error recovery capabilities. Strikingly, models
+trained with merely 20% of the demonstration volume collected through ADC
+significantly outperform traditional approaches using full datasets. These
+advances bridge the gap between data-centric learning paradigms and practical
+robotic deployment, demonstrating that strategic data acquisition, not merely
+post-hoc processing, is critical for scalable, real-world robot learning.
+Additionally, we are curating a large-scale ADC-Robotics dataset comprising
+real-world manipulation tasks with adversarial perturbations. This benchmark
+will be open-sourced to facilitate advancements in robotic imitation learning.
 </summary>
     <author>
-      <name>Ho Kei Cheng</name>
+      <name>Siyuan Huang</name>
     </author>
     <author>
-      <name>Alexander Schwing</name>
+      <name>Yue Liao</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://hkchengrex.github.io/C2OT</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.10636v2" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.10636v2" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Siyuan Feng</name>
+    </author>
+    <author>
+      <name>Shu Jiang</name>
+    </author>
+    <author>
+      <name>Si Liu</name>
+    </author>
+    <author>
+      <name>Hongsheng Li</name>
+    </author>
+    <author>
+      <name>Maoqing Yao</name>
+    </author>
+    <author>
+      <name>Guanghui Ren</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">More information can be found on our project
+  page:https://sites.google.com/view/adc-robot</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.11646v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.11646v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2503.10635v1</id>
-    <updated>2025-03-13T17:59:55Z</updated>
-    <published>2025-03-13T17:59:55Z</published>
-    <title>A Frustratingly Simple Yet Highly Effective Attack Baseline: Over 90%
-  Success Rate Against the Strong Black-box Models of GPT-4.5/4o/o1</title>
-    <summary>  Despite promising performance on open-source large vision-language models
-(LVLMs), transfer-based targeted attacks often fail against black-box
-commercial LVLMs. Analyzing failed adversarial perturbations reveals that the
-learned perturbations typically originate from a uniform distribution and lack
-clear semantic details, resulting in unintended responses. This critical
-absence of semantic information leads commercial LVLMs to either ignore the
-perturbation entirely or misinterpret its embedded semantics, thereby causing
-the attack to fail. To overcome these issues, we notice that identifying core
-semantic objects is a key objective for models trained with various datasets
-and methodologies. This insight motivates our approach that refines semantic
-clarity by encoding explicit semantic details within local regions, thus
-ensuring interoperability and capturing finer-grained features, and by
-concentrating modifications on semantically rich areas rather than applying
-them uniformly. To achieve this, we propose a simple yet highly effective
-solution: at each optimization step, the adversarial image is cropped randomly
-by a controlled aspect ratio and scale, resized, and then aligned with the
-target image in the embedding space. Experimental results confirm our
-hypothesis. Our adversarial examples crafted with local-aggregated
-perturbations focused on crucial regions exhibit surprisingly good
-transferability to commercial LVLMs, including GPT-4.5, GPT-4o,
-Gemini-2.0-flash, Claude-3.5-sonnet, Claude-3.7-sonnet, and even reasoning
-models like o1, Claude-3.7-thinking and Gemini-2.0-flash-thinking. Our approach
-achieves success rates exceeding 90% on GPT-4.5, 4o, and o1, significantly
-outperforming all prior state-of-the-art attack methods. Our optimized
-adversarial examples under different configurations and training code are
-available at https://github.com/VILA-Lab/M-Attack.
+    <id>http://arxiv.org/abs/2503.11640v1</id>
+    <updated>2025-03-14T17:56:49Z</updated>
+    <published>2025-03-14T17:56:49Z</published>
+    <title>Enhancing Deep Learning Based Structured Illumination Microscopy
+  Reconstruction with Light Field Awareness</title>
+    <summary>  Structured illumination microscopy (SIM) is a pivotal technique for dynamic
+subcellular imaging in live cells. Conventional SIM reconstruction algorithms
+depend on accurately estimating the illumination pattern and can introduce
+artefacts when this estimation is imprecise. Although recent deep
+learning-based SIM reconstruction methods have improved speed, accuracy, and
+robustness, they often struggle with out-of-distribution data. To address this
+limitation, we propose an Awareness-of-Light-field SIM (AL-SIM) reconstruction
+approach that directly estimates the actual light field to correct for errors
+arising from data distribution shifts. Through comprehensive experiments on
+both simulated filament structures and live BSC1 cells, our method demonstrates
+a 7% reduction in the normalized root mean square error (NRMSE) and
+substantially lowers reconstruction artefacts. By minimizing these artefacts
+and improving overall accuracy, AL-SIM broadens the applicability of SIM for
+complex biological systems.
 </summary>
     <author>
-      <name>Zhaoyi Li</name>
+      <name>Long-Kun Shan</name>
     </author>
     <author>
-      <name>Xiaohan Zhao</name>
+      <name>Ze-Hao Wang</name>
     </author>
     <author>
-      <name>Dong-Dong Wu</name>
+      <name>Tong-Tian Weng</name>
     </author>
     <author>
-      <name>Jiacheng Cui</name>
+      <name>Xiang-Dong Chen</name>
     </author>
     <author>
-      <name>Zhiqiang Shen</name>
+      <name>Fang-Wen Sun</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Code at: https://github.com/VILA-Lab/M-Attack</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.10635v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.10635v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <link href="http://arxiv.org/abs/2503.11640v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.11640v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.optics" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.optics" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2503.10633v1</id>
-    <updated>2025-03-13T17:59:53Z</updated>
-    <published>2025-03-13T17:59:53Z</published>
-    <title>Charting and Navigating Hugging Face's Model Atlas</title>
-    <summary>  As there are now millions of publicly available neural networks, searching
-and analyzing large model repositories becomes increasingly important.
-Navigating so many models requires an atlas, but as most models are poorly
-documented charting such an atlas is challenging. To explore the hidden
-potential of model repositories, we chart a preliminary atlas representing the
-documented fraction of Hugging Face. It provides stunning visualizations of the
-model landscape and evolution. We demonstrate several applications of this
-atlas including predicting model attributes (e.g., accuracy), and analyzing
-trends in computer vision models. However, as the current atlas remains
-incomplete, we propose a method for charting undocumented regions.
-Specifically, we identify high-confidence structural priors based on dominant
-real-world model training practices. Leveraging these priors, our approach
-enables accurate mapping of previously undocumented areas of the atlas. We
-publicly release our datasets, code, and interactive atlas.
+    <id>http://arxiv.org/abs/2503.11638v1</id>
+    <updated>2025-03-14T17:55:49Z</updated>
+    <published>2025-03-14T17:55:49Z</published>
+    <title>Scaling the Automated Discovery of Quantum Circuits via Reinforcement
+  Learning with Gadgets</title>
+    <summary>  Reinforcement Learning (RL) has established itself as a powerful tool for
+designing quantum circuits, which are essential for processing quantum
+information. RL applications have typically focused on circuits of small to
+intermediate complexity, as computation times tend to increase exponentially
+with growing circuit complexity. This computational explosion severely limits
+the scalability of RL and casts significant doubt on its broader applicability.
+In this paper, we propose a principled approach based on the systematic
+discovery and introduction of composite gates -- {\it gadgets}, that enables RL
+scalability, thereby expanding its potential applications. As a case study, we
+explore the discovery of Clifford encoders for Quantum Error Correction. We
+demonstrate that incorporating gadgets in the form of composite Clifford gates,
+in addition to standard CNOT and Hadamard gates, significantly enhances the
+efficiency of RL agents. Specifically, the computation speed increases (by one
+or even two orders of magnitude), enabling RL to discover highly complex
+quantum codes without previous knowledge. We illustrate this advancement with
+examples of QEC code discovery with parameters $ [[n,1,d]] $ for $ d \leq 7 $
+and $ [[n,k,6]] $ for $ k \leq 7 $. We note that the most complicated circuits
+of these classes were not previously found. We highlight the advantages and
+limitations of the gadget-based approach. Our method paves the way for scaling
+the RL-based automatic discovery of complicated quantum circuits for various
+tasks, which may include designing logical operations between logical qubits or
+discovering quantum algorithms.
 </summary>
     <author>
-      <name>Eliahu Horwitz</name>
+      <name>Jan Olle</name>
     </author>
     <author>
-      <name>Nitzan Kurer</name>
+      <name>Oleg M. Yevtushenko</name>
     </author>
     <author>
-      <name>Jonathan Kahana</name>
+      <name>Florian Marquardt</name>
     </author>
-    <author>
-      <name>Liel Amar</name>
-    </author>
-    <author>
-      <name>Yedid Hoshen</name>
-    </author>
-    <link href="http://arxiv.org/abs/2503.10633v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.10633v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <link href="http://arxiv.org/abs/2503.11638v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.11638v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2503.10632v1</id>
-    <updated>2025-03-13T17:59:52Z</updated>
-    <published>2025-03-13T17:59:52Z</published>
-    <title>Kolmogorov-Arnold Attention: Is Learnable Attention Better For Vision
-  Transformers?</title>
-    <summary>  Kolmogorov-Arnold networks (KANs) are a remarkable innovation consisting of
-learnable activation functions with the potential to capture more complex
-relationships from data. Although KANs are useful in finding symbolic
-representations and continual learning of one-dimensional functions, their
-effectiveness in diverse machine learning (ML) tasks, such as vision, remains
-questionable. Presently, KANs are deployed by replacing multilayer perceptrons
-(MLPs) in deep network architectures, including advanced architectures such as
-vision Transformers (ViTs). In this paper, we are the first to design a general
-learnable Kolmogorov-Arnold Attention (KArAt) for vanilla ViTs that can operate
-on any choice of basis. However, the computing and memory costs of training
-them motivated us to propose a more modular version, and we designed particular
-learnable attention, called Fourier-KArAt. Fourier-KArAt and its variants
-either outperform their ViT counterparts or show comparable performance on
-CIFAR-10, CIFAR-100, and ImageNet-1K datasets. We dissect these architectures'
-performance and generalization capacity by analyzing their loss landscapes,
-weight distributions, optimizer path, attention visualization, and spectral
-behavior, and contrast them with vanilla ViTs. The goal of this paper is not to
-produce parameter- and compute-efficient attention, but to encourage the
-community to explore KANs in conjunction with more advanced architectures that
-require a careful understanding of learnable activations. Our open-source code
-and implementation details are available on: https://subhajitmaity.me/KArAt
+    <id>http://arxiv.org/abs/2503.11632v1</id>
+    <updated>2025-03-14T17:49:21Z</updated>
+    <published>2025-03-14T17:49:21Z</published>
+    <title>Self-Supervised Learning Strategies for Jet Physics</title>
+    <summary>  We extend the re-simulation-based self-supervised learning approach to
+learning representations of hadronic jets in colliders by exploiting the Markov
+property of the standard simulation chain. Instead of masking, cropping, or
+other forms of data augmentation, this approach simulates pairs of events where
+the initial portion of the simulation is shared, but the subsequent stages of
+the simulation evolve independently. When paired with a contrastive loss
+function, this naturally leads to representations that capture the physics in
+the initial stages of the simulation. In particular, we force the hard
+scattering and parton shower to be shared and let the hadronization and
+interaction with the detector evolve independently. We then evaluate the
+utility of these representations on downstream tasks.
 </summary>
     <author>
-      <name>Subhajit Maity</name>
+      <name>Patrick Rieck</name>
     </author>
     <author>
-      <name>Killian Hitsman</name>
+      <name>Kyle Cranmer</name>
     </author>
     <author>
-      <name>Xin Li</name>
+      <name>Etienne Dreyer</name>
     </author>
     <author>
-      <name>Aritra Dutta</name>
+      <name>Eilam Gross</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Preprint, Appendix included</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.10632v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.10632v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="68T07" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="I.2.6; I.5.1; I.5.5; I.5.4; I.4.10" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Nilotpal Kakati</name>
+    </author>
+    <author>
+      <name>Dmitrii Kobylanskii</name>
+    </author>
+    <author>
+      <name>Garrett W. Merz</name>
+    </author>
+    <author>
+      <name>Nathalie Soybelman</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">19 pages, 9 figures, 1 table</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.11632v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.11632v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ex" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
