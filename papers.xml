@@ -3,264 +3,286 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-03-17T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">412232</opensearch:totalResults>
+  <updated>2025-03-18T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">412748</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2503.11650v1</id>
-    <updated>2025-03-14T17:59:41Z</updated>
-    <published>2025-03-14T17:59:41Z</published>
-    <title>Centaur: Robust End-to-End Autonomous Driving with Test-Time Training</title>
-    <summary>  How can we rely on an end-to-end autonomous vehicle's complex decision-making
-system during deployment? One common solution is to have a ``fallback layer''
-that checks the planned trajectory for rule violations and replaces it with a
-pre-defined safe action if necessary. Another approach involves adjusting the
-planner's decisions to minimize a pre-defined ``cost function'' using
-additional system predictions such as road layouts and detected obstacles.
-However, these pre-programmed rules or cost functions cannot learn and improve
-with new training data, often resulting in overly conservative behaviors. In
-this work, we propose Centaur (Cluster Entropy for Test-time trAining using
-Uncertainty) which updates a planner's behavior via test-time training, without
-relying on hand-engineered rules or cost functions. Instead, we measure and
-minimize the uncertainty in the planner's decisions. For this, we develop a
-novel uncertainty measure, called Cluster Entropy, which is simple,
-interpretable, and compatible with state-of-the-art planning algorithms. Using
-data collected at prior test-time time-steps, we perform an update to the
-model's parameters using a gradient that minimizes the Cluster Entropy. With
-only this sole gradient update prior to inference, Centaur exhibits significant
-improvements, ranking first on the navtest leaderboard with notable gains in
-safety-critical metrics such as time to collision. To provide detailed insights
-on a per-scenario basis, we also introduce navsafe, a challenging new
-benchmark, which highlights previously undiscovered failure modes of driving
-models.
+    <id>http://arxiv.org/abs/2503.13447v1</id>
+    <updated>2025-03-17T17:59:54Z</updated>
+    <published>2025-03-17T17:59:54Z</published>
+    <title>MetaScale: Test-Time Scaling with Evolving Meta-Thoughts</title>
+    <summary>  One critical challenge for large language models (LLMs) for making complex
+reasoning is their reliance on matching reasoning patterns from training data,
+instead of proactively selecting the most appropriate cognitive strategy to
+solve a given task. Existing approaches impose fixed cognitive structures that
+enhance performance in specific tasks but lack adaptability across diverse
+scenarios. To address this limitation, we introduce METASCALE, a test-time
+scaling framework based on meta-thoughts -- adaptive thinking strategies
+tailored to each task. METASCALE initializes a pool of candidate meta-thoughts,
+then iteratively selects and evaluates them using a multi-armed bandit
+algorithm with upper confidence bound selection, guided by a reward model. To
+further enhance adaptability, a genetic algorithm evolves high-reward
+meta-thoughts, refining and extending the strategy pool over time. By
+dynamically proposing and optimizing meta-thoughts at inference time, METASCALE
+improves both accuracy and generalization across a wide range of tasks.
+Experimental results demonstrate that MetaScale consistently outperforms
+standard inference approaches, achieving an 11% performance gain in win rate on
+Arena-Hard for GPT-4o, surpassing o1-mini by 0.9% under style control. Notably,
+METASCALE scales more effectively with increasing sampling budgets and produces
+more structured, expert-level responses.
 </summary>
     <author>
-      <name>Chonghao Sima</name>
+      <name>Qin Liu</name>
     </author>
     <author>
-      <name>Kashyap Chitta</name>
+      <name>Wenxuan Zhou</name>
     </author>
     <author>
-      <name>Zhiding Yu</name>
+      <name>Nan Xu</name>
     </author>
     <author>
-      <name>Shiyi Lan</name>
+      <name>James Y. Huang</name>
     </author>
     <author>
-      <name>Ping Luo</name>
+      <name>Fei Wang</name>
     </author>
     <author>
-      <name>Andreas Geiger</name>
+      <name>Sheng Zhang</name>
     </author>
     <author>
-      <name>Hongyang Li</name>
+      <name>Hoifung Poon</name>
     </author>
     <author>
-      <name>Jose M. Alvarez</name>
+      <name>Muhao Chen</name>
     </author>
-    <link href="http://arxiv.org/abs/2503.11650v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.11650v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Work in progress</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.13447v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.13447v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.13441v1</id>
+    <updated>2025-03-17T17:59:09Z</updated>
+    <published>2025-03-17T17:59:09Z</published>
+    <title>Humanoid Policy ~ Human Policy</title>
+    <summary>  Training manipulation policies for humanoid robots with diverse data enhances
+their robustness and generalization across tasks and platforms. However,
+learning solely from robot demonstrations is labor-intensive, requiring
+expensive tele-operated data collection which is difficult to scale. This paper
+investigates a more scalable data source, egocentric human demonstrations, to
+serve as cross-embodiment training data for robot learning. We mitigate the
+embodiment gap between humanoids and humans from both the data and modeling
+perspectives. We collect an egocentric task-oriented dataset (PH2D) that is
+directly aligned with humanoid manipulation demonstrations. We then train a
+human-humanoid behavior policy, which we term Human Action Transformer (HAT).
+The state-action space of HAT is unified for both humans and humanoid robots
+and can be differentiably retargeted to robot actions. Co-trained with
+smaller-scale robot data, HAT directly models humanoid robots and humans as
+different embodiments without additional supervision. We show that human data
+improves both generalization and robustness of HAT with significantly better
+data collection efficiency. Code and data: https://human-as-robot.github.io/
+</summary>
+    <author>
+      <name>Ri-Zhao Qiu</name>
+    </author>
+    <author>
+      <name>Shiqi Yang</name>
+    </author>
+    <author>
+      <name>Xuxin Cheng</name>
+    </author>
+    <author>
+      <name>Chaitanya Chawla</name>
+    </author>
+    <author>
+      <name>Jialong Li</name>
+    </author>
+    <author>
+      <name>Tairan He</name>
+    </author>
+    <author>
+      <name>Ge Yan</name>
+    </author>
+    <author>
+      <name>Lars Paulsen</name>
+    </author>
+    <author>
+      <name>Ge Yang</name>
+    </author>
+    <author>
+      <name>Sha Yi</name>
+    </author>
+    <author>
+      <name>Guanya Shi</name>
+    </author>
+    <author>
+      <name>Xiaolong Wang</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Code and data: https://human-as-robot.github.io/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.13441v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.13441v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.13439v1</id>
+    <updated>2025-03-17T17:59:01Z</updated>
+    <published>2025-03-17T17:59:01Z</published>
+    <title>Amodal3R: Amodal 3D Reconstruction from Occluded 2D Images</title>
+    <summary>  Most image-based 3D object reconstructors assume that objects are fully
+visible, ignoring occlusions that commonly occur in real-world scenarios. In
+this paper, we introduce Amodal3R, a conditional 3D generative model designed
+to reconstruct 3D objects from partial observations. We start from a
+"foundation" 3D generative model and extend it to recover plausible 3D geometry
+and appearance from occluded objects. We introduce a mask-weighted multi-head
+cross-attention mechanism followed by an occlusion-aware attention layer that
+explicitly leverages occlusion priors to guide the reconstruction process. We
+demonstrate that, by training solely on synthetic data, Amodal3R learns to
+recover full 3D objects even in the presence of occlusions in real scenes. It
+substantially outperforms existing methods that independently perform 2D amodal
+completion followed by 3D reconstruction, thereby establishing a new benchmark
+for occlusion-aware 3D reconstruction.
+</summary>
+    <author>
+      <name>Tianhao Wu</name>
+    </author>
+    <author>
+      <name>Chuanxia Zheng</name>
+    </author>
+    <author>
+      <name>Frank Guan</name>
+    </author>
+    <author>
+      <name>Andrea Vedaldi</name>
+    </author>
+    <author>
+      <name>Tat-Jen Cham</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://sm0kywu.github.io/Amodal3R/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.13439v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.13439v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.13438v1</id>
+    <updated>2025-03-17T17:58:45Z</updated>
+    <published>2025-03-17T17:58:45Z</published>
+    <title>Deep Belief Markov Models for POMDP Inference</title>
+    <summary>  This work introduces a novel deep learning-based architecture, termed the
+Deep Belief Markov Model (DBMM), which provides efficient, model-formulation
+agnostic inference in Partially Observable Markov Decision Process (POMDP)
+problems. The POMDP framework allows for modeling and solving sequential
+decision-making problems under observation uncertainty. In complex,
+high-dimensional, partially observable environments, existing methods for
+inference based on exact computations (e.g., via Bayes' theorem) or sampling
+algorithms do not scale well. Furthermore, ground truth states may not be
+available for learning the exact transition dynamics. DBMMs extend deep Markov
+models into the partially observable decision-making framework and allow
+efficient belief inference entirely based on available observation data via
+variational inference methods. By leveraging the potency of neural networks,
+DBMMs can infer and simulate non-linear relationships in the system dynamics
+and naturally scale to problems with high dimensionality and discrete or
+continuous variables. In addition, neural network parameters can be dynamically
+updated efficiently based on data availability. DBMMs can thus be used to infer
+a belief variable, thus enabling the derivation of POMDP solutions over the
+belief space. We evaluate the efficacy of the proposed methodology by
+evaluating the capability of model-formulation agnostic inference of DBMMs in
+benchmark problems that include discrete and continuous variables.
+</summary>
+    <author>
+      <name>Giacomo Arcieri</name>
+    </author>
+    <author>
+      <name>Konstantinos G. Papakonstantinou</name>
+    </author>
+    <author>
+      <name>Daniel Straub</name>
+    </author>
+    <author>
+      <name>Eleni Chatzi</name>
+    </author>
+    <link href="http://arxiv.org/abs/2503.13438v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.13438v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.11646v1</id>
-    <updated>2025-03-14T17:59:07Z</updated>
-    <published>2025-03-14T17:59:07Z</published>
-    <title>Adversarial Data Collection: Human-Collaborative Perturbations for
-  Efficient and Robust Robotic Imitation Learning</title>
-    <summary>  The pursuit of data efficiency, where quality outweighs quantity, has emerged
-as a cornerstone in robotic manipulation, especially given the high costs
-associated with real-world data collection. We propose that maximizing the
-informational density of individual demonstrations can dramatically reduce
-reliance on large-scale datasets while improving task performance. To this end,
-we introduce Adversarial Data Collection, a Human-in-the-Loop (HiL) framework
-that redefines robotic data acquisition through real-time, bidirectional
-human-environment interactions. Unlike conventional pipelines that passively
-record static demonstrations, ADC adopts a collaborative perturbation paradigm:
-during a single episode, an adversarial operator dynamically alters object
-states, environmental conditions, and linguistic commands, while the
-tele-operator adaptively adjusts actions to overcome these evolving challenges.
-This process compresses diverse failure-recovery behaviors, compositional task
-variations, and environmental perturbations into minimal demonstrations. Our
-experiments demonstrate that ADC-trained models achieve superior compositional
-generalization to unseen task instructions, enhanced robustness to perceptual
-perturbations, and emergent error recovery capabilities. Strikingly, models
-trained with merely 20% of the demonstration volume collected through ADC
-significantly outperform traditional approaches using full datasets. These
-advances bridge the gap between data-centric learning paradigms and practical
-robotic deployment, demonstrating that strategic data acquisition, not merely
-post-hoc processing, is critical for scalable, real-world robot learning.
-Additionally, we are curating a large-scale ADC-Robotics dataset comprising
-real-world manipulation tasks with adversarial perturbations. This benchmark
-will be open-sourced to facilitate advancements in robotic imitation learning.
-</summary>
-    <author>
-      <name>Siyuan Huang</name>
-    </author>
-    <author>
-      <name>Yue Liao</name>
-    </author>
-    <author>
-      <name>Siyuan Feng</name>
-    </author>
-    <author>
-      <name>Shu Jiang</name>
-    </author>
-    <author>
-      <name>Si Liu</name>
-    </author>
-    <author>
-      <name>Hongsheng Li</name>
-    </author>
-    <author>
-      <name>Maoqing Yao</name>
-    </author>
-    <author>
-      <name>Guanghui Ren</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">More information can be found on our project
-  page:https://sites.google.com/view/adc-robot</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.11646v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.11646v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.11640v1</id>
-    <updated>2025-03-14T17:56:49Z</updated>
-    <published>2025-03-14T17:56:49Z</published>
-    <title>Enhancing Deep Learning Based Structured Illumination Microscopy
-  Reconstruction with Light Field Awareness</title>
-    <summary>  Structured illumination microscopy (SIM) is a pivotal technique for dynamic
-subcellular imaging in live cells. Conventional SIM reconstruction algorithms
-depend on accurately estimating the illumination pattern and can introduce
-artefacts when this estimation is imprecise. Although recent deep
-learning-based SIM reconstruction methods have improved speed, accuracy, and
-robustness, they often struggle with out-of-distribution data. To address this
-limitation, we propose an Awareness-of-Light-field SIM (AL-SIM) reconstruction
-approach that directly estimates the actual light field to correct for errors
-arising from data distribution shifts. Through comprehensive experiments on
-both simulated filament structures and live BSC1 cells, our method demonstrates
-a 7% reduction in the normalized root mean square error (NRMSE) and
-substantially lowers reconstruction artefacts. By minimizing these artefacts
-and improving overall accuracy, AL-SIM broadens the applicability of SIM for
-complex biological systems.
-</summary>
-    <author>
-      <name>Long-Kun Shan</name>
-    </author>
-    <author>
-      <name>Ze-Hao Wang</name>
-    </author>
-    <author>
-      <name>Tong-Tian Weng</name>
-    </author>
-    <author>
-      <name>Xiang-Dong Chen</name>
-    </author>
-    <author>
-      <name>Fang-Wen Sun</name>
-    </author>
-    <link href="http://arxiv.org/abs/2503.11640v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.11640v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.optics" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.optics" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2503.11638v1</id>
-    <updated>2025-03-14T17:55:49Z</updated>
-    <published>2025-03-14T17:55:49Z</published>
-    <title>Scaling the Automated Discovery of Quantum Circuits via Reinforcement
-  Learning with Gadgets</title>
-    <summary>  Reinforcement Learning (RL) has established itself as a powerful tool for
-designing quantum circuits, which are essential for processing quantum
-information. RL applications have typically focused on circuits of small to
-intermediate complexity, as computation times tend to increase exponentially
-with growing circuit complexity. This computational explosion severely limits
-the scalability of RL and casts significant doubt on its broader applicability.
-In this paper, we propose a principled approach based on the systematic
-discovery and introduction of composite gates -- {\it gadgets}, that enables RL
-scalability, thereby expanding its potential applications. As a case study, we
-explore the discovery of Clifford encoders for Quantum Error Correction. We
-demonstrate that incorporating gadgets in the form of composite Clifford gates,
-in addition to standard CNOT and Hadamard gates, significantly enhances the
-efficiency of RL agents. Specifically, the computation speed increases (by one
-or even two orders of magnitude), enabling RL to discover highly complex
-quantum codes without previous knowledge. We illustrate this advancement with
-examples of QEC code discovery with parameters $ [[n,1,d]] $ for $ d \leq 7 $
-and $ [[n,k,6]] $ for $ k \leq 7 $. We note that the most complicated circuits
-of these classes were not previously found. We highlight the advantages and
-limitations of the gadget-based approach. Our method paves the way for scaling
-the RL-based automatic discovery of complicated quantum circuits for various
-tasks, which may include designing logical operations between logical qubits or
-discovering quantum algorithms.
+    <id>http://arxiv.org/abs/2503.13436v1</id>
+    <updated>2025-03-17T17:58:30Z</updated>
+    <published>2025-03-17T17:58:30Z</published>
+    <title>Unified Autoregressive Visual Generation and Understanding with
+  Continuous Tokens</title>
+    <summary>  We present UniFluid, a unified autoregressive framework for joint visual
+generation and understanding leveraging continuous visual tokens. Our unified
+autoregressive architecture processes multimodal image and text inputs,
+generating discrete tokens for text and continuous tokens for image. We find
+though there is an inherent trade-off between the image generation and
+understanding task, a carefully tuned training recipe enables them to improve
+each other. By selecting an appropriate loss balance weight, the unified model
+achieves results comparable to or exceeding those of single-task baselines on
+both tasks. Furthermore, we demonstrate that employing stronger pre-trained
+LLMs and random-order generation during training is important to achieve
+high-fidelity image generation within this unified framework. Built upon the
+Gemma model series, UniFluid exhibits competitive performance across both image
+generation and understanding, demonstrating strong transferability to various
+downstream tasks, including image editing for generation, as well as visual
+captioning and question answering for understanding.
 </summary>
     <author>
-      <name>Jan Olle</name>
+      <name>Lijie Fan</name>
     </author>
     <author>
-      <name>Oleg M. Yevtushenko</name>
+      <name>Luming Tang</name>
     </author>
     <author>
-      <name>Florian Marquardt</name>
-    </author>
-    <link href="http://arxiv.org/abs/2503.11638v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.11638v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.11632v1</id>
-    <updated>2025-03-14T17:49:21Z</updated>
-    <published>2025-03-14T17:49:21Z</published>
-    <title>Self-Supervised Learning Strategies for Jet Physics</title>
-    <summary>  We extend the re-simulation-based self-supervised learning approach to
-learning representations of hadronic jets in colliders by exploiting the Markov
-property of the standard simulation chain. Instead of masking, cropping, or
-other forms of data augmentation, this approach simulates pairs of events where
-the initial portion of the simulation is shared, but the subsequent stages of
-the simulation evolve independently. When paired with a contrastive loss
-function, this naturally leads to representations that capture the physics in
-the initial stages of the simulation. In particular, we force the hard
-scattering and parton shower to be shared and let the hadronization and
-interaction with the detector evolve independently. We then evaluate the
-utility of these representations on downstream tasks.
-</summary>
-    <author>
-      <name>Patrick Rieck</name>
+      <name>Siyang Qin</name>
     </author>
     <author>
-      <name>Kyle Cranmer</name>
+      <name>Tianhong Li</name>
     </author>
     <author>
-      <name>Etienne Dreyer</name>
+      <name>Xuan Yang</name>
     </author>
     <author>
-      <name>Eilam Gross</name>
+      <name>Siyuan Qiao</name>
     </author>
     <author>
-      <name>Nilotpal Kakati</name>
+      <name>Andreas Steiner</name>
     </author>
     <author>
-      <name>Dmitrii Kobylanskii</name>
+      <name>Chen Sun</name>
     </author>
     <author>
-      <name>Garrett W. Merz</name>
+      <name>Yuanzhen Li</name>
     </author>
     <author>
-      <name>Nathalie Soybelman</name>
+      <name>Tao Zhu</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">19 pages, 9 figures, 1 table</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.11632v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.11632v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="hep-ex" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Michael Rubinstein</name>
+    </author>
+    <author>
+      <name>Michalis Raptis</name>
+    </author>
+    <author>
+      <name>Deqing Sun</name>
+    </author>
+    <author>
+      <name>Radu Soricut</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Tech report</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.13436v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.13436v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
