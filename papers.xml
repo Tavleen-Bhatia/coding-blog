@@ -3,286 +3,286 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-03-18T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">412748</opensearch:totalResults>
+  <updated>2025-03-19T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">413068</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2503.13447v1</id>
-    <updated>2025-03-17T17:59:54Z</updated>
-    <published>2025-03-17T17:59:54Z</published>
-    <title>MetaScale: Test-Time Scaling with Evolving Meta-Thoughts</title>
-    <summary>  One critical challenge for large language models (LLMs) for making complex
-reasoning is their reliance on matching reasoning patterns from training data,
-instead of proactively selecting the most appropriate cognitive strategy to
-solve a given task. Existing approaches impose fixed cognitive structures that
-enhance performance in specific tasks but lack adaptability across diverse
-scenarios. To address this limitation, we introduce METASCALE, a test-time
-scaling framework based on meta-thoughts -- adaptive thinking strategies
-tailored to each task. METASCALE initializes a pool of candidate meta-thoughts,
-then iteratively selects and evaluates them using a multi-armed bandit
-algorithm with upper confidence bound selection, guided by a reward model. To
-further enhance adaptability, a genetic algorithm evolves high-reward
-meta-thoughts, refining and extending the strategy pool over time. By
-dynamically proposing and optimizing meta-thoughts at inference time, METASCALE
-improves both accuracy and generalization across a wide range of tasks.
-Experimental results demonstrate that MetaScale consistently outperforms
-standard inference approaches, achieving an 11% performance gain in win rate on
-Arena-Hard for GPT-4o, surpassing o1-mini by 0.9% under style control. Notably,
-METASCALE scales more effectively with increasing sampling budgets and produces
-more structured, expert-level responses.
+    <id>http://arxiv.org/abs/2503.14505v1</id>
+    <updated>2025-03-18T17:59:58Z</updated>
+    <published>2025-03-18T17:59:58Z</published>
+    <title>MusicInfuser: Making Video Diffusion Listen and Dance</title>
+    <summary>  We introduce MusicInfuser, an approach for generating high-quality dance
+videos that are synchronized to a specified music track. Rather than attempting
+to design and train a new multimodal audio-video model, we show how existing
+video diffusion models can be adapted to align with musical inputs by
+introducing lightweight music-video cross-attention and a low-rank adapter.
+Unlike prior work requiring motion capture data, our approach fine-tunes only
+on dance videos. MusicInfuser achieves high-quality music-driven video
+generation while preserving the flexibility and generative capabilities of the
+underlying models. We introduce an evaluation framework using Video-LLMs to
+assess multiple dimensions of dance generation quality. The project page and
+code are available at https://susunghong.github.io/MusicInfuser.
 </summary>
     <author>
-      <name>Qin Liu</name>
+      <name>Susung Hong</name>
     </author>
     <author>
-      <name>Wenxuan Zhou</name>
+      <name>Ira Kemelmacher-Shlizerman</name>
     </author>
     <author>
-      <name>Nan Xu</name>
+      <name>Brian Curless</name>
     </author>
     <author>
-      <name>James Y. Huang</name>
+      <name>Steven M. Seitz</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://susunghong.github.io/MusicInfuser</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.14505v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.14505v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.14503v1</id>
+    <updated>2025-03-18T17:59:54Z</updated>
+    <published>2025-03-18T17:59:54Z</published>
+    <title>The Power of Context: How Multimodality Improves Image Super-Resolution</title>
+    <summary>  Single-image super-resolution (SISR) remains challenging due to the inherent
+difficulty of recovering fine-grained details and preserving perceptual quality
+from low-resolution inputs. Existing methods often rely on limited image
+priors, leading to suboptimal results. We propose a novel approach that
+leverages the rich contextual information available in multiple modalities --
+including depth, segmentation, edges, and text prompts -- to learn a powerful
+generative prior for SISR within a diffusion model framework. We introduce a
+flexible network architecture that effectively fuses multimodal information,
+accommodating an arbitrary number of input modalities without requiring
+significant modifications to the diffusion process. Crucially, we mitigate
+hallucinations, often introduced by text prompts, by using spatial information
+from other modalities to guide regional text-based conditioning. Each
+modality's guidance strength can also be controlled independently, allowing
+steering outputs toward different directions, such as increasing bokeh through
+depth or adjusting object prominence via segmentation. Extensive experiments
+demonstrate that our model surpasses state-of-the-art generative SISR methods,
+achieving superior visual quality and fidelity. See project page at
+https://mmsr.kfmei.com/.
+</summary>
+    <author>
+      <name>Kangfu Mei</name>
     </author>
     <author>
-      <name>Fei Wang</name>
+      <name>Hossein Talebi</name>
     </author>
     <author>
-      <name>Sheng Zhang</name>
+      <name>Mojtaba Ardakani</name>
     </author>
     <author>
-      <name>Hoifung Poon</name>
+      <name>Vishal M. Patel</name>
     </author>
     <author>
-      <name>Muhao Chen</name>
+      <name>Peyman Milanfar</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Work in progress</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.13447v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.13447v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Mauricio Delbracio</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">accepted by CVPR2025</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.14503v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.14503v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.14500v1</id>
+    <updated>2025-03-18T17:59:41Z</updated>
+    <published>2025-03-18T17:59:41Z</published>
+    <title>Utilization of Neighbor Information for Image Classification with
+  Different Levels of Supervision</title>
+    <summary>  We propose to bridge the gap between semi-supervised and unsupervised image
+recognition with a flexible method that performs well for both generalized
+category discovery (GCD) and image clustering. Despite the overlap in
+motivation between these tasks, the methods themselves are restricted to a
+single task -- GCD methods are reliant on the labeled portion of the data, and
+deep image clustering methods have no built-in way to leverage the labels
+efficiently. We connect the two regimes with an innovative approach that
+Utilizes Neighbor Information for Classification (UNIC) both in the
+unsupervised (clustering) and semisupervised (GCD) setting. State-of-the-art
+clustering methods already rely heavily on nearest neighbors. We improve on
+their results substantially in two parts, first with a sampling and cleaning
+strategy where we identify accurate positive and negative neighbors, and
+secondly by finetuning the backbone with clustering losses computed by sampling
+both types of neighbors. We then adapt this pipeline to GCD by utilizing the
+labelled images as ground truth neighbors. Our method yields state-of-the-art
+results for both clustering (+3% ImageNet-100, Imagenet200) and GCD (+0.8%
+ImageNet-100, +5% CUB, +2% SCars, +4% Aircraft).
+</summary>
+    <author>
+      <name>Gihan Jayatilaka</name>
+    </author>
+    <author>
+      <name>Abhinav Shrivastava</name>
+    </author>
+    <author>
+      <name>Matthew Gwilliam</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">18 pages, 16 figures, 7 tables</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.14500v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.14500v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.14499v1</id>
+    <updated>2025-03-18T17:59:31Z</updated>
+    <published>2025-03-18T17:59:31Z</published>
+    <title>Measuring AI Ability to Complete Long Tasks</title>
+    <summary>  Despite rapid progress on AI benchmarks, the real-world meaning of benchmark
+performance remains unclear. To quantify the capabilities of AI systems in
+terms of human capabilities, we propose a new metric: 50%-task-completion time
+horizon. This is the time humans typically take to complete tasks that AI
+models can complete with 50% success rate. We first timed humans with relevant
+domain expertise on a combination of RE-Bench, HCAST, and 66 novel shorter
+tasks. On these tasks, current frontier AI models such as Claude 3.7 Sonnet
+have a 50% time horizon of around 50 minutes. Furthermore, frontier AI time
+horizon has been doubling approximately every seven months since 2019, though
+the trend may have accelerated in 2024. The increase in AI models' time
+horizons seems to be primarily driven by greater reliability and ability to
+adapt to mistakes, combined with better logical reasoning and tool use
+capabilities. We discuss the limitations of our results -- including their
+degree of external validity -- and the implications of increased autonomy for
+dangerous capabilities. If these results generalize to real-world software
+tasks, extrapolation of this trend predicts that within 5 years, AI systems
+will be capable of automating many software tasks that currently take humans a
+month.
+</summary>
+    <author>
+      <name>Thomas Kwa</name>
+    </author>
+    <author>
+      <name>Ben West</name>
+    </author>
+    <author>
+      <name>Joel Becker</name>
+    </author>
+    <author>
+      <name>Amy Deng</name>
+    </author>
+    <author>
+      <name>Katharyn Garcia</name>
+    </author>
+    <author>
+      <name>Max Hasin</name>
+    </author>
+    <author>
+      <name>Sami Jawhar</name>
+    </author>
+    <author>
+      <name>Megan Kinniment</name>
+    </author>
+    <author>
+      <name>Nate Rush</name>
+    </author>
+    <author>
+      <name>Sydney Von Arx</name>
+    </author>
+    <author>
+      <name>Ryan Bloom</name>
+    </author>
+    <author>
+      <name>Thomas Broadley</name>
+    </author>
+    <author>
+      <name>Haoxing Du</name>
+    </author>
+    <author>
+      <name>Brian Goodrich</name>
+    </author>
+    <author>
+      <name>Nikola Jurkovic</name>
+    </author>
+    <author>
+      <name>Luke Harold Miles</name>
+    </author>
+    <author>
+      <name>Seraphina Nix</name>
+    </author>
+    <author>
+      <name>Tao Lin</name>
+    </author>
+    <author>
+      <name>Neev Parikh</name>
+    </author>
+    <author>
+      <name>David Rein</name>
+    </author>
+    <author>
+      <name>Lucas Jun Koba Sato</name>
+    </author>
+    <author>
+      <name>Hjalmar Wijk</name>
+    </author>
+    <author>
+      <name>Daniel M. Ziegler</name>
+    </author>
+    <author>
+      <name>Elizabeth Barnes</name>
+    </author>
+    <author>
+      <name>Lawrence Chan</name>
+    </author>
+    <link href="http://arxiv.org/abs/2503.14499v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.14499v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.14495v1</id>
+    <updated>2025-03-18T17:58:28Z</updated>
+    <published>2025-03-18T17:58:28Z</published>
+    <title>Temporal Consistency for LLM Reasoning Process Error Identification</title>
+    <summary>  Verification is crucial for effective mathematical reasoning. We present a
+new temporal consistency method where verifiers iteratively refine their
+judgments based on the previous assessment. Unlike one-round verification or
+multi-model debate approaches, our method leverages consistency in a sequence
+of self-reflection actions to improve verification accuracy. Empirical
+evaluations across diverse mathematical process error identification benchmarks
+(Mathcheck, ProcessBench, and PRM800K) show consistent performance improvements
+over baseline methods. When applied to the recent DeepSeek R1 distilled models,
+our method demonstrates strong performance, enabling 7B/8B distilled models to
+outperform all 70B/72B models and GPT-4o on ProcessBench. Notably, the
+distilled 14B model with our method achieves performance comparable to
+Deepseek-R1. Our codes are available at
+https://github.com/jcguo123/Temporal-Consistency
+</summary>
+    <author>
+      <name>Jiacheng Guo</name>
+    </author>
+    <author>
+      <name>Yue Wu</name>
+    </author>
+    <author>
+      <name>Jiahao Qiu</name>
+    </author>
+    <author>
+      <name>Kaixuan Huang</name>
+    </author>
+    <author>
+      <name>Xinzhe Juan</name>
+    </author>
+    <author>
+      <name>Ling Yang</name>
+    </author>
+    <author>
+      <name>Mengdi Wang</name>
+    </author>
+    <link href="http://arxiv.org/abs/2503.14495v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.14495v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.13441v1</id>
-    <updated>2025-03-17T17:59:09Z</updated>
-    <published>2025-03-17T17:59:09Z</published>
-    <title>Humanoid Policy ~ Human Policy</title>
-    <summary>  Training manipulation policies for humanoid robots with diverse data enhances
-their robustness and generalization across tasks and platforms. However,
-learning solely from robot demonstrations is labor-intensive, requiring
-expensive tele-operated data collection which is difficult to scale. This paper
-investigates a more scalable data source, egocentric human demonstrations, to
-serve as cross-embodiment training data for robot learning. We mitigate the
-embodiment gap between humanoids and humans from both the data and modeling
-perspectives. We collect an egocentric task-oriented dataset (PH2D) that is
-directly aligned with humanoid manipulation demonstrations. We then train a
-human-humanoid behavior policy, which we term Human Action Transformer (HAT).
-The state-action space of HAT is unified for both humans and humanoid robots
-and can be differentiably retargeted to robot actions. Co-trained with
-smaller-scale robot data, HAT directly models humanoid robots and humans as
-different embodiments without additional supervision. We show that human data
-improves both generalization and robustness of HAT with significantly better
-data collection efficiency. Code and data: https://human-as-robot.github.io/
-</summary>
-    <author>
-      <name>Ri-Zhao Qiu</name>
-    </author>
-    <author>
-      <name>Shiqi Yang</name>
-    </author>
-    <author>
-      <name>Xuxin Cheng</name>
-    </author>
-    <author>
-      <name>Chaitanya Chawla</name>
-    </author>
-    <author>
-      <name>Jialong Li</name>
-    </author>
-    <author>
-      <name>Tairan He</name>
-    </author>
-    <author>
-      <name>Ge Yan</name>
-    </author>
-    <author>
-      <name>Lars Paulsen</name>
-    </author>
-    <author>
-      <name>Ge Yang</name>
-    </author>
-    <author>
-      <name>Sha Yi</name>
-    </author>
-    <author>
-      <name>Guanya Shi</name>
-    </author>
-    <author>
-      <name>Xiaolong Wang</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Code and data: https://human-as-robot.github.io/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.13441v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.13441v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.13439v1</id>
-    <updated>2025-03-17T17:59:01Z</updated>
-    <published>2025-03-17T17:59:01Z</published>
-    <title>Amodal3R: Amodal 3D Reconstruction from Occluded 2D Images</title>
-    <summary>  Most image-based 3D object reconstructors assume that objects are fully
-visible, ignoring occlusions that commonly occur in real-world scenarios. In
-this paper, we introduce Amodal3R, a conditional 3D generative model designed
-to reconstruct 3D objects from partial observations. We start from a
-"foundation" 3D generative model and extend it to recover plausible 3D geometry
-and appearance from occluded objects. We introduce a mask-weighted multi-head
-cross-attention mechanism followed by an occlusion-aware attention layer that
-explicitly leverages occlusion priors to guide the reconstruction process. We
-demonstrate that, by training solely on synthetic data, Amodal3R learns to
-recover full 3D objects even in the presence of occlusions in real scenes. It
-substantially outperforms existing methods that independently perform 2D amodal
-completion followed by 3D reconstruction, thereby establishing a new benchmark
-for occlusion-aware 3D reconstruction.
-</summary>
-    <author>
-      <name>Tianhao Wu</name>
-    </author>
-    <author>
-      <name>Chuanxia Zheng</name>
-    </author>
-    <author>
-      <name>Frank Guan</name>
-    </author>
-    <author>
-      <name>Andrea Vedaldi</name>
-    </author>
-    <author>
-      <name>Tat-Jen Cham</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://sm0kywu.github.io/Amodal3R/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.13439v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.13439v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.13438v1</id>
-    <updated>2025-03-17T17:58:45Z</updated>
-    <published>2025-03-17T17:58:45Z</published>
-    <title>Deep Belief Markov Models for POMDP Inference</title>
-    <summary>  This work introduces a novel deep learning-based architecture, termed the
-Deep Belief Markov Model (DBMM), which provides efficient, model-formulation
-agnostic inference in Partially Observable Markov Decision Process (POMDP)
-problems. The POMDP framework allows for modeling and solving sequential
-decision-making problems under observation uncertainty. In complex,
-high-dimensional, partially observable environments, existing methods for
-inference based on exact computations (e.g., via Bayes' theorem) or sampling
-algorithms do not scale well. Furthermore, ground truth states may not be
-available for learning the exact transition dynamics. DBMMs extend deep Markov
-models into the partially observable decision-making framework and allow
-efficient belief inference entirely based on available observation data via
-variational inference methods. By leveraging the potency of neural networks,
-DBMMs can infer and simulate non-linear relationships in the system dynamics
-and naturally scale to problems with high dimensionality and discrete or
-continuous variables. In addition, neural network parameters can be dynamically
-updated efficiently based on data availability. DBMMs can thus be used to infer
-a belief variable, thus enabling the derivation of POMDP solutions over the
-belief space. We evaluate the efficacy of the proposed methodology by
-evaluating the capability of model-formulation agnostic inference of DBMMs in
-benchmark problems that include discrete and continuous variables.
-</summary>
-    <author>
-      <name>Giacomo Arcieri</name>
-    </author>
-    <author>
-      <name>Konstantinos G. Papakonstantinou</name>
-    </author>
-    <author>
-      <name>Daniel Straub</name>
-    </author>
-    <author>
-      <name>Eleni Chatzi</name>
-    </author>
-    <link href="http://arxiv.org/abs/2503.13438v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.13438v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.13436v1</id>
-    <updated>2025-03-17T17:58:30Z</updated>
-    <published>2025-03-17T17:58:30Z</published>
-    <title>Unified Autoregressive Visual Generation and Understanding with
-  Continuous Tokens</title>
-    <summary>  We present UniFluid, a unified autoregressive framework for joint visual
-generation and understanding leveraging continuous visual tokens. Our unified
-autoregressive architecture processes multimodal image and text inputs,
-generating discrete tokens for text and continuous tokens for image. We find
-though there is an inherent trade-off between the image generation and
-understanding task, a carefully tuned training recipe enables them to improve
-each other. By selecting an appropriate loss balance weight, the unified model
-achieves results comparable to or exceeding those of single-task baselines on
-both tasks. Furthermore, we demonstrate that employing stronger pre-trained
-LLMs and random-order generation during training is important to achieve
-high-fidelity image generation within this unified framework. Built upon the
-Gemma model series, UniFluid exhibits competitive performance across both image
-generation and understanding, demonstrating strong transferability to various
-downstream tasks, including image editing for generation, as well as visual
-captioning and question answering for understanding.
-</summary>
-    <author>
-      <name>Lijie Fan</name>
-    </author>
-    <author>
-      <name>Luming Tang</name>
-    </author>
-    <author>
-      <name>Siyang Qin</name>
-    </author>
-    <author>
-      <name>Tianhong Li</name>
-    </author>
-    <author>
-      <name>Xuan Yang</name>
-    </author>
-    <author>
-      <name>Siyuan Qiao</name>
-    </author>
-    <author>
-      <name>Andreas Steiner</name>
-    </author>
-    <author>
-      <name>Chen Sun</name>
-    </author>
-    <author>
-      <name>Yuanzhen Li</name>
-    </author>
-    <author>
-      <name>Tao Zhu</name>
-    </author>
-    <author>
-      <name>Michael Rubinstein</name>
-    </author>
-    <author>
-      <name>Michalis Raptis</name>
-    </author>
-    <author>
-      <name>Deqing Sun</name>
-    </author>
-    <author>
-      <name>Radu Soricut</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Tech report</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.13436v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.13436v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
