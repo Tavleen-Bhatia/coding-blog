@@ -3,286 +3,272 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-03-19T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">413068</opensearch:totalResults>
+  <updated>2025-03-20T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">413339</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2503.14505v1</id>
-    <updated>2025-03-18T17:59:58Z</updated>
-    <published>2025-03-18T17:59:58Z</published>
-    <title>MusicInfuser: Making Video Diffusion Listen and Dance</title>
-    <summary>  We introduce MusicInfuser, an approach for generating high-quality dance
-videos that are synchronized to a specified music track. Rather than attempting
-to design and train a new multimodal audio-video model, we show how existing
-video diffusion models can be adapted to align with musical inputs by
-introducing lightweight music-video cross-attention and a low-rank adapter.
-Unlike prior work requiring motion capture data, our approach fine-tunes only
-on dance videos. MusicInfuser achieves high-quality music-driven video
-generation while preserving the flexibility and generative capabilities of the
-underlying models. We introduce an evaluation framework using Video-LLMs to
-assess multiple dimensions of dance generation quality. The project page and
-code are available at https://susunghong.github.io/MusicInfuser.
+    <id>http://arxiv.org/abs/2503.15485v1</id>
+    <updated>2025-03-19T17:58:57Z</updated>
+    <published>2025-03-19T17:58:57Z</published>
+    <title>TULIP: Towards Unified Language-Image Pretraining</title>
+    <summary>  Despite the recent success of image-text contrastive models like CLIP and
+SigLIP, these models often struggle with vision-centric tasks that demand
+high-fidelity image understanding, such as counting, depth estimation, and
+fine-grained object recognition. These models, by performing language
+alignment, tend to prioritize high-level semantics over visual understanding,
+weakening their image understanding. On the other hand, vision-focused models
+are great at processing visual information but struggle to understand language,
+limiting their flexibility for language-driven tasks. In this work, we
+introduce TULIP, an open-source, drop-in replacement for existing CLIP-like
+models. Our method leverages generative data augmentation, enhanced image-image
+and text-text contrastive learning, and image/text reconstruction
+regularization to learn fine-grained visual features while preserving global
+semantic alignment. Our approach, scaling to over 1B parameters, outperforms
+existing state-of-the-art (SOTA) models across multiple benchmarks,
+establishing a new SOTA zero-shot performance on ImageNet-1K, delivering up to
+a $2\times$ enhancement over SigLIP on RxRx1 in linear probing for few-shot
+classification, and improving vision-language models, achieving over $3\times$
+higher scores than SigLIP on MMVP. Our code/checkpoints are available at
+https://tulip-berkeley.github.io
 </summary>
     <author>
-      <name>Susung Hong</name>
+      <name>Zineng Tang</name>
     </author>
     <author>
-      <name>Ira Kemelmacher-Shlizerman</name>
+      <name>Long Lian</name>
     </author>
     <author>
-      <name>Brian Curless</name>
+      <name>Seun Eisape</name>
     </author>
     <author>
-      <name>Steven M. Seitz</name>
+      <name>XuDong Wang</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://susunghong.github.io/MusicInfuser</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.14505v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.14505v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Roei Herzig</name>
+    </author>
+    <author>
+      <name>Adam Yala</name>
+    </author>
+    <author>
+      <name>Alane Suhr</name>
+    </author>
+    <author>
+      <name>Trevor Darrell</name>
+    </author>
+    <author>
+      <name>David M. Chan</name>
+    </author>
+    <link href="http://arxiv.org/abs/2503.15485v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.15485v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.14503v1</id>
-    <updated>2025-03-18T17:59:54Z</updated>
-    <published>2025-03-18T17:59:54Z</published>
-    <title>The Power of Context: How Multimodality Improves Image Super-Resolution</title>
-    <summary>  Single-image super-resolution (SISR) remains challenging due to the inherent
-difficulty of recovering fine-grained details and preserving perceptual quality
-from low-resolution inputs. Existing methods often rely on limited image
-priors, leading to suboptimal results. We propose a novel approach that
-leverages the rich contextual information available in multiple modalities --
-including depth, segmentation, edges, and text prompts -- to learn a powerful
-generative prior for SISR within a diffusion model framework. We introduce a
-flexible network architecture that effectively fuses multimodal information,
-accommodating an arbitrary number of input modalities without requiring
-significant modifications to the diffusion process. Crucially, we mitigate
-hallucinations, often introduced by text prompts, by using spatial information
-from other modalities to guide regional text-based conditioning. Each
-modality's guidance strength can also be controlled independently, allowing
-steering outputs toward different directions, such as increasing bokeh through
-depth or adjusting object prominence via segmentation. Extensive experiments
-demonstrate that our model surpasses state-of-the-art generative SISR methods,
-achieving superior visual quality and fidelity. See project page at
-https://mmsr.kfmei.com/.
-</summary>
-    <author>
-      <name>Kangfu Mei</name>
-    </author>
-    <author>
-      <name>Hossein Talebi</name>
-    </author>
-    <author>
-      <name>Mojtaba Ardakani</name>
-    </author>
-    <author>
-      <name>Vishal M. Patel</name>
-    </author>
-    <author>
-      <name>Peyman Milanfar</name>
-    </author>
-    <author>
-      <name>Mauricio Delbracio</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">accepted by CVPR2025</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.14503v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.14503v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.14500v1</id>
-    <updated>2025-03-18T17:59:41Z</updated>
-    <published>2025-03-18T17:59:41Z</published>
-    <title>Utilization of Neighbor Information for Image Classification with
-  Different Levels of Supervision</title>
-    <summary>  We propose to bridge the gap between semi-supervised and unsupervised image
-recognition with a flexible method that performs well for both generalized
-category discovery (GCD) and image clustering. Despite the overlap in
-motivation between these tasks, the methods themselves are restricted to a
-single task -- GCD methods are reliant on the labeled portion of the data, and
-deep image clustering methods have no built-in way to leverage the labels
-efficiently. We connect the two regimes with an innovative approach that
-Utilizes Neighbor Information for Classification (UNIC) both in the
-unsupervised (clustering) and semisupervised (GCD) setting. State-of-the-art
-clustering methods already rely heavily on nearest neighbors. We improve on
-their results substantially in two parts, first with a sampling and cleaning
-strategy where we identify accurate positive and negative neighbors, and
-secondly by finetuning the backbone with clustering losses computed by sampling
-both types of neighbors. We then adapt this pipeline to GCD by utilizing the
-labelled images as ground truth neighbors. Our method yields state-of-the-art
-results for both clustering (+3% ImageNet-100, Imagenet200) and GCD (+0.8%
-ImageNet-100, +5% CUB, +2% SCars, +4% Aircraft).
-</summary>
-    <author>
-      <name>Gihan Jayatilaka</name>
-    </author>
-    <author>
-      <name>Abhinav Shrivastava</name>
-    </author>
-    <author>
-      <name>Matthew Gwilliam</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">18 pages, 16 figures, 7 tables</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.14500v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.14500v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.14499v1</id>
-    <updated>2025-03-18T17:59:31Z</updated>
-    <published>2025-03-18T17:59:31Z</published>
-    <title>Measuring AI Ability to Complete Long Tasks</title>
-    <summary>  Despite rapid progress on AI benchmarks, the real-world meaning of benchmark
-performance remains unclear. To quantify the capabilities of AI systems in
-terms of human capabilities, we propose a new metric: 50%-task-completion time
-horizon. This is the time humans typically take to complete tasks that AI
-models can complete with 50% success rate. We first timed humans with relevant
-domain expertise on a combination of RE-Bench, HCAST, and 66 novel shorter
-tasks. On these tasks, current frontier AI models such as Claude 3.7 Sonnet
-have a 50% time horizon of around 50 minutes. Furthermore, frontier AI time
-horizon has been doubling approximately every seven months since 2019, though
-the trend may have accelerated in 2024. The increase in AI models' time
-horizons seems to be primarily driven by greater reliability and ability to
-adapt to mistakes, combined with better logical reasoning and tool use
-capabilities. We discuss the limitations of our results -- including their
-degree of external validity -- and the implications of increased autonomy for
-dangerous capabilities. If these results generalize to real-world software
-tasks, extrapolation of this trend predicts that within 5 years, AI systems
-will be capable of automating many software tasks that currently take humans a
-month.
-</summary>
-    <author>
-      <name>Thomas Kwa</name>
-    </author>
-    <author>
-      <name>Ben West</name>
-    </author>
-    <author>
-      <name>Joel Becker</name>
-    </author>
-    <author>
-      <name>Amy Deng</name>
-    </author>
-    <author>
-      <name>Katharyn Garcia</name>
-    </author>
-    <author>
-      <name>Max Hasin</name>
-    </author>
-    <author>
-      <name>Sami Jawhar</name>
-    </author>
-    <author>
-      <name>Megan Kinniment</name>
-    </author>
-    <author>
-      <name>Nate Rush</name>
-    </author>
-    <author>
-      <name>Sydney Von Arx</name>
-    </author>
-    <author>
-      <name>Ryan Bloom</name>
-    </author>
-    <author>
-      <name>Thomas Broadley</name>
-    </author>
-    <author>
-      <name>Haoxing Du</name>
-    </author>
-    <author>
-      <name>Brian Goodrich</name>
-    </author>
-    <author>
-      <name>Nikola Jurkovic</name>
-    </author>
-    <author>
-      <name>Luke Harold Miles</name>
-    </author>
-    <author>
-      <name>Seraphina Nix</name>
-    </author>
-    <author>
-      <name>Tao Lin</name>
-    </author>
-    <author>
-      <name>Neev Parikh</name>
-    </author>
-    <author>
-      <name>David Rein</name>
-    </author>
-    <author>
-      <name>Lucas Jun Koba Sato</name>
-    </author>
-    <author>
-      <name>Hjalmar Wijk</name>
-    </author>
-    <author>
-      <name>Daniel M. Ziegler</name>
-    </author>
-    <author>
-      <name>Elizabeth Barnes</name>
-    </author>
-    <author>
-      <name>Lawrence Chan</name>
-    </author>
-    <link href="http://arxiv.org/abs/2503.14499v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.14499v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.14495v1</id>
-    <updated>2025-03-18T17:58:28Z</updated>
-    <published>2025-03-18T17:58:28Z</published>
-    <title>Temporal Consistency for LLM Reasoning Process Error Identification</title>
-    <summary>  Verification is crucial for effective mathematical reasoning. We present a
-new temporal consistency method where verifiers iteratively refine their
-judgments based on the previous assessment. Unlike one-round verification or
-multi-model debate approaches, our method leverages consistency in a sequence
-of self-reflection actions to improve verification accuracy. Empirical
-evaluations across diverse mathematical process error identification benchmarks
-(Mathcheck, ProcessBench, and PRM800K) show consistent performance improvements
-over baseline methods. When applied to the recent DeepSeek R1 distilled models,
-our method demonstrates strong performance, enabling 7B/8B distilled models to
-outperform all 70B/72B models and GPT-4o on ProcessBench. Notably, the
-distilled 14B model with our method achieves performance comparable to
-Deepseek-R1. Our codes are available at
-https://github.com/jcguo123/Temporal-Consistency
-</summary>
-    <author>
-      <name>Jiacheng Guo</name>
-    </author>
-    <author>
-      <name>Yue Wu</name>
-    </author>
-    <author>
-      <name>Jiahao Qiu</name>
-    </author>
-    <author>
-      <name>Kaixuan Huang</name>
-    </author>
-    <author>
-      <name>Xinzhe Juan</name>
-    </author>
-    <author>
-      <name>Ling Yang</name>
-    </author>
-    <author>
-      <name>Mengdi Wang</name>
-    </author>
-    <link href="http://arxiv.org/abs/2503.14495v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.14495v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.15484v1</id>
+    <updated>2025-03-19T17:57:49Z</updated>
+    <published>2025-03-19T17:57:49Z</published>
+    <title>Value Profiles for Encoding Human Variation</title>
+    <summary>  Modelling human variation in rating tasks is crucial for enabling AI systems
+for personalization, pluralistic model alignment, and computational social
+science. We propose representing individuals using value profiles -- natural
+language descriptions of underlying values compressed from in-context
+demonstrations -- along with a steerable decoder model to estimate ratings
+conditioned on a value profile or other rater information. To measure the
+predictive information in rater representations, we introduce an
+information-theoretic methodology. We find that demonstrations contain the most
+information, followed by value profiles and then demographics. However, value
+profiles offer advantages in terms of scrutability, interpretability, and
+steerability due to their compressed natural language format. Value profiles
+effectively compress the useful information from demonstrations (&gt;70%
+information preservation). Furthermore, clustering value profiles to identify
+similarly behaving individuals better explains rater variation than the most
+predictive demographic groupings. Going beyond test set performance, we show
+that the decoder models interpretably change ratings according to semantic
+profile differences, are well-calibrated, and can help explain instance-level
+disagreement by simulating an annotator population. These results demonstrate
+that value profiles offer novel, predictive ways to describe individual
+variation beyond demographics or group information.
+</summary>
+    <author>
+      <name>Taylor Sorensen</name>
+    </author>
+    <author>
+      <name>Pushkar Mishra</name>
+    </author>
+    <author>
+      <name>Roma Patel</name>
+    </author>
+    <author>
+      <name>Michael Henry Tessler</name>
+    </author>
+    <author>
+      <name>Michiel Bakker</name>
+    </author>
+    <author>
+      <name>Georgina Evans</name>
+    </author>
+    <author>
+      <name>Iason Gabriel</name>
+    </author>
+    <author>
+      <name>Noah Goodman</name>
+    </author>
+    <author>
+      <name>Verena Rieser</name>
+    </author>
+    <link href="http://arxiv.org/abs/2503.15484v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.15484v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.15482v1</id>
+    <updated>2025-03-19T17:57:11Z</updated>
+    <published>2025-03-19T17:57:11Z</published>
+    <title>Natural Quantization of Neural Networks</title>
+    <summary>  We propose a natural quantization of a standard neural network, where the
+neurons correspond to qubits and the activation functions are implemented via
+quantum gates and measurements. The simplest quantized neural network
+corresponds to applying single-qubit rotations, with the rotation angles being
+dependent on the weights and measurement outcomes of the previous layer. This
+realization has the advantage of being smoothly tunable from the purely
+classical limit with no quantum uncertainty (thereby reproducing the classical
+neural network exactly) to a quantum case, where superpositions introduce an
+intrinsic uncertainty in the network. We benchmark this architecture on a
+subset of the standard MNIST dataset and find a regime of "quantum advantage,"
+where the validation error rate in the quantum realization is smaller than that
+in the classical model. We also consider another approach where quantumness is
+introduced via weak measurements of ancilla qubits entangled with the neuron
+qubits. This quantum neural network also allows for smooth tuning of the degree
+of quantumness by controlling an entanglement angle, $g$, with $g=\frac\pi 2$
+replicating the classical regime. We find that validation error is also
+minimized within the quantum regime in this approach. We also observe a quantum
+transition, with sharp loss of the quantum network's ability to learn at a
+critical point $g_c$. The proposed quantum neural networks are readily
+realizable in present-day quantum computers on commercial datasets.
+</summary>
+    <author>
+      <name>Richard Barney</name>
+    </author>
+    <author>
+      <name>Djamil Lakhdar-Hamina</name>
+    </author>
+    <author>
+      <name>Victor Galitski</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">7 pages, 8 figures, 1 table</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.15482v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.15482v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.dis-nn" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.15481v1</id>
+    <updated>2025-03-19T17:56:14Z</updated>
+    <published>2025-03-19T17:56:14Z</published>
+    <title>Learning to Play Piano in the Real World</title>
+    <summary>  Towards the grand challenge of achieving human-level manipulation in robots,
+playing piano is a compelling testbed that requires strategic, precise, and
+flowing movements. Over the years, several works demonstrated hand-designed
+controllers on real world piano playing, while other works evaluated robot
+learning approaches on simulated piano scenarios. In this paper, we develop the
+first piano playing robotic system that makes use of learning approaches while
+also being deployed on a real world dexterous robot. Specifically, we make use
+of Sim2Real to train a policy in simulation using reinforcement learning before
+deploying the learned policy on a real world dexterous robot. In our
+experiments, we thoroughly evaluate the interplay between domain randomization
+and the accuracy of the dynamics model used in simulation. Moreover, we
+evaluate the robot's performance across multiple songs with varying complexity
+to study the generalization of our learned policy. By providing a
+proof-of-concept of learning to play piano in the real world, we want to
+encourage the community to adopt piano playing as a compelling benchmark
+towards human-level manipulation. We open-source our code and show additional
+videos at https://lasr.org/research/learning-to-play-piano .
+</summary>
+    <author>
+      <name>Yves-Simon Zeulner</name>
+    </author>
+    <author>
+      <name>Sandeep Selvaraj</name>
+    </author>
+    <author>
+      <name>Roberto Calandra</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">10 pages</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.15481v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.15481v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.15479v1</id>
+    <updated>2025-03-19T17:55:40Z</updated>
+    <published>2025-03-19T17:55:40Z</published>
+    <title>Deep Mantle-Atmosphere Coupling and Carbonaceous Bombardment: Options
+  for Biomolecule Formation on an Oxidized Early Earth</title>
+    <summary>  Understanding what environmental conditions prevailed on early Earth during
+the Hadean eon, and how this set the stage for the origins of life, remains a
+challenge. Geologic processes such as serpentinization and bombardment by
+chondritic material during the late veneer might have been very active, shaping
+an atmospheric composition reducing enough to allow efficient photochemical
+synthesis of HCN, one of the key precursors of prebiotic molecules. HCN can
+rain out and accumulate in warm little ponds (WLPs), forming prebiotic
+molecules such as nucleobases and the sugar ribose. These molecules could
+condense to nucleotides, the building blocks of RNA molecules, one of the
+ingredients of life. Here, we perform a systematic study of potential sources
+of reducing gases on Hadean Earth and calculate the concentrations of prebiotic
+molecules in WLPs based on a comprehensive geophysical and atmospheric model.
+We find that in a reduced H$_2$-dominated atmosphere, carbonaceous bombardment
+can produce enough HCN to reach maximum WLP concentrations of $\sim
+1-10\,\mathrm{mM}$ for nucleobases and, in the absence of seepage, $\sim
+10-100\,\mathrm{\mu M}$ for ribose. If the Hadean atmosphere was initially
+oxidized and CO$_2$-rich ($90\,\%$), we find serpentinization alone can reduce
+the atmosphere, resulting in WLP concentrations of an order of magnitude lower
+than the reducing carbonaceous bombardment case. In both cases, concentrations
+are sufficient for nucleotide synthesis, as shown in experimental studies. RNA
+could have appeared on Earth immediately after it became habitable (about
+$100\,\mathrm{Myr}$ after the Moon-forming impact), or it could have
+(re)appeared later at any time up to the beginning of the Archean.
+</summary>
+    <author>
+      <name>Klaus Paschek</name>
+    </author>
+    <author>
+      <name>Thomas K. Henning</name>
+    </author>
+    <author>
+      <name>Karan Molaverdikhani</name>
+    </author>
+    <author>
+      <name>Yoshinori Miyazaki</name>
+    </author>
+    <author>
+      <name>Ben K. D. Pearce</name>
+    </author>
+    <author>
+      <name>Ralph E. Pudritz</name>
+    </author>
+    <author>
+      <name>Dmitry A. Semenov</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted for publication in The Astrophysical Journal. 44 pages, 12
+  figures (all colored)</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.15479v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.15479v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="astro-ph.EP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.EP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.ao-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.chem-ph" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
