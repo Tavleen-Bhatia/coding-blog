@@ -3,272 +3,314 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-03-20T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">413339</opensearch:totalResults>
+  <updated>2025-03-21T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">413608</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2503.15485v1</id>
-    <updated>2025-03-19T17:58:57Z</updated>
-    <published>2025-03-19T17:58:57Z</published>
-    <title>TULIP: Towards Unified Language-Image Pretraining</title>
-    <summary>  Despite the recent success of image-text contrastive models like CLIP and
-SigLIP, these models often struggle with vision-centric tasks that demand
-high-fidelity image understanding, such as counting, depth estimation, and
-fine-grained object recognition. These models, by performing language
-alignment, tend to prioritize high-level semantics over visual understanding,
-weakening their image understanding. On the other hand, vision-focused models
-are great at processing visual information but struggle to understand language,
-limiting their flexibility for language-driven tasks. In this work, we
-introduce TULIP, an open-source, drop-in replacement for existing CLIP-like
-models. Our method leverages generative data augmentation, enhanced image-image
-and text-text contrastive learning, and image/text reconstruction
-regularization to learn fine-grained visual features while preserving global
-semantic alignment. Our approach, scaling to over 1B parameters, outperforms
-existing state-of-the-art (SOTA) models across multiple benchmarks,
-establishing a new SOTA zero-shot performance on ImageNet-1K, delivering up to
-a $2\times$ enhancement over SigLIP on RxRx1 in linear probing for few-shot
-classification, and improving vision-language models, achieving over $3\times$
-higher scores than SigLIP on MMVP. Our code/checkpoints are available at
-https://tulip-berkeley.github.io
+    <id>http://arxiv.org/abs/2503.16429v1</id>
+    <updated>2025-03-20T17:59:59Z</updated>
+    <published>2025-03-20T17:59:59Z</published>
+    <title>Sonata: Self-Supervised Learning of Reliable Point Representations</title>
+    <summary>  In this paper, we question whether we have a reliable self-supervised point
+cloud model that can be used for diverse 3D tasks via simple linear probing,
+even with limited data and minimal computation. We find that existing 3D
+self-supervised learning approaches fall short when evaluated on representation
+quality through linear probing. We hypothesize that this is due to what we term
+the "geometric shortcut", which causes representations to collapse to low-level
+spatial features. This challenge is unique to 3D and arises from the sparse
+nature of point cloud data. We address it through two key strategies: obscuring
+spatial information and enhancing the reliance on input features, ultimately
+composing a Sonata of 140k point clouds through self-distillation. Sonata is
+simple and intuitive, yet its learned representations are strong and reliable:
+zero-shot visualizations demonstrate semantic grouping, alongside strong
+spatial reasoning through nearest-neighbor relationships. Sonata demonstrates
+exceptional parameter and data efficiency, tripling linear probing accuracy
+(from 21.8% to 72.5%) on ScanNet and nearly doubling performance with only 1%
+of the data compared to previous approaches. Full fine-tuning further advances
+SOTA across both 3D indoor and outdoor perception tasks.
 </summary>
     <author>
-      <name>Zineng Tang</name>
+      <name>Xiaoyang Wu</name>
     </author>
     <author>
-      <name>Long Lian</name>
+      <name>Daniel DeTone</name>
     </author>
     <author>
-      <name>Seun Eisape</name>
+      <name>Duncan Frost</name>
     </author>
     <author>
-      <name>XuDong Wang</name>
+      <name>Tianwei Shen</name>
     </author>
     <author>
-      <name>Roei Herzig</name>
+      <name>Chris Xie</name>
     </author>
     <author>
-      <name>Adam Yala</name>
+      <name>Nan Yang</name>
     </author>
     <author>
-      <name>Alane Suhr</name>
+      <name>Jakob Engel</name>
     </author>
     <author>
-      <name>Trevor Darrell</name>
+      <name>Richard Newcombe</name>
     </author>
     <author>
-      <name>David M. Chan</name>
+      <name>Hengshuang Zhao</name>
     </author>
-    <link href="http://arxiv.org/abs/2503.15485v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.15485v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Julian Straub</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">CVPR 2025, produced by Pointcept x Meta, project page:
+  https://xywu.me/sonata/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.16429v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.16429v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.16426v1</id>
+    <updated>2025-03-20T17:59:54Z</updated>
+    <published>2025-03-20T17:59:54Z</published>
+    <title>DynamicVis: An Efficient and General Visual Foundation Model for Remote
+  Sensing Image Understanding</title>
+    <summary>  The advancement of remote sensing technology has improved the spatial
+resolution of satellite imagery, facilitating more detailed visual
+representations for diverse interpretations. However, existing methods exhibit
+limited generalization capabilities across varied applications. While some
+contemporary foundation models demonstrate potential, they are hindered by
+insufficient cross-task adaptability and primarily process low-resolution
+imagery of restricted sizes, thus failing to fully exploit high-resolution data
+or leverage comprehensive large-scene semantics. Crucially, remote sensing
+imagery differs fundamentally from natural images, as key foreground targets
+(eg., maritime objects, artificial structures) often occupy minimal spatial
+proportions (~1%) and exhibit sparse distributions. Efficiently modeling
+cross-task generalizable knowledge from lengthy 2D tokens (~100,000) poses a
+significant challenge yet remains critical for remote sensing image
+understanding. Motivated by the selective attention mechanisms inherent to the
+human visual system, we propose DynamicVis, a dynamic visual perception
+foundation model for remote sensing imagery. The framework integrates a novel
+dynamic region perception backbone based on the selective state space model,
+which strategically balances localized detail extraction with global contextual
+integration, enabling computationally efficient encoding of large-scale data
+while maintaining architectural scalability. To enhance cross-task knowledge
+transferring, we introduce a multi-instance learning paradigm utilizing
+meta-embedding representations, trained on million-scale region-level
+annotations. Evaluations across nine downstream tasks demonstrate the model's
+versatility. DynamicVis achieves multi-level feature modeling with exceptional
+efficiency, processing (2048x2048) pixels with 97 ms latency (6% of ViT's) and
+833 MB GPU memory (3% of ViT's).
+</summary>
+    <author>
+      <name>Keyan Chen</name>
+    </author>
+    <author>
+      <name>Chenyang Liu</name>
+    </author>
+    <author>
+      <name>Bowen Chen</name>
+    </author>
+    <author>
+      <name>Wenyuan Li</name>
+    </author>
+    <author>
+      <name>Zhengxia Zou</name>
+    </author>
+    <author>
+      <name>Zhenwei Shi</name>
+    </author>
+    <link href="http://arxiv.org/abs/2503.16426v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.16426v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.16423v1</id>
+    <updated>2025-03-20T17:59:47Z</updated>
+    <published>2025-03-20T17:59:47Z</published>
+    <title>GAEA: A Geolocation Aware Conversational Model</title>
+    <summary>  Image geolocalization, in which, traditionally, an AI model predicts the
+precise GPS coordinates of an image is a challenging task with many downstream
+applications. However, the user cannot utilize the model to further their
+knowledge other than the GPS coordinate; the model lacks an understanding of
+the location and the conversational ability to communicate with the user. In
+recent days, with tremendous progress of large multimodal models (LMMs)
+proprietary and open-source researchers have attempted to geolocalize images
+via LMMs. However, the issues remain unaddressed; beyond general tasks, for
+more specialized downstream tasks, one of which is geolocalization, LMMs
+struggle. In this work, we propose to solve this problem by introducing a
+conversational model GAEA that can provide information regarding the location
+of an image, as required by a user. No large-scale dataset enabling the
+training of such a model exists. Thus we propose a comprehensive dataset GAEA
+with 800K images and around 1.6M question answer pairs constructed by
+leveraging OpenStreetMap (OSM) attributes and geographical context clues. For
+quantitative evaluation, we propose a diverse benchmark comprising 4K
+image-text pairs to evaluate conversational capabilities equipped with diverse
+question types. We consider 11 state-of-the-art open-source and proprietary
+LMMs and demonstrate that GAEA significantly outperforms the best open-source
+model, LLaVA-OneVision by 25.69% and the best proprietary model, GPT-4o by
+8.28%. Our dataset, model and codes are available
+</summary>
+    <author>
+      <name>Ron Campos</name>
+    </author>
+    <author>
+      <name>Ashmal Vayani</name>
+    </author>
+    <author>
+      <name>Parth Parag Kulkarni</name>
+    </author>
+    <author>
+      <name>Rohit Gupta</name>
+    </author>
+    <author>
+      <name>Aritra Dutta</name>
+    </author>
+    <author>
+      <name>Mubarak Shah</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">The dataset and code used in this submission is available at:
+  https://ucf-crcv.github.io/GAEA/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.16423v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.16423v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="I.4; I.2.7; I.5" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.16421v1</id>
+    <updated>2025-03-20T17:59:42Z</updated>
+    <published>2025-03-20T17:59:42Z</published>
+    <title>MagicMotion: Controllable Video Generation with Dense-to-Sparse
+  Trajectory Guidance</title>
+    <summary>  Recent advances in video generation have led to remarkable improvements in
+visual quality and temporal coherence. Upon this, trajectory-controllable video
+generation has emerged to enable precise object motion control through
+explicitly defined spatial paths. However, existing methods struggle with
+complex object movements and multi-object motion control, resulting in
+imprecise trajectory adherence, poor object consistency, and compromised visual
+quality. Furthermore, these methods only support trajectory control in a single
+format, limiting their applicability in diverse scenarios. Additionally, there
+is no publicly available dataset or benchmark specifically tailored for
+trajectory-controllable video generation, hindering robust training and
+systematic evaluation. To address these challenges, we introduce MagicMotion, a
+novel image-to-video generation framework that enables trajectory control
+through three levels of conditions from dense to sparse: masks, bounding boxes,
+and sparse boxes. Given an input image and trajectories, MagicMotion seamlessly
+animates objects along defined trajectories while maintaining object
+consistency and visual quality. Furthermore, we present MagicData, a
+large-scale trajectory-controlled video dataset, along with an automated
+pipeline for annotation and filtering. We also introduce MagicBench, a
+comprehensive benchmark that assesses both video quality and trajectory control
+accuracy across different numbers of objects. Extensive experiments demonstrate
+that MagicMotion outperforms previous methods across various metrics. Our
+project page are publicly available at
+https://quanhaol.github.io/magicmotion-site.
+</summary>
+    <author>
+      <name>Quanhao Li</name>
+    </author>
+    <author>
+      <name>Zhen Xing</name>
+    </author>
+    <author>
+      <name>Rui Wang</name>
+    </author>
+    <author>
+      <name>Hui Zhang</name>
+    </author>
+    <author>
+      <name>Qi Dai</name>
+    </author>
+    <author>
+      <name>Zuxuan Wu</name>
+    </author>
+    <link href="http://arxiv.org/abs/2503.16421v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.16421v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2503.15484v1</id>
-    <updated>2025-03-19T17:57:49Z</updated>
-    <published>2025-03-19T17:57:49Z</published>
-    <title>Value Profiles for Encoding Human Variation</title>
-    <summary>  Modelling human variation in rating tasks is crucial for enabling AI systems
-for personalization, pluralistic model alignment, and computational social
-science. We propose representing individuals using value profiles -- natural
-language descriptions of underlying values compressed from in-context
-demonstrations -- along with a steerable decoder model to estimate ratings
-conditioned on a value profile or other rater information. To measure the
-predictive information in rater representations, we introduce an
-information-theoretic methodology. We find that demonstrations contain the most
-information, followed by value profiles and then demographics. However, value
-profiles offer advantages in terms of scrutability, interpretability, and
-steerability due to their compressed natural language format. Value profiles
-effectively compress the useful information from demonstrations (&gt;70%
-information preservation). Furthermore, clustering value profiles to identify
-similarly behaving individuals better explains rater variation than the most
-predictive demographic groupings. Going beyond test set performance, we show
-that the decoder models interpretably change ratings according to semantic
-profile differences, are well-calibrated, and can help explain instance-level
-disagreement by simulating an annotator population. These results demonstrate
-that value profiles offer novel, predictive ways to describe individual
-variation beyond demographics or group information.
+    <id>http://arxiv.org/abs/2503.16419v1</id>
+    <updated>2025-03-20T17:59:38Z</updated>
+    <published>2025-03-20T17:59:38Z</published>
+    <title>Stop Overthinking: A Survey on Efficient Reasoning for Large Language
+  Models</title>
+    <summary>  Large Language Models (LLMs) have demonstrated remarkable capabilities in
+complex tasks. Recent advancements in Large Reasoning Models (LRMs), such as
+OpenAI o1 and DeepSeek-R1, have further improved performance in System-2
+reasoning domains like mathematics and programming by harnessing supervised
+fine-tuning (SFT) and reinforcement learning (RL) techniques to enhance the
+Chain-of-Thought (CoT) reasoning. However, while longer CoT reasoning sequences
+improve performance, they also introduce significant computational overhead due
+to verbose and redundant outputs, known as the "overthinking phenomenon". In
+this paper, we provide the first structured survey to systematically
+investigate and explore the current progress toward achieving efficient
+reasoning in LLMs. Overall, relying on the inherent mechanism of LLMs, we
+categorize existing works into several key directions: (1) model-based
+efficient reasoning, which considers optimizing full-length reasoning models
+into more concise reasoning models or directly training efficient reasoning
+models; (2) reasoning output-based efficient reasoning, which aims to
+dynamically reduce reasoning steps and length during inference; (3) input
+prompts-based efficient reasoning, which seeks to enhance reasoning efficiency
+based on input prompt properties such as difficulty or length control.
+Additionally, we introduce the use of efficient data for training reasoning
+models, explore the reasoning capabilities of small language models, and
+discuss evaluation methods and benchmarking.
 </summary>
     <author>
-      <name>Taylor Sorensen</name>
+      <name>Yang Sui</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Henry</arxiv:affiliation>
     </author>
     <author>
-      <name>Pushkar Mishra</name>
+      <name>Yu-Neng Chuang</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Henry</arxiv:affiliation>
     </author>
     <author>
-      <name>Roma Patel</name>
+      <name>Guanchu Wang</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Henry</arxiv:affiliation>
     </author>
     <author>
-      <name>Michael Henry Tessler</name>
+      <name>Jiamu Zhang</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Henry</arxiv:affiliation>
     </author>
     <author>
-      <name>Michiel Bakker</name>
+      <name>Tianyi Zhang</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Henry</arxiv:affiliation>
     </author>
     <author>
-      <name>Georgina Evans</name>
+      <name>Jiayi Yuan</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Henry</arxiv:affiliation>
     </author>
     <author>
-      <name>Iason Gabriel</name>
+      <name>Hongyi Liu</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Henry</arxiv:affiliation>
     </author>
     <author>
-      <name>Noah Goodman</name>
+      <name>Andrew Wen</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Henry</arxiv:affiliation>
     </author>
     <author>
-      <name>Verena Rieser</name>
+      <name> Shaochen</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Henry</arxiv:affiliation>
     </author>
-    <link href="http://arxiv.org/abs/2503.15484v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.15484v1" rel="related" type="application/pdf"/>
+    <author>
+      <name> Zhong</name>
+    </author>
+    <author>
+      <name>Hanjie Chen</name>
+    </author>
+    <author>
+      <name>Xia Hu</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Website:
+  https://github.com/Eclipsess/Awesome-Efficient-Reasoning-LLMs</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.16419v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.16419v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.15482v1</id>
-    <updated>2025-03-19T17:57:11Z</updated>
-    <published>2025-03-19T17:57:11Z</published>
-    <title>Natural Quantization of Neural Networks</title>
-    <summary>  We propose a natural quantization of a standard neural network, where the
-neurons correspond to qubits and the activation functions are implemented via
-quantum gates and measurements. The simplest quantized neural network
-corresponds to applying single-qubit rotations, with the rotation angles being
-dependent on the weights and measurement outcomes of the previous layer. This
-realization has the advantage of being smoothly tunable from the purely
-classical limit with no quantum uncertainty (thereby reproducing the classical
-neural network exactly) to a quantum case, where superpositions introduce an
-intrinsic uncertainty in the network. We benchmark this architecture on a
-subset of the standard MNIST dataset and find a regime of "quantum advantage,"
-where the validation error rate in the quantum realization is smaller than that
-in the classical model. We also consider another approach where quantumness is
-introduced via weak measurements of ancilla qubits entangled with the neuron
-qubits. This quantum neural network also allows for smooth tuning of the degree
-of quantumness by controlling an entanglement angle, $g$, with $g=\frac\pi 2$
-replicating the classical regime. We find that validation error is also
-minimized within the quantum regime in this approach. We also observe a quantum
-transition, with sharp loss of the quantum network's ability to learn at a
-critical point $g_c$. The proposed quantum neural networks are readily
-realizable in present-day quantum computers on commercial datasets.
-</summary>
-    <author>
-      <name>Richard Barney</name>
-    </author>
-    <author>
-      <name>Djamil Lakhdar-Hamina</name>
-    </author>
-    <author>
-      <name>Victor Galitski</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">7 pages, 8 figures, 1 table</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.15482v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.15482v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cond-mat.dis-nn" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.15481v1</id>
-    <updated>2025-03-19T17:56:14Z</updated>
-    <published>2025-03-19T17:56:14Z</published>
-    <title>Learning to Play Piano in the Real World</title>
-    <summary>  Towards the grand challenge of achieving human-level manipulation in robots,
-playing piano is a compelling testbed that requires strategic, precise, and
-flowing movements. Over the years, several works demonstrated hand-designed
-controllers on real world piano playing, while other works evaluated robot
-learning approaches on simulated piano scenarios. In this paper, we develop the
-first piano playing robotic system that makes use of learning approaches while
-also being deployed on a real world dexterous robot. Specifically, we make use
-of Sim2Real to train a policy in simulation using reinforcement learning before
-deploying the learned policy on a real world dexterous robot. In our
-experiments, we thoroughly evaluate the interplay between domain randomization
-and the accuracy of the dynamics model used in simulation. Moreover, we
-evaluate the robot's performance across multiple songs with varying complexity
-to study the generalization of our learned policy. By providing a
-proof-of-concept of learning to play piano in the real world, we want to
-encourage the community to adopt piano playing as a compelling benchmark
-towards human-level manipulation. We open-source our code and show additional
-videos at https://lasr.org/research/learning-to-play-piano .
-</summary>
-    <author>
-      <name>Yves-Simon Zeulner</name>
-    </author>
-    <author>
-      <name>Sandeep Selvaraj</name>
-    </author>
-    <author>
-      <name>Roberto Calandra</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">10 pages</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.15481v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.15481v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.15479v1</id>
-    <updated>2025-03-19T17:55:40Z</updated>
-    <published>2025-03-19T17:55:40Z</published>
-    <title>Deep Mantle-Atmosphere Coupling and Carbonaceous Bombardment: Options
-  for Biomolecule Formation on an Oxidized Early Earth</title>
-    <summary>  Understanding what environmental conditions prevailed on early Earth during
-the Hadean eon, and how this set the stage for the origins of life, remains a
-challenge. Geologic processes such as serpentinization and bombardment by
-chondritic material during the late veneer might have been very active, shaping
-an atmospheric composition reducing enough to allow efficient photochemical
-synthesis of HCN, one of the key precursors of prebiotic molecules. HCN can
-rain out and accumulate in warm little ponds (WLPs), forming prebiotic
-molecules such as nucleobases and the sugar ribose. These molecules could
-condense to nucleotides, the building blocks of RNA molecules, one of the
-ingredients of life. Here, we perform a systematic study of potential sources
-of reducing gases on Hadean Earth and calculate the concentrations of prebiotic
-molecules in WLPs based on a comprehensive geophysical and atmospheric model.
-We find that in a reduced H$_2$-dominated atmosphere, carbonaceous bombardment
-can produce enough HCN to reach maximum WLP concentrations of $\sim
-1-10\,\mathrm{mM}$ for nucleobases and, in the absence of seepage, $\sim
-10-100\,\mathrm{\mu M}$ for ribose. If the Hadean atmosphere was initially
-oxidized and CO$_2$-rich ($90\,\%$), we find serpentinization alone can reduce
-the atmosphere, resulting in WLP concentrations of an order of magnitude lower
-than the reducing carbonaceous bombardment case. In both cases, concentrations
-are sufficient for nucleotide synthesis, as shown in experimental studies. RNA
-could have appeared on Earth immediately after it became habitable (about
-$100\,\mathrm{Myr}$ after the Moon-forming impact), or it could have
-(re)appeared later at any time up to the beginning of the Archean.
-</summary>
-    <author>
-      <name>Klaus Paschek</name>
-    </author>
-    <author>
-      <name>Thomas K. Henning</name>
-    </author>
-    <author>
-      <name>Karan Molaverdikhani</name>
-    </author>
-    <author>
-      <name>Yoshinori Miyazaki</name>
-    </author>
-    <author>
-      <name>Ben K. D. Pearce</name>
-    </author>
-    <author>
-      <name>Ralph E. Pudritz</name>
-    </author>
-    <author>
-      <name>Dmitry A. Semenov</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted for publication in The Astrophysical Journal. 44 pages, 12
-  figures (all colored)</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.15479v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.15479v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="astro-ph.EP" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="astro-ph.EP" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.ao-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.chem-ph" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
