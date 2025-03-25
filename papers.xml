@@ -3,314 +3,263 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-03-23T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">413608</opensearch:totalResults>
+  <updated>2025-03-24T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">413872</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2503.16429v1</id>
-    <updated>2025-03-20T17:59:59Z</updated>
-    <published>2025-03-20T17:59:59Z</published>
-    <title>Sonata: Self-Supervised Learning of Reliable Point Representations</title>
-    <summary>  In this paper, we question whether we have a reliable self-supervised point
-cloud model that can be used for diverse 3D tasks via simple linear probing,
-even with limited data and minimal computation. We find that existing 3D
-self-supervised learning approaches fall short when evaluated on representation
-quality through linear probing. We hypothesize that this is due to what we term
-the "geometric shortcut", which causes representations to collapse to low-level
-spatial features. This challenge is unique to 3D and arises from the sparse
-nature of point cloud data. We address it through two key strategies: obscuring
-spatial information and enhancing the reliance on input features, ultimately
-composing a Sonata of 140k point clouds through self-distillation. Sonata is
-simple and intuitive, yet its learned representations are strong and reliable:
-zero-shot visualizations demonstrate semantic grouping, alongside strong
-spatial reasoning through nearest-neighbor relationships. Sonata demonstrates
-exceptional parameter and data efficiency, tripling linear probing accuracy
-(from 21.8% to 72.5%) on ScanNet and nearly doubling performance with only 1%
-of the data compared to previous approaches. Full fine-tuning further advances
-SOTA across both 3D indoor and outdoor perception tasks.
+    <id>http://arxiv.org/abs/2503.17362v1</id>
+    <updated>2025-03-21T17:59:48Z</updated>
+    <published>2025-03-21T17:59:48Z</published>
+    <title>Criteria for unbiased estimation: applications to noise-agnostic sensing
+  and learnability of quantum channel</title>
+    <summary>  We establish the necessary and sufficient conditions for unbiased estimation
+in multi-parameter estimation tasks. More specifically, we first consider
+quantum state estimation, where multiple parameters are encoded in a quantum
+state, and derive two equivalent necessary and sufficient conditions for an
+unbiased estimation: one formulated in terms of the quantum Fisher information
+matrix (QFIM) and the other based on the derivatives of the encoded state.
+Furthermore, we introduce a generalized quantum Cram\'er-Rao bound, which
+provides a fundamental achievable lower bound on the estimation error even when
+the QFIM is non-invertible. To demonstrate the utility of our framework, we
+consider phase estimation under unknown Pauli noise. We show that while
+unbiased phase estimation is infeasible with a naive scheme, employing an
+entangled probe with a noiseless ancilla enables unbiased estimation. Next, we
+extend our analysis to quantum channel estimation (equivalently, quantum
+channel learning), where the goal is to estimate parameters characterizing an
+unknown quantum channel. We establish the necessary and sufficient condition
+for unbiased estimation of these parameters. Notably, by interpreting unbiased
+estimation as learnability, our result applies to the fundamental learnability
+of parameters in general quantum channels. As a concrete application, we
+investigate the learnability of noise affecting non-Clifford gates via cycle
+benchmarking.
 </summary>
     <author>
-      <name>Xiaoyang Wu</name>
+      <name>Hyukgun Kwon</name>
     </author>
     <author>
-      <name>Daniel DeTone</name>
+      <name>Kento Tsubouchi</name>
     </author>
     <author>
-      <name>Duncan Frost</name>
+      <name>Chia-Tung Chu</name>
     </author>
     <author>
-      <name>Tianwei Shen</name>
+      <name>Liang Jiang</name>
     </author>
-    <author>
-      <name>Chris Xie</name>
-    </author>
-    <author>
-      <name>Nan Yang</name>
-    </author>
-    <author>
-      <name>Jakob Engel</name>
-    </author>
-    <author>
-      <name>Richard Newcombe</name>
-    </author>
-    <author>
-      <name>Hengshuang Zhao</name>
-    </author>
-    <author>
-      <name>Julian Straub</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">CVPR 2025, produced by Pointcept x Meta, project page:
-  https://xywu.me/sonata/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.16429v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.16429v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">2 figures, 5 pages of main text, 18 pages of supplemental matrerial</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.17362v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.17362v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2503.16426v1</id>
-    <updated>2025-03-20T17:59:54Z</updated>
-    <published>2025-03-20T17:59:54Z</published>
-    <title>DynamicVis: An Efficient and General Visual Foundation Model for Remote
-  Sensing Image Understanding</title>
-    <summary>  The advancement of remote sensing technology has improved the spatial
-resolution of satellite imagery, facilitating more detailed visual
-representations for diverse interpretations. However, existing methods exhibit
-limited generalization capabilities across varied applications. While some
-contemporary foundation models demonstrate potential, they are hindered by
-insufficient cross-task adaptability and primarily process low-resolution
-imagery of restricted sizes, thus failing to fully exploit high-resolution data
-or leverage comprehensive large-scene semantics. Crucially, remote sensing
-imagery differs fundamentally from natural images, as key foreground targets
-(eg., maritime objects, artificial structures) often occupy minimal spatial
-proportions (~1%) and exhibit sparse distributions. Efficiently modeling
-cross-task generalizable knowledge from lengthy 2D tokens (~100,000) poses a
-significant challenge yet remains critical for remote sensing image
-understanding. Motivated by the selective attention mechanisms inherent to the
-human visual system, we propose DynamicVis, a dynamic visual perception
-foundation model for remote sensing imagery. The framework integrates a novel
-dynamic region perception backbone based on the selective state space model,
-which strategically balances localized detail extraction with global contextual
-integration, enabling computationally efficient encoding of large-scale data
-while maintaining architectural scalability. To enhance cross-task knowledge
-transferring, we introduce a multi-instance learning paradigm utilizing
-meta-embedding representations, trained on million-scale region-level
-annotations. Evaluations across nine downstream tasks demonstrate the model's
-versatility. DynamicVis achieves multi-level feature modeling with exceptional
-efficiency, processing (2048x2048) pixels with 97 ms latency (6% of ViT's) and
-833 MB GPU memory (3% of ViT's).
+    <id>http://arxiv.org/abs/2503.17361v1</id>
+    <updated>2025-03-21T17:59:43Z</updated>
+    <published>2025-03-21T17:59:43Z</published>
+    <title>Gumbel-Softmax Flow Matching with Straight-Through Guidance for
+  Controllable Biological Sequence Generation</title>
+    <summary>  Flow matching in the continuous simplex has emerged as a promising strategy
+for DNA sequence design, but struggles to scale to higher simplex dimensions
+required for peptide and protein generation. We introduce Gumbel-Softmax Flow
+and Score Matching, a generative framework on the simplex based on a novel
+Gumbel-Softmax interpolant with a time-dependent temperature. Using this
+interpolant, we introduce Gumbel-Softmax Flow Matching by deriving a
+parameterized velocity field that transports from smooth categorical
+distributions to distributions concentrated at a single vertex of the simplex.
+We alternatively present Gumbel-Softmax Score Matching which learns to regress
+the gradient of the probability density. Our framework enables high-quality,
+diverse generation and scales efficiently to higher-dimensional simplices. To
+enable training-free guidance, we propose Straight-Through Guided Flows
+(STGFlow), a classifier-based guidance method that leverages straight-through
+estimators to steer the unconditional velocity field toward optimal vertices of
+the simplex. STGFlow enables efficient inference-time guidance using
+classifiers pre-trained on clean sequences, and can be used with any discrete
+flow method. Together, these components form a robust framework for
+controllable de novo sequence generation. We demonstrate state-of-the-art
+performance in conditional DNA promoter design, sequence-only protein
+generation, and target-binding peptide design for rare disease treatment.
 </summary>
     <author>
-      <name>Keyan Chen</name>
+      <name>Sophia Tang</name>
     </author>
     <author>
-      <name>Chenyang Liu</name>
+      <name>Yinuo Zhang</name>
     </author>
     <author>
-      <name>Bowen Chen</name>
+      <name>Alexander Tong</name>
     </author>
     <author>
-      <name>Wenyuan Li</name>
+      <name>Pranam Chatterjee</name>
     </author>
-    <author>
-      <name>Zhengxia Zou</name>
-    </author>
-    <author>
-      <name>Zhenwei Shi</name>
-    </author>
-    <link href="http://arxiv.org/abs/2503.16426v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.16426v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.16423v1</id>
-    <updated>2025-03-20T17:59:47Z</updated>
-    <published>2025-03-20T17:59:47Z</published>
-    <title>GAEA: A Geolocation Aware Conversational Model</title>
-    <summary>  Image geolocalization, in which, traditionally, an AI model predicts the
-precise GPS coordinates of an image is a challenging task with many downstream
-applications. However, the user cannot utilize the model to further their
-knowledge other than the GPS coordinate; the model lacks an understanding of
-the location and the conversational ability to communicate with the user. In
-recent days, with tremendous progress of large multimodal models (LMMs)
-proprietary and open-source researchers have attempted to geolocalize images
-via LMMs. However, the issues remain unaddressed; beyond general tasks, for
-more specialized downstream tasks, one of which is geolocalization, LMMs
-struggle. In this work, we propose to solve this problem by introducing a
-conversational model GAEA that can provide information regarding the location
-of an image, as required by a user. No large-scale dataset enabling the
-training of such a model exists. Thus we propose a comprehensive dataset GAEA
-with 800K images and around 1.6M question answer pairs constructed by
-leveraging OpenStreetMap (OSM) attributes and geographical context clues. For
-quantitative evaluation, we propose a diverse benchmark comprising 4K
-image-text pairs to evaluate conversational capabilities equipped with diverse
-question types. We consider 11 state-of-the-art open-source and proprietary
-LMMs and demonstrate that GAEA significantly outperforms the best open-source
-model, LLaVA-OneVision by 25.69% and the best proprietary model, GPT-4o by
-8.28%. Our dataset, model and codes are available
-</summary>
-    <author>
-      <name>Ron Campos</name>
-    </author>
-    <author>
-      <name>Ashmal Vayani</name>
-    </author>
-    <author>
-      <name>Parth Parag Kulkarni</name>
-    </author>
-    <author>
-      <name>Rohit Gupta</name>
-    </author>
-    <author>
-      <name>Aritra Dutta</name>
-    </author>
-    <author>
-      <name>Mubarak Shah</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">The dataset and code used in this submission is available at:
-  https://ucf-crcv.github.io/GAEA/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.16423v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.16423v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <link href="http://arxiv.org/abs/2503.17361v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.17361v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="I.4; I.2.7; I.5" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.BM" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2503.16421v1</id>
-    <updated>2025-03-20T17:59:42Z</updated>
-    <published>2025-03-20T17:59:42Z</published>
-    <title>MagicMotion: Controllable Video Generation with Dense-to-Sparse
-  Trajectory Guidance</title>
-    <summary>  Recent advances in video generation have led to remarkable improvements in
-visual quality and temporal coherence. Upon this, trajectory-controllable video
-generation has emerged to enable precise object motion control through
-explicitly defined spatial paths. However, existing methods struggle with
-complex object movements and multi-object motion control, resulting in
-imprecise trajectory adherence, poor object consistency, and compromised visual
-quality. Furthermore, these methods only support trajectory control in a single
-format, limiting their applicability in diverse scenarios. Additionally, there
-is no publicly available dataset or benchmark specifically tailored for
-trajectory-controllable video generation, hindering robust training and
-systematic evaluation. To address these challenges, we introduce MagicMotion, a
-novel image-to-video generation framework that enables trajectory control
-through three levels of conditions from dense to sparse: masks, bounding boxes,
-and sparse boxes. Given an input image and trajectories, MagicMotion seamlessly
-animates objects along defined trajectories while maintaining object
-consistency and visual quality. Furthermore, we present MagicData, a
-large-scale trajectory-controlled video dataset, along with an automated
-pipeline for annotation and filtering. We also introduce MagicBench, a
-comprehensive benchmark that assesses both video quality and trajectory control
-accuracy across different numbers of objects. Extensive experiments demonstrate
-that MagicMotion outperforms previous methods across various metrics. Our
-project page are publicly available at
-https://quanhaol.github.io/magicmotion-site.
+    <id>http://arxiv.org/abs/2503.17355v2</id>
+    <updated>2025-03-24T13:10:28Z</updated>
+    <published>2025-03-21T17:58:10Z</published>
+    <title>Glivenko-Cantelli for $f$-divergence</title>
+    <summary>  We extend the celebrated Glivenko-Cantelli theorem, sometimes called the
+fundamental theorem of statistics, from its standard setting of total variation
+distance to all $f$-divergences. A key obstacle in this endeavor is to define
+$f$-divergence on a subcollection of a $\sigma$-algebra that forms a
+$\pi$-system but not a $\sigma$-subalgebra. This is a side contribution of our
+work. We will show that this notion of $f$-divergence on the $\pi$-system of
+rays preserves nearly all known properties of standard $f$-divergence, yields a
+novel integral representation of the Kolmogorov-Smirnov distance, and has a
+Glivenko-Cantelli theorem. We will also discuss the prospects of a
+Vapnik-Chervonenkis theory for $f$-divergence.
 </summary>
     <author>
-      <name>Quanhao Li</name>
+      <name>Haoming Wang</name>
     </author>
     <author>
-      <name>Zhen Xing</name>
+      <name>Lek-Heng Lim</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">26 pages, 1 figure</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.17355v2" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.17355v2" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.TH" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="60B10, 60F15, 60F25" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.17354v1</id>
+    <updated>2025-03-21T17:54:01Z</updated>
+    <published>2025-03-21T17:54:01Z</published>
+    <title>HCAST: Human-Calibrated Autonomy Software Tasks</title>
+    <summary>  To understand and predict the societal impacts of highly autonomous AI
+systems, we need benchmarks with grounding, i.e., metrics that directly connect
+AI performance to real-world effects we care about. We present HCAST
+(Human-Calibrated Autonomy Software Tasks), a benchmark of 189 machine learning
+engineering, cybersecurity, software engineering, and general reasoning tasks.
+We collect 563 human baselines (totaling over 1500 hours) from people skilled
+in these domains, working under identical conditions as AI agents, which lets
+us estimate that HCAST tasks take humans between one minute and 8+ hours.
+Measuring the time tasks take for humans provides an intuitive metric for
+evaluating AI capabilities, helping answer the question "can an agent be
+trusted to complete a task that would take a human X hours?" We evaluate the
+success rates of AI agents built on frontier foundation models, and we find
+that current agents succeed 70-80% of the time on tasks that take humans less
+than one hour, and less than 20% of the time on tasks that take humans more
+than 4 hours.
+</summary>
+    <author>
+      <name>David Rein</name>
     </author>
     <author>
-      <name>Rui Wang</name>
+      <name>Joel Becker</name>
     </author>
     <author>
-      <name>Hui Zhang</name>
+      <name>Amy Deng</name>
     </author>
     <author>
-      <name>Qi Dai</name>
+      <name>Seraphina Nix</name>
     </author>
     <author>
-      <name>Zuxuan Wu</name>
+      <name>Chris Canal</name>
     </author>
-    <link href="http://arxiv.org/abs/2503.16421v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.16421v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Daniel O'Connel</name>
+    </author>
+    <author>
+      <name>Pip Arnott</name>
+    </author>
+    <author>
+      <name>Ryan Bloom</name>
+    </author>
+    <author>
+      <name>Thomas Broadley</name>
+    </author>
+    <author>
+      <name>Katharyn Garcia</name>
+    </author>
+    <author>
+      <name>Brian Goodrich</name>
+    </author>
+    <author>
+      <name>Max Hasin</name>
+    </author>
+    <author>
+      <name>Sami Jawhar</name>
+    </author>
+    <author>
+      <name>Megan Kinniment</name>
+    </author>
+    <author>
+      <name>Thomas Kwa</name>
+    </author>
+    <author>
+      <name>Aron Lajko</name>
+    </author>
+    <author>
+      <name>Nate Rush</name>
+    </author>
+    <author>
+      <name>Lucas Jun Koba Sato</name>
+    </author>
+    <author>
+      <name>Sydney Von Arx</name>
+    </author>
+    <author>
+      <name>Ben West</name>
+    </author>
+    <author>
+      <name>Lawrence Chan</name>
+    </author>
+    <author>
+      <name>Elizabeth Barnes</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">32 pages, 10 figures, 5 tables</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.17354v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.17354v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="I.2.0" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2503.16419v1</id>
-    <updated>2025-03-20T17:59:38Z</updated>
-    <published>2025-03-20T17:59:38Z</published>
-    <title>Stop Overthinking: A Survey on Efficient Reasoning for Large Language
-  Models</title>
-    <summary>  Large Language Models (LLMs) have demonstrated remarkable capabilities in
-complex tasks. Recent advancements in Large Reasoning Models (LRMs), such as
-OpenAI o1 and DeepSeek-R1, have further improved performance in System-2
-reasoning domains like mathematics and programming by harnessing supervised
-fine-tuning (SFT) and reinforcement learning (RL) techniques to enhance the
-Chain-of-Thought (CoT) reasoning. However, while longer CoT reasoning sequences
-improve performance, they also introduce significant computational overhead due
-to verbose and redundant outputs, known as the "overthinking phenomenon". In
-this paper, we provide the first structured survey to systematically
-investigate and explore the current progress toward achieving efficient
-reasoning in LLMs. Overall, relying on the inherent mechanism of LLMs, we
-categorize existing works into several key directions: (1) model-based
-efficient reasoning, which considers optimizing full-length reasoning models
-into more concise reasoning models or directly training efficient reasoning
-models; (2) reasoning output-based efficient reasoning, which aims to
-dynamically reduce reasoning steps and length during inference; (3) input
-prompts-based efficient reasoning, which seeks to enhance reasoning efficiency
-based on input prompt properties such as difficulty or length control.
-Additionally, we introduce the use of efficient data for training reasoning
-models, explore the reasoning capabilities of small language models, and
-discuss evaluation methods and benchmarking.
+    <id>http://arxiv.org/abs/2503.17353v1</id>
+    <updated>2025-03-21T17:52:44Z</updated>
+    <published>2025-03-21T17:52:44Z</published>
+    <title>NdLinear Is All You Need for Representation Learning</title>
+    <summary>  Many high-impact machine learning tasks involve multi-dimensional data (e.g.,
+images, volumetric medical scans, multivariate time-series). Yet, most neural
+architectures flatten inputs, discarding critical cross-dimension information.
+We introduce NdLinear, a novel linear transformation that preserves these
+structures without extra overhead. By operating separately along each
+dimension, NdLinear captures dependencies that standard fully connected layers
+overlook. Extensive experiments across convolutional, recurrent, and
+transformer-based networks show significant improvements in representational
+power and parameter efficiency. Crucially, NdLinear serves as a foundational
+building block for large-scale foundation models by operating on any unimodal
+or multimodal data in its native form. This removes the need for flattening or
+modality-specific preprocessing. Ndlinear rethinks core architectural
+priorities beyond attention, enabling more expressive, context-aware models at
+scale. We propose NdLinear as a drop-in replacement for standard linear layers
+-- marking an important step toward next-generation neural architectures.
 </summary>
     <author>
-      <name>Yang Sui</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Henry</arxiv:affiliation>
+      <name>Alex Reneau</name>
     </author>
     <author>
-      <name>Yu-Neng Chuang</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Henry</arxiv:affiliation>
+      <name>Jerry Yao-Chieh Hu</name>
     </author>
     <author>
-      <name>Guanchu Wang</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Henry</arxiv:affiliation>
+      <name>Zhongfang Zhuang</name>
     </author>
     <author>
-      <name>Jiamu Zhang</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Henry</arxiv:affiliation>
+      <name>Ting-Chun Liu</name>
     </author>
-    <author>
-      <name>Tianyi Zhang</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Henry</arxiv:affiliation>
-    </author>
-    <author>
-      <name>Jiayi Yuan</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Henry</arxiv:affiliation>
-    </author>
-    <author>
-      <name>Hongyi Liu</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Henry</arxiv:affiliation>
-    </author>
-    <author>
-      <name>Andrew Wen</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Henry</arxiv:affiliation>
-    </author>
-    <author>
-      <name> Shaochen</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Henry</arxiv:affiliation>
-    </author>
-    <author>
-      <name> Zhong</name>
-    </author>
-    <author>
-      <name>Hanjie Chen</name>
-    </author>
-    <author>
-      <name>Xia Hu</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Website:
-  https://github.com/Eclipsess/Awesome-Efficient-Reasoning-LLMs</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.16419v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.16419v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Code is available at https://github.com/ensemble-core/NdLinear</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.17353v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.17353v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
