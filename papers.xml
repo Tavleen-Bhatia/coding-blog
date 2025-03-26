@@ -3,263 +3,261 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-03-24T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">413872</opensearch:totalResults>
+  <updated>2025-03-25T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">414338</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2503.17362v1</id>
-    <updated>2025-03-21T17:59:48Z</updated>
-    <published>2025-03-21T17:59:48Z</published>
-    <title>Criteria for unbiased estimation: applications to noise-agnostic sensing
-  and learnability of quantum channel</title>
-    <summary>  We establish the necessary and sufficient conditions for unbiased estimation
-in multi-parameter estimation tasks. More specifically, we first consider
-quantum state estimation, where multiple parameters are encoded in a quantum
-state, and derive two equivalent necessary and sufficient conditions for an
-unbiased estimation: one formulated in terms of the quantum Fisher information
-matrix (QFIM) and the other based on the derivatives of the encoded state.
-Furthermore, we introduce a generalized quantum Cram\'er-Rao bound, which
-provides a fundamental achievable lower bound on the estimation error even when
-the QFIM is non-invertible. To demonstrate the utility of our framework, we
-consider phase estimation under unknown Pauli noise. We show that while
-unbiased phase estimation is infeasible with a naive scheme, employing an
-entangled probe with a noiseless ancilla enables unbiased estimation. Next, we
-extend our analysis to quantum channel estimation (equivalently, quantum
-channel learning), where the goal is to estimate parameters characterizing an
-unknown quantum channel. We establish the necessary and sufficient condition
-for unbiased estimation of these parameters. Notably, by interpreting unbiased
-estimation as learnability, our result applies to the fundamental learnability
-of parameters in general quantum channels. As a concrete application, we
-investigate the learnability of noise affecting non-Clifford gates via cycle
-benchmarking.
+    <id>http://arxiv.org/abs/2503.18948v1</id>
+    <updated>2025-03-24T17:59:57Z</updated>
+    <published>2025-03-24T17:59:57Z</published>
+    <title>Equivariant Image Modeling</title>
+    <summary>  Current generative models, such as autoregressive and diffusion approaches,
+decompose high-dimensional data distribution learning into a series of simpler
+subtasks. However, inherent conflicts arise during the joint optimization of
+these subtasks, and existing solutions fail to resolve such conflicts without
+sacrificing efficiency or scalability. We propose a novel equivariant image
+modeling framework that inherently aligns optimization targets across subtasks
+by leveraging the translation invariance of natural visual signals. Our method
+introduces (1) column-wise tokenization which enhances translational symmetry
+along the horizontal axis, and (2) windowed causal attention which enforces
+consistent contextual relationships across positions. Evaluated on
+class-conditioned ImageNet generation at 256x256 resolution, our approach
+achieves performance comparable to state-of-the-art AR models while using fewer
+computational resources. Systematic analysis demonstrates that enhanced
+equivariance reduces inter-task conflicts, significantly improving zero-shot
+generalization and enabling ultra-long image synthesis. This work establishes
+the first framework for task-aligned decomposition in generative modeling,
+offering insights into efficient parameter sharing and conflict-free
+optimization. The code and models are publicly available at
+https://github.com/drx-code/EquivariantModeling.
 </summary>
     <author>
-      <name>Hyukgun Kwon</name>
+      <name>Ruixiao Dong</name>
     </author>
     <author>
-      <name>Kento Tsubouchi</name>
+      <name>Mengde Xu</name>
     </author>
     <author>
-      <name>Chia-Tung Chu</name>
+      <name>Zigang Geng</name>
     </author>
     <author>
-      <name>Liang Jiang</name>
+      <name>Li Li</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">2 figures, 5 pages of main text, 18 pages of supplemental matrerial</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.17362v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.17362v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Han Hu</name>
+    </author>
+    <author>
+      <name>Shuyang Gu</name>
+    </author>
+    <link href="http://arxiv.org/abs/2503.18948v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.18948v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2503.17361v1</id>
-    <updated>2025-03-21T17:59:43Z</updated>
-    <published>2025-03-21T17:59:43Z</published>
-    <title>Gumbel-Softmax Flow Matching with Straight-Through Guidance for
-  Controllable Biological Sequence Generation</title>
-    <summary>  Flow matching in the continuous simplex has emerged as a promising strategy
-for DNA sequence design, but struggles to scale to higher simplex dimensions
-required for peptide and protein generation. We introduce Gumbel-Softmax Flow
-and Score Matching, a generative framework on the simplex based on a novel
-Gumbel-Softmax interpolant with a time-dependent temperature. Using this
-interpolant, we introduce Gumbel-Softmax Flow Matching by deriving a
-parameterized velocity field that transports from smooth categorical
-distributions to distributions concentrated at a single vertex of the simplex.
-We alternatively present Gumbel-Softmax Score Matching which learns to regress
-the gradient of the probability density. Our framework enables high-quality,
-diverse generation and scales efficiently to higher-dimensional simplices. To
-enable training-free guidance, we propose Straight-Through Guided Flows
-(STGFlow), a classifier-based guidance method that leverages straight-through
-estimators to steer the unconditional velocity field toward optimal vertices of
-the simplex. STGFlow enables efficient inference-time guidance using
-classifiers pre-trained on clean sequences, and can be used with any discrete
-flow method. Together, these components form a robust framework for
-controllable de novo sequence generation. We demonstrate state-of-the-art
-performance in conditional DNA promoter design, sequence-only protein
-generation, and target-binding peptide design for rare disease treatment.
+    <id>http://arxiv.org/abs/2503.18947v1</id>
+    <updated>2025-03-24T17:59:56Z</updated>
+    <published>2025-03-24T17:59:56Z</published>
+    <title>Tuning-Free Amodal Segmentation via the Occlusion-Free Bias of
+  Inpainting Models</title>
+    <summary>  Amodal segmentation aims to predict segmentation masks for both the visible
+and occluded regions of an object. Most existing works formulate this as a
+supervised learning problem, requiring manually annotated amodal masks or
+synthetic training data. Consequently, their performance depends on the quality
+of the datasets, which often lack diversity and scale. This work introduces a
+tuning-free approach that repurposes pretrained diffusion-based inpainting
+models for amodal segmentation. Our approach is motivated by the
+"occlusion-free bias" of inpainting models, i.e., the inpainted objects tend to
+be complete objects without occlusions. Specifically, we reconstruct the
+occluded regions of an object via inpainting and then apply segmentation, all
+without additional training or fine-tuning. Experiments on five datasets
+demonstrate the generalizability and robustness of our approach. On average,
+our approach achieves 5.3% more accurate masks over the state-of-the-art.
 </summary>
     <author>
-      <name>Sophia Tang</name>
+      <name>Jae Joong Lee</name>
     </author>
     <author>
-      <name>Yinuo Zhang</name>
+      <name>Bedrich Benes</name>
     </author>
     <author>
-      <name>Alexander Tong</name>
+      <name>Raymond A. Yeh</name>
+    </author>
+    <link href="http://arxiv.org/abs/2503.18947v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.18947v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.18945v2</id>
+    <updated>2025-03-25T15:31:25Z</updated>
+    <published>2025-03-24T17:59:51Z</published>
+    <title>Aether: Geometric-Aware Unified World Modeling</title>
+    <summary>  The integration of geometric reconstruction and generative modeling remains a
+critical challenge in developing AI systems capable of human-like spatial
+reasoning. This paper proposes Aether, a unified framework that enables
+geometry-aware reasoning in world models by jointly optimizing three core
+capabilities: (1) 4D dynamic reconstruction, (2) action-conditioned video
+prediction, and (3) goal-conditioned visual planning. Through task-interleaved
+feature learning, Aether achieves synergistic knowledge sharing across
+reconstruction, prediction, and planning objectives. Building upon video
+generation models, our framework demonstrates unprecedented synthetic-to-real
+generalization despite never observing real-world data during training.
+Furthermore, our approach achieves zero-shot generalization in both action
+following and reconstruction tasks, thanks to its intrinsic geometric modeling.
+Remarkably, even without real-world data, its reconstruction performance is
+comparable with or even better than that of domain-specific models.
+Additionally, Aether employs camera trajectories as geometry-informed action
+spaces, enabling effective action-conditioned prediction and visual planning.
+We hope our work inspires the community to explore new frontiers in
+physically-reasonable world modeling and its applications.
+</summary>
+    <author>
+      <name> Aether Team</name>
     </author>
     <author>
-      <name>Pranam Chatterjee</name>
+      <name>Haoyi Zhu</name>
     </author>
-    <link href="http://arxiv.org/abs/2503.17361v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.17361v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Yifan Wang</name>
+    </author>
+    <author>
+      <name>Jianjun Zhou</name>
+    </author>
+    <author>
+      <name>Wenzheng Chang</name>
+    </author>
+    <author>
+      <name>Yang Zhou</name>
+    </author>
+    <author>
+      <name>Zizun Li</name>
+    </author>
+    <author>
+      <name>Junyi Chen</name>
+    </author>
+    <author>
+      <name>Chunhua Shen</name>
+    </author>
+    <author>
+      <name>Jiangmiao Pang</name>
+    </author>
+    <author>
+      <name>Tong He</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://aether-world.github.io/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.18945v2" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.18945v2" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="q-bio.BM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2503.17355v2</id>
-    <updated>2025-03-24T13:10:28Z</updated>
-    <published>2025-03-21T17:58:10Z</published>
-    <title>Glivenko-Cantelli for $f$-divergence</title>
-    <summary>  We extend the celebrated Glivenko-Cantelli theorem, sometimes called the
-fundamental theorem of statistics, from its standard setting of total variation
-distance to all $f$-divergences. A key obstacle in this endeavor is to define
-$f$-divergence on a subcollection of a $\sigma$-algebra that forms a
-$\pi$-system but not a $\sigma$-subalgebra. This is a side contribution of our
-work. We will show that this notion of $f$-divergence on the $\pi$-system of
-rays preserves nearly all known properties of standard $f$-divergence, yields a
-novel integral representation of the Kolmogorov-Smirnov distance, and has a
-Glivenko-Cantelli theorem. We will also discuss the prospects of a
-Vapnik-Chervonenkis theory for $f$-divergence.
+    <id>http://arxiv.org/abs/2503.18938v1</id>
+    <updated>2025-03-24T17:58:15Z</updated>
+    <published>2025-03-24T17:58:15Z</published>
+    <title>AdaWorld: Learning Adaptable World Models with Latent Actions</title>
+    <summary>  World models aim to learn action-controlled prediction models and have proven
+essential for the development of intelligent agents. However, most existing
+world models rely heavily on substantial action-labeled data and costly
+training, making it challenging to adapt to novel environments with
+heterogeneous actions through limited interactions. This limitation can hinder
+their applicability across broader domains. To overcome this challenge, we
+propose AdaWorld, an innovative world model learning approach that enables
+efficient adaptation. The key idea is to incorporate action information during
+the pretraining of world models. This is achieved by extracting latent actions
+from videos in a self-supervised manner, capturing the most critical
+transitions between frames. We then develop an autoregressive world model that
+conditions on these latent actions. This learning paradigm enables highly
+adaptable world models, facilitating efficient transfer and learning of new
+actions even with limited interactions and finetuning. Our comprehensive
+experiments across multiple environments demonstrate that AdaWorld achieves
+superior performance in both simulation quality and visual planning.
 </summary>
     <author>
-      <name>Haoming Wang</name>
+      <name>Shenyuan Gao</name>
     </author>
     <author>
-      <name>Lek-Heng Lim</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">26 pages, 1 figure</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.17355v2" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.17355v2" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="stat.TH" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="60B10, 60F15, 60F25" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.17354v1</id>
-    <updated>2025-03-21T17:54:01Z</updated>
-    <published>2025-03-21T17:54:01Z</published>
-    <title>HCAST: Human-Calibrated Autonomy Software Tasks</title>
-    <summary>  To understand and predict the societal impacts of highly autonomous AI
-systems, we need benchmarks with grounding, i.e., metrics that directly connect
-AI performance to real-world effects we care about. We present HCAST
-(Human-Calibrated Autonomy Software Tasks), a benchmark of 189 machine learning
-engineering, cybersecurity, software engineering, and general reasoning tasks.
-We collect 563 human baselines (totaling over 1500 hours) from people skilled
-in these domains, working under identical conditions as AI agents, which lets
-us estimate that HCAST tasks take humans between one minute and 8+ hours.
-Measuring the time tasks take for humans provides an intuitive metric for
-evaluating AI capabilities, helping answer the question "can an agent be
-trusted to complete a task that would take a human X hours?" We evaluate the
-success rates of AI agents built on frontier foundation models, and we find
-that current agents succeed 70-80% of the time on tasks that take humans less
-than one hour, and less than 20% of the time on tasks that take humans more
-than 4 hours.
-</summary>
-    <author>
-      <name>David Rein</name>
+      <name>Siyuan Zhou</name>
     </author>
     <author>
-      <name>Joel Becker</name>
+      <name>Yilun Du</name>
     </author>
     <author>
-      <name>Amy Deng</name>
+      <name>Jun Zhang</name>
     </author>
     <author>
-      <name>Seraphina Nix</name>
+      <name>Chuang Gan</name>
     </author>
-    <author>
-      <name>Chris Canal</name>
-    </author>
-    <author>
-      <name>Daniel O'Connel</name>
-    </author>
-    <author>
-      <name>Pip Arnott</name>
-    </author>
-    <author>
-      <name>Ryan Bloom</name>
-    </author>
-    <author>
-      <name>Thomas Broadley</name>
-    </author>
-    <author>
-      <name>Katharyn Garcia</name>
-    </author>
-    <author>
-      <name>Brian Goodrich</name>
-    </author>
-    <author>
-      <name>Max Hasin</name>
-    </author>
-    <author>
-      <name>Sami Jawhar</name>
-    </author>
-    <author>
-      <name>Megan Kinniment</name>
-    </author>
-    <author>
-      <name>Thomas Kwa</name>
-    </author>
-    <author>
-      <name>Aron Lajko</name>
-    </author>
-    <author>
-      <name>Nate Rush</name>
-    </author>
-    <author>
-      <name>Lucas Jun Koba Sato</name>
-    </author>
-    <author>
-      <name>Sydney Von Arx</name>
-    </author>
-    <author>
-      <name>Ben West</name>
-    </author>
-    <author>
-      <name>Lawrence Chan</name>
-    </author>
-    <author>
-      <name>Elizabeth Barnes</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">32 pages, 10 figures, 5 tables</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.17354v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.17354v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://adaptable-world-model.github.io/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.18938v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.18938v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="I.2.0" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2503.17353v1</id>
-    <updated>2025-03-21T17:52:44Z</updated>
-    <published>2025-03-21T17:52:44Z</published>
-    <title>NdLinear Is All You Need for Representation Learning</title>
-    <summary>  Many high-impact machine learning tasks involve multi-dimensional data (e.g.,
-images, volumetric medical scans, multivariate time-series). Yet, most neural
-architectures flatten inputs, discarding critical cross-dimension information.
-We introduce NdLinear, a novel linear transformation that preserves these
-structures without extra overhead. By operating separately along each
-dimension, NdLinear captures dependencies that standard fully connected layers
-overlook. Extensive experiments across convolutional, recurrent, and
-transformer-based networks show significant improvements in representational
-power and parameter efficiency. Crucially, NdLinear serves as a foundational
-building block for large-scale foundation models by operating on any unimodal
-or multimodal data in its native form. This removes the need for flattening or
-modality-specific preprocessing. Ndlinear rethinks core architectural
-priorities beyond attention, enabling more expressive, context-aware models at
-scale. We propose NdLinear as a drop-in replacement for standard linear layers
--- marking an important step toward next-generation neural architectures.
+    <id>http://arxiv.org/abs/2503.18929v1</id>
+    <updated>2025-03-24T17:51:39Z</updated>
+    <published>2025-03-24T17:51:39Z</published>
+    <title>Trajectory Balance with Asynchrony: Decoupling Exploration and Learning
+  for Fast, Scalable LLM Post-Training</title>
+    <summary>  Reinforcement learning (RL) is a critical component of large language model
+(LLM) post-training. However, existing on-policy algorithms used for
+post-training are inherently incompatible with the use of experience replay
+buffers, which can be populated scalably by distributed off-policy actors to
+enhance exploration as compute increases. We propose efficiently obtaining this
+benefit of replay buffers via Trajectory Balance with Asynchrony (TBA), a
+massively scalable LLM RL system. In contrast to existing approaches, TBA uses
+a larger fraction of compute on search, constantly generating off-policy data
+for a central replay buffer. A training node simultaneously samples data from
+this buffer based on reward or recency to update the policy using Trajectory
+Balance (TB), a diversity-seeking RL objective introduced for GFlowNets. TBA
+offers three key advantages: (1) decoupled training and search, speeding up
+training wall-clock time by 4x or more; (2) improved diversity through
+large-scale off-policy sampling; and (3) scalable search for sparse reward
+settings. On mathematical reasoning, preference-tuning, and automated
+red-teaming (diverse and representative post-training tasks), TBA produces
+speed and performance improvements over strong baselines.
 </summary>
     <author>
-      <name>Alex Reneau</name>
+      <name>Brian R. Bartoldson</name>
     </author>
     <author>
-      <name>Jerry Yao-Chieh Hu</name>
+      <name>Siddarth Venkatraman</name>
     </author>
     <author>
-      <name>Zhongfang Zhuang</name>
+      <name>James Diffenderfer</name>
     </author>
     <author>
-      <name>Ting-Chun Liu</name>
+      <name>Moksh Jain</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Code is available at https://github.com/ensemble-core/NdLinear</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.17353v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.17353v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Tal Ben-Nun</name>
+    </author>
+    <author>
+      <name>Seanie Lee</name>
+    </author>
+    <author>
+      <name>Minsu Kim</name>
+    </author>
+    <author>
+      <name>Johan Obando-Ceron</name>
+    </author>
+    <author>
+      <name>Yoshua Bengio</name>
+    </author>
+    <author>
+      <name>Bhavya Kailkhura</name>
+    </author>
+    <link href="http://arxiv.org/abs/2503.18929v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.18929v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
