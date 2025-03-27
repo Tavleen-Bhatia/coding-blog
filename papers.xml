@@ -3,261 +3,281 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-03-25T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">414338</opensearch:totalResults>
+  <updated>2025-03-26T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">414612</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2503.18948v1</id>
-    <updated>2025-03-24T17:59:57Z</updated>
-    <published>2025-03-24T17:59:57Z</published>
-    <title>Equivariant Image Modeling</title>
-    <summary>  Current generative models, such as autoregressive and diffusion approaches,
-decompose high-dimensional data distribution learning into a series of simpler
-subtasks. However, inherent conflicts arise during the joint optimization of
-these subtasks, and existing solutions fail to resolve such conflicts without
-sacrificing efficiency or scalability. We propose a novel equivariant image
-modeling framework that inherently aligns optimization targets across subtasks
-by leveraging the translation invariance of natural visual signals. Our method
-introduces (1) column-wise tokenization which enhances translational symmetry
-along the horizontal axis, and (2) windowed causal attention which enforces
-consistent contextual relationships across positions. Evaluated on
-class-conditioned ImageNet generation at 256x256 resolution, our approach
-achieves performance comparable to state-of-the-art AR models while using fewer
-computational resources. Systematic analysis demonstrates that enhanced
-equivariance reduces inter-task conflicts, significantly improving zero-shot
-generalization and enabling ultra-long image synthesis. This work establishes
-the first framework for task-aligned decomposition in generative modeling,
-offering insights into efficient parameter sharing and conflict-free
-optimization. The code and models are publicly available at
-https://github.com/drx-code/EquivariantModeling.
+    <id>http://arxiv.org/abs/2503.19915v1</id>
+    <updated>2025-03-25T17:59:59Z</updated>
+    <published>2025-03-25T17:59:59Z</published>
+    <title>A New Hope for Obscured AGN: The PRIMA-NewAthena Alliance</title>
+    <summary>  Understanding the AGN-galaxy co-evolution, feedback processes, and the
+evolution of Black Hole Accretion rate Density (BHAD) requires accurately
+estimating the contribution of obscured Active Galactic Nuclei (AGN). However,
+detecting these sources is challenging due to significant extinction at the
+wavelengths typically used to trace their emission. We evaluate the
+capabilities of the proposed far-infrared observatory PRIMA and its synergies
+with the X-ray observatory NewAthena in detecting AGN and in measuring the
+BHAD. Starting from X-ray background synthesis models, we simulate the
+performance of NewAthena and of PRIMA in Deep and Wide surveys. Our results
+show that the combination of these facilities is a powerful tool for selecting
+and characterising all types of AGN. While NewAthena is particularly effective
+at detecting the most luminous, the unobscured, and the moderately obscured
+AGN, PRIMA excels at identifying heavily obscured sources, including
+Compton-thick AGN (of which we expect 7500 detections per deg$^2$). We find
+that PRIMA will detect 60 times more sources than Herschel over the same area
+and will allow us to accurately measure the BHAD evolution up to z=8, better
+than any current IR or X-ray survey, finally revealing the true contribution of
+Compton-thick AGN to the BHAD evolution.
 </summary>
     <author>
-      <name>Ruixiao Dong</name>
+      <name>Luigi Barchiesi</name>
     </author>
     <author>
-      <name>Mengde Xu</name>
+      <name>F. J. Carrera</name>
     </author>
     <author>
-      <name>Zigang Geng</name>
+      <name>C. Vignali</name>
     </author>
     <author>
-      <name>Li Li</name>
+      <name>F. Pozzi</name>
     </author>
     <author>
-      <name>Han Hu</name>
+      <name>L. Marchetti</name>
     </author>
     <author>
-      <name>Shuyang Gu</name>
+      <name>C. Gruppioni</name>
     </author>
-    <link href="http://arxiv.org/abs/2503.18948v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.18948v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>I. Delvecchio</name>
+    </author>
+    <author>
+      <name>L. Bisigello</name>
+    </author>
+    <author>
+      <name>F. Calura</name>
+    </author>
+    <author>
+      <name>J. Aird</name>
+    </author>
+    <author>
+      <name>M. Vaccari</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted for publication in JATIS, 14 pages, 7 figures, 4 tables</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.19915v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.19915v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.IM" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2503.18947v1</id>
-    <updated>2025-03-24T17:59:56Z</updated>
-    <published>2025-03-24T17:59:56Z</published>
-    <title>Tuning-Free Amodal Segmentation via the Occlusion-Free Bias of
-  Inpainting Models</title>
-    <summary>  Amodal segmentation aims to predict segmentation masks for both the visible
-and occluded regions of an object. Most existing works formulate this as a
-supervised learning problem, requiring manually annotated amodal masks or
-synthetic training data. Consequently, their performance depends on the quality
-of the datasets, which often lack diversity and scale. This work introduces a
-tuning-free approach that repurposes pretrained diffusion-based inpainting
-models for amodal segmentation. Our approach is motivated by the
-"occlusion-free bias" of inpainting models, i.e., the inpainted objects tend to
-be complete objects without occlusions. Specifically, we reconstruct the
-occluded regions of an object via inpainting and then apply segmentation, all
-without additional training or fine-tuning. Experiments on five datasets
-demonstrate the generalizability and robustness of our approach. On average,
-our approach achieves 5.3% more accurate masks over the state-of-the-art.
+    <id>http://arxiv.org/abs/2503.19916v1</id>
+    <updated>2025-03-25T17:59:59Z</updated>
+    <published>2025-03-25T17:59:59Z</published>
+    <title>EventFly: Event Camera Perception from Ground to the Sky</title>
+    <summary>  Cross-platform adaptation in event-based dense perception is crucial for
+deploying event cameras across diverse settings, such as vehicles, drones, and
+quadrupeds, each with unique motion dynamics, viewpoints, and class
+distributions. In this work, we introduce EventFly, a framework for robust
+cross-platform adaptation in event camera perception. Our approach comprises
+three key components: i) Event Activation Prior (EAP), which identifies
+high-activation regions in the target domain to minimize prediction entropy,
+fostering confident, domain-adaptive predictions; ii) EventBlend, a data-mixing
+strategy that integrates source and target event voxel grids based on
+EAP-driven similarity and density maps, enhancing feature alignment; and iii)
+EventMatch, a dual-discriminator technique that aligns features from source,
+target, and blended domains for better domain-invariant learning. To
+holistically assess cross-platform adaptation abilities, we introduce EXPo, a
+large-scale benchmark with diverse samples across vehicle, drone, and quadruped
+platforms. Extensive experiments validate our effectiveness, demonstrating
+substantial gains over popular adaptation methods. We hope this work can pave
+the way for more adaptive, high-performing event perception across diverse and
+complex environments.
 </summary>
     <author>
-      <name>Jae Joong Lee</name>
+      <name>Lingdong Kong</name>
     </author>
     <author>
-      <name>Bedrich Benes</name>
+      <name>Dongyue Lu</name>
     </author>
     <author>
-      <name>Raymond A. Yeh</name>
+      <name>Xiang Xu</name>
     </author>
-    <link href="http://arxiv.org/abs/2503.18947v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.18947v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Lai Xing Ng</name>
+    </author>
+    <author>
+      <name>Wei Tsang Ooi</name>
+    </author>
+    <author>
+      <name>Benoit R. Cottereau</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">CVPR 2025; 30 pages, 8 figures, 16 tables; Project Page at
+  https://event-fly.github.io/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.19916v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.19916v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.18945v2</id>
-    <updated>2025-03-25T15:31:25Z</updated>
-    <published>2025-03-24T17:59:51Z</published>
-    <title>Aether: Geometric-Aware Unified World Modeling</title>
-    <summary>  The integration of geometric reconstruction and generative modeling remains a
-critical challenge in developing AI systems capable of human-like spatial
-reasoning. This paper proposes Aether, a unified framework that enables
-geometry-aware reasoning in world models by jointly optimizing three core
-capabilities: (1) 4D dynamic reconstruction, (2) action-conditioned video
-prediction, and (3) goal-conditioned visual planning. Through task-interleaved
-feature learning, Aether achieves synergistic knowledge sharing across
-reconstruction, prediction, and planning objectives. Building upon video
-generation models, our framework demonstrates unprecedented synthetic-to-real
-generalization despite never observing real-world data during training.
-Furthermore, our approach achieves zero-shot generalization in both action
-following and reconstruction tasks, thanks to its intrinsic geometric modeling.
-Remarkably, even without real-world data, its reconstruction performance is
-comparable with or even better than that of domain-specific models.
-Additionally, Aether employs camera trajectories as geometry-informed action
-spaces, enabling effective action-conditioned prediction and visual planning.
-We hope our work inspires the community to explore new frontiers in
-physically-reasonable world modeling and its applications.
-</summary>
-    <author>
-      <name> Aether Team</name>
-    </author>
-    <author>
-      <name>Haoyi Zhu</name>
-    </author>
-    <author>
-      <name>Yifan Wang</name>
-    </author>
-    <author>
-      <name>Jianjun Zhou</name>
-    </author>
-    <author>
-      <name>Wenzheng Chang</name>
-    </author>
-    <author>
-      <name>Yang Zhou</name>
-    </author>
-    <author>
-      <name>Zizun Li</name>
-    </author>
-    <author>
-      <name>Junyi Chen</name>
-    </author>
-    <author>
-      <name>Chunhua Shen</name>
-    </author>
-    <author>
-      <name>Jiangmiao Pang</name>
-    </author>
-    <author>
-      <name>Tong He</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://aether-world.github.io/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.18945v2" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.18945v2" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2503.18938v1</id>
-    <updated>2025-03-24T17:58:15Z</updated>
-    <published>2025-03-24T17:58:15Z</published>
-    <title>AdaWorld: Learning Adaptable World Models with Latent Actions</title>
-    <summary>  World models aim to learn action-controlled prediction models and have proven
-essential for the development of intelligent agents. However, most existing
-world models rely heavily on substantial action-labeled data and costly
-training, making it challenging to adapt to novel environments with
-heterogeneous actions through limited interactions. This limitation can hinder
-their applicability across broader domains. To overcome this challenge, we
-propose AdaWorld, an innovative world model learning approach that enables
-efficient adaptation. The key idea is to incorporate action information during
-the pretraining of world models. This is achieved by extracting latent actions
-from videos in a self-supervised manner, capturing the most critical
-transitions between frames. We then develop an autoregressive world model that
-conditions on these latent actions. This learning paradigm enables highly
-adaptable world models, facilitating efficient transfer and learning of new
-actions even with limited interactions and finetuning. Our comprehensive
-experiments across multiple environments demonstrate that AdaWorld achieves
-superior performance in both simulation quality and visual planning.
+    <id>http://arxiv.org/abs/2503.19913v1</id>
+    <updated>2025-03-25T17:59:58Z</updated>
+    <published>2025-03-25T17:59:58Z</published>
+    <title>PartRM: Modeling Part-Level Dynamics with Large Cross-State
+  Reconstruction Model</title>
+    <summary>  As interest grows in world models that predict future states from current
+observations and actions, accurately modeling part-level dynamics has become
+increasingly relevant for various applications. Existing approaches, such as
+Puppet-Master, rely on fine-tuning large-scale pre-trained video diffusion
+models, which are impractical for real-world use due to the limitations of 2D
+video representation and slow processing times. To overcome these challenges,
+we present PartRM, a novel 4D reconstruction framework that simultaneously
+models appearance, geometry, and part-level motion from multi-view images of a
+static object. PartRM builds upon large 3D Gaussian reconstruction models,
+leveraging their extensive knowledge of appearance and geometry in static
+objects. To address data scarcity in 4D, we introduce the PartDrag-4D dataset,
+providing multi-view observations of part-level dynamics across over 20,000
+states. We enhance the model's understanding of interaction conditions with a
+multi-scale drag embedding module that captures dynamics at varying
+granularities. To prevent catastrophic forgetting during fine-tuning, we
+implement a two-stage training process that focuses sequentially on motion and
+appearance learning. Experimental results show that PartRM establishes a new
+state-of-the-art in part-level motion learning and can be applied in
+manipulation tasks in robotics. Our code, data, and models are publicly
+available to facilitate future research.
 </summary>
     <author>
-      <name>Shenyuan Gao</name>
+      <name>Mingju Gao</name>
     </author>
     <author>
-      <name>Siyuan Zhou</name>
+      <name>Yike Pan</name>
     </author>
     <author>
-      <name>Yilun Du</name>
+      <name>Huan-ang Gao</name>
     </author>
     <author>
-      <name>Jun Zhang</name>
+      <name>Zongzheng Zhang</name>
     </author>
     <author>
-      <name>Chuang Gan</name>
+      <name>Wenyi Li</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://adaptable-world-model.github.io/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.18938v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.18938v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Hao Dong</name>
+    </author>
+    <author>
+      <name>Hao Tang</name>
+    </author>
+    <author>
+      <name>Li Yi</name>
+    </author>
+    <author>
+      <name>Hao Zhao</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted to CVPR 2025. Project Page: https://partrm.c7w.tech/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.19913v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.19913v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.19914v1</id>
+    <updated>2025-03-25T17:59:58Z</updated>
+    <published>2025-03-25T17:59:58Z</published>
+    <title>Learning 3D Object Spatial Relationships from Pre-trained 2D Diffusion
+  Models</title>
+    <summary>  We present a method for learning 3D spatial relationships between object
+pairs, referred to as object-object spatial relationships (OOR), by leveraging
+synthetically generated 3D samples from pre-trained 2D diffusion models. We
+hypothesize that images synthesized by 2D diffusion models inherently capture
+plausible and realistic OOR cues, enabling efficient ways to collect a 3D
+dataset to learn OOR for various unbounded object categories. Our approach
+begins by synthesizing diverse images that capture plausible OOR cues, which we
+then uplift into 3D samples. Leveraging our diverse collection of plausible 3D
+samples for the object pairs, we train a score-based OOR diffusion model to
+learn the distribution of their relative spatial relationships. Additionally,
+we extend our pairwise OOR to multi-object OOR by enforcing consistency across
+pairwise relations and preventing object collisions. Extensive experiments
+demonstrate the robustness of our method across various object-object spatial
+relationships, along with its applicability to real-world 3D scene arrangement
+tasks using the OOR diffusion model.
+</summary>
+    <author>
+      <name>Sangwon Beak</name>
+    </author>
+    <author>
+      <name>Hyeonwoo Kim</name>
+    </author>
+    <author>
+      <name>Hanbyul Joo</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://tlb-miss.github.io/oor/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.19914v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.19914v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.19912v1</id>
+    <updated>2025-03-25T17:59:57Z</updated>
+    <published>2025-03-25T17:59:57Z</published>
+    <title>SuperFlow++: Enhanced Spatiotemporal Consistency for Cross-Modal Data
+  Pretraining</title>
+    <summary>  LiDAR representation learning has emerged as a promising approach to reducing
+reliance on costly and labor-intensive human annotations. While existing
+methods primarily focus on spatial alignment between LiDAR and camera sensors,
+they often overlook the temporal dynamics critical for capturing motion and
+scene continuity in driving scenarios. To address this limitation, we propose
+SuperFlow++, a novel framework that integrates spatiotemporal cues in both
+pretraining and downstream tasks using consecutive LiDAR-camera pairs.
+SuperFlow++ introduces four key components: (1) a view consistency alignment
+module to unify semantic information across camera views, (2) a dense-to-sparse
+consistency regularization mechanism to enhance feature robustness across
+varying point cloud densities, (3) a flow-based contrastive learning approach
+that models temporal relationships for improved scene understanding, and (4) a
+temporal voting strategy that propagates semantic information across LiDAR
+scans to improve prediction consistency. Extensive evaluations on 11
+heterogeneous LiDAR datasets demonstrate that SuperFlow++ outperforms
+state-of-the-art methods across diverse tasks and driving conditions.
+Furthermore, by scaling both 2D and 3D backbones during pretraining, we uncover
+emergent properties that provide deeper insights into developing scalable 3D
+foundation models. With strong generalizability and computational efficiency,
+SuperFlow++ establishes a new benchmark for data-efficient LiDAR-based
+perception in autonomous driving. The code is publicly available at
+https://github.com/Xiangxu-0103/SuperFlow
+</summary>
+    <author>
+      <name>Xiang Xu</name>
+    </author>
+    <author>
+      <name>Lingdong Kong</name>
+    </author>
+    <author>
+      <name>Hui Shuai</name>
+    </author>
+    <author>
+      <name>Wenwei Zhang</name>
+    </author>
+    <author>
+      <name>Liang Pan</name>
+    </author>
+    <author>
+      <name>Kai Chen</name>
+    </author>
+    <author>
+      <name>Ziwei Liu</name>
+    </author>
+    <author>
+      <name>Qingshan Liu</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Preprint; 15 pages, 6 figures, 10 tables; Code at
+  https://github.com/Xiangxu-0103/SuperFlow</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.19912v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.19912v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.18929v1</id>
-    <updated>2025-03-24T17:51:39Z</updated>
-    <published>2025-03-24T17:51:39Z</published>
-    <title>Trajectory Balance with Asynchrony: Decoupling Exploration and Learning
-  for Fast, Scalable LLM Post-Training</title>
-    <summary>  Reinforcement learning (RL) is a critical component of large language model
-(LLM) post-training. However, existing on-policy algorithms used for
-post-training are inherently incompatible with the use of experience replay
-buffers, which can be populated scalably by distributed off-policy actors to
-enhance exploration as compute increases. We propose efficiently obtaining this
-benefit of replay buffers via Trajectory Balance with Asynchrony (TBA), a
-massively scalable LLM RL system. In contrast to existing approaches, TBA uses
-a larger fraction of compute on search, constantly generating off-policy data
-for a central replay buffer. A training node simultaneously samples data from
-this buffer based on reward or recency to update the policy using Trajectory
-Balance (TB), a diversity-seeking RL objective introduced for GFlowNets. TBA
-offers three key advantages: (1) decoupled training and search, speeding up
-training wall-clock time by 4x or more; (2) improved diversity through
-large-scale off-policy sampling; and (3) scalable search for sparse reward
-settings. On mathematical reasoning, preference-tuning, and automated
-red-teaming (diverse and representative post-training tasks), TBA produces
-speed and performance improvements over strong baselines.
-</summary>
-    <author>
-      <name>Brian R. Bartoldson</name>
-    </author>
-    <author>
-      <name>Siddarth Venkatraman</name>
-    </author>
-    <author>
-      <name>James Diffenderfer</name>
-    </author>
-    <author>
-      <name>Moksh Jain</name>
-    </author>
-    <author>
-      <name>Tal Ben-Nun</name>
-    </author>
-    <author>
-      <name>Seanie Lee</name>
-    </author>
-    <author>
-      <name>Minsu Kim</name>
-    </author>
-    <author>
-      <name>Johan Obando-Ceron</name>
-    </author>
-    <author>
-      <name>Yoshua Bengio</name>
-    </author>
-    <author>
-      <name>Bhavya Kailkhura</name>
-    </author>
-    <link href="http://arxiv.org/abs/2503.18929v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.18929v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
