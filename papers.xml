@@ -3,281 +3,268 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-03-26T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">414612</opensearch:totalResults>
+  <updated>2025-03-27T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">414841</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2503.19915v1</id>
-    <updated>2025-03-25T17:59:59Z</updated>
-    <published>2025-03-25T17:59:59Z</published>
-    <title>A New Hope for Obscured AGN: The PRIMA-NewAthena Alliance</title>
-    <summary>  Understanding the AGN-galaxy co-evolution, feedback processes, and the
-evolution of Black Hole Accretion rate Density (BHAD) requires accurately
-estimating the contribution of obscured Active Galactic Nuclei (AGN). However,
-detecting these sources is challenging due to significant extinction at the
-wavelengths typically used to trace their emission. We evaluate the
-capabilities of the proposed far-infrared observatory PRIMA and its synergies
-with the X-ray observatory NewAthena in detecting AGN and in measuring the
-BHAD. Starting from X-ray background synthesis models, we simulate the
-performance of NewAthena and of PRIMA in Deep and Wide surveys. Our results
-show that the combination of these facilities is a powerful tool for selecting
-and characterising all types of AGN. While NewAthena is particularly effective
-at detecting the most luminous, the unobscured, and the moderately obscured
-AGN, PRIMA excels at identifying heavily obscured sources, including
-Compton-thick AGN (of which we expect 7500 detections per deg$^2$). We find
-that PRIMA will detect 60 times more sources than Herschel over the same area
-and will allow us to accurately measure the BHAD evolution up to z=8, better
-than any current IR or X-ray survey, finally revealing the true contribution of
-Compton-thick AGN to the BHAD evolution.
+    <id>http://arxiv.org/abs/2503.20783v1</id>
+    <updated>2025-03-26T17:59:14Z</updated>
+    <published>2025-03-26T17:59:14Z</published>
+    <title>Understanding R1-Zero-Like Training: A Critical Perspective</title>
+    <summary>  DeepSeek-R1-Zero has shown that reinforcement learning (RL) at scale can
+directly enhance the reasoning capabilities of LLMs without supervised
+fine-tuning. In this work, we critically examine R1-Zero-like training by
+analyzing its two core components: base models and RL. We investigate a wide
+range of base models, including DeepSeek-V3-Base, to understand how pretraining
+characteristics influence RL performance. Our analysis reveals that
+DeepSeek-V3-Base already exhibit ''Aha moment'', while Qwen2.5 base models
+demonstrate strong reasoning capabilities even without prompt templates,
+suggesting potential pretraining biases. Additionally, we identify an
+optimization bias in Group Relative Policy Optimization (GRPO), which
+artificially increases response length (especially for incorrect outputs)
+during training. To address this, we introduce Dr. GRPO, an unbiased
+optimization method that improves token efficiency while maintaining reasoning
+performance. Leveraging these insights, we present a minimalist R1-Zero recipe
+that achieves 43.3% accuracy on AIME 2024 with a 7B base model, establishing a
+new state-of-the-art. Our code is available at
+https://github.com/sail-sg/understand-r1-zero.
 </summary>
     <author>
-      <name>Luigi Barchiesi</name>
+      <name>Zichen Liu</name>
     </author>
     <author>
-      <name>F. J. Carrera</name>
+      <name>Changyu Chen</name>
     </author>
     <author>
-      <name>C. Vignali</name>
+      <name>Wenjun Li</name>
     </author>
     <author>
-      <name>F. Pozzi</name>
+      <name>Penghui Qi</name>
     </author>
     <author>
-      <name>L. Marchetti</name>
+      <name>Tianyu Pang</name>
     </author>
     <author>
-      <name>C. Gruppioni</name>
+      <name>Chao Du</name>
     </author>
     <author>
-      <name>I. Delvecchio</name>
+      <name>Wee Sun Lee</name>
     </author>
     <author>
-      <name>L. Bisigello</name>
+      <name>Min Lin</name>
     </author>
-    <author>
-      <name>F. Calura</name>
-    </author>
-    <author>
-      <name>J. Aird</name>
-    </author>
-    <author>
-      <name>M. Vaccari</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted for publication in JATIS, 14 pages, 7 figures, 4 tables</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.19915v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.19915v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="astro-ph.IM" scheme="http://arxiv.org/schemas/atom"/>
+    <link href="http://arxiv.org/abs/2503.20783v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.20783v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2503.19916v1</id>
-    <updated>2025-03-25T17:59:59Z</updated>
-    <published>2025-03-25T17:59:59Z</published>
-    <title>EventFly: Event Camera Perception from Ground to the Sky</title>
-    <summary>  Cross-platform adaptation in event-based dense perception is crucial for
-deploying event cameras across diverse settings, such as vehicles, drones, and
-quadrupeds, each with unique motion dynamics, viewpoints, and class
-distributions. In this work, we introduce EventFly, a framework for robust
-cross-platform adaptation in event camera perception. Our approach comprises
-three key components: i) Event Activation Prior (EAP), which identifies
-high-activation regions in the target domain to minimize prediction entropy,
-fostering confident, domain-adaptive predictions; ii) EventBlend, a data-mixing
-strategy that integrates source and target event voxel grids based on
-EAP-driven similarity and density maps, enhancing feature alignment; and iii)
-EventMatch, a dual-discriminator technique that aligns features from source,
-target, and blended domains for better domain-invariant learning. To
-holistically assess cross-platform adaptation abilities, we introduce EXPo, a
-large-scale benchmark with diverse samples across vehicle, drone, and quadruped
-platforms. Extensive experiments validate our effectiveness, demonstrating
-substantial gains over popular adaptation methods. We hope this work can pave
-the way for more adaptive, high-performing event perception across diverse and
-complex environments.
+    <id>http://arxiv.org/abs/2503.20782v1</id>
+    <updated>2025-03-26T17:59:04Z</updated>
+    <published>2025-03-26T17:59:04Z</published>
+    <title>Zero-Shot Audio-Visual Editing via Cross-Modal Delta Denoising</title>
+    <summary>  In this paper, we introduce zero-shot audio-video editing, a novel task that
+requires transforming original audio-visual content to align with a specified
+textual prompt without additional model training. To evaluate this task, we
+curate a benchmark dataset, AvED-Bench, designed explicitly for zero-shot
+audio-video editing. AvED-Bench includes 110 videos, each with a 10-second
+duration, spanning 11 categories from VGGSound. It offers diverse prompts and
+scenarios that require precise alignment between auditory and visual elements,
+enabling robust evaluation. We identify limitations in existing zero-shot audio
+and video editing methods, particularly in synchronization and coherence
+between modalities, which often result in inconsistent outcomes. To address
+these challenges, we propose AvED, a zero-shot cross-modal delta denoising
+framework that leverages audio-video interactions to achieve synchronized and
+coherent edits. AvED demonstrates superior results on both AvED-Bench and the
+recent OAVE dataset to validate its generalization capabilities. Results are
+available at https://genjib.github.io/project_page/AVED/index.html
 </summary>
     <author>
-      <name>Lingdong Kong</name>
+      <name>Yan-Bo Lin</name>
     </author>
     <author>
-      <name>Dongyue Lu</name>
+      <name>Kevin Lin</name>
     </author>
     <author>
-      <name>Xiang Xu</name>
+      <name>Zhengyuan Yang</name>
     </author>
     <author>
-      <name>Lai Xing Ng</name>
+      <name>Linjie Li</name>
     </author>
     <author>
-      <name>Wei Tsang Ooi</name>
+      <name>Jianfeng Wang</name>
     </author>
     <author>
-      <name>Benoit R. Cottereau</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">CVPR 2025; 30 pages, 8 figures, 16 tables; Project Page at
-  https://event-fly.github.io/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.19916v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.19916v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.19913v1</id>
-    <updated>2025-03-25T17:59:58Z</updated>
-    <published>2025-03-25T17:59:58Z</published>
-    <title>PartRM: Modeling Part-Level Dynamics with Large Cross-State
-  Reconstruction Model</title>
-    <summary>  As interest grows in world models that predict future states from current
-observations and actions, accurately modeling part-level dynamics has become
-increasingly relevant for various applications. Existing approaches, such as
-Puppet-Master, rely on fine-tuning large-scale pre-trained video diffusion
-models, which are impractical for real-world use due to the limitations of 2D
-video representation and slow processing times. To overcome these challenges,
-we present PartRM, a novel 4D reconstruction framework that simultaneously
-models appearance, geometry, and part-level motion from multi-view images of a
-static object. PartRM builds upon large 3D Gaussian reconstruction models,
-leveraging their extensive knowledge of appearance and geometry in static
-objects. To address data scarcity in 4D, we introduce the PartDrag-4D dataset,
-providing multi-view observations of part-level dynamics across over 20,000
-states. We enhance the model's understanding of interaction conditions with a
-multi-scale drag embedding module that captures dynamics at varying
-granularities. To prevent catastrophic forgetting during fine-tuning, we
-implement a two-stage training process that focuses sequentially on motion and
-appearance learning. Experimental results show that PartRM establishes a new
-state-of-the-art in part-level motion learning and can be applied in
-manipulation tasks in robotics. Our code, data, and models are publicly
-available to facilitate future research.
-</summary>
-    <author>
-      <name>Mingju Gao</name>
+      <name>Chung-Ching Lin</name>
     </author>
     <author>
-      <name>Yike Pan</name>
+      <name>Xiaofei Wang</name>
     </author>
     <author>
-      <name>Huan-ang Gao</name>
+      <name>Gedas Bertasius</name>
     </author>
     <author>
-      <name>Zongzheng Zhang</name>
+      <name>Lijuan Wang</name>
     </author>
-    <author>
-      <name>Wenyi Li</name>
-    </author>
-    <author>
-      <name>Hao Dong</name>
-    </author>
-    <author>
-      <name>Hao Tang</name>
-    </author>
-    <author>
-      <name>Li Yi</name>
-    </author>
-    <author>
-      <name>Hao Zhao</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted to CVPR 2025. Project Page: https://partrm.c7w.tech/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.19913v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.19913v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.19914v1</id>
-    <updated>2025-03-25T17:59:58Z</updated>
-    <published>2025-03-25T17:59:58Z</published>
-    <title>Learning 3D Object Spatial Relationships from Pre-trained 2D Diffusion
-  Models</title>
-    <summary>  We present a method for learning 3D spatial relationships between object
-pairs, referred to as object-object spatial relationships (OOR), by leveraging
-synthetically generated 3D samples from pre-trained 2D diffusion models. We
-hypothesize that images synthesized by 2D diffusion models inherently capture
-plausible and realistic OOR cues, enabling efficient ways to collect a 3D
-dataset to learn OOR for various unbounded object categories. Our approach
-begins by synthesizing diverse images that capture plausible OOR cues, which we
-then uplift into 3D samples. Leveraging our diverse collection of plausible 3D
-samples for the object pairs, we train a score-based OOR diffusion model to
-learn the distribution of their relative spatial relationships. Additionally,
-we extend our pairwise OOR to multi-object OOR by enforcing consistency across
-pairwise relations and preventing object collisions. Extensive experiments
-demonstrate the robustness of our method across various object-object spatial
-relationships, along with its applicability to real-world 3D scene arrangement
-tasks using the OOR diffusion model.
-</summary>
-    <author>
-      <name>Sangwon Beak</name>
-    </author>
-    <author>
-      <name>Hyeonwoo Kim</name>
-    </author>
-    <author>
-      <name>Hanbyul Joo</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://tlb-miss.github.io/oor/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.19914v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.19914v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.19912v1</id>
-    <updated>2025-03-25T17:59:57Z</updated>
-    <published>2025-03-25T17:59:57Z</published>
-    <title>SuperFlow++: Enhanced Spatiotemporal Consistency for Cross-Modal Data
-  Pretraining</title>
-    <summary>  LiDAR representation learning has emerged as a promising approach to reducing
-reliance on costly and labor-intensive human annotations. While existing
-methods primarily focus on spatial alignment between LiDAR and camera sensors,
-they often overlook the temporal dynamics critical for capturing motion and
-scene continuity in driving scenarios. To address this limitation, we propose
-SuperFlow++, a novel framework that integrates spatiotemporal cues in both
-pretraining and downstream tasks using consecutive LiDAR-camera pairs.
-SuperFlow++ introduces four key components: (1) a view consistency alignment
-module to unify semantic information across camera views, (2) a dense-to-sparse
-consistency regularization mechanism to enhance feature robustness across
-varying point cloud densities, (3) a flow-based contrastive learning approach
-that models temporal relationships for improved scene understanding, and (4) a
-temporal voting strategy that propagates semantic information across LiDAR
-scans to improve prediction consistency. Extensive evaluations on 11
-heterogeneous LiDAR datasets demonstrate that SuperFlow++ outperforms
-state-of-the-art methods across diverse tasks and driving conditions.
-Furthermore, by scaling both 2D and 3D backbones during pretraining, we uncover
-emergent properties that provide deeper insights into developing scalable 3D
-foundation models. With strong generalizability and computational efficiency,
-SuperFlow++ establishes a new benchmark for data-efficient LiDAR-based
-perception in autonomous driving. The code is publicly available at
-https://github.com/Xiangxu-0103/SuperFlow
-</summary>
-    <author>
-      <name>Xiang Xu</name>
-    </author>
-    <author>
-      <name>Lingdong Kong</name>
-    </author>
-    <author>
-      <name>Hui Shuai</name>
-    </author>
-    <author>
-      <name>Wenwei Zhang</name>
-    </author>
-    <author>
-      <name>Liang Pan</name>
-    </author>
-    <author>
-      <name>Kai Chen</name>
-    </author>
-    <author>
-      <name>Ziwei Liu</name>
-    </author>
-    <author>
-      <name>Qingshan Liu</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Preprint; 15 pages, 6 figures, 10 tables; Code at
-  https://github.com/Xiangxu-0103/SuperFlow</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.19912v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.19912v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://genjib.github.io/project_page/AVED/index.html</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.20782v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.20782v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.20771v1</id>
+    <updated>2025-03-26T17:53:53Z</updated>
+    <published>2025-03-26T17:53:53Z</published>
+    <title>Disentangled Source-Free Personalization for Facial Expression
+  Recognition with Neutral Target Data</title>
+    <summary>  Facial Expression Recognition (FER) from videos is a crucial task in various
+application areas, such as human-computer interaction and health monitoring
+(e.g., pain, depression, fatigue, and stress). Beyond the challenges of
+recognizing subtle emotional or health states, the effectiveness of deep FER
+models is often hindered by the considerable variability of expressions among
+subjects. Source-free domain adaptation (SFDA) methods are employed to adapt a
+pre-trained source model using only unlabeled target domain data, thereby
+avoiding data privacy and storage issues. Typically, SFDA methods adapt to a
+target domain dataset corresponding to an entire population and assume it
+includes data from all recognition classes. However, collecting such
+comprehensive target data can be difficult or even impossible for FER in
+healthcare applications. In many real-world scenarios, it may be feasible to
+collect a short neutral control video (displaying only neutral expressions) for
+target subjects before deployment. These videos can be used to adapt a model to
+better handle the variability of expressions among subjects. This paper
+introduces the Disentangled Source-Free Domain Adaptation (DSFDA) method to
+address the SFDA challenge posed by missing target expression data. DSFDA
+leverages data from a neutral target control video for end-to-end generation
+and adaptation of target data with missing non-neutral data. Our method learns
+to disentangle features related to expressions and identity while generating
+the missing non-neutral target data, thereby enhancing model accuracy.
+Additionally, our self-supervision strategy improves model adaptation by
+reconstructing target images that maintain the same identity and source
+expression.
+</summary>
+    <author>
+      <name>Masoumeh Sharafi</name>
+    </author>
+    <author>
+      <name>Emma Ollivier</name>
+    </author>
+    <author>
+      <name>Muhammad Osama Zeeshan</name>
+    </author>
+    <author>
+      <name>Soufiane Belharbi</name>
+    </author>
+    <author>
+      <name>Marco Pedersoli</name>
+    </author>
+    <author>
+      <name>Alessandro Lameiras Koerich</name>
+    </author>
+    <author>
+      <name>Simon Bacon</name>
+    </author>
+    <author>
+      <name> Eric~Granger</name>
+    </author>
+    <link href="http://arxiv.org/abs/2503.20771v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.20771v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.20768v2</id>
+    <updated>2025-03-27T02:16:06Z</updated>
+    <published>2025-03-26T17:52:30Z</published>
+    <title>An Empirical Study of the Impact of Federated Learning on Machine
+  Learning Model Accuracy</title>
+    <summary>  Federated Learning (FL) enables distributed ML model training on private user
+data at the global scale. Despite the potential of FL demonstrated in many
+domains, an in-depth view of its impact on model accuracy remains unclear. In
+this paper, we investigate, systematically, how this learning paradigm can
+affect the accuracy of state-of-the-art ML models for a variety of ML tasks. We
+present an empirical study that involves various data types: text, image,
+audio, and video, and FL configuration knobs: data distribution, FL scale,
+client sampling, and local and global computations. Our experiments are
+conducted in a unified FL framework to achieve high fidelity, with substantial
+human efforts and resource investments. Based on the results, we perform a
+quantitative analysis of the impact of FL, and highlight challenging scenarios
+where applying FL degrades the accuracy of the model drastically and identify
+cases where the impact is negligible. The detailed and extensive findings can
+benefit practical deployments and future development of FL.
+</summary>
+    <author>
+      <name>Haotian Yang</name>
+    </author>
+    <author>
+      <name>Zhuoran Wang</name>
+    </author>
+    <author>
+      <name>Benson Chou</name>
+    </author>
+    <author>
+      <name>Sophie Xu</name>
+    </author>
+    <author>
+      <name>Hao Wang</name>
+    </author>
+    <author>
+      <name>Jingxian Wang</name>
+    </author>
+    <author>
+      <name>Qizhen Zhang</name>
+    </author>
+    <link href="http://arxiv.org/abs/2503.20768v2" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.20768v2" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="C.2.4; I.2.6" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.20767v1</id>
+    <updated>2025-03-26T17:52:19Z</updated>
+    <published>2025-03-26T17:52:19Z</published>
+    <title>Reliable algorithm selection for machine learning-guided design</title>
+    <summary>  Algorithms for machine learning-guided design, or design algorithms, use
+machine learning-based predictions to propose novel objects with desired
+property values. Given a new design task -- for example, to design novel
+proteins with high binding affinity to a therapeutic target -- one must choose
+a design algorithm and specify any hyperparameters and predictive and/or
+generative models involved. How can these decisions be made such that the
+resulting designs are successful? This paper proposes a method for design
+algorithm selection, which aims to select design algorithms that will produce a
+distribution of design labels satisfying a user-specified success criterion --
+for example, that at least ten percent of designs' labels exceed a threshold.
+It does so by combining designs' predicted property values with held-out
+labeled data to reliably forecast characteristics of the label distributions
+produced by different design algorithms, building upon techniques from
+prediction-powered inference. The method is guaranteed with high probability to
+return design algorithms that yield successful label distributions (or the null
+set if none exist), if the density ratios between the design and labeled data
+distributions are known. We demonstrate the method's effectiveness in simulated
+protein and RNA design tasks, in settings with either known or estimated
+density ratios.
+</summary>
+    <author>
+      <name>Clara Fannjiang</name>
+    </author>
+    <author>
+      <name>Ji Won Park</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">25 pages, 7 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.20767v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.20767v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
