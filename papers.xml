@@ -3,268 +3,247 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-03-27T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">414841</opensearch:totalResults>
+  <updated>2025-03-28T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">415102</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2503.20783v1</id>
-    <updated>2025-03-26T17:59:14Z</updated>
-    <published>2025-03-26T17:59:14Z</published>
-    <title>Understanding R1-Zero-Like Training: A Critical Perspective</title>
-    <summary>  DeepSeek-R1-Zero has shown that reinforcement learning (RL) at scale can
-directly enhance the reasoning capabilities of LLMs without supervised
-fine-tuning. In this work, we critically examine R1-Zero-like training by
-analyzing its two core components: base models and RL. We investigate a wide
-range of base models, including DeepSeek-V3-Base, to understand how pretraining
-characteristics influence RL performance. Our analysis reveals that
-DeepSeek-V3-Base already exhibit ''Aha moment'', while Qwen2.5 base models
-demonstrate strong reasoning capabilities even without prompt templates,
-suggesting potential pretraining biases. Additionally, we identify an
-optimization bias in Group Relative Policy Optimization (GRPO), which
-artificially increases response length (especially for incorrect outputs)
-during training. To address this, we introduce Dr. GRPO, an unbiased
-optimization method that improves token efficiency while maintaining reasoning
-performance. Leveraging these insights, we present a minimalist R1-Zero recipe
-that achieves 43.3% accuracy on AIME 2024 with a 7B base model, establishing a
-new state-of-the-art. Our code is available at
-https://github.com/sail-sg/understand-r1-zero.
+    <id>http://arxiv.org/abs/2503.21781v1</id>
+    <updated>2025-03-27T17:59:58Z</updated>
+    <published>2025-03-27T17:59:58Z</published>
+    <title>VideoMage: Multi-Subject and Motion Customization of Text-to-Video
+  Diffusion Models</title>
+    <summary>  Customized text-to-video generation aims to produce high-quality videos that
+incorporate user-specified subject identities or motion patterns. However,
+existing methods mainly focus on personalizing a single concept, either subject
+identity or motion pattern, limiting their effectiveness for multiple subjects
+with the desired motion patterns. To tackle this challenge, we propose a
+unified framework VideoMage for video customization over both multiple subjects
+and their interactive motions. VideoMage employs subject and motion LoRAs to
+capture personalized content from user-provided images and videos, along with
+an appearance-agnostic motion learning approach to disentangle motion patterns
+from visual appearance. Furthermore, we develop a spatial-temporal composition
+scheme to guide interactions among subjects within the desired motion patterns.
+Extensive experiments demonstrate that VideoMage outperforms existing methods,
+generating coherent, user-controlled videos with consistent subject identities
+and interactions.
 </summary>
     <author>
-      <name>Zichen Liu</name>
+      <name>Chi-Pin Huang</name>
     </author>
     <author>
-      <name>Changyu Chen</name>
+      <name>Yen-Siang Wu</name>
     </author>
     <author>
-      <name>Wenjun Li</name>
+      <name>Hung-Kai Chung</name>
     </author>
     <author>
-      <name>Penghui Qi</name>
+      <name>Kai-Po Chang</name>
     </author>
     <author>
-      <name>Tianyu Pang</name>
+      <name>Fu-En Yang</name>
     </author>
     <author>
-      <name>Chao Du</name>
+      <name>Yu-Chiang Frank Wang</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">CVPR 2025. Project Page:
+  https://jasper0314-huang.github.io/videomage-customization</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.21781v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.21781v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.21779v1</id>
+    <updated>2025-03-27T17:59:57Z</updated>
+    <published>2025-03-27T17:59:57Z</published>
+    <title>X$^{2}$-Gaussian: 4D Radiative Gaussian Splatting for Continuous-time
+  Tomographic Reconstruction</title>
+    <summary>  Four-dimensional computed tomography (4D CT) reconstruction is crucial for
+capturing dynamic anatomical changes but faces inherent limitations from
+conventional phase-binning workflows. Current methods discretize temporal
+resolution into fixed phases with respiratory gating devices, introducing
+motion misalignment and restricting clinical practicality. In this paper, We
+propose X$^2$-Gaussian, a novel framework that enables continuous-time 4D-CT
+reconstruction by integrating dynamic radiative Gaussian splatting with
+self-supervised respiratory motion learning. Our approach models anatomical
+dynamics through a spatiotemporal encoder-decoder architecture that predicts
+time-varying Gaussian deformations, eliminating phase discretization. To remove
+dependency on external gating devices, we introduce a physiology-driven
+periodic consistency loss that learns patient-specific breathing cycles
+directly from projections via differentiable optimization. Extensive
+experiments demonstrate state-of-the-art performance, achieving a 9.93 dB PSNR
+gain over traditional methods and 2.25 dB improvement against prior Gaussian
+splatting techniques. By unifying continuous motion modeling with hardware-free
+period learning, X$^2$-Gaussian advances high-fidelity 4D CT reconstruction for
+dynamic clinical imaging. Project website at: https://x2-gaussian.github.io/.
+</summary>
+    <author>
+      <name>Weihao Yu</name>
     </author>
     <author>
-      <name>Wee Sun Lee</name>
+      <name>Yuanhao Cai</name>
     </author>
     <author>
-      <name>Min Lin</name>
+      <name>Ruyi Zha</name>
     </author>
-    <link href="http://arxiv.org/abs/2503.20783v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.20783v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Zhiwen Fan</name>
+    </author>
+    <author>
+      <name>Chenxin Li</name>
+    </author>
+    <author>
+      <name>Yixuan Yuan</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://x2-gaussian.github.io/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.21779v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.21779v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.21777v1</id>
+    <updated>2025-03-27T17:59:52Z</updated>
+    <published>2025-03-27T17:59:52Z</published>
+    <title>Test-Time Visual In-Context Tuning</title>
+    <summary>  Visual in-context learning (VICL), as a new paradigm in computer vision,
+allows the model to rapidly adapt to various tasks with only a handful of
+prompts and examples. While effective, the existing VICL paradigm exhibits poor
+generalizability under distribution shifts. In this work, we propose test-time
+Visual In-Context Tuning (VICT), a method that can adapt VICL models on the fly
+with a single test sample. Specifically, we flip the role between the task
+prompts and the test sample and use a cycle consistency loss to reconstruct the
+original task prompt output. Our key insight is that a model should be aware of
+a new test distribution if it can successfully recover the original task
+prompts. Extensive experiments on six representative vision tasks ranging from
+high-level visual understanding to low-level image processing, with 15 common
+corruptions, demonstrate that our VICT can improve the generalizability of VICL
+to unseen new domains. In addition, we show the potential of applying VICT for
+unseen tasks at test time. Code: https://github.com/Jiahao000/VICT.
+</summary>
+    <author>
+      <name>Jiahao Xie</name>
+    </author>
+    <author>
+      <name>Alessio Tonioni</name>
+    </author>
+    <author>
+      <name>Nathalie Rauschmayr</name>
+    </author>
+    <author>
+      <name>Federico Tombari</name>
+    </author>
+    <author>
+      <name>Bernt Schiele</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">CVPR 2025. Code: https://github.com/Jiahao000/VICT</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.21777v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.21777v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.21776v1</id>
+    <updated>2025-03-27T17:59:51Z</updated>
+    <published>2025-03-27T17:59:51Z</published>
+    <title>Video-R1: Reinforcing Video Reasoning in MLLMs</title>
+    <summary>  Inspired by DeepSeek-R1's success in eliciting reasoning abilities through
+rule-based reinforcement learning (RL), we introduce Video-R1 as the first
+attempt to systematically explore the R1 paradigm for eliciting video reasoning
+within multimodal large language models (MLLMs). However, directly applying RL
+training with the GRPO algorithm to video reasoning presents two primary
+challenges: (i) a lack of temporal modeling for video reasoning, and (ii) the
+scarcity of high-quality video-reasoning data. To address these issues, we
+first propose the T-GRPO algorithm, which encourages models to utilize temporal
+information in videos for reasoning. Additionally, instead of relying solely on
+video data, we incorporate high-quality image-reasoning data into the training
+process. We have constructed two datasets: Video-R1-COT-165k for SFT cold start
+and Video-R1-260k for RL training, both comprising image and video data.
+Experimental results demonstrate that Video-R1 achieves significant
+improvements on video reasoning benchmarks such as VideoMMMU and VSI-Bench, as
+well as on general video benchmarks including MVBench and TempCompass, etc.
+Notably, Video-R1-7B attains a 35.8% accuracy on video spatial reasoning
+benchmark VSI-bench, surpassing the commercial proprietary model GPT-4o. All
+codes, models, data are released.
+</summary>
+    <author>
+      <name>Kaituo Feng</name>
+    </author>
+    <author>
+      <name>Kaixiong Gong</name>
+    </author>
+    <author>
+      <name>Bohao Li</name>
+    </author>
+    <author>
+      <name>Zonghao Guo</name>
+    </author>
+    <author>
+      <name>Yibing Wang</name>
+    </author>
+    <author>
+      <name>Tianshuo Peng</name>
+    </author>
+    <author>
+      <name>Benyou Wang</name>
+    </author>
+    <author>
+      <name>Xiangyu Yue</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://github.com/tulerfeng/Video-R1</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.21776v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.21776v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.21775v1</id>
+    <updated>2025-03-27T17:59:46Z</updated>
+    <published>2025-03-27T17:59:46Z</published>
+    <title>StyleMotif: Multi-Modal Motion Stylization using Style-Content Cross
+  Fusion</title>
+    <summary>  We present StyleMotif, a novel Stylized Motion Latent Diffusion model,
+generating motion conditioned on both content and style from multiple
+modalities. Unlike existing approaches that either focus on generating diverse
+motion content or transferring style from sequences, StyleMotif seamlessly
+synthesizes motion across a wide range of content while incorporating stylistic
+cues from multi-modal inputs, including motion, text, image, video, and audio.
+To achieve this, we introduce a style-content cross fusion mechanism and align
+a style encoder with a pre-trained multi-modal model, ensuring that the
+generated motion accurately captures the reference style while preserving
+realism. Extensive experiments demonstrate that our framework surpasses
+existing methods in stylized motion generation and exhibits emergent
+capabilities for multi-modal motion stylization, enabling more nuanced motion
+synthesis. Source code and pre-trained models will be released upon acceptance.
+Project Page: https://stylemotif.github.io
+</summary>
+    <author>
+      <name>Ziyu Guo</name>
+    </author>
+    <author>
+      <name>Young Yoon Lee</name>
+    </author>
+    <author>
+      <name>Joseph Liu</name>
+    </author>
+    <author>
+      <name>Yizhak Ben-Shabat</name>
+    </author>
+    <author>
+      <name>Victor Zordan</name>
+    </author>
+    <author>
+      <name>Mubbasir Kapadia</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://stylemotif.github.io</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.21775v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.21775v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.20782v1</id>
-    <updated>2025-03-26T17:59:04Z</updated>
-    <published>2025-03-26T17:59:04Z</published>
-    <title>Zero-Shot Audio-Visual Editing via Cross-Modal Delta Denoising</title>
-    <summary>  In this paper, we introduce zero-shot audio-video editing, a novel task that
-requires transforming original audio-visual content to align with a specified
-textual prompt without additional model training. To evaluate this task, we
-curate a benchmark dataset, AvED-Bench, designed explicitly for zero-shot
-audio-video editing. AvED-Bench includes 110 videos, each with a 10-second
-duration, spanning 11 categories from VGGSound. It offers diverse prompts and
-scenarios that require precise alignment between auditory and visual elements,
-enabling robust evaluation. We identify limitations in existing zero-shot audio
-and video editing methods, particularly in synchronization and coherence
-between modalities, which often result in inconsistent outcomes. To address
-these challenges, we propose AvED, a zero-shot cross-modal delta denoising
-framework that leverages audio-video interactions to achieve synchronized and
-coherent edits. AvED demonstrates superior results on both AvED-Bench and the
-recent OAVE dataset to validate its generalization capabilities. Results are
-available at https://genjib.github.io/project_page/AVED/index.html
-</summary>
-    <author>
-      <name>Yan-Bo Lin</name>
-    </author>
-    <author>
-      <name>Kevin Lin</name>
-    </author>
-    <author>
-      <name>Zhengyuan Yang</name>
-    </author>
-    <author>
-      <name>Linjie Li</name>
-    </author>
-    <author>
-      <name>Jianfeng Wang</name>
-    </author>
-    <author>
-      <name>Chung-Ching Lin</name>
-    </author>
-    <author>
-      <name>Xiaofei Wang</name>
-    </author>
-    <author>
-      <name>Gedas Bertasius</name>
-    </author>
-    <author>
-      <name>Lijuan Wang</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://genjib.github.io/project_page/AVED/index.html</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.20782v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.20782v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.20771v1</id>
-    <updated>2025-03-26T17:53:53Z</updated>
-    <published>2025-03-26T17:53:53Z</published>
-    <title>Disentangled Source-Free Personalization for Facial Expression
-  Recognition with Neutral Target Data</title>
-    <summary>  Facial Expression Recognition (FER) from videos is a crucial task in various
-application areas, such as human-computer interaction and health monitoring
-(e.g., pain, depression, fatigue, and stress). Beyond the challenges of
-recognizing subtle emotional or health states, the effectiveness of deep FER
-models is often hindered by the considerable variability of expressions among
-subjects. Source-free domain adaptation (SFDA) methods are employed to adapt a
-pre-trained source model using only unlabeled target domain data, thereby
-avoiding data privacy and storage issues. Typically, SFDA methods adapt to a
-target domain dataset corresponding to an entire population and assume it
-includes data from all recognition classes. However, collecting such
-comprehensive target data can be difficult or even impossible for FER in
-healthcare applications. In many real-world scenarios, it may be feasible to
-collect a short neutral control video (displaying only neutral expressions) for
-target subjects before deployment. These videos can be used to adapt a model to
-better handle the variability of expressions among subjects. This paper
-introduces the Disentangled Source-Free Domain Adaptation (DSFDA) method to
-address the SFDA challenge posed by missing target expression data. DSFDA
-leverages data from a neutral target control video for end-to-end generation
-and adaptation of target data with missing non-neutral data. Our method learns
-to disentangle features related to expressions and identity while generating
-the missing non-neutral target data, thereby enhancing model accuracy.
-Additionally, our self-supervision strategy improves model adaptation by
-reconstructing target images that maintain the same identity and source
-expression.
-</summary>
-    <author>
-      <name>Masoumeh Sharafi</name>
-    </author>
-    <author>
-      <name>Emma Ollivier</name>
-    </author>
-    <author>
-      <name>Muhammad Osama Zeeshan</name>
-    </author>
-    <author>
-      <name>Soufiane Belharbi</name>
-    </author>
-    <author>
-      <name>Marco Pedersoli</name>
-    </author>
-    <author>
-      <name>Alessandro Lameiras Koerich</name>
-    </author>
-    <author>
-      <name>Simon Bacon</name>
-    </author>
-    <author>
-      <name> Eric~Granger</name>
-    </author>
-    <link href="http://arxiv.org/abs/2503.20771v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.20771v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.20768v2</id>
-    <updated>2025-03-27T02:16:06Z</updated>
-    <published>2025-03-26T17:52:30Z</published>
-    <title>An Empirical Study of the Impact of Federated Learning on Machine
-  Learning Model Accuracy</title>
-    <summary>  Federated Learning (FL) enables distributed ML model training on private user
-data at the global scale. Despite the potential of FL demonstrated in many
-domains, an in-depth view of its impact on model accuracy remains unclear. In
-this paper, we investigate, systematically, how this learning paradigm can
-affect the accuracy of state-of-the-art ML models for a variety of ML tasks. We
-present an empirical study that involves various data types: text, image,
-audio, and video, and FL configuration knobs: data distribution, FL scale,
-client sampling, and local and global computations. Our experiments are
-conducted in a unified FL framework to achieve high fidelity, with substantial
-human efforts and resource investments. Based on the results, we perform a
-quantitative analysis of the impact of FL, and highlight challenging scenarios
-where applying FL degrades the accuracy of the model drastically and identify
-cases where the impact is negligible. The detailed and extensive findings can
-benefit practical deployments and future development of FL.
-</summary>
-    <author>
-      <name>Haotian Yang</name>
-    </author>
-    <author>
-      <name>Zhuoran Wang</name>
-    </author>
-    <author>
-      <name>Benson Chou</name>
-    </author>
-    <author>
-      <name>Sophie Xu</name>
-    </author>
-    <author>
-      <name>Hao Wang</name>
-    </author>
-    <author>
-      <name>Jingxian Wang</name>
-    </author>
-    <author>
-      <name>Qizhen Zhang</name>
-    </author>
-    <link href="http://arxiv.org/abs/2503.20768v2" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.20768v2" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="C.2.4; I.2.6" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.20767v1</id>
-    <updated>2025-03-26T17:52:19Z</updated>
-    <published>2025-03-26T17:52:19Z</published>
-    <title>Reliable algorithm selection for machine learning-guided design</title>
-    <summary>  Algorithms for machine learning-guided design, or design algorithms, use
-machine learning-based predictions to propose novel objects with desired
-property values. Given a new design task -- for example, to design novel
-proteins with high binding affinity to a therapeutic target -- one must choose
-a design algorithm and specify any hyperparameters and predictive and/or
-generative models involved. How can these decisions be made such that the
-resulting designs are successful? This paper proposes a method for design
-algorithm selection, which aims to select design algorithms that will produce a
-distribution of design labels satisfying a user-specified success criterion --
-for example, that at least ten percent of designs' labels exceed a threshold.
-It does so by combining designs' predicted property values with held-out
-labeled data to reliably forecast characteristics of the label distributions
-produced by different design algorithms, building upon techniques from
-prediction-powered inference. The method is guaranteed with high probability to
-return design algorithms that yield successful label distributions (or the null
-set if none exist), if the density ratios between the design and labeled data
-distributions are known. We demonstrate the method's effectiveness in simulated
-protein and RNA design tasks, in settings with either known or estimated
-density ratios.
-</summary>
-    <author>
-      <name>Clara Fannjiang</name>
-    </author>
-    <author>
-      <name>Ji Won Park</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">25 pages, 7 figures</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.20767v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.20767v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
