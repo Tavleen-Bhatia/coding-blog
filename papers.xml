@@ -3,245 +3,259 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-03-30T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">415102</opensearch:totalResults>
+  <updated>2025-03-31T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">415368</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2503.21781v1</id>
-    <updated>2025-03-27T17:59:58Z</updated>
-    <published>2025-03-27T17:59:58Z</published>
-    <title>VideoMage: Multi-Subject and Motion Customization of Text-to-Video
-  Diffusion Models</title>
-    <summary>  Customized text-to-video generation aims to produce high-quality videos that
-incorporate user-specified subject identities or motion patterns. However,
-existing methods mainly focus on personalizing a single concept, either subject
-identity or motion pattern, limiting their effectiveness for multiple subjects
-with the desired motion patterns. To tackle this challenge, we propose a
-unified framework VideoMage for video customization over both multiple subjects
-and their interactive motions. VideoMage employs subject and motion LoRAs to
-capture personalized content from user-provided images and videos, along with
-an appearance-agnostic motion learning approach to disentangle motion patterns
-from visual appearance. Furthermore, we develop a spatial-temporal composition
-scheme to guide interactions among subjects within the desired motion patterns.
-Extensive experiments demonstrate that VideoMage outperforms existing methods,
-generating coherent, user-controlled videos with consistent subject identities
-and interactions.
+    <id>http://arxiv.org/abs/2503.22679v1</id>
+    <updated>2025-03-28T17:59:54Z</updated>
+    <published>2025-03-28T17:59:54Z</published>
+    <title>Q-Insight: Understanding Image Quality via Visual Reinforcement Learning</title>
+    <summary>  Image quality assessment (IQA) focuses on the perceptual visual quality of
+images, playing a crucial role in downstream tasks such as image
+reconstruction, compression, and generation. The rapid advancement of
+multi-modal large language models (MLLMs) has significantly broadened the scope
+of IQA, moving toward comprehensive image quality understanding that
+incorporates content analysis, degradation perception, and comparison reasoning
+beyond mere numerical scoring. Previous MLLM-based methods typically either
+generate numerical scores lacking interpretability or heavily rely on
+supervised fine-tuning (SFT) using large-scale annotated datasets to provide
+descriptive assessments, limiting their flexibility and applicability. In this
+paper, we propose Q-Insight, a reinforcement learning-based model built upon
+group relative policy optimization (GRPO), which demonstrates strong visual
+reasoning capability for image quality understanding while requiring only a
+limited amount of rating scores and degradation labels. By jointly optimizing
+score regression and degradation perception tasks with carefully designed
+reward functions, our approach effectively exploits their mutual benefits for
+enhanced performance. Extensive experiments demonstrate that Q-Insight
+substantially outperforms existing state-of-the-art methods in both score
+regression and degradation perception tasks, while exhibiting impressive
+zero-shot generalization to comparison reasoning tasks. Code will be available
+at https://github.com/lwq20020127/Q-Insight.
 </summary>
     <author>
-      <name>Chi-Pin Huang</name>
+      <name>Weiqi Li</name>
     </author>
     <author>
-      <name>Yen-Siang Wu</name>
+      <name>Xuanyu Zhang</name>
     </author>
     <author>
-      <name>Hung-Kai Chung</name>
+      <name>Shijie Zhao</name>
     </author>
     <author>
-      <name>Kai-Po Chang</name>
+      <name>Yabin Zhang</name>
     </author>
     <author>
-      <name>Fu-En Yang</name>
+      <name>Junlin Li</name>
     </author>
     <author>
-      <name>Yu-Chiang Frank Wang</name>
+      <name>Li Zhang</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">CVPR 2025. Project Page:
-  https://jasper0314-huang.github.io/videomage-customization</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.21781v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.21781v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Jian Zhang</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Technical report</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.22679v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.22679v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2503.21779v1</id>
-    <updated>2025-03-27T17:59:57Z</updated>
-    <published>2025-03-27T17:59:57Z</published>
-    <title>X$^{2}$-Gaussian: 4D Radiative Gaussian Splatting for Continuous-time
-  Tomographic Reconstruction</title>
-    <summary>  Four-dimensional computed tomography (4D CT) reconstruction is crucial for
-capturing dynamic anatomical changes but faces inherent limitations from
-conventional phase-binning workflows. Current methods discretize temporal
-resolution into fixed phases with respiratory gating devices, introducing
-motion misalignment and restricting clinical practicality. In this paper, We
-propose X$^2$-Gaussian, a novel framework that enables continuous-time 4D-CT
-reconstruction by integrating dynamic radiative Gaussian splatting with
-self-supervised respiratory motion learning. Our approach models anatomical
-dynamics through a spatiotemporal encoder-decoder architecture that predicts
-time-varying Gaussian deformations, eliminating phase discretization. To remove
-dependency on external gating devices, we introduce a physiology-driven
-periodic consistency loss that learns patient-specific breathing cycles
-directly from projections via differentiable optimization. Extensive
-experiments demonstrate state-of-the-art performance, achieving a 9.93 dB PSNR
-gain over traditional methods and 2.25 dB improvement against prior Gaussian
-splatting techniques. By unifying continuous motion modeling with hardware-free
-period learning, X$^2$-Gaussian advances high-fidelity 4D CT reconstruction for
-dynamic clinical imaging. Project website at: https://x2-gaussian.github.io/.
+    <id>http://arxiv.org/abs/2503.22677v1</id>
+    <updated>2025-03-28T17:59:53Z</updated>
+    <published>2025-03-28T17:59:53Z</published>
+    <title>DSO: Aligning 3D Generators with Simulation Feedback for Physical
+  Soundness</title>
+    <summary>  Most 3D object generators focus on aesthetic quality, often neglecting
+physical constraints necessary in applications. One such constraint is that the
+3D object should be self-supporting, i.e., remains balanced under gravity.
+Prior approaches to generating stable 3D objects used differentiable physics
+simulators to optimize geometry at test-time, which is slow, unstable, and
+prone to local optima. Inspired by the literature on aligning generative models
+to external feedback, we propose Direct Simulation Optimization (DSO), a
+framework to use the feedback from a (non-differentiable) simulator to increase
+the likelihood that the 3D generator outputs stable 3D objects directly. We
+construct a dataset of 3D objects labeled with a stability score obtained from
+the physics simulator. We can then fine-tune the 3D generator using the
+stability score as the alignment metric, via direct preference optimization
+(DPO) or direct reward optimization (DRO), a novel objective, which we
+introduce, to align diffusion models without requiring pairwise preferences.
+Our experiments show that the fine-tuned feed-forward generator, using either
+DPO or DRO objective, is much faster and more likely to produce stable objects
+than test-time optimization. Notably, the DSO framework works even without any
+ground-truth 3D objects for training, allowing the 3D generator to self-improve
+by automatically collecting simulation feedback on its own outputs.
 </summary>
     <author>
-      <name>Weihao Yu</name>
+      <name>Ruining Li</name>
     </author>
     <author>
-      <name>Yuanhao Cai</name>
+      <name>Chuanxia Zheng</name>
     </author>
     <author>
-      <name>Ruyi Zha</name>
+      <name>Christian Rupprecht</name>
     </author>
     <author>
-      <name>Zhiwen Fan</name>
+      <name>Andrea Vedaldi</name>
     </author>
-    <author>
-      <name>Chenxin Li</name>
-    </author>
-    <author>
-      <name>Yixuan Yuan</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://x2-gaussian.github.io/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.21779v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.21779v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://ruiningli.com/dso</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.22677v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.22677v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.21777v1</id>
-    <updated>2025-03-27T17:59:52Z</updated>
-    <published>2025-03-27T17:59:52Z</published>
-    <title>Test-Time Visual In-Context Tuning</title>
-    <summary>  Visual in-context learning (VICL), as a new paradigm in computer vision,
-allows the model to rapidly adapt to various tasks with only a handful of
-prompts and examples. While effective, the existing VICL paradigm exhibits poor
-generalizability under distribution shifts. In this work, we propose test-time
-Visual In-Context Tuning (VICT), a method that can adapt VICL models on the fly
-with a single test sample. Specifically, we flip the role between the task
-prompts and the test sample and use a cycle consistency loss to reconstruct the
-original task prompt output. Our key insight is that a model should be aware of
-a new test distribution if it can successfully recover the original task
-prompts. Extensive experiments on six representative vision tasks ranging from
-high-level visual understanding to low-level image processing, with 15 common
-corruptions, demonstrate that our VICT can improve the generalizability of VICL
-to unseen new domains. In addition, we show the potential of applying VICT for
-unseen tasks at test time. Code: https://github.com/Jiahao000/VICT.
-</summary>
-    <author>
-      <name>Jiahao Xie</name>
-    </author>
-    <author>
-      <name>Alessio Tonioni</name>
-    </author>
-    <author>
-      <name>Nathalie Rauschmayr</name>
-    </author>
-    <author>
-      <name>Federico Tombari</name>
-    </author>
-    <author>
-      <name>Bernt Schiele</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">CVPR 2025. Code: https://github.com/Jiahao000/VICT</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.21777v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.21777v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2503.21776v1</id>
-    <updated>2025-03-27T17:59:51Z</updated>
-    <published>2025-03-27T17:59:51Z</published>
-    <title>Video-R1: Reinforcing Video Reasoning in MLLMs</title>
-    <summary>  Inspired by DeepSeek-R1's success in eliciting reasoning abilities through
-rule-based reinforcement learning (RL), we introduce Video-R1 as the first
-attempt to systematically explore the R1 paradigm for eliciting video reasoning
-within multimodal large language models (MLLMs). However, directly applying RL
-training with the GRPO algorithm to video reasoning presents two primary
-challenges: (i) a lack of temporal modeling for video reasoning, and (ii) the
-scarcity of high-quality video-reasoning data. To address these issues, we
-first propose the T-GRPO algorithm, which encourages models to utilize temporal
-information in videos for reasoning. Additionally, instead of relying solely on
-video data, we incorporate high-quality image-reasoning data into the training
-process. We have constructed two datasets: Video-R1-COT-165k for SFT cold start
-and Video-R1-260k for RL training, both comprising image and video data.
-Experimental results demonstrate that Video-R1 achieves significant
-improvements on video reasoning benchmarks such as VideoMMMU and VSI-Bench, as
-well as on general video benchmarks including MVBench and TempCompass, etc.
-Notably, Video-R1-7B attains a 35.8% accuracy on video spatial reasoning
-benchmark VSI-bench, surpassing the commercial proprietary model GPT-4o. All
-codes, models, data are released.
+    <id>http://arxiv.org/abs/2503.22678v1</id>
+    <updated>2025-03-28T17:59:53Z</updated>
+    <published>2025-03-28T17:59:53Z</published>
+    <title>Self-Evolving Multi-Agent Simulations for Realistic Clinical
+  Interactions</title>
+    <summary>  In this work, we introduce MedAgentSim, an open-source simulated clinical
+environment with doctor, patient, and measurement agents designed to evaluate
+and enhance LLM performance in dynamic diagnostic settings. Unlike prior
+approaches, our framework requires doctor agents to actively engage with
+patients through multi-turn conversations, requesting relevant medical
+examinations (e.g., temperature, blood pressure, ECG) and imaging results
+(e.g., MRI, X-ray) from a measurement agent to mimic the real-world diagnostic
+process. Additionally, we incorporate self improvement mechanisms that allow
+models to iteratively refine their diagnostic strategies. We enhance LLM
+performance in our simulated setting by integrating multi-agent discussions,
+chain-of-thought reasoning, and experience-based knowledge retrieval,
+facilitating progressive learning as doctor agents interact with more patients.
+We also introduce an evaluation benchmark for assessing the LLM's ability to
+engage in dynamic, context-aware diagnostic interactions. While MedAgentSim is
+fully automated, it also supports a user-controlled mode, enabling human
+interaction with either the doctor or patient agent. Comprehensive evaluations
+in various simulated diagnostic scenarios demonstrate the effectiveness of our
+approach. Our code, simulation tool, and benchmark are available at
+\href{https://medagentsim.netlify.app/}.
 </summary>
     <author>
-      <name>Kaituo Feng</name>
+      <name>Mohammad Almansoori</name>
     </author>
     <author>
-      <name>Kaixiong Gong</name>
+      <name>Komal Kumar</name>
     </author>
     <author>
-      <name>Bohao Li</name>
+      <name>Hisham Cholakkal</name>
     </author>
-    <author>
-      <name>Zonghao Guo</name>
-    </author>
-    <author>
-      <name>Yibing Wang</name>
-    </author>
-    <author>
-      <name>Tianshuo Peng</name>
-    </author>
-    <author>
-      <name>Benyou Wang</name>
-    </author>
-    <author>
-      <name>Xiangyu Yue</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://github.com/tulerfeng/Video-R1</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.21776v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.21776v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">14 page, 4 figures, 61 references</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.22678v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.22678v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2503.21775v1</id>
-    <updated>2025-03-27T17:59:46Z</updated>
-    <published>2025-03-27T17:59:46Z</published>
-    <title>StyleMotif: Multi-Modal Motion Stylization using Style-Content Cross
-  Fusion</title>
-    <summary>  We present StyleMotif, a novel Stylized Motion Latent Diffusion model,
-generating motion conditioned on both content and style from multiple
-modalities. Unlike existing approaches that either focus on generating diverse
-motion content or transferring style from sequences, StyleMotif seamlessly
-synthesizes motion across a wide range of content while incorporating stylistic
-cues from multi-modal inputs, including motion, text, image, video, and audio.
-To achieve this, we introduce a style-content cross fusion mechanism and align
-a style encoder with a pre-trained multi-modal model, ensuring that the
-generated motion accurately captures the reference style while preserving
-realism. Extensive experiments demonstrate that our framework surpasses
-existing methods in stylized motion generation and exhibits emergent
-capabilities for multi-modal motion stylization, enabling more nuanced motion
-synthesis. Source code and pre-trained models will be released upon acceptance.
-Project Page: https://stylemotif.github.io
+    <id>http://arxiv.org/abs/2503.22675v1</id>
+    <updated>2025-03-28T17:59:03Z</updated>
+    <published>2025-03-28T17:59:03Z</published>
+    <title>Think Before Recommend: Unleashing the Latent Reasoning Power for
+  Sequential Recommendation</title>
+    <summary>  Sequential Recommendation (SeqRec) aims to predict the next item by capturing
+sequential patterns from users' historical interactions, playing a crucial role
+in many real-world recommender systems. However, existing approaches
+predominantly adopt a direct forward computation paradigm, where the final
+hidden state of the sequence encoder serves as the user representation. We
+argue that this inference paradigm, due to its limited computational depth,
+struggles to model the complex evolving nature of user preferences and lacks a
+nuanced understanding of long-tail items, leading to suboptimal performance. To
+address this issue, we propose \textbf{ReaRec}, the first inference-time
+computing framework for recommender systems, which enhances user
+representations through implicit multi-step reasoning. Specifically, ReaRec
+autoregressively feeds the sequence's last hidden state into the sequential
+recommender while incorporating special reasoning position embeddings to
+decouple the original item encoding space from the multi-step reasoning space.
+Moreover, we introduce two lightweight reasoning-based learning methods,
+Ensemble Reasoning Learning (ERL) and Progressive Reasoning Learning (PRL), to
+further effectively exploit ReaRec's reasoning potential. Extensive experiments
+on five public real-world datasets and different SeqRec architectures
+demonstrate the generality and effectiveness of our proposed ReaRec.
+Remarkably, post-hoc analyses reveal that ReaRec significantly elevates the
+performance ceiling of multiple sequential recommendation backbones by
+approximately 30\%-50\%. Thus, we believe this work can open a new and
+promising avenue for future research in inference-time computing for sequential
+recommendation.
 </summary>
     <author>
-      <name>Ziyu Guo</name>
+      <name>Jiakai Tang</name>
     </author>
     <author>
-      <name>Young Yoon Lee</name>
+      <name>Sunhao Dai</name>
     </author>
     <author>
-      <name>Joseph Liu</name>
+      <name>Teng Shi</name>
     </author>
     <author>
-      <name>Yizhak Ben-Shabat</name>
+      <name>Jun Xu</name>
     </author>
     <author>
-      <name>Victor Zordan</name>
+      <name>Xu Chen</name>
     </author>
     <author>
-      <name>Mubbasir Kapadia</name>
+      <name>Wen Chen</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://stylemotif.github.io</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.21775v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.21775v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Wu Jian</name>
+    </author>
+    <author>
+      <name>Yuning Jiang</name>
+    </author>
+    <link href="http://arxiv.org/abs/2503.22675v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.22675v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.22674v1</id>
+    <updated>2025-03-28T17:58:40Z</updated>
+    <published>2025-03-28T17:58:40Z</published>
+    <title>QuestBench: Can LLMs ask the right question to acquire information in
+  reasoning tasks?</title>
+    <summary>  Recently, a large amount of work has focused on improving large language
+models' (LLMs') performance on reasoning benchmarks such as math and logic.
+However, past work has largely assumed that tasks are well-defined. In the real
+world, queries to LLMs are often underspecified, only solvable through
+acquiring missing information. We formalize this as a constraint satisfaction
+problem (CSP) with missing variable assignments. Using a special case of this
+formalism where only one necessary variable assignment is missing, we can
+rigorously evaluate an LLM's ability to identify the minimal necessary question
+to ask and quantify axes of difficulty levels for each problem. We present
+QuestBench, a set of underspecified reasoning tasks solvable by asking at most
+one question, which includes: (1) Logic-Q: Logical reasoning tasks with one
+missing proposition, (2) Planning-Q: PDDL planning problems with initial states
+that are partially-observed, (3) GSM-Q: Human-annotated grade school math
+problems with one missing variable assignment, and (4) GSME-Q: a version of
+GSM-Q where word problems are translated into equations by human annotators.
+The LLM is tasked with selecting the correct clarification question(s) from a
+list of options. While state-of-the-art models excel at GSM-Q and GSME-Q, their
+accuracy is only 40-50% on Logic-Q and Planning-Q. Analysis demonstrates that
+the ability to solve well-specified reasoning problems may not be sufficient
+for success on our benchmark: models have difficulty identifying the right
+question to ask, even when they can solve the fully specified version of the
+problem. Furthermore, in the Planning-Q domain, LLMs tend not to hedge, even
+when explicitly presented with the option to predict ``not sure.'' This
+highlights the need for deeper investigation into models' information
+acquisition capabilities.
+</summary>
+    <author>
+      <name>Belinda Z. Li</name>
+    </author>
+    <author>
+      <name>Been Kim</name>
+    </author>
+    <author>
+      <name>Zi Wang</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Code and dataset are available at
+  \url{https://github.com/google-deepmind/questbench}</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.22674v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.22674v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
