@@ -3,259 +3,272 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-03-31T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">415368</opensearch:totalResults>
+  <updated>2025-04-01T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">415844</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2503.22679v1</id>
-    <updated>2025-03-28T17:59:54Z</updated>
-    <published>2025-03-28T17:59:54Z</published>
-    <title>Q-Insight: Understanding Image Quality via Visual Reinforcement Learning</title>
-    <summary>  Image quality assessment (IQA) focuses on the perceptual visual quality of
-images, playing a crucial role in downstream tasks such as image
-reconstruction, compression, and generation. The rapid advancement of
-multi-modal large language models (MLLMs) has significantly broadened the scope
-of IQA, moving toward comprehensive image quality understanding that
-incorporates content analysis, degradation perception, and comparison reasoning
-beyond mere numerical scoring. Previous MLLM-based methods typically either
-generate numerical scores lacking interpretability or heavily rely on
-supervised fine-tuning (SFT) using large-scale annotated datasets to provide
-descriptive assessments, limiting their flexibility and applicability. In this
-paper, we propose Q-Insight, a reinforcement learning-based model built upon
-group relative policy optimization (GRPO), which demonstrates strong visual
-reasoning capability for image quality understanding while requiring only a
-limited amount of rating scores and degradation labels. By jointly optimizing
-score regression and degradation perception tasks with carefully designed
-reward functions, our approach effectively exploits their mutual benefits for
-enhanced performance. Extensive experiments demonstrate that Q-Insight
-substantially outperforms existing state-of-the-art methods in both score
-regression and degradation perception tasks, while exhibiting impressive
-zero-shot generalization to comparison reasoning tasks. Code will be available
-at https://github.com/lwq20020127/Q-Insight.
+    <id>http://arxiv.org/abs/2503.24388v1</id>
+    <updated>2025-03-31T17:59:52Z</updated>
+    <published>2025-03-31T17:59:52Z</published>
+    <title>RIG: Synergizing Reasoning and Imagination in End-to-End Generalist
+  Policy</title>
+    <summary>  Reasoning before action and imagining potential outcomes (i.e., world models)
+are essential for embodied agents operating in complex open-world environments.
+Yet, prior work either incorporates only one of these abilities in an
+end-to-end agent or integrates multiple specialized models into an agent
+system, limiting the learning efficiency and generalization of the policy.
+Thus, this paper makes the first attempt to synergize Reasoning and Imagination
+in an end-to-end Generalist policy, termed RIG. To train RIG in an end-to-end
+manner, we construct a data pipeline that progressively integrates and enriches
+the content of imagination and reasoning in the trajectories collected from
+existing agents. The joint learning of reasoning and next image generation
+explicitly models the inherent correlation between reasoning, action, and
+dynamics of environments, and thus exhibits more than $17\times$ sample
+efficiency improvements and generalization in comparison with previous works.
+During inference, RIG first reasons about the next action, produces potential
+action, and then predicts the action outcomes, which offers the agent a chance
+to review and self-correct based on the imagination before taking real actions.
+Experimental results show that the synergy of reasoning and imagination not
+only improves the robustness, generalization, and interoperability of
+generalist policy but also enables test-time scaling to enhance overall
+performance.
 </summary>
     <author>
-      <name>Weiqi Li</name>
+      <name>Zhonghan Zhao</name>
     </author>
     <author>
-      <name>Xuanyu Zhang</name>
+      <name>Wenwei Zhang</name>
     </author>
     <author>
-      <name>Shijie Zhao</name>
+      <name>Haian Huang</name>
     </author>
     <author>
-      <name>Yabin Zhang</name>
+      <name>Kuikun Liu</name>
     </author>
     <author>
-      <name>Junlin Li</name>
+      <name>Jianfei Gao</name>
     </author>
     <author>
-      <name>Li Zhang</name>
+      <name>Gaoang Wang</name>
     </author>
     <author>
-      <name>Jian Zhang</name>
+      <name>Kai Chen</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Technical report</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.22679v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.22679v1" rel="related" type="application/pdf"/>
+    <link href="http://arxiv.org/abs/2503.24388v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.24388v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.24387v1</id>
+    <updated>2025-03-31T17:59:51Z</updated>
+    <published>2025-03-31T17:59:51Z</published>
+    <title>Consistent Subject Generation via Contrastive Instantiated Concepts</title>
+    <summary>  While text-to-image generative models can synthesize diverse and faithful
+contents, subject variation across multiple creations limits the application in
+long content generation. Existing approaches require time-consuming tuning,
+references for all subjects, or access to other creations. We introduce
+Contrastive Concept Instantiation (CoCoIns) to effectively synthesize
+consistent subjects across multiple independent creations. The framework
+consists of a generative model and a mapping network, which transforms input
+latent codes into pseudo-words associated with certain instances of concepts.
+Users can generate consistent subjects with the same latent codes. To construct
+such associations, we propose a contrastive learning approach that trains the
+network to differentiate the combination of prompts and latent codes. Extensive
+evaluations of human faces with a single subject show that CoCoIns performs
+comparably to existing methods while maintaining higher flexibility. We also
+demonstrate the potential of extending CoCoIns to multiple subjects and other
+object categories.
+</summary>
+    <author>
+      <name>Lee Hsin-Ying</name>
+    </author>
+    <author>
+      <name>Kelvin C. K. Chan</name>
+    </author>
+    <author>
+      <name>Ming-Hsuan Yang</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://contrastive-concept-instantiation.github.io</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.24387v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.24387v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2503.22677v1</id>
-    <updated>2025-03-28T17:59:53Z</updated>
-    <published>2025-03-28T17:59:53Z</published>
-    <title>DSO: Aligning 3D Generators with Simulation Feedback for Physical
-  Soundness</title>
-    <summary>  Most 3D object generators focus on aesthetic quality, often neglecting
-physical constraints necessary in applications. One such constraint is that the
-3D object should be self-supporting, i.e., remains balanced under gravity.
-Prior approaches to generating stable 3D objects used differentiable physics
-simulators to optimize geometry at test-time, which is slow, unstable, and
-prone to local optima. Inspired by the literature on aligning generative models
-to external feedback, we propose Direct Simulation Optimization (DSO), a
-framework to use the feedback from a (non-differentiable) simulator to increase
-the likelihood that the 3D generator outputs stable 3D objects directly. We
-construct a dataset of 3D objects labeled with a stability score obtained from
-the physics simulator. We can then fine-tune the 3D generator using the
-stability score as the alignment metric, via direct preference optimization
-(DPO) or direct reward optimization (DRO), a novel objective, which we
-introduce, to align diffusion models without requiring pairwise preferences.
-Our experiments show that the fine-tuned feed-forward generator, using either
-DPO or DRO objective, is much faster and more likely to produce stable objects
-than test-time optimization. Notably, the DSO framework works even without any
-ground-truth 3D objects for training, allowing the 3D generator to self-improve
-by automatically collecting simulation feedback on its own outputs.
+    <id>http://arxiv.org/abs/2503.24381v1</id>
+    <updated>2025-03-31T17:59:24Z</updated>
+    <published>2025-03-31T17:59:24Z</published>
+    <title>UniOcc: A Unified Benchmark for Occupancy Forecasting and Prediction in
+  Autonomous Driving</title>
+    <summary>  We introduce UniOcc, a comprehensive, unified benchmark for occupancy
+forecasting (i.e., predicting future occupancies based on historical
+information) and current-frame occupancy prediction from camera images. UniOcc
+unifies data from multiple real-world datasets (i.e., nuScenes, Waymo) and
+high-fidelity driving simulators (i.e., CARLA, OpenCOOD), which provides 2D/3D
+occupancy labels with per-voxel flow annotations and support for cooperative
+autonomous driving. In terms of evaluation, unlike existing studies that rely
+on suboptimal pseudo labels for evaluation, UniOcc incorporates novel metrics
+that do not depend on ground-truth occupancy, enabling robust assessment of
+additional aspects of occupancy quality. Through extensive experiments on
+state-of-the-art models, we demonstrate that large-scale, diverse training data
+and explicit flow information significantly enhance occupancy prediction and
+forecasting performance.
 </summary>
     <author>
-      <name>Ruining Li</name>
+      <name>Yuping Wang</name>
     </author>
     <author>
-      <name>Chuanxia Zheng</name>
+      <name>Xiangyu Huang</name>
     </author>
     <author>
-      <name>Christian Rupprecht</name>
+      <name>Xiaokang Sun</name>
     </author>
     <author>
-      <name>Andrea Vedaldi</name>
+      <name>Mingxuan Yan</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://ruiningli.com/dso</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.22677v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.22677v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Shuo Xing</name>
+    </author>
+    <author>
+      <name>Zhengzhong Tu</name>
+    </author>
+    <author>
+      <name>Jiachen Li</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">14 pages; Dataset: https://huggingface.co/datasets/tasl-lab/uniocc;
+  Code: https://github.com/tasl-lab/UniOcc</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.24381v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.24381v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2503.22678v1</id>
-    <updated>2025-03-28T17:59:53Z</updated>
-    <published>2025-03-28T17:59:53Z</published>
-    <title>Self-Evolving Multi-Agent Simulations for Realistic Clinical
-  Interactions</title>
-    <summary>  In this work, we introduce MedAgentSim, an open-source simulated clinical
-environment with doctor, patient, and measurement agents designed to evaluate
-and enhance LLM performance in dynamic diagnostic settings. Unlike prior
-approaches, our framework requires doctor agents to actively engage with
-patients through multi-turn conversations, requesting relevant medical
-examinations (e.g., temperature, blood pressure, ECG) and imaging results
-(e.g., MRI, X-ray) from a measurement agent to mimic the real-world diagnostic
-process. Additionally, we incorporate self improvement mechanisms that allow
-models to iteratively refine their diagnostic strategies. We enhance LLM
-performance in our simulated setting by integrating multi-agent discussions,
-chain-of-thought reasoning, and experience-based knowledge retrieval,
-facilitating progressive learning as doctor agents interact with more patients.
-We also introduce an evaluation benchmark for assessing the LLM's ability to
-engage in dynamic, context-aware diagnostic interactions. While MedAgentSim is
-fully automated, it also supports a user-controlled mode, enabling human
-interaction with either the doctor or patient agent. Comprehensive evaluations
-in various simulated diagnostic scenarios demonstrate the effectiveness of our
-approach. Our code, simulation tool, and benchmark are available at
-\href{https://medagentsim.netlify.app/}.
+    <id>http://arxiv.org/abs/2503.24377v1</id>
+    <updated>2025-03-31T17:58:07Z</updated>
+    <published>2025-03-31T17:58:07Z</published>
+    <title>Harnessing the Reasoning Economy: A Survey of Efficient Reasoning for
+  Large Language Models</title>
+    <summary>  Recent advancements in Large Language Models (LLMs) have significantly
+enhanced their ability to perform complex reasoning tasks, transitioning from
+fast and intuitive thinking (System 1) to slow and deep reasoning (System 2).
+While System 2 reasoning improves task accuracy, it often incurs substantial
+computational costs due to its slow thinking nature and inefficient or
+unnecessary reasoning behaviors. In contrast, System 1 reasoning is
+computationally efficient but leads to suboptimal performance. Consequently, it
+is critical to balance the trade-off between performance (benefits) and
+computational costs (budgets), giving rise to the concept of reasoning economy.
+In this survey, we provide a comprehensive analysis of reasoning economy in
+both the post-training and test-time inference stages of LLMs, encompassing i)
+the cause of reasoning inefficiency, ii) behavior analysis of different
+reasoning patterns, and iii) potential solutions to achieve reasoning economy.
+By offering actionable insights and highlighting open challenges, we aim to
+shed light on strategies for improving the reasoning economy of LLMs, thereby
+serving as a valuable resource for advancing research in this evolving area. We
+also provide a public repository to continually track developments in this
+fast-evolving field.
 </summary>
     <author>
-      <name>Mohammad Almansoori</name>
+      <name>Rui Wang</name>
     </author>
     <author>
-      <name>Komal Kumar</name>
+      <name>Hongru Wang</name>
     </author>
     <author>
-      <name>Hisham Cholakkal</name>
+      <name>Boyang Xue</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">14 page, 4 figures, 61 references</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.22678v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.22678v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Jianhui Pang</name>
+    </author>
+    <author>
+      <name>Shudong Liu</name>
+    </author>
+    <author>
+      <name>Yi Chen</name>
+    </author>
+    <author>
+      <name>Jiahao Qiu</name>
+    </author>
+    <author>
+      <name>Derek Fai Wong</name>
+    </author>
+    <author>
+      <name>Heng Ji</name>
+    </author>
+    <author>
+      <name>Kam-Fai Wong</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">In Progress; Paper list Repo:
+  https://github.com/DevoAllen/Awesome-Reasoning-Economy-Papers</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.24377v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.24377v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2503.22675v1</id>
-    <updated>2025-03-28T17:59:03Z</updated>
-    <published>2025-03-28T17:59:03Z</published>
-    <title>Think Before Recommend: Unleashing the Latent Reasoning Power for
-  Sequential Recommendation</title>
-    <summary>  Sequential Recommendation (SeqRec) aims to predict the next item by capturing
-sequential patterns from users' historical interactions, playing a crucial role
-in many real-world recommender systems. However, existing approaches
-predominantly adopt a direct forward computation paradigm, where the final
-hidden state of the sequence encoder serves as the user representation. We
-argue that this inference paradigm, due to its limited computational depth,
-struggles to model the complex evolving nature of user preferences and lacks a
-nuanced understanding of long-tail items, leading to suboptimal performance. To
-address this issue, we propose \textbf{ReaRec}, the first inference-time
-computing framework for recommender systems, which enhances user
-representations through implicit multi-step reasoning. Specifically, ReaRec
-autoregressively feeds the sequence's last hidden state into the sequential
-recommender while incorporating special reasoning position embeddings to
-decouple the original item encoding space from the multi-step reasoning space.
-Moreover, we introduce two lightweight reasoning-based learning methods,
-Ensemble Reasoning Learning (ERL) and Progressive Reasoning Learning (PRL), to
-further effectively exploit ReaRec's reasoning potential. Extensive experiments
-on five public real-world datasets and different SeqRec architectures
-demonstrate the generality and effectiveness of our proposed ReaRec.
-Remarkably, post-hoc analyses reveal that ReaRec significantly elevates the
-performance ceiling of multiple sequential recommendation backbones by
-approximately 30\%-50\%. Thus, we believe this work can open a new and
-promising avenue for future research in inference-time computing for sequential
-recommendation.
-</summary>
-    <author>
-      <name>Jiakai Tang</name>
-    </author>
-    <author>
-      <name>Sunhao Dai</name>
-    </author>
-    <author>
-      <name>Teng Shi</name>
-    </author>
-    <author>
-      <name>Jun Xu</name>
-    </author>
-    <author>
-      <name>Xu Chen</name>
-    </author>
-    <author>
-      <name>Wen Chen</name>
-    </author>
-    <author>
-      <name>Wu Jian</name>
-    </author>
-    <author>
-      <name>Yuning Jiang</name>
-    </author>
-    <link href="http://arxiv.org/abs/2503.22675v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.22675v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2503.22674v1</id>
-    <updated>2025-03-28T17:58:40Z</updated>
-    <published>2025-03-28T17:58:40Z</published>
-    <title>QuestBench: Can LLMs ask the right question to acquire information in
-  reasoning tasks?</title>
-    <summary>  Recently, a large amount of work has focused on improving large language
-models' (LLMs') performance on reasoning benchmarks such as math and logic.
-However, past work has largely assumed that tasks are well-defined. In the real
-world, queries to LLMs are often underspecified, only solvable through
-acquiring missing information. We formalize this as a constraint satisfaction
-problem (CSP) with missing variable assignments. Using a special case of this
-formalism where only one necessary variable assignment is missing, we can
-rigorously evaluate an LLM's ability to identify the minimal necessary question
-to ask and quantify axes of difficulty levels for each problem. We present
-QuestBench, a set of underspecified reasoning tasks solvable by asking at most
-one question, which includes: (1) Logic-Q: Logical reasoning tasks with one
-missing proposition, (2) Planning-Q: PDDL planning problems with initial states
-that are partially-observed, (3) GSM-Q: Human-annotated grade school math
-problems with one missing variable assignment, and (4) GSME-Q: a version of
-GSM-Q where word problems are translated into equations by human annotators.
-The LLM is tasked with selecting the correct clarification question(s) from a
-list of options. While state-of-the-art models excel at GSM-Q and GSME-Q, their
-accuracy is only 40-50% on Logic-Q and Planning-Q. Analysis demonstrates that
-the ability to solve well-specified reasoning problems may not be sufficient
-for success on our benchmark: models have difficulty identifying the right
-question to ask, even when they can solve the fully specified version of the
-problem. Furthermore, in the Planning-Q domain, LLMs tend not to hedge, even
-when explicitly presented with the option to predict ``not sure.'' This
-highlights the need for deeper investigation into models' information
-acquisition capabilities.
+    <id>http://arxiv.org/abs/2503.24376v1</id>
+    <updated>2025-03-31T17:55:23Z</updated>
+    <published>2025-03-31T17:55:23Z</published>
+    <title>Exploring the Effect of Reinforcement Learning on Video Understanding:
+  Insights from SEED-Bench-R1</title>
+    <summary>  Recent advancements in Chain of Thought (COT) generation have significantly
+improved the reasoning capabilities of Large Language Models (LLMs), with
+reinforcement learning (RL) emerging as an effective post-training approach.
+Multimodal Large Language Models (MLLMs) inherit this reasoning potential but
+remain underexplored in tasks requiring both perception and logical reasoning.
+To address this, we introduce SEED-Bench-R1, a benchmark designed to
+systematically evaluate post-training methods for MLLMs in video understanding.
+It includes intricate real-world videos and complex everyday planning tasks in
+the format of multiple-choice questions, requiring sophisticated perception and
+reasoning. SEED-Bench-R1 assesses generalization through a three-level
+hierarchy: in-distribution, cross-environment, and cross-environment-task
+scenarios, equipped with a large-scale training dataset with easily verifiable
+ground-truth answers. Using Qwen2-VL-Instruct-7B as a base model, we compare RL
+with supervised fine-tuning (SFT), demonstrating RL's data efficiency and
+superior performance on both in-distribution and out-of-distribution tasks,
+even outperforming SFT on general video understanding benchmarks like
+LongVideoBench. Our detailed analysis reveals that RL enhances visual
+perception but often produces less logically coherent reasoning chains. We
+identify key limitations such as inconsistent reasoning and overlooked visual
+cues, and suggest future improvements in base model reasoning, reward modeling,
+and RL robustness against noisy signals.
 </summary>
     <author>
-      <name>Belinda Z. Li</name>
+      <name>Yi Chen</name>
     </author>
     <author>
-      <name>Been Kim</name>
+      <name>Yuying Ge</name>
     </author>
     <author>
-      <name>Zi Wang</name>
+      <name>Rui Wang</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Code and dataset are available at
-  \url{https://github.com/google-deepmind/questbench}</arxiv:comment>
-    <link href="http://arxiv.org/abs/2503.22674v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2503.22674v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Yixiao Ge</name>
+    </author>
+    <author>
+      <name>Lu Qiu</name>
+    </author>
+    <author>
+      <name>Ying Shan</name>
+    </author>
+    <author>
+      <name>Xihui Liu</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Technical Report (In Progress); Code released at:
+  https://github.com/TencentARC/SEED-Bench-R1</arxiv:comment>
+    <link href="http://arxiv.org/abs/2503.24376v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2503.24376v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
