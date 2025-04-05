@@ -3,252 +3,252 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-04-03T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">416362</opensearch:totalResults>
+  <updated>2025-04-04T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">416601</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2504.01961v1</id>
-    <updated>2025-04-02T17:59:57Z</updated>
-    <published>2025-04-02T17:59:57Z</published>
-    <title>Learning from Streaming Video with Orthogonal Gradients</title>
-    <summary>  We address the challenge of representation learning from a continuous stream
-of video as input, in a self-supervised manner. This differs from the standard
-approaches to video learning where videos are chopped and shuffled during
-training in order to create a non-redundant batch that satisfies the
-independently and identically distributed (IID) sample assumption expected by
-conventional training paradigms. When videos are only available as a continuous
-stream of input, the IID assumption is evidently broken, leading to poor
-performance. We demonstrate the drop in performance when moving from shuffled
-to sequential learning on three tasks: the one-video representation learning
-method DoRA, standard VideoMAE on multi-video datasets, and the task of future
-video prediction. To address this drop, we propose a geometric modification to
-standard optimizers, to decorrelate batches by utilising orthogonal gradients
-during training. The proposed modification can be applied to any optimizer --
-we demonstrate it with Stochastic Gradient Descent (SGD) and AdamW. Our
-proposed orthogonal optimizer allows models trained from streaming videos to
-alleviate the drop in representation learning performance, as evaluated on
-downstream tasks. On three scenarios (DoRA, VideoMAE, future prediction), we
-show our orthogonal optimizer outperforms the strong AdamW in all three
-scenarios.
+    <id>http://arxiv.org/abs/2504.02827v1</id>
+    <updated>2025-04-03T17:59:56Z</updated>
+    <published>2025-04-03T17:59:56Z</published>
+    <title>On Vanishing Variance in Transformer Length Generalization</title>
+    <summary>  It is a widely known issue that Transformers, when trained on shorter
+sequences, fail to generalize robustly to longer ones at test time. This raises
+the question of whether Transformer models are real reasoning engines, despite
+their impressive abilities in mathematical problem solving and code synthesis.
+In this paper, we offer a vanishing variance perspective on this issue. To the
+best of our knowledge, we are the first to demonstrate that even for today's
+frontier models, a longer sequence length results in a decrease in variance in
+the output of the multi-head attention modules. On the argmax retrieval and
+dictionary lookup tasks, our experiments show that applying layer normalization
+after the attention outputs leads to significantly better length
+generalization. Our analyses attribute this improvement to a reduction-though
+not a complete elimination-of the distribution shift caused by vanishing
+variance.
 </summary>
     <author>
-      <name>Tengda Han</name>
+      <name>Ruining Li</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Jinghao</arxiv:affiliation>
     </author>
     <author>
-      <name>Dilara Gokay</name>
+      <name>Gabrijel Boduljak</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Jinghao</arxiv:affiliation>
     </author>
     <author>
-      <name>Joseph Heyward</name>
+      <name> Jensen</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Jinghao</arxiv:affiliation>
     </author>
     <author>
-      <name>Chuhan Zhang</name>
+      <name> Zhou</name>
     </author>
-    <author>
-      <name>Daniel Zoran</name>
-    </author>
-    <author>
-      <name>Viorica Pătrăucean</name>
-    </author>
-    <author>
-      <name>João Carreira</name>
-    </author>
-    <author>
-      <name>Dima Damen</name>
-    </author>
-    <author>
-      <name>Andrew Zisserman</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">CVPR2025</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.01961v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.01961v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.01960v1</id>
-    <updated>2025-04-02T17:59:46Z</updated>
-    <published>2025-04-02T17:59:46Z</published>
-    <title>Diffusion-Guided Gaussian Splatting for Large-Scale Unconstrained 3D
-  Reconstruction and Novel View Synthesis</title>
-    <summary>  Recent advancements in 3D Gaussian Splatting (3DGS) and Neural Radiance
-Fields (NeRF) have achieved impressive results in real-time 3D reconstruction
-and novel view synthesis. However, these methods struggle in large-scale,
-unconstrained environments where sparse and uneven input coverage, transient
-occlusions, appearance variability, and inconsistent camera settings lead to
-degraded quality. We propose GS-Diff, a novel 3DGS framework guided by a
-multi-view diffusion model to address these limitations. By generating
-pseudo-observations conditioned on multi-view inputs, our method transforms
-under-constrained 3D reconstruction problems into well-posed ones, enabling
-robust optimization even with sparse data. GS-Diff further integrates several
-enhancements, including appearance embedding, monocular depth priors, dynamic
-object modeling, anisotropy regularization, and advanced rasterization
-techniques, to tackle geometric and photometric challenges in real-world
-settings. Experiments on four benchmarks demonstrate that GS-Diff consistently
-outperforms state-of-the-art baselines by significant margins.
-</summary>
-    <author>
-      <name>Niluthpol Chowdhury Mithun</name>
-    </author>
-    <author>
-      <name>Tuan Pham</name>
-    </author>
-    <author>
-      <name>Qiao Wang</name>
-    </author>
-    <author>
-      <name>Ben Southall</name>
-    </author>
-    <author>
-      <name>Kshitij Minhas</name>
-    </author>
-    <author>
-      <name>Bogdan Matei</name>
-    </author>
-    <author>
-      <name>Stephan Mandt</name>
-    </author>
-    <author>
-      <name>Supun Samarasekera</name>
-    </author>
-    <author>
-      <name>Rakesh Kumar</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">WACV ULTRRA Workshop 2025</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.01960v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.01960v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://ruiningli.com/vanishing-variance. The first two
+  authors contributed equally to this work</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.02827v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.02827v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.01959v1</id>
-    <updated>2025-04-02T17:59:45Z</updated>
-    <published>2025-04-02T17:59:45Z</published>
-    <title>Slot-Level Robotic Placement via Visual Imitation from Single Human
-  Video</title>
-    <summary>  The majority of modern robot learning methods focus on learning a set of
-pre-defined tasks with limited or no generalization to new tasks. Extending the
-robot skillset to novel tasks involves gathering an extensive amount of
-training data for additional tasks. In this paper, we address the problem of
-teaching new tasks to robots using human demonstration videos for repetitive
-tasks (e.g., packing). This task requires understanding the human video to
-identify which object is being manipulated (the pick object) and where it is
-being placed (the placement slot). In addition, it needs to re-identify the
-pick object and the placement slots during inference along with the relative
-poses to enable robot execution of the task. To tackle this, we propose SLeRP,
-a modular system that leverages several advanced visual foundation models and a
-novel slot-level placement detector Slot-Net, eliminating the need for
-expensive video demonstrations for training. We evaluate our system using a new
-benchmark of real-world videos. The evaluation results show that SLeRP
-outperforms several baselines and can be deployed on a real robot.
+    <id>http://arxiv.org/abs/2504.02823v1</id>
+    <updated>2025-04-03T17:59:12Z</updated>
+    <published>2025-04-03T17:59:12Z</published>
+    <title>STING-BEE: Towards Vision-Language Model for Real-World X-ray Baggage
+  Security Inspection</title>
+    <summary>  Advancements in Computer-Aided Screening (CAS) systems are essential for
+improving the detection of security threats in X-ray baggage scans. However,
+current datasets are limited in representing real-world, sophisticated threats
+and concealment tactics, and existing approaches are constrained by a
+closed-set paradigm with predefined labels. To address these challenges, we
+introduce STCray, the first multimodal X-ray baggage security dataset,
+comprising 46,642 image-caption paired scans across 21 threat categories,
+generated using an X-ray scanner for airport security. STCray is meticulously
+developed with our specialized protocol that ensures domain-aware, coherent
+captions, that lead to the multi-modal instruction following data in X-ray
+baggage security. This allows us to train a domain-aware visual AI assistant
+named STING-BEE that supports a range of vision-language tasks, including scene
+comprehension, referring threat localization, visual grounding, and visual
+question answering (VQA), establishing novel baselines for multi-modal learning
+in X-ray baggage security. Further, STING-BEE shows state-of-the-art
+generalization in cross-domain settings. Code, data, and models are available
+at https://divs1159.github.io/STING-BEE/.
 </summary>
     <author>
-      <name>Dandan Shan</name>
+      <name>Divya Velayudhan</name>
     </author>
     <author>
-      <name>Kaichun Mo</name>
+      <name>Abdelfatah Ahmed</name>
     </author>
     <author>
-      <name>Wei Yang</name>
+      <name>Mohamad Alansari</name>
     </author>
     <author>
-      <name>Yu-Wei Chao</name>
+      <name>Neha Gour</name>
     </author>
     <author>
-      <name>David Fouhey</name>
+      <name>Abderaouf Behouch</name>
     </author>
     <author>
-      <name>Dieter Fox</name>
+      <name>Taimur Hassan</name>
     </author>
     <author>
-      <name>Arsalan Mousavian</name>
-    </author>
-    <link href="http://arxiv.org/abs/2504.01959v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.01959v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.01957v2</id>
-    <updated>2025-04-03T07:01:32Z</updated>
-    <published>2025-04-02T17:59:38Z</published>
-    <title>Toward Real-world BEV Perception: Depth Uncertainty Estimation via
-  Gaussian Splatting</title>
-    <summary>  Bird's-eye view (BEV) perception has gained significant attention because it
-provides a unified representation to fuse multiple view images and enables a
-wide range of down-stream autonomous driving tasks, such as forecasting and
-planning. Recent state-of-the-art models utilize projection-based methods which
-formulate BEV perception as query learning to bypass explicit depth estimation.
-While we observe promising advancements in this paradigm, they still fall short
-of real-world applications because of the lack of uncertainty modeling and
-expensive computational requirement. In this work, we introduce GaussianLSS, a
-novel uncertainty-aware BEV perception framework that revisits
-unprojection-based methods, specifically the Lift-Splat-Shoot (LSS) paradigm,
-and enhances them with depth un-certainty modeling. GaussianLSS represents
-spatial dispersion by learning a soft depth mean and computing the variance of
-the depth distribution, which implicitly captures object extents. We then
-transform the depth distribution into 3D Gaussians and rasterize them to
-construct uncertainty-aware BEV features. We evaluate GaussianLSS on the
-nuScenes dataset, achieving state-of-the-art performance compared to
-unprojection-based methods. In particular, it provides significant advantages
-in speed, running 2.5x faster, and in memory efficiency, using 0.3x less memory
-compared to projection-based methods, while achieving competitive performance
-with only a 0.4% IoU difference.
-</summary>
-    <author>
-      <name>Shu-Wei Lu</name>
+      <name>Syed Talal Wasim</name>
     </author>
     <author>
-      <name>Yi-Hsuan Tsai</name>
+      <name>Nabil Maalej</name>
     </author>
     <author>
-      <name>Yi-Ting Chen</name>
+      <name>Muzammal Naseer</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted to CVPR'25. https://hcis-lab.github.io/GaussianLSS/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.01957v2" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.01957v2" rel="related" type="application/pdf"/>
+    <author>
+      <name>Juergen Gall</name>
+    </author>
+    <author>
+      <name>Mohammed Bennamoun</name>
+    </author>
+    <author>
+      <name>Ernesto Damiani</name>
+    </author>
+    <author>
+      <name>Naoufel Werghi</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted at CVPR 2025</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.02823v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.02823v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.01953v1</id>
-    <updated>2025-04-02T17:56:57Z</updated>
-    <published>2025-04-02T17:56:57Z</published>
-    <title>Deep Representation Learning for Unsupervised Clustering of Myocardial
-  Fiber Trajectories in Cardiac Diffusion Tensor Imaging</title>
-    <summary>  Understanding the complex myocardial architecture is critical for diagnosing
-and treating heart disease. However, existing methods often struggle to
-accurately capture this intricate structure from Diffusion Tensor Imaging (DTI)
-data, particularly due to the lack of ground truth labels and the ambiguous,
-intertwined nature of fiber trajectories. We present a novel deep learning
-framework for unsupervised clustering of myocardial fibers, providing a
-data-driven approach to identifying distinct fiber bundles. We uniquely combine
-a Bidirectional Long Short-Term Memory network to capture local sequential
-information along fibers, with a Transformer autoencoder to learn global shape
-features, with pointwise incorporation of essential anatomical context.
-Clustering these representations using a density-based algorithm identifies 33
-to 62 robust clusters, successfully capturing the subtle distinctions in fiber
-trajectories with varying levels of granularity. Our framework offers a new,
-flexible, and quantitative way to analyze myocardial structure, achieving a
-level of delineation that, to our knowledge, has not been previously achieved,
-with potential applications in improving surgical planning, characterizing
-disease-related remodeling, and ultimately, advancing personalized cardiac
-care.
-</summary>
-    <author>
-      <name>Mohini Anand</name>
-    </author>
-    <author>
-      <name>Xavier Tricoche</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">10 pages, 5 figures. Submitted to MICCAI 2025 (under review)</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.01953v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.01953v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.02822v1</id>
+    <updated>2025-04-03T17:58:44Z</updated>
+    <published>2025-04-03T17:58:44Z</published>
+    <title>Do Two AI Scientists Agree?</title>
+    <summary>  When two AI models are trained on the same scientific task, do they learn the
+same theory or two different theories? Throughout history of science, we have
+witnessed the rise and fall of theories driven by experimental validation or
+falsification: many theories may co-exist when experimental data is lacking,
+but the space of survived theories become more constrained with more
+experimental data becoming available. We show the same story is true for AI
+scientists. With increasingly more systems provided in training data, AI
+scientists tend to converge in the theories they learned, although sometimes
+they form distinct groups corresponding to different theories. To
+mechanistically interpret what theories AI scientists learn and quantify their
+agreement, we propose MASS, Hamiltonian-Lagrangian neural networks as AI
+Scientists, trained on standard problems in physics, aggregating training
+results across many seeds simulating the different configurations of AI
+scientists. Our findings suggests for AI scientists switch from learning a
+Hamiltonian theory in simple setups to a Lagrangian formulation when more
+complex systems are introduced. We also observe strong seed dependence of the
+training dynamics and final learned weights, controlling the rise and fall of
+relevant theories. We finally demonstrate that not only can our neural networks
+aid interpretability, it can also be applied to higher dimensional problems.
+</summary>
+    <author>
+      <name>Xinghong Fu</name>
+    </author>
+    <author>
+      <name>Ziming Liu</name>
+    </author>
+    <author>
+      <name>Max Tegmark</name>
+    </author>
+    <link href="http://arxiv.org/abs/2504.02822v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.02822v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.02821v1</id>
+    <updated>2025-04-03T17:58:35Z</updated>
+    <published>2025-04-03T17:58:35Z</published>
+    <title>Sparse Autoencoders Learn Monosemantic Features in Vision-Language
+  Models</title>
+    <summary>  Sparse Autoencoders (SAEs) have recently been shown to enhance
+interpretability and steerability in Large Language Models (LLMs). In this
+work, we extend the application of SAEs to Vision-Language Models (VLMs), such
+as CLIP, and introduce a comprehensive framework for evaluating monosemanticity
+in vision representations. Our experimental results reveal that SAEs trained on
+VLMs significantly enhance the monosemanticity of individual neurons while also
+exhibiting hierarchical representations that align well with expert-defined
+structures (e.g., iNaturalist taxonomy). Most notably, we demonstrate that
+applying SAEs to intervene on a CLIP vision encoder, directly steer output from
+multimodal LLMs (e.g., LLaVA) without any modifications to the underlying
+model. These findings emphasize the practicality and efficacy of SAEs as an
+unsupervised approach for enhancing both the interpretability and control of
+VLMs.
+</summary>
+    <author>
+      <name>Mateusz Pach</name>
+    </author>
+    <author>
+      <name>Shyamgopal Karthik</name>
+    </author>
+    <author>
+      <name>Quentin Bouniot</name>
+    </author>
+    <author>
+      <name>Serge Belongie</name>
+    </author>
+    <author>
+      <name>Zeynep Akata</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Preprint. The code is available at
+  https://github.com/ExplainableML/sae-for-vlm</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.02821v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.02821v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.02819v1</id>
+    <updated>2025-04-03T17:58:18Z</updated>
+    <published>2025-04-03T17:58:18Z</published>
+    <title>GMR-Conv: An Efficient Rotation and Reflection Equivariant Convolution
+  Kernel Using Gaussian Mixture Rings</title>
+    <summary>  Symmetry, where certain features remain invariant under geometric
+transformations, can often serve as a powerful prior in designing convolutional
+neural networks (CNNs). While conventional CNNs inherently support
+translational equivariance, extending this property to rotation and reflection
+has proven challenging, often forcing a compromise between equivariance,
+efficiency, and information loss. In this work, we introduce Gaussian Mixture
+Ring Convolution (GMR-Conv), an efficient convolution kernel that smooths
+radial symmetry using a mixture of Gaussian-weighted rings. This design
+mitigates discretization errors of circular kernels, thereby preserving robust
+rotation and reflection equivariance without incurring computational overhead.
+We further optimize both the space and speed efficiency of GMR-Conv via a novel
+parameterization and computation strategy, allowing larger kernels at an
+acceptable cost. Extensive experiments on eight classification and one
+segmentation datasets demonstrate that GMR-Conv not only matches conventional
+CNNs' performance but can also surpass it in applications with orientation-less
+data. GMR-Conv is also proven to be more robust and efficient than the
+state-of-the-art equivariant learning methods. Our work provides inspiring
+empirical evidence that carefully applied radial symmetry can alleviate the
+challenges of information loss, marking a promising advance in equivariant
+network architectures. The code is available at
+https://github.com/XYPB/GMR-Conv.
+</summary>
+    <author>
+      <name>Yuexi Du</name>
+    </author>
+    <author>
+      <name>Jiazhen Zhang</name>
+    </author>
+    <author>
+      <name>Nicha C. Dvornek</name>
+    </author>
+    <author>
+      <name>John A. Onofrey</name>
+    </author>
+    <link href="http://arxiv.org/abs/2504.02819v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.02819v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
