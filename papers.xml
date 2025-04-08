@@ -3,252 +3,817 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-04-06T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">416601</opensearch:totalResults>
+  <updated>2025-04-07T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">416842</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2504.02827v1</id>
-    <updated>2025-04-03T17:59:56Z</updated>
-    <published>2025-04-03T17:59:56Z</published>
-    <title>On Vanishing Variance in Transformer Length Generalization</title>
-    <summary>  It is a widely known issue that Transformers, when trained on shorter
-sequences, fail to generalize robustly to longer ones at test time. This raises
-the question of whether Transformer models are real reasoning engines, despite
-their impressive abilities in mathematical problem solving and code synthesis.
-In this paper, we offer a vanishing variance perspective on this issue. To the
-best of our knowledge, we are the first to demonstrate that even for today's
-frontier models, a longer sequence length results in a decrease in variance in
-the output of the multi-head attention modules. On the argmax retrieval and
-dictionary lookup tasks, our experiments show that applying layer normalization
-after the attention outputs leads to significantly better length
-generalization. Our analyses attribute this improvement to a reduction-though
-not a complete elimination-of the distribution shift caused by vanishing
-variance.
+    <id>http://arxiv.org/abs/2504.03639v1</id>
+    <updated>2025-04-04T17:59:10Z</updated>
+    <published>2025-04-04T17:59:10Z</published>
+    <title>Shape My Moves: Text-Driven Shape-Aware Synthesis of Human Motions</title>
+    <summary>  We explore how body shapes influence human motion synthesis, an aspect often
+overlooked in existing text-to-motion generation methods due to the ease of
+learning a homogenized, canonical body shape. However, this homogenization can
+distort the natural correlations between different body shapes and their motion
+dynamics. Our method addresses this gap by generating body-shape-aware human
+motions from natural language prompts. We utilize a finite scalar
+quantization-based variational autoencoder (FSQ-VAE) to quantize motion into
+discrete tokens and then leverage continuous body shape information to
+de-quantize these tokens back into continuous, detailed motion. Additionally,
+we harness the capabilities of a pretrained language model to predict both
+continuous shape parameters and motion tokens, facilitating the synthesis of
+text-aligned motions and decoding them into shape-aware motions. We evaluate
+our method quantitatively and qualitatively, and also conduct a comprehensive
+perceptual study to demonstrate its efficacy in generating shape-aware motions.
 </summary>
     <author>
-      <name>Ruining Li</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Jinghao</arxiv:affiliation>
+      <name>Ting-Hsuan Liao</name>
     </author>
     <author>
-      <name>Gabrijel Boduljak</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Jinghao</arxiv:affiliation>
+      <name>Yi Zhou</name>
     </author>
     <author>
-      <name> Jensen</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Jinghao</arxiv:affiliation>
+      <name>Yu Shen</name>
     </author>
     <author>
-      <name> Zhou</name>
+      <name>Chun-Hao Paul Huang</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://ruiningli.com/vanishing-variance. The first two
-  authors contributed equally to this work</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.02827v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.02827v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Saayan Mitra</name>
+    </author>
+    <author>
+      <name>Jia-Bin Huang</name>
+    </author>
+    <author>
+      <name>Uttaran Bhattacharya</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">CVPR 2025. Project page: https://shape-move.github.io</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.03639v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.03639v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.03626v1</id>
+    <updated>2025-04-04T17:44:22Z</updated>
+    <published>2025-04-04T17:44:22Z</published>
+    <title>Quantum Speedups for Markov Chain Monte Carlo Methods with Application
+  to Optimization</title>
+    <summary>  We propose quantum algorithms that provide provable speedups for Markov Chain
+Monte Carlo (MCMC) methods commonly used for sampling from probability
+distributions of the form $\pi \propto e^{-f}$, where $f$ is a potential
+function. Our first approach considers Gibbs sampling for finite-sum potentials
+in the stochastic setting, employing an oracle that provides gradients of
+individual functions. In the second setting, we consider access only to a
+stochastic evaluation oracle, allowing simultaneous queries at two points of
+the potential function under the same stochastic parameter. By introducing
+novel techniques for stochastic gradient estimation, our algorithms improve the
+gradient and evaluation complexities of classical samplers, such as Hamiltonian
+Monte Carlo (HMC) and Langevin Monte Carlo (LMC) in terms of dimension,
+precision, and other problem-dependent parameters. Furthermore, we achieve
+quantum speedups in optimization, particularly for minimizing non-smooth and
+approximately convex functions that commonly appear in empirical risk
+minimization problems.
+</summary>
+    <author>
+      <name>Guneykan Ozgul</name>
+    </author>
+    <author>
+      <name>Xiantao Li</name>
+    </author>
+    <author>
+      <name>Mehrdad Mahdavi</name>
+    </author>
+    <author>
+      <name>Chunhao Wang</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">37 pages</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.03626v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.03626v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.03625v1</id>
+    <updated>2025-04-04T17:44:14Z</updated>
+    <published>2025-04-04T17:44:14Z</published>
+    <title>Reciprocity-Aware Convolutional Neural Networks for Map-Based Path Loss
+  Prediction</title>
+    <summary>  Path loss modeling is a widely used technique for estimating point-to-point
+losses along a communications link from transmitter (Tx) to receiver (Rx).
+Accurate path loss predictions can optimize use of the radio frequency spectrum
+and minimize unwanted interference. Modern path loss modeling often leverages
+data-driven approaches, using machine learning to train models on drive test
+measurement datasets. Drive tests primarily represent downlink scenarios, where
+the Tx is located on a building and the Rx is located on a moving vehicle.
+Consequently, trained models are frequently reserved for downlink coverage
+estimation, lacking representation of uplink scenarios. In this paper, we
+demonstrate that data augmentation can be used to train a path loss model that
+is generalized to uplink, downlink, and backhaul scenarios, training using only
+downlink drive test measurements. By adding a small number of synthetic samples
+representing uplink scenarios to the training set, root mean squared error is
+reduced by &gt;8 dB on uplink examples in the test set.
+</summary>
+    <author>
+      <name>Ryan G. Dempsey</name>
+    </author>
+    <author>
+      <name>Jonathan Ethier</name>
+    </author>
+    <author>
+      <name>Halim Yanikomeroglu</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">6 pages, 6 figures, 7 tables</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.03625v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.03625v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.02823v1</id>
-    <updated>2025-04-03T17:59:12Z</updated>
-    <published>2025-04-03T17:59:12Z</published>
-    <title>STING-BEE: Towards Vision-Language Model for Real-World X-ray Baggage
-  Security Inspection</title>
-    <summary>  Advancements in Computer-Aided Screening (CAS) systems are essential for
-improving the detection of security threats in X-ray baggage scans. However,
-current datasets are limited in representing real-world, sophisticated threats
-and concealment tactics, and existing approaches are constrained by a
-closed-set paradigm with predefined labels. To address these challenges, we
-introduce STCray, the first multimodal X-ray baggage security dataset,
-comprising 46,642 image-caption paired scans across 21 threat categories,
-generated using an X-ray scanner for airport security. STCray is meticulously
-developed with our specialized protocol that ensures domain-aware, coherent
-captions, that lead to the multi-modal instruction following data in X-ray
-baggage security. This allows us to train a domain-aware visual AI assistant
-named STING-BEE that supports a range of vision-language tasks, including scene
-comprehension, referring threat localization, visual grounding, and visual
-question answering (VQA), establishing novel baselines for multi-modal learning
-in X-ray baggage security. Further, STING-BEE shows state-of-the-art
-generalization in cross-domain settings. Code, data, and models are available
-at https://divs1159.github.io/STING-BEE/.
-</summary>
-    <author>
-      <name>Divya Velayudhan</name>
-    </author>
-    <author>
-      <name>Abdelfatah Ahmed</name>
-    </author>
-    <author>
-      <name>Mohamad Alansari</name>
-    </author>
-    <author>
-      <name>Neha Gour</name>
-    </author>
-    <author>
-      <name>Abderaouf Behouch</name>
-    </author>
-    <author>
-      <name>Taimur Hassan</name>
-    </author>
-    <author>
-      <name>Syed Talal Wasim</name>
-    </author>
-    <author>
-      <name>Nabil Maalej</name>
-    </author>
-    <author>
-      <name>Muzammal Naseer</name>
-    </author>
-    <author>
-      <name>Juergen Gall</name>
-    </author>
-    <author>
-      <name>Mohammed Bennamoun</name>
-    </author>
-    <author>
-      <name>Ernesto Damiani</name>
-    </author>
-    <author>
-      <name>Naoufel Werghi</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted at CVPR 2025</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.02823v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.02823v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.02822v1</id>
-    <updated>2025-04-03T17:58:44Z</updated>
-    <published>2025-04-03T17:58:44Z</published>
-    <title>Do Two AI Scientists Agree?</title>
-    <summary>  When two AI models are trained on the same scientific task, do they learn the
-same theory or two different theories? Throughout history of science, we have
-witnessed the rise and fall of theories driven by experimental validation or
-falsification: many theories may co-exist when experimental data is lacking,
-but the space of survived theories become more constrained with more
-experimental data becoming available. We show the same story is true for AI
-scientists. With increasingly more systems provided in training data, AI
-scientists tend to converge in the theories they learned, although sometimes
-they form distinct groups corresponding to different theories. To
-mechanistically interpret what theories AI scientists learn and quantify their
-agreement, we propose MASS, Hamiltonian-Lagrangian neural networks as AI
-Scientists, trained on standard problems in physics, aggregating training
-results across many seeds simulating the different configurations of AI
-scientists. Our findings suggests for AI scientists switch from learning a
-Hamiltonian theory in simple setups to a Lagrangian formulation when more
-complex systems are introduced. We also observe strong seed dependence of the
-training dynamics and final learned weights, controlling the rise and fall of
-relevant theories. We finally demonstrate that not only can our neural networks
-aid interpretability, it can also be applied to higher dimensional problems.
-</summary>
-    <author>
-      <name>Xinghong Fu</name>
-    </author>
-    <author>
-      <name>Ziming Liu</name>
-    </author>
-    <author>
-      <name>Max Tegmark</name>
-    </author>
-    <link href="http://arxiv.org/abs/2504.02822v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.02822v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.02821v1</id>
-    <updated>2025-04-03T17:58:35Z</updated>
-    <published>2025-04-03T17:58:35Z</published>
-    <title>Sparse Autoencoders Learn Monosemantic Features in Vision-Language
-  Models</title>
-    <summary>  Sparse Autoencoders (SAEs) have recently been shown to enhance
-interpretability and steerability in Large Language Models (LLMs). In this
-work, we extend the application of SAEs to Vision-Language Models (VLMs), such
-as CLIP, and introduce a comprehensive framework for evaluating monosemanticity
-in vision representations. Our experimental results reveal that SAEs trained on
-VLMs significantly enhance the monosemanticity of individual neurons while also
-exhibiting hierarchical representations that align well with expert-defined
-structures (e.g., iNaturalist taxonomy). Most notably, we demonstrate that
-applying SAEs to intervene on a CLIP vision encoder, directly steer output from
-multimodal LLMs (e.g., LLaVA) without any modifications to the underlying
-model. These findings emphasize the practicality and efficacy of SAEs as an
-unsupervised approach for enhancing both the interpretability and control of
-VLMs.
-</summary>
-    <author>
-      <name>Mateusz Pach</name>
-    </author>
-    <author>
-      <name>Shyamgopal Karthik</name>
-    </author>
-    <author>
-      <name>Quentin Bouniot</name>
-    </author>
-    <author>
-      <name>Serge Belongie</name>
-    </author>
-    <author>
-      <name>Zeynep Akata</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Preprint. The code is available at
-  https://github.com/ExplainableML/sae-for-vlm</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.02821v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.02821v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.02819v1</id>
-    <updated>2025-04-03T17:58:18Z</updated>
-    <published>2025-04-03T17:58:18Z</published>
-    <title>GMR-Conv: An Efficient Rotation and Reflection Equivariant Convolution
-  Kernel Using Gaussian Mixture Rings</title>
-    <summary>  Symmetry, where certain features remain invariant under geometric
-transformations, can often serve as a powerful prior in designing convolutional
-neural networks (CNNs). While conventional CNNs inherently support
-translational equivariance, extending this property to rotation and reflection
-has proven challenging, often forcing a compromise between equivariance,
-efficiency, and information loss. In this work, we introduce Gaussian Mixture
-Ring Convolution (GMR-Conv), an efficient convolution kernel that smooths
-radial symmetry using a mixture of Gaussian-weighted rings. This design
-mitigates discretization errors of circular kernels, thereby preserving robust
-rotation and reflection equivariance without incurring computational overhead.
-We further optimize both the space and speed efficiency of GMR-Conv via a novel
-parameterization and computation strategy, allowing larger kernels at an
-acceptable cost. Extensive experiments on eight classification and one
-segmentation datasets demonstrate that GMR-Conv not only matches conventional
-CNNs' performance but can also surpass it in applications with orientation-less
-data. GMR-Conv is also proven to be more robust and efficient than the
-state-of-the-art equivariant learning methods. Our work provides inspiring
-empirical evidence that carefully applied radial symmetry can alleviate the
-challenges of information loss, marking a promising advance in equivariant
-network architectures. The code is available at
-https://github.com/XYPB/GMR-Conv.
-</summary>
-    <author>
-      <name>Yuexi Du</name>
-    </author>
-    <author>
-      <name>Jiazhen Zhang</name>
-    </author>
-    <author>
-      <name>Nicha C. Dvornek</name>
-    </author>
-    <author>
-      <name>John A. Onofrey</name>
-    </author>
-    <link href="http://arxiv.org/abs/2504.02819v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.02819v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.03624v1</id>
+    <updated>2025-04-04T17:41:58Z</updated>
+    <published>2025-04-04T17:41:58Z</published>
+    <title>Nemotron-H: A Family of Accurate and Efficient Hybrid Mamba-Transformer
+  Models</title>
+    <summary>  As inference-time scaling becomes critical for enhanced reasoning
+capabilities, it is increasingly becoming important to build models that are
+efficient to infer. We introduce Nemotron-H, a family of 8B and 56B/47B hybrid
+Mamba-Transformer models designed to reduce inference cost for a given accuracy
+level. To achieve this goal, we replace the majority of self-attention layers
+in the common Transformer model architecture with Mamba layers that perform
+constant computation and require constant memory per generated token. We show
+that Nemotron-H models offer either better or on-par accuracy compared to other
+similarly-sized state-of-the-art open-sourced Transformer models (e.g.,
+Qwen-2.5-7B/72B and Llama-3.1-8B/70B), while being up to 3$\times$ faster at
+inference. To further increase inference speed and reduce the memory required
+at inference time, we created Nemotron-H-47B-Base from the 56B model using a
+new compression via pruning and distillation technique called MiniPuzzle.
+Nemotron-H-47B-Base achieves similar accuracy to the 56B model, but is 20%
+faster to infer. In addition, we introduce an FP8-based training recipe and
+show that it can achieve on par results with BF16-based training. This recipe
+is used to train the 56B model. All Nemotron-H models will be released, with
+support in Hugging Face, NeMo, and Megatron-LM.
+</summary>
+    <author>
+      <name> NVIDIA</name>
+    </author>
+    <author>
+      <name> :</name>
+    </author>
+    <author>
+      <name>Aaron Blakeman</name>
+    </author>
+    <author>
+      <name>Aarti Basant</name>
+    </author>
+    <author>
+      <name>Abhinav Khattar</name>
+    </author>
+    <author>
+      <name>Adithya Renduchintala</name>
+    </author>
+    <author>
+      <name>Akhiad Bercovich</name>
+    </author>
+    <author>
+      <name>Aleksander Ficek</name>
+    </author>
+    <author>
+      <name>Alexis Bjorlin</name>
+    </author>
+    <author>
+      <name>Ali Taghibakhshi</name>
+    </author>
+    <author>
+      <name>Amala Sanjay Deshmukh</name>
+    </author>
+    <author>
+      <name>Ameya Sunil Mahabaleshwarkar</name>
+    </author>
+    <author>
+      <name>Andrew Tao</name>
+    </author>
+    <author>
+      <name>Anna Shors</name>
+    </author>
+    <author>
+      <name>Ashwath Aithal</name>
+    </author>
+    <author>
+      <name>Ashwin Poojary</name>
+    </author>
+    <author>
+      <name>Ayush Dattagupta</name>
+    </author>
+    <author>
+      <name>Balaram Buddharaju</name>
+    </author>
+    <author>
+      <name>Bobby Chen</name>
+    </author>
+    <author>
+      <name>Boris Ginsburg</name>
+    </author>
+    <author>
+      <name>Boxin Wang</name>
+    </author>
+    <author>
+      <name>Brandon Norick</name>
+    </author>
+    <author>
+      <name>Brian Butterfield</name>
+    </author>
+    <author>
+      <name>Bryan Catanzaro</name>
+    </author>
+    <author>
+      <name>Carlo del Mundo</name>
+    </author>
+    <author>
+      <name>Chengyu Dong</name>
+    </author>
+    <author>
+      <name>Christine Harvey</name>
+    </author>
+    <author>
+      <name>Christopher Parisien</name>
+    </author>
+    <author>
+      <name>Dan Su</name>
+    </author>
+    <author>
+      <name>Daniel Korzekwa</name>
+    </author>
+    <author>
+      <name>Danny Yin</name>
+    </author>
+    <author>
+      <name>Daria Gitman</name>
+    </author>
+    <author>
+      <name>David Mosallanezhad</name>
+    </author>
+    <author>
+      <name>Deepak Narayanan</name>
+    </author>
+    <author>
+      <name>Denys Fridman</name>
+    </author>
+    <author>
+      <name>Dima Rekesh</name>
+    </author>
+    <author>
+      <name>Ding Ma</name>
+    </author>
+    <author>
+      <name>Dmytro Pykhtar</name>
+    </author>
+    <author>
+      <name>Dong Ahn</name>
+    </author>
+    <author>
+      <name>Duncan Riach</name>
+    </author>
+    <author>
+      <name>Dusan Stosic</name>
+    </author>
+    <author>
+      <name>Eileen Long</name>
+    </author>
+    <author>
+      <name>Elad Segal</name>
+    </author>
+    <author>
+      <name>Ellie Evans</name>
+    </author>
+    <author>
+      <name>Eric Chung</name>
+    </author>
+    <author>
+      <name>Erick Galinkin</name>
+    </author>
+    <author>
+      <name>Evelina Bakhturina</name>
+    </author>
+    <author>
+      <name>Ewa Dobrowolska</name>
+    </author>
+    <author>
+      <name>Fei Jia</name>
+    </author>
+    <author>
+      <name>Fuxiao Liu</name>
+    </author>
+    <author>
+      <name>Gargi Prasad</name>
+    </author>
+    <author>
+      <name>Gerald Shen</name>
+    </author>
+    <author>
+      <name>Guilin Liu</name>
+    </author>
+    <author>
+      <name>Guo Chen</name>
+    </author>
+    <author>
+      <name>Haifeng Qian</name>
+    </author>
+    <author>
+      <name>Helen Ngo</name>
+    </author>
+    <author>
+      <name>Hongbin Liu</name>
+    </author>
+    <author>
+      <name>Hui Li</name>
+    </author>
+    <author>
+      <name>Igor Gitman</name>
+    </author>
+    <author>
+      <name>Ilia Karmanov</name>
+    </author>
+    <author>
+      <name>Ivan Moshkov</name>
+    </author>
+    <author>
+      <name>Izik Golan</name>
+    </author>
+    <author>
+      <name>Jan Kautz</name>
+    </author>
+    <author>
+      <name>Jane Polak Scowcroft</name>
+    </author>
+    <author>
+      <name>Jared Casper</name>
+    </author>
+    <author>
+      <name>Jarno Seppanen</name>
+    </author>
+    <author>
+      <name>Jason Lu</name>
+    </author>
+    <author>
+      <name>Jason Sewall</name>
+    </author>
+    <author>
+      <name>Jiaqi Zeng</name>
+    </author>
+    <author>
+      <name>Jiaxuan You</name>
+    </author>
+    <author>
+      <name>Jimmy Zhang</name>
+    </author>
+    <author>
+      <name>Jing Zhang</name>
+    </author>
+    <author>
+      <name>Jining Huang</name>
+    </author>
+    <author>
+      <name>Jinze Xue</name>
+    </author>
+    <author>
+      <name>Jocelyn Huang</name>
+    </author>
+    <author>
+      <name>Joey Conway</name>
+    </author>
+    <author>
+      <name>John Kamalu</name>
+    </author>
+    <author>
+      <name>Jon Barker</name>
+    </author>
+    <author>
+      <name>Jonathan Cohen</name>
+    </author>
+    <author>
+      <name>Joseph Jennings</name>
+    </author>
+    <author>
+      <name>Jupinder Parmar</name>
+    </author>
+    <author>
+      <name>Karan Sapra</name>
+    </author>
+    <author>
+      <name>Kari Briski</name>
+    </author>
+    <author>
+      <name>Kateryna Chumachenko</name>
+    </author>
+    <author>
+      <name>Katherine Luna</name>
+    </author>
+    <author>
+      <name>Keshav Santhanam</name>
+    </author>
+    <author>
+      <name>Kezhi Kong</name>
+    </author>
+    <author>
+      <name>Kirthi Sivamani</name>
+    </author>
+    <author>
+      <name>Krzysztof Pawelec</name>
+    </author>
+    <author>
+      <name>Kumar Anik</name>
+    </author>
+    <author>
+      <name>Kunlun Li</name>
+    </author>
+    <author>
+      <name>Lawrence McAfee</name>
+    </author>
+    <author>
+      <name>Leon Derczynski</name>
+    </author>
+    <author>
+      <name>Lindsey Pavao</name>
+    </author>
+    <author>
+      <name>Luis Vega</name>
+    </author>
+    <author>
+      <name>Lukas Voegtle</name>
+    </author>
+    <author>
+      <name>Maciej Bala</name>
+    </author>
+    <author>
+      <name>Maer Rodrigues de Melo</name>
+    </author>
+    <author>
+      <name>Makesh Narsimhan Sreedhar</name>
+    </author>
+    <author>
+      <name>Marcin Chochowski</name>
+    </author>
+    <author>
+      <name>Markus Kliegl</name>
+    </author>
+    <author>
+      <name>Marta Stepniewska-Dziubinska</name>
+    </author>
+    <author>
+      <name>Matthieu Le</name>
+    </author>
+    <author>
+      <name>Matvei Novikov</name>
+    </author>
+    <author>
+      <name>Mehrzad Samadi</name>
+    </author>
+    <author>
+      <name>Michael Andersch</name>
+    </author>
+    <author>
+      <name>Michael Evans</name>
+    </author>
+    <author>
+      <name>Miguel Martinez</name>
+    </author>
+    <author>
+      <name>Mike Chrzanowski</name>
+    </author>
+    <author>
+      <name>Mike Ranzinger</name>
+    </author>
+    <author>
+      <name>Mikolaj Blaz</name>
+    </author>
+    <author>
+      <name>Misha Smelyanskiy</name>
+    </author>
+    <author>
+      <name>Mohamed Fawzy</name>
+    </author>
+    <author>
+      <name>Mohammad Shoeybi</name>
+    </author>
+    <author>
+      <name>Mostofa Patwary</name>
+    </author>
+    <author>
+      <name>Nayeon Lee</name>
+    </author>
+    <author>
+      <name>Nima Tajbakhsh</name>
+    </author>
+    <author>
+      <name>Ning Xu</name>
+    </author>
+    <author>
+      <name>Oleg Rybakov</name>
+    </author>
+    <author>
+      <name>Oleksii Kuchaiev</name>
+    </author>
+    <author>
+      <name>Olivier Delalleau</name>
+    </author>
+    <author>
+      <name>Osvald Nitski</name>
+    </author>
+    <author>
+      <name>Parth Chadha</name>
+    </author>
+    <author>
+      <name>Pasha Shamis</name>
+    </author>
+    <author>
+      <name>Paulius Micikevicius</name>
+    </author>
+    <author>
+      <name>Pavlo Molchanov</name>
+    </author>
+    <author>
+      <name>Peter Dykas</name>
+    </author>
+    <author>
+      <name>Philipp Fischer</name>
+    </author>
+    <author>
+      <name>Pierre-Yves Aquilanti</name>
+    </author>
+    <author>
+      <name>Piotr Bialecki</name>
+    </author>
+    <author>
+      <name>Prasoon Varshney</name>
+    </author>
+    <author>
+      <name>Pritam Gundecha</name>
+    </author>
+    <author>
+      <name>Przemek Tredak</name>
+    </author>
+    <author>
+      <name>Rabeeh Karimi</name>
+    </author>
+    <author>
+      <name>Rahul Kandu</name>
+    </author>
+    <author>
+      <name>Ran El-Yaniv</name>
+    </author>
+    <author>
+      <name>Raviraj Joshi</name>
+    </author>
+    <author>
+      <name>Roger Waleffe</name>
+    </author>
+    <author>
+      <name>Ruoxi Zhang</name>
+    </author>
+    <author>
+      <name>Sabrina Kavanaugh</name>
+    </author>
+    <author>
+      <name>Sahil Jain</name>
+    </author>
+    <author>
+      <name>Samuel Kriman</name>
+    </author>
+    <author>
+      <name>Sangkug Lym</name>
+    </author>
+    <author>
+      <name>Sanjeev Satheesh</name>
+    </author>
+    <author>
+      <name>Saurav Muralidharan</name>
+    </author>
+    <author>
+      <name>Sean Narenthiran</name>
+    </author>
+    <author>
+      <name>Selvaraj Anandaraj</name>
+    </author>
+    <author>
+      <name>Seonmyeong Bak</name>
+    </author>
+    <author>
+      <name>Sergey Kashirsky</name>
+    </author>
+    <author>
+      <name>Seungju Han</name>
+    </author>
+    <author>
+      <name>Shantanu Acharya</name>
+    </author>
+    <author>
+      <name>Shaona Ghosh</name>
+    </author>
+    <author>
+      <name>Sharath Turuvekere Sreenivas</name>
+    </author>
+    <author>
+      <name>Sharon Clay</name>
+    </author>
+    <author>
+      <name>Shelby Thomas</name>
+    </author>
+    <author>
+      <name>Shrimai Prabhumoye</name>
+    </author>
+    <author>
+      <name>Shubham Pachori</name>
+    </author>
+    <author>
+      <name>Shubham Toshniwal</name>
+    </author>
+    <author>
+      <name>Shyamala Prayaga</name>
+    </author>
+    <author>
+      <name>Siddhartha Jain</name>
+    </author>
+    <author>
+      <name>Sirshak Das</name>
+    </author>
+    <author>
+      <name>Slawek Kierat</name>
+    </author>
+    <author>
+      <name>Somshubra Majumdar</name>
+    </author>
+    <author>
+      <name>Song Han</name>
+    </author>
+    <author>
+      <name>Soumye Singhal</name>
+    </author>
+    <author>
+      <name>Sriharsha Niverty</name>
+    </author>
+    <author>
+      <name>Stefania Alborghetti</name>
+    </author>
+    <author>
+      <name>Suseella Panguluri</name>
+    </author>
+    <author>
+      <name>Swetha Bhendigeri</name>
+    </author>
+    <author>
+      <name>Syeda Nahida Akter</name>
+    </author>
+    <author>
+      <name>Szymon Migacz</name>
+    </author>
+    <author>
+      <name>Tal Shiri</name>
+    </author>
+    <author>
+      <name>Terry Kong</name>
+    </author>
+    <author>
+      <name>Timo Roman</name>
+    </author>
+    <author>
+      <name>Tomer Ronen</name>
+    </author>
+    <author>
+      <name>Trisha Saar</name>
+    </author>
+    <author>
+      <name>Tugrul Konuk</name>
+    </author>
+    <author>
+      <name>Tuomas Rintamaki</name>
+    </author>
+    <author>
+      <name>Tyler Poon</name>
+    </author>
+    <author>
+      <name>Ushnish De</name>
+    </author>
+    <author>
+      <name>Vahid Noroozi</name>
+    </author>
+    <author>
+      <name>Varun Singh</name>
+    </author>
+    <author>
+      <name>Vijay Korthikanti</name>
+    </author>
+    <author>
+      <name>Vitaly Kurin</name>
+    </author>
+    <author>
+      <name>Wasi Uddin Ahmad</name>
+    </author>
+    <author>
+      <name>Wei Du</name>
+    </author>
+    <author>
+      <name>Wei Ping</name>
+    </author>
+    <author>
+      <name>Wenliang Dai</name>
+    </author>
+    <author>
+      <name>Wonmin Byeon</name>
+    </author>
+    <author>
+      <name>Xiaowei Ren</name>
+    </author>
+    <author>
+      <name>Yao Xu</name>
+    </author>
+    <author>
+      <name>Yejin Choi</name>
+    </author>
+    <author>
+      <name>Yian Zhang</name>
+    </author>
+    <author>
+      <name>Ying Lin</name>
+    </author>
+    <author>
+      <name>Yoshi Suhara</name>
+    </author>
+    <author>
+      <name>Zhiding Yu</name>
+    </author>
+    <author>
+      <name>Zhiqi Li</name>
+    </author>
+    <author>
+      <name>Zhiyu Li</name>
+    </author>
+    <author>
+      <name>Zhongbo Zhu</name>
+    </author>
+    <author>
+      <name>Zhuolin Yang</name>
+    </author>
+    <author>
+      <name>Zijia Chen</name>
+    </author>
+    <link href="http://arxiv.org/abs/2504.03624v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.03624v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.03622v1</id>
+    <updated>2025-04-04T17:40:04Z</updated>
+    <published>2025-04-04T17:40:04Z</published>
+    <title>Align to Structure: Aligning Large Language Models with Structural
+  Information</title>
+    <summary>  Generating long, coherent text remains a challenge for large language models
+(LLMs), as they lack hierarchical planning and structured organization in
+discourse generation. We introduce Structural Alignment, a novel method that
+aligns LLMs with human-like discourse structures to enhance long-form text
+generation. By integrating linguistically grounded discourse frameworks into
+reinforcement learning, our approach guides models to produce coherent and
+well-organized outputs. We employ a dense reward scheme within a Proximal
+Policy Optimization framework, assigning fine-grained, token-level rewards
+based on the discourse distinctiveness relative to human writing. Two
+complementary reward models are evaluated: the first improves readability by
+scoring surface-level textual features to provide explicit structuring, while
+the second reinforces deeper coherence and rhetorical sophistication by
+analyzing global discourse patterns through hierarchical discourse motifs,
+outperforming both standard and RLHF-enhanced models in tasks such as essay
+generation and long-document summarization. All training data and code will be
+publicly shared at https://github.com/minnesotanlp/struct_align.
+</summary>
+    <author>
+      <name>Zae Myung Kim</name>
+    </author>
+    <author>
+      <name>Anand Ramachandran</name>
+    </author>
+    <author>
+      <name>Farideh Tavazoee</name>
+    </author>
+    <author>
+      <name>Joo-Kyung Kim</name>
+    </author>
+    <author>
+      <name>Oleg Rokhlenko</name>
+    </author>
+    <author>
+      <name>Dongyeop Kang</name>
+    </author>
+    <link href="http://arxiv.org/abs/2504.03622v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.03622v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
