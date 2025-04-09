@@ -3,817 +3,224 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-04-07T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">416842</opensearch:totalResults>
+  <updated>2025-04-08T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">417379</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2504.03639v1</id>
-    <updated>2025-04-04T17:59:10Z</updated>
-    <published>2025-04-04T17:59:10Z</published>
-    <title>Shape My Moves: Text-Driven Shape-Aware Synthesis of Human Motions</title>
-    <summary>  We explore how body shapes influence human motion synthesis, an aspect often
-overlooked in existing text-to-motion generation methods due to the ease of
-learning a homogenized, canonical body shape. However, this homogenization can
-distort the natural correlations between different body shapes and their motion
-dynamics. Our method addresses this gap by generating body-shape-aware human
-motions from natural language prompts. We utilize a finite scalar
-quantization-based variational autoencoder (FSQ-VAE) to quantize motion into
-discrete tokens and then leverage continuous body shape information to
-de-quantize these tokens back into continuous, detailed motion. Additionally,
-we harness the capabilities of a pretrained language model to predict both
-continuous shape parameters and motion tokens, facilitating the synthesis of
-text-aligned motions and decoding them into shape-aware motions. We evaluate
-our method quantitatively and qualitatively, and also conduct a comprehensive
-perceptual study to demonstrate its efficacy in generating shape-aware motions.
+    <id>http://arxiv.org/abs/2504.05304v1</id>
+    <updated>2025-04-07T17:59:42Z</updated>
+    <published>2025-04-07T17:59:42Z</published>
+    <title>Gaussian Mixture Flow Matching Models</title>
+    <summary>  Diffusion models approximate the denoising distribution as a Gaussian and
+predict its mean, whereas flow matching models reparameterize the Gaussian mean
+as flow velocity. However, they underperform in few-step sampling due to
+discretization error and tend to produce over-saturated colors under
+classifier-free guidance (CFG). To address these limitations, we propose a
+novel Gaussian mixture flow matching (GMFlow) model: instead of predicting the
+mean, GMFlow predicts dynamic Gaussian mixture (GM) parameters to capture a
+multi-modal flow velocity distribution, which can be learned with a KL
+divergence loss. We demonstrate that GMFlow generalizes previous diffusion and
+flow matching models where a single Gaussian is learned with an $L_2$ denoising
+loss. For inference, we derive GM-SDE/ODE solvers that leverage analytic
+denoising distributions and velocity fields for precise few-step sampling.
+Furthermore, we introduce a novel probabilistic guidance scheme that mitigates
+the over-saturation issues of CFG and improves image generation quality.
+Extensive experiments demonstrate that GMFlow consistently outperforms flow
+matching baselines in generation quality, achieving a Precision of 0.942 with
+only 6 sampling steps on ImageNet 256$\times$256.
 </summary>
     <author>
-      <name>Ting-Hsuan Liao</name>
+      <name>Hansheng Chen</name>
     </author>
     <author>
-      <name>Yi Zhou</name>
+      <name>Kai Zhang</name>
     </author>
     <author>
-      <name>Yu Shen</name>
+      <name>Hao Tan</name>
     </author>
     <author>
-      <name>Chun-Hao Paul Huang</name>
+      <name>Zexiang Xu</name>
     </author>
     <author>
-      <name>Saayan Mitra</name>
+      <name>Fujun Luan</name>
     </author>
     <author>
-      <name>Jia-Bin Huang</name>
+      <name>Leonidas Guibas</name>
     </author>
     <author>
-      <name>Uttaran Bhattacharya</name>
+      <name>Gordon Wetzstein</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">CVPR 2025. Project page: https://shape-move.github.io</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.03639v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.03639v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Sai Bi</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Code: https://github.com/Lakonik/GMFlow</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.05304v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.05304v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.03626v1</id>
-    <updated>2025-04-04T17:44:22Z</updated>
-    <published>2025-04-04T17:44:22Z</published>
-    <title>Quantum Speedups for Markov Chain Monte Carlo Methods with Application
-  to Optimization</title>
-    <summary>  We propose quantum algorithms that provide provable speedups for Markov Chain
-Monte Carlo (MCMC) methods commonly used for sampling from probability
-distributions of the form $\pi \propto e^{-f}$, where $f$ is a potential
-function. Our first approach considers Gibbs sampling for finite-sum potentials
-in the stochastic setting, employing an oracle that provides gradients of
-individual functions. In the second setting, we consider access only to a
-stochastic evaluation oracle, allowing simultaneous queries at two points of
-the potential function under the same stochastic parameter. By introducing
-novel techniques for stochastic gradient estimation, our algorithms improve the
-gradient and evaluation complexities of classical samplers, such as Hamiltonian
-Monte Carlo (HMC) and Langevin Monte Carlo (LMC) in terms of dimension,
-precision, and other problem-dependent parameters. Furthermore, we achieve
-quantum speedups in optimization, particularly for minimizing non-smooth and
-approximately convex functions that commonly appear in empirical risk
-minimization problems.
+    <id>http://arxiv.org/abs/2504.05300v1</id>
+    <updated>2025-04-07T17:59:07Z</updated>
+    <published>2025-04-07T17:59:07Z</published>
+    <title>Dimension-Free Convergence of Diffusion Models for Approximate Gaussian
+  Mixtures</title>
+    <summary>  Diffusion models are distinguished by their exceptional generative
+performance, particularly in producing high-quality samples through iterative
+denoising. While current theory suggests that the number of denoising steps
+required for accurate sample generation should scale linearly with data
+dimension, this does not reflect the practical efficiency of widely used
+algorithms like Denoising Diffusion Probabilistic Models (DDPMs). This paper
+investigates the effectiveness of diffusion models in sampling from complex
+high-dimensional distributions that can be well-approximated by Gaussian
+Mixture Models (GMMs). For these distributions, our main result shows that DDPM
+takes at most $\widetilde{O}(1/\varepsilon)$ iterations to attain an
+$\varepsilon$-accurate distribution in total variation (TV) distance,
+independent of both the ambient dimension $d$ and the number of components $K$,
+up to logarithmic factors. Furthermore, this result remains robust to score
+estimation errors. These findings highlight the remarkable effectiveness of
+diffusion models in high-dimensional settings given the universal approximation
+capability of GMMs, and provide theoretical insights into their practical
+success.
 </summary>
     <author>
-      <name>Guneykan Ozgul</name>
+      <name>Gen Li</name>
     </author>
     <author>
-      <name>Xiantao Li</name>
+      <name>Changxiao Cai</name>
     </author>
     <author>
-      <name>Mehrdad Mahdavi</name>
+      <name>Yuting Wei</name>
     </author>
-    <author>
-      <name>Chunhao Wang</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">37 pages</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.03626v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.03626v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <link href="http://arxiv.org/abs/2504.05300v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.05300v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.NA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.TH" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.05295v1</id>
+    <updated>2025-04-07T17:49:37Z</updated>
+    <published>2025-04-07T17:49:37Z</published>
+    <title>Dion: A Communication-Efficient Optimizer for Large Models</title>
+    <summary>  Training large AI models efficiently requires distributing computation across
+multiple accelerators, but this often incurs significant communication overhead
+-- especially during gradient synchronization. We introduce Dion, a
+communication-efficient optimizer that retains the synchronous semantics of
+standard distributed training (e.g., DDP, FSDP) while substantially reducing
+I/O costs. Unlike conventional optimizers that synchronize full gradient
+matrices, Dion leverages orthonormalized updates with device-local momentum
+buffers, eliminating the need for full gradient exchange. It further supports
+an efficient sharding strategy that avoids reconstructing large matrices during
+training.
+</summary>
+    <author>
+      <name>Kwangjun Ahn</name>
+    </author>
+    <author>
+      <name>Byron Xu</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">technical report; comments welcome!</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.05295v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.05295v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.03625v1</id>
-    <updated>2025-04-04T17:44:14Z</updated>
-    <published>2025-04-04T17:44:14Z</published>
-    <title>Reciprocity-Aware Convolutional Neural Networks for Map-Based Path Loss
-  Prediction</title>
-    <summary>  Path loss modeling is a widely used technique for estimating point-to-point
-losses along a communications link from transmitter (Tx) to receiver (Rx).
-Accurate path loss predictions can optimize use of the radio frequency spectrum
-and minimize unwanted interference. Modern path loss modeling often leverages
-data-driven approaches, using machine learning to train models on drive test
-measurement datasets. Drive tests primarily represent downlink scenarios, where
-the Tx is located on a building and the Rx is located on a moving vehicle.
-Consequently, trained models are frequently reserved for downlink coverage
-estimation, lacking representation of uplink scenarios. In this paper, we
-demonstrate that data augmentation can be used to train a path loss model that
-is generalized to uplink, downlink, and backhaul scenarios, training using only
-downlink drive test measurements. By adding a small number of synthetic samples
-representing uplink scenarios to the training set, root mean squared error is
-reduced by &gt;8 dB on uplink examples in the test set.
+    <id>http://arxiv.org/abs/2504.05291v1</id>
+    <updated>2025-04-07T17:45:17Z</updated>
+    <published>2025-04-07T17:45:17Z</published>
+    <title>Using Physiological Measures, Gaze, and Facial Expressions to Model
+  Human Trust in a Robot Partner</title>
+    <summary>  With robots becoming increasingly prevalent in various domains, it has become
+crucial to equip them with tools to achieve greater fluency in interactions
+with humans. One of the promising areas for further exploration lies in human
+trust. A real-time, objective model of human trust could be used to maximize
+productivity, preserve safety, and mitigate failure. In this work, we attempt
+to use physiological measures, gaze, and facial expressions to model human
+trust in a robot partner. We are the first to design an in-person, human-robot
+supervisory interaction study to create a dedicated trust dataset. Using this
+dataset, we train machine learning algorithms to identify the objective
+measures that are most indicative of trust in a robot partner, advancing trust
+prediction in human-robot interactions. Our findings indicate that a
+combination of sensor modalities (blood volume pulse, electrodermal activity,
+skin temperature, and gaze) can enhance the accuracy of detecting human trust
+in a robot partner. Furthermore, the Extra Trees, Random Forest, and Decision
+Trees classifiers exhibit consistently better performance in measuring the
+person's trust in the robot partner. These results lay the groundwork for
+constructing a real-time trust model for human-robot interaction, which could
+foster more efficient interactions between humans and robots.
 </summary>
     <author>
-      <name>Ryan G. Dempsey</name>
+      <name>Haley N. Green</name>
     </author>
     <author>
-      <name>Jonathan Ethier</name>
+      <name>Tariq Iqbal</name>
     </author>
-    <author>
-      <name>Halim Yanikomeroglu</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">6 pages, 6 figures, 7 tables</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.03625v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.03625v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted at the IEEE International Conference on Robotics and
+  Automation (ICRA), 2025</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">IEEE International Conference on Robotics and Automation (ICRA),
+  2025</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/2504.05291v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.05291v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.03624v1</id>
-    <updated>2025-04-04T17:41:58Z</updated>
-    <published>2025-04-04T17:41:58Z</published>
-    <title>Nemotron-H: A Family of Accurate and Efficient Hybrid Mamba-Transformer
-  Models</title>
-    <summary>  As inference-time scaling becomes critical for enhanced reasoning
-capabilities, it is increasingly becoming important to build models that are
-efficient to infer. We introduce Nemotron-H, a family of 8B and 56B/47B hybrid
-Mamba-Transformer models designed to reduce inference cost for a given accuracy
-level. To achieve this goal, we replace the majority of self-attention layers
-in the common Transformer model architecture with Mamba layers that perform
-constant computation and require constant memory per generated token. We show
-that Nemotron-H models offer either better or on-par accuracy compared to other
-similarly-sized state-of-the-art open-sourced Transformer models (e.g.,
-Qwen-2.5-7B/72B and Llama-3.1-8B/70B), while being up to 3$\times$ faster at
-inference. To further increase inference speed and reduce the memory required
-at inference time, we created Nemotron-H-47B-Base from the 56B model using a
-new compression via pruning and distillation technique called MiniPuzzle.
-Nemotron-H-47B-Base achieves similar accuracy to the 56B model, but is 20%
-faster to infer. In addition, we introduce an FP8-based training recipe and
-show that it can achieve on par results with BF16-based training. This recipe
-is used to train the 56B model. All Nemotron-H models will be released, with
-support in Hugging Face, NeMo, and Megatron-LM.
+    <id>http://arxiv.org/abs/2504.05287v1</id>
+    <updated>2025-04-07T17:38:19Z</updated>
+    <published>2025-04-07T17:38:19Z</published>
+    <title>RobustDexGrasp: Robust Dexterous Grasping of General Objects from
+  Single-view Perception</title>
+    <summary>  Robust grasping of various objects from single-view perception is fundamental
+for dexterous robots. Previous works often rely on fully observable objects,
+expert demonstrations, or static grasping poses, which restrict their
+generalization ability and adaptability to external disturbances. In this
+paper, we present a reinforcement-learning-based framework that enables
+zero-shot dynamic dexterous grasping of a wide range of unseen objects from
+single-view perception, while performing adaptive motions to external
+disturbances. We utilize a hand-centric object representation for shape feature
+extraction that emphasizes interaction-relevant local shapes, enhancing
+robustness to shape variance and uncertainty. To enable effective hand
+adaptation to disturbances with limited observations, we propose a mixed
+curriculum learning strategy, which first utilizes imitation learning to
+distill a policy trained with privileged real-time visual-tactile feedback, and
+gradually transfers to reinforcement learning to learn adaptive motions under
+disturbances caused by observation noises and dynamic randomization. Our
+experiments demonstrate strong generalization in grasping unseen objects with
+random poses, achieving success rates of 97.0% across 247,786 simulated objects
+and 94.6% across 512 real objects. We also demonstrate the robustness of our
+method to various disturbances, including unobserved object movement and
+external forces, through both quantitative and qualitative evaluations. Project
+Page: https://zdchan.github.io/Robust_DexGrasp/
 </summary>
     <author>
-      <name> NVIDIA</name>
+      <name>Hui Zhang</name>
     </author>
     <author>
-      <name> :</name>
+      <name>Zijian Wu</name>
     </author>
     <author>
-      <name>Aaron Blakeman</name>
+      <name>Linyi Huang</name>
     </author>
     <author>
-      <name>Aarti Basant</name>
+      <name>Sammy Christen</name>
     </author>
     <author>
-      <name>Abhinav Khattar</name>
+      <name>Jie Song</name>
     </author>
-    <author>
-      <name>Adithya Renduchintala</name>
-    </author>
-    <author>
-      <name>Akhiad Bercovich</name>
-    </author>
-    <author>
-      <name>Aleksander Ficek</name>
-    </author>
-    <author>
-      <name>Alexis Bjorlin</name>
-    </author>
-    <author>
-      <name>Ali Taghibakhshi</name>
-    </author>
-    <author>
-      <name>Amala Sanjay Deshmukh</name>
-    </author>
-    <author>
-      <name>Ameya Sunil Mahabaleshwarkar</name>
-    </author>
-    <author>
-      <name>Andrew Tao</name>
-    </author>
-    <author>
-      <name>Anna Shors</name>
-    </author>
-    <author>
-      <name>Ashwath Aithal</name>
-    </author>
-    <author>
-      <name>Ashwin Poojary</name>
-    </author>
-    <author>
-      <name>Ayush Dattagupta</name>
-    </author>
-    <author>
-      <name>Balaram Buddharaju</name>
-    </author>
-    <author>
-      <name>Bobby Chen</name>
-    </author>
-    <author>
-      <name>Boris Ginsburg</name>
-    </author>
-    <author>
-      <name>Boxin Wang</name>
-    </author>
-    <author>
-      <name>Brandon Norick</name>
-    </author>
-    <author>
-      <name>Brian Butterfield</name>
-    </author>
-    <author>
-      <name>Bryan Catanzaro</name>
-    </author>
-    <author>
-      <name>Carlo del Mundo</name>
-    </author>
-    <author>
-      <name>Chengyu Dong</name>
-    </author>
-    <author>
-      <name>Christine Harvey</name>
-    </author>
-    <author>
-      <name>Christopher Parisien</name>
-    </author>
-    <author>
-      <name>Dan Su</name>
-    </author>
-    <author>
-      <name>Daniel Korzekwa</name>
-    </author>
-    <author>
-      <name>Danny Yin</name>
-    </author>
-    <author>
-      <name>Daria Gitman</name>
-    </author>
-    <author>
-      <name>David Mosallanezhad</name>
-    </author>
-    <author>
-      <name>Deepak Narayanan</name>
-    </author>
-    <author>
-      <name>Denys Fridman</name>
-    </author>
-    <author>
-      <name>Dima Rekesh</name>
-    </author>
-    <author>
-      <name>Ding Ma</name>
-    </author>
-    <author>
-      <name>Dmytro Pykhtar</name>
-    </author>
-    <author>
-      <name>Dong Ahn</name>
-    </author>
-    <author>
-      <name>Duncan Riach</name>
-    </author>
-    <author>
-      <name>Dusan Stosic</name>
-    </author>
-    <author>
-      <name>Eileen Long</name>
-    </author>
-    <author>
-      <name>Elad Segal</name>
-    </author>
-    <author>
-      <name>Ellie Evans</name>
-    </author>
-    <author>
-      <name>Eric Chung</name>
-    </author>
-    <author>
-      <name>Erick Galinkin</name>
-    </author>
-    <author>
-      <name>Evelina Bakhturina</name>
-    </author>
-    <author>
-      <name>Ewa Dobrowolska</name>
-    </author>
-    <author>
-      <name>Fei Jia</name>
-    </author>
-    <author>
-      <name>Fuxiao Liu</name>
-    </author>
-    <author>
-      <name>Gargi Prasad</name>
-    </author>
-    <author>
-      <name>Gerald Shen</name>
-    </author>
-    <author>
-      <name>Guilin Liu</name>
-    </author>
-    <author>
-      <name>Guo Chen</name>
-    </author>
-    <author>
-      <name>Haifeng Qian</name>
-    </author>
-    <author>
-      <name>Helen Ngo</name>
-    </author>
-    <author>
-      <name>Hongbin Liu</name>
-    </author>
-    <author>
-      <name>Hui Li</name>
-    </author>
-    <author>
-      <name>Igor Gitman</name>
-    </author>
-    <author>
-      <name>Ilia Karmanov</name>
-    </author>
-    <author>
-      <name>Ivan Moshkov</name>
-    </author>
-    <author>
-      <name>Izik Golan</name>
-    </author>
-    <author>
-      <name>Jan Kautz</name>
-    </author>
-    <author>
-      <name>Jane Polak Scowcroft</name>
-    </author>
-    <author>
-      <name>Jared Casper</name>
-    </author>
-    <author>
-      <name>Jarno Seppanen</name>
-    </author>
-    <author>
-      <name>Jason Lu</name>
-    </author>
-    <author>
-      <name>Jason Sewall</name>
-    </author>
-    <author>
-      <name>Jiaqi Zeng</name>
-    </author>
-    <author>
-      <name>Jiaxuan You</name>
-    </author>
-    <author>
-      <name>Jimmy Zhang</name>
-    </author>
-    <author>
-      <name>Jing Zhang</name>
-    </author>
-    <author>
-      <name>Jining Huang</name>
-    </author>
-    <author>
-      <name>Jinze Xue</name>
-    </author>
-    <author>
-      <name>Jocelyn Huang</name>
-    </author>
-    <author>
-      <name>Joey Conway</name>
-    </author>
-    <author>
-      <name>John Kamalu</name>
-    </author>
-    <author>
-      <name>Jon Barker</name>
-    </author>
-    <author>
-      <name>Jonathan Cohen</name>
-    </author>
-    <author>
-      <name>Joseph Jennings</name>
-    </author>
-    <author>
-      <name>Jupinder Parmar</name>
-    </author>
-    <author>
-      <name>Karan Sapra</name>
-    </author>
-    <author>
-      <name>Kari Briski</name>
-    </author>
-    <author>
-      <name>Kateryna Chumachenko</name>
-    </author>
-    <author>
-      <name>Katherine Luna</name>
-    </author>
-    <author>
-      <name>Keshav Santhanam</name>
-    </author>
-    <author>
-      <name>Kezhi Kong</name>
-    </author>
-    <author>
-      <name>Kirthi Sivamani</name>
-    </author>
-    <author>
-      <name>Krzysztof Pawelec</name>
-    </author>
-    <author>
-      <name>Kumar Anik</name>
-    </author>
-    <author>
-      <name>Kunlun Li</name>
-    </author>
-    <author>
-      <name>Lawrence McAfee</name>
-    </author>
-    <author>
-      <name>Leon Derczynski</name>
-    </author>
-    <author>
-      <name>Lindsey Pavao</name>
-    </author>
-    <author>
-      <name>Luis Vega</name>
-    </author>
-    <author>
-      <name>Lukas Voegtle</name>
-    </author>
-    <author>
-      <name>Maciej Bala</name>
-    </author>
-    <author>
-      <name>Maer Rodrigues de Melo</name>
-    </author>
-    <author>
-      <name>Makesh Narsimhan Sreedhar</name>
-    </author>
-    <author>
-      <name>Marcin Chochowski</name>
-    </author>
-    <author>
-      <name>Markus Kliegl</name>
-    </author>
-    <author>
-      <name>Marta Stepniewska-Dziubinska</name>
-    </author>
-    <author>
-      <name>Matthieu Le</name>
-    </author>
-    <author>
-      <name>Matvei Novikov</name>
-    </author>
-    <author>
-      <name>Mehrzad Samadi</name>
-    </author>
-    <author>
-      <name>Michael Andersch</name>
-    </author>
-    <author>
-      <name>Michael Evans</name>
-    </author>
-    <author>
-      <name>Miguel Martinez</name>
-    </author>
-    <author>
-      <name>Mike Chrzanowski</name>
-    </author>
-    <author>
-      <name>Mike Ranzinger</name>
-    </author>
-    <author>
-      <name>Mikolaj Blaz</name>
-    </author>
-    <author>
-      <name>Misha Smelyanskiy</name>
-    </author>
-    <author>
-      <name>Mohamed Fawzy</name>
-    </author>
-    <author>
-      <name>Mohammad Shoeybi</name>
-    </author>
-    <author>
-      <name>Mostofa Patwary</name>
-    </author>
-    <author>
-      <name>Nayeon Lee</name>
-    </author>
-    <author>
-      <name>Nima Tajbakhsh</name>
-    </author>
-    <author>
-      <name>Ning Xu</name>
-    </author>
-    <author>
-      <name>Oleg Rybakov</name>
-    </author>
-    <author>
-      <name>Oleksii Kuchaiev</name>
-    </author>
-    <author>
-      <name>Olivier Delalleau</name>
-    </author>
-    <author>
-      <name>Osvald Nitski</name>
-    </author>
-    <author>
-      <name>Parth Chadha</name>
-    </author>
-    <author>
-      <name>Pasha Shamis</name>
-    </author>
-    <author>
-      <name>Paulius Micikevicius</name>
-    </author>
-    <author>
-      <name>Pavlo Molchanov</name>
-    </author>
-    <author>
-      <name>Peter Dykas</name>
-    </author>
-    <author>
-      <name>Philipp Fischer</name>
-    </author>
-    <author>
-      <name>Pierre-Yves Aquilanti</name>
-    </author>
-    <author>
-      <name>Piotr Bialecki</name>
-    </author>
-    <author>
-      <name>Prasoon Varshney</name>
-    </author>
-    <author>
-      <name>Pritam Gundecha</name>
-    </author>
-    <author>
-      <name>Przemek Tredak</name>
-    </author>
-    <author>
-      <name>Rabeeh Karimi</name>
-    </author>
-    <author>
-      <name>Rahul Kandu</name>
-    </author>
-    <author>
-      <name>Ran El-Yaniv</name>
-    </author>
-    <author>
-      <name>Raviraj Joshi</name>
-    </author>
-    <author>
-      <name>Roger Waleffe</name>
-    </author>
-    <author>
-      <name>Ruoxi Zhang</name>
-    </author>
-    <author>
-      <name>Sabrina Kavanaugh</name>
-    </author>
-    <author>
-      <name>Sahil Jain</name>
-    </author>
-    <author>
-      <name>Samuel Kriman</name>
-    </author>
-    <author>
-      <name>Sangkug Lym</name>
-    </author>
-    <author>
-      <name>Sanjeev Satheesh</name>
-    </author>
-    <author>
-      <name>Saurav Muralidharan</name>
-    </author>
-    <author>
-      <name>Sean Narenthiran</name>
-    </author>
-    <author>
-      <name>Selvaraj Anandaraj</name>
-    </author>
-    <author>
-      <name>Seonmyeong Bak</name>
-    </author>
-    <author>
-      <name>Sergey Kashirsky</name>
-    </author>
-    <author>
-      <name>Seungju Han</name>
-    </author>
-    <author>
-      <name>Shantanu Acharya</name>
-    </author>
-    <author>
-      <name>Shaona Ghosh</name>
-    </author>
-    <author>
-      <name>Sharath Turuvekere Sreenivas</name>
-    </author>
-    <author>
-      <name>Sharon Clay</name>
-    </author>
-    <author>
-      <name>Shelby Thomas</name>
-    </author>
-    <author>
-      <name>Shrimai Prabhumoye</name>
-    </author>
-    <author>
-      <name>Shubham Pachori</name>
-    </author>
-    <author>
-      <name>Shubham Toshniwal</name>
-    </author>
-    <author>
-      <name>Shyamala Prayaga</name>
-    </author>
-    <author>
-      <name>Siddhartha Jain</name>
-    </author>
-    <author>
-      <name>Sirshak Das</name>
-    </author>
-    <author>
-      <name>Slawek Kierat</name>
-    </author>
-    <author>
-      <name>Somshubra Majumdar</name>
-    </author>
-    <author>
-      <name>Song Han</name>
-    </author>
-    <author>
-      <name>Soumye Singhal</name>
-    </author>
-    <author>
-      <name>Sriharsha Niverty</name>
-    </author>
-    <author>
-      <name>Stefania Alborghetti</name>
-    </author>
-    <author>
-      <name>Suseella Panguluri</name>
-    </author>
-    <author>
-      <name>Swetha Bhendigeri</name>
-    </author>
-    <author>
-      <name>Syeda Nahida Akter</name>
-    </author>
-    <author>
-      <name>Szymon Migacz</name>
-    </author>
-    <author>
-      <name>Tal Shiri</name>
-    </author>
-    <author>
-      <name>Terry Kong</name>
-    </author>
-    <author>
-      <name>Timo Roman</name>
-    </author>
-    <author>
-      <name>Tomer Ronen</name>
-    </author>
-    <author>
-      <name>Trisha Saar</name>
-    </author>
-    <author>
-      <name>Tugrul Konuk</name>
-    </author>
-    <author>
-      <name>Tuomas Rintamaki</name>
-    </author>
-    <author>
-      <name>Tyler Poon</name>
-    </author>
-    <author>
-      <name>Ushnish De</name>
-    </author>
-    <author>
-      <name>Vahid Noroozi</name>
-    </author>
-    <author>
-      <name>Varun Singh</name>
-    </author>
-    <author>
-      <name>Vijay Korthikanti</name>
-    </author>
-    <author>
-      <name>Vitaly Kurin</name>
-    </author>
-    <author>
-      <name>Wasi Uddin Ahmad</name>
-    </author>
-    <author>
-      <name>Wei Du</name>
-    </author>
-    <author>
-      <name>Wei Ping</name>
-    </author>
-    <author>
-      <name>Wenliang Dai</name>
-    </author>
-    <author>
-      <name>Wonmin Byeon</name>
-    </author>
-    <author>
-      <name>Xiaowei Ren</name>
-    </author>
-    <author>
-      <name>Yao Xu</name>
-    </author>
-    <author>
-      <name>Yejin Choi</name>
-    </author>
-    <author>
-      <name>Yian Zhang</name>
-    </author>
-    <author>
-      <name>Ying Lin</name>
-    </author>
-    <author>
-      <name>Yoshi Suhara</name>
-    </author>
-    <author>
-      <name>Zhiding Yu</name>
-    </author>
-    <author>
-      <name>Zhiqi Li</name>
-    </author>
-    <author>
-      <name>Zhiyu Li</name>
-    </author>
-    <author>
-      <name>Zhongbo Zhu</name>
-    </author>
-    <author>
-      <name>Zhuolin Yang</name>
-    </author>
-    <author>
-      <name>Zijia Chen</name>
-    </author>
-    <link href="http://arxiv.org/abs/2504.03624v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.03624v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.03622v1</id>
-    <updated>2025-04-04T17:40:04Z</updated>
-    <published>2025-04-04T17:40:04Z</published>
-    <title>Align to Structure: Aligning Large Language Models with Structural
-  Information</title>
-    <summary>  Generating long, coherent text remains a challenge for large language models
-(LLMs), as they lack hierarchical planning and structured organization in
-discourse generation. We introduce Structural Alignment, a novel method that
-aligns LLMs with human-like discourse structures to enhance long-form text
-generation. By integrating linguistically grounded discourse frameworks into
-reinforcement learning, our approach guides models to produce coherent and
-well-organized outputs. We employ a dense reward scheme within a Proximal
-Policy Optimization framework, assigning fine-grained, token-level rewards
-based on the discourse distinctiveness relative to human writing. Two
-complementary reward models are evaluated: the first improves readability by
-scoring surface-level textual features to provide explicit structuring, while
-the second reinforces deeper coherence and rhetorical sophistication by
-analyzing global discourse patterns through hierarchical discourse motifs,
-outperforming both standard and RLHF-enhanced models in tasks such as essay
-generation and long-document summarization. All training data and code will be
-publicly shared at https://github.com/minnesotanlp/struct_align.
-</summary>
-    <author>
-      <name>Zae Myung Kim</name>
-    </author>
-    <author>
-      <name>Anand Ramachandran</name>
-    </author>
-    <author>
-      <name>Farideh Tavazoee</name>
-    </author>
-    <author>
-      <name>Joo-Kyung Kim</name>
-    </author>
-    <author>
-      <name>Oleg Rokhlenko</name>
-    </author>
-    <author>
-      <name>Dongyeop Kang</name>
-    </author>
-    <link href="http://arxiv.org/abs/2504.03622v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.03622v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://zdchan.github.io/Robust_DexGrasp/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.05287v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.05287v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
