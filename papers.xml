@@ -3,224 +3,263 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-04-08T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">417379</opensearch:totalResults>
+  <updated>2025-04-09T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">417633</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2504.05304v1</id>
-    <updated>2025-04-07T17:59:42Z</updated>
-    <published>2025-04-07T17:59:42Z</published>
-    <title>Gaussian Mixture Flow Matching Models</title>
-    <summary>  Diffusion models approximate the denoising distribution as a Gaussian and
-predict its mean, whereas flow matching models reparameterize the Gaussian mean
-as flow velocity. However, they underperform in few-step sampling due to
-discretization error and tend to produce over-saturated colors under
-classifier-free guidance (CFG). To address these limitations, we propose a
-novel Gaussian mixture flow matching (GMFlow) model: instead of predicting the
-mean, GMFlow predicts dynamic Gaussian mixture (GM) parameters to capture a
-multi-modal flow velocity distribution, which can be learned with a KL
-divergence loss. We demonstrate that GMFlow generalizes previous diffusion and
-flow matching models where a single Gaussian is learned with an $L_2$ denoising
-loss. For inference, we derive GM-SDE/ODE solvers that leverage analytic
-denoising distributions and velocity fields for precise few-step sampling.
-Furthermore, we introduce a novel probabilistic guidance scheme that mitigates
-the over-saturation issues of CFG and improves image generation quality.
-Extensive experiments demonstrate that GMFlow consistently outperforms flow
-matching baselines in generation quality, achieving a Precision of 0.942 with
-only 6 sampling steps on ImageNet 256$\times$256.
+    <id>http://arxiv.org/abs/2504.06266v1</id>
+    <updated>2025-04-08T17:59:59Z</updated>
+    <published>2025-04-08T17:59:59Z</published>
+    <title>Constraining the [CII] luminosity function from the power spectrum of
+  line intensity maps at redshift 3.6</title>
+    <summary>  Forthcoming measurements of the line-intensity-mapping power spectrum (PS)
+are expected to set precious constraints on several quantities of astrophysical
+and cosmological interest. Our study targets the [CII] luminosity function (LF)
+at high redshift, which is still highly uncertain, in particular at the faint
+end. As an example of future opportunities, we present forecasts for the Deep
+Spectroscopic Survey (DSS) that will be conducted with the Fred Young
+Submillimeter Telescope at $z \simeq 3.6$ and also make predictions for
+eventual $10\times$ wider and/or $\sqrt{10}\times$ more sensitive surveys. The
+halo-occupation properties of [CII] emitters in the MARIGOLD simulations
+provide us with the motivation to abundance match two versions of the ALPINE LF
+against the halo mass function. We employ the resulting luminosity-mass
+relation within the halo model to predict the expected PS signal and its
+uncertainty. Finally, we use Bayesian inference to analyse mock PS data and
+forecast what constraints could be achieved on the first two moments of the LF
+and on Schechter fits. Depending on the actual LF, the DSS will measure the
+clustering and shot-noise amplitudes of the PS with a signal-to-noise ratio of
+$\sim 3$ or higher. However, degeneracies with the bias parameter and
+redshift-space distortions make it unfeasible to extract the first moment of
+the LF. Even the widest and most sensitive survey we consider can only
+constrain it with a $50\%$ uncertainty. By jointly fitting the PS and the LF,
+we directly constrain Schechter-function parameters. We find that the
+normalisation and the cutoff luminosity are precisely and accurately measured
+while the faint-end slope remains highly uncertain (unless the true value
+approaches $-2$). Overall, increasing the survey sensitivity at fixed sky
+coverage yields greater improvements than covering a larger area at fixed
+sensitivity.
 </summary>
     <author>
-      <name>Hansheng Chen</name>
+      <name>Elena Marcuzzo</name>
     </author>
     <author>
-      <name>Kai Zhang</name>
+      <name>Cristiano Porciani</name>
     </author>
     <author>
-      <name>Hao Tan</name>
+      <name>Emilio Romano-Díaz</name>
     </author>
     <author>
-      <name>Zexiang Xu</name>
+      <name>Prachi Khatri</name>
     </author>
-    <author>
-      <name>Fujun Luan</name>
-    </author>
-    <author>
-      <name>Leonidas Guibas</name>
-    </author>
-    <author>
-      <name>Gordon Wetzstein</name>
-    </author>
-    <author>
-      <name>Sai Bi</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Code: https://github.com/Lakonik/GMFlow</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.05304v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.05304v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">19 pages, 18 figures, 5 tables. Submitted to A&amp;A</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.06266v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.06266v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.05300v1</id>
-    <updated>2025-04-07T17:59:07Z</updated>
-    <published>2025-04-07T17:59:07Z</published>
-    <title>Dimension-Free Convergence of Diffusion Models for Approximate Gaussian
-  Mixtures</title>
-    <summary>  Diffusion models are distinguished by their exceptional generative
-performance, particularly in producing high-quality samples through iterative
-denoising. While current theory suggests that the number of denoising steps
-required for accurate sample generation should scale linearly with data
-dimension, this does not reflect the practical efficiency of widely used
-algorithms like Denoising Diffusion Probabilistic Models (DDPMs). This paper
-investigates the effectiveness of diffusion models in sampling from complex
-high-dimensional distributions that can be well-approximated by Gaussian
-Mixture Models (GMMs). For these distributions, our main result shows that DDPM
-takes at most $\widetilde{O}(1/\varepsilon)$ iterations to attain an
-$\varepsilon$-accurate distribution in total variation (TV) distance,
-independent of both the ambient dimension $d$ and the number of components $K$,
-up to logarithmic factors. Furthermore, this result remains robust to score
-estimation errors. These findings highlight the remarkable effectiveness of
-diffusion models in high-dimensional settings given the universal approximation
-capability of GMMs, and provide theoretical insights into their practical
-success.
+    <id>http://arxiv.org/abs/2504.06265v1</id>
+    <updated>2025-04-08T17:59:57Z</updated>
+    <published>2025-04-08T17:59:57Z</published>
+    <title>GOLLuM: Gaussian Process Optimized LLMs -- Reframing LLM Finetuning
+  through Bayesian Optimization</title>
+    <summary>  Large Language Models (LLMs) can encode complex relationships in their latent
+spaces, yet harnessing them for optimization under uncertainty remains
+challenging. We address this gap with a novel architecture that reframes LLM
+finetuning as Gaussian process (GP) marginal likelihood optimization via deep
+kernel methods. We introduce LLM-based deep kernels, jointly optimized with GPs
+to preserve the benefits of both - LLMs to provide a rich and flexible input
+space for Bayesian optimization and - GPs to model this space with predictive
+uncertainty for more efficient sampling. Applied to Buchwald-Hartwig reaction
+optimization, our method nearly doubles the discovery rate of high-performing
+reactions compared to static LLM embeddings (from 24% to 43% coverage of the
+top 5% reactions in just 50 optimization iterations). We also observe a 14%
+improvement over domain-specific representations without requiring specialized
+features. Extensive empirical evaluation across 19 benchmarks - ranging from
+general chemistry to reaction and molecular property optimization -
+demonstrates our method's robustness, generality, and consistent improvements
+across: (1) tasks, (2) LLM architectures (encoder, decoder, encoder-decoder),
+(3) pretraining domains (chemistry-related or general-purpose) and (4)
+hyperparameter settings (tuned once on a single dataset). Finally, we explain
+these improvements: joint LLM-GP optimization through marginal likelihood
+implicitly performs contrastive learning, aligning representations to produce
+(1) better-structured embedding spaces, (2) improved uncertainty calibration,
+and (3) more efficient sampling - without requiring any external loss. This
+work provides both practical advances in sample-efficient optimization and
+insights into what makes effective Bayesian optimization.
 </summary>
     <author>
-      <name>Gen Li</name>
+      <name>Bojana Ranković</name>
     </author>
     <author>
-      <name>Changxiao Cai</name>
+      <name>Philippe Schwaller</name>
     </author>
-    <author>
-      <name>Yuting Wei</name>
-    </author>
-    <link href="http://arxiv.org/abs/2504.05300v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.05300v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.NA" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.NA" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="stat.TH" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.05295v1</id>
-    <updated>2025-04-07T17:49:37Z</updated>
-    <published>2025-04-07T17:49:37Z</published>
-    <title>Dion: A Communication-Efficient Optimizer for Large Models</title>
-    <summary>  Training large AI models efficiently requires distributing computation across
-multiple accelerators, but this often incurs significant communication overhead
--- especially during gradient synchronization. We introduce Dion, a
-communication-efficient optimizer that retains the synchronous semantics of
-standard distributed training (e.g., DDP, FSDP) while substantially reducing
-I/O costs. Unlike conventional optimizers that synchronize full gradient
-matrices, Dion leverages orthonormalized updates with device-local momentum
-buffers, eliminating the need for full gradient exchange. It further supports
-an efficient sharding strategy that avoids reconstructing large matrices during
-training.
-</summary>
-    <author>
-      <name>Kwangjun Ahn</name>
-    </author>
-    <author>
-      <name>Byron Xu</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">technical report; comments welcome!</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.05295v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.05295v1" rel="related" type="application/pdf"/>
+    <link href="http://arxiv.org/abs/2504.06265v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.06265v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.05291v1</id>
-    <updated>2025-04-07T17:45:17Z</updated>
-    <published>2025-04-07T17:45:17Z</published>
-    <title>Using Physiological Measures, Gaze, and Facial Expressions to Model
-  Human Trust in a Robot Partner</title>
-    <summary>  With robots becoming increasingly prevalent in various domains, it has become
-crucial to equip them with tools to achieve greater fluency in interactions
-with humans. One of the promising areas for further exploration lies in human
-trust. A real-time, objective model of human trust could be used to maximize
-productivity, preserve safety, and mitigate failure. In this work, we attempt
-to use physiological measures, gaze, and facial expressions to model human
-trust in a robot partner. We are the first to design an in-person, human-robot
-supervisory interaction study to create a dedicated trust dataset. Using this
-dataset, we train machine learning algorithms to identify the objective
-measures that are most indicative of trust in a robot partner, advancing trust
-prediction in human-robot interactions. Our findings indicate that a
-combination of sensor modalities (blood volume pulse, electrodermal activity,
-skin temperature, and gaze) can enhance the accuracy of detecting human trust
-in a robot partner. Furthermore, the Extra Trees, Random Forest, and Decision
-Trees classifiers exhibit consistently better performance in measuring the
-person's trust in the robot partner. These results lay the groundwork for
-constructing a real-time trust model for human-robot interaction, which could
-foster more efficient interactions between humans and robots.
+    <id>http://arxiv.org/abs/2504.06261v2</id>
+    <updated>2025-04-09T17:56:08Z</updated>
+    <published>2025-04-08T17:59:41Z</published>
+    <title>Hogwild! Inference: Parallel LLM Generation via Concurrent Attention</title>
+    <summary>  Large Language Models (LLMs) have demonstrated the ability to tackle
+increasingly complex tasks through advanced reasoning, long-form content
+generation, and tool use. Solving these tasks often involves long
+inference-time computations. In human problem solving, a common strategy to
+expedite work is collaboration: by dividing the problem into sub-tasks,
+exploring different strategies concurrently, etc. Recent research has shown
+that LLMs can also operate in parallel by implementing explicit cooperation
+frameworks, such as voting mechanisms or the explicit creation of independent
+sub-tasks that can be executed in parallel. However, each of these frameworks
+may not be suitable for all types of tasks, which can hinder their
+applicability. In this work, we propose a different design approach: we run LLM
+"workers" in parallel , allowing them to synchronize via a concurrently-updated
+attention cache and prompt these workers to decide how best to collaborate. Our
+approach allows the instances to come up with their own collaboration strategy
+for the problem at hand, all the while "seeing" each other's partial progress
+in the concurrent cache. We implement this approach via Hogwild! Inference: a
+parallel LLM inference engine where multiple instances of the same LLM run in
+parallel with the same attention cache, with "instant" access to each other's
+generated tokens. Hogwild! inference takes advantage of Rotary Position
+Embeddings (RoPE) to avoid recomputation while improving parallel hardware
+utilization. We find that modern reasoning-capable LLMs can perform inference
+with shared Key-Value cache out of the box, without additional fine-tuning.
 </summary>
     <author>
-      <name>Haley N. Green</name>
+      <name>Gleb Rodionov</name>
     </author>
     <author>
-      <name>Tariq Iqbal</name>
+      <name>Roman Garipov</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted at the IEEE International Conference on Robotics and
-  Automation (ICRA), 2025</arxiv:comment>
-    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">IEEE International Conference on Robotics and Automation (ICRA),
-  2025</arxiv:journal_ref>
-    <link href="http://arxiv.org/abs/2504.05291v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.05291v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Alina Shutova</name>
+    </author>
+    <author>
+      <name>George Yakushev</name>
+    </author>
+    <author>
+      <name>Vage Egiazarian</name>
+    </author>
+    <author>
+      <name>Anton Sinitsin</name>
+    </author>
+    <author>
+      <name>Denis Kuznedelev</name>
+    </author>
+    <author>
+      <name>Dan Alistarh</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Preprint, work in progress</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.06261v2" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.06261v2" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.05287v1</id>
-    <updated>2025-04-07T17:38:19Z</updated>
-    <published>2025-04-07T17:38:19Z</published>
-    <title>RobustDexGrasp: Robust Dexterous Grasping of General Objects from
-  Single-view Perception</title>
-    <summary>  Robust grasping of various objects from single-view perception is fundamental
-for dexterous robots. Previous works often rely on fully observable objects,
-expert demonstrations, or static grasping poses, which restrict their
-generalization ability and adaptability to external disturbances. In this
-paper, we present a reinforcement-learning-based framework that enables
-zero-shot dynamic dexterous grasping of a wide range of unseen objects from
-single-view perception, while performing adaptive motions to external
-disturbances. We utilize a hand-centric object representation for shape feature
-extraction that emphasizes interaction-relevant local shapes, enhancing
-robustness to shape variance and uncertainty. To enable effective hand
-adaptation to disturbances with limited observations, we propose a mixed
-curriculum learning strategy, which first utilizes imitation learning to
-distill a policy trained with privileged real-time visual-tactile feedback, and
-gradually transfers to reinforcement learning to learn adaptive motions under
-disturbances caused by observation noises and dynamic randomization. Our
-experiments demonstrate strong generalization in grasping unseen objects with
-random poses, achieving success rates of 97.0% across 247,786 simulated objects
-and 94.6% across 512 real objects. We also demonstrate the robustness of our
-method to various disturbances, including unobserved object movement and
-external forces, through both quantitative and qualitative evaluations. Project
-Page: https://zdchan.github.io/Robust_DexGrasp/
+    <id>http://arxiv.org/abs/2504.06257v1</id>
+    <updated>2025-04-08T17:58:52Z</updated>
+    <published>2025-04-08T17:58:52Z</published>
+    <title>PainNet: Statistical Relation Network with Episode-Based Training for
+  Pain Estimation</title>
+    <summary>  Despite the span in estimating pain from facial expressions, limited works
+have focused on estimating the sequence-level pain, which is reported by
+patients and used commonly in clinics. In this paper, we introduce a novel
+Statistical Relation Network, referred to as PainNet, designed for the
+estimation of the sequence-level pain. PainNet employs two key modules, the
+embedding and the relation modules, for comparing pairs of pain videos, and
+producing relation scores indicating if each pair belongs to the same pain
+category or not. At the core of the embedding module is a statistical layer
+mounted on the top of a RNN for extracting compact video-level features. The
+statistical layer is implemented as part of the deep architecture. Doing so,
+allows combining multiple training stages used in previous research, into a
+single end-to-end training stage. PainNet is trained using the episode-based
+training scheme, which involves comparing a query video with a set of videos
+representing the different pain categories. Experimental results show the
+benefit of using the statistical layer and the episode-based training in the
+proposed model. Furthermore, PainNet outperforms the state-of-the-art results
+on self-reported pain estimation.
 </summary>
     <author>
-      <name>Hui Zhang</name>
+      <name>Mina Bishay</name>
     </author>
     <author>
-      <name>Zijian Wu</name>
+      <name>Graham Page</name>
     </author>
     <author>
-      <name>Linyi Huang</name>
+      <name>Mohammad Mavadati</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Presented at the ACII 2024 Workshops</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.06257v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.06257v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.06256v1</id>
+    <updated>2025-04-08T17:58:47Z</updated>
+    <published>2025-04-08T17:58:47Z</published>
+    <title>Transfer between Modalities with MetaQueries</title>
+    <summary>  Unified multimodal models aim to integrate understanding (text output) and
+generation (pixel output), but aligning these different modalities within a
+single architecture often demands complex training recipes and careful data
+balancing. We introduce MetaQueries, a set of learnable queries that act as an
+efficient interface between autoregressive multimodal LLMs (MLLMs) and
+diffusion models. MetaQueries connects the MLLM's latents to the diffusion
+decoder, enabling knowledge-augmented image generation by leveraging the MLLM's
+deep understanding and reasoning capabilities. Our method simplifies training,
+requiring only paired image-caption data and standard diffusion objectives.
+Notably, this transfer is effective even when the MLLM backbone remains frozen,
+thereby preserving its state-of-the-art multimodal understanding capabilities
+while achieving strong generative performance. Additionally, our method is
+flexible and can be easily instruction-tuned for advanced applications such as
+image editing and subject-driven generation.
+</summary>
+    <author>
+      <name>Xichen Pan</name>
     </author>
     <author>
-      <name>Sammy Christen</name>
+      <name>Satya Narayan Shukla</name>
     </author>
     <author>
-      <name>Jie Song</name>
+      <name>Aashu Singh</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://zdchan.github.io/Robust_DexGrasp/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.05287v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.05287v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Zhuokai Zhao</name>
+    </author>
+    <author>
+      <name>Shlok Kumar Mishra</name>
+    </author>
+    <author>
+      <name>Jialiang Wang</name>
+    </author>
+    <author>
+      <name>Zhiyang Xu</name>
+    </author>
+    <author>
+      <name>Jiuhai Chen</name>
+    </author>
+    <author>
+      <name>Kunpeng Li</name>
+    </author>
+    <author>
+      <name>Felix Juefei-Xu</name>
+    </author>
+    <author>
+      <name>Ji Hou</name>
+    </author>
+    <author>
+      <name>Saining Xie</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://xichenpan.com/metaquery</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.06256v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.06256v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
