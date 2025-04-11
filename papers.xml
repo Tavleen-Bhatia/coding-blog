@@ -3,263 +3,269 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-04-09T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">417633</opensearch:totalResults>
+  <updated>2025-04-10T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">417865</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2504.06266v1</id>
-    <updated>2025-04-08T17:59:59Z</updated>
-    <published>2025-04-08T17:59:59Z</published>
-    <title>Constraining the [CII] luminosity function from the power spectrum of
-  line intensity maps at redshift 3.6</title>
-    <summary>  Forthcoming measurements of the line-intensity-mapping power spectrum (PS)
-are expected to set precious constraints on several quantities of astrophysical
-and cosmological interest. Our study targets the [CII] luminosity function (LF)
-at high redshift, which is still highly uncertain, in particular at the faint
-end. As an example of future opportunities, we present forecasts for the Deep
-Spectroscopic Survey (DSS) that will be conducted with the Fred Young
-Submillimeter Telescope at $z \simeq 3.6$ and also make predictions for
-eventual $10\times$ wider and/or $\sqrt{10}\times$ more sensitive surveys. The
-halo-occupation properties of [CII] emitters in the MARIGOLD simulations
-provide us with the motivation to abundance match two versions of the ALPINE LF
-against the halo mass function. We employ the resulting luminosity-mass
-relation within the halo model to predict the expected PS signal and its
-uncertainty. Finally, we use Bayesian inference to analyse mock PS data and
-forecast what constraints could be achieved on the first two moments of the LF
-and on Schechter fits. Depending on the actual LF, the DSS will measure the
-clustering and shot-noise amplitudes of the PS with a signal-to-noise ratio of
-$\sim 3$ or higher. However, degeneracies with the bias parameter and
-redshift-space distortions make it unfeasible to extract the first moment of
-the LF. Even the widest and most sensitive survey we consider can only
-constrain it with a $50\%$ uncertainty. By jointly fitting the PS and the LF,
-we directly constrain Schechter-function parameters. We find that the
-normalisation and the cutoff luminosity are precisely and accurately measured
-while the faint-end slope remains highly uncertain (unless the true value
-approaches $-2$). Overall, increasing the survey sensitivity at fixed sky
-coverage yields greater improvements than covering a larger area at fixed
-sensitivity.
+    <id>http://arxiv.org/abs/2504.07097v1</id>
+    <updated>2025-04-09T17:59:42Z</updated>
+    <published>2025-04-09T17:59:42Z</published>
+    <title>Sculpting Subspaces: Constrained Full Fine-Tuning in LLMs for Continual
+  Learning</title>
+    <summary>  Continual learning in large language models (LLMs) is prone to catastrophic
+forgetting, where adapting to new tasks significantly degrades performance on
+previously learned ones. Existing methods typically rely on low-rank,
+parameter-efficient updates that limit the model's expressivity and introduce
+additional parameters per task, leading to scalability issues. To address these
+limitations, we propose a novel continual full fine-tuning approach leveraging
+adaptive singular value decomposition (SVD). Our method dynamically identifies
+task-specific low-rank parameter subspaces and constrains updates to be
+orthogonal to critical directions associated with prior tasks, thus effectively
+minimizing interference without additional parameter overhead or storing
+previous task gradients. We evaluate our approach extensively on standard
+continual learning benchmarks using both encoder-decoder (T5-Large) and
+decoder-only (LLaMA-2 7B) models, spanning diverse tasks including
+classification, generation, and reasoning. Empirically, our method achieves
+state-of-the-art results, up to 7% higher average accuracy than recent
+baselines like O-LoRA, and notably maintains the model's general linguistic
+capabilities, instruction-following accuracy, and safety throughout the
+continual learning process by reducing forgetting to near-negligible levels.
+Our adaptive SVD framework effectively balances model plasticity and knowledge
+retention, providing a practical, theoretically grounded, and computationally
+scalable solution for continual learning scenarios in large language models.
 </summary>
     <author>
-      <name>Elena Marcuzzo</name>
+      <name>Nikhil Shivakumar Nayak</name>
     </author>
     <author>
-      <name>Cristiano Porciani</name>
+      <name>Krishnateja Killamsetty</name>
     </author>
     <author>
-      <name>Emilio Romano-Díaz</name>
+      <name>Ligong Han</name>
     </author>
     <author>
-      <name>Prachi Khatri</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">19 pages, 18 figures, 5 tables. Submitted to A&amp;A</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.06266v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.06266v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.06265v1</id>
-    <updated>2025-04-08T17:59:57Z</updated>
-    <published>2025-04-08T17:59:57Z</published>
-    <title>GOLLuM: Gaussian Process Optimized LLMs -- Reframing LLM Finetuning
-  through Bayesian Optimization</title>
-    <summary>  Large Language Models (LLMs) can encode complex relationships in their latent
-spaces, yet harnessing them for optimization under uncertainty remains
-challenging. We address this gap with a novel architecture that reframes LLM
-finetuning as Gaussian process (GP) marginal likelihood optimization via deep
-kernel methods. We introduce LLM-based deep kernels, jointly optimized with GPs
-to preserve the benefits of both - LLMs to provide a rich and flexible input
-space for Bayesian optimization and - GPs to model this space with predictive
-uncertainty for more efficient sampling. Applied to Buchwald-Hartwig reaction
-optimization, our method nearly doubles the discovery rate of high-performing
-reactions compared to static LLM embeddings (from 24% to 43% coverage of the
-top 5% reactions in just 50 optimization iterations). We also observe a 14%
-improvement over domain-specific representations without requiring specialized
-features. Extensive empirical evaluation across 19 benchmarks - ranging from
-general chemistry to reaction and molecular property optimization -
-demonstrates our method's robustness, generality, and consistent improvements
-across: (1) tasks, (2) LLM architectures (encoder, decoder, encoder-decoder),
-(3) pretraining domains (chemistry-related or general-purpose) and (4)
-hyperparameter settings (tuned once on a single dataset). Finally, we explain
-these improvements: joint LLM-GP optimization through marginal likelihood
-implicitly performs contrastive learning, aligning representations to produce
-(1) better-structured embedding spaces, (2) improved uncertainty calibration,
-and (3) more efficient sampling - without requiring any external loss. This
-work provides both practical advances in sample-efficient optimization and
-insights into what makes effective Bayesian optimization.
-</summary>
-    <author>
-      <name>Bojana Ranković</name>
+      <name>Abhishek Bhandwaldar</name>
     </author>
     <author>
-      <name>Philippe Schwaller</name>
+      <name>Prateek Chanda</name>
     </author>
-    <link href="http://arxiv.org/abs/2504.06265v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.06265v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Kai Xu</name>
+    </author>
+    <author>
+      <name>Hao Wang</name>
+    </author>
+    <author>
+      <name>Aldo Pareja</name>
+    </author>
+    <author>
+      <name>Oleg Silkin</name>
+    </author>
+    <author>
+      <name>Mustafa Eyceoz</name>
+    </author>
+    <author>
+      <name>Akash Srivastava</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">25 pages, 13 figures, 6 tables</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.07097v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.07097v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.PR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="68T50" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="I.2.0; G.3" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.06261v2</id>
-    <updated>2025-04-09T17:56:08Z</updated>
-    <published>2025-04-08T17:59:41Z</published>
-    <title>Hogwild! Inference: Parallel LLM Generation via Concurrent Attention</title>
-    <summary>  Large Language Models (LLMs) have demonstrated the ability to tackle
-increasingly complex tasks through advanced reasoning, long-form content
-generation, and tool use. Solving these tasks often involves long
-inference-time computations. In human problem solving, a common strategy to
-expedite work is collaboration: by dividing the problem into sub-tasks,
-exploring different strategies concurrently, etc. Recent research has shown
-that LLMs can also operate in parallel by implementing explicit cooperation
-frameworks, such as voting mechanisms or the explicit creation of independent
-sub-tasks that can be executed in parallel. However, each of these frameworks
-may not be suitable for all types of tasks, which can hinder their
-applicability. In this work, we propose a different design approach: we run LLM
-"workers" in parallel , allowing them to synchronize via a concurrently-updated
-attention cache and prompt these workers to decide how best to collaborate. Our
-approach allows the instances to come up with their own collaboration strategy
-for the problem at hand, all the while "seeing" each other's partial progress
-in the concurrent cache. We implement this approach via Hogwild! Inference: a
-parallel LLM inference engine where multiple instances of the same LLM run in
-parallel with the same attention cache, with "instant" access to each other's
-generated tokens. Hogwild! inference takes advantage of Rotary Position
-Embeddings (RoPE) to avoid recomputation while improving parallel hardware
-utilization. We find that modern reasoning-capable LLMs can perform inference
-with shared Key-Value cache out of the box, without additional fine-tuning.
+    <id>http://arxiv.org/abs/2504.07095v1</id>
+    <updated>2025-04-09T17:59:32Z</updated>
+    <published>2025-04-09T17:59:32Z</published>
+    <title>Neural Motion Simulator: Pushing the Limit of World Models in
+  Reinforcement Learning</title>
+    <summary>  An embodied system must not only model the patterns of the external world but
+also understand its own motion dynamics. A motion dynamic model is essential
+for efficient skill acquisition and effective planning. In this work, we
+introduce the neural motion simulator (MoSim), a world model that predicts the
+future physical state of an embodied system based on current observations and
+actions. MoSim achieves state-of-the-art performance in physical state
+prediction and provides competitive performance across a range of downstream
+tasks. This works shows that when a world model is accurate enough and performs
+precise long-horizon predictions, it can facilitate efficient skill acquisition
+in imagined worlds and even enable zero-shot reinforcement learning.
+Furthermore, MoSim can transform any model-free reinforcement learning (RL)
+algorithm into a model-based approach, effectively decoupling physical
+environment modeling from RL algorithm development. This separation allows for
+independent advancements in RL algorithms and world modeling, significantly
+improving sample efficiency and enhancing generalization capabilities. Our
+findings highlight that world models for motion dynamics is a promising
+direction for developing more versatile and capable embodied systems.
 </summary>
     <author>
-      <name>Gleb Rodionov</name>
+      <name>Chenjie Hao</name>
     </author>
     <author>
-      <name>Roman Garipov</name>
+      <name>Weyl Lu</name>
     </author>
     <author>
-      <name>Alina Shutova</name>
+      <name>Yifan Xu</name>
     </author>
     <author>
-      <name>George Yakushev</name>
+      <name>Yubei Chen</name>
     </author>
-    <author>
-      <name>Vage Egiazarian</name>
-    </author>
-    <author>
-      <name>Anton Sinitsin</name>
-    </author>
-    <author>
-      <name>Denis Kuznedelev</name>
-    </author>
-    <author>
-      <name>Dan Alistarh</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Preprint, work in progress</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.06261v2" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.06261v2" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">8 pages (main), 2-page appendix, 8 figures, accepted by CVPR 2025</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.07095v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.07095v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.06257v1</id>
-    <updated>2025-04-08T17:58:52Z</updated>
-    <published>2025-04-08T17:58:52Z</published>
-    <title>PainNet: Statistical Relation Network with Episode-Based Training for
-  Pain Estimation</title>
-    <summary>  Despite the span in estimating pain from facial expressions, limited works
-have focused on estimating the sequence-level pain, which is reported by
-patients and used commonly in clinics. In this paper, we introduce a novel
-Statistical Relation Network, referred to as PainNet, designed for the
-estimation of the sequence-level pain. PainNet employs two key modules, the
-embedding and the relation modules, for comparing pairs of pain videos, and
-producing relation scores indicating if each pair belongs to the same pain
-category or not. At the core of the embedding module is a statistical layer
-mounted on the top of a RNN for extracting compact video-level features. The
-statistical layer is implemented as part of the deep architecture. Doing so,
-allows combining multiple training stages used in previous research, into a
-single end-to-end training stage. PainNet is trained using the episode-based
-training scheme, which involves comparing a query video with a set of videos
-representing the different pain categories. Experimental results show the
-benefit of using the statistical layer and the episode-based training in the
-proposed model. Furthermore, PainNet outperforms the state-of-the-art results
-on self-reported pain estimation.
+    <id>http://arxiv.org/abs/2504.07092v1</id>
+    <updated>2025-04-09T17:59:05Z</updated>
+    <published>2025-04-09T17:59:05Z</published>
+    <title>Are We Done with Object-Centric Learning?</title>
+    <summary>  Object-centric learning (OCL) seeks to learn representations that only encode
+an object, isolated from other objects or background cues in a scene. This
+approach underpins various aims, including out-of-distribution (OOD)
+generalization, sample-efficient composition, and modeling of structured
+environments. Most research has focused on developing unsupervised mechanisms
+that separate objects into discrete slots in the representation space,
+evaluated using unsupervised object discovery. However, with recent
+sample-efficient segmentation models, we can separate objects in the pixel
+space and encode them independently. This achieves remarkable zero-shot
+performance on OOD object discovery benchmarks, is scalable to foundation
+models, and can handle a variable number of slots out-of-the-box. Hence, the
+goal of OCL methods to obtain object-centric representations has been largely
+achieved. Despite this progress, a key question remains: How does the ability
+to separate objects within a scene contribute to broader OCL objectives, such
+as OOD generalization? We address this by investigating the OOD generalization
+challenge caused by spurious background cues through the lens of OCL. We
+propose a novel, training-free probe called $\textbf{Object-Centric
+Classification with Applied Masks (OCCAM)}$, demonstrating that
+segmentation-based encoding of individual objects significantly outperforms
+slot-based OCL methods. However, challenges in real-world applications remain.
+We provide the toolbox for the OCL community to use scalable object-centric
+representations, and focus on practical applications and fundamental questions,
+such as understanding object perception in human cognition. Our code is
+available $\href{https://github.com/AlexanderRubinstein/OCCAM}{here}$.
 </summary>
     <author>
-      <name>Mina Bishay</name>
+      <name>Alexander Rubinstein</name>
     </author>
     <author>
-      <name>Graham Page</name>
+      <name>Ameya Prabhu</name>
     </author>
     <author>
-      <name>Mohammad Mavadati</name>
+      <name>Matthias Bethge</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Presented at the ACII 2024 Workshops</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.06257v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.06257v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Seong Joon Oh</name>
+    </author>
+    <link href="http://arxiv.org/abs/2504.07092v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.07092v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.06256v1</id>
-    <updated>2025-04-08T17:58:47Z</updated>
-    <published>2025-04-08T17:58:47Z</published>
-    <title>Transfer between Modalities with MetaQueries</title>
-    <summary>  Unified multimodal models aim to integrate understanding (text output) and
-generation (pixel output), but aligning these different modalities within a
-single architecture often demands complex training recipes and careful data
-balancing. We introduce MetaQueries, a set of learnable queries that act as an
-efficient interface between autoregressive multimodal LLMs (MLLMs) and
-diffusion models. MetaQueries connects the MLLM's latents to the diffusion
-decoder, enabling knowledge-augmented image generation by leveraging the MLLM's
-deep understanding and reasoning capabilities. Our method simplifies training,
-requiring only paired image-caption data and standard diffusion objectives.
-Notably, this transfer is effective even when the MLLM backbone remains frozen,
-thereby preserving its state-of-the-art multimodal understanding capabilities
-while achieving strong generative performance. Additionally, our method is
-flexible and can be easily instruction-tuned for advanced applications such as
-image editing and subject-driven generation.
+    <id>http://arxiv.org/abs/2504.07090v1</id>
+    <updated>2025-04-09T17:59:03Z</updated>
+    <published>2025-04-09T17:59:03Z</published>
+    <title>A Differentiable, End-to-End Forward Model for 21 cm Cosmology:
+  Estimating the Foreground, Instrument, and Signal Joint Posterior</title>
+    <summary>  We present a differentiable, end-to-end Bayesian forward modeling framework
+for line intensity mapping cosmology experiments, with a specific focus on
+low-frequency radio telescopes targeting the redshifted 21 cm line from neutral
+hydrogen as a cosmological probe. Our framework is capable of posterior density
+estimation of the cosmological signal jointly with foreground and telescope
+parameters at the field level. Our key aim is to be able to optimize the
+model's high-dimensional, non-linear, and ill-conditioned parameter space,
+while also sampling from it to perform robust uncertainty quantification within
+a Bayesian framework. We show how a differentiable programming paradigm,
+accelerated by recent advances in machine learning software and hardware, can
+make this computationally-demanding, end-to-end Bayesian approach feasible. We
+demonstrate a proof-of-concept on a simplified signal recovery problem for the
+Hydrogen Epoch of Reionization Array experiment, highlighting the framework's
+ability to build confidence in early 21 cm signal detections even in the
+presence of poorly understood foregrounds and instrumental systematics. We use
+a Hessian-preconditioned Hamiltonian Monte Carlo algorithm to efficiently
+sample our parameter space with a dimensionality approaching $N\sim10^5$, which
+enables joint, end-to-end nuisance parameter marginalization over foreground
+and instrumental terms. Lastly, we introduce a new spherical harmonic formalism
+that is a complete and orthogonal basis on the cut sky relevant to drift-scan
+radio surveys, which we call the spherical stripe harmonic formalism, and it's
+associated three-dimensional basis, the spherical stripe Fourier-Bessel
+formalism.
 </summary>
     <author>
-      <name>Xichen Pan</name>
+      <name>Nicholas Kern</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">26 pages, 15 figures; Submitted to MNRAS</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.07090v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.07090v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.IM" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.07091v1</id>
+    <updated>2025-04-09T17:59:03Z</updated>
+    <published>2025-04-09T17:59:03Z</published>
+    <title>AssistanceZero: Scalably Solving Assistance Games</title>
+    <summary>  Assistance games are a promising alternative to reinforcement learning from
+human feedback (RLHF) for training AI assistants. Assistance games resolve key
+drawbacks of RLHF, such as incentives for deceptive behavior, by explicitly
+modeling the interaction between assistant and user as a two-player game where
+the assistant cannot observe their shared goal. Despite their potential,
+assistance games have only been explored in simple settings. Scaling them to
+more complex environments is difficult because it requires both solving
+intractable decision-making problems under uncertainty and accurately modeling
+human users' behavior. We present the first scalable approach to solving
+assistance games and apply it to a new, challenging Minecraft-based assistance
+game with over $10^{400}$ possible goals. Our approach, AssistanceZero, extends
+AlphaZero with a neural network that predicts human actions and rewards,
+enabling it to plan under uncertainty. We show that AssistanceZero outperforms
+model-free RL algorithms and imitation learning in the Minecraft-based
+assistance game. In a human study, our AssistanceZero-trained assistant
+significantly reduces the number of actions participants take to complete
+building tasks in Minecraft. Our results suggest that assistance games are a
+tractable framework for training effective AI assistants in complex
+environments. Our code and models are available at
+https://github.com/cassidylaidlaw/minecraft-building-assistance-game.
+</summary>
+    <author>
+      <name>Cassidy Laidlaw</name>
     </author>
     <author>
-      <name>Satya Narayan Shukla</name>
+      <name>Eli Bronstein</name>
     </author>
     <author>
-      <name>Aashu Singh</name>
+      <name>Timothy Guo</name>
     </author>
     <author>
-      <name>Zhuokai Zhao</name>
+      <name>Dylan Feng</name>
     </author>
     <author>
-      <name>Shlok Kumar Mishra</name>
+      <name>Lukas Berglund</name>
     </author>
     <author>
-      <name>Jialiang Wang</name>
+      <name>Justin Svegliato</name>
     </author>
     <author>
-      <name>Zhiyang Xu</name>
+      <name>Stuart Russell</name>
     </author>
     <author>
-      <name>Jiuhai Chen</name>
+      <name>Anca Dragan</name>
     </author>
-    <author>
-      <name>Kunpeng Li</name>
-    </author>
-    <author>
-      <name>Felix Juefei-Xu</name>
-    </author>
-    <author>
-      <name>Ji Hou</name>
-    </author>
-    <author>
-      <name>Saining Xie</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://xichenpan.com/metaquery</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.06256v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.06256v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <link href="http://arxiv.org/abs/2504.07091v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.07091v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
