@@ -3,269 +3,233 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-04-10T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">417865</opensearch:totalResults>
+  <updated>2025-04-11T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">418087</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2504.07097v1</id>
-    <updated>2025-04-09T17:59:42Z</updated>
-    <published>2025-04-09T17:59:42Z</published>
-    <title>Sculpting Subspaces: Constrained Full Fine-Tuning in LLMs for Continual
-  Learning</title>
-    <summary>  Continual learning in large language models (LLMs) is prone to catastrophic
-forgetting, where adapting to new tasks significantly degrades performance on
-previously learned ones. Existing methods typically rely on low-rank,
-parameter-efficient updates that limit the model's expressivity and introduce
-additional parameters per task, leading to scalability issues. To address these
-limitations, we propose a novel continual full fine-tuning approach leveraging
-adaptive singular value decomposition (SVD). Our method dynamically identifies
-task-specific low-rank parameter subspaces and constrains updates to be
-orthogonal to critical directions associated with prior tasks, thus effectively
-minimizing interference without additional parameter overhead or storing
-previous task gradients. We evaluate our approach extensively on standard
-continual learning benchmarks using both encoder-decoder (T5-Large) and
-decoder-only (LLaMA-2 7B) models, spanning diverse tasks including
-classification, generation, and reasoning. Empirically, our method achieves
-state-of-the-art results, up to 7% higher average accuracy than recent
-baselines like O-LoRA, and notably maintains the model's general linguistic
-capabilities, instruction-following accuracy, and safety throughout the
-continual learning process by reducing forgetting to near-negligible levels.
-Our adaptive SVD framework effectively balances model plasticity and knowledge
-retention, providing a practical, theoretically grounded, and computationally
-scalable solution for continual learning scenarios in large language models.
+    <id>http://arxiv.org/abs/2504.07965v1</id>
+    <updated>2025-04-10T17:59:57Z</updated>
+    <published>2025-04-10T17:59:57Z</published>
+    <title>Cat, Rat, Meow: On the Alignment of Language Model and Human
+  Term-Similarity Judgments</title>
+    <summary>  Small and mid-sized generative language models have gained increasing
+attention. Their size and availability make them amenable to being analyzed at
+a behavioral as well as a representational level, allowing investigations of
+how these levels interact. We evaluate 32 publicly available language models
+for their representational and behavioral alignment with human similarity
+judgments on a word triplet task. This provides a novel evaluation setting to
+probe semantic associations in language beyond common pairwise comparisons. We
+find that (1) even the representations of small language models can achieve
+human-level alignment, (2) instruction-tuned model variants can exhibit
+substantially increased agreement, (3) the pattern of alignment across layers
+is highly model dependent, and (4) alignment based on models' behavioral
+responses is highly dependent on model size, matching their representational
+alignment only for the largest evaluated models.
 </summary>
     <author>
-      <name>Nikhil Shivakumar Nayak</name>
+      <name>Lorenz Linhardt</name>
     </author>
     <author>
-      <name>Krishnateja Killamsetty</name>
+      <name>Tom Neuhäuser</name>
     </author>
     <author>
-      <name>Ligong Han</name>
+      <name>Lenka Tětková</name>
     </author>
     <author>
-      <name>Abhishek Bhandwaldar</name>
+      <name>Oliver Eberle</name>
     </author>
-    <author>
-      <name>Prateek Chanda</name>
-    </author>
-    <author>
-      <name>Kai Xu</name>
-    </author>
-    <author>
-      <name>Hao Wang</name>
-    </author>
-    <author>
-      <name>Aldo Pareja</name>
-    </author>
-    <author>
-      <name>Oleg Silkin</name>
-    </author>
-    <author>
-      <name>Mustafa Eyceoz</name>
-    </author>
-    <author>
-      <name>Akash Srivastava</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">25 pages, 13 figures, 6 tables</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.07097v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.07097v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">ICLR 2025 Workshop on Representational Alignment (Re-Align)</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.07965v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.07965v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.PR" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="68T50" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="I.2.0; G.3" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.07095v1</id>
-    <updated>2025-04-09T17:59:32Z</updated>
-    <published>2025-04-09T17:59:32Z</published>
-    <title>Neural Motion Simulator: Pushing the Limit of World Models in
-  Reinforcement Learning</title>
-    <summary>  An embodied system must not only model the patterns of the external world but
-also understand its own motion dynamics. A motion dynamic model is essential
-for efficient skill acquisition and effective planning. In this work, we
-introduce the neural motion simulator (MoSim), a world model that predicts the
-future physical state of an embodied system based on current observations and
-actions. MoSim achieves state-of-the-art performance in physical state
-prediction and provides competitive performance across a range of downstream
-tasks. This works shows that when a world model is accurate enough and performs
-precise long-horizon predictions, it can facilitate efficient skill acquisition
-in imagined worlds and even enable zero-shot reinforcement learning.
-Furthermore, MoSim can transform any model-free reinforcement learning (RL)
-algorithm into a model-based approach, effectively decoupling physical
-environment modeling from RL algorithm development. This separation allows for
-independent advancements in RL algorithms and world modeling, significantly
-improving sample efficiency and enhancing generalization capabilities. Our
-findings highlight that world models for motion dynamics is a promising
-direction for developing more versatile and capable embodied systems.
+    <id>http://arxiv.org/abs/2504.07964v1</id>
+    <updated>2025-04-10T17:59:56Z</updated>
+    <published>2025-04-10T17:59:56Z</published>
+    <title>C3PO: Critical-Layer, Core-Expert, Collaborative Pathway Optimization
+  for Test-Time Expert Re-Mixing</title>
+    <summary>  Mixture-of-Experts (MoE) Large Language Models (LLMs) suffer from severely
+sub-optimal expert pathways-our study reveals that naive expert selection
+learned from pretraining leaves a surprising 10-20% accuracy gap for
+improvement. Motivated by this observation, we develop a novel class of
+test-time optimization methods to re-weight or "re-mixing" the experts in
+different layers jointly for each test sample. Since the test sample's ground
+truth is unknown, we propose to optimize a surrogate objective defined by the
+sample's "successful neighbors" from a reference set of samples. We introduce
+three surrogates and algorithms based on mode-finding, kernel regression, and
+the average loss of similar reference samples/tasks. To reduce the cost of
+optimizing whole pathways, we apply our algorithms merely to the core experts'
+mixing weights in critical layers, which enjoy similar performance but save
+significant computation. This leads to "Critical-Layer, Core-Expert,
+Collaborative Pathway Optimization (C3PO)". We apply C3PO to two recent MoE
+LLMs and examine it on six widely-used benchmarks. It consistently improves the
+base model by 7-15% in accuracy and outperforms widely used test-time learning
+baselines, e.g., in-context learning and prompt/prefix tuning, by a large
+margin. Moreover, C3PO enables MoE LLMs with 1-3B active parameters to
+outperform LLMs of 7-9B parameters, hence improving MoE's advantages on
+efficiency. Our thorough ablation study further sheds novel insights on
+achieving test-time improvement on MoE.
 </summary>
     <author>
-      <name>Chenjie Hao</name>
+      <name>Zhongyang Li</name>
     </author>
     <author>
-      <name>Weyl Lu</name>
+      <name>Ziyue Li</name>
     </author>
     <author>
-      <name>Yifan Xu</name>
+      <name>Tianyi Zhou</name>
     </author>
-    <author>
-      <name>Yubei Chen</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">8 pages (main), 2-page appendix, 8 figures, accepted by CVPR 2025</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.07095v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.07095v1" rel="related" type="application/pdf"/>
+    <link href="http://arxiv.org/abs/2504.07964v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.07964v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.07092v1</id>
-    <updated>2025-04-09T17:59:05Z</updated>
-    <published>2025-04-09T17:59:05Z</published>
-    <title>Are We Done with Object-Centric Learning?</title>
-    <summary>  Object-centric learning (OCL) seeks to learn representations that only encode
-an object, isolated from other objects or background cues in a scene. This
-approach underpins various aims, including out-of-distribution (OOD)
-generalization, sample-efficient composition, and modeling of structured
-environments. Most research has focused on developing unsupervised mechanisms
-that separate objects into discrete slots in the representation space,
-evaluated using unsupervised object discovery. However, with recent
-sample-efficient segmentation models, we can separate objects in the pixel
-space and encode them independently. This achieves remarkable zero-shot
-performance on OOD object discovery benchmarks, is scalable to foundation
-models, and can handle a variable number of slots out-of-the-box. Hence, the
-goal of OCL methods to obtain object-centric representations has been largely
-achieved. Despite this progress, a key question remains: How does the ability
-to separate objects within a scene contribute to broader OCL objectives, such
-as OOD generalization? We address this by investigating the OOD generalization
-challenge caused by spurious background cues through the lens of OCL. We
-propose a novel, training-free probe called $\textbf{Object-Centric
-Classification with Applied Masks (OCCAM)}$, demonstrating that
-segmentation-based encoding of individual objects significantly outperforms
-slot-based OCL methods. However, challenges in real-world applications remain.
-We provide the toolbox for the OCL community to use scalable object-centric
-representations, and focus on practical applications and fundamental questions,
-such as understanding object perception in human cognition. Our code is
-available $\href{https://github.com/AlexanderRubinstein/OCCAM}{here}$.
+    <id>http://arxiv.org/abs/2504.07962v1</id>
+    <updated>2025-04-10T17:59:55Z</updated>
+    <published>2025-04-10T17:59:55Z</published>
+    <title>GLUS: Global-Local Reasoning Unified into A Single Large Language Model
+  for Video Segmentation</title>
+    <summary>  This paper proposes a novel framework utilizing multi-modal large language
+models (MLLMs) for referring video object segmentation (RefVOS). Previous
+MLLM-based methods commonly struggle with the dilemma between "Ref" and "VOS":
+they either specialize in understanding a few key frames (global reasoning) or
+tracking objects on continuous frames (local reasoning), and rely on external
+VOS or frame selectors to mitigate the other end of the challenge. However, our
+framework GLUS shows that global and local consistency can be unified into a
+single video segmentation MLLM: a set of sparse "context frames" provides
+global information, while a stream of continuous "query frames" conducts local
+object tracking. This is further supported by jointly training the MLLM with a
+pre-trained VOS memory bank to simultaneously digest short-range and long-range
+temporal information. To improve the information efficiency within the limited
+context window of MLLMs, we introduce object contrastive learning to
+distinguish hard false-positive objects and a self-refined framework to
+identify crucial frames and perform propagation. By collectively integrating
+these insights, our GLUS delivers a simple yet effective baseline, achieving
+new state-of-the-art for MLLMs on the MeViS and Ref-Youtube-VOS benchmark. Our
+project page is at https://glus-video.github.io/.
 </summary>
     <author>
-      <name>Alexander Rubinstein</name>
+      <name>Lang Lin</name>
     </author>
     <author>
-      <name>Ameya Prabhu</name>
+      <name>Xueyang Yu</name>
     </author>
     <author>
-      <name>Matthias Bethge</name>
+      <name>Ziqi Pang</name>
     </author>
     <author>
-      <name>Seong Joon Oh</name>
+      <name>Yu-Xiong Wang</name>
     </author>
-    <link href="http://arxiv.org/abs/2504.07092v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.07092v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">CVPR 2025</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.07962v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.07962v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.07090v1</id>
-    <updated>2025-04-09T17:59:03Z</updated>
-    <published>2025-04-09T17:59:03Z</published>
-    <title>A Differentiable, End-to-End Forward Model for 21 cm Cosmology:
-  Estimating the Foreground, Instrument, and Signal Joint Posterior</title>
-    <summary>  We present a differentiable, end-to-end Bayesian forward modeling framework
-for line intensity mapping cosmology experiments, with a specific focus on
-low-frequency radio telescopes targeting the redshifted 21 cm line from neutral
-hydrogen as a cosmological probe. Our framework is capable of posterior density
-estimation of the cosmological signal jointly with foreground and telescope
-parameters at the field level. Our key aim is to be able to optimize the
-model's high-dimensional, non-linear, and ill-conditioned parameter space,
-while also sampling from it to perform robust uncertainty quantification within
-a Bayesian framework. We show how a differentiable programming paradigm,
-accelerated by recent advances in machine learning software and hardware, can
-make this computationally-demanding, end-to-end Bayesian approach feasible. We
-demonstrate a proof-of-concept on a simplified signal recovery problem for the
-Hydrogen Epoch of Reionization Array experiment, highlighting the framework's
-ability to build confidence in early 21 cm signal detections even in the
-presence of poorly understood foregrounds and instrumental systematics. We use
-a Hessian-preconditioned Hamiltonian Monte Carlo algorithm to efficiently
-sample our parameter space with a dimensionality approaching $N\sim10^5$, which
-enables joint, end-to-end nuisance parameter marginalization over foreground
-and instrumental terms. Lastly, we introduce a new spherical harmonic formalism
-that is a complete and orthogonal basis on the cut sky relevant to drift-scan
-radio surveys, which we call the spherical stripe harmonic formalism, and it's
-associated three-dimensional basis, the spherical stripe Fourier-Bessel
-formalism.
+    <id>http://arxiv.org/abs/2504.07960v1</id>
+    <updated>2025-04-10T17:59:42Z</updated>
+    <published>2025-04-10T17:59:42Z</published>
+    <title>VisualCloze: A Universal Image Generation Framework via Visual
+  In-Context Learning</title>
+    <summary>  Recent progress in diffusion models significantly advances various image
+generation tasks. However, the current mainstream approach remains focused on
+building task-specific models, which have limited efficiency when supporting a
+wide range of different needs. While universal models attempt to address this
+limitation, they face critical challenges, including generalizable task
+instruction, appropriate task distributions, and unified architectural design.
+To tackle these challenges, we propose VisualCloze, a universal image
+generation framework, which supports a wide range of in-domain tasks,
+generalization to unseen ones, unseen unification of multiple tasks, and
+reverse generation. Unlike existing methods that rely on language-based task
+instruction, leading to task ambiguity and weak generalization, we integrate
+visual in-context learning, allowing models to identify tasks from visual
+demonstrations. Meanwhile, the inherent sparsity of visual task distributions
+hampers the learning of transferable knowledge across tasks. To this end, we
+introduce Graph200K, a graph-structured dataset that establishes various
+interrelated tasks, enhancing task density and transferable knowledge.
+Furthermore, we uncover that our unified image generation formulation shared a
+consistent objective with image infilling, enabling us to leverage the strong
+generative priors of pre-trained infilling models without modifying the
+architectures.
 </summary>
     <author>
-      <name>Nicholas Kern</name>
+      <name>Zhong-Yu Li</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">26 pages, 15 figures; Submitted to MNRAS</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.07090v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.07090v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="astro-ph.IM" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Ruoyi Du</name>
+    </author>
+    <author>
+      <name>Juncheng Yan</name>
+    </author>
+    <author>
+      <name>Le Zhuo</name>
+    </author>
+    <author>
+      <name>Zhen Li</name>
+    </author>
+    <author>
+      <name>Peng Gao</name>
+    </author>
+    <author>
+      <name>Zhanyu Ma</name>
+    </author>
+    <author>
+      <name>Ming-Ming Cheng</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://visualcloze.github.io/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.07960v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.07960v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.07091v1</id>
-    <updated>2025-04-09T17:59:03Z</updated>
-    <published>2025-04-09T17:59:03Z</published>
-    <title>AssistanceZero: Scalably Solving Assistance Games</title>
-    <summary>  Assistance games are a promising alternative to reinforcement learning from
-human feedback (RLHF) for training AI assistants. Assistance games resolve key
-drawbacks of RLHF, such as incentives for deceptive behavior, by explicitly
-modeling the interaction between assistant and user as a two-player game where
-the assistant cannot observe their shared goal. Despite their potential,
-assistance games have only been explored in simple settings. Scaling them to
-more complex environments is difficult because it requires both solving
-intractable decision-making problems under uncertainty and accurately modeling
-human users' behavior. We present the first scalable approach to solving
-assistance games and apply it to a new, challenging Minecraft-based assistance
-game with over $10^{400}$ possible goals. Our approach, AssistanceZero, extends
-AlphaZero with a neural network that predicts human actions and rewards,
-enabling it to plan under uncertainty. We show that AssistanceZero outperforms
-model-free RL algorithms and imitation learning in the Minecraft-based
-assistance game. In a human study, our AssistanceZero-trained assistant
-significantly reduces the number of actions participants take to complete
-building tasks in Minecraft. Our results suggest that assistance games are a
-tractable framework for training effective AI assistants in complex
-environments. Our code and models are available at
-https://github.com/cassidylaidlaw/minecraft-building-assistance-game.
+    <id>http://arxiv.org/abs/2504.07959v1</id>
+    <updated>2025-04-10T17:59:31Z</updated>
+    <published>2025-04-10T17:59:31Z</published>
+    <title>CCMNet: Leveraging Calibrated Color Correction Matrices for Cross-Camera
+  Color Constancy</title>
+    <summary>  Computational color constancy, or white balancing, is a key module in a
+camera's image signal processor (ISP) that corrects color casts from scene
+lighting. Because this operation occurs in the camera-specific raw color space,
+white balance algorithms must adapt to different cameras. This paper introduces
+a learning-based method for cross-camera color constancy that generalizes to
+new cameras without retraining. Our method leverages pre-calibrated color
+correction matrices (CCMs) available on ISPs that map the camera's raw color
+space to a standard space (e.g., CIE XYZ). Our method uses these CCMs to
+transform predefined illumination colors (i.e., along the Planckian locus) into
+the test camera's raw space. The mapped illuminants are encoded into a compact
+camera fingerprint embedding (CFE) that enables the network to adapt to unseen
+cameras. To prevent overfitting due to limited cameras and CCMs during
+training, we introduce a data augmentation technique that interpolates between
+cameras and their CCMs. Experimental results across multiple datasets and
+backbones show that our method achieves state-of-the-art cross-camera color
+constancy while remaining lightweight and relying only on data readily
+available in camera ISPs.
 </summary>
     <author>
-      <name>Cassidy Laidlaw</name>
+      <name>Dongyoung Kim</name>
     </author>
     <author>
-      <name>Eli Bronstein</name>
+      <name>Mahmoud Afifi</name>
     </author>
     <author>
-      <name>Timothy Guo</name>
+      <name>Dongyun Kim</name>
     </author>
     <author>
-      <name>Dylan Feng</name>
+      <name>Michael S. Brown</name>
     </author>
     <author>
-      <name>Lukas Berglund</name>
+      <name>Seon Joo Kim</name>
     </author>
-    <author>
-      <name>Justin Svegliato</name>
-    </author>
-    <author>
-      <name>Stuart Russell</name>
-    </author>
-    <author>
-      <name>Anca Dragan</name>
-    </author>
-    <link href="http://arxiv.org/abs/2504.07091v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.07091v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <link href="http://arxiv.org/abs/2504.07959v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.07959v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
