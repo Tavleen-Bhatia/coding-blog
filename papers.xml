@@ -3,233 +3,269 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-04-13T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">418088</opensearch:totalResults>
+  <updated>2025-04-14T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">418296</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2504.07965v1</id>
-    <updated>2025-04-10T17:59:57Z</updated>
-    <published>2025-04-10T17:59:57Z</published>
-    <title>Cat, Rat, Meow: On the Alignment of Language Model and Human
-  Term-Similarity Judgments</title>
-    <summary>  Small and mid-sized generative language models have gained increasing
-attention. Their size and availability make them amenable to being analyzed at
-a behavioral as well as a representational level, allowing investigations of
-how these levels interact. We evaluate 32 publicly available language models
-for their representational and behavioral alignment with human similarity
-judgments on a word triplet task. This provides a novel evaluation setting to
-probe semantic associations in language beyond common pairwise comparisons. We
-find that (1) even the representations of small language models can achieve
-human-level alignment, (2) instruction-tuned model variants can exhibit
-substantially increased agreement, (3) the pattern of alignment across layers
-is highly model dependent, and (4) alignment based on models' behavioral
-responses is highly dependent on model size, matching their representational
-alignment only for the largest evaluated models.
+    <id>http://arxiv.org/abs/2504.08736v1</id>
+    <updated>2025-04-11T17:59:58Z</updated>
+    <published>2025-04-11T17:59:58Z</published>
+    <title>GigaTok: Scaling Visual Tokenizers to 3 Billion Parameters for
+  Autoregressive Image Generation</title>
+    <summary>  In autoregressive (AR) image generation, visual tokenizers compress images
+into compact discrete latent tokens, enabling efficient training of downstream
+autoregressive models for visual generation via next-token prediction. While
+scaling visual tokenizers improves image reconstruction quality, it often
+degrades downstream generation quality -- a challenge not adequately addressed
+in existing literature. To address this, we introduce GigaTok, the first
+approach to simultaneously improve image reconstruction, generation, and
+representation learning when scaling visual tokenizers. We identify the growing
+complexity of latent space as the key factor behind the reconstruction vs.
+generation dilemma. To mitigate this, we propose semantic regularization, which
+aligns tokenizer features with semantically consistent features from a
+pre-trained visual encoder. This constraint prevents excessive latent space
+complexity during scaling, yielding consistent improvements in both
+reconstruction and downstream autoregressive generation. Building on semantic
+regularization, we explore three key practices for scaling tokenizers:(1) using
+1D tokenizers for better scalability, (2) prioritizing decoder scaling when
+expanding both encoder and decoder, and (3) employing entropy loss to stabilize
+training for billion-scale tokenizers. By scaling to $\bf{3 \space billion}$
+parameters, GigaTok achieves state-of-the-art performance in reconstruction,
+downstream AR generation, and downstream AR representation quality.
 </summary>
     <author>
-      <name>Lorenz Linhardt</name>
+      <name>Tianwei Xiong</name>
     </author>
     <author>
-      <name>Tom Neuhäuser</name>
+      <name>Jun Hao Liew</name>
     </author>
     <author>
-      <name>Lenka Tětková</name>
+      <name>Zilong Huang</name>
     </author>
     <author>
-      <name>Oliver Eberle</name>
+      <name>Jiashi Feng</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">ICLR 2025 Workshop on Representational Alignment (Re-Align)</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.07965v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.07965v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Xihui Liu</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">project page: https://silentview.github.io/GigaTok</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.08736v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.08736v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.08732v1</id>
+    <updated>2025-04-11T17:57:35Z</updated>
+    <published>2025-04-11T17:57:35Z</published>
+    <title>Quantum Large Language Model Fine-Tuning</title>
+    <summary>  We introduce a hybrid quantum-classical deep learning architecture for large
+language model fine-tuning. The classical portion of the architecture is a
+sentence transformer that is powerful enough to display significant accuracy
+for complex tasks such as sentiment prediction. The quantum portion of the
+architecture consists of parameterized quantum circuits that utilize long-range
+connections between qubits.
+  We analyze the performance of the hybrid models for various settings of
+hyperparameters, including the number of qubits, the depth of the quantum
+circuits, learning rate, number of re-uploading steps, etc. Based on a
+screening study of main effects, we show an overall improvement in prediction
+accuracy over a comparable classical baseline, with a trend of increasing
+accuracy with number of qubits. We observe up to $3.14\%$ improvements in
+accuracy over classical architectures of comparable model size, within the set
+of hyperparameters probed in this study.
+  We demonstrate the contribution of each module in our architecture through
+ablation studies. Our studies are based on finite shot-counts and include
+simulations based on noisy quantum gates.
+</summary>
+    <author>
+      <name>Sang Hyub Kim</name>
+    </author>
+    <author>
+      <name>Jonathan Mei</name>
+    </author>
+    <author>
+      <name>Claudio Girotto</name>
+    </author>
+    <author>
+      <name>Masako Yamada</name>
+    </author>
+    <author>
+      <name>Martin Roetteler</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">11 pages, 11 figures, 15 tables</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.08732v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.08732v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.ET" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.08730v1</id>
+    <updated>2025-04-11T17:56:52Z</updated>
+    <published>2025-04-11T17:56:52Z</published>
+    <title>Dimension reduction for derivative-informed operator learning: An
+  analysis of approximation errors</title>
+    <summary>  We study the derivative-informed learning of nonlinear operators between
+infinite-dimensional separable Hilbert spaces by neural networks. Such
+operators can arise from the solution of partial differential equations (PDEs),
+and are used in many simulation-based outer-loop tasks in science and
+engineering, such as PDE-constrained optimization, Bayesian inverse problems,
+and optimal experimental design. In these settings, the neural network
+approximations can be used as surrogate models to accelerate the solution of
+the outer-loop tasks. However, since outer-loop tasks in infinite dimensions
+often require knowledge of the underlying geometry, the approximation accuracy
+of the operator's derivatives can also significantly impact the performance of
+the surrogate model. Motivated by this, we analyze the approximation errors of
+neural operators in Sobolev norms over infinite-dimensional Gaussian input
+measures. We focus on the reduced basis neural operator (RBNO), which uses
+linear encoders and decoders defined on dominant input/output subspaces spanned
+by reduced sets of orthonormal bases. To this end, we study two methods for
+generating the bases; principal component analysis (PCA) and
+derivative-informed subspaces (DIS), which use the dominant eigenvectors of the
+covariance of the data or the derivatives as the reduced bases, respectively.
+We then derive bounds for errors arising from both the dimension reduction and
+the latent neural network approximation, including the sampling errors
+associated with the empirical estimation of the PCA/DIS. Our analysis is
+validated on numerical experiments with elliptic PDEs, where our results show
+that bases informed by the map (i.e., DIS or output PCA) yield accurate
+reconstructions and generalization errors for both the operator and its
+derivatives, while input PCA may underperform unless ranks and training sample
+sizes are sufficiently large.
+</summary>
+    <author>
+      <name>Dingcheng Luo</name>
+    </author>
+    <author>
+      <name>Thomas O'Leary-Roseberry</name>
+    </author>
+    <author>
+      <name>Peng Chen</name>
+    </author>
+    <author>
+      <name>Omar Ghattas</name>
+    </author>
+    <link href="http://arxiv.org/abs/2504.08730v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.08730v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="math.NA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.NA" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NA" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.07964v1</id>
-    <updated>2025-04-10T17:59:56Z</updated>
-    <published>2025-04-10T17:59:56Z</published>
-    <title>C3PO: Critical-Layer, Core-Expert, Collaborative Pathway Optimization
-  for Test-Time Expert Re-Mixing</title>
-    <summary>  Mixture-of-Experts (MoE) Large Language Models (LLMs) suffer from severely
-sub-optimal expert pathways-our study reveals that naive expert selection
-learned from pretraining leaves a surprising 10-20% accuracy gap for
-improvement. Motivated by this observation, we develop a novel class of
-test-time optimization methods to re-weight or "re-mixing" the experts in
-different layers jointly for each test sample. Since the test sample's ground
-truth is unknown, we propose to optimize a surrogate objective defined by the
-sample's "successful neighbors" from a reference set of samples. We introduce
-three surrogates and algorithms based on mode-finding, kernel regression, and
-the average loss of similar reference samples/tasks. To reduce the cost of
-optimizing whole pathways, we apply our algorithms merely to the core experts'
-mixing weights in critical layers, which enjoy similar performance but save
-significant computation. This leads to "Critical-Layer, Core-Expert,
-Collaborative Pathway Optimization (C3PO)". We apply C3PO to two recent MoE
-LLMs and examine it on six widely-used benchmarks. It consistently improves the
-base model by 7-15% in accuracy and outperforms widely used test-time learning
-baselines, e.g., in-context learning and prompt/prefix tuning, by a large
-margin. Moreover, C3PO enables MoE LLMs with 1-3B active parameters to
-outperform LLMs of 7-9B parameters, hence improving MoE's advantages on
-efficiency. Our thorough ablation study further sheds novel insights on
-achieving test-time improvement on MoE.
+    <id>http://arxiv.org/abs/2504.08729v1</id>
+    <updated>2025-04-11T17:56:09Z</updated>
+    <published>2025-04-11T17:56:09Z</published>
+    <title>Steering CLIP's vision transformer with sparse autoencoders</title>
+    <summary>  While vision models are highly capable, their internal mechanisms remain
+poorly understood -- a challenge which sparse autoencoders (SAEs) have helped
+address in language, but which remains underexplored in vision. We address this
+gap by training SAEs on CLIP's vision transformer and uncover key differences
+between vision and language processing, including distinct sparsity patterns
+for SAEs trained across layers and token types. We then provide the first
+systematic analysis on the steerability of CLIP's vision transformer by
+introducing metrics to quantify how precisely SAE features can be steered to
+affect the model's output. We find that 10-15\% of neurons and features are
+steerable, with SAEs providing thousands more steerable features than the base
+model. Through targeted suppression of SAE features, we then demonstrate
+improved performance on three vision disentanglement tasks (CelebA, Waterbirds,
+and typographic attacks), finding optimal disentanglement in middle model
+layers, and achieving state-of-the-art performance on defense against
+typographic attacks.
 </summary>
     <author>
-      <name>Zhongyang Li</name>
+      <name>Sonia Joseph</name>
     </author>
     <author>
-      <name>Ziyue Li</name>
+      <name>Praneet Suresh</name>
     </author>
     <author>
-      <name>Tianyi Zhou</name>
+      <name>Ethan Goldfarb</name>
     </author>
-    <link href="http://arxiv.org/abs/2504.07964v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.07964v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Lorenz Hufe</name>
+    </author>
+    <author>
+      <name>Yossi Gandelsman</name>
+    </author>
+    <author>
+      <name>Robert Graham</name>
+    </author>
+    <author>
+      <name>Danilo Bzdok</name>
+    </author>
+    <author>
+      <name>Wojciech Samek</name>
+    </author>
+    <author>
+      <name>Blake Aaron Richards</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">8 pages, 7 figures. Accepted to the CVPR 2025 Workshop on Mechanistic
+  Interpretability for Vision (MIV)</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.08729v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.08729v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.07962v1</id>
-    <updated>2025-04-10T17:59:55Z</updated>
-    <published>2025-04-10T17:59:55Z</published>
-    <title>GLUS: Global-Local Reasoning Unified into A Single Large Language Model
-  for Video Segmentation</title>
-    <summary>  This paper proposes a novel framework utilizing multi-modal large language
-models (MLLMs) for referring video object segmentation (RefVOS). Previous
-MLLM-based methods commonly struggle with the dilemma between "Ref" and "VOS":
-they either specialize in understanding a few key frames (global reasoning) or
-tracking objects on continuous frames (local reasoning), and rely on external
-VOS or frame selectors to mitigate the other end of the challenge. However, our
-framework GLUS shows that global and local consistency can be unified into a
-single video segmentation MLLM: a set of sparse "context frames" provides
-global information, while a stream of continuous "query frames" conducts local
-object tracking. This is further supported by jointly training the MLLM with a
-pre-trained VOS memory bank to simultaneously digest short-range and long-range
-temporal information. To improve the information efficiency within the limited
-context window of MLLMs, we introduce object contrastive learning to
-distinguish hard false-positive objects and a self-refined framework to
-identify crucial frames and perform propagation. By collectively integrating
-these insights, our GLUS delivers a simple yet effective baseline, achieving
-new state-of-the-art for MLLMs on the MeViS and Ref-Youtube-VOS benchmark. Our
-project page is at https://glus-video.github.io/.
+    <id>http://arxiv.org/abs/2504.08728v1</id>
+    <updated>2025-04-11T17:55:58Z</updated>
+    <published>2025-04-11T17:55:58Z</published>
+    <title>End-to-End Demonstration of Quantum Generative Adversarial Networks for
+  Steel Microstructure Image Augmentation on a Trapped-Ion Quantum Computer</title>
+    <summary>  Generative adversarial networks (GANs) are a machine learning technique
+capable of producing high-quality synthetic images. In the field of materials
+science, when a crystallographic dataset includes inadequate or
+difficult-to-obtain images, synthetic images can be used for image augmentation
+to mitigate data scarcity and streamline the preparation of datasets for
+high-throughput analysis. We integrate quantum computing with GANs into a
+hybrid quantum-classical GAN to generate complex 5-channel electron backscatter
+diffraction (EBSD) images of two distinct microstructure phases of steel. By
+training a quantum circuit at the input layer of a large classical Wasserstein
+GAN (WGAN) model, we mitigate mode collapse and achieve higher image quality
+compared to a baseline classical GAN. We generate images from both ferrite and
+bainite microstructure phases in an end-to-end workflow. With respect to
+maximum mean discrepancy score, we find that the hybrid quantum-classical WGAN
+improves over classical Bernoulli GANs in 70% of samples. As the quantum
+computer is part of the training procedure, our method has potential to scale
+to larger number of qubits. Our results indicate that the WGAN model based on
+the quantum circuit ansatz may be effectively leveraged to enhance the quality
+of synthetic EBSD images on both quantum simulators and actual quantum
+hardware.
 </summary>
     <author>
-      <name>Lang Lin</name>
+      <name>Samwel Sekwao</name>
     </author>
     <author>
-      <name>Xueyang Yu</name>
+      <name>Jason Iaconis</name>
     </author>
     <author>
-      <name>Ziqi Pang</name>
+      <name>Claudio Girotto</name>
     </author>
     <author>
-      <name>Yu-Xiong Wang</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">CVPR 2025</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.07962v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.07962v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.07960v1</id>
-    <updated>2025-04-10T17:59:42Z</updated>
-    <published>2025-04-10T17:59:42Z</published>
-    <title>VisualCloze: A Universal Image Generation Framework via Visual
-  In-Context Learning</title>
-    <summary>  Recent progress in diffusion models significantly advances various image
-generation tasks. However, the current mainstream approach remains focused on
-building task-specific models, which have limited efficiency when supporting a
-wide range of different needs. While universal models attempt to address this
-limitation, they face critical challenges, including generalizable task
-instruction, appropriate task distributions, and unified architectural design.
-To tackle these challenges, we propose VisualCloze, a universal image
-generation framework, which supports a wide range of in-domain tasks,
-generalization to unseen ones, unseen unification of multiple tasks, and
-reverse generation. Unlike existing methods that rely on language-based task
-instruction, leading to task ambiguity and weak generalization, we integrate
-visual in-context learning, allowing models to identify tasks from visual
-demonstrations. Meanwhile, the inherent sparsity of visual task distributions
-hampers the learning of transferable knowledge across tasks. To this end, we
-introduce Graph200K, a graph-structured dataset that establishes various
-interrelated tasks, enhancing task density and transferable knowledge.
-Furthermore, we uncover that our unified image generation formulation shared a
-consistent objective with image infilling, enabling us to leverage the strong
-generative priors of pre-trained infilling models without modifying the
-architectures.
-</summary>
-    <author>
-      <name>Zhong-Yu Li</name>
+      <name>Martin Roetteler</name>
     </author>
     <author>
-      <name>Ruoyi Du</name>
+      <name>Minwoo Kang</name>
     </author>
     <author>
-      <name>Juncheng Yan</name>
+      <name>Donghwi Kim</name>
     </author>
     <author>
-      <name>Le Zhuo</name>
+      <name>Seunghyo Noh</name>
     </author>
     <author>
-      <name>Zhen Li</name>
+      <name>Woomin Kyoung</name>
     </author>
     <author>
-      <name>Peng Gao</name>
+      <name>Kyujin Shin</name>
     </author>
-    <author>
-      <name>Zhanyu Ma</name>
-    </author>
-    <author>
-      <name>Ming-Ming Cheng</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://visualcloze.github.io/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.07960v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.07960v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.07959v1</id>
-    <updated>2025-04-10T17:59:31Z</updated>
-    <published>2025-04-10T17:59:31Z</published>
-    <title>CCMNet: Leveraging Calibrated Color Correction Matrices for Cross-Camera
-  Color Constancy</title>
-    <summary>  Computational color constancy, or white balancing, is a key module in a
-camera's image signal processor (ISP) that corrects color casts from scene
-lighting. Because this operation occurs in the camera-specific raw color space,
-white balance algorithms must adapt to different cameras. This paper introduces
-a learning-based method for cross-camera color constancy that generalizes to
-new cameras without retraining. Our method leverages pre-calibrated color
-correction matrices (CCMs) available on ISPs that map the camera's raw color
-space to a standard space (e.g., CIE XYZ). Our method uses these CCMs to
-transform predefined illumination colors (i.e., along the Planckian locus) into
-the test camera's raw space. The mapped illuminants are encoded into a compact
-camera fingerprint embedding (CFE) that enables the network to adapt to unseen
-cameras. To prevent overfitting due to limited cameras and CCMs during
-training, we introduce a data augmentation technique that interpolates between
-cameras and their CCMs. Experimental results across multiple datasets and
-backbones show that our method achieves state-of-the-art cross-camera color
-constancy while remaining lightweight and relying only on data readily
-available in camera ISPs.
-</summary>
-    <author>
-      <name>Dongyoung Kim</name>
-    </author>
-    <author>
-      <name>Mahmoud Afifi</name>
-    </author>
-    <author>
-      <name>Dongyun Kim</name>
-    </author>
-    <author>
-      <name>Michael S. Brown</name>
-    </author>
-    <author>
-      <name>Seon Joo Kim</name>
-    </author>
-    <link href="http://arxiv.org/abs/2504.07959v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.07959v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">15 pages, 6 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.08728v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.08728v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
