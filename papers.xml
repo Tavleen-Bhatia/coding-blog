@@ -3,269 +3,540 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-04-14T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">418296</opensearch:totalResults>
+  <updated>2025-04-15T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">418802</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2504.08736v1</id>
-    <updated>2025-04-11T17:59:58Z</updated>
-    <published>2025-04-11T17:59:58Z</published>
-    <title>GigaTok: Scaling Visual Tokenizers to 3 Billion Parameters for
-  Autoregressive Image Generation</title>
-    <summary>  In autoregressive (AR) image generation, visual tokenizers compress images
-into compact discrete latent tokens, enabling efficient training of downstream
-autoregressive models for visual generation via next-token prediction. While
-scaling visual tokenizers improves image reconstruction quality, it often
-degrades downstream generation quality -- a challenge not adequately addressed
-in existing literature. To address this, we introduce GigaTok, the first
-approach to simultaneously improve image reconstruction, generation, and
-representation learning when scaling visual tokenizers. We identify the growing
-complexity of latent space as the key factor behind the reconstruction vs.
-generation dilemma. To mitigate this, we propose semantic regularization, which
-aligns tokenizer features with semantically consistent features from a
-pre-trained visual encoder. This constraint prevents excessive latent space
-complexity during scaling, yielding consistent improvements in both
-reconstruction and downstream autoregressive generation. Building on semantic
-regularization, we explore three key practices for scaling tokenizers:(1) using
-1D tokenizers for better scalability, (2) prioritizing decoder scaling when
-expanding both encoder and decoder, and (3) employing entropy loss to stabilize
-training for billion-scale tokenizers. By scaling to $\bf{3 \space billion}$
-parameters, GigaTok achieves state-of-the-art performance in reconstruction,
-downstream AR generation, and downstream AR representation quality.
+    <id>http://arxiv.org/abs/2504.10487v1</id>
+    <updated>2025-04-14T17:59:59Z</updated>
+    <published>2025-04-14T17:59:59Z</published>
+    <title>FLOSS: Free Lunch in Open-vocabulary Semantic Segmentation</title>
+    <summary>  Recent Open-Vocabulary Semantic Segmentation (OVSS) models extend the CLIP
+model to segmentation while maintaining the use of multiple templates (e.g., a
+photo of &lt;class&gt;, a sketch of a &lt;class&gt;, etc.) for constructing class-wise
+averaged text embeddings, acting as a classifier. In this paper, we challenge
+this status quo and investigate the impact of templates for OVSS. Empirically,
+we observe that for each class, there exist single-template classifiers
+significantly outperforming the conventional averaged classifier. We refer to
+them as class-experts. Given access to unlabeled images and without any
+training involved, we estimate these experts by leveraging the class-wise
+prediction entropy of single-template classifiers, selecting as class-wise
+experts those which yield the lowest entropy. All experts, each specializing in
+a specific class, collaborate in a newly proposed fusion method to generate
+more accurate OVSS predictions. Our plug-and-play method, coined FLOSS, is
+orthogonal and complementary to existing OVSS methods, offering a ''free
+lunch'' to systematically improve OVSS without labels and additional training.
+Extensive experiments demonstrate that FLOSS consistently boosts
+state-of-the-art methods on various OVSS benchmarks. Moreover, the selected
+expert templates can generalize well from one dataset to others sharing the
+same semantic categories, yet exhibiting distribution shifts. Additionally, we
+obtain satisfactory improvements under a low-data regime, where only a few
+unlabeled images are available. Our code is available at
+https://github.com/yasserben/FLOSS .
 </summary>
     <author>
-      <name>Tianwei Xiong</name>
+      <name>Yasser Benigmim</name>
     </author>
     <author>
-      <name>Jun Hao Liew</name>
+      <name>Mohammad Fahes</name>
     </author>
     <author>
-      <name>Zilong Huang</name>
+      <name>Tuan-Hung Vu</name>
     </author>
     <author>
-      <name>Jiashi Feng</name>
+      <name>Andrei Bursuc</name>
     </author>
     <author>
-      <name>Xihui Liu</name>
+      <name>Raoul de Charette</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">project page: https://silentview.github.io/GigaTok</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.08736v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.08736v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://yasserben.github.io/FLOSS/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.10487v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.10487v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.08732v1</id>
-    <updated>2025-04-11T17:57:35Z</updated>
-    <published>2025-04-11T17:57:35Z</published>
-    <title>Quantum Large Language Model Fine-Tuning</title>
-    <summary>  We introduce a hybrid quantum-classical deep learning architecture for large
-language model fine-tuning. The classical portion of the architecture is a
-sentence transformer that is powerful enough to display significant accuracy
-for complex tasks such as sentiment prediction. The quantum portion of the
-architecture consists of parameterized quantum circuits that utilize long-range
-connections between qubits.
-  We analyze the performance of the hybrid models for various settings of
-hyperparameters, including the number of qubits, the depth of the quantum
-circuits, learning rate, number of re-uploading steps, etc. Based on a
-screening study of main effects, we show an overall improvement in prediction
-accuracy over a comparable classical baseline, with a trend of increasing
-accuracy with number of qubits. We observe up to $3.14\%$ improvements in
-accuracy over classical architectures of comparable model size, within the set
-of hyperparameters probed in this study.
-  We demonstrate the contribution of each module in our architecture through
-ablation studies. Our studies are based on finite shot-counts and include
-simulations based on noisy quantum gates.
-</summary>
-    <author>
-      <name>Sang Hyub Kim</name>
-    </author>
-    <author>
-      <name>Jonathan Mei</name>
-    </author>
-    <author>
-      <name>Claudio Girotto</name>
-    </author>
-    <author>
-      <name>Masako Yamada</name>
-    </author>
-    <author>
-      <name>Martin Roetteler</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">11 pages, 11 figures, 15 tables</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.08732v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.08732v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.ET" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.08730v1</id>
-    <updated>2025-04-11T17:56:52Z</updated>
-    <published>2025-04-11T17:56:52Z</published>
-    <title>Dimension reduction for derivative-informed operator learning: An
-  analysis of approximation errors</title>
-    <summary>  We study the derivative-informed learning of nonlinear operators between
-infinite-dimensional separable Hilbert spaces by neural networks. Such
-operators can arise from the solution of partial differential equations (PDEs),
-and are used in many simulation-based outer-loop tasks in science and
-engineering, such as PDE-constrained optimization, Bayesian inverse problems,
-and optimal experimental design. In these settings, the neural network
-approximations can be used as surrogate models to accelerate the solution of
-the outer-loop tasks. However, since outer-loop tasks in infinite dimensions
-often require knowledge of the underlying geometry, the approximation accuracy
-of the operator's derivatives can also significantly impact the performance of
-the surrogate model. Motivated by this, we analyze the approximation errors of
-neural operators in Sobolev norms over infinite-dimensional Gaussian input
-measures. We focus on the reduced basis neural operator (RBNO), which uses
-linear encoders and decoders defined on dominant input/output subspaces spanned
-by reduced sets of orthonormal bases. To this end, we study two methods for
-generating the bases; principal component analysis (PCA) and
-derivative-informed subspaces (DIS), which use the dominant eigenvectors of the
-covariance of the data or the derivatives as the reduced bases, respectively.
-We then derive bounds for errors arising from both the dimension reduction and
-the latent neural network approximation, including the sampling errors
-associated with the empirical estimation of the PCA/DIS. Our analysis is
-validated on numerical experiments with elliptic PDEs, where our results show
-that bases informed by the map (i.e., DIS or output PCA) yield accurate
-reconstructions and generalization errors for both the operator and its
-derivatives, while input PCA may underperform unless ranks and training sample
-sizes are sufficiently large.
-</summary>
-    <author>
-      <name>Dingcheng Luo</name>
-    </author>
-    <author>
-      <name>Thomas O'Leary-Roseberry</name>
-    </author>
-    <author>
-      <name>Peng Chen</name>
-    </author>
-    <author>
-      <name>Omar Ghattas</name>
-    </author>
-    <link href="http://arxiv.org/abs/2504.08730v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.08730v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="math.NA" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.NA" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.NA" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.08729v1</id>
-    <updated>2025-04-11T17:56:09Z</updated>
-    <published>2025-04-11T17:56:09Z</published>
-    <title>Steering CLIP's vision transformer with sparse autoencoders</title>
-    <summary>  While vision models are highly capable, their internal mechanisms remain
-poorly understood -- a challenge which sparse autoencoders (SAEs) have helped
-address in language, but which remains underexplored in vision. We address this
-gap by training SAEs on CLIP's vision transformer and uncover key differences
-between vision and language processing, including distinct sparsity patterns
-for SAEs trained across layers and token types. We then provide the first
-systematic analysis on the steerability of CLIP's vision transformer by
-introducing metrics to quantify how precisely SAE features can be steered to
-affect the model's output. We find that 10-15\% of neurons and features are
-steerable, with SAEs providing thousands more steerable features than the base
-model. Through targeted suppression of SAE features, we then demonstrate
-improved performance on three vision disentanglement tasks (CelebA, Waterbirds,
-and typographic attacks), finding optimal disentanglement in middle model
-layers, and achieving state-of-the-art performance on defense against
-typographic attacks.
+    <id>http://arxiv.org/abs/2504.10485v1</id>
+    <updated>2025-04-14T17:59:57Z</updated>
+    <published>2025-04-14T17:59:57Z</published>
+    <title>Decoupled Diffusion Sparks Adaptive Scene Generation</title>
+    <summary>  Controllable scene generation could reduce the cost of diverse data
+collection substantially for autonomous driving. Prior works formulate the
+traffic layout generation as predictive progress, either by denoising entire
+sequences at once or by iteratively predicting the next frame. However, full
+sequence denoising hinders online reaction, while the latter's short-sighted
+next-frame prediction lacks precise goal-state guidance. Further, the learned
+model struggles to generate complex or challenging scenarios due to a large
+number of safe and ordinal driving behaviors from open datasets. To overcome
+these, we introduce Nexus, a decoupled scene generation framework that improves
+reactivity and goal conditioning by simulating both ordinal and challenging
+scenarios from fine-grained tokens with independent noise states. At the core
+of the decoupled pipeline is the integration of a partial noise-masking
+training strategy and a noise-aware schedule that ensures timely environmental
+updates throughout the denoising process. To complement challenging scenario
+generation, we collect a dataset consisting of complex corner cases. It covers
+540 hours of simulated data, including high-risk interactions such as cut-in,
+sudden braking, and collision. Nexus achieves superior generation realism while
+preserving reactivity and goal orientation, with a 40% reduction in
+displacement error. We further demonstrate that Nexus improves closed-loop
+planning by 20% through data augmentation and showcase its capability in
+safety-critical data generation.
 </summary>
     <author>
-      <name>Sonia Joseph</name>
+      <name>Yunsong Zhou</name>
     </author>
     <author>
-      <name>Praneet Suresh</name>
+      <name>Naisheng Ye</name>
     </author>
     <author>
-      <name>Ethan Goldfarb</name>
+      <name>William Ljungbergh</name>
     </author>
     <author>
-      <name>Lorenz Hufe</name>
+      <name>Tianyu Li</name>
     </author>
     <author>
-      <name>Yossi Gandelsman</name>
+      <name>Jiazhi Yang</name>
     </author>
     <author>
-      <name>Robert Graham</name>
+      <name>Zetong Yang</name>
     </author>
     <author>
-      <name>Danilo Bzdok</name>
+      <name>Hongzi Zhu</name>
     </author>
     <author>
-      <name>Wojciech Samek</name>
+      <name>Christoffer Petersson</name>
     </author>
     <author>
-      <name>Blake Aaron Richards</name>
+      <name>Hongyang Li</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">8 pages, 7 figures. Accepted to the CVPR 2025 Workshop on Mechanistic
-  Interpretability for Vision (MIV)</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.08729v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.08729v1" rel="related" type="application/pdf"/>
+    <link href="http://arxiv.org/abs/2504.10485v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.10485v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.10483v1</id>
+    <updated>2025-04-14T17:59:53Z</updated>
+    <published>2025-04-14T17:59:53Z</published>
+    <title>REPA-E: Unlocking VAE for End-to-End Tuning with Latent Diffusion
+  Transformers</title>
+    <summary>  In this paper we tackle a fundamental question: "Can we train latent
+diffusion models together with the variational auto-encoder (VAE) tokenizer in
+an end-to-end manner?" Traditional deep-learning wisdom dictates that
+end-to-end training is often preferable when possible. However, for latent
+diffusion transformers, it is observed that end-to-end training both VAE and
+diffusion-model using standard diffusion-loss is ineffective, even causing a
+degradation in final performance. We show that while diffusion loss is
+ineffective, end-to-end training can be unlocked through the
+representation-alignment (REPA) loss -- allowing both VAE and diffusion model
+to be jointly tuned during the training process. Despite its simplicity, the
+proposed training recipe (REPA-E) shows remarkable performance; speeding up
+diffusion model training by over 17x and 45x over REPA and vanilla training
+recipes, respectively. Interestingly, we observe that end-to-end tuning with
+REPA-E also improves the VAE itself; leading to improved latent space structure
+and downstream generation performance. In terms of final performance, our
+approach sets a new state-of-the-art; achieving FID of 1.26 and 1.83 with and
+without classifier-free guidance on ImageNet 256 x 256. Code is available at
+https://end2end-diffusion.github.io.
+</summary>
+    <author>
+      <name>Xingjian Leng</name>
+    </author>
+    <author>
+      <name>Jaskirat Singh</name>
+    </author>
+    <author>
+      <name>Yunzhong Hou</name>
+    </author>
+    <author>
+      <name>Zhenchang Xing</name>
+    </author>
+    <author>
+      <name>Saining Xie</name>
+    </author>
+    <author>
+      <name>Liang Zheng</name>
+    </author>
+    <link href="http://arxiv.org/abs/2504.10483v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.10483v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.10480v1</id>
+    <updated>2025-04-14T17:59:25Z</updated>
+    <published>2025-04-14T17:59:25Z</published>
+    <title>Probing Long-Range Forces in Neutrino Oscillations at the ESSnuSB
+  Experiment</title>
+    <summary>  Neutrino oscillations constitute an excellent tool to probe physics beyond
+the Standard Model. In this paper, we investigate the potential of the \ess
+experiment to constrain the effects of flavour-dependent long-range forces
+(LRFs) in neutrino oscillations, which may arise due to the extension of the
+Standard Model gauge group by introducing new $U(1)$ symmetries. Focusing on
+three specific $U(1)$ symmetries -- $L_e - L_\mu$, $L_e - L_\tau$, and $L_\mu -
+L_\tau$, we demonstrate that \ess offers a favourable environment to search for
+LRF effects. Our analyses reveal that \ess can set 90\% confidence level bounds
+of $V_{e\mu} &lt; 2.99 \times 10^{-14} \, \text{eV}$, $V_{e\tau} &lt; 2.05 \times
+10^{-14} \, \text{eV}$, and $V_{\mu\tau} &lt; 1.81 \times 10^{-14} \, \text{eV}$,
+which are competitive to the upcoming Deep Underground Neutrino Experiment
+(DUNE). It is also observed that reducing the systematic uncertainties from
+$5\%$ to $2\%$ improves the \ess limits on $V_{\alpha\beta}$. Interestingly, we
+find limited correlations between LRF parameters and the less constrained
+lepton mixing parameters $\theta_{23}$ and $\delta_{\text{CP}}$, preserving the
+robustness of ESSnuSB's sensitivity to CP violation. Even under extreme LRF
+potentials ($V_{\alpha\beta} \gg 10^{-13} \, \text{eV}$), the CP-violation
+sensitivity and $\delta_{\text{CP}}$ precision remain largely unaffected. These
+results establish ESSnuSB as a competitive experimental setup for probing LRF
+effects, complementing constraints from other neutrino sources and offering
+critical insights into the physics of long-range forces.
+</summary>
+    <author>
+      <name> ESSnuSB</name>
+    </author>
+    <author>
+      <name> :</name>
+    </author>
+    <author>
+      <name>J. Aguilar</name>
+    </author>
+    <author>
+      <name>M. Anastasopoulos</name>
+    </author>
+    <author>
+      <name>D. Barčot</name>
+    </author>
+    <author>
+      <name>E. Baussan</name>
+    </author>
+    <author>
+      <name>A. K. Bhattacharyya</name>
+    </author>
+    <author>
+      <name>A. Bignami</name>
+    </author>
+    <author>
+      <name>M. Blennow</name>
+    </author>
+    <author>
+      <name>M. Bogomilov</name>
+    </author>
+    <author>
+      <name>B. Bolling</name>
+    </author>
+    <author>
+      <name>E. Bouquerel</name>
+    </author>
+    <author>
+      <name>F. Bramati</name>
+    </author>
+    <author>
+      <name>A. Branca</name>
+    </author>
+    <author>
+      <name>G. Brunetti</name>
+    </author>
+    <author>
+      <name>I. Bustinduy</name>
+    </author>
+    <author>
+      <name>C. J. Carlile</name>
+    </author>
+    <author>
+      <name>J. Cederkall</name>
+    </author>
+    <author>
+      <name>T. W. Choi</name>
+    </author>
+    <author>
+      <name>S. Choubey</name>
+    </author>
+    <author>
+      <name>P. Christiansen</name>
+    </author>
+    <author>
+      <name>M. Collins</name>
+    </author>
+    <author>
+      <name>E. Cristaldo Morales</name>
+    </author>
+    <author>
+      <name>P. Cupiał</name>
+    </author>
+    <author>
+      <name>D. D'Ago</name>
+    </author>
+    <author>
+      <name>H. Danared</name>
+    </author>
+    <author>
+      <name>J. P. A. M. de André</name>
+    </author>
+    <author>
+      <name>M. Dracos</name>
+    </author>
+    <author>
+      <name>I. Efthymiopoulos</name>
+    </author>
+    <author>
+      <name>T. Ekelöf</name>
+    </author>
+    <author>
+      <name>M. Eshraqi</name>
+    </author>
+    <author>
+      <name>G. Fanourakis</name>
+    </author>
+    <author>
+      <name>A. Farricker</name>
+    </author>
+    <author>
+      <name>E. Fasoula</name>
+    </author>
+    <author>
+      <name>T. Fukuda</name>
+    </author>
+    <author>
+      <name>N. Gazis</name>
+    </author>
+    <author>
+      <name>Th. Geralis</name>
+    </author>
+    <author>
+      <name>M. Ghosh</name>
+    </author>
+    <author>
+      <name>A. Giarnetti</name>
+    </author>
+    <author>
+      <name>G. Gokbulut</name>
+    </author>
+    <author>
+      <name>A. Gupta</name>
+    </author>
+    <author>
+      <name>C. Hagner</name>
+    </author>
+    <author>
+      <name>L. Halić</name>
+    </author>
+    <author>
+      <name>M. Hooft</name>
+    </author>
+    <author>
+      <name>K. E. Iversen</name>
+    </author>
+    <author>
+      <name>N. Jachowicz</name>
+    </author>
+    <author>
+      <name>M. Jakkapu</name>
+    </author>
+    <author>
+      <name>M. Jenssen</name>
+    </author>
+    <author>
+      <name>R. Johansson</name>
+    </author>
+    <author>
+      <name>E. Kasimi</name>
+    </author>
+    <author>
+      <name>A. Kayis Topaksu</name>
+    </author>
+    <author>
+      <name>B. Kildetoft</name>
+    </author>
+    <author>
+      <name>B. Kliček</name>
+    </author>
+    <author>
+      <name>K. Kordas</name>
+    </author>
+    <author>
+      <name>B. Kovač</name>
+    </author>
+    <author>
+      <name>A. Leisos</name>
+    </author>
+    <author>
+      <name>M. Lindroos</name>
+    </author>
+    <author>
+      <name>A. Longhin</name>
+    </author>
+    <author>
+      <name>C. Maiano</name>
+    </author>
+    <author>
+      <name>D. Majumdar</name>
+    </author>
+    <author>
+      <name>S. Marangoni</name>
+    </author>
+    <author>
+      <name>S. Marciano</name>
+    </author>
+    <author>
+      <name>J. G. Marcos</name>
+    </author>
+    <author>
+      <name>C. Marrelli</name>
+    </author>
+    <author>
+      <name>D. Meloni</name>
+    </author>
+    <author>
+      <name>M. Mezzetto</name>
+    </author>
+    <author>
+      <name>N. Milas</name>
+    </author>
+    <author>
+      <name>J. L. Muñoz</name>
+    </author>
+    <author>
+      <name>K. Niewczas</name>
+    </author>
+    <author>
+      <name>M. Oglakci</name>
+    </author>
+    <author>
+      <name>T. Ohlsson</name>
+    </author>
+    <author>
+      <name>M. Olvegård</name>
+    </author>
+    <author>
+      <name>M. Pari</name>
+    </author>
+    <author>
+      <name>D. Patrzalek</name>
+    </author>
+    <author>
+      <name>G. Petkov</name>
+    </author>
+    <author>
+      <name>Ch. Petridou</name>
+    </author>
+    <author>
+      <name>P. Poussot</name>
+    </author>
+    <author>
+      <name>A. Psallidas</name>
+    </author>
+    <author>
+      <name>F. Pupilli</name>
+    </author>
+    <author>
+      <name>D. Saiang</name>
+    </author>
+    <author>
+      <name>D. Sampsonidis</name>
+    </author>
+    <author>
+      <name>C. Schwab</name>
+    </author>
+    <author>
+      <name>F. Sordo</name>
+    </author>
+    <author>
+      <name>G. Stavropoulos</name>
+    </author>
+    <author>
+      <name>M. Stipčević</name>
+    </author>
+    <author>
+      <name>R. Tarkeshian</name>
+    </author>
+    <author>
+      <name>F. Terranova</name>
+    </author>
+    <author>
+      <name>T. Tolba</name>
+    </author>
+    <author>
+      <name>E. Trachanas</name>
+    </author>
+    <author>
+      <name>R. Tsenov</name>
+    </author>
+    <author>
+      <name>A. Tsirigotis</name>
+    </author>
+    <author>
+      <name>S. E. Tzamarias</name>
+    </author>
+    <author>
+      <name>M. Vanderpoorten</name>
+    </author>
+    <author>
+      <name>G. Vankova-Kirilova</name>
+    </author>
+    <author>
+      <name>N. Vassilopoulos</name>
+    </author>
+    <author>
+      <name>S. Vihonen</name>
+    </author>
+    <author>
+      <name>J. Wurtz</name>
+    </author>
+    <author>
+      <name>V. Zeter</name>
+    </author>
+    <author>
+      <name>O. Zormpa</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">31 pages, 12 figures, 3 tables</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.10480v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.10480v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ex" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.10478v2</id>
+    <updated>2025-04-15T17:46:59Z</updated>
+    <published>2025-04-14T17:59:07Z</published>
+    <title>Weight Ensembling Improves Reasoning in Language Models</title>
+    <summary>  We investigate a failure mode that arises during the training of reasoning
+models, where the diversity of generations begins to collapse, leading to
+suboptimal test-time scaling. Notably, the Pass@1 rate reliably improves during
+supervised finetuning (SFT), but Pass@k rapidly deteriorates. Surprisingly, a
+simple intervention of interpolating the weights of the latest SFT checkpoint
+with an early checkpoint, otherwise known as WiSE-FT, almost completely
+recovers Pass@k while also improving Pass@1. The WiSE-FT variant achieves
+better test-time scaling (Best@k, majority vote) and achieves superior results
+with less data when tuned further by reinforcement learning. Finally, we find
+that WiSE-FT provides complementary performance gains that cannot be achieved
+only through diversity-inducing decoding strategies, like temperature scaling.
+We formalize a bias-variance tradeoff of Pass@k with respect to the expectation
+and variance of Pass@1 over the test distribution. We find that WiSE-FT can
+reduce bias and variance simultaneously, while temperature scaling inherently
+trades-off between bias and variance.
+</summary>
+    <author>
+      <name>Xingyu Dang</name>
+    </author>
+    <author>
+      <name>Christina Baek</name>
+    </author>
+    <author>
+      <name>Kaiyue Wen</name>
+    </author>
+    <author>
+      <name>Zico Kolter</name>
+    </author>
+    <author>
+      <name>Aditi Raghunathan</name>
+    </author>
+    <link href="http://arxiv.org/abs/2504.10478v2" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.10478v2" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.08728v1</id>
-    <updated>2025-04-11T17:55:58Z</updated>
-    <published>2025-04-11T17:55:58Z</published>
-    <title>End-to-End Demonstration of Quantum Generative Adversarial Networks for
-  Steel Microstructure Image Augmentation on a Trapped-Ion Quantum Computer</title>
-    <summary>  Generative adversarial networks (GANs) are a machine learning technique
-capable of producing high-quality synthetic images. In the field of materials
-science, when a crystallographic dataset includes inadequate or
-difficult-to-obtain images, synthetic images can be used for image augmentation
-to mitigate data scarcity and streamline the preparation of datasets for
-high-throughput analysis. We integrate quantum computing with GANs into a
-hybrid quantum-classical GAN to generate complex 5-channel electron backscatter
-diffraction (EBSD) images of two distinct microstructure phases of steel. By
-training a quantum circuit at the input layer of a large classical Wasserstein
-GAN (WGAN) model, we mitigate mode collapse and achieve higher image quality
-compared to a baseline classical GAN. We generate images from both ferrite and
-bainite microstructure phases in an end-to-end workflow. With respect to
-maximum mean discrepancy score, we find that the hybrid quantum-classical WGAN
-improves over classical Bernoulli GANs in 70% of samples. As the quantum
-computer is part of the training procedure, our method has potential to scale
-to larger number of qubits. Our results indicate that the WGAN model based on
-the quantum circuit ansatz may be effectively leveraged to enhance the quality
-of synthetic EBSD images on both quantum simulators and actual quantum
-hardware.
-</summary>
-    <author>
-      <name>Samwel Sekwao</name>
-    </author>
-    <author>
-      <name>Jason Iaconis</name>
-    </author>
-    <author>
-      <name>Claudio Girotto</name>
-    </author>
-    <author>
-      <name>Martin Roetteler</name>
-    </author>
-    <author>
-      <name>Minwoo Kang</name>
-    </author>
-    <author>
-      <name>Donghwi Kim</name>
-    </author>
-    <author>
-      <name>Seunghyo Noh</name>
-    </author>
-    <author>
-      <name>Woomin Kyoung</name>
-    </author>
-    <author>
-      <name>Kyujin Shin</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">15 pages, 6 figures</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.08728v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.08728v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
