@@ -3,540 +3,282 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-04-15T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">418802</opensearch:totalResults>
+  <updated>2025-04-16T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">419068</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2504.10487v1</id>
-    <updated>2025-04-14T17:59:59Z</updated>
-    <published>2025-04-14T17:59:59Z</published>
-    <title>FLOSS: Free Lunch in Open-vocabulary Semantic Segmentation</title>
-    <summary>  Recent Open-Vocabulary Semantic Segmentation (OVSS) models extend the CLIP
-model to segmentation while maintaining the use of multiple templates (e.g., a
-photo of &lt;class&gt;, a sketch of a &lt;class&gt;, etc.) for constructing class-wise
-averaged text embeddings, acting as a classifier. In this paper, we challenge
-this status quo and investigate the impact of templates for OVSS. Empirically,
-we observe that for each class, there exist single-template classifiers
-significantly outperforming the conventional averaged classifier. We refer to
-them as class-experts. Given access to unlabeled images and without any
-training involved, we estimate these experts by leveraging the class-wise
-prediction entropy of single-template classifiers, selecting as class-wise
-experts those which yield the lowest entropy. All experts, each specializing in
-a specific class, collaborate in a newly proposed fusion method to generate
-more accurate OVSS predictions. Our plug-and-play method, coined FLOSS, is
-orthogonal and complementary to existing OVSS methods, offering a ''free
-lunch'' to systematically improve OVSS without labels and additional training.
-Extensive experiments demonstrate that FLOSS consistently boosts
-state-of-the-art methods on various OVSS benchmarks. Moreover, the selected
-expert templates can generalize well from one dataset to others sharing the
-same semantic categories, yet exhibiting distribution shifts. Additionally, we
-obtain satisfactory improvements under a low-data regime, where only a few
-unlabeled images are available. Our code is available at
-https://github.com/yasserben/FLOSS .
+    <id>http://arxiv.org/abs/2504.11457v1</id>
+    <updated>2025-04-15T17:59:54Z</updated>
+    <published>2025-04-15T17:59:54Z</published>
+    <title>Aligning Generative Denoising with Discriminative Objectives Unleashes
+  Diffusion for Visual Perception</title>
+    <summary>  With the success of image generation, generative diffusion models are
+increasingly adopted for discriminative tasks, as pixel generation provides a
+unified perception interface. However, directly repurposing the generative
+denoising process for discriminative objectives reveals critical gaps rarely
+addressed previously. Generative models tolerate intermediate sampling errors
+if the final distribution remains plausible, but discriminative tasks require
+rigorous accuracy throughout, as evidenced in challenging multi-modal tasks
+like referring image segmentation. Motivated by this gap, we analyze and
+enhance alignment between generative diffusion processes and perception tasks,
+focusing on how perception quality evolves during denoising. We find: (1)
+earlier denoising steps contribute disproportionately to perception quality,
+prompting us to propose tailored learning objectives reflecting varying
+timestep contributions; (2) later denoising steps show unexpected perception
+degradation, highlighting sensitivity to training-denoising distribution
+shifts, addressed by our diffusion-tailored data augmentation; and (3)
+generative processes uniquely enable interactivity, serving as controllable
+user interfaces adaptable to correctional prompts in multi-round interactions.
+Our insights significantly improve diffusion-based perception models without
+architectural changes, achieving state-of-the-art performance on depth
+estimation, referring image segmentation, and generalist perception tasks. Code
+available at https://github.com/ziqipang/ADDP.
 </summary>
     <author>
-      <name>Yasser Benigmim</name>
+      <name>Ziqi Pang</name>
     </author>
     <author>
-      <name>Mohammad Fahes</name>
+      <name>Xin Xu</name>
     </author>
     <author>
-      <name>Tuan-Hung Vu</name>
+      <name>Yu-Xiong Wang</name>
     </author>
-    <author>
-      <name>Andrei Bursuc</name>
-    </author>
-    <author>
-      <name>Raoul de Charette</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://yasserben.github.io/FLOSS/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.10487v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.10487v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.10485v1</id>
-    <updated>2025-04-14T17:59:57Z</updated>
-    <published>2025-04-14T17:59:57Z</published>
-    <title>Decoupled Diffusion Sparks Adaptive Scene Generation</title>
-    <summary>  Controllable scene generation could reduce the cost of diverse data
-collection substantially for autonomous driving. Prior works formulate the
-traffic layout generation as predictive progress, either by denoising entire
-sequences at once or by iteratively predicting the next frame. However, full
-sequence denoising hinders online reaction, while the latter's short-sighted
-next-frame prediction lacks precise goal-state guidance. Further, the learned
-model struggles to generate complex or challenging scenarios due to a large
-number of safe and ordinal driving behaviors from open datasets. To overcome
-these, we introduce Nexus, a decoupled scene generation framework that improves
-reactivity and goal conditioning by simulating both ordinal and challenging
-scenarios from fine-grained tokens with independent noise states. At the core
-of the decoupled pipeline is the integration of a partial noise-masking
-training strategy and a noise-aware schedule that ensures timely environmental
-updates throughout the denoising process. To complement challenging scenario
-generation, we collect a dataset consisting of complex corner cases. It covers
-540 hours of simulated data, including high-risk interactions such as cut-in,
-sudden braking, and collision. Nexus achieves superior generation realism while
-preserving reactivity and goal orientation, with a 40% reduction in
-displacement error. We further demonstrate that Nexus improves closed-loop
-planning by 20% through data augmentation and showcase its capability in
-safety-critical data generation.
-</summary>
-    <author>
-      <name>Yunsong Zhou</name>
-    </author>
-    <author>
-      <name>Naisheng Ye</name>
-    </author>
-    <author>
-      <name>William Ljungbergh</name>
-    </author>
-    <author>
-      <name>Tianyu Li</name>
-    </author>
-    <author>
-      <name>Jiazhi Yang</name>
-    </author>
-    <author>
-      <name>Zetong Yang</name>
-    </author>
-    <author>
-      <name>Hongzi Zhu</name>
-    </author>
-    <author>
-      <name>Christoffer Petersson</name>
-    </author>
-    <author>
-      <name>Hongyang Li</name>
-    </author>
-    <link href="http://arxiv.org/abs/2504.10485v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.10485v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">ICLR 2025</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">ICLR 2025</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/2504.11457v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.11457v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.10483v1</id>
-    <updated>2025-04-14T17:59:53Z</updated>
-    <published>2025-04-14T17:59:53Z</published>
-    <title>REPA-E: Unlocking VAE for End-to-End Tuning with Latent Diffusion
-  Transformers</title>
-    <summary>  In this paper we tackle a fundamental question: "Can we train latent
-diffusion models together with the variational auto-encoder (VAE) tokenizer in
-an end-to-end manner?" Traditional deep-learning wisdom dictates that
-end-to-end training is often preferable when possible. However, for latent
-diffusion transformers, it is observed that end-to-end training both VAE and
-diffusion-model using standard diffusion-loss is ineffective, even causing a
-degradation in final performance. We show that while diffusion loss is
-ineffective, end-to-end training can be unlocked through the
-representation-alignment (REPA) loss -- allowing both VAE and diffusion model
-to be jointly tuned during the training process. Despite its simplicity, the
-proposed training recipe (REPA-E) shows remarkable performance; speeding up
-diffusion model training by over 17x and 45x over REPA and vanilla training
-recipes, respectively. Interestingly, we observe that end-to-end tuning with
-REPA-E also improves the VAE itself; leading to improved latent space structure
-and downstream generation performance. In terms of final performance, our
-approach sets a new state-of-the-art; achieving FID of 1.26 and 1.83 with and
-without classifier-free guidance on ImageNet 256 x 256. Code is available at
-https://end2end-diffusion.github.io.
+    <id>http://arxiv.org/abs/2504.11456v1</id>
+    <updated>2025-04-15T17:59:51Z</updated>
+    <published>2025-04-15T17:59:51Z</published>
+    <title>DeepMath-103K: A Large-Scale, Challenging, Decontaminated, and
+  Verifiable Mathematical Dataset for Advancing Reasoning</title>
+    <summary>  The capacity for complex mathematical reasoning is a key benchmark for
+artificial intelligence. While reinforcement learning (RL) applied to LLMs
+shows promise, progress is significantly hindered by the lack of large-scale
+training data that is sufficiently challenging, possesses verifiable answer
+formats suitable for RL, and is free from contamination with evaluation
+benchmarks. To address these limitations, we introduce DeepMath-103K, a new,
+large-scale dataset comprising approximately 103K mathematical problems,
+specifically designed to train advanced reasoning models via RL. DeepMath-103K
+is curated through a rigorous pipeline involving source analysis, stringent
+decontamination against numerous benchmarks, and filtering for high difficulty
+(primarily Levels 5-9), significantly exceeding existing open resources in
+challenge. Each problem includes a verifiable final answer, enabling rule-based
+RL, and three distinct R1-generated solutions suitable for diverse training
+paradigms like supervised fine-tuning or distillation. Spanning a wide range of
+mathematical topics, DeepMath-103K promotes the development of generalizable
+reasoning. We demonstrate that models trained on DeepMath-103K achieve
+significant improvements on challenging mathematical benchmarks, validating its
+effectiveness. We release DeepMath-103K publicly to facilitate community
+progress in building more capable AI reasoning systems:
+https://github.com/zwhe99/DeepMath.
 </summary>
     <author>
-      <name>Xingjian Leng</name>
+      <name>Zhiwei He</name>
     </author>
     <author>
-      <name>Jaskirat Singh</name>
+      <name>Tian Liang</name>
     </author>
     <author>
-      <name>Yunzhong Hou</name>
+      <name>Jiahao Xu</name>
     </author>
     <author>
-      <name>Zhenchang Xing</name>
+      <name>Qiuzhi Liu</name>
     </author>
     <author>
-      <name>Saining Xie</name>
+      <name>Xingyu Chen</name>
     </author>
     <author>
-      <name>Liang Zheng</name>
+      <name>Yue Wang</name>
     </author>
-    <link href="http://arxiv.org/abs/2504.10483v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.10483v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Linfeng Song</name>
+    </author>
+    <author>
+      <name>Dian Yu</name>
+    </author>
+    <author>
+      <name>Zhenwen Liang</name>
+    </author>
+    <author>
+      <name>Wenxuan Wang</name>
+    </author>
+    <author>
+      <name>Zhuosheng Zhang</name>
+    </author>
+    <author>
+      <name>Rui Wang</name>
+    </author>
+    <author>
+      <name>Zhaopeng Tu</name>
+    </author>
+    <author>
+      <name>Haitao Mi</name>
+    </author>
+    <author>
+      <name>Dong Yu</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">WIP</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.11456v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.11456v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.10480v1</id>
-    <updated>2025-04-14T17:59:25Z</updated>
-    <published>2025-04-14T17:59:25Z</published>
-    <title>Probing Long-Range Forces in Neutrino Oscillations at the ESSnuSB
-  Experiment</title>
-    <summary>  Neutrino oscillations constitute an excellent tool to probe physics beyond
-the Standard Model. In this paper, we investigate the potential of the \ess
-experiment to constrain the effects of flavour-dependent long-range forces
-(LRFs) in neutrino oscillations, which may arise due to the extension of the
-Standard Model gauge group by introducing new $U(1)$ symmetries. Focusing on
-three specific $U(1)$ symmetries -- $L_e - L_\mu$, $L_e - L_\tau$, and $L_\mu -
-L_\tau$, we demonstrate that \ess offers a favourable environment to search for
-LRF effects. Our analyses reveal that \ess can set 90\% confidence level bounds
-of $V_{e\mu} &lt; 2.99 \times 10^{-14} \, \text{eV}$, $V_{e\tau} &lt; 2.05 \times
-10^{-14} \, \text{eV}$, and $V_{\mu\tau} &lt; 1.81 \times 10^{-14} \, \text{eV}$,
-which are competitive to the upcoming Deep Underground Neutrino Experiment
-(DUNE). It is also observed that reducing the systematic uncertainties from
-$5\%$ to $2\%$ improves the \ess limits on $V_{\alpha\beta}$. Interestingly, we
-find limited correlations between LRF parameters and the less constrained
-lepton mixing parameters $\theta_{23}$ and $\delta_{\text{CP}}$, preserving the
-robustness of ESSnuSB's sensitivity to CP violation. Even under extreme LRF
-potentials ($V_{\alpha\beta} \gg 10^{-13} \, \text{eV}$), the CP-violation
-sensitivity and $\delta_{\text{CP}}$ precision remain largely unaffected. These
-results establish ESSnuSB as a competitive experimental setup for probing LRF
-effects, complementing constraints from other neutrino sources and offering
-critical insights into the physics of long-range forces.
+    <id>http://arxiv.org/abs/2504.11454v2</id>
+    <updated>2025-04-16T02:35:11Z</updated>
+    <published>2025-04-15T17:59:43Z</published>
+    <title>Elucidating the Design Space of Multimodal Protein Language Models</title>
+    <summary>  Multimodal protein language models (PLMs) integrate sequence and token-based
+structural information, serving as a powerful foundation for protein modeling,
+generation, and design. However, the reliance on tokenizing 3D structures into
+discrete tokens causes substantial loss of fidelity about fine-grained
+structural details and correlations. In this paper, we systematically elucidate
+the design space of multimodal PLMs to overcome their limitations. We identify
+tokenization loss and inaccurate structure token predictions by the PLMs as
+major bottlenecks. To address these, our proposed design space covers improved
+generative modeling, structure-aware architectures and representation learning,
+and data exploration. Our advancements approach finer-grained supervision,
+demonstrating that token-based multimodal PLMs can achieve robust structural
+modeling. The effective design methods dramatically improve the structure
+generation diversity, and notably, folding abilities of our 650M model by
+reducing the RMSD from 5.52 to 2.36 on PDB testset, even outperforming 3B
+baselines and on par with the specialized folding models.
 </summary>
     <author>
-      <name> ESSnuSB</name>
+      <name>Cheng-Yen Hsieh</name>
     </author>
     <author>
-      <name> :</name>
+      <name>Xinyou Wang</name>
     </author>
     <author>
-      <name>J. Aguilar</name>
+      <name>Daiheng Zhang</name>
     </author>
     <author>
-      <name>M. Anastasopoulos</name>
+      <name>Dongyu Xue</name>
     </author>
     <author>
-      <name>D. Barčot</name>
+      <name>Fei Ye</name>
     </author>
     <author>
-      <name>E. Baussan</name>
+      <name>Shujian Huang</name>
     </author>
     <author>
-      <name>A. K. Bhattacharyya</name>
+      <name>Zaixiang Zheng</name>
     </author>
     <author>
-      <name>A. Bignami</name>
+      <name>Quanquan Gu</name>
     </author>
-    <author>
-      <name>M. Blennow</name>
-    </author>
-    <author>
-      <name>M. Bogomilov</name>
-    </author>
-    <author>
-      <name>B. Bolling</name>
-    </author>
-    <author>
-      <name>E. Bouquerel</name>
-    </author>
-    <author>
-      <name>F. Bramati</name>
-    </author>
-    <author>
-      <name>A. Branca</name>
-    </author>
-    <author>
-      <name>G. Brunetti</name>
-    </author>
-    <author>
-      <name>I. Bustinduy</name>
-    </author>
-    <author>
-      <name>C. J. Carlile</name>
-    </author>
-    <author>
-      <name>J. Cederkall</name>
-    </author>
-    <author>
-      <name>T. W. Choi</name>
-    </author>
-    <author>
-      <name>S. Choubey</name>
-    </author>
-    <author>
-      <name>P. Christiansen</name>
-    </author>
-    <author>
-      <name>M. Collins</name>
-    </author>
-    <author>
-      <name>E. Cristaldo Morales</name>
-    </author>
-    <author>
-      <name>P. Cupiał</name>
-    </author>
-    <author>
-      <name>D. D'Ago</name>
-    </author>
-    <author>
-      <name>H. Danared</name>
-    </author>
-    <author>
-      <name>J. P. A. M. de André</name>
-    </author>
-    <author>
-      <name>M. Dracos</name>
-    </author>
-    <author>
-      <name>I. Efthymiopoulos</name>
-    </author>
-    <author>
-      <name>T. Ekelöf</name>
-    </author>
-    <author>
-      <name>M. Eshraqi</name>
-    </author>
-    <author>
-      <name>G. Fanourakis</name>
-    </author>
-    <author>
-      <name>A. Farricker</name>
-    </author>
-    <author>
-      <name>E. Fasoula</name>
-    </author>
-    <author>
-      <name>T. Fukuda</name>
-    </author>
-    <author>
-      <name>N. Gazis</name>
-    </author>
-    <author>
-      <name>Th. Geralis</name>
-    </author>
-    <author>
-      <name>M. Ghosh</name>
-    </author>
-    <author>
-      <name>A. Giarnetti</name>
-    </author>
-    <author>
-      <name>G. Gokbulut</name>
-    </author>
-    <author>
-      <name>A. Gupta</name>
-    </author>
-    <author>
-      <name>C. Hagner</name>
-    </author>
-    <author>
-      <name>L. Halić</name>
-    </author>
-    <author>
-      <name>M. Hooft</name>
-    </author>
-    <author>
-      <name>K. E. Iversen</name>
-    </author>
-    <author>
-      <name>N. Jachowicz</name>
-    </author>
-    <author>
-      <name>M. Jakkapu</name>
-    </author>
-    <author>
-      <name>M. Jenssen</name>
-    </author>
-    <author>
-      <name>R. Johansson</name>
-    </author>
-    <author>
-      <name>E. Kasimi</name>
-    </author>
-    <author>
-      <name>A. Kayis Topaksu</name>
-    </author>
-    <author>
-      <name>B. Kildetoft</name>
-    </author>
-    <author>
-      <name>B. Kliček</name>
-    </author>
-    <author>
-      <name>K. Kordas</name>
-    </author>
-    <author>
-      <name>B. Kovač</name>
-    </author>
-    <author>
-      <name>A. Leisos</name>
-    </author>
-    <author>
-      <name>M. Lindroos</name>
-    </author>
-    <author>
-      <name>A. Longhin</name>
-    </author>
-    <author>
-      <name>C. Maiano</name>
-    </author>
-    <author>
-      <name>D. Majumdar</name>
-    </author>
-    <author>
-      <name>S. Marangoni</name>
-    </author>
-    <author>
-      <name>S. Marciano</name>
-    </author>
-    <author>
-      <name>J. G. Marcos</name>
-    </author>
-    <author>
-      <name>C. Marrelli</name>
-    </author>
-    <author>
-      <name>D. Meloni</name>
-    </author>
-    <author>
-      <name>M. Mezzetto</name>
-    </author>
-    <author>
-      <name>N. Milas</name>
-    </author>
-    <author>
-      <name>J. L. Muñoz</name>
-    </author>
-    <author>
-      <name>K. Niewczas</name>
-    </author>
-    <author>
-      <name>M. Oglakci</name>
-    </author>
-    <author>
-      <name>T. Ohlsson</name>
-    </author>
-    <author>
-      <name>M. Olvegård</name>
-    </author>
-    <author>
-      <name>M. Pari</name>
-    </author>
-    <author>
-      <name>D. Patrzalek</name>
-    </author>
-    <author>
-      <name>G. Petkov</name>
-    </author>
-    <author>
-      <name>Ch. Petridou</name>
-    </author>
-    <author>
-      <name>P. Poussot</name>
-    </author>
-    <author>
-      <name>A. Psallidas</name>
-    </author>
-    <author>
-      <name>F. Pupilli</name>
-    </author>
-    <author>
-      <name>D. Saiang</name>
-    </author>
-    <author>
-      <name>D. Sampsonidis</name>
-    </author>
-    <author>
-      <name>C. Schwab</name>
-    </author>
-    <author>
-      <name>F. Sordo</name>
-    </author>
-    <author>
-      <name>G. Stavropoulos</name>
-    </author>
-    <author>
-      <name>M. Stipčević</name>
-    </author>
-    <author>
-      <name>R. Tarkeshian</name>
-    </author>
-    <author>
-      <name>F. Terranova</name>
-    </author>
-    <author>
-      <name>T. Tolba</name>
-    </author>
-    <author>
-      <name>E. Trachanas</name>
-    </author>
-    <author>
-      <name>R. Tsenov</name>
-    </author>
-    <author>
-      <name>A. Tsirigotis</name>
-    </author>
-    <author>
-      <name>S. E. Tzamarias</name>
-    </author>
-    <author>
-      <name>M. Vanderpoorten</name>
-    </author>
-    <author>
-      <name>G. Vankova-Kirilova</name>
-    </author>
-    <author>
-      <name>N. Vassilopoulos</name>
-    </author>
-    <author>
-      <name>S. Vihonen</name>
-    </author>
-    <author>
-      <name>J. Wurtz</name>
-    </author>
-    <author>
-      <name>V. Zeter</name>
-    </author>
-    <author>
-      <name>O. Zormpa</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">31 pages, 12 figures, 3 tables</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.10480v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.10480v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="hep-ex" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.10478v2</id>
-    <updated>2025-04-15T17:46:59Z</updated>
-    <published>2025-04-14T17:59:07Z</published>
-    <title>Weight Ensembling Improves Reasoning in Language Models</title>
-    <summary>  We investigate a failure mode that arises during the training of reasoning
-models, where the diversity of generations begins to collapse, leading to
-suboptimal test-time scaling. Notably, the Pass@1 rate reliably improves during
-supervised finetuning (SFT), but Pass@k rapidly deteriorates. Surprisingly, a
-simple intervention of interpolating the weights of the latest SFT checkpoint
-with an early checkpoint, otherwise known as WiSE-FT, almost completely
-recovers Pass@k while also improving Pass@1. The WiSE-FT variant achieves
-better test-time scaling (Best@k, majority vote) and achieves superior results
-with less data when tuned further by reinforcement learning. Finally, we find
-that WiSE-FT provides complementary performance gains that cannot be achieved
-only through diversity-inducing decoding strategies, like temperature scaling.
-We formalize a bias-variance tradeoff of Pass@k with respect to the expectation
-and variance of Pass@1 over the test distribution. We find that WiSE-FT can
-reduce bias and variance simultaneously, while temperature scaling inherently
-trades-off between bias and variance.
-</summary>
-    <author>
-      <name>Xingyu Dang</name>
-    </author>
-    <author>
-      <name>Christina Baek</name>
-    </author>
-    <author>
-      <name>Kaiyue Wen</name>
-    </author>
-    <author>
-      <name>Zico Kolter</name>
-    </author>
-    <author>
-      <name>Aditi Raghunathan</name>
-    </author>
-    <link href="http://arxiv.org/abs/2504.10478v2" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.10478v2" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://bytedance.github.io/dplm/dplm-2.1/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.11454v2" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.11454v2" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.11453v1</id>
+    <updated>2025-04-15T17:59:05Z</updated>
+    <published>2025-04-15T17:59:05Z</published>
+    <title>A Clean Slate for Offline Reinforcement Learning</title>
+    <summary>  Progress in offline reinforcement learning (RL) has been impeded by ambiguous
+problem definitions and entangled algorithmic designs, resulting in
+inconsistent implementations, insufficient ablations, and unfair evaluations.
+Although offline RL explicitly avoids environment interaction, prior methods
+frequently employ extensive, undocumented online evaluation for hyperparameter
+tuning, complicating method comparisons. Moreover, existing reference
+implementations differ significantly in boilerplate code, obscuring their core
+algorithmic contributions. We address these challenges by first introducing a
+rigorous taxonomy and a transparent evaluation protocol that explicitly
+quantifies online tuning budgets. To resolve opaque algorithmic design, we
+provide clean, minimalistic, single-file implementations of various model-free
+and model-based offline RL methods, significantly enhancing clarity and
+achieving substantial speed-ups. Leveraging these streamlined implementations,
+we propose Unifloral, a unified algorithm that encapsulates diverse prior
+approaches within a single, comprehensive hyperparameter space, enabling
+algorithm development in a shared hyperparameter space. Using Unifloral with
+our rigorous evaluation protocol, we develop two novel algorithms - TD3-AWR
+(model-free) and MoBRAC (model-based) - which substantially outperform
+established baselines. Our implementation is publicly available at
+https://github.com/EmptyJackson/unifloral.
+</summary>
+    <author>
+      <name>Matthew Thomas Jackson</name>
+    </author>
+    <author>
+      <name>Uljad Berdica</name>
+    </author>
+    <author>
+      <name>Jarek Liesen</name>
+    </author>
+    <author>
+      <name>Shimon Whiteson</name>
+    </author>
+    <author>
+      <name>Jakob Nicolaus Foerster</name>
+    </author>
+    <link href="http://arxiv.org/abs/2504.11453v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.11453v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.11451v1</id>
+    <updated>2025-04-15T17:58:16Z</updated>
+    <published>2025-04-15T17:58:16Z</published>
+    <title>PARTFIELD: Learning 3D Feature Fields for Part Segmentation and Beyond</title>
+    <summary>  We propose PartField, a feedforward approach for learning part-based 3D
+features, which captures the general concept of parts and their hierarchy
+without relying on predefined templates or text-based names, and can be applied
+to open-world 3D shapes across various modalities. PartField requires only a 3D
+feedforward pass at inference time, significantly improving runtime and
+robustness compared to prior approaches. Our model is trained by distilling 2D
+and 3D part proposals from a mix of labeled datasets and image segmentations on
+large unsupervised datasets, via a contrastive learning formulation. It
+produces a continuous feature field which can be clustered to yield a
+hierarchical part decomposition. Comparisons show that PartField is up to 20%
+more accurate and often orders of magnitude faster than other recent
+class-agnostic part-segmentation methods. Beyond single-shape part
+decomposition, consistency in the learned field emerges across shapes, enabling
+tasks such as co-segmentation and correspondence, which we demonstrate in
+several applications of these general-purpose, hierarchical, and consistent 3D
+feature fields. Check our Webpage!
+https://research.nvidia.com/labs/toronto-ai/partfield-release/
+</summary>
+    <author>
+      <name>Minghua Liu</name>
+    </author>
+    <author>
+      <name>Mikaela Angelina Uy</name>
+    </author>
+    <author>
+      <name>Donglai Xiang</name>
+    </author>
+    <author>
+      <name>Hao Su</name>
+    </author>
+    <author>
+      <name>Sanja Fidler</name>
+    </author>
+    <author>
+      <name>Nicholas Sharp</name>
+    </author>
+    <author>
+      <name>Jun Gao</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">https://research.nvidia.com/labs/toronto-ai/partfield-release/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.11451v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.11451v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
