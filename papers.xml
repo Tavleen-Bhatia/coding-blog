@@ -3,282 +3,270 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-04-16T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">419068</opensearch:totalResults>
+  <updated>2025-04-17T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">419302</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2504.11457v1</id>
-    <updated>2025-04-15T17:59:54Z</updated>
-    <published>2025-04-15T17:59:54Z</published>
-    <title>Aligning Generative Denoising with Discriminative Objectives Unleashes
-  Diffusion for Visual Perception</title>
-    <summary>  With the success of image generation, generative diffusion models are
-increasingly adopted for discriminative tasks, as pixel generation provides a
-unified perception interface. However, directly repurposing the generative
-denoising process for discriminative objectives reveals critical gaps rarely
-addressed previously. Generative models tolerate intermediate sampling errors
-if the final distribution remains plausible, but discriminative tasks require
-rigorous accuracy throughout, as evidenced in challenging multi-modal tasks
-like referring image segmentation. Motivated by this gap, we analyze and
-enhance alignment between generative diffusion processes and perception tasks,
-focusing on how perception quality evolves during denoising. We find: (1)
-earlier denoising steps contribute disproportionately to perception quality,
-prompting us to propose tailored learning objectives reflecting varying
-timestep contributions; (2) later denoising steps show unexpected perception
-degradation, highlighting sensitivity to training-denoising distribution
-shifts, addressed by our diffusion-tailored data augmentation; and (3)
-generative processes uniquely enable interactivity, serving as controllable
-user interfaces adaptable to correctional prompts in multi-round interactions.
-Our insights significantly improve diffusion-based perception models without
-architectural changes, achieving state-of-the-art performance on depth
-estimation, referring image segmentation, and generalist perception tasks. Code
-available at https://github.com/ziqipang/ADDP.
+    <id>http://arxiv.org/abs/2504.12299v1</id>
+    <updated>2025-04-16T17:59:54Z</updated>
+    <published>2025-04-16T17:59:54Z</published>
+    <title>Adapting a World Model for Trajectory Following in a 3D Game</title>
+    <summary>  Imitation learning is a powerful tool for training agents by leveraging
+expert knowledge, and being able to replicate a given trajectory is an integral
+part of it. In complex environments, like modern 3D video games, distribution
+shift and stochasticity necessitate robust approaches beyond simple action
+replay. In this study, we apply Inverse Dynamics Models (IDM) with different
+encoders and policy heads to trajectory following in a modern 3D video game --
+Bleeding Edge. Additionally, we investigate several future alignment strategies
+that address the distribution shift caused by the aleatoric uncertainty and
+imperfections of the agent. We measure both the trajectory deviation distance
+and the first significant deviation point between the reference and the agent's
+trajectory and show that the optimal configuration depends on the chosen
+setting. Our results show that in a diverse data setting, a GPT-style policy
+head with an encoder trained from scratch performs the best, DINOv2 encoder
+with the GPT-style policy head gives the best results in the low data regime,
+and both GPT-style and MLP-style policy heads had comparable results when
+pre-trained on a diverse setting and fine-tuned for a specific behaviour
+setting.
 </summary>
     <author>
-      <name>Ziqi Pang</name>
+      <name>Marko Tot</name>
     </author>
     <author>
-      <name>Xin Xu</name>
+      <name>Shu Ishida</name>
     </author>
     <author>
-      <name>Yu-Xiong Wang</name>
+      <name>Abdelhak Lemkhenter</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">ICLR 2025</arxiv:comment>
-    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">ICLR 2025</arxiv:journal_ref>
-    <link href="http://arxiv.org/abs/2504.11457v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.11457v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>David Bignell</name>
+    </author>
+    <author>
+      <name>Pallavi Choudhury</name>
+    </author>
+    <author>
+      <name>Chris Lovett</name>
+    </author>
+    <author>
+      <name>Luis França</name>
+    </author>
+    <author>
+      <name>Matheus Ribeiro Furtado de Mendonça</name>
+    </author>
+    <author>
+      <name>Tarun Gupta</name>
+    </author>
+    <author>
+      <name>Darren Gehring</name>
+    </author>
+    <author>
+      <name>Sam Devlin</name>
+    </author>
+    <author>
+      <name>Sergio Valcarcel Macua</name>
+    </author>
+    <author>
+      <name>Raluca Georgescu</name>
+    </author>
+    <link href="http://arxiv.org/abs/2504.12299v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.12299v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.11456v1</id>
-    <updated>2025-04-15T17:59:51Z</updated>
-    <published>2025-04-15T17:59:51Z</published>
-    <title>DeepMath-103K: A Large-Scale, Challenging, Decontaminated, and
-  Verifiable Mathematical Dataset for Advancing Reasoning</title>
-    <summary>  The capacity for complex mathematical reasoning is a key benchmark for
-artificial intelligence. While reinforcement learning (RL) applied to LLMs
-shows promise, progress is significantly hindered by the lack of large-scale
-training data that is sufficiently challenging, possesses verifiable answer
-formats suitable for RL, and is free from contamination with evaluation
-benchmarks. To address these limitations, we introduce DeepMath-103K, a new,
-large-scale dataset comprising approximately 103K mathematical problems,
-specifically designed to train advanced reasoning models via RL. DeepMath-103K
-is curated through a rigorous pipeline involving source analysis, stringent
-decontamination against numerous benchmarks, and filtering for high difficulty
-(primarily Levels 5-9), significantly exceeding existing open resources in
-challenge. Each problem includes a verifiable final answer, enabling rule-based
-RL, and three distinct R1-generated solutions suitable for diverse training
-paradigms like supervised fine-tuning or distillation. Spanning a wide range of
-mathematical topics, DeepMath-103K promotes the development of generalizable
-reasoning. We demonstrate that models trained on DeepMath-103K achieve
-significant improvements on challenging mathematical benchmarks, validating its
-effectiveness. We release DeepMath-103K publicly to facilitate community
-progress in building more capable AI reasoning systems:
-https://github.com/zwhe99/DeepMath.
+    <id>http://arxiv.org/abs/2504.12292v1</id>
+    <updated>2025-04-16T17:55:02Z</updated>
+    <published>2025-04-16T17:55:02Z</published>
+    <title>SHeaP: Self-Supervised Head Geometry Predictor Learned via 2D Gaussians</title>
+    <summary>  Accurate, real-time 3D reconstruction of human heads from monocular images
+and videos underlies numerous visual applications. As 3D ground truth data is
+hard to come by at scale, previous methods have sought to learn from abundant
+2D videos in a self-supervised manner. Typically, this involves the use of
+differentiable mesh rendering, which is effective but faces limitations. To
+improve on this, we propose SHeaP (Self-supervised Head Geometry Predictor
+Learned via 2D Gaussians). Given a source image, we predict a 3DMM mesh and a
+set of Gaussians that are rigged to this mesh. We then reanimate this rigged
+head avatar to match a target frame, and backpropagate photometric losses to
+both the 3DMM and Gaussian prediction networks. We find that using Gaussians
+for rendering substantially improves the effectiveness of this self-supervised
+approach. Training solely on 2D data, our method surpasses existing
+self-supervised approaches in geometric evaluations on the NoW benchmark for
+neutral faces and a new benchmark for non-neutral expressions. Our method also
+produces highly expressive meshes, outperforming state-of-the-art in emotion
+classification.
 </summary>
     <author>
-      <name>Zhiwei He</name>
+      <name>Liam Schoneveld</name>
     </author>
     <author>
-      <name>Tian Liang</name>
+      <name>Zhe Chen</name>
     </author>
     <author>
-      <name>Jiahao Xu</name>
+      <name>Davide Davoli</name>
     </author>
     <author>
-      <name>Qiuzhi Liu</name>
+      <name>Jiapeng Tang</name>
     </author>
     <author>
-      <name>Xingyu Chen</name>
+      <name>Saimon Terazawa</name>
     </author>
     <author>
-      <name>Yue Wang</name>
+      <name>Ko Nishino</name>
     </author>
     <author>
-      <name>Linfeng Song</name>
+      <name>Matthias Nießner</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">For video demonstrations and additional materials please see
+  https://nlml.github.io/sheap/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.12292v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.12292v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.12287v1</id>
+    <updated>2025-04-16T17:51:59Z</updated>
+    <published>2025-04-16T17:51:59Z</published>
+    <title>Trend Filtered Mixture of Experts for Automated Gating of High-Frequency
+  Flow Cytometry Data</title>
+    <summary>  Ocean microbes are critical to both ocean ecosystems and the global climate.
+Flow cytometry, which measures cell optical properties in fluid samples, is
+routinely used in oceanographic research. Despite decades of accumulated data,
+identifying key microbial populations (a process known as ``gating'') remains a
+significant analytical challenge. To address this, we focus on gating
+multidimensional, high-frequency flow cytometry data collected {\it
+continuously} on board oceanographic research vessels, capturing time- and
+space-wise variations in the dynamic ocean. Our paper proposes a novel
+mixture-of-experts model in which both the gating function and the experts are
+given by trend filtering. The model leverages two key assumptions: (1) Each
+snapshot of flow cytometry data is a mixture of multivariate Gaussians and (2)
+the parameters of these Gaussians vary smoothly over time. Our method uses
+regularization and a constraint to ensure smoothness and that cluster means
+match biologically distinct microbe types. We demonstrate, using flow cytometry
+data from the North Pacific Ocean, that our proposed model accurately matches
+human-annotated gating and corrects significant errors.
+</summary>
+    <author>
+      <name>Sangwon Hyun</name>
     </author>
     <author>
-      <name>Dian Yu</name>
+      <name>Tim Coleman</name>
     </author>
     <author>
-      <name>Zhenwen Liang</name>
+      <name>Francois Ribalet</name>
     </author>
     <author>
-      <name>Wenxuan Wang</name>
+      <name>Jacob Bien</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">23 page (including supplement), 9 figures (including supplement)</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.12287v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.12287v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="stat.ME" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ME" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.AP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="62H30 (Primary) 62G08, 92B10, 62J07 (Secondary)" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.12285v1</id>
+    <updated>2025-04-16T17:51:43Z</updated>
+    <published>2025-04-16T17:51:43Z</published>
+    <title>BitNet b1.58 2B4T Technical Report</title>
+    <summary>  We introduce BitNet b1.58 2B4T, the first open-source, native 1-bit Large
+Language Model (LLM) at the 2-billion parameter scale. Trained on a corpus of 4
+trillion tokens, the model has been rigorously evaluated across benchmarks
+covering language understanding, mathematical reasoning, coding proficiency,
+and conversational ability. Our results demonstrate that BitNet b1.58 2B4T
+achieves performance on par with leading open-weight, full-precision LLMs of
+similar size, while offering significant advantages in computational
+efficiency, including substantially reduced memory footprint, energy
+consumption, and decoding latency. To facilitate further research and adoption,
+the model weights are released via Hugging Face along with open-source
+inference implementations for both GPU and CPU architectures.
+</summary>
+    <author>
+      <name>Shuming Ma</name>
     </author>
     <author>
-      <name>Zhuosheng Zhang</name>
+      <name>Hongyu Wang</name>
     </author>
     <author>
-      <name>Rui Wang</name>
+      <name>Shaohan Huang</name>
     </author>
     <author>
-      <name>Zhaopeng Tu</name>
+      <name>Xingxing Zhang</name>
     </author>
     <author>
-      <name>Haitao Mi</name>
+      <name>Ying Hu</name>
     </author>
     <author>
-      <name>Dong Yu</name>
+      <name>Ting Song</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">WIP</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.11456v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.11456v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Yan Xia</name>
+    </author>
+    <author>
+      <name>Furu Wei</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Work in progress</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.12285v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.12285v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.11454v2</id>
-    <updated>2025-04-16T02:35:11Z</updated>
-    <published>2025-04-15T17:59:43Z</published>
-    <title>Elucidating the Design Space of Multimodal Protein Language Models</title>
-    <summary>  Multimodal protein language models (PLMs) integrate sequence and token-based
-structural information, serving as a powerful foundation for protein modeling,
-generation, and design. However, the reliance on tokenizing 3D structures into
-discrete tokens causes substantial loss of fidelity about fine-grained
-structural details and correlations. In this paper, we systematically elucidate
-the design space of multimodal PLMs to overcome their limitations. We identify
-tokenization loss and inaccurate structure token predictions by the PLMs as
-major bottlenecks. To address these, our proposed design space covers improved
-generative modeling, structure-aware architectures and representation learning,
-and data exploration. Our advancements approach finer-grained supervision,
-demonstrating that token-based multimodal PLMs can achieve robust structural
-modeling. The effective design methods dramatically improve the structure
-generation diversity, and notably, folding abilities of our 650M model by
-reducing the RMSD from 5.52 to 2.36 on PDB testset, even outperforming 3B
-baselines and on par with the specialized folding models.
-</summary>
-    <author>
-      <name>Cheng-Yen Hsieh</name>
-    </author>
-    <author>
-      <name>Xinyou Wang</name>
-    </author>
-    <author>
-      <name>Daiheng Zhang</name>
-    </author>
-    <author>
-      <name>Dongyu Xue</name>
-    </author>
-    <author>
-      <name>Fei Ye</name>
-    </author>
-    <author>
-      <name>Shujian Huang</name>
-    </author>
-    <author>
-      <name>Zaixiang Zheng</name>
-    </author>
-    <author>
-      <name>Quanquan Gu</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://bytedance.github.io/dplm/dplm-2.1/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.11454v2" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.11454v2" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.11453v1</id>
-    <updated>2025-04-15T17:59:05Z</updated>
-    <published>2025-04-15T17:59:05Z</published>
-    <title>A Clean Slate for Offline Reinforcement Learning</title>
-    <summary>  Progress in offline reinforcement learning (RL) has been impeded by ambiguous
-problem definitions and entangled algorithmic designs, resulting in
-inconsistent implementations, insufficient ablations, and unfair evaluations.
-Although offline RL explicitly avoids environment interaction, prior methods
-frequently employ extensive, undocumented online evaluation for hyperparameter
-tuning, complicating method comparisons. Moreover, existing reference
-implementations differ significantly in boilerplate code, obscuring their core
-algorithmic contributions. We address these challenges by first introducing a
-rigorous taxonomy and a transparent evaluation protocol that explicitly
-quantifies online tuning budgets. To resolve opaque algorithmic design, we
-provide clean, minimalistic, single-file implementations of various model-free
-and model-based offline RL methods, significantly enhancing clarity and
-achieving substantial speed-ups. Leveraging these streamlined implementations,
-we propose Unifloral, a unified algorithm that encapsulates diverse prior
-approaches within a single, comprehensive hyperparameter space, enabling
-algorithm development in a shared hyperparameter space. Using Unifloral with
-our rigorous evaluation protocol, we develop two novel algorithms - TD3-AWR
-(model-free) and MoBRAC (model-based) - which substantially outperform
-established baselines. Our implementation is publicly available at
-https://github.com/EmptyJackson/unifloral.
+    <id>http://arxiv.org/abs/2504.12284v1</id>
+    <updated>2025-04-16T17:48:12Z</updated>
+    <published>2025-04-16T17:48:12Z</published>
+    <title>How Do I Do That? Synthesizing 3D Hand Motion and Contacts for Everyday
+  Interactions</title>
+    <summary>  We tackle the novel problem of predicting 3D hand motion and contact maps (or
+Interaction Trajectories) given a single RGB view, action text, and a 3D
+contact point on the object as input. Our approach consists of (1) Interaction
+Codebook: a VQVAE model to learn a latent codebook of hand poses and contact
+points, effectively tokenizing interaction trajectories, (2) Interaction
+Predictor: a transformer-decoder module to predict the interaction trajectory
+from test time inputs by using an indexer module to retrieve a latent
+affordance from the learned codebook. To train our model, we develop a data
+engine that extracts 3D hand poses and contact trajectories from the diverse
+HoloAssist dataset. We evaluate our model on a benchmark that is 2.5-10X larger
+than existing works, in terms of diversity of objects and interactions
+observed, and test for generalization of the model across object categories,
+action categories, tasks, and scenes. Experimental results show the
+effectiveness of our approach over transformer &amp; diffusion baselines across all
+settings.
 </summary>
     <author>
-      <name>Matthew Thomas Jackson</name>
+      <name>Aditya Prakash</name>
     </author>
     <author>
-      <name>Uljad Berdica</name>
+      <name>Benjamin Lundell</name>
     </author>
     <author>
-      <name>Jarek Liesen</name>
+      <name>Dmitry Andreychuk</name>
     </author>
     <author>
-      <name>Shimon Whiteson</name>
+      <name>David Forsyth</name>
     </author>
     <author>
-      <name>Jakob Nicolaus Foerster</name>
-    </author>
-    <link href="http://arxiv.org/abs/2504.11453v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.11453v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.11451v1</id>
-    <updated>2025-04-15T17:58:16Z</updated>
-    <published>2025-04-15T17:58:16Z</published>
-    <title>PARTFIELD: Learning 3D Feature Fields for Part Segmentation and Beyond</title>
-    <summary>  We propose PartField, a feedforward approach for learning part-based 3D
-features, which captures the general concept of parts and their hierarchy
-without relying on predefined templates or text-based names, and can be applied
-to open-world 3D shapes across various modalities. PartField requires only a 3D
-feedforward pass at inference time, significantly improving runtime and
-robustness compared to prior approaches. Our model is trained by distilling 2D
-and 3D part proposals from a mix of labeled datasets and image segmentations on
-large unsupervised datasets, via a contrastive learning formulation. It
-produces a continuous feature field which can be clustered to yield a
-hierarchical part decomposition. Comparisons show that PartField is up to 20%
-more accurate and often orders of magnitude faster than other recent
-class-agnostic part-segmentation methods. Beyond single-shape part
-decomposition, consistency in the learned field emerges across shapes, enabling
-tasks such as co-segmentation and correspondence, which we demonstrate in
-several applications of these general-purpose, hierarchical, and consistent 3D
-feature fields. Check our Webpage!
-https://research.nvidia.com/labs/toronto-ai/partfield-release/
-</summary>
-    <author>
-      <name>Minghua Liu</name>
+      <name>Saurabh Gupta</name>
     </author>
     <author>
-      <name>Mikaela Angelina Uy</name>
+      <name>Harpreet Sawhney</name>
     </author>
-    <author>
-      <name>Donglai Xiang</name>
-    </author>
-    <author>
-      <name>Hao Su</name>
-    </author>
-    <author>
-      <name>Sanja Fidler</name>
-    </author>
-    <author>
-      <name>Nicholas Sharp</name>
-    </author>
-    <author>
-      <name>Jun Gao</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">https://research.nvidia.com/labs/toronto-ai/partfield-release/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.11451v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.11451v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">CVPR 2025, Project page:
+  https://ap229997.github.io/projects/latentact</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.12284v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.12284v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
