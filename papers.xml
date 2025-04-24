@@ -3,315 +3,281 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-04-22T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">420184</opensearch:totalResults>
+  <updated>2025-04-23T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">420409</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2504.15279v1</id>
-    <updated>2025-04-21T17:59:53Z</updated>
-    <published>2025-04-21T17:59:53Z</published>
-    <title>VisuLogic: A Benchmark for Evaluating Visual Reasoning in Multi-modal
-  Large Language Models</title>
-    <summary>  Visual reasoning is a core component of human intelligence and a critical
-capability for advanced multimodal models. Yet current reasoning evaluations of
-multimodal large language models (MLLMs) often rely on text descriptions and
-allow language-based reasoning shortcuts, failing to measure genuine
-vision-centric reasoning. To address this, we introduce VisuLogic: a benchmark
-of 1,000 human-verified problems across six categories (e.g., quantitative
-shifts, spatial relations, attribute comparisons). These various types of
-questions can be evaluated to assess the visual reasoning capabilities of MLLMs
-from multiple perspectives. We evaluate leading MLLMs on this benchmark and
-analyze their results to identify common failure modes. Most models score below
-30% accuracy-only slightly above the 25% random baseline and far below the
-51.4% achieved by humans-revealing significant gaps in visual reasoning.
-Furthermore, we provide a supplementary training dataset and a
-reinforcement-learning baseline to support further progress.
+    <id>http://arxiv.org/abs/2504.16084v1</id>
+    <updated>2025-04-22T17:59:56Z</updated>
+    <published>2025-04-22T17:59:56Z</published>
+    <title>TTRL: Test-Time Reinforcement Learning</title>
+    <summary>  This paper investigates Reinforcement Learning (RL) on data without explicit
+labels for reasoning tasks in Large Language Models (LLMs). The core challenge
+of the problem is reward estimation during inference while not having access to
+ground-truth information. While this setting appears elusive, we find that
+common practices in Test-Time Scaling (TTS), such as majority voting, yield
+surprisingly effective rewards suitable for driving RL training. In this work,
+we introduce Test-Time Reinforcement Learning (TTRL), a novel method for
+training LLMs using RL on unlabeled data. TTRL enables self-evolution of LLMs
+by utilizing the priors in the pre-trained models. Our experiments demonstrate
+that TTRL consistently improves performance across a variety of tasks and
+models. Notably, TTRL boosts the pass@1 performance of Qwen-2.5-Math-7B by
+approximately 159% on the AIME 2024 with only unlabeled test data. Furthermore,
+although TTRL is only supervised by the Maj@N metric, TTRL has demonstrated
+performance to consistently surpass the upper limit of the initial model, and
+approach the performance of models trained directly on test data with
+ground-truth labels. Our experimental findings validate the general
+effectiveness of TTRL across various tasks, and highlight TTRL's potential for
+broader tasks and domains. GitHub: https://github.com/PRIME-RL/TTRL
 </summary>
     <author>
-      <name>Weiye Xu</name>
+      <name>Yuxin Zuo</name>
     </author>
     <author>
-      <name>Jiahao Wang</name>
+      <name>Kaiyan Zhang</name>
     </author>
     <author>
-      <name>Weiyun Wang</name>
+      <name>Shang Qu</name>
     </author>
     <author>
-      <name>Zhe Chen</name>
+      <name>Li Sheng</name>
     </author>
     <author>
-      <name>Wengang Zhou</name>
+      <name>Xuekai Zhu</name>
     </author>
     <author>
-      <name>Aijun Yang</name>
+      <name>Biqing Qi</name>
     </author>
     <author>
-      <name>Lewei Lu</name>
+      <name>Youbang Sun</name>
     </author>
     <author>
-      <name>Houqiang Li</name>
+      <name>Ganqu Cui</name>
     </author>
     <author>
-      <name>Xiaohua Wang</name>
+      <name>Ning Ding</name>
     </author>
     <author>
-      <name>Xizhou Zhu</name>
+      <name>Bowen Zhou</name>
     </author>
-    <author>
-      <name>Wenhai Wang</name>
-    </author>
-    <author>
-      <name>Jifeng Dai</name>
-    </author>
-    <author>
-      <name>Jinguo Zhu</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Code, data, and baselines are available at
-  https://visulogic-benchmark.github.io/VisuLogic</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.15279v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.15279v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.15275v1</id>
-    <updated>2025-04-21T17:59:02Z</updated>
-    <published>2025-04-21T17:59:02Z</published>
-    <title>Stop Summation: Min-Form Credit Assignment Is All Process Reward Model
-  Needs for Reasoning</title>
-    <summary>  Process reward models (PRMs) have proven effective for test-time scaling of
-Large Language Models (LLMs) on challenging reasoning tasks. However, reward
-hacking issues with PRMs limit their successful application in reinforcement
-fine-tuning. In this paper, we identify the main cause of PRM-induced reward
-hacking: the canonical summation-form credit assignment in reinforcement
-learning (RL), which defines the value as cumulative gamma-decayed future
-rewards, easily induces LLMs to hack steps with high rewards. To address this,
-we propose PURE: Process sUpervised Reinforcement lEarning. The key innovation
-of PURE is a min-form credit assignment that formulates the value function as
-the minimum of future rewards. This method significantly alleviates reward
-hacking by limiting the value function range and distributing advantages more
-reasonably. Through extensive experiments on 3 base models, we show that
-PRM-based approaches enabling min-form credit assignment achieve comparable
-reasoning performance to verifiable reward-based methods within only 30% steps.
-In contrast, the canonical sum-form credit assignment collapses training even
-at the beginning! Additionally, when we supplement PRM-based fine-tuning with
-just 10% verifiable rewards, we further alleviate reward hacking and produce
-the best fine-tuned model based on Qwen2.5-Math-7B in our experiments,
-achieving 82.5% accuracy on AMC23 and 53.3% average accuracy across 5
-benchmarks. Moreover, we summarize the observed reward hacking cases and
-analyze the causes of training collapse. Code and models are available at
-https://github.com/CJReinforce/PURE.
-</summary>
-    <author>
-      <name>Jie Cheng</name>
-    </author>
-    <author>
-      <name>Ruixi Qiao</name>
-    </author>
-    <author>
-      <name>Lijun Li</name>
-    </author>
-    <author>
-      <name>Chao Guo</name>
-    </author>
-    <author>
-      <name>Junle Wang</name>
-    </author>
-    <author>
-      <name>Gang Xiong</name>
-    </author>
-    <author>
-      <name>Yisheng Lv</name>
-    </author>
-    <author>
-      <name>Fei-Yue Wang</name>
-    </author>
-    <link href="http://arxiv.org/abs/2504.15275v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.15275v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <link href="http://arxiv.org/abs/2504.16084v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.16084v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.15271v1</id>
-    <updated>2025-04-21T17:57:28Z</updated>
-    <published>2025-04-21T17:57:28Z</published>
-    <title>Eagle 2.5: Boosting Long-Context Post-Training for Frontier
-  Vision-Language Models</title>
-    <summary>  We introduce Eagle 2.5, a family of frontier vision-language models (VLMs)
-for long-context multimodal learning. Our work addresses the challenges in long
-video comprehension and high-resolution image understanding, introducing a
-generalist framework for both tasks. The proposed training framework
-incorporates Automatic Degrade Sampling and Image Area Preservation, two
-techniques that preserve contextual integrity and visual details. The framework
-also includes numerous efficiency optimizations in the pipeline for
-long-context data training. Finally, we propose Eagle-Video-110K, a novel
-dataset that integrates both story-level and clip-level annotations,
-facilitating long-video understanding. Eagle 2.5 demonstrates substantial
-improvements on long-context multimodal benchmarks, providing a robust solution
-to the limitations of existing VLMs. Notably, our best model Eagle 2.5-8B
-achieves 72.4% on Video-MME with 512 input frames, matching the results of
-top-tier commercial model such as GPT-4o and large-scale open-source models
-like Qwen2.5-VL-72B and InternVL2.5-78B.
+    <id>http://arxiv.org/abs/2504.16083v1</id>
+    <updated>2025-04-22T17:59:51Z</updated>
+    <published>2025-04-22T17:59:51Z</published>
+    <title>MMInference: Accelerating Pre-filling for Long-Context VLMs via
+  Modality-Aware Permutation Sparse Attention</title>
+    <summary>  The integration of long-context capabilities with visual understanding
+unlocks unprecedented potential for Vision Language Models (VLMs). However, the
+quadratic attention complexity during the pre-filling phase remains a
+significant obstacle to real-world deployment. To overcome this limitation, we
+introduce MMInference (Multimodality Million tokens Inference), a dynamic
+sparse attention method that accelerates the prefilling stage for long-context
+multi-modal inputs. First, our analysis reveals that the temporal and spatial
+locality of video input leads to a unique sparse pattern, the Grid pattern.
+Simultaneously, VLMs exhibit markedly different sparse distributions across
+different modalities. We introduce a permutation-based method to leverage the
+unique Grid pattern and handle modality boundary issues. By offline search the
+optimal sparse patterns for each head, MMInference constructs the sparse
+distribution dynamically based on the input. We also provide optimized GPU
+kernels for efficient sparse computations. Notably, MMInference integrates
+seamlessly into existing VLM pipelines without any model modifications or
+fine-tuning. Experiments on multi-modal benchmarks-including Video QA,
+Captioning, VisionNIAH, and Mixed-Modality NIAH-with state-of-the-art
+long-context VLMs (LongVila, LlavaVideo, VideoChat-Flash, Qwen2.5-VL) show that
+MMInference accelerates the pre-filling stage by up to 8.3x at 1M tokens while
+maintaining accuracy. Our code is available at https://aka.ms/MMInference.
 </summary>
     <author>
-      <name>Guo Chen</name>
+      <name>Yucheng Li</name>
     </author>
     <author>
-      <name>Zhiqi Li</name>
+      <name>Huiqiang Jiang</name>
     </author>
     <author>
-      <name>Shihao Wang</name>
+      <name>Chengruidong Zhang</name>
     </author>
     <author>
-      <name>Jindong Jiang</name>
+      <name>Qianhui Wu</name>
     </author>
     <author>
-      <name>Yicheng Liu</name>
+      <name>Xufang Luo</name>
     </author>
     <author>
-      <name>Lidong Lu</name>
+      <name>Surin Ahn</name>
     </author>
     <author>
-      <name>De-An Huang</name>
+      <name>Amir H. Abdi</name>
     </author>
     <author>
-      <name>Wonmin Byeon</name>
+      <name>Dongsheng Li</name>
     </author>
     <author>
-      <name>Matthieu Le</name>
+      <name>Jianfeng Gao</name>
     </author>
     <author>
-      <name>Tuomas Rintamaki</name>
+      <name>Yuqing Yang</name>
     </author>
     <author>
-      <name>Tyler Poon</name>
+      <name>Lili Qiu</name>
     </author>
-    <author>
-      <name>Max Ehrlich</name>
-    </author>
-    <author>
-      <name>Tuomas Rintamaki</name>
-    </author>
-    <author>
-      <name>Tyler Poon</name>
-    </author>
-    <author>
-      <name>Tong Lu</name>
-    </author>
-    <author>
-      <name>Limin Wang</name>
-    </author>
-    <author>
-      <name>Bryan Catanzaro</name>
-    </author>
-    <author>
-      <name>Jan Kautz</name>
-    </author>
-    <author>
-      <name>Andrew Tao</name>
-    </author>
-    <author>
-      <name>Zhiding Yu</name>
-    </author>
-    <author>
-      <name>Guilin Liu</name>
-    </author>
-    <link href="http://arxiv.org/abs/2504.15271v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.15271v1" rel="related" type="application/pdf"/>
+    <link href="http://arxiv.org/abs/2504.16083v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.16083v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.15267v1</id>
-    <updated>2025-04-21T17:49:06Z</updated>
-    <published>2025-04-21T17:49:06Z</published>
-    <title>Diffusion Bridge Models for 3D Medical Image Translation</title>
-    <summary>  Diffusion tensor imaging (DTI) provides crucial insights into the
-microstructure of the human brain, but it can be time-consuming to acquire
-compared to more readily available T1-weighted (T1w) magnetic resonance imaging
-(MRI). To address this challenge, we propose a diffusion bridge model for 3D
-brain image translation between T1w MRI and DTI modalities. Our model learns to
-generate high-quality DTI fractional anisotropy (FA) images from T1w images and
-vice versa, enabling cross-modality data augmentation and reducing the need for
-extensive DTI acquisition. We evaluate our approach using perceptual
-similarity, pixel-level agreement, and distributional consistency metrics,
-demonstrating strong performance in capturing anatomical structures and
-preserving information on white matter integrity. The practical utility of the
-synthetic data is validated through sex classification and Alzheimer's disease
-classification tasks, where the generated images achieve comparable performance
-to real data. Our diffusion bridge model offers a promising solution for
-improving neuroimaging datasets and supporting clinical decision-making, with
-the potential to significantly impact neuroimaging research and clinical
-practice.
+    <id>http://arxiv.org/abs/2504.16081v1</id>
+    <updated>2025-04-22T17:59:17Z</updated>
+    <published>2025-04-22T17:59:17Z</published>
+    <title>Survey of Video Diffusion Models: Foundations, Implementations, and
+  Applications</title>
+    <summary>  Recent advances in diffusion models have revolutionized video generation,
+offering superior temporal consistency and visual quality compared to
+traditional generative adversarial networks-based approaches. While this
+emerging field shows tremendous promise in applications, it faces significant
+challenges in motion consistency, computational efficiency, and ethical
+considerations. This survey provides a comprehensive review of diffusion-based
+video generation, examining its evolution, technical foundations, and practical
+applications. We present a systematic taxonomy of current methodologies,
+analyze architectural innovations and optimization strategies, and investigate
+applications across low-level vision tasks such as denoising and
+super-resolution. Additionally, we explore the synergies between diffusionbased
+video generation and related domains, including video representation learning,
+question answering, and retrieval. Compared to the existing surveys (Lei et
+al., 2024a;b; Melnik et al., 2024; Cao et al., 2023; Xing et al., 2024c) which
+focus on specific aspects of video generation, such as human video synthesis
+(Lei et al., 2024a) or long-form content generation (Lei et al., 2024b), our
+work provides a broader, more updated, and more fine-grained perspective on
+diffusion-based approaches with a special section for evaluation metrics,
+industry solutions, and training engineering techniques in video generation.
+This survey serves as a foundational resource for researchers and practitioners
+working at the intersection of diffusion models and video generation, providing
+insights into both the theoretical frameworks and practical implementations
+that drive this rapidly evolving field. A structured list of related works
+involved in this survey is also available on
+https://github.com/Eyeline-Research/Survey-Video-Diffusion.
 </summary>
     <author>
-      <name>Shaorong Zhang</name>
+      <name>Yimu Wang</name>
     </author>
     <author>
-      <name>Tamoghna Chattopadhyay</name>
+      <name>Xuye Liu</name>
     </author>
     <author>
-      <name>Sophia I. Thomopoulos</name>
+      <name>Wei Pang</name>
     </author>
     <author>
-      <name>Jose-Luis Ambite</name>
+      <name>Li Ma</name>
     </author>
     <author>
-      <name>Paul M. Thompson</name>
+      <name>Shuai Yuan</name>
     </author>
     <author>
-      <name>Greg Ver Steeg</name>
+      <name>Paul Debevec</name>
     </author>
-    <link href="http://arxiv.org/abs/2504.15267v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.15267v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Ning Yu</name>
+    </author>
+    <link href="http://arxiv.org/abs/2504.16081v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.16081v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.15266v1</id>
-    <updated>2025-04-21T17:47:46Z</updated>
-    <published>2025-04-21T17:47:46Z</published>
-    <title>Roll the dice &amp; look before you leap: Going beyond the creative limits
-  of next-token prediction</title>
-    <summary>  We design a suite of minimal algorithmic tasks that are a loose abstraction
-of open-ended real-world tasks. This allows us to cleanly and controllably
-quantify the creative limits of the present-day language model. Much like
-real-world tasks that require a creative, far-sighted leap of thought, our
-tasks require an implicit, open-ended stochastic planning step that either (a)
-discovers new connections in an abstract knowledge graph (like in wordplay,
-drawing analogies, or research) or (b) constructs new patterns (like in
-designing math problems or new proteins). In these tasks, we empirically and
-conceptually argue how next-token learning is myopic and memorizes excessively;
-comparatively, multi-token approaches, namely teacherless training and
-diffusion models, excel in producing diverse and original output. Secondly, in
-our tasks, we find that to elicit randomness from the Transformer without
-hurting coherence, it is better to inject noise right at the input layer (via a
-method we dub hash-conditioning) rather than defer to temperature sampling from
-the output layer. Thus, our work offers a principled, minimal test-bed for
-analyzing open-ended creative skills, and offers new arguments for going beyond
-next-token learning and softmax-based sampling. We make part of the code
-available under https://github.com/chenwu98/algorithmic-creativity
+    <id>http://arxiv.org/abs/2504.16078v1</id>
+    <updated>2025-04-22T17:57:14Z</updated>
+    <published>2025-04-22T17:57:14Z</published>
+    <title>LLMs are Greedy Agents: Effects of RL Fine-tuning on Decision-Making
+  Abilities</title>
+    <summary>  The success of Large Language Models (LLMs) has sparked interest in various
+agentic applications. A key hypothesis is that LLMs, leveraging common sense
+and Chain-of-Thought (CoT) reasoning, can effectively explore and efficiently
+solve complex domains. However, LLM agents have been found to suffer from
+sub-optimal exploration and the knowing-doing gap, the inability to effectively
+act on knowledge present in the model. In this work, we systematically study
+why LLMs perform sub-optimally in decision-making scenarios. In particular, we
+closely examine three prevalent failure modes: greediness, frequency bias, and
+the knowing-doing gap. We propose mitigation of these shortcomings by
+fine-tuning via Reinforcement Learning (RL) on self-generated CoT rationales.
+Our experiments across multi-armed bandits, contextual bandits, and
+Tic-tac-toe, demonstrate that RL fine-tuning enhances the decision-making
+abilities of LLMs by increasing exploration and narrowing the knowing-doing
+gap. Finally, we study both classic exploration mechanisms, such as
+$\epsilon$-greedy, and LLM-specific approaches, such as self-correction and
+self-consistency, to enable more effective fine-tuning of LLMs for
+decision-making.
 </summary>
     <author>
-      <name>Vaishnavh Nagarajan</name>
+      <name>Thomas Schmied</name>
     </author>
     <author>
-      <name>Chen Henry Wu</name>
+      <name>Jörg Bornschein</name>
     </author>
     <author>
-      <name>Charles Ding</name>
+      <name>Jordi Grau-Moya</name>
     </author>
     <author>
-      <name>Aditi Raghunathan</name>
+      <name>Markus Wulfmeier</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">37 pages</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.15266v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.15266v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Razvan Pascanu</name>
+    </author>
+    <link href="http://arxiv.org/abs/2504.16078v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.16078v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.16077v1</id>
+    <updated>2025-04-22T17:55:56Z</updated>
+    <published>2025-04-22T17:55:56Z</published>
+    <title>Intent-aware Diffusion with Contrastive Learning for Sequential
+  Recommendation</title>
+    <summary>  Contrastive learning has proven effective in training sequential
+recommendation models by incorporating self-supervised signals from augmented
+views. Most existing methods generate multiple views from the same interaction
+sequence through stochastic data augmentation, aiming to align their
+representations in the embedding space. However, users typically have specific
+intents when purchasing items (e.g., buying clothes as gifts or cosmetics for
+beauty). Random data augmentation used in existing methods may introduce noise,
+disrupting the latent intent information implicit in the original interaction
+sequence. Moreover, using noisy augmented sequences in contrastive learning may
+mislead the model to focus on irrelevant features, distorting the embedding
+space and failing to capture users' true behavior patterns and intents. To
+address these issues, we propose Intent-aware Diffusion with contrastive
+learning for sequential Recommendation (InDiRec). The core idea is to generate
+item sequences aligned with users' purchasing intents, thus providing more
+reliable augmented views for contrastive learning. Specifically, InDiRec first
+performs intent clustering on sequence representations using K-means to build
+intent-guided signals. Next, it retrieves the intent representation of the
+target interaction sequence to guide a conditional diffusion model, generating
+positive views that share the same underlying intent. Finally, contrastive
+learning is applied to maximize representation consistency between these
+intent-aligned views and the original sequence. Extensive experiments on five
+public datasets demonstrate that InDiRec achieves superior performance compared
+to existing baselines, learning more robust representations even under noisy
+and sparse data conditions.
+</summary>
+    <author>
+      <name>Yuanpeng Qu</name>
+    </author>
+    <author>
+      <name>Hajime Nobuhara</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted at SIGIR 2025. 10 pages, 6 figures, 3 tables</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.16077v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.16077v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
