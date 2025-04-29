@@ -3,249 +3,281 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-04-27T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">420845</opensearch:totalResults>
+  <updated>2025-04-28T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">421053</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2504.17782v1</id>
-    <updated>2025-04-24T17:58:21Z</updated>
-    <published>2025-04-24T17:58:21Z</published>
-    <title>Unleashing the Power of Natural Audio Featuring Multiple Sound Sources</title>
-    <summary>  Universal sound separation aims to extract clean audio tracks corresponding
-to distinct events from mixed audio, which is critical for artificial auditory
-perception. However, current methods heavily rely on artificially mixed audio
-for training, which limits their ability to generalize to naturally mixed audio
-collected in real-world environments. To overcome this limitation, we propose
-ClearSep, an innovative framework that employs a data engine to decompose
-complex naturally mixed audio into multiple independent tracks, thereby
-allowing effective sound separation in real-world scenarios. We introduce two
-remix-based evaluation metrics to quantitatively assess separation quality and
-use these metrics as thresholds to iteratively apply the data engine alongside
-model training, progressively optimizing separation performance. In addition,
-we propose a series of training strategies tailored to these separated
-independent tracks to make the best use of them. Extensive experiments
-demonstrate that ClearSep achieves state-of-the-art performance across multiple
-sound separation tasks, highlighting its potential for advancing sound
-separation in natural audio scenarios. For more examples and detailed results,
-please visit our demo page at https://clearsep.github.io.
+    <id>http://arxiv.org/abs/2504.18538v1</id>
+    <updated>2025-04-25T17:59:59Z</updated>
+    <published>2025-04-25T17:59:59Z</published>
+    <title>Generalization Capability for Imitation Learning</title>
+    <summary>  Imitation learning holds the promise of equipping robots with versatile
+skills by learning from expert demonstrations. However, policies trained on
+finite datasets often struggle to generalize beyond the training distribution.
+In this work, we present a unified perspective on the generalization capability
+of imitation learning, grounded in both information theorey and data
+distribution property. We first show that the generalization gap can be upper
+bounded by (i) the conditional information bottleneck on intermediate
+representations and (ii) the mutual information between the model parameters
+and the training dataset. This characterization provides theoretical guidance
+for designing effective training strategies in imitation learning, particularly
+in determining whether to freeze, fine-tune, or train large pretrained encoders
+(e.g., vision-language models or vision foundation models) from scratch to
+achieve better generalization. Furthermore, we demonstrate that high
+conditional entropy from input to output induces a flatter likelihood
+landscape, thereby reducing the upper bound on the generalization gap. In
+addition, it shortens the stochastic gradient descent (SGD) escape time from
+sharp local minima, which may increase the likelihood of reaching global optima
+under fixed optimization budgets. These insights explain why imitation learning
+often exhibits limited generalization and underscore the importance of not only
+scaling the diversity of input data but also enriching the variability of
+output labels conditioned on the same input.
 </summary>
     <author>
-      <name>Xize Cheng</name>
+      <name>Yixiao Wang</name>
     </author>
-    <author>
-      <name>Slytherin Wang</name>
-    </author>
-    <author>
-      <name>Zehan Wang</name>
-    </author>
-    <author>
-      <name>Rongjie Huang</name>
-    </author>
-    <author>
-      <name>Tao Jin</name>
-    </author>
-    <author>
-      <name>Zhou Zhao</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Work in Progress</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.17782v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.17782v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.17780v1</id>
-    <updated>2025-04-24T17:56:22Z</updated>
-    <published>2025-04-24T17:56:22Z</published>
-    <title>Replay to Remember: Retaining Domain Knowledge in Streaming Language
-  Models</title>
-    <summary>  Continual learning in large language models (LLMs) typically encounters the
-critical challenge of catastrophic forgetting, where previously acquired
-knowledge deteriorates upon exposure to new data. While techniques like replay
-buffers and parameter-efficient tuning (e.g., Low-Rank Adaptation or LoRA) have
-been proposed, few studies investigate real-time domain adaptation under strict
-computational and data-stream constraints. In this paper, we demonstrate a
-lightweight method combining LoRA and a minimal replay mechanism in a realistic
-streaming setting across three diverse knowledge domains: medical question
-answering, genetics, and law. Using perplexity, semantic similarity, and
-GPT-based human-like evaluation metrics, we quantify the model's adaptation,
-forgetting, and recovery over time. Our experiments reveal that while
-catastrophic forgetting naturally occurs, even minimal replay significantly
-stabilizes and partially restores domain-specific knowledge. This study
-contributes practical insights for deploying adaptable LLMs in
-resource-constrained, real-world scenarios.
-</summary>
-    <author>
-      <name>Sneh Pillai</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">University of Massachusetts Dartmouth</arxiv:affiliation>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">8 pages 3 figures, 3 tables</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.17780v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.17780v1" rel="related" type="application/pdf"/>
+    <link href="http://arxiv.org/abs/2504.18538v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.18538v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.17771v1</id>
-    <updated>2025-04-24T17:46:29Z</updated>
-    <published>2025-04-24T17:46:29Z</published>
-    <title>Integrating Learning-Based Manipulation and Physics-Based Locomotion for
-  Whole-Body Badminton Robot Control</title>
-    <summary>  Learning-based methods, such as imitation learning (IL) and reinforcement
-learning (RL), can produce excel control policies over challenging agile robot
-tasks, such as sports robot. However, no existing work has harmonized
-learning-based policy with model-based methods to reduce training complexity
-and ensure the safety and stability for agile badminton robot control. In this
-paper, we introduce \ourmethod, a novel hybrid control system for agile
-badminton robots. Specifically, we propose a model-based strategy for chassis
-locomotion which provides a base for arm policy. We introduce a
-physics-informed ``IL+RL'' training framework for learning-based arm policy. In
-this train framework, a model-based strategy with privileged information is
-used to guide arm policy training during both IL and RL phases. In addition, we
-train the critic model during IL phase to alleviate the performance drop issue
-when transitioning from IL to RL. We present results on our self-engineered
-badminton robot, achieving 94.5% success rate against the serving machine and
-90.7% success rate against human players. Our system can be easily generalized
-to other agile mobile manipulation tasks such as agile catching and table
-tennis. Our project website: https://dreamstarring.github.io/HAMLET/.
-</summary>
-    <author>
-      <name>Haochen Wang</name>
-    </author>
-    <author>
-      <name>Zhiwei Shi</name>
-    </author>
-    <author>
-      <name>Chengxi Zhu</name>
-    </author>
-    <author>
-      <name>Yafei Qiao</name>
-    </author>
-    <author>
-      <name>Cheng Zhang</name>
-    </author>
-    <author>
-      <name>Fan Yang</name>
-    </author>
-    <author>
-      <name>Pengjie Ren</name>
-    </author>
-    <author>
-      <name>Lan Lu</name>
-    </author>
-    <author>
-      <name>Dong Xuan</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted to ICRA 2025. Project page:
-  https://dreamstarring.github.io/HAMLET/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.17771v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.17771v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.17768v1</id>
-    <updated>2025-04-24T17:39:25Z</updated>
-    <published>2025-04-24T17:39:25Z</published>
-    <title>The Sparse Frontier: Sparse Attention Trade-offs in Transformer LLMs</title>
-    <summary>  Sparse attention offers a promising strategy to extend long-context
-capabilities in Transformer LLMs, yet its viability, its efficiency-accuracy
-trade-offs, and systematic scaling studies remain unexplored. To address this
-gap, we perform a careful comparison of training-free sparse attention methods
-at varying model scales, sequence lengths, and sparsity levels on a diverse
-collection of long-sequence tasks-including novel ones that rely on natural
-language while remaining controllable and easy to evaluate. Based on our
-experiments, we report a series of key findings: 1) an isoFLOPS analysis
-reveals that for very long sequences, larger and highly sparse models are
-preferable to smaller and dense ones. 2) The level of sparsity attainable while
-statistically guaranteeing accuracy preservation is higher during decoding than
-prefilling, and correlates with model size in the former. 3) There is no clear
-strategy that performs best across tasks and phases, with different units of
-sparsification or budget adaptivity needed for different scenarios. Even
-moderate sparsity levels often result in significant performance degradation on
-at least one task, highlighting that sparse attention is not a universal
-solution. 4) We introduce and validate novel scaling laws specifically tailored
-for sparse attention, providing evidence that our findings are likely to hold
-true beyond our range of experiments. Through these insights, we demonstrate
-that sparse attention is a key tool to enhance the capabilities of Transformer
-LLMs for processing longer sequences, but requires careful evaluation of
-trade-offs for performance-sensitive applications.
+    <id>http://arxiv.org/abs/2504.18536v1</id>
+    <updated>2025-04-25T17:59:14Z</updated>
+    <published>2025-04-25T17:59:14Z</published>
+    <title>Adapting Probabilistic Risk Assessment for AI</title>
+    <summary>  Modern general-purpose artificial intelligence (AI) systems present an urgent
+risk management challenge, as their rapidly evolving capabilities and potential
+for catastrophic harm outpace our ability to reliably assess their risks.
+Current methods often rely on selective testing and undocumented assumptions
+about risk priorities, frequently failing to make a serious attempt at
+assessing the set of pathways through which Al systems pose direct or indirect
+risks to society and the biosphere. This paper introduces the probabilistic
+risk assessment (PRA) for AI framework, adapting established PRA techniques
+from high-reliability industries (e.g., nuclear power, aerospace) for the new
+challenges of advanced AI. The framework guides assessors in identifying
+potential risks, estimating likelihood and severity, and explicitly documenting
+evidence, underlying assumptions, and analyses at appropriate granularities.
+The framework's implementation tool synthesizes the results into a risk report
+card with aggregated risk estimates from all assessed risks. This systematic
+approach integrates three advances: (1) Aspect-oriented hazard analysis
+provides systematic hazard coverage guided by a first-principles taxonomy of AI
+system aspects (e.g. capabilities, domain knowledge, affordances); (2) Risk
+pathway modeling analyzes causal chains from system aspects to societal impacts
+using bidirectional analysis and incorporating prospective techniques; and (3)
+Uncertainty management employs scenario decomposition, reference scales, and
+explicit tracing protocols to structure credible projections with novelty or
+limited data. Additionally, the framework harmonizes diverse assessment methods
+by integrating evidence into comparable, quantified absolute risk estimates for
+critical decisions. We have implemented this as a workbook tool for AI
+developers, evaluators, and regulators, available on the project website.
 </summary>
     <author>
-      <name>Piotr Nawrot</name>
+      <name>Anna Katariina Wisakanto</name>
     </author>
     <author>
-      <name>Robert Li</name>
+      <name>Joe Rogero</name>
     </author>
     <author>
-      <name>Renjie Huang</name>
+      <name>Avyay M. Casheekar</name>
     </author>
     <author>
-      <name>Sebastian Ruder</name>
+      <name>Richard Mallah</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">for project website, see https://pra-for-ai.github.io/pra/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.18536v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.18536v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.AP" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.18535v1</id>
+    <updated>2025-04-25T17:59:13Z</updated>
+    <published>2025-04-25T17:59:13Z</published>
+    <title>TRACE Back from the Future: A Probabilistic Reasoning Approach to
+  Controllable Language Generation</title>
+    <summary>  As large language models (LMs) advance, there is an increasing need to
+control their outputs to align with human values (e.g., detoxification) or
+desired attributes (e.g., personalization, topic). However, autoregressive
+models focus on next-token predictions and struggle with global properties that
+require looking ahead. Existing solutions either tune or post-train LMs for
+each new attribute - expensive and inflexible - or approximate the Expected
+Attribute Probability (EAP) of future sequences by sampling or training, which
+is slow and unreliable for rare attributes. We introduce TRACE (Tractable
+Probabilistic Reasoning for Adaptable Controllable gEneration), a novel
+framework that efficiently computes EAP and adapts to new attributes through
+tractable probabilistic reasoning and lightweight control. TRACE distills a
+Hidden Markov Model (HMM) from an LM and pairs it with a small classifier to
+estimate attribute probabilities, enabling exact EAP computation over the HMM's
+predicted futures. This EAP is then used to reweigh the LM's next-token
+probabilities for globally compliant continuations. Empirically, TRACE achieves
+state-of-the-art results in detoxification with only 10% decoding overhead,
+adapts to 76 low-resource personalized LLMs within seconds, and seamlessly
+extends to composite attributes.
+</summary>
+    <author>
+      <name>Gwen Yidou Weng</name>
     </author>
     <author>
-      <name>Kelly Marchisio</name>
+      <name>Benjie Wang</name>
     </author>
     <author>
-      <name>Edoardo M. Ponti</name>
+      <name>Guy Van den Broeck</name>
     </author>
-    <link href="http://arxiv.org/abs/2504.17768v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.17768v1" rel="related" type="application/pdf"/>
+    <link href="http://arxiv.org/abs/2504.18535v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.18535v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.17752v1</id>
-    <updated>2025-04-24T17:10:18Z</updated>
-    <published>2025-04-24T17:10:18Z</published>
-    <title>Disaggregated Deep Learning via In-Physics Computing at Radio Frequency</title>
-    <summary>  Modern edge devices, such as cameras, drones, and Internet-of-Things nodes,
-rely on deep learning to enable a wide range of intelligent applications,
-including object recognition, environment perception, and autonomous
-navigation. However, deploying deep learning models directly on the often
-resource-constrained edge devices demands significant memory footprints and
-computational power for real-time inference using traditional digital computing
-architectures. In this paper, we present WISE, a novel computing architecture
-for wireless edge networks designed to overcome energy constraints in deep
-learning inference. WISE achieves this goal through two key innovations:
-disaggregated model access via wireless broadcasting and in-physics computation
-of general complex-valued matrix-vector multiplications directly at radio
-frequency. Using a software-defined radio platform with wirelessly broadcast
-model weights over the air, we demonstrate that WISE achieves 95.7% image
-classification accuracy with ultra-low operation power of 6.0 fJ/MAC per
-client, corresponding to a computation efficiency of 165.8 TOPS/W. This
-approach enables energy-efficient deep learning inference on wirelessly
-connected edge devices, achieving more than two orders of magnitude improvement
-in efficiency compared to traditional digital computing.
+    <id>http://arxiv.org/abs/2504.18534v1</id>
+    <updated>2025-04-25T17:59:10Z</updated>
+    <published>2025-04-25T17:59:10Z</published>
+    <title>First upper limits on the 21-cm signal power spectrum of neutral
+  hydrogen at $z=9.16$ from the LOFAR 3C196 field</title>
+    <summary>  The redshifted 21-cm signal of neutral hydrogen from the Epoch of
+Reionization (EoR) can potentially be detected using low-frequency radio
+instruments such as the Low-Frequency Array (LOFAR). So far, LOFAR upper limits
+on the 21-cm signal power spectrum have been published using a single target
+field: the North Celestial Pole (NCP). In this work, we analyse and provide
+upper limits for the 3C196 field, observed by LOFAR, with a strong
+${\approx}80\,$Jy source in the centre. This field offers advantages such as
+higher sensitivity due to zenith-crossing observations and reduced
+geostationary radio-frequency interference, but also poses challenges due to
+the presence of the bright central source. After constructing a wide-field sky
+model, we process a single 6-hour night of 3C196 observations using
+direction-independent and direction-dependent calibration, followed by a
+residual foreground subtraction with a machine learned Gaussian process
+regression (ML-GPR). A bias correction is necessary to account for signal
+suppression in the GPR step. Still, even after this correction, the upper
+limits are a factor of two lower than previous single-night NCP results, with a
+lowest $2\sigma$ upper limit of $(146.61\,\text{mK})^2$ at $z = 9.16$ and
+$k=0.078\,h\,\text{cMpc}^{-1}$ (with $\text{d}k/k\approx 0.3$). The results
+also reveal an excess power, different in behaviour from that observed in the
+NCP field, suggesting a potential residual foreground origin. In future work,
+the use of multiple nights of 3C196 observations combined with improvements to
+sky modelling and ML-GPR to avoid the need for bias correction should provide
+tighter constraints per unit observing time than the NCP.
 </summary>
     <author>
-      <name>Zhihui Gao</name>
+      <name>E. Ceccotti</name>
     </author>
     <author>
-      <name>Sri Krishna Vadlamani</name>
+      <name>A. R. Offringa</name>
     </author>
     <author>
-      <name>Kfir Sulimany</name>
+      <name>F. G. Mertens</name>
     </author>
     <author>
-      <name>Dirk Englund</name>
+      <name>L. V. E. Koopmans</name>
     </author>
     <author>
-      <name>Tingjun Chen</name>
+      <name>S. Munshi</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">11 pages, 4 figures. Supplementary Information: 54 pages, 20 figures,
-  1 table</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.17752v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.17752v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>J. K. Chege</name>
+    </author>
+    <author>
+      <name>A. Acharya</name>
+    </author>
+    <author>
+      <name>S. A. Brackenhoff</name>
+    </author>
+    <author>
+      <name>E. Chapman</name>
+    </author>
+    <author>
+      <name>B. Ciardi</name>
+    </author>
+    <author>
+      <name>R. Ghara</name>
+    </author>
+    <author>
+      <name>S. Ghosh</name>
+    </author>
+    <author>
+      <name>S. K. Giri</name>
+    </author>
+    <author>
+      <name>C. Höfer</name>
+    </author>
+    <author>
+      <name>I. Hothi</name>
+    </author>
+    <author>
+      <name>G. Mellema</name>
+    </author>
+    <author>
+      <name>M. Mevius</name>
+    </author>
+    <author>
+      <name>V. N. Pandey</name>
+    </author>
+    <author>
+      <name>S. Zaroubi</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">27 pages, 23 figures, 5 tables. Submitted to MNRAS</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.18534v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.18534v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.IM" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.18530v1</id>
+    <updated>2025-04-25T17:54:27Z</updated>
+    <published>2025-04-25T17:54:27Z</published>
+    <title>Scaling Laws For Scalable Oversight</title>
+    <summary>  Scalable oversight, the process by which weaker AI systems supervise stronger
+ones, has been proposed as a key strategy to control future superintelligent
+systems. However, it is still unclear how scalable oversight itself scales. To
+address this gap, we propose a framework that quantifies the probability of
+successful oversight as a function of the capabilities of the overseer and the
+system being overseen. Specifically, our framework models oversight as a game
+between capability-mismatched players; the players have oversight-specific and
+deception-specific Elo scores that are a piecewise-linear function of their
+general intelligence, with two plateaus corresponding to task incompetence and
+task saturation. We validate our framework with a modified version of the game
+Nim and then apply it to four oversight games: "Mafia", "Debate", "Backdoor
+Code" and "Wargames". For each game, we find scaling laws that approximate how
+domain performance depends on general AI system capability (using Chatbot Arena
+Elo as a proxy for general capability). We then build on our findings in a
+theoretical study of Nested Scalable Oversight (NSO), a process in which
+trusted models oversee untrusted stronger models, which then become the trusted
+models in the next step. We identify conditions under which NSO succeeds and
+derive numerically (and in some cases analytically) the optimal number of
+oversight levels to maximize the probability of oversight success. In our
+numerical examples, the NSO success rate is below 52% when overseeing systems
+that are 400 Elo points stronger than the baseline overseer, and it declines
+further for overseeing even stronger systems.
+</summary>
+    <author>
+      <name>Joshua Engels</name>
+    </author>
+    <author>
+      <name>David D. Baek</name>
+    </author>
+    <author>
+      <name>Subhash Kantamneni</name>
+    </author>
+    <author>
+      <name>Max Tegmark</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">34 pages, 17 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.18530v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.18530v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.ET" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.app-ph" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
