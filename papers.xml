@@ -3,272 +3,233 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-04-30T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">421755</opensearch:totalResults>
+  <updated>2025-05-01T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">421992</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2504.20997v1</id>
-    <updated>2025-04-29T17:59:48Z</updated>
-    <published>2025-04-29T17:59:48Z</published>
-    <title>Toward Efficient Exploration by Large Language Model Agents</title>
-    <summary>  A burgeoning area within reinforcement learning (RL) is the design of
-sequential decision-making agents centered around large language models (LLMs).
-While autonomous decision-making agents powered by modern LLMs could facilitate
-numerous real-world applications, such successes demand agents that are capable
-of data-efficient RL. One key obstacle to achieving data efficiency in RL is
-exploration, a challenge that we demonstrate many recent proposals for LLM
-agent designs struggle to contend with. Meanwhile, classic algorithms from the
-RL literature known to gracefully address exploration require technical
-machinery that can be challenging to operationalize in purely natural language
-settings. In this work, rather than relying on finetuning or in-context
-learning to coax LLMs into implicitly imitating a RL algorithm, we illustrate
-how LLMs can be used to explicitly implement an existing RL algorithm
-(Posterior Sampling for Reinforcement Learning) whose capacity for
-statistically-efficient exploration is already well-studied. We offer empirical
-results demonstrating how our LLM-based implementation of a known,
-data-efficient RL algorithm can be considerably more effective in natural
-language tasks that demand prudent exploration.
+    <id>http://arxiv.org/abs/2504.21850v1</id>
+    <updated>2025-04-30T17:57:22Z</updated>
+    <published>2025-04-30T17:57:22Z</published>
+    <title>COMPACT: COMPositional Atomic-to-Complex Visual Capability Tuning</title>
+    <summary>  Multimodal Large Language Models (MLLMs) excel at simple vision-language
+tasks but struggle when faced with complex tasks that require multiple
+capabilities, such as simultaneously recognizing objects, counting them, and
+understanding their spatial relationships. This might be partially the result
+of the fact that Visual Instruction Tuning (VIT), a critical training step for
+MLLMs, has traditionally focused on scaling data volume, but not the
+compositional complexity of training examples. We propose COMPACT
+(COMPositional Atomic-to-complex visual Capability Tuning), which generates a
+training dataset explicitly controlling for the compositional complexity of the
+training examples. The data from COMPACT allows MLLMs to train on combinations
+of atomic capabilities to learn complex capabilities more efficiently. Across
+all benchmarks, COMPACT achieves comparable performance to the LLaVA-665k VIT
+while using less than 10% of its data budget, and even outperforms it on
+several, especially those involving complex multi-capability tasks. For
+example, COMPACT achieves substantial 83.3% improvement on MMStar and 94.0%
+improvement on MM-Vet compared to the full-scale VIT on particularly complex
+questions that require four or more atomic capabilities. COMPACT offers a
+scalable, data-efficient, visual compositional tuning recipe to improve on
+complex visual-language tasks.
 </summary>
     <author>
-      <name>Dilip Arumugam</name>
+      <name>Xindi Wu</name>
     </author>
     <author>
-      <name>Thomas L. Griffiths</name>
-    </author>
-    <link href="http://arxiv.org/abs/2504.20997v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.20997v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.20995v1</id>
-    <updated>2025-04-29T17:59:30Z</updated>
-    <published>2025-04-29T17:59:30Z</published>
-    <title>TesserAct: Learning 4D Embodied World Models</title>
-    <summary>  This paper presents an effective approach for learning novel 4D embodied
-world models, which predict the dynamic evolution of 3D scenes over time in
-response to an embodied agent's actions, providing both spatial and temporal
-consistency. We propose to learn a 4D world model by training on RGB-DN (RGB,
-Depth, and Normal) videos. This not only surpasses traditional 2D models by
-incorporating detailed shape, configuration, and temporal changes into their
-predictions, but also allows us to effectively learn accurate inverse dynamic
-models for an embodied agent. Specifically, we first extend existing robotic
-manipulation video datasets with depth and normal information leveraging
-off-the-shelf models. Next, we fine-tune a video generation model on this
-annotated dataset, which jointly predicts RGB-DN (RGB, Depth, and Normal) for
-each frame. We then present an algorithm to directly convert generated RGB,
-Depth, and Normal videos into a high-quality 4D scene of the world. Our method
-ensures temporal and spatial coherence in 4D scene predictions from embodied
-scenarios, enables novel view synthesis for embodied environments, and
-facilitates policy learning that significantly outperforms those derived from
-prior video-based world models.
-</summary>
-    <author>
-      <name>Haoyu Zhen</name>
+      <name>Hee Seung Hwang</name>
     </author>
     <author>
-      <name>Qiao Sun</name>
+      <name>Polina Kirichenko</name>
     </author>
     <author>
-      <name>Hongxin Zhang</name>
+      <name>Olga Russakovsky</name>
     </author>
-    <author>
-      <name>Junyan Li</name>
-    </author>
-    <author>
-      <name>Siyuan Zhou</name>
-    </author>
-    <author>
-      <name>Yilun Du</name>
-    </author>
-    <author>
-      <name>Chuang Gan</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://tesseractworld.github.io/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.20995v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.20995v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">17 pages, 13 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.21850v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.21850v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.20993v1</id>
-    <updated>2025-04-29T17:58:47Z</updated>
-    <published>2025-04-29T17:58:47Z</published>
-    <title>GDP-GFCF Dynamics Across Global Economies: A Comparative Study of Panel
-  Regressions and Random Forest</title>
-    <summary>  This study examines the relationship between GDP growth and Gross Fixed
-Capital Formation (GFCF) across developed economies (G7, EU-15, OECD) and
-emerging markets (BRICS). We integrate Random Forest machine learning
-(non-linear regression) with traditional econometric models (linear regression)
-to better capture non-linear interactions in investment analysis. Our findings
-reveal that while GDP growth positively influences corporate investment, its
-impact varies significantly by region. Developed economies show stronger
-GDP-GFCF linkages due to stable financial systems, while emerging markets
-demonstrate weaker connections due to economic heterogeneity and structural
-constraints. Random Forest models indicate that GDP growth's importance is
-lower than suggested by traditional econometrics, with lagged GFCF emerging as
-the dominant predictor-confirming investment follows path-dependent patterns
-rather than short-term GDP fluctuations. Regional variations in investment
-drivers are substantial: taxation significantly influences developed economies
-but minimally affects BRICS, while unemployment strongly drives investment in
-BRICS but less so elsewhere. We introduce a parallelized p-value importance
-algorithm for Random Forest that enhances computational efficiency while
-maintaining statistical rigor through sequential testing methods (SPRT and
-SAPT). The research demonstrates that hybrid methodologies combining machine
-learning with econometric techniques provide more nuanced understanding of
-investment dynamics, supporting region-specific policy design and improving
-forecasting accuracy.
+    <id>http://arxiv.org/abs/2504.21847v1</id>
+    <updated>2025-04-30T17:55:29Z</updated>
+    <published>2025-04-30T17:55:29Z</published>
+    <title>Differentiable Room Acoustic Rendering with Multi-View Vision Priors</title>
+    <summary>  An immersive acoustic experience enabled by spatial audio is just as crucial
+as the visual aspect in creating realistic virtual environments. However,
+existing methods for room impulse response estimation rely either on
+data-demanding learning-based models or computationally expensive physics-based
+modeling. In this work, we introduce Audio-Visual Differentiable Room Acoustic
+Rendering (AV-DAR), a framework that leverages visual cues extracted from
+multi-view images and acoustic beam tracing for physics-based room acoustic
+rendering. Experiments across six real-world environments from two datasets
+demonstrate that our multimodal, physics-based approach is efficient,
+interpretable, and accurate, significantly outperforming a series of prior
+methods. Notably, on the Real Acoustic Field dataset, AV-DAR achieves
+comparable performance to models trained on 10 times more data while delivering
+relative gains ranging from 16.6% to 50.9% when trained at the same scale.
 </summary>
     <author>
-      <name>Alina Landowska</name>
+      <name>Derong Jin</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">University of Maryland, College Park</arxiv:affiliation>
     </author>
     <author>
-      <name>Robert A. Kłopotek</name>
+      <name>Ruohan Gao</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">University of Maryland, College Park</arxiv:affiliation>
     </author>
-    <author>
-      <name>Dariusz Filip</name>
-    </author>
-    <author>
-      <name>Konrad Raczkowski</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">31 pages, 5 figures, 6 tables, data and source code can be access via
-  OFS
-  https://osf.io/xpyhw/files/osfstorage?view_only=aa41c1d52ea54058b5f7d89aa3ea166c</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.20993v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.20993v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="econ.GN" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="econ.GN" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="q-fin.EC" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://humathe.github.io/avdar/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.21847v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.21847v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.20989v1</id>
-    <updated>2025-04-29T17:57:01Z</updated>
-    <published>2025-04-29T17:57:01Z</published>
-    <title>Photonic Quantum Convolutional Neural Networks with Adaptive State
-  Injection</title>
-    <summary>  Linear optical architectures have been extensively investigated for quantum
-computing and quantum machine learning applications. Recently, proposals for
-photonic quantum machine learning have combined linear optics with resource
-adaptivity, such as adaptive circuit reconfiguration, which promises to enhance
-expressivity and improve algorithm performances and scalability. Moreover,
-linear optical platforms preserve some subspaces due to the fixed number of
-particles during the computation, a property recently exploited to design a
-novel quantum convolutional neural networks. This last architecture has shown
-an advantage in terms of running time complexity and of the number of
-parameters needed with respect to other quantum neural network proposals. In
-this work, we design and experimentally implement the first photonic quantum
-convolutional neural network (PQCNN) architecture based on particle-number
-preserving circuits equipped with state injection, an approach recently
-proposed to increase the controllability of linear optical circuits.
-Subsequently, we experimentally validate the PQCNN for a binary image
-classification on a photonic platform utilizing a semiconductor quantum
-dot-based single-photon source and programmable integrated photonic
-interferometers comprising 8 and 12 modes. In order to investigate the
-scalability of the PQCNN design, we have performed numerical simulations on
-datasets of different sizes. We highlight the potential utility of a simple
-adaptive technique for a nonlinear Boson Sampling task, compatible with
-near-term quantum devices.
+    <id>http://arxiv.org/abs/2504.21844v1</id>
+    <updated>2025-04-30T17:53:08Z</updated>
+    <published>2025-04-30T17:53:08Z</published>
+    <title>Scalable Multi-Task Learning for Particle Collision Event Reconstruction
+  with Heterogeneous Graph Neural Networks</title>
+    <summary>  The growing luminosity frontier at the Large Hadron Collider is challenging
+the reconstruction and analysis of particle collision events. Increased
+particle multiplicities are straining latency and storage requirements at the
+data acquisition stage, while new complications are emerging, including higher
+background levels and more frequent particle vertex misassociations. This in
+turn necessitates the development of more holistic and scalable reconstruction
+methods that take advantage of recent advances in machine learning. We propose
+a novel Heterogeneous Graph Neural Network (HGNN) architecture featuring unique
+representations for diverse particle collision relationships and integrated
+graph pruning layers for scalability. Trained with a multi-task paradigm in an
+environment mimicking the LHCb experiment, this HGNN significantly improves
+beauty hadron reconstruction performance. Notably, it concurrently performs
+particle vertex association and graph pruning within a single framework. We
+quantify reconstruction and pruning performance, demonstrate enhanced inference
+time scaling with event complexity, and mitigate potential performance loss
+using a weighted message passing scheme.
 </summary>
     <author>
-      <name>Léo Monbroussou</name>
+      <name>William Sutcliffe</name>
     </author>
     <author>
-      <name>Beatrice Polacchi</name>
+      <name>Marta Calvi</name>
     </author>
     <author>
-      <name>Verena Yacoub</name>
+      <name>Simone Capelli</name>
     </author>
     <author>
-      <name>Eugenio Caruccio</name>
+      <name>Jonas Eschle</name>
     </author>
     <author>
-      <name>Giovanni Rodari</name>
+      <name>Julián García Pardiñas</name>
     </author>
     <author>
-      <name>Francesco Hoch</name>
+      <name>Abhijit Mathad</name>
     </author>
     <author>
-      <name>Gonzalo Carvacho</name>
+      <name>Azusa Uzuki</name>
     </author>
     <author>
-      <name>Nicolò Spagnolo</name>
+      <name>Nicola Serra</name>
     </author>
-    <author>
-      <name>Taira Giordani</name>
-    </author>
-    <author>
-      <name>Mattia Bossi</name>
-    </author>
-    <author>
-      <name>Abhiram Rajan</name>
-    </author>
-    <author>
-      <name>Niki Di Giano</name>
-    </author>
-    <author>
-      <name>Riccardo Albiero</name>
-    </author>
-    <author>
-      <name>Francesco Ceccarelli</name>
-    </author>
-    <author>
-      <name>Roberto Osellame</name>
-    </author>
-    <author>
-      <name>Elham Kashefi</name>
-    </author>
-    <author>
-      <name>Fabio Sciarrino</name>
-    </author>
-    <link href="http://arxiv.org/abs/2504.20989v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.20989v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.20988v1</id>
-    <updated>2025-04-29T17:56:55Z</updated>
-    <published>2025-04-29T17:56:55Z</published>
-    <title>Hubs and Spokes Learning: Efficient and Scalable Collaborative Machine
-  Learning</title>
-    <summary>  We introduce the Hubs and Spokes Learning (HSL) framework, a novel paradigm
-for collaborative machine learning that combines the strengths of Federated
-Learning (FL) and Decentralized Learning (P2PL). HSL employs a two-tier
-communication structure that avoids the single point of failure inherent in FL
-and outperforms the state-of-the-art P2PL framework, Epidemic Learning Local
-(ELL). At equal communication budgets (total edges), HSL achieves higher
-performance than ELL, while at significantly lower communication budgets, it
-can match ELL's performance. For instance, with only 400 edges, HSL reaches the
-same test accuracy that ELL achieves with 1000 edges for 100 peers (spokes) on
-CIFAR-10, demonstrating its suitability for resource-constrained systems. HSL
-also achieves stronger consensus among nodes after mixing, resulting in
-improved performance with fewer training rounds. We substantiate these claims
-through rigorous theoretical analyses and extensive experimental results,
-showcasing HSL's practicality for large-scale collaborative learning.
-</summary>
-    <author>
-      <name>Atul Sharma</name>
-    </author>
-    <author>
-      <name>Kavindu Herath</name>
-    </author>
-    <author>
-      <name>Saurabh Bagchi</name>
-    </author>
-    <author>
-      <name>Chaoyue Liu</name>
-    </author>
-    <author>
-      <name>Somali Chaterji</name>
-    </author>
-    <link href="http://arxiv.org/abs/2504.20988v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.20988v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">21 pages, 10 figures, 4 tables</arxiv:comment>
+    <link href="http://arxiv.org/abs/2504.21844v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.21844v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.data-an" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.data-an" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ex" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.21841v1</id>
+    <updated>2025-04-30T17:51:20Z</updated>
+    <published>2025-04-30T17:51:20Z</published>
+    <title>Neuro-Symbolic Generation of Explanations for Robot Policies with
+  Weighted Signal Temporal Logic</title>
+    <summary>  Neural network-based policies have demonstrated success in many robotic
+applications, but often lack human-explanability, which poses challenges in
+safety-critical deployments. To address this, we propose a neuro-symbolic
+explanation framework that generates a weighted signal temporal logic (wSTL)
+specification to describe a robot policy in a interpretable form. Existing
+methods typically produce explanations that are verbose and inconsistent, which
+hinders explainability, and loose, which do not give meaningful insights into
+the underlying policy. We address these issues by introducing a simplification
+process consisting of predicate filtering, regularization, and iterative
+pruning. We also introduce three novel explainability evaluation metrics --
+conciseness, consistency, and strictness -- to assess explanation quality
+beyond conventional classification metrics. Our method is validated in three
+simulated robotic environments, where it outperforms baselines in generating
+concise, consistent, and strict wSTL explanations without sacrificing
+classification accuracy. This work bridges policy learning with formal methods,
+contributing to safer and more transparent decision-making in robotics.
+</summary>
+    <author>
+      <name>Mikihisa Yuasa</name>
+    </author>
+    <author>
+      <name>Ramavarapu S. Sreenivas</name>
+    </author>
+    <author>
+      <name>Huy T. Tran</name>
+    </author>
+    <link href="http://arxiv.org/abs/2504.21841v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.21841v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.FL" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.21840v1</id>
+    <updated>2025-04-30T17:50:47Z</updated>
+    <published>2025-04-30T17:50:47Z</published>
+    <title>Parameter Inference of Black Hole Images using Deep Learning in
+  Visibility Space</title>
+    <summary>  Using very long baseline interferometry, the Event Horizon Telescope (EHT)
+collaboration has resolved the shadows of two supermassive black holes. Model
+comparison is traditionally performed in image space, where imaging algorithms
+introduce uncertainties in the recovered structure. Here, we develop a deep
+learning framework to perform parameter inference in visibility space, directly
+using the data measured by the interferometer without introducing potential
+errors and biases from image reconstruction. First, we train and validate our
+framework on synthetic data derived from general relativistic
+magnetohydrodynamics (GRMHD) simulations that vary in magnetic field state,
+spin, and $R_\mathrm{high}$. Applying these models to the real data obtained
+during the 2017 EHT campaign, and only considering total intensity, we do not
+derive meaningful constraints on either of these parameters. At present, our
+method is limited both by theoretical uncertainties in the GRMHD simulations
+and variation between snapshots of the same underlying physical model. However,
+we demonstrate that spin and $R_\mathrm{high}$ could be recovered using this
+framework through continuous monitoring of our sources, which mitigates
+variations due to turbulence. In future work, we anticipate that including
+spectral or polarimetric information will greatly improve the performance of
+this framework.
+</summary>
+    <author>
+      <name>Franc O</name>
+    </author>
+    <author>
+      <name>Pavlos Protopapas</name>
+    </author>
+    <author>
+      <name>Dominic W. Pesce</name>
+    </author>
+    <author>
+      <name>Angelo Ricarte</name>
+    </author>
+    <author>
+      <name>Sheperd S. Doeleman</name>
+    </author>
+    <author>
+      <name>Cecilia Garraffo</name>
+    </author>
+    <author>
+      <name>Lindy Blackburn</name>
+    </author>
+    <author>
+      <name>Mauricio Santillana</name>
+    </author>
+    <link href="http://arxiv.org/abs/2504.21840v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2504.21840v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
