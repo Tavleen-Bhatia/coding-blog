@@ -3,233 +3,262 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-05-01T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">421992</opensearch:totalResults>
+  <updated>2025-05-02T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">422206</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2504.21850v1</id>
-    <updated>2025-04-30T17:57:22Z</updated>
-    <published>2025-04-30T17:57:22Z</published>
-    <title>COMPACT: COMPositional Atomic-to-Complex Visual Capability Tuning</title>
-    <summary>  Multimodal Large Language Models (MLLMs) excel at simple vision-language
-tasks but struggle when faced with complex tasks that require multiple
-capabilities, such as simultaneously recognizing objects, counting them, and
-understanding their spatial relationships. This might be partially the result
-of the fact that Visual Instruction Tuning (VIT), a critical training step for
-MLLMs, has traditionally focused on scaling data volume, but not the
-compositional complexity of training examples. We propose COMPACT
-(COMPositional Atomic-to-complex visual Capability Tuning), which generates a
-training dataset explicitly controlling for the compositional complexity of the
-training examples. The data from COMPACT allows MLLMs to train on combinations
-of atomic capabilities to learn complex capabilities more efficiently. Across
-all benchmarks, COMPACT achieves comparable performance to the LLaVA-665k VIT
-while using less than 10% of its data budget, and even outperforms it on
-several, especially those involving complex multi-capability tasks. For
-example, COMPACT achieves substantial 83.3% improvement on MMStar and 94.0%
-improvement on MM-Vet compared to the full-scale VIT on particularly complex
-questions that require four or more atomic capabilities. COMPACT offers a
-scalable, data-efficient, visual compositional tuning recipe to improve on
-complex visual-language tasks.
+    <id>http://arxiv.org/abs/2505.00703v1</id>
+    <updated>2025-05-01T17:59:46Z</updated>
+    <published>2025-05-01T17:59:46Z</published>
+    <title>T2I-R1: Reinforcing Image Generation with Collaborative Semantic-level
+  and Token-level CoT</title>
+    <summary>  Recent advancements in large language models have demonstrated how
+chain-of-thought (CoT) and reinforcement learning (RL) can improve performance.
+However, applying such reasoning strategies to the visual generation domain
+remains largely unexplored. In this paper, we present T2I-R1, a novel
+reasoning-enhanced text-to-image generation model, powered by RL with a
+bi-level CoT reasoning process. Specifically, we identify two levels of CoT
+that can be utilized to enhance different stages of generation: (1) the
+semantic-level CoT for high-level planning of the prompt and (2) the
+token-level CoT for low-level pixel processing during patch-by-patch
+generation. To better coordinate these two levels of CoT, we introduce
+BiCoT-GRPO with an ensemble of generation rewards, which seamlessly optimizes
+both generation CoTs within the same training step. By applying our reasoning
+strategies to the baseline model, Janus-Pro, we achieve superior performance
+with 13% improvement on T2I-CompBench and 19% improvement on the WISE
+benchmark, even surpassing the state-of-the-art model FLUX.1. Code is available
+at: https://github.com/CaraJ7/T2I-R1
 </summary>
     <author>
-      <name>Xindi Wu</name>
+      <name>Dongzhi Jiang</name>
     </author>
     <author>
-      <name>Hee Seung Hwang</name>
+      <name>Ziyu Guo</name>
     </author>
     <author>
-      <name>Polina Kirichenko</name>
+      <name>Renrui Zhang</name>
     </author>
     <author>
-      <name>Olga Russakovsky</name>
+      <name>Zhuofan Zong</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">17 pages, 13 figures</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.21850v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.21850v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Hao Li</name>
+    </author>
+    <author>
+      <name>Le Zhuo</name>
+    </author>
+    <author>
+      <name>Shilin Yan</name>
+    </author>
+    <author>
+      <name>Pheng-Ann Heng</name>
+    </author>
+    <author>
+      <name>Hongsheng Li</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://github.com/CaraJ7/T2I-R1</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.00703v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.00703v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.21847v1</id>
-    <updated>2025-04-30T17:55:29Z</updated>
-    <published>2025-04-30T17:55:29Z</published>
-    <title>Differentiable Room Acoustic Rendering with Multi-View Vision Priors</title>
-    <summary>  An immersive acoustic experience enabled by spatial audio is just as crucial
-as the visual aspect in creating realistic virtual environments. However,
-existing methods for room impulse response estimation rely either on
-data-demanding learning-based models or computationally expensive physics-based
-modeling. In this work, we introduce Audio-Visual Differentiable Room Acoustic
-Rendering (AV-DAR), a framework that leverages visual cues extracted from
-multi-view images and acoustic beam tracing for physics-based room acoustic
-rendering. Experiments across six real-world environments from two datasets
-demonstrate that our multimodal, physics-based approach is efficient,
-interpretable, and accurate, significantly outperforming a series of prior
-methods. Notably, on the Real Acoustic Field dataset, AV-DAR achieves
-comparable performance to models trained on 10 times more data while delivering
-relative gains ranging from 16.6% to 50.9% when trained at the same scale.
-</summary>
-    <author>
-      <name>Derong Jin</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">University of Maryland, College Park</arxiv:affiliation>
-    </author>
-    <author>
-      <name>Ruohan Gao</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">University of Maryland, College Park</arxiv:affiliation>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://humathe.github.io/avdar/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.21847v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.21847v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2504.21844v1</id>
-    <updated>2025-04-30T17:53:08Z</updated>
-    <published>2025-04-30T17:53:08Z</published>
-    <title>Scalable Multi-Task Learning for Particle Collision Event Reconstruction
-  with Heterogeneous Graph Neural Networks</title>
-    <summary>  The growing luminosity frontier at the Large Hadron Collider is challenging
-the reconstruction and analysis of particle collision events. Increased
-particle multiplicities are straining latency and storage requirements at the
-data acquisition stage, while new complications are emerging, including higher
-background levels and more frequent particle vertex misassociations. This in
-turn necessitates the development of more holistic and scalable reconstruction
-methods that take advantage of recent advances in machine learning. We propose
-a novel Heterogeneous Graph Neural Network (HGNN) architecture featuring unique
-representations for diverse particle collision relationships and integrated
-graph pruning layers for scalability. Trained with a multi-task paradigm in an
-environment mimicking the LHCb experiment, this HGNN significantly improves
-beauty hadron reconstruction performance. Notably, it concurrently performs
-particle vertex association and graph pruning within a single framework. We
-quantify reconstruction and pruning performance, demonstrate enhanced inference
-time scaling with event complexity, and mitigate potential performance loss
-using a weighted message passing scheme.
-</summary>
-    <author>
-      <name>William Sutcliffe</name>
-    </author>
-    <author>
-      <name>Marta Calvi</name>
-    </author>
-    <author>
-      <name>Simone Capelli</name>
-    </author>
-    <author>
-      <name>Jonas Eschle</name>
-    </author>
-    <author>
-      <name>Julián García Pardiñas</name>
-    </author>
-    <author>
-      <name>Abhijit Mathad</name>
-    </author>
-    <author>
-      <name>Azusa Uzuki</name>
-    </author>
-    <author>
-      <name>Nicola Serra</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">21 pages, 10 figures, 4 tables</arxiv:comment>
-    <link href="http://arxiv.org/abs/2504.21844v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.21844v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.data-an" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.data-an" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="hep-ex" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.21841v1</id>
-    <updated>2025-04-30T17:51:20Z</updated>
-    <published>2025-04-30T17:51:20Z</published>
-    <title>Neuro-Symbolic Generation of Explanations for Robot Policies with
-  Weighted Signal Temporal Logic</title>
-    <summary>  Neural network-based policies have demonstrated success in many robotic
-applications, but often lack human-explanability, which poses challenges in
-safety-critical deployments. To address this, we propose a neuro-symbolic
-explanation framework that generates a weighted signal temporal logic (wSTL)
-specification to describe a robot policy in a interpretable form. Existing
-methods typically produce explanations that are verbose and inconsistent, which
-hinders explainability, and loose, which do not give meaningful insights into
-the underlying policy. We address these issues by introducing a simplification
-process consisting of predicate filtering, regularization, and iterative
-pruning. We also introduce three novel explainability evaluation metrics --
-conciseness, consistency, and strictness -- to assess explanation quality
-beyond conventional classification metrics. Our method is validated in three
-simulated robotic environments, where it outperforms baselines in generating
-concise, consistent, and strict wSTL explanations without sacrificing
-classification accuracy. This work bridges policy learning with formal methods,
-contributing to safer and more transparent decision-making in robotics.
+    <id>http://arxiv.org/abs/2505.00693v1</id>
+    <updated>2025-05-01T17:55:05Z</updated>
+    <published>2025-05-01T17:55:05Z</published>
+    <title>Robotic Visual Instruction</title>
+    <summary>  Recently, natural language has been the primary medium for human-robot
+interaction. However, its inherent lack of spatial precision for robotic
+control introduces challenges such as ambiguity and verbosity. To address these
+limitations, we introduce the Robotic Visual Instruction (RoVI), a novel
+paradigm to guide robotic tasks through an object-centric, hand-drawn symbolic
+representation. RoVI effectively encodes spatial-temporal information into
+human-interpretable visual instructions through 2D sketches, utilizing arrows,
+circles, colors, and numbers to direct 3D robotic manipulation. To enable
+robots to understand RoVI better and generate precise actions based on RoVI, we
+present Visual Instruction Embodied Workflow (VIEW), a pipeline formulated for
+RoVI-conditioned policies. This approach leverages Vision-Language Models
+(VLMs) to interpret RoVI inputs, decode spatial and temporal constraints from
+2D pixel space via keypoint extraction, and then transform them into executable
+3D action sequences. We additionally curate a specialized dataset of 15K
+instances to fine-tune small VLMs for edge deployment, enabling them to
+effectively learn RoVI capabilities. Our approach is rigorously validated
+across 11 novel tasks in both real and simulated environments, demonstrating
+significant generalization capability. Notably, VIEW achieves an 87.5% success
+rate in real-world scenarios involving unseen tasks that feature multi-step
+actions, with disturbances, and trajectory-following requirements. Code and
+Datasets in this paper will be released soon.
 </summary>
     <author>
-      <name>Mikihisa Yuasa</name>
+      <name>Yanbang Li</name>
     </author>
     <author>
-      <name>Ramavarapu S. Sreenivas</name>
+      <name>Ziyang Gong</name>
     </author>
     <author>
-      <name>Huy T. Tran</name>
+      <name>Haoyang Li</name>
     </author>
-    <link href="http://arxiv.org/abs/2504.21841v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.21841v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Haoyang Li</name>
+    </author>
+    <author>
+      <name>Xiaoqi Huang</name>
+    </author>
+    <author>
+      <name>Haolan Kang</name>
+    </author>
+    <author>
+      <name>Guangping Bai</name>
+    </author>
+    <author>
+      <name>Xianzheng Ma</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.00693v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.00693v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.FL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2504.21840v1</id>
-    <updated>2025-04-30T17:50:47Z</updated>
-    <published>2025-04-30T17:50:47Z</published>
-    <title>Parameter Inference of Black Hole Images using Deep Learning in
-  Visibility Space</title>
-    <summary>  Using very long baseline interferometry, the Event Horizon Telescope (EHT)
-collaboration has resolved the shadows of two supermassive black holes. Model
-comparison is traditionally performed in image space, where imaging algorithms
-introduce uncertainties in the recovered structure. Here, we develop a deep
-learning framework to perform parameter inference in visibility space, directly
-using the data measured by the interferometer without introducing potential
-errors and biases from image reconstruction. First, we train and validate our
-framework on synthetic data derived from general relativistic
-magnetohydrodynamics (GRMHD) simulations that vary in magnetic field state,
-spin, and $R_\mathrm{high}$. Applying these models to the real data obtained
-during the 2017 EHT campaign, and only considering total intensity, we do not
-derive meaningful constraints on either of these parameters. At present, our
-method is limited both by theoretical uncertainties in the GRMHD simulations
-and variation between snapshots of the same underlying physical model. However,
-we demonstrate that spin and $R_\mathrm{high}$ could be recovered using this
-framework through continuous monitoring of our sources, which mitigates
-variations due to turbulence. In future work, we anticipate that including
-spectral or polarimetric information will greatly improve the performance of
-this framework.
+    <id>http://arxiv.org/abs/2505.00690v1</id>
+    <updated>2025-05-01T17:52:29Z</updated>
+    <published>2025-05-01T17:52:29Z</published>
+    <title>Towards Autonomous Micromobility through Scalable Urban Simulation</title>
+    <summary>  Micromobility, which utilizes lightweight mobile machines moving in urban
+public spaces, such as delivery robots and mobility scooters, emerges as a
+promising alternative to vehicular mobility. Current micromobility depends
+mostly on human manual operation (in-person or remote control), which raises
+safety and efficiency concerns when navigating busy urban environments full of
+unpredictable obstacles and pedestrians. Assisting humans with AI agents in
+maneuvering micromobility devices presents a viable solution for enhancing
+safety and efficiency. In this work, we present a scalable urban simulation
+solution to advance autonomous micromobility. First, we build URBAN-SIM - a
+high-performance robot learning platform for large-scale training of embodied
+agents in interactive urban scenes. URBAN-SIM contains three critical modules:
+Hierarchical Urban Generation pipeline, Interactive Dynamics Generation
+strategy, and Asynchronous Scene Sampling scheme, to improve the diversity,
+realism, and efficiency of robot learning in simulation. Then, we propose
+URBAN-BENCH - a suite of essential tasks and benchmarks to gauge various
+capabilities of the AI agents in achieving autonomous micromobility.
+URBAN-BENCH includes eight tasks based on three core skills of the agents:
+Urban Locomotion, Urban Navigation, and Urban Traverse. We evaluate four robots
+with heterogeneous embodiments, such as the wheeled and legged robots, across
+these tasks. Experiments on diverse terrains and urban structures reveal each
+robot's strengths and limitations.
 </summary>
     <author>
-      <name>Franc O</name>
+      <name>Wayne Wu</name>
     </author>
     <author>
-      <name>Pavlos Protopapas</name>
+      <name>Honglin He</name>
     </author>
     <author>
-      <name>Dominic W. Pesce</name>
+      <name>Chaoyuan Zhang</name>
     </author>
     <author>
-      <name>Angelo Ricarte</name>
+      <name>Jack He</name>
     </author>
     <author>
-      <name>Sheperd S. Doeleman</name>
+      <name>Seth Z. Zhao</name>
     </author>
     <author>
-      <name>Cecilia Garraffo</name>
+      <name>Ran Gong</name>
     </author>
     <author>
-      <name>Lindy Blackburn</name>
+      <name>Quanyi Li</name>
     </author>
     <author>
-      <name>Mauricio Santillana</name>
+      <name>Bolei Zhou</name>
     </author>
-    <link href="http://arxiv.org/abs/2504.21840v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2504.21840v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">CVPR 2025 Highlight. Project page:
+  https://metadriverse.github.io/urban-sim/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.00690v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.00690v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.00685v1</id>
+    <updated>2025-05-01T17:47:44Z</updated>
+    <published>2025-05-01T17:47:44Z</published>
+    <title>On the Importance of Gaussianizing Representations</title>
+    <summary>  The normal distribution plays a central role in information theory - it is at
+the same time the best-case signal and worst-case noise distribution, has the
+greatest representational capacity of any distribution, and offers an
+equivalence between uncorrelatedness and independence for joint distributions.
+Accounting for the mean and variance of activations throughout the layers of
+deep neural networks has had a significant effect on facilitating their
+effective training, but seldom has a prescription for precisely what
+distribution these activations should take, and how this might be achieved,
+been offered. Motivated by the information-theoretic properties of the normal
+distribution, we address this question and concurrently present normality
+normalization: a novel normalization layer which encourages normality in the
+feature representations of neural networks using the power transform and
+employs additive Gaussian noise during training. Our experiments
+comprehensively demonstrate the effectiveness of normality normalization, in
+regards to its generalization performance on an array of widely used model and
+dataset combinations, its strong performance across various common factors of
+variation such as model width, depth, and training minibatch size, its
+suitability for usage wherever existing normalization layers are conventionally
+used, and as a means to improving model robustness to random perturbations.
+</summary>
+    <author>
+      <name>Daniel Eftekhari</name>
+    </author>
+    <author>
+      <name>Vardan Papyan</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">ICML 2025 Proceedings</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.00685v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.00685v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.00684v1</id>
+    <updated>2025-05-01T17:45:59Z</updated>
+    <published>2025-05-01T17:45:59Z</published>
+    <title>Visual Test-time Scaling for GUI Agent Grounding</title>
+    <summary>  We introduce RegionFocus, a visual test-time scaling approach for Vision
+Language Model Agents. Understanding webpages is challenging due to the visual
+complexity of GUI images and the large number of interface elements, making
+accurate action selection difficult. Our approach dynamically zooms in on
+relevant regions, reducing background clutter and improving grounding accuracy.
+To support this process, we propose an image-as-map mechanism that visualizes
+key landmarks at each step, providing a transparent action record and enables
+the agent to effectively choose among action candidates. Even with a simple
+region selection strategy, we observe significant performance gains of 28+\% on
+Screenspot-pro and 24+\% on WebVoyager benchmarks on top of two
+state-of-the-art open vision language model agents, UI-TARS and Qwen2.5-VL,
+highlighting the effectiveness of visual test-time scaling in interactive
+settings. We achieve a new state-of-the-art grounding performance of 61.6\% on
+the ScreenSpot-Pro benchmark by applying RegionFocus to a Qwen2.5-VL-72B model.
+Our code will be released publicly at https://github.com/tiangeluo/RegionFocus.
+</summary>
+    <author>
+      <name>Tiange Luo</name>
+    </author>
+    <author>
+      <name>Lajanugen Logeswaran</name>
+    </author>
+    <author>
+      <name>Justin Johnson</name>
+    </author>
+    <author>
+      <name>Honglak Lee</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.00684v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.00684v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
