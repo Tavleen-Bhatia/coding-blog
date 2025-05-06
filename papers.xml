@@ -3,262 +3,260 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-05-04T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">422205</opensearch:totalResults>
+  <updated>2025-05-05T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">422418</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2505.00703v1</id>
-    <updated>2025-05-01T17:59:46Z</updated>
-    <published>2025-05-01T17:59:46Z</published>
-    <title>T2I-R1: Reinforcing Image Generation with Collaborative Semantic-level
-  and Token-level CoT</title>
-    <summary>  Recent advancements in large language models have demonstrated how
-chain-of-thought (CoT) and reinforcement learning (RL) can improve performance.
-However, applying such reasoning strategies to the visual generation domain
-remains largely unexplored. In this paper, we present T2I-R1, a novel
-reasoning-enhanced text-to-image generation model, powered by RL with a
-bi-level CoT reasoning process. Specifically, we identify two levels of CoT
-that can be utilized to enhance different stages of generation: (1) the
-semantic-level CoT for high-level planning of the prompt and (2) the
-token-level CoT for low-level pixel processing during patch-by-patch
-generation. To better coordinate these two levels of CoT, we introduce
-BiCoT-GRPO with an ensemble of generation rewards, which seamlessly optimizes
-both generation CoTs within the same training step. By applying our reasoning
-strategies to the baseline model, Janus-Pro, we achieve superior performance
-with 13% improvement on T2I-CompBench and 19% improvement on the WISE
-benchmark, even surpassing the state-of-the-art model FLUX.1. Code is available
-at: https://github.com/CaraJ7/T2I-R1
+    <id>http://arxiv.org/abs/2505.01425v1</id>
+    <updated>2025-05-02T17:59:55Z</updated>
+    <published>2025-05-02T17:59:55Z</published>
+    <title>GENMO: A GENeralist Model for Human MOtion</title>
+    <summary>  Human motion modeling traditionally separates motion generation and
+estimation into distinct tasks with specialized models. Motion generation
+models focus on creating diverse, realistic motions from inputs like text,
+audio, or keyframes, while motion estimation models aim to reconstruct accurate
+motion trajectories from observations like videos. Despite sharing underlying
+representations of temporal dynamics and kinematics, this separation limits
+knowledge transfer between tasks and requires maintaining separate models. We
+present GENMO, a unified Generalist Model for Human Motion that bridges motion
+estimation and generation in a single framework. Our key insight is to
+reformulate motion estimation as constrained motion generation, where the
+output motion must precisely satisfy observed conditioning signals. Leveraging
+the synergy between regression and diffusion, GENMO achieves accurate global
+motion estimation while enabling diverse motion generation. We also introduce
+an estimation-guided training objective that exploits in-the-wild videos with
+2D annotations and text descriptions to enhance generative diversity.
+Furthermore, our novel architecture handles variable-length motions and mixed
+multimodal conditions (text, audio, video) at different time intervals,
+offering flexible control. This unified approach creates synergistic benefits:
+generative priors improve estimated motions under challenging conditions like
+occlusions, while diverse video data enhances generation capabilities.
+Extensive experiments demonstrate GENMO's effectiveness as a generalist
+framework that successfully handles multiple human motion tasks within a single
+model.
 </summary>
     <author>
-      <name>Dongzhi Jiang</name>
+      <name>Jiefeng Li</name>
     </author>
     <author>
-      <name>Ziyu Guo</name>
+      <name>Jinkun Cao</name>
     </author>
     <author>
-      <name>Renrui Zhang</name>
+      <name>Haotian Zhang</name>
     </author>
     <author>
-      <name>Zhuofan Zong</name>
+      <name>Davis Rempe</name>
     </author>
     <author>
-      <name>Hao Li</name>
+      <name>Jan Kautz</name>
     </author>
     <author>
-      <name>Le Zhuo</name>
+      <name>Umar Iqbal</name>
     </author>
     <author>
-      <name>Shilin Yan</name>
+      <name>Ye Yuan</name>
     </author>
-    <author>
-      <name>Pheng-Ann Heng</name>
-    </author>
-    <author>
-      <name>Hongsheng Li</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://github.com/CaraJ7/T2I-R1</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.00703v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.00703v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://research.nvidia.com/labs/dair/genmo/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.01425v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.01425v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.GR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.GR" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.00693v1</id>
-    <updated>2025-05-01T17:55:05Z</updated>
-    <published>2025-05-01T17:55:05Z</published>
-    <title>Robotic Visual Instruction</title>
-    <summary>  Recently, natural language has been the primary medium for human-robot
-interaction. However, its inherent lack of spatial precision for robotic
-control introduces challenges such as ambiguity and verbosity. To address these
-limitations, we introduce the Robotic Visual Instruction (RoVI), a novel
-paradigm to guide robotic tasks through an object-centric, hand-drawn symbolic
-representation. RoVI effectively encodes spatial-temporal information into
-human-interpretable visual instructions through 2D sketches, utilizing arrows,
-circles, colors, and numbers to direct 3D robotic manipulation. To enable
-robots to understand RoVI better and generate precise actions based on RoVI, we
-present Visual Instruction Embodied Workflow (VIEW), a pipeline formulated for
-RoVI-conditioned policies. This approach leverages Vision-Language Models
-(VLMs) to interpret RoVI inputs, decode spatial and temporal constraints from
-2D pixel space via keypoint extraction, and then transform them into executable
-3D action sequences. We additionally curate a specialized dataset of 15K
-instances to fine-tune small VLMs for edge deployment, enabling them to
-effectively learn RoVI capabilities. Our approach is rigorously validated
-across 11 novel tasks in both real and simulated environments, demonstrating
-significant generalization capability. Notably, VIEW achieves an 87.5% success
-rate in real-world scenarios involving unseen tasks that feature multi-step
-actions, with disturbances, and trajectory-following requirements. Code and
-Datasets in this paper will be released soon.
-</summary>
-    <author>
-      <name>Yanbang Li</name>
-    </author>
-    <author>
-      <name>Ziyang Gong</name>
-    </author>
-    <author>
-      <name>Haoyang Li</name>
-    </author>
-    <author>
-      <name>Haoyang Li</name>
-    </author>
-    <author>
-      <name>Xiaoqi Huang</name>
-    </author>
-    <author>
-      <name>Haolan Kang</name>
-    </author>
-    <author>
-      <name>Guangping Bai</name>
-    </author>
-    <author>
-      <name>Xianzheng Ma</name>
-    </author>
-    <link href="http://arxiv.org/abs/2505.00693v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.00693v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.00690v1</id>
-    <updated>2025-05-01T17:52:29Z</updated>
-    <published>2025-05-01T17:52:29Z</published>
-    <title>Towards Autonomous Micromobility through Scalable Urban Simulation</title>
-    <summary>  Micromobility, which utilizes lightweight mobile machines moving in urban
-public spaces, such as delivery robots and mobility scooters, emerges as a
-promising alternative to vehicular mobility. Current micromobility depends
-mostly on human manual operation (in-person or remote control), which raises
-safety and efficiency concerns when navigating busy urban environments full of
-unpredictable obstacles and pedestrians. Assisting humans with AI agents in
-maneuvering micromobility devices presents a viable solution for enhancing
-safety and efficiency. In this work, we present a scalable urban simulation
-solution to advance autonomous micromobility. First, we build URBAN-SIM - a
-high-performance robot learning platform for large-scale training of embodied
-agents in interactive urban scenes. URBAN-SIM contains three critical modules:
-Hierarchical Urban Generation pipeline, Interactive Dynamics Generation
-strategy, and Asynchronous Scene Sampling scheme, to improve the diversity,
-realism, and efficiency of robot learning in simulation. Then, we propose
-URBAN-BENCH - a suite of essential tasks and benchmarks to gauge various
-capabilities of the AI agents in achieving autonomous micromobility.
-URBAN-BENCH includes eight tasks based on three core skills of the agents:
-Urban Locomotion, Urban Navigation, and Urban Traverse. We evaluate four robots
-with heterogeneous embodiments, such as the wheeled and legged robots, across
-these tasks. Experiments on diverse terrains and urban structures reveal each
-robot's strengths and limitations.
-</summary>
-    <author>
-      <name>Wayne Wu</name>
-    </author>
-    <author>
-      <name>Honglin He</name>
-    </author>
-    <author>
-      <name>Chaoyuan Zhang</name>
-    </author>
-    <author>
-      <name>Jack He</name>
-    </author>
-    <author>
-      <name>Seth Z. Zhao</name>
-    </author>
-    <author>
-      <name>Ran Gong</name>
-    </author>
-    <author>
-      <name>Quanyi Li</name>
-    </author>
-    <author>
-      <name>Bolei Zhou</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">CVPR 2025 Highlight. Project page:
-  https://metadriverse.github.io/urban-sim/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.00690v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.00690v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.00685v1</id>
-    <updated>2025-05-01T17:47:44Z</updated>
-    <published>2025-05-01T17:47:44Z</published>
-    <title>On the Importance of Gaussianizing Representations</title>
-    <summary>  The normal distribution plays a central role in information theory - it is at
-the same time the best-case signal and worst-case noise distribution, has the
-greatest representational capacity of any distribution, and offers an
-equivalence between uncorrelatedness and independence for joint distributions.
-Accounting for the mean and variance of activations throughout the layers of
-deep neural networks has had a significant effect on facilitating their
-effective training, but seldom has a prescription for precisely what
-distribution these activations should take, and how this might be achieved,
-been offered. Motivated by the information-theoretic properties of the normal
-distribution, we address this question and concurrently present normality
-normalization: a novel normalization layer which encourages normality in the
-feature representations of neural networks using the power transform and
-employs additive Gaussian noise during training. Our experiments
-comprehensively demonstrate the effectiveness of normality normalization, in
-regards to its generalization performance on an array of widely used model and
-dataset combinations, its strong performance across various common factors of
-variation such as model width, depth, and training minibatch size, its
-suitability for usage wherever existing normalization layers are conventionally
-used, and as a means to improving model robustness to random perturbations.
+    <id>http://arxiv.org/abs/2505.01424v1</id>
+    <updated>2025-05-02T17:59:54Z</updated>
+    <published>2025-05-02T17:59:54Z</published>
+    <title>Computational, Data-Driven, and Physics-Informed Machine Learning
+  Approaches for Microstructure Modeling in Metal Additive Manufacturing</title>
+    <summary>  Metal additive manufacturing enables unprecedented design freedom and the
+production of customized, complex components. However, the rapid melting and
+solidification dynamics inherent to metal AM processes generate heterogeneous,
+non-equilibrium microstructures that significantly impact mechanical properties
+and subsequent functionality. Predicting microstructure and its evolution
+across spatial and temporal scales remains a central challenge for process
+optimization and defect mitigation. While conventional experimental techniques
+and physics-based simulations provide a physical foundation and valuable
+insights, they face critical limitations. In contrast, data-driven machine
+learning offers an alternative prediction approach and powerful pattern
+recognition but often operate as black-box, lacking generalizability and
+physical consistency. To overcome these limitations, physics-informed machine
+learning, including physics-informed neural networks, has emerged as a
+promising paradigm by embedding governing physical laws into neural network
+architectures, thereby enhancing accuracy, transparency, data efficiency, and
+extrapolation capabilities. This work presents a comprehensive evaluation of
+modeling strategies for microstructure prediction in metal AM. The strengths
+and limitations of experimental, computational, and data-driven methods are
+analyzed in depth, and highlight recent advances in hybrid PIML frameworks that
+integrate physical knowledge with ML. Key challenges, such as data scarcity,
+multi-scale coupling, and uncertainty quantification, are discussed alongside
+future directions. Ultimately, this assessment underscores the importance of
+PIML-based hybrid approaches in enabling predictive, scalable, and physically
+consistent microstructure modeling for site-specific, microstructure-aware
+process control and the reliable production of high-performance AM components.
 </summary>
     <author>
-      <name>Daniel Eftekhari</name>
+      <name>D. Patel</name>
     </author>
     <author>
-      <name>Vardan Papyan</name>
+      <name>R. Sharma</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">ICML 2025 Proceedings</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.00685v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.00685v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Y. B. Guo</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.01424v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.01424v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.00684v1</id>
-    <updated>2025-05-01T17:45:59Z</updated>
-    <published>2025-05-01T17:45:59Z</published>
-    <title>Visual Test-time Scaling for GUI Agent Grounding</title>
-    <summary>  We introduce RegionFocus, a visual test-time scaling approach for Vision
-Language Model Agents. Understanding webpages is challenging due to the visual
-complexity of GUI images and the large number of interface elements, making
-accurate action selection difficult. Our approach dynamically zooms in on
-relevant regions, reducing background clutter and improving grounding accuracy.
-To support this process, we propose an image-as-map mechanism that visualizes
-key landmarks at each step, providing a transparent action record and enables
-the agent to effectively choose among action candidates. Even with a simple
-region selection strategy, we observe significant performance gains of 28+\% on
-Screenspot-pro and 24+\% on WebVoyager benchmarks on top of two
-state-of-the-art open vision language model agents, UI-TARS and Qwen2.5-VL,
-highlighting the effectiveness of visual test-time scaling in interactive
-settings. We achieve a new state-of-the-art grounding performance of 61.6\% on
-the ScreenSpot-Pro benchmark by applying RegionFocus to a Qwen2.5-VL-72B model.
-Our code will be released publicly at https://github.com/tiangeluo/RegionFocus.
+    <id>http://arxiv.org/abs/2505.01423v1</id>
+    <updated>2025-05-02T17:59:46Z</updated>
+    <published>2025-05-02T17:59:46Z</published>
+    <title>Negative Stepsizes Make Gradient-Descent-Ascent Converge</title>
+    <summary>  Efficient computation of min-max problems is a central question in
+optimization, learning, games, and controls. Arguably the most natural
+algorithm is gradient-descent-ascent (GDA). However, since the 1970s,
+conventional wisdom has argued that GDA fails to converge even on simple
+problems. This failure spurred an extensive literature on modifying GDA with
+additional building blocks such as extragradients, optimism, momentum,
+anchoring, etc. In contrast, we show that GDA converges in its original form by
+simply using a judicious choice of stepsizes.
+  The key innovation is the proposal of unconventional stepsize schedules
+(dubbed slingshot stepsize schedules) that are time-varying, asymmetric, and
+periodically negative. We show that all three properties are necessary for
+convergence, and that altogether this enables GDA to converge on the classical
+counterexamples (e.g., unconstrained convex-concave problems). All of our
+results apply to the last iterate of GDA, as is typically desired in practice.
+  The core algorithmic intuition is that although negative stepsizes make
+backward progress, they de-synchronize the min and max variables (overcoming
+the cycling issue of GDA), and lead to a slingshot phenomenon in which the
+forward progress in the other iterations is overwhelmingly larger. This results
+in fast overall convergence. Geometrically, the slingshot dynamics leverage the
+non-reversibility of gradient flow: positive/negative steps cancel to first
+order, yielding a second-order net movement in a new direction that leads to
+convergence and is otherwise impossible for GDA to move in. We interpret this
+as a second-order finite-differencing algorithm and show that, intriguingly, it
+approximately implements consensus optimization, an empirically popular
+algorithm for min-max problems involving deep neural networks (e.g., training
+GANs).
 </summary>
     <author>
-      <name>Tiange Luo</name>
+      <name>Henry Shugart</name>
     </author>
     <author>
-      <name>Lajanugen Logeswaran</name>
+      <name>Jason M. Altschuler</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.01423v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.01423v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.01420v1</id>
+    <updated>2025-05-02T17:57:14Z</updated>
+    <published>2025-05-02T17:57:14Z</published>
+    <title>Evaluating Frontier Models for Stealth and Situational Awareness</title>
+    <summary>  Recent work has demonstrated the plausibility of frontier AI models scheming
+-- knowingly and covertly pursuing an objective misaligned with its developer's
+intentions. Such behavior could be very hard to detect, and if present in
+future advanced systems, could pose severe loss of control risk. It is
+therefore important for AI developers to rule out harm from scheming prior to
+model deployment. In this paper, we present a suite of scheming reasoning
+evaluations measuring two types of reasoning capabilities that we believe are
+prerequisites for successful scheming: First, we propose five evaluations of
+ability to reason about and circumvent oversight (stealth). Second, we present
+eleven evaluations for measuring a model's ability to instrumentally reason
+about itself, its environment and its deployment (situational awareness). We
+demonstrate how these evaluations can be used as part of a scheming inability
+safety case: a model that does not succeed on these evaluations is almost
+certainly incapable of causing severe harm via scheming in real deployment. We
+run our evaluations on current frontier models and find that none of them show
+concerning levels of either situational awareness or stealth.
+</summary>
+    <author>
+      <name>Mary Phuong</name>
     </author>
     <author>
-      <name>Justin Johnson</name>
+      <name>Roland S. Zimmermann</name>
     </author>
     <author>
-      <name>Honglak Lee</name>
+      <name>Ziyue Wang</name>
     </author>
-    <link href="http://arxiv.org/abs/2505.00684v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.00684v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>David Lindner</name>
+    </author>
+    <author>
+      <name>Victoria Krakovna</name>
+    </author>
+    <author>
+      <name>Sarah Cogan</name>
+    </author>
+    <author>
+      <name>Allan Dafoe</name>
+    </author>
+    <author>
+      <name>Lewis Ho</name>
+    </author>
+    <author>
+      <name>Rohin Shah</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.01420v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.01420v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.01415v1</id>
+    <updated>2025-05-02T17:48:20Z</updated>
+    <published>2025-05-02T17:48:20Z</published>
+    <title>How Effective are Large Time Series Models in Hydrology? A Study on
+  Water Level Forecasting in Everglades</title>
+    <summary>  The Everglades play a crucial role in flood and drought regulation, water
+resource planning, and ecosystem management in the surrounding regions.
+However, traditional physics-based and statistical methods for predicting water
+levels often face significant challenges, including high computational costs
+and limited adaptability to diverse or unforeseen conditions. Recent
+advancements in large time series models have demonstrated the potential to
+address these limitations, with state-of-the-art deep learning and foundation
+models achieving remarkable success in time series forecasting across various
+domains. Despite this progress, their application to critical environmental
+systems, such as the Everglades, remains underexplored. In this study, we fill
+the gap by investigating twelve task-specific models and five time series
+foundation models across six categories for a real-world application focused on
+water level prediction in the Everglades. Our primary results show that the
+foundation model, Chronos, significantly outperforms all other models while the
+remaining foundation models exhibit relatively poor performance. Moreover, the
+performance of task-specific models varies with the model architectures.
+Lastly, we discuss the possible reasons for the varying performance of models.
+</summary>
+    <author>
+      <name>Rahuul Rangaraj</name>
+    </author>
+    <author>
+      <name>Jimeng Shi</name>
+    </author>
+    <author>
+      <name>Azam Shirali</name>
+    </author>
+    <author>
+      <name>Rajendra Paudel</name>
+    </author>
+    <author>
+      <name>Yanzhao Wu</name>
+    </author>
+    <author>
+      <name>Giri Narasimhan</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.01415v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.01415v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
