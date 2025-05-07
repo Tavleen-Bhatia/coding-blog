@@ -3,260 +3,591 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-05-05T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">422418</opensearch:totalResults>
+  <updated>2025-05-06T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">422864</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2505.01425v1</id>
-    <updated>2025-05-02T17:59:55Z</updated>
-    <published>2025-05-02T17:59:55Z</published>
-    <title>GENMO: A GENeralist Model for Human MOtion</title>
-    <summary>  Human motion modeling traditionally separates motion generation and
-estimation into distinct tasks with specialized models. Motion generation
-models focus on creating diverse, realistic motions from inputs like text,
-audio, or keyframes, while motion estimation models aim to reconstruct accurate
-motion trajectories from observations like videos. Despite sharing underlying
-representations of temporal dynamics and kinematics, this separation limits
-knowledge transfer between tasks and requires maintaining separate models. We
-present GENMO, a unified Generalist Model for Human Motion that bridges motion
-estimation and generation in a single framework. Our key insight is to
-reformulate motion estimation as constrained motion generation, where the
-output motion must precisely satisfy observed conditioning signals. Leveraging
-the synergy between regression and diffusion, GENMO achieves accurate global
-motion estimation while enabling diverse motion generation. We also introduce
-an estimation-guided training objective that exploits in-the-wild videos with
-2D annotations and text descriptions to enhance generative diversity.
-Furthermore, our novel architecture handles variable-length motions and mixed
-multimodal conditions (text, audio, video) at different time intervals,
-offering flexible control. This unified approach creates synergistic benefits:
-generative priors improve estimated motions under challenging conditions like
-occlusions, while diverse video data enhances generation capabilities.
-Extensive experiments demonstrate GENMO's effectiveness as a generalist
-framework that successfully handles multiple human motion tasks within a single
-model.
+    <id>http://arxiv.org/abs/2505.02836v1</id>
+    <updated>2025-05-05T17:59:58Z</updated>
+    <published>2025-05-05T17:59:58Z</published>
+    <title>Scenethesis: A Language and Vision Agentic Framework for 3D Scene
+  Generation</title>
+    <summary>  Synthesizing interactive 3D scenes from text is essential for gaming, virtual
+reality, and embodied AI. However, existing methods face several challenges.
+Learning-based approaches depend on small-scale indoor datasets, limiting the
+scene diversity and layout complexity. While large language models (LLMs) can
+leverage diverse text-domain knowledge, they struggle with spatial realism,
+often producing unnatural object placements that fail to respect common sense.
+Our key insight is that vision perception can bridge this gap by providing
+realistic spatial guidance that LLMs lack. To this end, we introduce
+Scenethesis, a training-free agentic framework that integrates LLM-based scene
+planning with vision-guided layout refinement. Given a text prompt, Scenethesis
+first employs an LLM to draft a coarse layout. A vision module then refines it
+by generating an image guidance and extracting scene structure to capture
+inter-object relations. Next, an optimization module iteratively enforces
+accurate pose alignment and physical plausibility, preventing artifacts like
+object penetration and instability. Finally, a judge module verifies spatial
+coherence. Comprehensive experiments show that Scenethesis generates diverse,
+realistic, and physically plausible 3D interactive scenes, making it valuable
+for virtual content creation, simulation environments, and embodied AI
+research.
 </summary>
     <author>
-      <name>Jiefeng Li</name>
+      <name>Lu Ling</name>
     </author>
     <author>
-      <name>Jinkun Cao</name>
+      <name>Chen-Hsuan Lin</name>
     </author>
     <author>
-      <name>Haotian Zhang</name>
+      <name>Tsung-Yi Lin</name>
     </author>
     <author>
-      <name>Davis Rempe</name>
+      <name>Yifan Ding</name>
     </author>
     <author>
-      <name>Jan Kautz</name>
+      <name>Yu Zeng</name>
     </author>
     <author>
-      <name>Umar Iqbal</name>
+      <name>Yichen Sheng</name>
     </author>
     <author>
-      <name>Ye Yuan</name>
+      <name>Yunhao Ge</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://research.nvidia.com/labs/dair/genmo/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.01425v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.01425v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.GR" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.GR" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Ming-Yu Liu</name>
+    </author>
+    <author>
+      <name>Aniket Bera</name>
+    </author>
+    <author>
+      <name>Zhaoshuo Li</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.02836v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.02836v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.02835v1</id>
+    <updated>2025-05-05T17:59:50Z</updated>
+    <published>2025-05-05T17:59:50Z</published>
+    <title>R1-Reward: Training Multimodal Reward Model Through Stable Reinforcement
+  Learning</title>
+    <summary>  Multimodal Reward Models (MRMs) play a crucial role in enhancing the
+performance of Multimodal Large Language Models (MLLMs). While recent
+advancements have primarily focused on improving the model structure and
+training data of MRMs, there has been limited exploration into the
+effectiveness of long-term reasoning capabilities for reward modeling and how
+to activate these capabilities in MRMs. In this paper, we explore how
+Reinforcement Learning (RL) can be used to improve reward modeling.
+Specifically, we reformulate the reward modeling problem as a rule-based RL
+task. However, we observe that directly applying existing RL algorithms, such
+as Reinforce++, to reward modeling often leads to training instability or even
+collapse due to the inherent limitations of these algorithms. To address this
+issue, we propose the StableReinforce algorithm, which refines the training
+loss, advantage estimation strategy, and reward design of existing RL methods.
+These refinements result in more stable training dynamics and superior
+performance. To facilitate MRM training, we collect 200K preference data from
+diverse datasets. Our reward model, R1-Reward, trained using the
+StableReinforce algorithm on this dataset, significantly improves performance
+on multimodal reward modeling benchmarks. Compared to previous SOTA models,
+R1-Reward achieves a $8.4\%$ improvement on the VL Reward-Bench and a $14.3\%$
+improvement on the Multimodal Reward Bench. Moreover, with more inference
+compute, R1-Reward's performance is further enhanced, highlighting the
+potential of RL algorithms in optimizing MRMs.
+</summary>
+    <author>
+      <name>Yi-Fan Zhang</name>
+    </author>
+    <author>
+      <name>Xingyu Lu</name>
+    </author>
+    <author>
+      <name>Xiao Hu</name>
+    </author>
+    <author>
+      <name>Chaoyou Fu</name>
+    </author>
+    <author>
+      <name>Bin Wen</name>
+    </author>
+    <author>
+      <name>Tianke Zhang</name>
+    </author>
+    <author>
+      <name>Changyi Liu</name>
+    </author>
+    <author>
+      <name>Kaiyu Jiang</name>
+    </author>
+    <author>
+      <name>Kaibing Chen</name>
+    </author>
+    <author>
+      <name>Kaiyu Tang</name>
+    </author>
+    <author>
+      <name>Haojie Ding</name>
+    </author>
+    <author>
+      <name>Jiankang Chen</name>
+    </author>
+    <author>
+      <name>Fan Yang</name>
+    </author>
+    <author>
+      <name>Zhang Zhang</name>
+    </author>
+    <author>
+      <name>Tingting Gao</name>
+    </author>
+    <author>
+      <name>Liang Wang</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Home page: https://github.com/yfzhang114/r1_reward</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.02835v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.02835v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.02833v1</id>
+    <updated>2025-05-05T17:59:03Z</updated>
+    <published>2025-05-05T17:59:03Z</published>
+    <title>TWIST: Teleoperated Whole-Body Imitation System</title>
+    <summary>  Teleoperating humanoid robots in a whole-body manner marks a fundamental step
+toward developing general-purpose robotic intelligence, with human motion
+providing an ideal interface for controlling all degrees of freedom. Yet, most
+current humanoid teleoperation systems fall short of enabling coordinated
+whole-body behavior, typically limiting themselves to isolated locomotion or
+manipulation tasks. We present the Teleoperated Whole-Body Imitation System
+(TWIST), a system for humanoid teleoperation through whole-body motion
+imitation. We first generate reference motion clips by retargeting human motion
+capture data to the humanoid robot. We then develop a robust, adaptive, and
+responsive whole-body controller using a combination of reinforcement learning
+and behavior cloning (RL+BC). Through systematic analysis, we demonstrate how
+incorporating privileged future motion frames and real-world motion capture
+(MoCap) data improves tracking accuracy. TWIST enables real-world humanoid
+robots to achieve unprecedented, versatile, and coordinated whole-body motor
+skills--spanning whole-body manipulation, legged manipulation, locomotion, and
+expressive movement--using a single unified neural network controller. Our
+project website: https://humanoid-teleop.github.io
+</summary>
+    <author>
+      <name>Yanjie Ze</name>
+    </author>
+    <author>
+      <name>Zixuan Chen</name>
+    </author>
+    <author>
+      <name>João Pedro Araújo</name>
+    </author>
+    <author>
+      <name>Zi-ang Cao</name>
+    </author>
+    <author>
+      <name>Xue Bin Peng</name>
+    </author>
+    <author>
+      <name>Jiajun Wu</name>
+    </author>
+    <author>
+      <name>C. Karen Liu</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project website: https://humanoid-teleop.github.io</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.02833v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.02833v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.01424v1</id>
-    <updated>2025-05-02T17:59:54Z</updated>
-    <published>2025-05-02T17:59:54Z</published>
-    <title>Computational, Data-Driven, and Physics-Informed Machine Learning
-  Approaches for Microstructure Modeling in Metal Additive Manufacturing</title>
-    <summary>  Metal additive manufacturing enables unprecedented design freedom and the
-production of customized, complex components. However, the rapid melting and
-solidification dynamics inherent to metal AM processes generate heterogeneous,
-non-equilibrium microstructures that significantly impact mechanical properties
-and subsequent functionality. Predicting microstructure and its evolution
-across spatial and temporal scales remains a central challenge for process
-optimization and defect mitigation. While conventional experimental techniques
-and physics-based simulations provide a physical foundation and valuable
-insights, they face critical limitations. In contrast, data-driven machine
-learning offers an alternative prediction approach and powerful pattern
-recognition but often operate as black-box, lacking generalizability and
-physical consistency. To overcome these limitations, physics-informed machine
-learning, including physics-informed neural networks, has emerged as a
-promising paradigm by embedding governing physical laws into neural network
-architectures, thereby enhancing accuracy, transparency, data efficiency, and
-extrapolation capabilities. This work presents a comprehensive evaluation of
-modeling strategies for microstructure prediction in metal AM. The strengths
-and limitations of experimental, computational, and data-driven methods are
-analyzed in depth, and highlight recent advances in hybrid PIML frameworks that
-integrate physical knowledge with ML. Key challenges, such as data scarcity,
-multi-scale coupling, and uncertainty quantification, are discussed alongside
-future directions. Ultimately, this assessment underscores the importance of
-PIML-based hybrid approaches in enabling predictive, scalable, and physically
-consistent microstructure modeling for site-specific, microstructure-aware
-process control and the reliable production of high-performance AM components.
+    <id>http://arxiv.org/abs/2505.02831v1</id>
+    <updated>2025-05-05T17:58:05Z</updated>
+    <published>2025-05-05T17:58:05Z</published>
+    <title>No Other Representation Component Is Needed: Diffusion Transformers Can
+  Provide Representation Guidance by Themselves</title>
+    <summary>  Recent studies have demonstrated that learning a meaningful internal
+representation can both accelerate generative training and enhance generation
+quality of the diffusion transformers. However, existing approaches necessitate
+to either introduce an additional and complex representation training framework
+or rely on a large-scale, pre-trained representation foundation model to
+provide representation guidance during the original generative training
+process. In this study, we posit that the unique discriminative process
+inherent to diffusion transformers enables them to offer such guidance without
+requiring external representation components. We therefore propose
+Self-Representation A}lignment (SRA), a simple yet straightforward method that
+obtain representation guidance through a self-distillation manner.
+Specifically, SRA aligns the output latent representation of the diffusion
+transformer in earlier layer with higher noise to that in later layer with
+lower noise to progressively enhance the overall representation learning during
+only generative training process. Experimental results indicate that applying
+SRA to DiTs and SiTs yields consistent performance improvements. Moreover, SRA
+not only significantly outperforms approaches relying on auxiliary, complex
+representation training frameworks but also achieves performance comparable to
+methods that heavily dependent on powerful external representation priors.
 </summary>
     <author>
-      <name>D. Patel</name>
+      <name>Dengyang Jiang</name>
     </author>
     <author>
-      <name>R. Sharma</name>
+      <name>Mengmeng Wang</name>
     </author>
     <author>
-      <name>Y. B. Guo</name>
+      <name>Liuzhuozheng Li</name>
     </author>
-    <link href="http://arxiv.org/abs/2505.01424v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.01424v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Lei Zhang</name>
+    </author>
+    <author>
+      <name>Haoyu Wang</name>
+    </author>
+    <author>
+      <name>Wei Wei</name>
+    </author>
+    <author>
+      <name>Guang Dai</name>
+    </author>
+    <author>
+      <name>Yanning Zhang</name>
+    </author>
+    <author>
+      <name>Jingdong Wang</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Self-Representation Alignment for Diffusion Transformers. arXiv admin
+  note: text overlap with arXiv:2410.06940 by other authors</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.02831v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.02831v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.01423v1</id>
-    <updated>2025-05-02T17:59:46Z</updated>
-    <published>2025-05-02T17:59:46Z</published>
-    <title>Negative Stepsizes Make Gradient-Descent-Ascent Converge</title>
-    <summary>  Efficient computation of min-max problems is a central question in
-optimization, learning, games, and controls. Arguably the most natural
-algorithm is gradient-descent-ascent (GDA). However, since the 1970s,
-conventional wisdom has argued that GDA fails to converge even on simple
-problems. This failure spurred an extensive literature on modifying GDA with
-additional building blocks such as extragradients, optimism, momentum,
-anchoring, etc. In contrast, we show that GDA converges in its original form by
-simply using a judicious choice of stepsizes.
-  The key innovation is the proposal of unconventional stepsize schedules
-(dubbed slingshot stepsize schedules) that are time-varying, asymmetric, and
-periodically negative. We show that all three properties are necessary for
-convergence, and that altogether this enables GDA to converge on the classical
-counterexamples (e.g., unconstrained convex-concave problems). All of our
-results apply to the last iterate of GDA, as is typically desired in practice.
-  The core algorithmic intuition is that although negative stepsizes make
-backward progress, they de-synchronize the min and max variables (overcoming
-the cycling issue of GDA), and lead to a slingshot phenomenon in which the
-forward progress in the other iterations is overwhelmingly larger. This results
-in fast overall convergence. Geometrically, the slingshot dynamics leverage the
-non-reversibility of gradient flow: positive/negative steps cancel to first
-order, yielding a second-order net movement in a new direction that leads to
-convergence and is otherwise impossible for GDA to move in. We interpret this
-as a second-order finite-differencing algorithm and show that, intriguingly, it
-approximately implements consensus optimization, an empirically popular
-algorithm for min-max problems involving deep neural networks (e.g., training
-GANs).
+    <id>http://arxiv.org/abs/2505.02827v1</id>
+    <updated>2025-05-05T17:52:06Z</updated>
+    <published>2025-05-05T17:52:06Z</published>
+    <title>Constraints on Inflationary Gravitational Waves with Two Years of SPT-3G
+  Data</title>
+    <summary>  We present a measurement of the $B$-mode polarization power spectrum of the
+cosmic microwave background anisotropies at 32 $\le$ $\ell$ $&lt;$ 502 for three
+bands centered at 95, 150, and 220 GHz using data from the SPT-3G receiver on
+the South Pole Telescope. This work uses SPT-3G observations from the 2019 and
+2020 winter observing seasons of a $\sim$1500 deg$^2$ patch of sky that
+directly overlaps with fields observed with the BICEP/Keck family of
+telescopes, and covers part of the proposed Simons Observatory and CMB-S4 deep
+fields. Employing new techniques for mitigating polarized atmospheric noise,
+the SPT-3G data demonstrates a white noise level of 9.3 (6.7) $\mu$K-arcmin at
+$\ell \sim 500$ for the 95 GHz (150 GHz) data, with a $1/\ell$ noise knee at
+$\ell$=128 (182). We fit the observed six auto- and cross-frequency $B$-mode
+power spectra to a model including lensed $\Lambda$CDM $B$-modes and a
+combination of Galactic and extragalactic foregrounds. This work characterizes
+foregrounds in the vicinity of the BICEP/Keck survey area, finding foreground
+power consistent with that reported by the BICEP/Keck collaboration within the
+same region, and a factor of $\sim$ 3 higher power over the full SPT-3G survey
+area. Using SPT-3G data over the BICEP/Keck survey area, we place a 95% upper
+limit on the tensor-to-scalar ratio of $r &lt; 0.25$ and find the statistical
+uncertainty on $r$ to be $\sigma(r) = 0.067$.
 </summary>
     <author>
-      <name>Henry Shugart</name>
+      <name>J. A. Zebrowski</name>
     </author>
     <author>
-      <name>Jason M. Altschuler</name>
-    </author>
-    <link href="http://arxiv.org/abs/2505.01423v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.01423v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.DS" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.01420v1</id>
-    <updated>2025-05-02T17:57:14Z</updated>
-    <published>2025-05-02T17:57:14Z</published>
-    <title>Evaluating Frontier Models for Stealth and Situational Awareness</title>
-    <summary>  Recent work has demonstrated the plausibility of frontier AI models scheming
--- knowingly and covertly pursuing an objective misaligned with its developer's
-intentions. Such behavior could be very hard to detect, and if present in
-future advanced systems, could pose severe loss of control risk. It is
-therefore important for AI developers to rule out harm from scheming prior to
-model deployment. In this paper, we present a suite of scheming reasoning
-evaluations measuring two types of reasoning capabilities that we believe are
-prerequisites for successful scheming: First, we propose five evaluations of
-ability to reason about and circumvent oversight (stealth). Second, we present
-eleven evaluations for measuring a model's ability to instrumentally reason
-about itself, its environment and its deployment (situational awareness). We
-demonstrate how these evaluations can be used as part of a scheming inability
-safety case: a model that does not succeed on these evaluations is almost
-certainly incapable of causing severe harm via scheming in real deployment. We
-run our evaluations on current frontier models and find that none of them show
-concerning levels of either situational awareness or stealth.
-</summary>
-    <author>
-      <name>Mary Phuong</name>
+      <name>C. L. Reichardt</name>
     </author>
     <author>
-      <name>Roland S. Zimmermann</name>
+      <name>A. J. Anderson</name>
     </author>
     <author>
-      <name>Ziyue Wang</name>
+      <name>B. Ansarinejad</name>
     </author>
     <author>
-      <name>David Lindner</name>
+      <name>M. Archipley</name>
     </author>
     <author>
-      <name>Victoria Krakovna</name>
+      <name>L. Balkenhol</name>
     </author>
     <author>
-      <name>Sarah Cogan</name>
+      <name>P. Barry</name>
     </author>
     <author>
-      <name>Allan Dafoe</name>
+      <name>K. Benabed</name>
     </author>
     <author>
-      <name>Lewis Ho</name>
+      <name>A. N. Bender</name>
     </author>
     <author>
-      <name>Rohin Shah</name>
-    </author>
-    <link href="http://arxiv.org/abs/2505.01420v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.01420v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.01415v1</id>
-    <updated>2025-05-02T17:48:20Z</updated>
-    <published>2025-05-02T17:48:20Z</published>
-    <title>How Effective are Large Time Series Models in Hydrology? A Study on
-  Water Level Forecasting in Everglades</title>
-    <summary>  The Everglades play a crucial role in flood and drought regulation, water
-resource planning, and ecosystem management in the surrounding regions.
-However, traditional physics-based and statistical methods for predicting water
-levels often face significant challenges, including high computational costs
-and limited adaptability to diverse or unforeseen conditions. Recent
-advancements in large time series models have demonstrated the potential to
-address these limitations, with state-of-the-art deep learning and foundation
-models achieving remarkable success in time series forecasting across various
-domains. Despite this progress, their application to critical environmental
-systems, such as the Everglades, remains underexplored. In this study, we fill
-the gap by investigating twelve task-specific models and five time series
-foundation models across six categories for a real-world application focused on
-water level prediction in the Everglades. Our primary results show that the
-foundation model, Chronos, significantly outperforms all other models while the
-remaining foundation models exhibit relatively poor performance. Moreover, the
-performance of task-specific models varies with the model architectures.
-Lastly, we discuss the possible reasons for the varying performance of models.
-</summary>
-    <author>
-      <name>Rahuul Rangaraj</name>
+      <name>B. A. Benson</name>
     </author>
     <author>
-      <name>Jimeng Shi</name>
+      <name>F. Bianchini</name>
     </author>
     <author>
-      <name>Azam Shirali</name>
+      <name>L. E. Bleem</name>
     </author>
     <author>
-      <name>Rajendra Paudel</name>
+      <name>F. R. Bouchet</name>
     </author>
     <author>
-      <name>Yanzhao Wu</name>
+      <name>L. Bryant</name>
     </author>
     <author>
-      <name>Giri Narasimhan</name>
+      <name>E. Camphuis</name>
     </author>
-    <link href="http://arxiv.org/abs/2505.01415v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.01415v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>J. E. Carlstrom</name>
+    </author>
+    <author>
+      <name>C. L. Chang</name>
+    </author>
+    <author>
+      <name>P. Chaubal</name>
+    </author>
+    <author>
+      <name>P. M. Chichura</name>
+    </author>
+    <author>
+      <name>A. Chokshi</name>
+    </author>
+    <author>
+      <name>T. -L. Chou</name>
+    </author>
+    <author>
+      <name>A. Coerver</name>
+    </author>
+    <author>
+      <name>T. M. Crawford</name>
+    </author>
+    <author>
+      <name>C. Daley</name>
+    </author>
+    <author>
+      <name>T. de Haan</name>
+    </author>
+    <author>
+      <name>K. R. Dibert</name>
+    </author>
+    <author>
+      <name>M. A. Dobbs</name>
+    </author>
+    <author>
+      <name>M. Doohan</name>
+    </author>
+    <author>
+      <name>A. Doussot</name>
+    </author>
+    <author>
+      <name>D. Dutcher</name>
+    </author>
+    <author>
+      <name>W. Everett</name>
+    </author>
+    <author>
+      <name>C. Feng</name>
+    </author>
+    <author>
+      <name>K. R. Ferguson</name>
+    </author>
+    <author>
+      <name>K. Fichman</name>
+    </author>
+    <author>
+      <name>A. Foster</name>
+    </author>
+    <author>
+      <name>S. Galli</name>
+    </author>
+    <author>
+      <name>A. E. Gambrel</name>
+    </author>
+    <author>
+      <name>R. W. Gardner</name>
+    </author>
+    <author>
+      <name>F. Ge</name>
+    </author>
+    <author>
+      <name>N. Goeckner-Wald</name>
+    </author>
+    <author>
+      <name>R. Gualtieri</name>
+    </author>
+    <author>
+      <name>F. Guidi</name>
+    </author>
+    <author>
+      <name>S. Guns</name>
+    </author>
+    <author>
+      <name>N. W. Halverson</name>
+    </author>
+    <author>
+      <name>E. Hivon</name>
+    </author>
+    <author>
+      <name>G. P. Holder</name>
+    </author>
+    <author>
+      <name>W. L. Holzapfel</name>
+    </author>
+    <author>
+      <name>J. C. Hood</name>
+    </author>
+    <author>
+      <name>A. Hryciuk</name>
+    </author>
+    <author>
+      <name>N. Huang</name>
+    </author>
+    <author>
+      <name>F. Kéruzoré</name>
+    </author>
+    <author>
+      <name>A. R. Khalife</name>
+    </author>
+    <author>
+      <name>L. Knox</name>
+    </author>
+    <author>
+      <name>M. Korman</name>
+    </author>
+    <author>
+      <name>K. Kornoelje</name>
+    </author>
+    <author>
+      <name>C. -L. Kuo</name>
+    </author>
+    <author>
+      <name>K. Levy</name>
+    </author>
+    <author>
+      <name>Y. Li</name>
+    </author>
+    <author>
+      <name>A. E. Lowitz</name>
+    </author>
+    <author>
+      <name>C. Lu</name>
+    </author>
+    <author>
+      <name>G. P. Lynch</name>
+    </author>
+    <author>
+      <name>A. Maniyar</name>
+    </author>
+    <author>
+      <name>E. S. Martsen</name>
+    </author>
+    <author>
+      <name>F. Menanteau</name>
+    </author>
+    <author>
+      <name>M. Millea</name>
+    </author>
+    <author>
+      <name>J. Montgomery</name>
+    </author>
+    <author>
+      <name>Y. Nakato</name>
+    </author>
+    <author>
+      <name>T. Natoli</name>
+    </author>
+    <author>
+      <name>G. I. Noble</name>
+    </author>
+    <author>
+      <name>Y. Omori</name>
+    </author>
+    <author>
+      <name>A. Ouellette</name>
+    </author>
+    <author>
+      <name>Z. Pan</name>
+    </author>
+    <author>
+      <name>P. Paschos</name>
+    </author>
+    <author>
+      <name>K. A. Phadke</name>
+    </author>
+    <author>
+      <name>A. W. Pollak</name>
+    </author>
+    <author>
+      <name>K. Prabhu</name>
+    </author>
+    <author>
+      <name>W. Quan</name>
+    </author>
+    <author>
+      <name>S. Raghunathan</name>
+    </author>
+    <author>
+      <name>M. Rahimi</name>
+    </author>
+    <author>
+      <name>A. Rahlin</name>
+    </author>
+    <author>
+      <name>M. Rouble</name>
+    </author>
+    <author>
+      <name>J. E. Ruhl</name>
+    </author>
+    <author>
+      <name>A. Simpson</name>
+    </author>
+    <author>
+      <name>E. Schiappucci</name>
+    </author>
+    <author>
+      <name>J. A. Sobrin</name>
+    </author>
+    <author>
+      <name>A. A. Stark</name>
+    </author>
+    <author>
+      <name>J. Stephen</name>
+    </author>
+    <author>
+      <name>C. Tandoi</name>
+    </author>
+    <author>
+      <name>B. Thorne</name>
+    </author>
+    <author>
+      <name>C. Trendafilova</name>
+    </author>
+    <author>
+      <name>C. Umilta</name>
+    </author>
+    <author>
+      <name>J. D. Vieira</name>
+    </author>
+    <author>
+      <name>A. G. Vieregg</name>
+    </author>
+    <author>
+      <name>A. Vitrier</name>
+    </author>
+    <author>
+      <name>Y. Wan</name>
+    </author>
+    <author>
+      <name>N. Whitehorn</name>
+    </author>
+    <author>
+      <name>W. L. K. Wu</name>
+    </author>
+    <author>
+      <name>M. R. Young</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Submitted to PRD, 14 pages, 8 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.02827v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.02827v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
