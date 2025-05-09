@@ -3,203 +3,227 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-05-07T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">423110</opensearch:totalResults>
+  <updated>2025-05-08T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">423382</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2505.03738v1</id>
-    <updated>2025-05-06T17:59:51Z</updated>
-    <published>2025-05-06T17:59:51Z</published>
-    <title>AMO: Adaptive Motion Optimization for Hyper-Dexterous Humanoid
-  Whole-Body Control</title>
-    <summary>  Humanoid robots derive much of their dexterity from hyper-dexterous
-whole-body movements, enabling tasks that require a large operational
-workspace: such as picking objects off the ground. However, achieving these
-capabilities on real humanoids remains challenging due to their high degrees of
-freedom (DoF) and nonlinear dynamics. We propose Adaptive Motion Optimization
-(AMO), a framework that integrates sim-to-real reinforcement learning (RL) with
-trajectory optimization for real-time, adaptive whole-body control. To mitigate
-distribution bias in motion imitation RL, we construct a hybrid AMO dataset and
-train a network capable of robust, on-demand adaptation to potentially O.O.D.
-commands. We validate AMO in simulation and on a 29-DoF Unitree G1 humanoid
-robot, demonstrating superior stability and an expanded workspace compared to
-strong baselines. Finally, we show that AMO's consistent performance supports
-autonomous task execution via imitation learning, underscoring the system's
-versatility and robustness.
+    <id>http://arxiv.org/abs/2505.04627v1</id>
+    <updated>2025-05-07T19:57:36Z</updated>
+    <published>2025-05-07T19:57:36Z</published>
+    <title>Is the end of Insight in Sight ?</title>
+    <summary>  It is shown that the weight matrices of a Physics-informed neural network
+(PINN)-based deep learning application to a rarefied gas dynamics problem
+described by the Boltzmann equation bear no evident link to the mathematical
+structure of the physical problem. Instead, the weights appear close to
+Gaussian distributed random matrices. Although significantly more work is
+needed to support a robust assessment in this direction, these results suggest
+that deep-learning and the numerical solution of the Boltzmann equation
+represent two equivalent, but largely distinct paths to the same physical
+knowledge. If so, Explainable AI might be an unrealistic target and possibly
+even an ill-posed one.
 </summary>
     <author>
-      <name>Jialong Li</name>
+      <name>Jean-Michel Tucny</name>
     </author>
     <author>
-      <name>Xuxin Cheng</name>
+      <name>Mihir Durve</name>
     </author>
     <author>
-      <name>Tianshu Huang</name>
+      <name>Sauro Succi</name>
     </author>
-    <author>
-      <name>Shiqi Yang</name>
-    </author>
-    <author>
-      <name>Ri-Zhao Qiu</name>
-    </author>
-    <author>
-      <name>Xiaolong Wang</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">website: https://amo-humanoid.github.io</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.03738v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.03738v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">20 pages, 5 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.04627v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.04627v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.comp-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.comp-ph" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.03725v1</id>
-    <updated>2025-05-06T17:53:14Z</updated>
-    <published>2025-05-06T17:53:14Z</published>
-    <title>Meta-Optimization and Program Search using Language Models for Task and
-  Motion Planning</title>
-    <summary>  Intelligent interaction with the real world requires robotic agents to
-jointly reason over high-level plans and low-level controls. Task and motion
-planning (TAMP) addresses this by combining symbolic planning and continuous
-trajectory generation. Recently, foundation model approaches to TAMP have
-presented impressive results, including fast planning times and the execution
-of natural language instructions. Yet, the optimal interface between high-level
-planning and low-level motion generation remains an open question: prior
-approaches are limited by either too much abstraction (e.g., chaining
-simplified skill primitives) or a lack thereof (e.g., direct joint angle
-prediction). Our method introduces a novel technique employing a form of
-meta-optimization to address these issues by: (i) using program search over
-trajectory optimization problems as an interface between a foundation model and
-robot control, and (ii) leveraging a zero-order method to optimize numerical
-parameters in the foundation model output. Results on challenging object
-manipulation and drawing tasks confirm that our proposed method improves over
-prior TAMP approaches.
-</summary>
-    <author>
-      <name>Denis Shcherba</name>
-    </author>
-    <author>
-      <name>Eckart Cobo-Briesewitz</name>
-    </author>
-    <author>
-      <name>Cornelius V. Braun</name>
-    </author>
-    <author>
-      <name>Marc Toussaint</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">20 pages, 8 figures, under review for the 9th Annual Conference on
-  Robot Learning (CoRL 2025)</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.03725v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.03725v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.03724v1</id>
-    <updated>2025-05-06T17:52:30Z</updated>
-    <published>2025-05-06T17:52:30Z</published>
-    <title>Stay Positive: Neural Refinement of Sample Weights</title>
-    <summary>  Monte Carlo simulations are an essential tool for data analysis in particle
-physics. Simulated events are typically produced alongside weights that
-redistribute the cross section across the phase space. Latent degrees of
-freedom introduce a distribution of weights at a given point in the phase
-space, which can include negative values. Several post-hoc reweighting methods
-have been developed to eliminate the negative weights. All of these methods
-share the common strategy of approximating the average weight as a function of
-phase space. We introduce an alternative approach with a potentially simpler
-learning task. Instead of reweighting to the average, we refine the initial
-weights with a scaling transformation, utilizing a phase space-dependent
-factor. Since this new refinement method does not need to model the full weight
-distribution, it can be more accurate. High-dimensional and unbinned phase
-space is processed using neural networks for the refinement. Using both
-realistic and synthetic examples, we show that the new neural refinement method
-is able to match or exceed the accuracy of similar weight transformations.
-</summary>
-    <author>
-      <name>Benjamin Nachman</name>
-    </author>
-    <author>
-      <name>Dennis Noll</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">8 pages, 6 figures</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.03724v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.03724v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="hep-ex" scheme="http://arxiv.org/schemas/atom"/>
     <category term="physics.data-an" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.03721v1</id>
-    <updated>2025-05-06T17:49:06Z</updated>
-    <published>2025-05-06T17:49:06Z</published>
-    <title>Sustainable Smart Farm Networks: Enhancing Resilience and Efficiency
-  with Decision Theory-Guided Deep Reinforcement Learning</title>
-    <summary>  Solar sensor-based monitoring systems have become a crucial agricultural
-innovation, advancing farm management and animal welfare through integrating
-sensor technology, Internet-of-Things, and edge and cloud computing. However,
-the resilience of these systems to cyber-attacks and their adaptability to
-dynamic and constrained energy supplies remain largely unexplored. To address
-these challenges, we propose a sustainable smart farm network designed to
-maintain high-quality animal monitoring under various cyber and adversarial
-threats, as well as fluctuating energy conditions. Our approach utilizes deep
-reinforcement learning (DRL) to devise optimal policies that maximize both
-monitoring effectiveness and energy efficiency. To overcome DRL's inherent
-challenge of slow convergence, we integrate transfer learning (TL) and decision
-theory (DT) to accelerate the learning process. By incorporating DT-guided
-strategies, we optimize monitoring quality and energy sustainability,
-significantly reducing training time while achieving comparable performance
-rewards. Our experimental results prove that DT-guided DRL outperforms
-TL-enhanced DRL models, improving system performance and reducing training
-runtime by 47.5%.
+    <id>http://arxiv.org/abs/2505.04623v1</id>
+    <updated>2025-05-07T17:59:49Z</updated>
+    <published>2025-05-07T17:59:49Z</published>
+    <title>EchoInk-R1: Exploring Audio-Visual Reasoning in Multimodal LLMs via
+  Reinforcement Learning</title>
+    <summary>  Multimodal large language models (MLLMs) have advanced perception across
+text, vision, and audio, yet they often struggle with structured cross-modal
+reasoning, particularly when integrating audio and visual signals. We introduce
+EchoInk-R1, a reinforcement learning framework that enhances such reasoning in
+MLLMs. Built upon the Qwen2.5-Omni-7B foundation and optimized with Group
+Relative Policy Optimization (GRPO), EchoInk-R1 tackles multiple-choice
+question answering over synchronized audio-image pairs. To enable this, we
+curate AVQA-R1-6K, a dataset pairing such audio-image inputs with
+multiple-choice questions derived from OmniInstruct-v1. EchoInk-R1-7B achieves
+85.77% accuracy on the validation set, outperforming the base model, which
+scores 80.53%, using only 562 reinforcement learning steps. Beyond accuracy,
+EchoInk-R1 demonstrates reflective reasoning by revisiting initial
+interpretations and refining responses when facing ambiguous multimodal inputs.
+These results suggest that lightweight reinforcement learning fine-tuning
+enhances cross-modal reasoning in MLLMs. EchoInk-R1 is the first framework to
+unify audio, visual, and textual modalities for general open-world reasoning
+via reinforcement learning. Code and data are publicly released to facilitate
+further research.
 </summary>
     <author>
-      <name>Dian Chen</name>
+      <name>Zhenghao Xing</name>
     </author>
     <author>
-      <name>Zelin Wan</name>
+      <name>Xiaowei Hu</name>
     </author>
     <author>
-      <name>Dong Sam Ha</name>
+      <name>Chi-Wing Fu</name>
     </author>
     <author>
-      <name>Jin-Hee Cho</name>
+      <name>Wenhai Wang</name>
     </author>
-    <link href="http://arxiv.org/abs/2505.03721v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.03721v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Jifeng Dai</name>
+    </author>
+    <author>
+      <name>Pheng-Ann Heng</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.04623v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.04623v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.03717v1</id>
-    <updated>2025-05-06T17:43:35Z</updated>
-    <published>2025-05-06T17:43:35Z</published>
-    <title>Nonnegative Low-rank Matrix Recovery Can Have Spurious Local Minima</title>
-    <summary>  The classical low-rank matrix recovery problem is well-known to exhibit
-\emph{benign nonconvexity} under the restricted isometry property (RIP): local
-optimization is guaranteed to converge to the global optimum, where the ground
-truth is recovered. We investigate whether benign nonconvexity continues to
-hold when the factor matrices are constrained to be elementwise nonnegative --
-a common practical requirement. In the simple setting of a rank-1 nonnegative
-ground truth, we confirm that benign nonconvexity holds in the fully-observed
-case with RIP constant $\delta=0$. Surprisingly, however, this property fails
-to extend to the partially-observed case with any arbitrarily small RIP
-constant $\delta\to0^{+}$, irrespective of rank overparameterization. This
-finding exposes a critical theoretical gap: the continuity argument widely used
-to explain the empirical robustness of low-rank matrix recovery fundamentally
-breaks down once nonnegative constraints are imposed.
+    <id>http://arxiv.org/abs/2505.04622v1</id>
+    <updated>2025-05-07T17:59:46Z</updated>
+    <published>2025-05-07T17:59:46Z</published>
+    <title>PrimitiveAnything: Human-Crafted 3D Primitive Assembly Generation with
+  Auto-Regressive Transformer</title>
+    <summary>  Shape primitive abstraction, which decomposes complex 3D shapes into simple
+geometric elements, plays a crucial role in human visual cognition and has
+broad applications in computer vision and graphics. While recent advances in 3D
+content generation have shown remarkable progress, existing primitive
+abstraction methods either rely on geometric optimization with limited semantic
+understanding or learn from small-scale, category-specific datasets, struggling
+to generalize across diverse shape categories. We present PrimitiveAnything, a
+novel framework that reformulates shape primitive abstraction as a primitive
+assembly generation task. PrimitiveAnything includes a shape-conditioned
+primitive transformer for auto-regressive generation and an ambiguity-free
+parameterization scheme to represent multiple types of primitives in a unified
+manner. The proposed framework directly learns the process of primitive
+assembly from large-scale human-crafted abstractions, enabling it to capture
+how humans decompose complex shapes into primitive elements. Through extensive
+experiments, we demonstrate that PrimitiveAnything can generate high-quality
+primitive assemblies that better align with human perception while maintaining
+geometric fidelity across diverse shape categories. It benefits various 3D
+applications and shows potential for enabling primitive-based user-generated
+content (UGC) in games. Project page: https://primitiveanything.github.io
 </summary>
     <author>
-      <name>Richard Y. Zhang</name>
+      <name>Jingwen Ye</name>
     </author>
-    <link href="http://arxiv.org/abs/2505.03717v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.03717v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Yuze He</name>
+    </author>
+    <author>
+      <name>Yanning Zhou</name>
+    </author>
+    <author>
+      <name>Yiqin Zhu</name>
+    </author>
+    <author>
+      <name>Kaiwen Xiao</name>
+    </author>
+    <author>
+      <name>Yong-Jin Liu</name>
+    </author>
+    <author>
+      <name>Wei Yang</name>
+    </author>
+    <author>
+      <name>Xiao Han</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">SIGGRAPH 2025. 14 pages, 15 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.04622v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.04622v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.GR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.GR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.04621v1</id>
+    <updated>2025-05-07T17:59:38Z</updated>
+    <published>2025-05-07T17:59:38Z</published>
+    <title>Score Distillation Sampling for Audio: Source Separation, Synthesis, and
+  Beyond</title>
+    <summary>  We introduce Audio-SDS, a generalization of Score Distillation Sampling (SDS)
+to text-conditioned audio diffusion models. While SDS was initially designed
+for text-to-3D generation using image diffusion, its core idea of distilling a
+powerful generative prior into a separate parametric representation extends to
+the audio domain. Leveraging a single pretrained model, Audio-SDS enables a
+broad range of tasks without requiring specialized datasets. In particular, we
+demonstrate how Audio-SDS can guide physically informed impact sound
+simulations, calibrate FM-synthesis parameters, and perform prompt-specified
+source separation. Our findings illustrate the versatility of
+distillation-based methods across modalities and establish a robust foundation
+for future work using generative priors in audio tasks.
+</summary>
+    <author>
+      <name>Jessie Richter-Powell</name>
+    </author>
+    <author>
+      <name>Antonio Torralba</name>
+    </author>
+    <author>
+      <name>Jonathan Lorraine</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">See the project website at
+  https://research.nvidia.com/labs/toronto-ai/Audio-SDS/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.04621v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.04621v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="68T07" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="I.2.6; H.5.5; H.5.1" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.04619v1</id>
+    <updated>2025-05-07T17:59:28Z</updated>
+    <published>2025-05-07T17:59:28Z</published>
+    <title>Merging and Disentangling Views in Visual Reinforcement Learning for
+  Robotic Manipulation</title>
+    <summary>  Vision is well-known for its use in manipulation, especially using visual
+servoing. To make it robust, multiple cameras are needed to expand the field of
+view. That is computationally challenging. Merging multiple views and using
+Q-learning allows the design of more effective representations and optimization
+of sample efficiency. Such a solution might be expensive to deploy. To mitigate
+this, we introduce a Merge And Disentanglement (MAD) algorithm that efficiently
+merges views to increase sample efficiency while augmenting with single-view
+features to allow lightweight deployment and ensure robust policies. We
+demonstrate the efficiency and robustness of our approach using Meta-World and
+ManiSkill3. For project website and code, see https://aalmuzairee.github.io/mad
+</summary>
+    <author>
+      <name>Abdulaziz Almuzairee</name>
+    </author>
+    <author>
+      <name>Rohan Patil</name>
+    </author>
+    <author>
+      <name>Dwait Bhatt</name>
+    </author>
+    <author>
+      <name>Henrik I. Christensen</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">For project website and code, see https://aalmuzairee.github.io/mad</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.04619v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.04619v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
