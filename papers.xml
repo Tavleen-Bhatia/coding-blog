@@ -3,227 +3,250 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-05-08T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">423382</opensearch:totalResults>
+  <updated>2025-05-09T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">423635</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2505.04627v1</id>
-    <updated>2025-05-07T19:57:36Z</updated>
-    <published>2025-05-07T19:57:36Z</published>
-    <title>Is the end of Insight in Sight ?</title>
-    <summary>  It is shown that the weight matrices of a Physics-informed neural network
-(PINN)-based deep learning application to a rarefied gas dynamics problem
-described by the Boltzmann equation bear no evident link to the mathematical
-structure of the physical problem. Instead, the weights appear close to
-Gaussian distributed random matrices. Although significantly more work is
-needed to support a robust assessment in this direction, these results suggest
-that deep-learning and the numerical solution of the Boltzmann equation
-represent two equivalent, but largely distinct paths to the same physical
-knowledge. If so, Explainable AI might be an unrealistic target and possibly
-even an ill-posed one.
+    <id>http://arxiv.org/abs/2505.05474v1</id>
+    <updated>2025-05-08T17:59:54Z</updated>
+    <published>2025-05-08T17:59:54Z</published>
+    <title>3D Scene Generation: A Survey</title>
+    <summary>  3D scene generation seeks to synthesize spatially structured, semantically
+meaningful, and photorealistic environments for applications such as immersive
+media, robotics, autonomous driving, and embodied AI. Early methods based on
+procedural rules offered scalability but limited diversity. Recent advances in
+deep generative models (e.g., GANs, diffusion models) and 3D representations
+(e.g., NeRF, 3D Gaussians) have enabled the learning of real-world scene
+distributions, improving fidelity, diversity, and view consistency. Recent
+advances like diffusion models bridge 3D scene synthesis and photorealism by
+reframing generation as image or video synthesis problems. This survey provides
+a systematic overview of state-of-the-art approaches, organizing them into four
+paradigms: procedural generation, neural 3D-based generation, image-based
+generation, and video-based generation. We analyze their technical foundations,
+trade-offs, and representative results, and review commonly used datasets,
+evaluation protocols, and downstream applications. We conclude by discussing
+key challenges in generation capacity, 3D representation, data and annotations,
+and evaluation, and outline promising directions including higher fidelity,
+physics-aware and interactive generation, and unified perception-generation
+models. This review organizes recent advances in 3D scene generation and
+highlights promising directions at the intersection of generative AI, 3D
+vision, and embodied intelligence. To track ongoing developments, we maintain
+an up-to-date project page:
+https://github.com/hzxie/Awesome-3D-Scene-Generation.
 </summary>
     <author>
-      <name>Jean-Michel Tucny</name>
+      <name>Beichen Wen</name>
     </author>
     <author>
-      <name>Mihir Durve</name>
+      <name>Haozhe Xie</name>
     </author>
     <author>
-      <name>Sauro Succi</name>
+      <name>Zhaoxi Chen</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">20 pages, 5 figures</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.04627v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.04627v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.comp-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.comp-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.data-an" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Fangzhou Hong</name>
+    </author>
+    <author>
+      <name>Ziwei Liu</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://github.com/hzxie/Awesome-3D-Scene-Generation</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.05474v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.05474v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.04623v1</id>
-    <updated>2025-05-07T17:59:49Z</updated>
-    <published>2025-05-07T17:59:49Z</published>
-    <title>EchoInk-R1: Exploring Audio-Visual Reasoning in Multimodal LLMs via
-  Reinforcement Learning</title>
-    <summary>  Multimodal large language models (MLLMs) have advanced perception across
-text, vision, and audio, yet they often struggle with structured cross-modal
-reasoning, particularly when integrating audio and visual signals. We introduce
-EchoInk-R1, a reinforcement learning framework that enhances such reasoning in
-MLLMs. Built upon the Qwen2.5-Omni-7B foundation and optimized with Group
-Relative Policy Optimization (GRPO), EchoInk-R1 tackles multiple-choice
-question answering over synchronized audio-image pairs. To enable this, we
-curate AVQA-R1-6K, a dataset pairing such audio-image inputs with
-multiple-choice questions derived from OmniInstruct-v1. EchoInk-R1-7B achieves
-85.77% accuracy on the validation set, outperforming the base model, which
-scores 80.53%, using only 562 reinforcement learning steps. Beyond accuracy,
-EchoInk-R1 demonstrates reflective reasoning by revisiting initial
-interpretations and refining responses when facing ambiguous multimodal inputs.
-These results suggest that lightweight reinforcement learning fine-tuning
-enhances cross-modal reasoning in MLLMs. EchoInk-R1 is the first framework to
-unify audio, visual, and textual modalities for general open-world reasoning
-via reinforcement learning. Code and data are publicly released to facilitate
-further research.
+    <id>http://arxiv.org/abs/2505.05473v1</id>
+    <updated>2025-05-08T17:59:47Z</updated>
+    <published>2025-05-08T17:59:47Z</published>
+    <title>DiffusionSfM: Predicting Structure and Motion via Ray Origin and
+  Endpoint Diffusion</title>
+    <summary>  Current Structure-from-Motion (SfM) methods typically follow a two-stage
+pipeline, combining learned or geometric pairwise reasoning with a subsequent
+global optimization step. In contrast, we propose a data-driven multi-view
+reasoning approach that directly infers 3D scene geometry and camera poses from
+multi-view images. Our framework, DiffusionSfM, parameterizes scene geometry
+and cameras as pixel-wise ray origins and endpoints in a global frame and
+employs a transformer-based denoising diffusion model to predict them from
+multi-view inputs. To address practical challenges in training diffusion models
+with missing data and unbounded scene coordinates, we introduce specialized
+mechanisms that ensure robust learning. We empirically validate DiffusionSfM on
+both synthetic and real datasets, demonstrating that it outperforms classical
+and learning-based approaches while naturally modeling uncertainty.
 </summary>
     <author>
-      <name>Zhenghao Xing</name>
+      <name>Qitao Zhao</name>
     </author>
     <author>
-      <name>Xiaowei Hu</name>
+      <name>Amy Lin</name>
     </author>
     <author>
-      <name>Chi-Wing Fu</name>
+      <name>Jeff Tan</name>
     </author>
     <author>
-      <name>Wenhai Wang</name>
+      <name>Jason Y. Zhang</name>
     </author>
     <author>
-      <name>Jifeng Dai</name>
+      <name>Deva Ramanan</name>
     </author>
     <author>
-      <name>Pheng-Ann Heng</name>
+      <name>Shubham Tulsiani</name>
     </author>
-    <link href="http://arxiv.org/abs/2505.04623v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.04623v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">CVPR 2025. Project website: https://qitaozhao.github.io/DiffusionSfM</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.05473v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.05473v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.05472v1</id>
+    <updated>2025-05-08T17:58:57Z</updated>
+    <published>2025-05-08T17:58:57Z</published>
+    <title>Mogao: An Omni Foundation Model for Interleaved Multi-Modal Generation</title>
+    <summary>  Recent progress in unified models for image understanding and generation has
+been impressive, yet most approaches remain limited to single-modal generation
+conditioned on multiple modalities. In this paper, we present Mogao, a unified
+framework that advances this paradigm by enabling interleaved multi-modal
+generation through a causal approach. Mogao integrates a set of key technical
+improvements in architecture design, including a deep-fusion design, dual
+vision encoders, interleaved rotary position embeddings, and multi-modal
+classifier-free guidance, which allow it to harness the strengths of both
+autoregressive models for text generation and diffusion models for high-quality
+image synthesis. These practical improvements also make Mogao particularly
+effective to process interleaved sequences of text and images arbitrarily. To
+further unlock the potential of unified models, we introduce an efficient
+training strategy on a large-scale, in-house dataset specifically curated for
+joint text and image generation. Extensive experiments show that Mogao not only
+achieves state-of-the-art performance in multi-modal understanding and
+text-to-image generation, but also excels in producing high-quality, coherent
+interleaved outputs. Its emergent capabilities in zero-shot image editing and
+compositional generation highlight Mogao as a practical omni-modal foundation
+model, paving the way for future development and scaling the unified
+multi-modal systems.
+</summary>
+    <author>
+      <name>Chao Liao</name>
+    </author>
+    <author>
+      <name>Liyang Liu</name>
+    </author>
+    <author>
+      <name>Xun Wang</name>
+    </author>
+    <author>
+      <name>Zhengxiong Luo</name>
+    </author>
+    <author>
+      <name>Xinyu Zhang</name>
+    </author>
+    <author>
+      <name>Wenliang Zhao</name>
+    </author>
+    <author>
+      <name>Jie Wu</name>
+    </author>
+    <author>
+      <name>Liang Li</name>
+    </author>
+    <author>
+      <name>Zhi Tian</name>
+    </author>
+    <author>
+      <name>Weilin Huang</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Mogao Technical Report</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.05472v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.05472v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.05471v1</id>
+    <updated>2025-05-08T17:58:49Z</updated>
+    <published>2025-05-08T17:58:49Z</published>
+    <title>Facets of Disparate Impact: Evaluating Legally Consistent Bias in
+  Machine Learning</title>
+    <summary>  Leveraging current legal standards, we define bias through the lens of
+marginal benefits and objective testing with the novel metric "Objective
+Fairness Index". This index combines the contextual nuances of objective
+testing with metric stability, providing a legally consistent and reliable
+measure. Utilizing the Objective Fairness Index, we provide fresh insights into
+sensitive machine learning applications, such as COMPAS (recidivism
+prediction), highlighting the metric's practical and theoretical significance.
+The Objective Fairness Index allows one to differentiate between discriminatory
+tests and systemic disparities.
+</summary>
+    <author>
+      <name>Jarren Briscoe</name>
+    </author>
+    <author>
+      <name>Assefaw Gebremedhin</name>
+    </author>
+    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1145/3627673.3679925</arxiv:doi>
+    <link title="doi" href="http://dx.doi.org/10.1145/3627673.3679925" rel="related"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">CIKM 2024</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.05471v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.05471v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.05470v1</id>
+    <updated>2025-05-08T17:58:45Z</updated>
+    <published>2025-05-08T17:58:45Z</published>
+    <title>Flow-GRPO: Training Flow Matching Models via Online RL</title>
+    <summary>  We propose Flow-GRPO, the first method integrating online reinforcement
+learning (RL) into flow matching models. Our approach uses two key strategies:
+(1) an ODE-to-SDE conversion that transforms a deterministic Ordinary
+Differential Equation (ODE) into an equivalent Stochastic Differential Equation
+(SDE) that matches the original model's marginal distribution at all timesteps,
+enabling statistical sampling for RL exploration; and (2) a Denoising Reduction
+strategy that reduces training denoising steps while retaining the original
+inference timestep number, significantly improving sampling efficiency without
+performance degradation. Empirically, Flow-GRPO is effective across multiple
+text-to-image tasks. For complex compositions, RL-tuned SD3.5 generates nearly
+perfect object counts, spatial relations, and fine-grained attributes, boosting
+GenEval accuracy from $63\%$ to $95\%$. In visual text rendering, its accuracy
+improves from $59\%$ to $92\%$, significantly enhancing text generation.
+Flow-GRPO also achieves substantial gains in human preference alignment.
+Notably, little to no reward hacking occurred, meaning rewards did not increase
+at the cost of image quality or diversity, and both remained stable in our
+experiments.
+</summary>
+    <author>
+      <name>Jie Liu</name>
+    </author>
+    <author>
+      <name>Gongye Liu</name>
+    </author>
+    <author>
+      <name>Jiajun Liang</name>
+    </author>
+    <author>
+      <name>Yangguang Li</name>
+    </author>
+    <author>
+      <name>Jiaheng Liu</name>
+    </author>
+    <author>
+      <name>Xintao Wang</name>
+    </author>
+    <author>
+      <name>Pengfei Wan</name>
+    </author>
+    <author>
+      <name>Di Zhang</name>
+    </author>
+    <author>
+      <name>Wanli Ouyang</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Code: https://github.com/yifan123/flow_grpo</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.05470v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.05470v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.04622v1</id>
-    <updated>2025-05-07T17:59:46Z</updated>
-    <published>2025-05-07T17:59:46Z</published>
-    <title>PrimitiveAnything: Human-Crafted 3D Primitive Assembly Generation with
-  Auto-Regressive Transformer</title>
-    <summary>  Shape primitive abstraction, which decomposes complex 3D shapes into simple
-geometric elements, plays a crucial role in human visual cognition and has
-broad applications in computer vision and graphics. While recent advances in 3D
-content generation have shown remarkable progress, existing primitive
-abstraction methods either rely on geometric optimization with limited semantic
-understanding or learn from small-scale, category-specific datasets, struggling
-to generalize across diverse shape categories. We present PrimitiveAnything, a
-novel framework that reformulates shape primitive abstraction as a primitive
-assembly generation task. PrimitiveAnything includes a shape-conditioned
-primitive transformer for auto-regressive generation and an ambiguity-free
-parameterization scheme to represent multiple types of primitives in a unified
-manner. The proposed framework directly learns the process of primitive
-assembly from large-scale human-crafted abstractions, enabling it to capture
-how humans decompose complex shapes into primitive elements. Through extensive
-experiments, we demonstrate that PrimitiveAnything can generate high-quality
-primitive assemblies that better align with human perception while maintaining
-geometric fidelity across diverse shape categories. It benefits various 3D
-applications and shows potential for enabling primitive-based user-generated
-content (UGC) in games. Project page: https://primitiveanything.github.io
-</summary>
-    <author>
-      <name>Jingwen Ye</name>
-    </author>
-    <author>
-      <name>Yuze He</name>
-    </author>
-    <author>
-      <name>Yanning Zhou</name>
-    </author>
-    <author>
-      <name>Yiqin Zhu</name>
-    </author>
-    <author>
-      <name>Kaiwen Xiao</name>
-    </author>
-    <author>
-      <name>Yong-Jin Liu</name>
-    </author>
-    <author>
-      <name>Wei Yang</name>
-    </author>
-    <author>
-      <name>Xiao Han</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">SIGGRAPH 2025. 14 pages, 15 figures</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.04622v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.04622v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.GR" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.GR" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.04621v1</id>
-    <updated>2025-05-07T17:59:38Z</updated>
-    <published>2025-05-07T17:59:38Z</published>
-    <title>Score Distillation Sampling for Audio: Source Separation, Synthesis, and
-  Beyond</title>
-    <summary>  We introduce Audio-SDS, a generalization of Score Distillation Sampling (SDS)
-to text-conditioned audio diffusion models. While SDS was initially designed
-for text-to-3D generation using image diffusion, its core idea of distilling a
-powerful generative prior into a separate parametric representation extends to
-the audio domain. Leveraging a single pretrained model, Audio-SDS enables a
-broad range of tasks without requiring specialized datasets. In particular, we
-demonstrate how Audio-SDS can guide physically informed impact sound
-simulations, calibrate FM-synthesis parameters, and perform prompt-specified
-source separation. Our findings illustrate the versatility of
-distillation-based methods across modalities and establish a robust foundation
-for future work using generative priors in audio tasks.
-</summary>
-    <author>
-      <name>Jessie Richter-Powell</name>
-    </author>
-    <author>
-      <name>Antonio Torralba</name>
-    </author>
-    <author>
-      <name>Jonathan Lorraine</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">See the project website at
-  https://research.nvidia.com/labs/toronto-ai/Audio-SDS/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.04621v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.04621v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="68T07" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="I.2.6; H.5.5; H.5.1" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.04619v1</id>
-    <updated>2025-05-07T17:59:28Z</updated>
-    <published>2025-05-07T17:59:28Z</published>
-    <title>Merging and Disentangling Views in Visual Reinforcement Learning for
-  Robotic Manipulation</title>
-    <summary>  Vision is well-known for its use in manipulation, especially using visual
-servoing. To make it robust, multiple cameras are needed to expand the field of
-view. That is computationally challenging. Merging multiple views and using
-Q-learning allows the design of more effective representations and optimization
-of sample efficiency. Such a solution might be expensive to deploy. To mitigate
-this, we introduce a Merge And Disentanglement (MAD) algorithm that efficiently
-merges views to increase sample efficiency while augmenting with single-view
-features to allow lightweight deployment and ensure robust policies. We
-demonstrate the efficiency and robustness of our approach using Meta-World and
-ManiSkill3. For project website and code, see https://aalmuzairee.github.io/mad
-</summary>
-    <author>
-      <name>Abdulaziz Almuzairee</name>
-    </author>
-    <author>
-      <name>Rohan Patil</name>
-    </author>
-    <author>
-      <name>Dwait Bhatt</name>
-    </author>
-    <author>
-      <name>Henrik I. Christensen</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">For project website and code, see https://aalmuzairee.github.io/mad</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.04619v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.04619v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
