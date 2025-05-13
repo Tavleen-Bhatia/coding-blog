@@ -3,250 +3,281 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-05-11T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">423635</opensearch:totalResults>
+  <updated>2025-05-12T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">423872</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2505.05474v1</id>
-    <updated>2025-05-08T17:59:54Z</updated>
-    <published>2025-05-08T17:59:54Z</published>
-    <title>3D Scene Generation: A Survey</title>
-    <summary>  3D scene generation seeks to synthesize spatially structured, semantically
-meaningful, and photorealistic environments for applications such as immersive
-media, robotics, autonomous driving, and embodied AI. Early methods based on
-procedural rules offered scalability but limited diversity. Recent advances in
-deep generative models (e.g., GANs, diffusion models) and 3D representations
-(e.g., NeRF, 3D Gaussians) have enabled the learning of real-world scene
-distributions, improving fidelity, diversity, and view consistency. Recent
-advances like diffusion models bridge 3D scene synthesis and photorealism by
-reframing generation as image or video synthesis problems. This survey provides
-a systematic overview of state-of-the-art approaches, organizing them into four
-paradigms: procedural generation, neural 3D-based generation, image-based
-generation, and video-based generation. We analyze their technical foundations,
-trade-offs, and representative results, and review commonly used datasets,
-evaluation protocols, and downstream applications. We conclude by discussing
-key challenges in generation capacity, 3D representation, data and annotations,
-and evaluation, and outline promising directions including higher fidelity,
-physics-aware and interactive generation, and unified perception-generation
-models. This review organizes recent advances in 3D scene generation and
-highlights promising directions at the intersection of generative AI, 3D
-vision, and embodied intelligence. To track ongoing developments, we maintain
-an up-to-date project page:
-https://github.com/hzxie/Awesome-3D-Scene-Generation.
+    <id>http://arxiv.org/abs/2505.06228v1</id>
+    <updated>2025-05-09T17:59:50Z</updated>
+    <published>2025-05-09T17:59:50Z</published>
+    <title>A Machine-Learning Compositional Study of Exoplanetary Material Accreted
+  Onto Five Helium-Atmosphere White Dwarfs with $\texttt{cecilia}$</title>
+    <summary>  We present the first application of the Machine Learning (ML) pipeline
+$\texttt{cecilia}$ to determine the physical parameters and photospheric
+composition of five metal-polluted He-atmosphere white dwarfs without
+well-characterised elemental abundances. To achieve this, we perform a joint
+and iterative Bayesian fit to their $\textit{SDSS}$ (R=2,000) and
+$\textit{Keck/ESI}$ (R=4,500) optical spectra, covering the wavelength range
+from about 3,800\r{A} to 9,000\r{A}. Our analysis measures the abundances of at
+least two $-$and up to six$-$ chemical elements in their atmospheres with a
+predictive accuracy similar to that of conventional WD analysis techniques
+($\approx$0.20 dex). The white dwarfs with the largest number of detected heavy
+elements are SDSS J0859$+$5732 and SDSS J2311$-$0041, which simultaneously
+exhibit O, Mg, Si, Ca, and Fe in their $\textit{Keck/ESI}$ spectra. For all
+systems, we find that the bulk composition of their pollutants is largely
+consistent with those of primitive CI chondrites to within 1-2$\sigma$. We also
+find evidence of statistically significant ($&gt;2\sigma$) oxygen excesses for
+SDSS J0859$+$5732 and SDSS J2311$-$0041, which could point to the accretion of
+oxygen-rich exoplanetary material. In the future, as wide-field astronomical
+surveys deliver millions of public WD spectra to the scientific community,
+$\texttt{cecilia}$ aspires to unlock population-wide studies of polluted WDs,
+therefore helping to improve our statistical knowledge of extrasolar
+compositions.
 </summary>
     <author>
-      <name>Beichen Wen</name>
+      <name>Mariona Badenas-Agusti</name>
     </author>
     <author>
-      <name>Haozhe Xie</name>
+      <name>Siyi Xu</name>
     </author>
     <author>
-      <name>Zhaoxi Chen</name>
+      <name>Andrew Vanderburg</name>
     </author>
     <author>
-      <name>Fangzhou Hong</name>
+      <name>Kishalay De</name>
     </author>
     <author>
-      <name>Ziwei Liu</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://github.com/hzxie/Awesome-3D-Scene-Generation</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.05474v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.05474v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.05473v1</id>
-    <updated>2025-05-08T17:59:47Z</updated>
-    <published>2025-05-08T17:59:47Z</published>
-    <title>DiffusionSfM: Predicting Structure and Motion via Ray Origin and
-  Endpoint Diffusion</title>
-    <summary>  Current Structure-from-Motion (SfM) methods typically follow a two-stage
-pipeline, combining learned or geometric pairwise reasoning with a subsequent
-global optimization step. In contrast, we propose a data-driven multi-view
-reasoning approach that directly infers 3D scene geometry and camera poses from
-multi-view images. Our framework, DiffusionSfM, parameterizes scene geometry
-and cameras as pixel-wise ray origins and endpoints in a global frame and
-employs a transformer-based denoising diffusion model to predict them from
-multi-view inputs. To address practical challenges in training diffusion models
-with missing data and unbounded scene coordinates, we introduce specialized
-mechanisms that ensure robust learning. We empirically validate DiffusionSfM on
-both synthetic and real datasets, demonstrating that it outperforms classical
-and learning-based approaches while naturally modeling uncertainty.
-</summary>
-    <author>
-      <name>Qitao Zhao</name>
+      <name>Patrick Dufour</name>
     </author>
     <author>
-      <name>Amy Lin</name>
+      <name>Laura K. Rogers</name>
     </author>
     <author>
-      <name>Jeff Tan</name>
+      <name>Susana Hoyos</name>
     </author>
     <author>
-      <name>Jason Y. Zhang</name>
+      <name>Simon Blouin</name>
     </author>
     <author>
-      <name>Deva Ramanan</name>
+      <name>Javier Viaña</name>
     </author>
     <author>
-      <name>Shubham Tulsiani</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">CVPR 2025. Project website: https://qitaozhao.github.io/DiffusionSfM</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.05473v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.05473v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.05472v1</id>
-    <updated>2025-05-08T17:58:57Z</updated>
-    <published>2025-05-08T17:58:57Z</published>
-    <title>Mogao: An Omni Foundation Model for Interleaved Multi-Modal Generation</title>
-    <summary>  Recent progress in unified models for image understanding and generation has
-been impressive, yet most approaches remain limited to single-modal generation
-conditioned on multiple modalities. In this paper, we present Mogao, a unified
-framework that advances this paradigm by enabling interleaved multi-modal
-generation through a causal approach. Mogao integrates a set of key technical
-improvements in architecture design, including a deep-fusion design, dual
-vision encoders, interleaved rotary position embeddings, and multi-modal
-classifier-free guidance, which allow it to harness the strengths of both
-autoregressive models for text generation and diffusion models for high-quality
-image synthesis. These practical improvements also make Mogao particularly
-effective to process interleaved sequences of text and images arbitrarily. To
-further unlock the potential of unified models, we introduce an efficient
-training strategy on a large-scale, in-house dataset specifically curated for
-joint text and image generation. Extensive experiments show that Mogao not only
-achieves state-of-the-art performance in multi-modal understanding and
-text-to-image generation, but also excels in producing high-quality, coherent
-interleaved outputs. Its emergent capabilities in zero-shot image editing and
-compositional generation highlight Mogao as a practical omni-modal foundation
-model, paving the way for future development and scaling the unified
-multi-modal systems.
-</summary>
-    <author>
-      <name>Chao Liao</name>
+      <name>Amy Bonsor</name>
     </author>
     <author>
-      <name>Liyang Liu</name>
+      <name>Ben Zuckerman</name>
     </author>
-    <author>
-      <name>Xun Wang</name>
-    </author>
-    <author>
-      <name>Zhengxiong Luo</name>
-    </author>
-    <author>
-      <name>Xinyu Zhang</name>
-    </author>
-    <author>
-      <name>Wenliang Zhao</name>
-    </author>
-    <author>
-      <name>Jie Wu</name>
-    </author>
-    <author>
-      <name>Liang Li</name>
-    </author>
-    <author>
-      <name>Zhi Tian</name>
-    </author>
-    <author>
-      <name>Weilin Huang</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Mogao Technical Report</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.05472v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.05472v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.05471v1</id>
-    <updated>2025-05-08T17:58:49Z</updated>
-    <published>2025-05-08T17:58:49Z</published>
-    <title>Facets of Disparate Impact: Evaluating Legally Consistent Bias in
-  Machine Learning</title>
-    <summary>  Leveraging current legal standards, we define bias through the lens of
-marginal benefits and objective testing with the novel metric "Objective
-Fairness Index". This index combines the contextual nuances of objective
-testing with metric stability, providing a legally consistent and reliable
-measure. Utilizing the Objective Fairness Index, we provide fresh insights into
-sensitive machine learning applications, such as COMPAS (recidivism
-prediction), highlighting the metric's practical and theoretical significance.
-The Objective Fairness Index allows one to differentiate between discriminatory
-tests and systemic disparities.
-</summary>
-    <author>
-      <name>Jarren Briscoe</name>
-    </author>
-    <author>
-      <name>Assefaw Gebremedhin</name>
-    </author>
-    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1145/3627673.3679925</arxiv:doi>
-    <link title="doi" href="http://dx.doi.org/10.1145/3627673.3679925" rel="related"/>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">CIKM 2024</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.05471v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.05471v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">28 pages, 14 figures, 5 tables. Accepted for publication in MNRAS</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.06228v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.06228v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="astro-ph.EP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.EP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.IM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.SR" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.05470v1</id>
-    <updated>2025-05-08T17:58:45Z</updated>
-    <published>2025-05-08T17:58:45Z</published>
-    <title>Flow-GRPO: Training Flow Matching Models via Online RL</title>
-    <summary>  We propose Flow-GRPO, the first method integrating online reinforcement
-learning (RL) into flow matching models. Our approach uses two key strategies:
-(1) an ODE-to-SDE conversion that transforms a deterministic Ordinary
-Differential Equation (ODE) into an equivalent Stochastic Differential Equation
-(SDE) that matches the original model's marginal distribution at all timesteps,
-enabling statistical sampling for RL exploration; and (2) a Denoising Reduction
-strategy that reduces training denoising steps while retaining the original
-inference timestep number, significantly improving sampling efficiency without
-performance degradation. Empirically, Flow-GRPO is effective across multiple
-text-to-image tasks. For complex compositions, RL-tuned SD3.5 generates nearly
-perfect object counts, spatial relations, and fine-grained attributes, boosting
-GenEval accuracy from $63\%$ to $95\%$. In visual text rendering, its accuracy
-improves from $59\%$ to $92\%$, significantly enhancing text generation.
-Flow-GRPO also achieves substantial gains in human preference alignment.
-Notably, little to no reward hacking occurred, meaning rewards did not increase
-at the cost of image quality or diversity, and both remained stable in our
-experiments.
+    <id>http://arxiv.org/abs/2505.06227v1</id>
+    <updated>2025-05-09T17:59:33Z</updated>
+    <published>2025-05-09T17:59:33Z</published>
+    <title>Anymate: A Dataset and Baselines for Learning 3D Object Rigging</title>
+    <summary>  Rigging and skinning are essential steps to create realistic 3D animations,
+often requiring significant expertise and manual effort. Traditional attempts
+at automating these processes rely heavily on geometric heuristics and often
+struggle with objects of complex geometry. Recent data-driven approaches show
+potential for better generality, but are often constrained by limited training
+data. We present the Anymate Dataset, a large-scale dataset of 230K 3D assets
+paired with expert-crafted rigging and skinning information -- 70 times larger
+than existing datasets. Using this dataset, we propose a learning-based
+auto-rigging framework with three sequential modules for joint, connectivity,
+and skinning weight prediction. We systematically design and experiment with
+various architectures as baselines for each module and conduct comprehensive
+evaluations on our dataset to compare their performance. Our models
+significantly outperform existing methods, providing a foundation for comparing
+future methods in automated rigging and skinning. Code and dataset can be found
+at https://anymate3d.github.io/.
 </summary>
     <author>
-      <name>Jie Liu</name>
+      <name>Yufan Deng</name>
     </author>
     <author>
-      <name>Gongye Liu</name>
+      <name>Yuhao Zhang</name>
     </author>
     <author>
-      <name>Jiajun Liang</name>
+      <name>Chen Geng</name>
     </author>
     <author>
-      <name>Yangguang Li</name>
+      <name>Shangzhe Wu</name>
     </author>
     <author>
-      <name>Jiaheng Liu</name>
+      <name>Jiajun Wu</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">SIGGRAPH 2025. Project page: https://anymate3d.github.io/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.06227v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.06227v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.GR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.GR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.06224v1</id>
+    <updated>2025-05-09T17:58:52Z</updated>
+    <published>2025-05-09T17:58:52Z</published>
+    <title>Towards a Unified Representation Evaluation Framework Beyond Downstream
+  Tasks</title>
+    <summary>  Downstream probing has been the dominant method for evaluating model
+representations, an important process given the increasing prominence of
+self-supervised learning and foundation models. However, downstream probing
+primarily assesses the availability of task-relevant information in the model's
+latent space, overlooking attributes such as equivariance, invariance, and
+disentanglement, which contribute to the interpretability, adaptability, and
+utility of representations in real-world applications. While some attempts have
+been made to measure these qualities in representations, no unified evaluation
+framework with modular, generalizable, and interpretable metrics exists.
+  In this paper, we argue for the importance of representation evaluation
+beyond downstream probing. We introduce a standardized protocol to quantify
+informativeness, equivariance, invariance, and disentanglement of factors of
+variation in model representations. We use it to evaluate representations from
+a variety of models in the image and speech domains using different
+architectures and pretraining approaches on identified controllable factors of
+variation. We find that representations from models with similar downstream
+performance can behave substantially differently with regard to these
+attributes. This hints that the respective mechanisms underlying their
+downstream performance are functionally different, prompting new research
+directions to understand and improve representations.
+</summary>
+    <author>
+      <name>Christos Plachouras</name>
     </author>
     <author>
-      <name>Xintao Wang</name>
+      <name>Julien Guinot</name>
     </author>
     <author>
-      <name>Pengfei Wan</name>
+      <name>George Fazekas</name>
     </author>
     <author>
-      <name>Di Zhang</name>
+      <name>Elio Quinton</name>
     </author>
     <author>
-      <name>Wanli Ouyang</name>
+      <name>Emmanouil Benetos</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Code: https://github.com/yifan123/flow_grpo</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.05470v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.05470v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Johan Pauwels</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted at IJCNN 2025</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.06224v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.06224v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.06223v1</id>
+    <updated>2025-05-09T17:57:30Z</updated>
+    <published>2025-05-09T17:57:30Z</published>
+    <title>A Proton Treatment Planning Method for Combining FLASH and Spatially
+  Fractionated Radiation Therapy to Enhance Normal Tissue Protection</title>
+    <summary>  Background: FLASH radiation therapy (FLASH-RT) uses ultra-high dose rates to
+induce the FLASH effect, enhancing normal tissue sparing. In proton Bragg peak
+FLASH-RT, this effect is confined to high-dose regions near the target at deep
+tissue levels. In contrast, Spatially Fractionated Radiation Therapy (SFRT)
+creates alternating high- and low-dose regions with high peak-to-valley dose
+ratios (PVDR), sparing tissues at shallow-to-intermediate depths. Purpose: This
+study investigates a novel proton modality (SFRT-FLASH) that synergizes
+FLASH-RT and SFRT to enhance normal tissue protection across all depths.
+Methods: Two SFRT techniques are integrated with FLASH-RT: proton GRID therapy
+(pGRID) with conventional beam sizes and proton minibeam radiation therapy
+(pMBRT) with submillimeter beams. These are implemented as pGRID-FLASH
+(SB-FLASH) and minibeam-FLASH (MB-FLASH), respectively. The pGRID technique
+uses a scissor-beam (SB) method to achieve uniform target coverage. To meet
+FLASH dose (5 Gy) and dose-rate (40 Gy/s) thresholds, a single-field
+uniform-dose-per-fraction strategy is used. Dose and dose-rate constraints are
+jointly optimized, including a CTV1cm structure (a 1 cm ring around the CTV)
+for each field. Results: Across four clinical cases, MB-FLASH and SB-FLASH
+plans were benchmarked against conventional (CONV), FLASH-RT (FLASH), pMBRT
+(MB), and pGRID (SB) plans. SFRT-FLASH achieved high FLASH effect coverage
+(~60-80% in CTV1cm) while preserving PVDR (~2.5-7) at shallow-to-intermediate
+depths. Conclusions: We present a proton treatment planning approach that
+combines the FLASH effect at depth with high PVDR near the surface, enhancing
+normal tissue protection and advancing proton therapy.
+</summary>
+    <author>
+      <name>Weijie Zhang</name>
+    </author>
+    <author>
+      <name>Xue Hong</name>
+    </author>
+    <author>
+      <name>Ya-Nan Zhu</name>
+    </author>
+    <author>
+      <name>Yuting Lin</name>
+    </author>
+    <author>
+      <name>Gregory Gan</name>
+    </author>
+    <author>
+      <name>Ronald C Chen</name>
+    </author>
+    <author>
+      <name>Hao Gao</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.06223v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.06223v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.med-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.med-ph" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.06219v1</id>
+    <updated>2025-05-09T17:54:10Z</updated>
+    <published>2025-05-09T17:54:10Z</published>
+    <title>VIN-NBV: A View Introspection Network for Next-Best-View Selection for
+  Resource-Efficient 3D Reconstruction</title>
+    <summary>  Next Best View (NBV) algorithms aim to acquire an optimal set of images using
+minimal resources, time, or number of captures to enable efficient 3D
+reconstruction of a scene. Existing approaches often rely on prior scene
+knowledge or additional image captures and often develop policies that maximize
+coverage. Yet, for many real scenes with complex geometry and self-occlusions,
+coverage maximization does not lead to better reconstruction quality directly.
+In this paper, we propose the View Introspection Network (VIN), which is
+trained to predict the reconstruction quality improvement of views directly,
+and the VIN-NBV policy. A greedy sequential sampling-based policy, where at
+each acquisition step, we sample multiple query views and choose the one with
+the highest VIN predicted improvement score. We design the VIN to perform
+3D-aware featurization of the reconstruction built from prior acquisitions, and
+for each query view create a feature that can be decoded into an improvement
+score. We then train the VIN using imitation learning to predict the
+reconstruction improvement score. We show that VIN-NBV improves reconstruction
+quality by ~30% over a coverage maximization baseline when operating with
+constraints on the number of acquisitions or the time in motion.
+</summary>
+    <author>
+      <name>Noah Frahm</name>
+    </author>
+    <author>
+      <name>Dongxu Zhao</name>
+    </author>
+    <author>
+      <name>Andrea Dunn Beltran</name>
+    </author>
+    <author>
+      <name>Ron Alterovitz</name>
+    </author>
+    <author>
+      <name>Jan-Michael Frahm</name>
+    </author>
+    <author>
+      <name>Junier Oliva</name>
+    </author>
+    <author>
+      <name>Roni Sengupta</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">19 pages, 11 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.06219v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.06219v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="I.2.10; I.2.9" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
