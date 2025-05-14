@@ -3,281 +3,274 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-05-12T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">423872</opensearch:totalResults>
+  <updated>2025-05-13T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">424348</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2505.06228v1</id>
-    <updated>2025-05-09T17:59:50Z</updated>
-    <published>2025-05-09T17:59:50Z</published>
-    <title>A Machine-Learning Compositional Study of Exoplanetary Material Accreted
-  Onto Five Helium-Atmosphere White Dwarfs with $\texttt{cecilia}$</title>
-    <summary>  We present the first application of the Machine Learning (ML) pipeline
-$\texttt{cecilia}$ to determine the physical parameters and photospheric
-composition of five metal-polluted He-atmosphere white dwarfs without
-well-characterised elemental abundances. To achieve this, we perform a joint
-and iterative Bayesian fit to their $\textit{SDSS}$ (R=2,000) and
-$\textit{Keck/ESI}$ (R=4,500) optical spectra, covering the wavelength range
-from about 3,800\r{A} to 9,000\r{A}. Our analysis measures the abundances of at
-least two $-$and up to six$-$ chemical elements in their atmospheres with a
-predictive accuracy similar to that of conventional WD analysis techniques
-($\approx$0.20 dex). The white dwarfs with the largest number of detected heavy
-elements are SDSS J0859$+$5732 and SDSS J2311$-$0041, which simultaneously
-exhibit O, Mg, Si, Ca, and Fe in their $\textit{Keck/ESI}$ spectra. For all
-systems, we find that the bulk composition of their pollutants is largely
-consistent with those of primitive CI chondrites to within 1-2$\sigma$. We also
-find evidence of statistically significant ($&gt;2\sigma$) oxygen excesses for
-SDSS J0859$+$5732 and SDSS J2311$-$0041, which could point to the accretion of
-oxygen-rich exoplanetary material. In the future, as wide-field astronomical
-surveys deliver millions of public WD spectra to the scientific community,
-$\texttt{cecilia}$ aspires to unlock population-wide studies of polluted WDs,
-therefore helping to improve our statistical knowledge of extrasolar
-compositions.
+    <id>http://arxiv.org/abs/2505.07819v1</id>
+    <updated>2025-05-12T17:59:43Z</updated>
+    <published>2025-05-12T17:59:43Z</published>
+    <title>H$^{\mathbf{3}}$DP: Triply-Hierarchical Diffusion Policy for Visuomotor
+  Learning</title>
+    <summary>  Visuomotor policy learning has witnessed substantial progress in robotic
+manipulation, with recent approaches predominantly relying on generative models
+to model the action distribution. However, these methods often overlook the
+critical coupling between visual perception and action prediction. In this
+work, we introduce $\textbf{Triply-Hierarchical Diffusion
+Policy}~(\textbf{H$^{\mathbf{3}}$DP})$, a novel visuomotor learning framework
+that explicitly incorporates hierarchical structures to strengthen the
+integration between visual features and action generation. H$^{3}$DP contains
+$\mathbf{3}$ levels of hierarchy: (1) depth-aware input layering that organizes
+RGB-D observations based on depth information; (2) multi-scale visual
+representations that encode semantic features at varying levels of granularity;
+and (3) a hierarchically conditioned diffusion process that aligns the
+generation of coarse-to-fine actions with corresponding visual features.
+Extensive experiments demonstrate that H$^{3}$DP yields a $\mathbf{+27.5\%}$
+average relative improvement over baselines across $\mathbf{44}$ simulation
+tasks and achieves superior performance in $\mathbf{4}$ challenging bimanual
+real-world manipulation tasks. Project Page: https://lyy-iiis.github.io/h3dp/.
 </summary>
     <author>
-      <name>Mariona Badenas-Agusti</name>
+      <name>Yiyang Lu</name>
     </author>
     <author>
-      <name>Siyi Xu</name>
+      <name>Yufeng Tian</name>
     </author>
     <author>
-      <name>Andrew Vanderburg</name>
+      <name>Zhecheng Yuan</name>
     </author>
     <author>
-      <name>Kishalay De</name>
+      <name>Xianbang Wang</name>
     </author>
     <author>
-      <name>Patrick Dufour</name>
+      <name>Pu Hua</name>
     </author>
     <author>
-      <name>Laura K. Rogers</name>
+      <name>Zhengrong Xue</name>
     </author>
     <author>
-      <name>Susana Hoyos</name>
+      <name>Huazhe Xu</name>
     </author>
-    <author>
-      <name>Simon Blouin</name>
-    </author>
-    <author>
-      <name>Javier Viaña</name>
-    </author>
-    <author>
-      <name>Amy Bonsor</name>
-    </author>
-    <author>
-      <name>Ben Zuckerman</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">28 pages, 14 figures, 5 tables. Accepted for publication in MNRAS</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.06228v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.06228v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="astro-ph.EP" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="astro-ph.EP" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="astro-ph.IM" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="astro-ph.SR" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.06227v1</id>
-    <updated>2025-05-09T17:59:33Z</updated>
-    <published>2025-05-09T17:59:33Z</published>
-    <title>Anymate: A Dataset and Baselines for Learning 3D Object Rigging</title>
-    <summary>  Rigging and skinning are essential steps to create realistic 3D animations,
-often requiring significant expertise and manual effort. Traditional attempts
-at automating these processes rely heavily on geometric heuristics and often
-struggle with objects of complex geometry. Recent data-driven approaches show
-potential for better generality, but are often constrained by limited training
-data. We present the Anymate Dataset, a large-scale dataset of 230K 3D assets
-paired with expert-crafted rigging and skinning information -- 70 times larger
-than existing datasets. Using this dataset, we propose a learning-based
-auto-rigging framework with three sequential modules for joint, connectivity,
-and skinning weight prediction. We systematically design and experiment with
-various architectures as baselines for each module and conduct comprehensive
-evaluations on our dataset to compare their performance. Our models
-significantly outperform existing methods, providing a foundation for comparing
-future methods in automated rigging and skinning. Code and dataset can be found
-at https://anymate3d.github.io/.
-</summary>
-    <author>
-      <name>Yufan Deng</name>
-    </author>
-    <author>
-      <name>Yuhao Zhang</name>
-    </author>
-    <author>
-      <name>Chen Geng</name>
-    </author>
-    <author>
-      <name>Shangzhe Wu</name>
-    </author>
-    <author>
-      <name>Jiajun Wu</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">SIGGRAPH 2025. Project page: https://anymate3d.github.io/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.06227v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.06227v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.GR" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.GR" scheme="http://arxiv.org/schemas/atom"/>
+    <link href="http://arxiv.org/abs/2505.07819v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.07819v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.06224v1</id>
-    <updated>2025-05-09T17:58:52Z</updated>
-    <published>2025-05-09T17:58:52Z</published>
-    <title>Towards a Unified Representation Evaluation Framework Beyond Downstream
-  Tasks</title>
-    <summary>  Downstream probing has been the dominant method for evaluating model
-representations, an important process given the increasing prominence of
-self-supervised learning and foundation models. However, downstream probing
-primarily assesses the availability of task-relevant information in the model's
-latent space, overlooking attributes such as equivariance, invariance, and
-disentanglement, which contribute to the interpretability, adaptability, and
-utility of representations in real-world applications. While some attempts have
-been made to measure these qualities in representations, no unified evaluation
-framework with modular, generalizable, and interpretable metrics exists.
-  In this paper, we argue for the importance of representation evaluation
-beyond downstream probing. We introduce a standardized protocol to quantify
-informativeness, equivariance, invariance, and disentanglement of factors of
-variation in model representations. We use it to evaluate representations from
-a variety of models in the image and speech domains using different
-architectures and pretraining approaches on identified controllable factors of
-variation. We find that representations from models with similar downstream
-performance can behave substantially differently with regard to these
-attributes. This hints that the respective mechanisms underlying their
-downstream performance are functionally different, prompting new research
-directions to understand and improve representations.
+    <id>http://arxiv.org/abs/2505.07818v1</id>
+    <updated>2025-05-12T17:59:34Z</updated>
+    <published>2025-05-12T17:59:34Z</published>
+    <title>DanceGRPO: Unleashing GRPO on Visual Generation</title>
+    <summary>  Recent breakthroughs in generative models-particularly diffusion models and
+rectified flows-have revolutionized visual content creation, yet aligning model
+outputs with human preferences remains a critical challenge. Existing
+reinforcement learning (RL)-based methods for visual generation face critical
+limitations: incompatibility with modern Ordinary Differential Equations
+(ODEs)-based sampling paradigms, instability in large-scale training, and lack
+of validation for video generation. This paper introduces DanceGRPO, the first
+unified framework to adapt Group Relative Policy Optimization (GRPO) to visual
+generation paradigms, unleashing one unified RL algorithm across two generative
+paradigms (diffusion models and rectified flows), three tasks (text-to-image,
+text-to-video, image-to-video), four foundation models (Stable Diffusion,
+HunyuanVideo, FLUX, SkyReel-I2V), and five reward models (image/video
+aesthetics, text-image alignment, video motion quality, and binary reward). To
+our knowledge, DanceGRPO is the first RL-based unified framework capable of
+seamless adaptation across diverse generative paradigms, tasks, foundational
+models, and reward models. DanceGRPO demonstrates consistent and substantial
+improvements, which outperform baselines by up to 181% on benchmarks such as
+HPS-v2.1, CLIP Score, VideoAlign, and GenEval. Notably, DanceGRPO not only can
+stabilize policy optimization for complex video generation, but also enables
+generative policy to better capture denoising trajectories for Best-of-N
+inference scaling and learn from sparse binary feedback. Our results establish
+DanceGRPO as a robust and versatile solution for scaling Reinforcement Learning
+from Human Feedback (RLHF) tasks in visual generation, offering new insights
+into harmonizing reinforcement learning and visual synthesis. The code will be
+released.
 </summary>
     <author>
-      <name>Christos Plachouras</name>
+      <name>Zeyue Xue</name>
     </author>
     <author>
-      <name>Julien Guinot</name>
+      <name>Jie Wu</name>
     </author>
     <author>
-      <name>George Fazekas</name>
+      <name>Yu Gao</name>
     </author>
     <author>
-      <name>Elio Quinton</name>
+      <name>Fangyuan Kong</name>
     </author>
     <author>
-      <name>Emmanouil Benetos</name>
+      <name>Lingting Zhu</name>
     </author>
     <author>
-      <name>Johan Pauwels</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted at IJCNN 2025</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.06224v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.06224v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.06223v1</id>
-    <updated>2025-05-09T17:57:30Z</updated>
-    <published>2025-05-09T17:57:30Z</published>
-    <title>A Proton Treatment Planning Method for Combining FLASH and Spatially
-  Fractionated Radiation Therapy to Enhance Normal Tissue Protection</title>
-    <summary>  Background: FLASH radiation therapy (FLASH-RT) uses ultra-high dose rates to
-induce the FLASH effect, enhancing normal tissue sparing. In proton Bragg peak
-FLASH-RT, this effect is confined to high-dose regions near the target at deep
-tissue levels. In contrast, Spatially Fractionated Radiation Therapy (SFRT)
-creates alternating high- and low-dose regions with high peak-to-valley dose
-ratios (PVDR), sparing tissues at shallow-to-intermediate depths. Purpose: This
-study investigates a novel proton modality (SFRT-FLASH) that synergizes
-FLASH-RT and SFRT to enhance normal tissue protection across all depths.
-Methods: Two SFRT techniques are integrated with FLASH-RT: proton GRID therapy
-(pGRID) with conventional beam sizes and proton minibeam radiation therapy
-(pMBRT) with submillimeter beams. These are implemented as pGRID-FLASH
-(SB-FLASH) and minibeam-FLASH (MB-FLASH), respectively. The pGRID technique
-uses a scissor-beam (SB) method to achieve uniform target coverage. To meet
-FLASH dose (5 Gy) and dose-rate (40 Gy/s) thresholds, a single-field
-uniform-dose-per-fraction strategy is used. Dose and dose-rate constraints are
-jointly optimized, including a CTV1cm structure (a 1 cm ring around the CTV)
-for each field. Results: Across four clinical cases, MB-FLASH and SB-FLASH
-plans were benchmarked against conventional (CONV), FLASH-RT (FLASH), pMBRT
-(MB), and pGRID (SB) plans. SFRT-FLASH achieved high FLASH effect coverage
-(~60-80% in CTV1cm) while preserving PVDR (~2.5-7) at shallow-to-intermediate
-depths. Conclusions: We present a proton treatment planning approach that
-combines the FLASH effect at depth with high PVDR near the surface, enhancing
-normal tissue protection and advancing proton therapy.
-</summary>
-    <author>
-      <name>Weijie Zhang</name>
+      <name>Mengzhao Chen</name>
     </author>
     <author>
-      <name>Xue Hong</name>
+      <name>Zhiheng Liu</name>
     </author>
     <author>
-      <name>Ya-Nan Zhu</name>
+      <name>Wei Liu</name>
     </author>
     <author>
-      <name>Yuting Lin</name>
+      <name>Qiushan Guo</name>
     </author>
     <author>
-      <name>Gregory Gan</name>
+      <name>Weilin Huang</name>
     </author>
     <author>
-      <name>Ronald C Chen</name>
+      <name>Ping Luo</name>
     </author>
-    <author>
-      <name>Hao Gao</name>
-    </author>
-    <link href="http://arxiv.org/abs/2505.06223v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.06223v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.med-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.med-ph" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.06219v1</id>
-    <updated>2025-05-09T17:54:10Z</updated>
-    <published>2025-05-09T17:54:10Z</published>
-    <title>VIN-NBV: A View Introspection Network for Next-Best-View Selection for
-  Resource-Efficient 3D Reconstruction</title>
-    <summary>  Next Best View (NBV) algorithms aim to acquire an optimal set of images using
-minimal resources, time, or number of captures to enable efficient 3D
-reconstruction of a scene. Existing approaches often rely on prior scene
-knowledge or additional image captures and often develop policies that maximize
-coverage. Yet, for many real scenes with complex geometry and self-occlusions,
-coverage maximization does not lead to better reconstruction quality directly.
-In this paper, we propose the View Introspection Network (VIN), which is
-trained to predict the reconstruction quality improvement of views directly,
-and the VIN-NBV policy. A greedy sequential sampling-based policy, where at
-each acquisition step, we sample multiple query views and choose the one with
-the highest VIN predicted improvement score. We design the VIN to perform
-3D-aware featurization of the reconstruction built from prior acquisitions, and
-for each query view create a feature that can be decoded into an improvement
-score. We then train the VIN using imitation learning to predict the
-reconstruction improvement score. We show that VIN-NBV improves reconstruction
-quality by ~30% over a coverage maximization baseline when operating with
-constraints on the number of acquisitions or the time in motion.
-</summary>
-    <author>
-      <name>Noah Frahm</name>
-    </author>
-    <author>
-      <name>Dongxu Zhao</name>
-    </author>
-    <author>
-      <name>Andrea Dunn Beltran</name>
-    </author>
-    <author>
-      <name>Ron Alterovitz</name>
-    </author>
-    <author>
-      <name>Jan-Michael Frahm</name>
-    </author>
-    <author>
-      <name>Junier Oliva</name>
-    </author>
-    <author>
-      <name>Roni Sengupta</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">19 pages, 11 figures</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.06219v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.06219v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://dancegrpo.github.io/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.07818v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.07818v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.07817v1</id>
+    <updated>2025-05-12T17:59:32Z</updated>
+    <published>2025-05-12T17:59:32Z</published>
+    <title>Pixel Motion as Universal Representation for Robot Control</title>
+    <summary>  We present LangToMo, a vision-language-action framework structured as a
+dual-system architecture that uses pixel motion forecasts as intermediate
+representations. Our high-level System 2, an image diffusion model, generates
+text-conditioned pixel motion sequences from a single frame to guide robot
+control. Pixel motion-a universal, interpretable, and motion-centric
+representation-can be extracted from videos in a self-supervised manner,
+enabling diffusion model training on web-scale video-caption data. Treating
+generated pixel motion as learned universal representations, our low level
+System 1 module translates these into robot actions via motion-to-action
+mapping functions, which can be either hand-crafted or learned with minimal
+supervision. System 2 operates as a high-level policy applied at sparse
+temporal intervals, while System 1 acts as a low-level policy at dense temporal
+intervals. This hierarchical decoupling enables flexible, scalable, and
+generalizable robot control under both unsupervised and supervised settings,
+bridging the gap between language, motion, and action. Checkout
+https://kahnchana.github.io/LangToMo for visualizations.
+</summary>
+    <author>
+      <name>Kanchana Ranasinghe</name>
+    </author>
+    <author>
+      <name>Xiang Li</name>
+    </author>
+    <author>
+      <name>Cristina Mata</name>
+    </author>
+    <author>
+      <name>Jongwoo Park</name>
+    </author>
+    <author>
+      <name>Michael S Ryoo</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.07817v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.07817v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="I.2.10; I.2.9" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.07815v1</id>
+    <updated>2025-05-12T17:59:11Z</updated>
+    <published>2025-05-12T17:59:11Z</published>
+    <title>Imagine, Verify, Execute: Memory-Guided Agentic Exploration with
+  Vision-Language Models</title>
+    <summary>  Exploration is essential for general-purpose robotic learning, especially in
+open-ended environments where dense rewards, explicit goals, or task-specific
+supervision are scarce. Vision-language models (VLMs), with their semantic
+reasoning over objects, spatial relations, and potential outcomes, present a
+compelling foundation for generating high-level exploratory behaviors. However,
+their outputs are often ungrounded, making it difficult to determine whether
+imagined transitions are physically feasible or informative. To bridge the gap
+between imagination and execution, we present IVE (Imagine, Verify, Execute),
+an agentic exploration framework inspired by human curiosity. Human exploration
+is often driven by the desire to discover novel scene configurations and to
+deepen understanding of the environment. Similarly, IVE leverages VLMs to
+abstract RGB-D observations into semantic scene graphs, imagine novel scenes,
+predict their physical plausibility, and generate executable skill sequences
+through action tools. We evaluate IVE in both simulated and real-world tabletop
+environments. The results show that IVE enables more diverse and meaningful
+exploration than RL baselines, as evidenced by a 4.1 to 7.8x increase in the
+entropy of visited states. Moreover, the collected experience supports
+downstream learning, producing policies that closely match or exceed the
+performance of those trained on human-collected demonstrations.
+</summary>
+    <author>
+      <name>Seungjae Lee</name>
+    </author>
+    <author>
+      <name>Daniel Ekpo</name>
+    </author>
+    <author>
+      <name>Haowen Liu</name>
+    </author>
+    <author>
+      <name>Furong Huang</name>
+    </author>
+    <author>
+      <name>Abhinav Shrivastava</name>
+    </author>
+    <author>
+      <name>Jia-Bin Huang</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project webpage: https://ive-robot.github.io/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.07815v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.07815v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.07813v1</id>
+    <updated>2025-05-12T17:59:05Z</updated>
+    <published>2025-05-12T17:59:05Z</published>
+    <title>DexWild: Dexterous Human Interactions for In-the-Wild Robot Policies</title>
+    <summary>  Large-scale, diverse robot datasets have emerged as a promising path toward
+enabling dexterous manipulation policies to generalize to novel environments,
+but acquiring such datasets presents many challenges. While teleoperation
+provides high-fidelity datasets, its high cost limits its scalability. Instead,
+what if people could use their own hands, just as they do in everyday life, to
+collect data? In DexWild, a diverse team of data collectors uses their hands to
+collect hours of interactions across a multitude of environments and objects.
+To record this data, we create DexWild-System, a low-cost, mobile, and
+easy-to-use device. The DexWild learning framework co-trains on both human and
+robot demonstrations, leading to improved performance compared to training on
+each dataset individually. This combination results in robust robot policies
+capable of generalizing to novel environments, tasks, and embodiments with
+minimal additional robot-specific data. Experimental results demonstrate that
+DexWild significantly improves performance, achieving a 68.5% success rate in
+unseen environments-nearly four times higher than policies trained with robot
+data only-and offering 5.8x better cross-embodiment generalization. Video
+results, codebases, and instructions at https://dexwild.github.io
+</summary>
+    <author>
+      <name>Tony Tao</name>
+    </author>
+    <author>
+      <name>Mohan Kumar Srirama</name>
+    </author>
+    <author>
+      <name>Jason Jingzhou Liu</name>
+    </author>
+    <author>
+      <name>Kenneth Shaw</name>
+    </author>
+    <author>
+      <name>Deepak Pathak</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">In RSS 2025. Website at https://dexwild.github.io</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.07813v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.07813v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
