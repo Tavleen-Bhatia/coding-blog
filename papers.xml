@@ -3,274 +3,262 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-05-13T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">424348</opensearch:totalResults>
+  <updated>2025-05-14T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">424655</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2505.07819v1</id>
-    <updated>2025-05-12T17:59:43Z</updated>
-    <published>2025-05-12T17:59:43Z</published>
-    <title>H$^{\mathbf{3}}$DP: Triply-Hierarchical Diffusion Policy for Visuomotor
-  Learning</title>
-    <summary>  Visuomotor policy learning has witnessed substantial progress in robotic
-manipulation, with recent approaches predominantly relying on generative models
-to model the action distribution. However, these methods often overlook the
-critical coupling between visual perception and action prediction. In this
-work, we introduce $\textbf{Triply-Hierarchical Diffusion
-Policy}~(\textbf{H$^{\mathbf{3}}$DP})$, a novel visuomotor learning framework
-that explicitly incorporates hierarchical structures to strengthen the
-integration between visual features and action generation. H$^{3}$DP contains
-$\mathbf{3}$ levels of hierarchy: (1) depth-aware input layering that organizes
-RGB-D observations based on depth information; (2) multi-scale visual
-representations that encode semantic features at varying levels of granularity;
-and (3) a hierarchically conditioned diffusion process that aligns the
-generation of coarse-to-fine actions with corresponding visual features.
-Extensive experiments demonstrate that H$^{3}$DP yields a $\mathbf{+27.5\%}$
-average relative improvement over baselines across $\mathbf{44}$ simulation
-tasks and achieves superior performance in $\mathbf{4}$ challenging bimanual
-real-world manipulation tasks. Project Page: https://lyy-iiis.github.io/h3dp/.
+    <id>http://arxiv.org/abs/2505.08788v1</id>
+    <updated>2025-05-13T17:59:47Z</updated>
+    <published>2025-05-13T17:59:47Z</published>
+    <title>GNN-based Precoder Design and Fine-tuning for Cell-free Massive MIMO
+  with Real-world CSI</title>
+    <summary>  Cell-free massive MIMO (CF-mMIMO) has emerged as a promising paradigm for
+delivering uniformly high-quality coverage in future wireless networks. To
+address the inherent challenges of precoding in such distributed systems,
+recent studies have explored the use of graph neural network (GNN)-based
+methods, using their powerful representation capabilities. However, these
+approaches have predominantly been trained and validated on synthetic datasets,
+leaving their generalizability to real-world propagation environments largely
+unverified. In this work, we initially pre-train the GNN using simulated
+channel state information (CSI) data, which incorporates standard propagation
+models and small-scale Rayleigh fading. Subsequently, we finetune the model on
+real-world CSI measurements collected from a physical testbed equipped with
+distributed access points (APs). To balance the retention of pre-trained
+features with adaptation to real-world conditions, we adopt a layer-freezing
+strategy during fine-tuning, wherein several GNN layers are frozen and only the
+later layers remain trainable. Numerical results demonstrate that the
+fine-tuned GNN significantly outperforms the pre-trained model, achieving an
+approximate 8.2 bits per channel use gain at 20 dB signal-to-noise ratio (SNR),
+corresponding to a 15.7 % improvement. These findings highlight the critical
+role of transfer learning and underscore the potential of GNN-based precoding
+techniques to effectively generalize from synthetic to real-world wireless
+environments.
 </summary>
     <author>
-      <name>Yiyang Lu</name>
+      <name>Tianzheng Miao</name>
     </author>
     <author>
-      <name>Yufeng Tian</name>
+      <name>Thomas Feys</name>
     </author>
     <author>
-      <name>Zhecheng Yuan</name>
+      <name>Gilles Callebaut</name>
     </author>
     <author>
-      <name>Xianbang Wang</name>
+      <name>Jarne Van Mulders</name>
     </author>
     <author>
-      <name>Pu Hua</name>
+      <name>Emanuele Peschiera</name>
     </author>
     <author>
-      <name>Zhengrong Xue</name>
+      <name>Md Arifur Rahman</name>
     </author>
     <author>
-      <name>Huazhe Xu</name>
+      <name>François Rottenberg</name>
     </author>
-    <link href="http://arxiv.org/abs/2505.07819v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.07819v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">6 pages, 7 figures, conference</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.08788v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.08788v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="94A15 (Primary), 68T05 (Secondary)" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.07818v1</id>
-    <updated>2025-05-12T17:59:34Z</updated>
-    <published>2025-05-12T17:59:34Z</published>
-    <title>DanceGRPO: Unleashing GRPO on Visual Generation</title>
-    <summary>  Recent breakthroughs in generative models-particularly diffusion models and
-rectified flows-have revolutionized visual content creation, yet aligning model
-outputs with human preferences remains a critical challenge. Existing
-reinforcement learning (RL)-based methods for visual generation face critical
-limitations: incompatibility with modern Ordinary Differential Equations
-(ODEs)-based sampling paradigms, instability in large-scale training, and lack
-of validation for video generation. This paper introduces DanceGRPO, the first
-unified framework to adapt Group Relative Policy Optimization (GRPO) to visual
-generation paradigms, unleashing one unified RL algorithm across two generative
-paradigms (diffusion models and rectified flows), three tasks (text-to-image,
-text-to-video, image-to-video), four foundation models (Stable Diffusion,
-HunyuanVideo, FLUX, SkyReel-I2V), and five reward models (image/video
-aesthetics, text-image alignment, video motion quality, and binary reward). To
-our knowledge, DanceGRPO is the first RL-based unified framework capable of
-seamless adaptation across diverse generative paradigms, tasks, foundational
-models, and reward models. DanceGRPO demonstrates consistent and substantial
-improvements, which outperform baselines by up to 181% on benchmarks such as
-HPS-v2.1, CLIP Score, VideoAlign, and GenEval. Notably, DanceGRPO not only can
-stabilize policy optimization for complex video generation, but also enables
-generative policy to better capture denoising trajectories for Best-of-N
-inference scaling and learn from sparse binary feedback. Our results establish
-DanceGRPO as a robust and versatile solution for scaling Reinforcement Learning
-from Human Feedback (RLHF) tasks in visual generation, offering new insights
-into harmonizing reinforcement learning and visual synthesis. The code will be
-released.
+    <id>http://arxiv.org/abs/2505.08787v1</id>
+    <updated>2025-05-13T17:59:22Z</updated>
+    <published>2025-05-13T17:59:22Z</published>
+    <title>UniSkill: Imitating Human Videos via Cross-Embodiment Skill
+  Representations</title>
+    <summary>  Mimicry is a fundamental learning mechanism in humans, enabling individuals
+to learn new tasks by observing and imitating experts. However, applying this
+ability to robots presents significant challenges due to the inherent
+differences between human and robot embodiments in both their visual appearance
+and physical capabilities. While previous methods bridge this gap using
+cross-embodiment datasets with shared scenes and tasks, collecting such aligned
+data between humans and robots at scale is not trivial. In this paper, we
+propose UniSkill, a novel framework that learns embodiment-agnostic skill
+representations from large-scale cross-embodiment video data without any
+labels, enabling skills extracted from human video prompts to effectively
+transfer to robot policies trained only on robot data. Our experiments in both
+simulation and real-world environments show that our cross-embodiment skills
+successfully guide robots in selecting appropriate actions, even with unseen
+video prompts. The project website can be found at:
+https://kimhanjung.github.io/UniSkill.
 </summary>
     <author>
-      <name>Zeyue Xue</name>
+      <name>Hanjung Kim</name>
     </author>
     <author>
-      <name>Jie Wu</name>
+      <name>Jaehyun Kang</name>
     </author>
     <author>
-      <name>Yu Gao</name>
+      <name>Hyolim Kang</name>
     </author>
     <author>
-      <name>Fangyuan Kong</name>
+      <name>Meedeum Cho</name>
     </author>
     <author>
-      <name>Lingting Zhu</name>
+      <name>Seon Joo Kim</name>
     </author>
     <author>
-      <name>Mengzhao Chen</name>
+      <name>Youngwoon Lee</name>
     </author>
-    <author>
-      <name>Zhiheng Liu</name>
-    </author>
-    <author>
-      <name>Wei Liu</name>
-    </author>
-    <author>
-      <name>Qiushan Guo</name>
-    </author>
-    <author>
-      <name>Weilin Huang</name>
-    </author>
-    <author>
-      <name>Ping Luo</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://dancegrpo.github.io/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.07818v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.07818v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.07817v1</id>
-    <updated>2025-05-12T17:59:32Z</updated>
-    <published>2025-05-12T17:59:32Z</published>
-    <title>Pixel Motion as Universal Representation for Robot Control</title>
-    <summary>  We present LangToMo, a vision-language-action framework structured as a
-dual-system architecture that uses pixel motion forecasts as intermediate
-representations. Our high-level System 2, an image diffusion model, generates
-text-conditioned pixel motion sequences from a single frame to guide robot
-control. Pixel motion-a universal, interpretable, and motion-centric
-representation-can be extracted from videos in a self-supervised manner,
-enabling diffusion model training on web-scale video-caption data. Treating
-generated pixel motion as learned universal representations, our low level
-System 1 module translates these into robot actions via motion-to-action
-mapping functions, which can be either hand-crafted or learned with minimal
-supervision. System 2 operates as a high-level policy applied at sparse
-temporal intervals, while System 1 acts as a low-level policy at dense temporal
-intervals. This hierarchical decoupling enables flexible, scalable, and
-generalizable robot control under both unsupervised and supervised settings,
-bridging the gap between language, motion, and action. Checkout
-https://kahnchana.github.io/LangToMo for visualizations.
-</summary>
-    <author>
-      <name>Kanchana Ranasinghe</name>
-    </author>
-    <author>
-      <name>Xiang Li</name>
-    </author>
-    <author>
-      <name>Cristina Mata</name>
-    </author>
-    <author>
-      <name>Jongwoo Park</name>
-    </author>
-    <author>
-      <name>Michael S Ryoo</name>
-    </author>
-    <link href="http://arxiv.org/abs/2505.07817v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.07817v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://kimhanjung.github.io/UniSkill/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.08787v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.08787v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.07815v1</id>
-    <updated>2025-05-12T17:59:11Z</updated>
-    <published>2025-05-12T17:59:11Z</published>
-    <title>Imagine, Verify, Execute: Memory-Guided Agentic Exploration with
-  Vision-Language Models</title>
-    <summary>  Exploration is essential for general-purpose robotic learning, especially in
-open-ended environments where dense rewards, explicit goals, or task-specific
-supervision are scarce. Vision-language models (VLMs), with their semantic
-reasoning over objects, spatial relations, and potential outcomes, present a
-compelling foundation for generating high-level exploratory behaviors. However,
-their outputs are often ungrounded, making it difficult to determine whether
-imagined transitions are physically feasible or informative. To bridge the gap
-between imagination and execution, we present IVE (Imagine, Verify, Execute),
-an agentic exploration framework inspired by human curiosity. Human exploration
-is often driven by the desire to discover novel scene configurations and to
-deepen understanding of the environment. Similarly, IVE leverages VLMs to
-abstract RGB-D observations into semantic scene graphs, imagine novel scenes,
-predict their physical plausibility, and generate executable skill sequences
-through action tools. We evaluate IVE in both simulated and real-world tabletop
-environments. The results show that IVE enables more diverse and meaningful
-exploration than RL baselines, as evidenced by a 4.1 to 7.8x increase in the
-entropy of visited states. Moreover, the collected experience supports
-downstream learning, producing policies that closely match or exceed the
-performance of those trained on human-collected demonstrations.
+    <id>http://arxiv.org/abs/2505.08784v1</id>
+    <updated>2025-05-13T17:58:16Z</updated>
+    <published>2025-05-13T17:58:16Z</published>
+    <title>PCS-UQ: Uncertainty Quantification via the
+  Predictability-Computability-Stability Framework</title>
+    <summary>  As machine learning (ML) models are increasingly deployed in high-stakes
+domains, trustworthy uncertainty quantification (UQ) is critical for ensuring
+the safety and reliability of these models. Traditional UQ methods rely on
+specifying a true generative model and are not robust to misspecification. On
+the other hand, conformal inference allows for arbitrary ML models but does not
+consider model selection, which leads to large interval sizes. We tackle these
+drawbacks by proposing a UQ method based on the predictability, computability,
+and stability (PCS) framework for veridical data science proposed by Yu and
+Kumbier. Specifically, PCS-UQ addresses model selection by using a prediction
+check to screen out unsuitable models. PCS-UQ then fits these screened
+algorithms across multiple bootstraps to assess inter-sample variability and
+algorithmic instability, enabling more reliable uncertainty estimates. Further,
+we propose a novel calibration scheme that improves local adaptivity of our
+prediction sets. Experiments across $17$ regression and $6$ classification
+datasets show that PCS-UQ achieves the desired coverage and reduces width over
+conformal approaches by $\approx 20\%$. Further, our local analysis shows
+PCS-UQ often achieves target coverage across subgroups while conformal methods
+fail to do so. For large deep-learning models, we propose computationally
+efficient approximation schemes that avoid the expensive multiple bootstrap
+trainings of PCS-UQ. Across three computer vision benchmarks, PCS-UQ reduces
+prediction set size over conformal methods by $20\%$. Theoretically, we show a
+modified PCS-UQ algorithm is a form of split conformal inference and achieves
+the desired coverage with exchangeable data.
 </summary>
     <author>
-      <name>Seungjae Lee</name>
+      <name>Abhineet Agarwal</name>
     </author>
     <author>
-      <name>Daniel Ekpo</name>
+      <name>Michael Xiao</name>
     </author>
     <author>
-      <name>Haowen Liu</name>
+      <name>Rebecca Barter</name>
     </author>
     <author>
-      <name>Furong Huang</name>
+      <name>Omer Ronen</name>
     </author>
     <author>
-      <name>Abhinav Shrivastava</name>
+      <name>Boyu Fan</name>
     </author>
     <author>
-      <name>Jia-Bin Huang</name>
+      <name>Bin Yu</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project webpage: https://ive-robot.github.io/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.07815v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.07815v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <link href="http://arxiv.org/abs/2505.08784v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.08784v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ME" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.TH" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.07813v1</id>
-    <updated>2025-05-12T17:59:05Z</updated>
-    <published>2025-05-12T17:59:05Z</published>
-    <title>DexWild: Dexterous Human Interactions for In-the-Wild Robot Policies</title>
-    <summary>  Large-scale, diverse robot datasets have emerged as a promising path toward
-enabling dexterous manipulation policies to generalize to novel environments,
-but acquiring such datasets presents many challenges. While teleoperation
-provides high-fidelity datasets, its high cost limits its scalability. Instead,
-what if people could use their own hands, just as they do in everyday life, to
-collect data? In DexWild, a diverse team of data collectors uses their hands to
-collect hours of interactions across a multitude of environments and objects.
-To record this data, we create DexWild-System, a low-cost, mobile, and
-easy-to-use device. The DexWild learning framework co-trains on both human and
-robot demonstrations, leading to improved performance compared to training on
-each dataset individually. This combination results in robust robot policies
-capable of generalizing to novel environments, tasks, and embodiments with
-minimal additional robot-specific data. Experimental results demonstrate that
-DexWild significantly improves performance, achieving a 68.5% success rate in
-unseen environments-nearly four times higher than policies trained with robot
-data only-and offering 5.8x better cross-embodiment generalization. Video
-results, codebases, and instructions at https://dexwild.github.io
+    <id>http://arxiv.org/abs/2505.08783v1</id>
+    <updated>2025-05-13T17:58:08Z</updated>
+    <published>2025-05-13T17:58:08Z</published>
+    <title>CodePDE: An Inference Framework for LLM-driven PDE Solver Generation</title>
+    <summary>  Partial differential equations (PDEs) are fundamental to modeling physical
+systems, yet solving them remains a complex challenge. Traditional numerical
+solvers rely on expert knowledge to implement and are computationally
+expensive, while neural-network-based solvers require large training datasets
+and often lack interpretability. In this work, we frame PDE solving as a code
+generation task and introduce CodePDE, the first inference framework for
+generating PDE solvers using large language models (LLMs). Leveraging advanced
+inference-time algorithms and scaling strategies, CodePDE unlocks critical
+capacities of LLM for PDE solving: reasoning, debugging, selfrefinement, and
+test-time scaling -- all without task-specific tuning. CodePDE achieves
+superhuman performance across a range of representative PDE problems. We also
+present a systematic empirical analysis of LLM generated solvers, analyzing
+their accuracy, efficiency, and numerical scheme choices. Our findings
+highlight the promise and the current limitations of LLMs in PDE solving,
+offering a new perspective on solver design and opportunities for future model
+development. Our code is available at https://github.com/LithiumDA/CodePDE.
 </summary>
     <author>
-      <name>Tony Tao</name>
+      <name>Shanda Li</name>
     </author>
     <author>
-      <name>Mohan Kumar Srirama</name>
+      <name>Tanya Marwah</name>
     </author>
     <author>
-      <name>Jason Jingzhou Liu</name>
+      <name>Junhong Shen</name>
     </author>
     <author>
-      <name>Kenneth Shaw</name>
+      <name>Weiwei Sun</name>
     </author>
     <author>
-      <name>Deepak Pathak</name>
+      <name>Andrej Risteski</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">In RSS 2025. Website at https://dexwild.github.io</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.07813v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.07813v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Yiming Yang</name>
+    </author>
+    <author>
+      <name>Ameet Talwalkar</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.08783v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.08783v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.SY" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.NA" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.08782v1</id>
+    <updated>2025-05-13T17:57:53Z</updated>
+    <published>2025-05-13T17:57:53Z</published>
+    <title>Addressing the Current Challenges of Quantum Machine Learning through
+  Multi-Chip Ensembles</title>
+    <summary>  Quantum Machine Learning (QML) holds significant promise for solving
+computational challenges across diverse domains. However, its practical
+deployment is constrained by the limitations of noisy intermediate-scale
+quantum (NISQ) devices, including noise, limited scalability, and trainability
+issues in variational quantum circuits (VQCs). We introduce the multi-chip
+ensemble VQC framework, which partitions high-dimensional computations across
+smaller quantum chips to enhance scalability, trainability, and noise
+resilience. We show that this approach mitigates barren plateaus, reduces
+quantum error bias and variance, and maintains robust generalization through
+controlled entanglement. Designed to align with current and emerging quantum
+hardware, the framework demonstrates strong potential for enabling scalable QML
+on near-term devices, as validated by experiments on standard benchmark
+datasets (MNIST, FashionMNIST, CIFAR-10) and real world dataset (PhysioNet
+EEG).
+</summary>
+    <author>
+      <name>Junghoon Justin Park</name>
+    </author>
+    <author>
+      <name>Jiook Cha</name>
+    </author>
+    <author>
+      <name>Samuel Yen-Chi Chen</name>
+    </author>
+    <author>
+      <name>Huan-Hsin Tseng</name>
+    </author>
+    <author>
+      <name>Shinjae Yoo</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.08782v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.08782v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CE" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
