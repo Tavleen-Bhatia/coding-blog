@@ -3,163 +3,98 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-05-14T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">424655</opensearch:totalResults>
+  <updated>2025-05-15T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">424885</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2505.08788v1</id>
-    <updated>2025-05-13T17:59:47Z</updated>
-    <published>2025-05-13T17:59:47Z</published>
-    <title>GNN-based Precoder Design and Fine-tuning for Cell-free Massive MIMO
-  with Real-world CSI</title>
-    <summary>  Cell-free massive MIMO (CF-mMIMO) has emerged as a promising paradigm for
-delivering uniformly high-quality coverage in future wireless networks. To
-address the inherent challenges of precoding in such distributed systems,
-recent studies have explored the use of graph neural network (GNN)-based
-methods, using their powerful representation capabilities. However, these
-approaches have predominantly been trained and validated on synthetic datasets,
-leaving their generalizability to real-world propagation environments largely
-unverified. In this work, we initially pre-train the GNN using simulated
-channel state information (CSI) data, which incorporates standard propagation
-models and small-scale Rayleigh fading. Subsequently, we finetune the model on
-real-world CSI measurements collected from a physical testbed equipped with
-distributed access points (APs). To balance the retention of pre-trained
-features with adaptation to real-world conditions, we adopt a layer-freezing
-strategy during fine-tuning, wherein several GNN layers are frozen and only the
-later layers remain trainable. Numerical results demonstrate that the
-fine-tuned GNN significantly outperforms the pre-trained model, achieving an
-approximate 8.2 bits per channel use gain at 20 dB signal-to-noise ratio (SNR),
-corresponding to a 15.7 % improvement. These findings highlight the critical
-role of transfer learning and underscore the potential of GNN-based precoding
-techniques to effectively generalize from synthetic to real-world wireless
-environments.
+    <id>http://arxiv.org/abs/2505.09614v1</id>
+    <updated>2025-05-14T17:59:35Z</updated>
+    <published>2025-05-14T17:59:35Z</published>
+    <title>Language Agents Mirror Human Causal Reasoning Biases. How Can We Help
+  Them Think Like Scientists?</title>
+    <summary>  Language model (LM) agents are increasingly used as autonomous
+decision-makers who need to actively gather information to guide their
+decisions. A crucial cognitive skill for such agents is the efficient
+exploration and understanding of the causal structure of the world -- key to
+robust, scientifically grounded reasoning. Yet, it remains unclear whether LMs
+possess this capability or exhibit systematic biases leading to erroneous
+conclusions. In this work, we examine LMs' ability to explore and infer causal
+relationships, using the well-established "Blicket Test" paradigm from
+developmental psychology. We find that LMs reliably infer the common, intuitive
+disjunctive causal relationships but systematically struggle with the unusual,
+yet equally (or sometimes even more) evidenced conjunctive ones. This
+"disjunctive bias" persists across model families, sizes, and prompting
+strategies, and performance further declines as task complexity increases.
+Interestingly, an analogous bias appears in human adults, suggesting that LMs
+may have inherited deep-seated reasoning heuristics from their training data.
+To this end, we quantify similarities between LMs and humans, finding that LMs
+exhibit adult-like inference profiles (but not children-like). Finally, we
+propose a test-time sampling method which explicitly samples and eliminates
+hypotheses about causal relationships from the LM. This scalable approach
+significantly reduces the disjunctive bias and moves LMs closer to the goal of
+scientific, causally rigorous reasoning.
 </summary>
     <author>
-      <name>Tianzheng Miao</name>
+      <name>Anthony GX-Chen</name>
     </author>
     <author>
-      <name>Thomas Feys</name>
+      <name>Dongyan Lin</name>
     </author>
     <author>
-      <name>Gilles Callebaut</name>
+      <name>Mandana Samiei</name>
     </author>
     <author>
-      <name>Jarne Van Mulders</name>
+      <name>Doina Precup</name>
     </author>
     <author>
-      <name>Emanuele Peschiera</name>
+      <name>Blake A. Richards</name>
     </author>
     <author>
-      <name>Md Arifur Rahman</name>
+      <name>Rob Fergus</name>
     </author>
     <author>
-      <name>François Rottenberg</name>
+      <name>Kenneth Marino</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">6 pages, 7 figures, conference</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.08788v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.08788v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="94A15 (Primary), 68T05 (Secondary)" scheme="http://arxiv.org/schemas/atom"/>
+    <link href="http://arxiv.org/abs/2505.09614v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.09614v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.08787v1</id>
-    <updated>2025-05-13T17:59:22Z</updated>
-    <published>2025-05-13T17:59:22Z</published>
-    <title>UniSkill: Imitating Human Videos via Cross-Embodiment Skill
-  Representations</title>
-    <summary>  Mimicry is a fundamental learning mechanism in humans, enabling individuals
-to learn new tasks by observing and imitating experts. However, applying this
-ability to robots presents significant challenges due to the inherent
-differences between human and robot embodiments in both their visual appearance
-and physical capabilities. While previous methods bridge this gap using
-cross-embodiment datasets with shared scenes and tasks, collecting such aligned
-data between humans and robots at scale is not trivial. In this paper, we
-propose UniSkill, a novel framework that learns embodiment-agnostic skill
-representations from large-scale cross-embodiment video data without any
-labels, enabling skills extracted from human video prompts to effectively
-transfer to robot policies trained only on robot data. Our experiments in both
-simulation and real-world environments show that our cross-embodiment skills
-successfully guide robots in selecting appropriate actions, even with unseen
-video prompts. The project website can be found at:
-https://kimhanjung.github.io/UniSkill.
+    <id>http://arxiv.org/abs/2505.09612v1</id>
+    <updated>2025-05-14T17:59:17Z</updated>
+    <published>2025-05-14T17:59:17Z</published>
+    <title>Adaptively-weighted Nearest Neighbors for Matrix Completion</title>
+    <summary>  In this technical note, we introduce and analyze AWNN: an adaptively weighted
+nearest neighbor method for performing matrix completion. Nearest neighbor (NN)
+methods are widely used in missing data problems across multiple disciplines
+such as in recommender systems and for performing counterfactual inference in
+panel data settings. Prior works have shown that in addition to being very
+intuitive and easy to implement, NN methods enjoy nice theoretical guarantees.
+However, the performance of majority of the NN methods rely on the appropriate
+choice of the radii and the weights assigned to each member in the nearest
+neighbor set and despite several works on nearest neighbor methods in the past
+two decades, there does not exist a systematic approach of choosing the radii
+and the weights without relying on methods like cross-validation. AWNN
+addresses this challenge by judiciously balancing the bias variance trade off
+inherent in weighted nearest-neighbor regression. We provide theoretical
+guarantees for the proposed method under minimal assumptions and support the
+theory via synthetic experiments.
 </summary>
     <author>
-      <name>Hanjung Kim</name>
+      <name>Tathagata Sadhukhan</name>
     </author>
     <author>
-      <name>Jaehyun Kang</name>
+      <name>Manit Paul</name>
     </author>
     <author>
-      <name>Hyolim Kang</name>
+      <name>Raaz Dwivedi</name>
     </author>
-    <author>
-      <name>Meedeum Cho</name>
-    </author>
-    <author>
-      <name>Seon Joo Kim</name>
-    </author>
-    <author>
-      <name>Youngwoon Lee</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://kimhanjung.github.io/UniSkill/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.08787v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.08787v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.08784v1</id>
-    <updated>2025-05-13T17:58:16Z</updated>
-    <published>2025-05-13T17:58:16Z</published>
-    <title>PCS-UQ: Uncertainty Quantification via the
-  Predictability-Computability-Stability Framework</title>
-    <summary>  As machine learning (ML) models are increasingly deployed in high-stakes
-domains, trustworthy uncertainty quantification (UQ) is critical for ensuring
-the safety and reliability of these models. Traditional UQ methods rely on
-specifying a true generative model and are not robust to misspecification. On
-the other hand, conformal inference allows for arbitrary ML models but does not
-consider model selection, which leads to large interval sizes. We tackle these
-drawbacks by proposing a UQ method based on the predictability, computability,
-and stability (PCS) framework for veridical data science proposed by Yu and
-Kumbier. Specifically, PCS-UQ addresses model selection by using a prediction
-check to screen out unsuitable models. PCS-UQ then fits these screened
-algorithms across multiple bootstraps to assess inter-sample variability and
-algorithmic instability, enabling more reliable uncertainty estimates. Further,
-we propose a novel calibration scheme that improves local adaptivity of our
-prediction sets. Experiments across $17$ regression and $6$ classification
-datasets show that PCS-UQ achieves the desired coverage and reduces width over
-conformal approaches by $\approx 20\%$. Further, our local analysis shows
-PCS-UQ often achieves target coverage across subgroups while conformal methods
-fail to do so. For large deep-learning models, we propose computationally
-efficient approximation schemes that avoid the expensive multiple bootstrap
-trainings of PCS-UQ. Across three computer vision benchmarks, PCS-UQ reduces
-prediction set size over conformal methods by $20\%$. Theoretically, we show a
-modified PCS-UQ algorithm is a form of split conformal inference and achieves
-the desired coverage with exchangeable data.
-</summary>
-    <author>
-      <name>Abhineet Agarwal</name>
-    </author>
-    <author>
-      <name>Michael Xiao</name>
-    </author>
-    <author>
-      <name>Rebecca Barter</name>
-    </author>
-    <author>
-      <name>Omer Ronen</name>
-    </author>
-    <author>
-      <name>Boyu Fan</name>
-    </author>
-    <author>
-      <name>Bin Yu</name>
-    </author>
-    <link href="http://arxiv.org/abs/2505.08784v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.08784v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">25 pages, 6 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.09612v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.09612v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
     <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
@@ -168,97 +103,147 @@ the desired coverage with exchangeable data.
     <category term="stat.TH" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.08783v1</id>
-    <updated>2025-05-13T17:58:08Z</updated>
-    <published>2025-05-13T17:58:08Z</published>
-    <title>CodePDE: An Inference Framework for LLM-driven PDE Solver Generation</title>
-    <summary>  Partial differential equations (PDEs) are fundamental to modeling physical
-systems, yet solving them remains a complex challenge. Traditional numerical
-solvers rely on expert knowledge to implement and are computationally
-expensive, while neural-network-based solvers require large training datasets
-and often lack interpretability. In this work, we frame PDE solving as a code
-generation task and introduce CodePDE, the first inference framework for
-generating PDE solvers using large language models (LLMs). Leveraging advanced
-inference-time algorithms and scaling strategies, CodePDE unlocks critical
-capacities of LLM for PDE solving: reasoning, debugging, selfrefinement, and
-test-time scaling -- all without task-specific tuning. CodePDE achieves
-superhuman performance across a range of representative PDE problems. We also
-present a systematic empirical analysis of LLM generated solvers, analyzing
-their accuracy, efficiency, and numerical scheme choices. Our findings
-highlight the promise and the current limitations of LLMs in PDE solving,
-offering a new perspective on solver design and opportunities for future model
-development. Our code is available at https://github.com/LithiumDA/CodePDE.
+    <id>http://arxiv.org/abs/2505.09603v1</id>
+    <updated>2025-05-14T17:55:10Z</updated>
+    <published>2025-05-14T17:55:10Z</published>
+    <title>DataMIL: Selecting Data for Robot Imitation Learning with Datamodels</title>
+    <summary>  Recently, the robotics community has amassed ever larger and more diverse
+datasets to train generalist robot policies. However, while these policies
+achieve strong mean performance across a variety of tasks, they often
+underperform on individual, specialized tasks and require further tuning on
+newly acquired task-specific data. Combining task-specific data with carefully
+curated subsets of large prior datasets via co-training can produce better
+specialized policies, but selecting data naively may actually harm downstream
+performance. To address this, we introduce DataMIL, a policy-driven data
+selection framework built on the datamodels paradigm that reasons about data
+selection in an end-to-end manner, using the policy itself to identify which
+data points will most improve performance. Unlike standard practices that
+filter data using human notions of quality (e.g., based on semantic or visual
+similarity), DataMIL directly optimizes data selection for task success,
+allowing us to select data that enhance the policy while dropping data that
+degrade it. To avoid performing expensive rollouts in the environment during
+selection, we use a novel surrogate loss function on task-specific data,
+allowing us to use DataMIL in the real world without degrading performance. We
+validate our approach on a suite of more than 60 simulation and real-world
+manipulation tasks - most notably showing successful data selection from the
+Open X-Embodiment datasets-demonstrating consistent gains in success rates and
+superior performance over multiple baselines. Our results underscore the
+importance of end-to-end, performance-aware data selection for unlocking the
+potential of large prior datasets in robotics. More information at
+https://robin-lab.cs.utexas.edu/datamodels4imitation/
 </summary>
     <author>
-      <name>Shanda Li</name>
+      <name>Shivin Dass</name>
     </author>
     <author>
-      <name>Tanya Marwah</name>
+      <name>Alaa Khaddaj</name>
     </author>
     <author>
-      <name>Junhong Shen</name>
+      <name>Logan Engstrom</name>
     </author>
     <author>
-      <name>Weiwei Sun</name>
+      <name>Aleksander Madry</name>
     </author>
     <author>
-      <name>Andrej Risteski</name>
+      <name>Andrew Ilyas</name>
     </author>
     <author>
-      <name>Yiming Yang</name>
+      <name>Roberto Martín-Martín</name>
     </author>
-    <author>
-      <name>Ameet Talwalkar</name>
-    </author>
-    <link href="http://arxiv.org/abs/2505.08783v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.08783v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <link href="http://arxiv.org/abs/2505.09603v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.09603v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.NA" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.NA" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.08782v1</id>
-    <updated>2025-05-13T17:57:53Z</updated>
-    <published>2025-05-13T17:57:53Z</published>
-    <title>Addressing the Current Challenges of Quantum Machine Learning through
-  Multi-Chip Ensembles</title>
-    <summary>  Quantum Machine Learning (QML) holds significant promise for solving
-computational challenges across diverse domains. However, its practical
-deployment is constrained by the limitations of noisy intermediate-scale
-quantum (NISQ) devices, including noise, limited scalability, and trainability
-issues in variational quantum circuits (VQCs). We introduce the multi-chip
-ensemble VQC framework, which partitions high-dimensional computations across
-smaller quantum chips to enhance scalability, trainability, and noise
-resilience. We show that this approach mitigates barren plateaus, reduces
-quantum error bias and variance, and maintains robust generalization through
-controlled entanglement. Designed to align with current and emerging quantum
-hardware, the framework demonstrates strong potential for enabling scalable QML
-on near-term devices, as validated by experiments on standard benchmark
-datasets (MNIST, FashionMNIST, CIFAR-10) and real world dataset (PhysioNet
-EEG).
+    <id>http://arxiv.org/abs/2505.09602v1</id>
+    <updated>2025-05-14T17:52:10Z</updated>
+    <published>2025-05-14T17:52:10Z</published>
+    <title>Adversarial Suffix Filtering: a Defense Pipeline for LLMs</title>
+    <summary>  Large Language Models (LLMs) are increasingly embedded in autonomous systems
+and public-facing environments, yet they remain susceptible to jailbreak
+vulnerabilities that may undermine their security and trustworthiness.
+Adversarial suffixes are considered to be the current state-of-the-art
+jailbreak, consistently outperforming simpler methods and frequently succeeding
+even in black-box settings. Existing defenses rely on access to the internal
+architecture of models limiting diverse deployment, increase memory and
+computation footprints dramatically, or can be bypassed with simple prompt
+engineering methods. We introduce $\textbf{Adversarial Suffix Filtering}$
+(ASF), a lightweight novel model-agnostic defensive pipeline designed to
+protect LLMs against adversarial suffix attacks. ASF functions as an input
+preprocessor and sanitizer that detects and filters adversarially crafted
+suffixes in prompts, effectively neutralizing malicious injections. We
+demonstrate that ASF provides comprehensive defense capabilities across both
+black-box and white-box attack settings, reducing the attack efficacy of
+state-of-the-art adversarial suffix generation methods to below 4%, while only
+minimally affecting the target model's capabilities in non-adversarial
+scenarios.
 </summary>
     <author>
-      <name>Junghoon Justin Park</name>
+      <name>David Khachaturov</name>
     </author>
     <author>
-      <name>Jiook Cha</name>
+      <name>Robert Mullins</name>
     </author>
-    <author>
-      <name>Samuel Yen-Chi Chen</name>
-    </author>
-    <author>
-      <name>Huan-Hsin Tseng</name>
-    </author>
-    <author>
-      <name>Shinjae Yoo</name>
-    </author>
-    <link href="http://arxiv.org/abs/2505.08782v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.08782v1" rel="related" type="application/pdf"/>
+    <link href="http://arxiv.org/abs/2505.09602v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.09602v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.09601v1</id>
+    <updated>2025-05-14T17:50:35Z</updated>
+    <published>2025-05-14T17:50:35Z</published>
+    <title>Real2Render2Real: Scaling Robot Data Without Dynamics Simulation or
+  Robot Hardware</title>
+    <summary>  Scaling robot learning requires vast and diverse datasets. Yet the prevailing
+data collection paradigm-human teleoperation-remains costly and constrained by
+manual effort and physical robot access. We introduce Real2Render2Real (R2R2R),
+a novel approach for generating robot training data without relying on object
+dynamics simulation or teleoperation of robot hardware. The input is a
+smartphone-captured scan of one or more objects and a single video of a human
+demonstration. R2R2R renders thousands of high visual fidelity robot-agnostic
+demonstrations by reconstructing detailed 3D object geometry and appearance,
+and tracking 6-DoF object motion. R2R2R uses 3D Gaussian Splatting (3DGS) to
+enable flexible asset generation and trajectory synthesis for both rigid and
+articulated objects, converting these representations to meshes to maintain
+compatibility with scalable rendering engines like IsaacLab but with collision
+modeling off. Robot demonstration data generated by R2R2R integrates directly
+with models that operate on robot proprioceptive states and image observations,
+such as vision-language-action models (VLA) and imitation learning policies.
+Physical experiments suggest that models trained on R2R2R data from a single
+human demonstration can match the performance of models trained on 150 human
+teleoperation demonstrations. Project page: https://real2render2real.com
+</summary>
+    <author>
+      <name>Justin Yu</name>
+    </author>
+    <author>
+      <name>Letian Fu</name>
+    </author>
+    <author>
+      <name>Huang Huang</name>
+    </author>
+    <author>
+      <name>Karim El-Refai</name>
+    </author>
+    <author>
+      <name>Rares Andrei Ambrus</name>
+    </author>
+    <author>
+      <name>Richard Cheng</name>
+    </author>
+    <author>
+      <name>Muhammad Zubair Irshad</name>
+    </author>
+    <author>
+      <name>Ken Goldberg</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.09601v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.09601v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
