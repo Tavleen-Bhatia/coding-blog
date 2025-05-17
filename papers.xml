@@ -3,247 +3,299 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-05-15T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">424885</opensearch:totalResults>
+  <updated>2025-05-16T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">425144</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2505.09614v1</id>
-    <updated>2025-05-14T17:59:35Z</updated>
-    <published>2025-05-14T17:59:35Z</published>
-    <title>Language Agents Mirror Human Causal Reasoning Biases. How Can We Help
-  Them Think Like Scientists?</title>
-    <summary>  Language model (LM) agents are increasingly used as autonomous
-decision-makers who need to actively gather information to guide their
-decisions. A crucial cognitive skill for such agents is the efficient
-exploration and understanding of the causal structure of the world -- key to
-robust, scientifically grounded reasoning. Yet, it remains unclear whether LMs
-possess this capability or exhibit systematic biases leading to erroneous
-conclusions. In this work, we examine LMs' ability to explore and infer causal
-relationships, using the well-established "Blicket Test" paradigm from
-developmental psychology. We find that LMs reliably infer the common, intuitive
-disjunctive causal relationships but systematically struggle with the unusual,
-yet equally (or sometimes even more) evidenced conjunctive ones. This
-"disjunctive bias" persists across model families, sizes, and prompting
-strategies, and performance further declines as task complexity increases.
-Interestingly, an analogous bias appears in human adults, suggesting that LMs
-may have inherited deep-seated reasoning heuristics from their training data.
-To this end, we quantify similarities between LMs and humans, finding that LMs
-exhibit adult-like inference profiles (but not children-like). Finally, we
-propose a test-time sampling method which explicitly samples and eliminates
-hypotheses about causal relationships from the LM. This scalable approach
-significantly reduces the disjunctive bias and moves LMs closer to the goal of
-scientific, causally rigorous reasoning.
+    <id>http://arxiv.org/abs/2505.10566v1</id>
+    <updated>2025-05-15T17:59:51Z</updated>
+    <published>2025-05-15T17:59:51Z</published>
+    <title>3D-Fixup: Advancing Photo Editing with 3D Priors</title>
+    <summary>  Despite significant advances in modeling image priors via diffusion models,
+3D-aware image editing remains challenging, in part because the object is only
+specified via a single image. To tackle this challenge, we propose 3D-Fixup, a
+new framework for editing 2D images guided by learned 3D priors. The framework
+supports difficult editing situations such as object translation and 3D
+rotation. To achieve this, we leverage a training-based approach that harnesses
+the generative power of diffusion models. As video data naturally encodes
+real-world physical dynamics, we turn to video data for generating training
+data pairs, i.e., a source and a target frame. Rather than relying solely on a
+single trained model to infer transformations between source and target frames,
+we incorporate 3D guidance from an Image-to-3D model, which bridges this
+challenging task by explicitly projecting 2D information into 3D space. We
+design a data generation pipeline to ensure high-quality 3D guidance throughout
+training. Results show that by integrating these 3D priors, 3D-Fixup
+effectively supports complex, identity coherent 3D-aware edits, achieving
+high-quality results and advancing the application of diffusion models in
+realistic image manipulation. The code is provided at
+https://3dfixup.github.io/
 </summary>
     <author>
-      <name>Anthony GX-Chen</name>
+      <name>Yen-Chi Cheng</name>
     </author>
     <author>
-      <name>Dongyan Lin</name>
+      <name>Krishna Kumar Singh</name>
     </author>
     <author>
-      <name>Mandana Samiei</name>
+      <name>Jae Shin Yoon</name>
     </author>
     <author>
-      <name>Doina Precup</name>
+      <name>Alex Schwing</name>
     </author>
     <author>
-      <name>Blake A. Richards</name>
+      <name>Liangyan Gui</name>
     </author>
     <author>
-      <name>Rob Fergus</name>
+      <name>Matheus Gadelha</name>
     </author>
     <author>
-      <name>Kenneth Marino</name>
+      <name>Paul Guerrero</name>
     </author>
-    <link href="http://arxiv.org/abs/2505.09614v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.09614v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Nanxuan Zhao</name>
+    </author>
+    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1145/3721238.3730695</arxiv:doi>
+    <link title="doi" href="http://dx.doi.org/10.1145/3721238.3730695" rel="related"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">SIGGRAPH 2025. Project page: https://3dfixup.github.io/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.10566v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.10566v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.09612v1</id>
-    <updated>2025-05-14T17:59:17Z</updated>
-    <published>2025-05-14T17:59:17Z</published>
-    <title>Adaptively-weighted Nearest Neighbors for Matrix Completion</title>
-    <summary>  In this technical note, we introduce and analyze AWNN: an adaptively weighted
-nearest neighbor method for performing matrix completion. Nearest neighbor (NN)
-methods are widely used in missing data problems across multiple disciplines
-such as in recommender systems and for performing counterfactual inference in
-panel data settings. Prior works have shown that in addition to being very
-intuitive and easy to implement, NN methods enjoy nice theoretical guarantees.
-However, the performance of majority of the NN methods rely on the appropriate
-choice of the radii and the weights assigned to each member in the nearest
-neighbor set and despite several works on nearest neighbor methods in the past
-two decades, there does not exist a systematic approach of choosing the radii
-and the weights without relying on methods like cross-validation. AWNN
-addresses this challenge by judiciously balancing the bias variance trade off
-inherent in weighted nearest-neighbor regression. We provide theoretical
-guarantees for the proposed method under minimal assumptions and support the
-theory via synthetic experiments.
+    <id>http://arxiv.org/abs/2505.10561v1</id>
+    <updated>2025-05-15T17:59:29Z</updated>
+    <published>2025-05-15T17:59:29Z</published>
+    <title>T2A-Feedback: Improving Basic Capabilities of Text-to-Audio Generation
+  via Fine-grained AI Feedback</title>
+    <summary>  Text-to-audio (T2A) generation has achieved remarkable progress in generating
+a variety of audio outputs from language prompts. However, current
+state-of-the-art T2A models still struggle to satisfy human preferences for
+prompt-following and acoustic quality when generating complex multi-event
+audio. To improve the performance of the model in these high-level
+applications, we propose to enhance the basic capabilities of the model with AI
+feedback learning. First, we introduce fine-grained AI audio scoring pipelines
+to: 1) verify whether each event in the text prompt is present in the audio
+(Event Occurrence Score), 2) detect deviations in event sequences from the
+language description (Event Sequence Score), and 3) assess the overall acoustic
+and harmonic quality of the generated audio (Acoustic&amp;Harmonic Quality). We
+evaluate these three automatic scoring pipelines and find that they correlate
+significantly better with human preferences than other evaluation metrics. This
+highlights their value as both feedback signals and evaluation metrics.
+Utilizing our robust scoring pipelines, we construct a large audio preference
+dataset, T2A-FeedBack, which contains 41k prompts and 249k audios, each
+accompanied by detailed scores. Moreover, we introduce T2A-EpicBench, a
+benchmark that focuses on long captions, multi-events, and story-telling
+scenarios, aiming to evaluate the advanced capabilities of T2A models. Finally,
+we demonstrate how T2A-FeedBack can enhance current state-of-the-art audio
+model. With simple preference tuning, the audio generation model exhibits
+significant improvements in both simple (AudioCaps test set) and complex
+(T2A-EpicBench) scenarios.
 </summary>
     <author>
-      <name>Tathagata Sadhukhan</name>
+      <name>Zehan Wang</name>
     </author>
     <author>
-      <name>Manit Paul</name>
+      <name>Ke Lei</name>
     </author>
     <author>
-      <name>Raaz Dwivedi</name>
+      <name>Chen Zhu</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">25 pages, 6 figures</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.09612v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.09612v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="stat.ME" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="stat.TH" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Jiawei Huang</name>
+    </author>
+    <author>
+      <name>Sashuai Zhou</name>
+    </author>
+    <author>
+      <name>Luping Liu</name>
+    </author>
+    <author>
+      <name>Xize Cheng</name>
+    </author>
+    <author>
+      <name>Shengpeng Ji</name>
+    </author>
+    <author>
+      <name>Zhenhui Ye</name>
+    </author>
+    <author>
+      <name>Tao Jin</name>
+    </author>
+    <author>
+      <name>Zhou Zhao</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">ACL 2025</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.10561v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.10561v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.09603v1</id>
-    <updated>2025-05-14T17:55:10Z</updated>
-    <published>2025-05-14T17:55:10Z</published>
-    <title>DataMIL: Selecting Data for Robot Imitation Learning with Datamodels</title>
-    <summary>  Recently, the robotics community has amassed ever larger and more diverse
-datasets to train generalist robot policies. However, while these policies
-achieve strong mean performance across a variety of tasks, they often
-underperform on individual, specialized tasks and require further tuning on
-newly acquired task-specific data. Combining task-specific data with carefully
-curated subsets of large prior datasets via co-training can produce better
-specialized policies, but selecting data naively may actually harm downstream
-performance. To address this, we introduce DataMIL, a policy-driven data
-selection framework built on the datamodels paradigm that reasons about data
-selection in an end-to-end manner, using the policy itself to identify which
-data points will most improve performance. Unlike standard practices that
-filter data using human notions of quality (e.g., based on semantic or visual
-similarity), DataMIL directly optimizes data selection for task success,
-allowing us to select data that enhance the policy while dropping data that
-degrade it. To avoid performing expensive rollouts in the environment during
-selection, we use a novel surrogate loss function on task-specific data,
-allowing us to use DataMIL in the real world without degrading performance. We
-validate our approach on a suite of more than 60 simulation and real-world
-manipulation tasks - most notably showing successful data selection from the
-Open X-Embodiment datasets-demonstrating consistent gains in success rates and
-superior performance over multiple baselines. Our results underscore the
-importance of end-to-end, performance-aware data selection for unlocking the
-potential of large prior datasets in robotics. More information at
-https://robin-lab.cs.utexas.edu/datamodels4imitation/
+    <id>http://arxiv.org/abs/2505.10559v1</id>
+    <updated>2025-05-15T17:59:22Z</updated>
+    <published>2025-05-15T17:59:22Z</published>
+    <title>Neural Thermodynamic Laws for Large Language Model Training</title>
+    <summary>  Beyond neural scaling laws, little is known about the laws underlying large
+language models (LLMs). We introduce Neural Thermodynamic Laws (NTL) -- a new
+framework that offers fresh insights into LLM training dynamics. On the
+theoretical side, we demonstrate that key thermodynamic quantities (e.g.,
+temperature, entropy, heat capacity, thermal conduction) and classical
+thermodynamic principles (e.g., the three laws of thermodynamics and the
+equipartition theorem) naturally emerge under river-valley loss landscape
+assumptions. On the practical side, this scientific perspective yields
+intuitive guidelines for designing learning rate schedules.
 </summary>
     <author>
-      <name>Shivin Dass</name>
+      <name>Ziming Liu</name>
     </author>
     <author>
-      <name>Alaa Khaddaj</name>
+      <name>Yizhou Liu</name>
     </author>
     <author>
-      <name>Logan Engstrom</name>
+      <name>Jeff Gore</name>
     </author>
     <author>
-      <name>Aleksander Madry</name>
+      <name>Max Tegmark</name>
     </author>
-    <author>
-      <name>Andrew Ilyas</name>
-    </author>
-    <author>
-      <name>Roberto Martín-Martín</name>
-    </author>
-    <link href="http://arxiv.org/abs/2505.09603v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.09603v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.09602v1</id>
-    <updated>2025-05-14T17:52:10Z</updated>
-    <published>2025-05-14T17:52:10Z</published>
-    <title>Adversarial Suffix Filtering: a Defense Pipeline for LLMs</title>
-    <summary>  Large Language Models (LLMs) are increasingly embedded in autonomous systems
-and public-facing environments, yet they remain susceptible to jailbreak
-vulnerabilities that may undermine their security and trustworthiness.
-Adversarial suffixes are considered to be the current state-of-the-art
-jailbreak, consistently outperforming simpler methods and frequently succeeding
-even in black-box settings. Existing defenses rely on access to the internal
-architecture of models limiting diverse deployment, increase memory and
-computation footprints dramatically, or can be bypassed with simple prompt
-engineering methods. We introduce $\textbf{Adversarial Suffix Filtering}$
-(ASF), a lightweight novel model-agnostic defensive pipeline designed to
-protect LLMs against adversarial suffix attacks. ASF functions as an input
-preprocessor and sanitizer that detects and filters adversarially crafted
-suffixes in prompts, effectively neutralizing malicious injections. We
-demonstrate that ASF provides comprehensive defense capabilities across both
-black-box and white-box attack settings, reducing the attack efficacy of
-state-of-the-art adversarial suffix generation methods to below 4%, while only
-minimally affecting the target model's capabilities in non-adversarial
-scenarios.
-</summary>
-    <author>
-      <name>David Khachaturov</name>
-    </author>
-    <author>
-      <name>Robert Mullins</name>
-    </author>
-    <link href="http://arxiv.org/abs/2505.09602v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.09602v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">18 pages, 10 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.10559v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.10559v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.data-an" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.09601v1</id>
-    <updated>2025-05-14T17:50:35Z</updated>
-    <published>2025-05-14T17:50:35Z</published>
-    <title>Real2Render2Real: Scaling Robot Data Without Dynamics Simulation or
-  Robot Hardware</title>
-    <summary>  Scaling robot learning requires vast and diverse datasets. Yet the prevailing
-data collection paradigm-human teleoperation-remains costly and constrained by
-manual effort and physical robot access. We introduce Real2Render2Real (R2R2R),
-a novel approach for generating robot training data without relying on object
-dynamics simulation or teleoperation of robot hardware. The input is a
-smartphone-captured scan of one or more objects and a single video of a human
-demonstration. R2R2R renders thousands of high visual fidelity robot-agnostic
-demonstrations by reconstructing detailed 3D object geometry and appearance,
-and tracking 6-DoF object motion. R2R2R uses 3D Gaussian Splatting (3DGS) to
-enable flexible asset generation and trajectory synthesis for both rigid and
-articulated objects, converting these representations to meshes to maintain
-compatibility with scalable rendering engines like IsaacLab but with collision
-modeling off. Robot demonstration data generated by R2R2R integrates directly
-with models that operate on robot proprioceptive states and image observations,
-such as vision-language-action models (VLA) and imitation learning policies.
-Physical experiments suggest that models trained on R2R2R data from a single
-human demonstration can match the performance of models trained on 150 human
-teleoperation demonstrations. Project page: https://real2render2real.com
+    <id>http://arxiv.org/abs/2505.10556v1</id>
+    <updated>2025-05-15T17:59:07Z</updated>
+    <published>2025-05-15T17:59:07Z</published>
+    <title>An AI-driven framework for the prediction of personalised health
+  response to air pollution</title>
+    <summary>  Air pollution poses a significant threat to public health, causing or
+exacerbating many respiratory and cardiovascular diseases. In addition, climate
+change is bringing about more extreme weather events such as wildfires and
+heatwaves, which can increase levels of pollution and worsen the effects of
+pollution exposure. Recent advances in personal sensing have transformed the
+collection of behavioural and physiological data, leading to the potential for
+new improvements in healthcare. We wish to capitalise on this data, alongside
+new capabilities in AI for making time series predictions, in order to monitor
+and predict health outcomes for an individual. Thus, we present a novel
+workflow for predicting personalised health responses to pollution by
+integrating physiological data from wearable fitness devices with real-time
+environmental exposures. The data is collected from various sources in a secure
+and ethical manner, and is used to train an AI model to predict individual
+health responses to pollution exposure within a cloud-based, modular framework.
+We demonstrate that the AI model -- an Adversarial Autoencoder neural network
+in this case -- accurately reconstructs time-dependent health signals and
+captures nonlinear responses to pollution. Transfer learning is applied using
+data from a personal smartwatch, which increases the generalisation abilities
+of the AI model and illustrates the adaptability of the approach to real-world,
+user-generated data.
 </summary>
     <author>
-      <name>Justin Yu</name>
+      <name>Nazanin Zounemat Kermani</name>
     </author>
     <author>
-      <name>Letian Fu</name>
+      <name>Sadjad Naderi</name>
     </author>
     <author>
-      <name>Huang Huang</name>
+      <name>Claire H. Dilliway</name>
     </author>
     <author>
-      <name>Karim El-Refai</name>
+      <name>Claire E. Heaney</name>
     </author>
     <author>
-      <name>Rares Andrei Ambrus</name>
+      <name>Shrreya Behll</name>
     </author>
     <author>
-      <name>Richard Cheng</name>
+      <name>Boyang Chen</name>
     </author>
     <author>
-      <name>Muhammad Zubair Irshad</name>
+      <name>Hisham Abubakar-Waziri</name>
     </author>
     <author>
-      <name>Ken Goldberg</name>
+      <name>Alexandra E. Porter</name>
     </author>
-    <link href="http://arxiv.org/abs/2505.09601v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.09601v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Marc Chadeau-Hyam</name>
+    </author>
+    <author>
+      <name>Fangxin Fang</name>
+    </author>
+    <author>
+      <name>Ian M. Adcock</name>
+    </author>
+    <author>
+      <name>Kian Fan Chung</name>
+    </author>
+    <author>
+      <name>Christopher C. Pain</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Kermani and Naderi share first authorship. 20 pages, 6 figures and 1
+  table</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.10556v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.10556v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.ao-ph" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.10554v1</id>
+    <updated>2025-05-15T17:58:33Z</updated>
+    <published>2025-05-15T17:58:33Z</published>
+    <title>Beyond 'Aha!': Toward Systematic Meta-Abilities Alignment in Large
+  Reasoning Models</title>
+    <summary>  Large reasoning models (LRMs) already possess a latent capacity for long
+chain-of-thought reasoning. Prior work has shown that outcome-based
+reinforcement learning (RL) can incidentally elicit advanced reasoning
+behaviors such as self-correction, backtracking, and verification phenomena
+often referred to as the model's "aha moment". However, the timing and
+consistency of these emergent behaviors remain unpredictable and
+uncontrollable, limiting the scalability and reliability of LRMs' reasoning
+capabilities. To address these limitations, we move beyond reliance on prompts
+and coincidental "aha moments". Instead, we explicitly align models with three
+meta-abilities: deduction, induction, and abduction, using automatically
+generated, self-verifiable tasks. Our three stage-pipeline individual
+alignment, parameter-space merging, and domain-specific reinforcement learning,
+boosting performance by over 10\% relative to instruction-tuned baselines.
+Furthermore, domain-specific RL from the aligned checkpoint yields an
+additional 2\% average gain in the performance ceiling across math, coding, and
+science benchmarks, demonstrating that explicit meta-ability alignment offers a
+scalable and dependable foundation for reasoning. Code is available at:
+https://github.com/zhiyuanhubj/Meta-Ability-Alignment
+</summary>
+    <author>
+      <name>Zhiyuan Hu</name>
+    </author>
+    <author>
+      <name>Yibo Wang</name>
+    </author>
+    <author>
+      <name>Hanze Dong</name>
+    </author>
+    <author>
+      <name>Yuhui Xu</name>
+    </author>
+    <author>
+      <name>Amrita Saha</name>
+    </author>
+    <author>
+      <name>Caiming Xiong</name>
+    </author>
+    <author>
+      <name>Bryan Hooi</name>
+    </author>
+    <author>
+      <name>Junnan Li</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">In Progress</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.10554v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.10554v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
