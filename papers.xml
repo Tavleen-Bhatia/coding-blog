@@ -3,299 +3,236 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-05-18T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">425144</opensearch:totalResults>
+  <updated>2025-05-19T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">425470</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2505.10566v1</id>
-    <updated>2025-05-15T17:59:51Z</updated>
-    <published>2025-05-15T17:59:51Z</published>
-    <title>3D-Fixup: Advancing Photo Editing with 3D Priors</title>
-    <summary>  Despite significant advances in modeling image priors via diffusion models,
-3D-aware image editing remains challenging, in part because the object is only
-specified via a single image. To tackle this challenge, we propose 3D-Fixup, a
-new framework for editing 2D images guided by learned 3D priors. The framework
-supports difficult editing situations such as object translation and 3D
-rotation. To achieve this, we leverage a training-based approach that harnesses
-the generative power of diffusion models. As video data naturally encodes
-real-world physical dynamics, we turn to video data for generating training
-data pairs, i.e., a source and a target frame. Rather than relying solely on a
-single trained model to infer transformations between source and target frames,
-we incorporate 3D guidance from an Image-to-3D model, which bridges this
-challenging task by explicitly projecting 2D information into 3D space. We
-design a data generation pipeline to ensure high-quality 3D guidance throughout
-training. Results show that by integrating these 3D priors, 3D-Fixup
-effectively supports complex, identity coherent 3D-aware edits, achieving
-high-quality results and advancing the application of diffusion models in
-realistic image manipulation. The code is provided at
-https://3dfixup.github.io/
+    <id>http://arxiv.org/abs/2505.11494v1</id>
+    <updated>2025-05-16T17:57:03Z</updated>
+    <published>2025-05-16T17:57:03Z</published>
+    <title>SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics</title>
+    <summary>  Robot learning has produced remarkably effective ``black-box'' controllers
+for complex tasks such as dynamic locomotion on humanoids. Yet ensuring dynamic
+safety, i.e., constraint satisfaction, remains challenging for such policies.
+Reinforcement learning (RL) embeds constraints heuristically through reward
+engineering, and adding or modifying constraints requires retraining.
+Model-based approaches, like control barrier functions (CBFs), enable runtime
+constraint specification with formal guarantees but require accurate dynamics
+models. This paper presents SHIELD, a layered safety framework that bridges
+this gap by: (1) training a generative, stochastic dynamics residual model
+using real-world data from hardware rollouts of the nominal controller,
+capturing system behavior and uncertainties; and (2) adding a safety layer on
+top of the nominal (learned locomotion) controller that leverages this model
+via a stochastic discrete-time CBF formulation enforcing safety constraints in
+probability. The result is a minimally-invasive safety layer that can be added
+to the existing autonomy stack to give probabilistic guarantees of safety that
+balance risk and performance. In hardware experiments on an Unitree G1
+humanoid, SHIELD enables safe navigation (obstacle avoidance) through varied
+indoor and outdoor environments using a nominal (unknown) RL controller and
+onboard perception.
 </summary>
     <author>
-      <name>Yen-Chi Cheng</name>
+      <name>Lizhi Yang</name>
     </author>
     <author>
-      <name>Krishna Kumar Singh</name>
+      <name>Blake Werner</name>
     </author>
     <author>
-      <name>Jae Shin Yoon</name>
+      <name>Ryan K. Cosner</name>
     </author>
     <author>
-      <name>Alex Schwing</name>
+      <name>David Fridovich-Keil</name>
     </author>
     <author>
-      <name>Liangyan Gui</name>
+      <name>Preston Culbertson</name>
     </author>
     <author>
-      <name>Matheus Gadelha</name>
+      <name>Aaron D. Ames</name>
     </author>
-    <author>
-      <name>Paul Guerrero</name>
-    </author>
-    <author>
-      <name>Nanxuan Zhao</name>
-    </author>
-    <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1145/3721238.3730695</arxiv:doi>
-    <link title="doi" href="http://dx.doi.org/10.1145/3721238.3730695" rel="related"/>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">SIGGRAPH 2025. Project page: https://3dfixup.github.io/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.10566v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.10566v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Video at https://vimeo.com/1061676063</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.11494v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.11494v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.10561v1</id>
-    <updated>2025-05-15T17:59:29Z</updated>
-    <published>2025-05-15T17:59:29Z</published>
-    <title>T2A-Feedback: Improving Basic Capabilities of Text-to-Audio Generation
-  via Fine-grained AI Feedback</title>
-    <summary>  Text-to-audio (T2A) generation has achieved remarkable progress in generating
-a variety of audio outputs from language prompts. However, current
-state-of-the-art T2A models still struggle to satisfy human preferences for
-prompt-following and acoustic quality when generating complex multi-event
-audio. To improve the performance of the model in these high-level
-applications, we propose to enhance the basic capabilities of the model with AI
-feedback learning. First, we introduce fine-grained AI audio scoring pipelines
-to: 1) verify whether each event in the text prompt is present in the audio
-(Event Occurrence Score), 2) detect deviations in event sequences from the
-language description (Event Sequence Score), and 3) assess the overall acoustic
-and harmonic quality of the generated audio (Acoustic&amp;Harmonic Quality). We
-evaluate these three automatic scoring pipelines and find that they correlate
-significantly better with human preferences than other evaluation metrics. This
-highlights their value as both feedback signals and evaluation metrics.
-Utilizing our robust scoring pipelines, we construct a large audio preference
-dataset, T2A-FeedBack, which contains 41k prompts and 249k audios, each
-accompanied by detailed scores. Moreover, we introduce T2A-EpicBench, a
-benchmark that focuses on long captions, multi-events, and story-telling
-scenarios, aiming to evaluate the advanced capabilities of T2A models. Finally,
-we demonstrate how T2A-FeedBack can enhance current state-of-the-art audio
-model. With simple preference tuning, the audio generation model exhibits
-significant improvements in both simple (AudioCaps test set) and complex
-(T2A-EpicBench) scenarios.
+    <id>http://arxiv.org/abs/2505.11491v1</id>
+    <updated>2025-05-16T17:55:06Z</updated>
+    <published>2025-05-16T17:55:06Z</published>
+    <title>Potential failures of physics-informed machine learning in traffic flow
+  modeling: theoretical and experimental analysis</title>
+    <summary>  This study critically examines the performance of physics-informed machine
+learning (PIML) approaches for traffic flow modeling, defining the failure of a
+PIML model as the scenario where it underperforms both its purely data-driven
+and purely physics-based counterparts. We analyze the loss landscape by
+perturbing trained models along the principal eigenvectors of the Hessian
+matrix and evaluating corresponding loss values. Our results suggest that
+physics residuals in PIML do not inherently hinder optimization, contrary to a
+commonly assumed failure cause. Instead, successful parameter updates require
+both ML and physics gradients to form acute angles with the quasi-true gradient
+and lie within a conical region. Given inaccuracies in both the physics models
+and the training data, satisfying this condition is often difficult.
+Experiments reveal that physical residuals can degrade the performance of LWR-
+and ARZ-based PIML models, especially under highly physics-driven settings.
+Moreover, sparse sampling and the use of temporally averaged traffic data can
+produce misleadingly small physics residuals that fail to capture actual
+physical dynamics, contributing to model failure. We also identify the
+Courant-Friedrichs-Lewy (CFL) condition as a key indicator of dataset
+suitability for PIML, where successful applications consistently adhere to this
+criterion. Lastly, we observe that higher-order models like ARZ tend to have
+larger error lower bounds than lower-order models like LWR, which is consistent
+with the experimental findings of existing studies.
 </summary>
     <author>
-      <name>Zehan Wang</name>
+      <name>Yuan-Zheng Lei</name>
     </author>
     <author>
-      <name>Ke Lei</name>
+      <name>Yaobang Gong</name>
     </author>
     <author>
-      <name>Chen Zhu</name>
+      <name>Dianwei Chen</name>
     </author>
     <author>
-      <name>Jiawei Huang</name>
+      <name>Yao Cheng</name>
     </author>
     <author>
-      <name>Sashuai Zhou</name>
+      <name>Xianfeng Terry Yang</name>
     </author>
-    <author>
-      <name>Luping Liu</name>
-    </author>
-    <author>
-      <name>Xize Cheng</name>
-    </author>
-    <author>
-      <name>Shengpeng Ji</name>
-    </author>
-    <author>
-      <name>Zhenhui Ye</name>
-    </author>
-    <author>
-      <name>Tao Jin</name>
-    </author>
-    <author>
-      <name>Zhou Zhao</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">ACL 2025</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.10561v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.10561v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.10559v1</id>
-    <updated>2025-05-15T17:59:22Z</updated>
-    <published>2025-05-15T17:59:22Z</published>
-    <title>Neural Thermodynamic Laws for Large Language Model Training</title>
-    <summary>  Beyond neural scaling laws, little is known about the laws underlying large
-language models (LLMs). We introduce Neural Thermodynamic Laws (NTL) -- a new
-framework that offers fresh insights into LLM training dynamics. On the
-theoretical side, we demonstrate that key thermodynamic quantities (e.g.,
-temperature, entropy, heat capacity, thermal conduction) and classical
-thermodynamic principles (e.g., the three laws of thermodynamics and the
-equipartition theorem) naturally emerge under river-valley loss landscape
-assumptions. On the practical side, this scientific perspective yields
-intuitive guidelines for designing learning rate schedules.
-</summary>
-    <author>
-      <name>Ziming Liu</name>
-    </author>
-    <author>
-      <name>Yizhou Liu</name>
-    </author>
-    <author>
-      <name>Jeff Gore</name>
-    </author>
-    <author>
-      <name>Max Tegmark</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">18 pages, 10 figures</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.10559v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.10559v1" rel="related" type="application/pdf"/>
+    <link href="http://arxiv.org/abs/2505.11491v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.11491v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.data-an" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.comp-ph" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.10556v1</id>
-    <updated>2025-05-15T17:59:07Z</updated>
-    <published>2025-05-15T17:59:07Z</published>
-    <title>An AI-driven framework for the prediction of personalised health
-  response to air pollution</title>
-    <summary>  Air pollution poses a significant threat to public health, causing or
-exacerbating many respiratory and cardiovascular diseases. In addition, climate
-change is bringing about more extreme weather events such as wildfires and
-heatwaves, which can increase levels of pollution and worsen the effects of
-pollution exposure. Recent advances in personal sensing have transformed the
-collection of behavioural and physiological data, leading to the potential for
-new improvements in healthcare. We wish to capitalise on this data, alongside
-new capabilities in AI for making time series predictions, in order to monitor
-and predict health outcomes for an individual. Thus, we present a novel
-workflow for predicting personalised health responses to pollution by
-integrating physiological data from wearable fitness devices with real-time
-environmental exposures. The data is collected from various sources in a secure
-and ethical manner, and is used to train an AI model to predict individual
-health responses to pollution exposure within a cloud-based, modular framework.
-We demonstrate that the AI model -- an Adversarial Autoencoder neural network
-in this case -- accurately reconstructs time-dependent health signals and
-captures nonlinear responses to pollution. Transfer learning is applied using
-data from a personal smartwatch, which increases the generalisation abilities
-of the AI model and illustrates the adaptability of the approach to real-world,
-user-generated data.
+    <id>http://arxiv.org/abs/2505.11484v1</id>
+    <updated>2025-05-16T17:47:50Z</updated>
+    <published>2025-05-16T17:47:50Z</published>
+    <title>SoftCoT++: Test-Time Scaling with Soft Chain-of-Thought Reasoning</title>
+    <summary>  Test-Time Scaling (TTS) refers to approaches that improve reasoning
+performance by allocating extra computation during inference, without altering
+the model's parameters. While existing TTS methods operate in a discrete token
+space by generating more intermediate steps, recent studies in Coconut and
+SoftCoT have demonstrated that thinking in the continuous latent space can
+further enhance the reasoning performance. Such latent thoughts encode
+informative thinking without the information loss associated with
+autoregressive token generation, sparking increased interest in
+continuous-space reasoning. Unlike discrete decoding, where repeated sampling
+enables exploring diverse reasoning paths, latent representations in continuous
+space are fixed for a given input, which limits diverse exploration, as all
+decoded paths originate from the same latent thought. To overcome this
+limitation, we introduce SoftCoT++ to extend SoftCoT to the Test-Time Scaling
+paradigm by enabling diverse exploration of thinking paths. Specifically, we
+perturb latent thoughts via multiple specialized initial tokens and apply
+contrastive learning to promote diversity among soft thought representations.
+Experiments across five reasoning benchmarks and two distinct LLM architectures
+demonstrate that SoftCoT++ significantly boosts SoftCoT and also outperforms
+SoftCoT with self-consistency scaling. Moreover, it shows strong compatibility
+with conventional scaling techniques such as self-consistency. Source code is
+available at https://github.com/xuyige/SoftCoT.
 </summary>
     <author>
-      <name>Nazanin Zounemat Kermani</name>
+      <name>Yige Xu</name>
     </author>
     <author>
-      <name>Sadjad Naderi</name>
+      <name>Xu Guo</name>
     </author>
     <author>
-      <name>Claire H. Dilliway</name>
+      <name>Zhiwei Zeng</name>
     </author>
     <author>
-      <name>Claire E. Heaney</name>
+      <name>Chunyan Miao</name>
     </author>
-    <author>
-      <name>Shrreya Behll</name>
-    </author>
-    <author>
-      <name>Boyang Chen</name>
-    </author>
-    <author>
-      <name>Hisham Abubakar-Waziri</name>
-    </author>
-    <author>
-      <name>Alexandra E. Porter</name>
-    </author>
-    <author>
-      <name>Marc Chadeau-Hyam</name>
-    </author>
-    <author>
-      <name>Fangxin Fang</name>
-    </author>
-    <author>
-      <name>Ian M. Adcock</name>
-    </author>
-    <author>
-      <name>Kian Fan Chung</name>
-    </author>
-    <author>
-      <name>Christopher C. Pain</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Kermani and Naderi share first authorship. 20 pages, 6 figures and 1
-  table</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.10556v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.10556v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.ao-ph" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.10554v1</id>
-    <updated>2025-05-15T17:58:33Z</updated>
-    <published>2025-05-15T17:58:33Z</published>
-    <title>Beyond 'Aha!': Toward Systematic Meta-Abilities Alignment in Large
-  Reasoning Models</title>
-    <summary>  Large reasoning models (LRMs) already possess a latent capacity for long
-chain-of-thought reasoning. Prior work has shown that outcome-based
-reinforcement learning (RL) can incidentally elicit advanced reasoning
-behaviors such as self-correction, backtracking, and verification phenomena
-often referred to as the model's "aha moment". However, the timing and
-consistency of these emergent behaviors remain unpredictable and
-uncontrollable, limiting the scalability and reliability of LRMs' reasoning
-capabilities. To address these limitations, we move beyond reliance on prompts
-and coincidental "aha moments". Instead, we explicitly align models with three
-meta-abilities: deduction, induction, and abduction, using automatically
-generated, self-verifiable tasks. Our three stage-pipeline individual
-alignment, parameter-space merging, and domain-specific reinforcement learning,
-boosting performance by over 10\% relative to instruction-tuned baselines.
-Furthermore, domain-specific RL from the aligned checkpoint yields an
-additional 2\% average gain in the performance ceiling across math, coding, and
-science benchmarks, demonstrating that explicit meta-ability alignment offers a
-scalable and dependable foundation for reasoning. Code is available at:
-https://github.com/zhiyuanhubj/Meta-Ability-Alignment
-</summary>
-    <author>
-      <name>Zhiyuan Hu</name>
-    </author>
-    <author>
-      <name>Yibo Wang</name>
-    </author>
-    <author>
-      <name>Hanze Dong</name>
-    </author>
-    <author>
-      <name>Yuhui Xu</name>
-    </author>
-    <author>
-      <name>Amrita Saha</name>
-    </author>
-    <author>
-      <name>Caiming Xiong</name>
-    </author>
-    <author>
-      <name>Bryan Hooi</name>
-    </author>
-    <author>
-      <name>Junnan Li</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">In Progress</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.10554v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.10554v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">14 pages</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.11484v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.11484v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.11483v1</id>
+    <updated>2025-05-16T17:47:15Z</updated>
+    <published>2025-05-16T17:47:15Z</published>
+    <title>msf-CNN: Patch-based Multi-Stage Fusion with Convolutional Neural
+  Networks for TinyML</title>
+    <summary>  AI spans from large language models to tiny models running on
+microcontrollers (MCUs). Extremely memory-efficient model architectures are
+decisive to fit within an MCU's tiny memory budget e.g., 128kB of RAM. However,
+inference latency must remain small to fit real-time constraints. An approach
+to tackle this is patch-based fusion, which aims to optimize data flows across
+neural network layers. In this paper, we introduce msf-CNN, a novel technique
+that efficiently finds optimal fusion settings for convolutional neural
+networks (CNNs) by walking through the fusion solution space represented as a
+directed acyclic graph. Compared to previous work on CNN fusion for MCUs,
+msf-CNN identifies a wider set of solutions. We published an implementation of
+msf-CNN running on various microcontrollers (ARM Cortex-M, RISC-V, ESP32). We
+show that msf-CNN can achieve inference using 50% less RAM compared to the
+prior art (MCUNetV2 and StreamNet). We thus demonstrate how msf-CNN offers
+additional flexibility for system designers.
+</summary>
+    <author>
+      <name>Zhaolan Huang</name>
+    </author>
+    <author>
+      <name>Emmanuel Baccelli</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.11483v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.11483v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.PF" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.11480v1</id>
+    <updated>2025-05-16T17:40:45Z</updated>
+    <published>2025-05-16T17:40:45Z</published>
+    <title>Improving Assembly Code Performance with Large Language Models via
+  Reinforcement Learning</title>
+    <summary>  Large language models (LLMs) have demonstrated strong performance across a
+wide range of programming tasks, yet their potential for code optimization
+remains underexplored. This work investigates whether LLMs can optimize the
+performance of assembly code, where fine-grained control over execution enables
+improvements that are difficult to express in high-level languages. We present
+a reinforcement learning framework that trains LLMs using Proximal Policy
+Optimization (PPO), guided by a reward function that considers both functional
+correctness, validated through test cases, and execution performance relative
+to the industry-standard compiler gcc -O3. To support this study, we introduce
+a benchmark of 8,072 real-world programs. Our model, Qwen2.5-Coder-7B-PPO,
+achieves 96.0% test pass rates and an average speedup of 1.47x over the gcc -O3
+baseline, outperforming all 20 other models evaluated, including
+Claude-3.7-sonnet. These results indicate that reinforcement learning can
+unlock the potential of LLMs to serve as effective optimizers for assembly code
+performance.
+</summary>
+    <author>
+      <name>Anjiang Wei</name>
+    </author>
+    <author>
+      <name>Tarun Suresh</name>
+    </author>
+    <author>
+      <name>Huanmi Tan</name>
+    </author>
+    <author>
+      <name>Yinglun Xu</name>
+    </author>
+    <author>
+      <name>Gagandeep Singh</name>
+    </author>
+    <author>
+      <name>Ke Wang</name>
+    </author>
+    <author>
+      <name>Alex Aiken</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.11480v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.11480v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.PF" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.PL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
