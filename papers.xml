@@ -3,164 +3,155 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-05-20T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">426237</opensearch:totalResults>
+  <updated>2025-05-21T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">426663</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2505.13448v1</id>
-    <updated>2025-05-19T17:59:58Z</updated>
-    <published>2025-05-19T17:59:58Z</published>
-    <title>CIE: Controlling Language Model Text Generations Using Continuous
-  Signals</title>
-    <summary>  Aligning language models with user intent is becoming increasingly relevant
-to enhance user experience. This calls for designing methods that can allow
-users to control the properties of the language that LMs generate. For example,
-controlling the length of the generation, the complexity of the language that
-gets chosen, the sentiment, tone, etc. Most existing work attempts to integrate
-users' control by conditioning LM generations on natural language prompts or
-discrete control signals, which are often brittle and hard to scale. In this
-work, we are interested in \textit{continuous} control signals, ones that exist
-along a spectrum that can't easily be captured in a natural language prompt or
-via existing techniques in conditional generation. Through a case study in
-controlling the precise response-length of generations produced by LMs, we
-demonstrate how after fine-tuning, behaviors of language models can be
-controlled via continuous signals -- as vectors that are interpolated between a
-"low" and a "high" token embedding. Our method more reliably exerts
-response-length control than in-context learning methods or fine-tuning methods
-that represent the control signal as a discrete signal. Our full open-sourced
-code and datasets are available at https://github.com/vsamuel2003/CIE.
+    <id>http://arxiv.org/abs/2505.14687v1</id>
+    <updated>2025-05-20T17:59:59Z</updated>
+    <published>2025-05-20T17:59:59Z</published>
+    <title>Grouping First, Attending Smartly: Training-Free Acceleration for
+  Diffusion Transformers</title>
+    <summary>  Diffusion-based Transformers have demonstrated impressive generative
+capabilities, but their high computational costs hinder practical deployment,
+for example, generating an $8192\times 8192$ image can take over an hour on an
+A100 GPU. In this work, we propose GRAT (\textbf{GR}ouping first,
+\textbf{AT}tending smartly), a training-free attention acceleration strategy
+for fast image and video generation without compromising output quality. The
+key insight is to exploit the inherent sparsity in learned attention maps
+(which tend to be locally focused) in pretrained Diffusion Transformers and
+leverage better GPU parallelism. Specifically, GRAT first partitions contiguous
+tokens into non-overlapping groups, aligning both with GPU execution patterns
+and the local attention structures learned in pretrained generative
+Transformers. It then accelerates attention by having all query tokens within
+the same group share a common set of attendable key and value tokens. These key
+and value tokens are further restricted to structured regions, such as
+surrounding blocks or criss-cross regions, significantly reducing computational
+overhead (e.g., attaining a \textbf{35.8$\times$} speedup over full attention
+when generating $8192\times 8192$ images) while preserving essential attention
+patterns and long-range context. We validate GRAT on pretrained Flux and
+HunyuanVideo for image and video generation, respectively. In both cases, GRAT
+achieves substantially faster inference without any fine-tuning, while
+maintaining the performance of full attention. We hope GRAT will inspire future
+research on accelerating Diffusion Transformers for scalable visual generation.
 </summary>
     <author>
-      <name>Vinay Samuel</name>
+      <name>Sucheng Ren</name>
     </author>
     <author>
-      <name>Harshita Diddee</name>
+      <name>Qihang Yu</name>
     </author>
     <author>
-      <name>Yiming Zhang</name>
+      <name>Ju He</name>
     </author>
     <author>
-      <name>Daphne Ippolito</name>
+      <name>Alan Yuille</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">10 pages, 3 figures</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.13448v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.13448v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Liang-Chieh Chen</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project website at oliverrensu.github.io/project/GRAT</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.14687v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.14687v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.14684v2</id>
+    <updated>2025-05-21T17:02:34Z</updated>
+    <published>2025-05-20T17:59:31Z</published>
+    <title>Mind the Gap: Bridging Thought Leap for Improved Chain-of-Thought Tuning</title>
+    <summary>  Large language models (LLMs) have achieved remarkable progress on
+mathematical tasks through Chain-of-Thought (CoT) reasoning. However, existing
+mathematical CoT datasets often suffer from Thought Leaps due to experts
+omitting intermediate steps, which negatively impacts model learning and
+generalization. We propose the CoT Thought Leap Bridge Task, which aims to
+automatically detect leaps and generate missing intermediate reasoning steps to
+restore the completeness and coherence of CoT. To facilitate this, we
+constructed a specialized training dataset called ScaleQM+, based on the
+structured ScaleQuestMath dataset, and trained CoT-Bridge to bridge thought
+leaps. Through comprehensive experiments on mathematical reasoning benchmarks,
+we demonstrate that models fine-tuned on bridged datasets consistently
+outperform those trained on original datasets, with improvements of up to
++5.87% on NuminaMath. Our approach effectively enhances distilled data (+3.02%)
+and provides better starting points for reinforcement learning (+3.1%),
+functioning as a plug-and-play module compatible with existing optimization
+techniques. Furthermore, CoT-Bridge demonstrate improved generalization to
+out-of-domain logical reasoning tasks, confirming that enhancing reasoning
+completeness yields broadly applicable benefits.
+</summary>
+    <author>
+      <name>Haolei Xu</name>
+    </author>
+    <author>
+      <name>Yuchen Yan</name>
+    </author>
+    <author>
+      <name>Yongliang Shen</name>
+    </author>
+    <author>
+      <name>Wenqi Zhang</name>
+    </author>
+    <author>
+      <name>Guiyang Hou</name>
+    </author>
+    <author>
+      <name>Shengpei Jiang</name>
+    </author>
+    <author>
+      <name>Kaitao Song</name>
+    </author>
+    <author>
+      <name>Weiming Lu</name>
+    </author>
+    <author>
+      <name>Jun Xiao</name>
+    </author>
+    <author>
+      <name>Yueting Zhuang</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project: https://zju-real.github.io/CoT-Bridge/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.14684v2" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.14684v2" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.13447v1</id>
-    <updated>2025-05-19T17:59:42Z</updated>
-    <published>2025-05-19T17:59:42Z</published>
-    <title>Mean Flows for One-step Generative Modeling</title>
-    <summary>  We propose a principled and effective framework for one-step generative
-modeling. We introduce the notion of average velocity to characterize flow
-fields, in contrast to instantaneous velocity modeled by Flow Matching methods.
-A well-defined identity between average and instantaneous velocities is derived
-and used to guide neural network training. Our method, termed the MeanFlow
-model, is self-contained and requires no pre-training, distillation, or
-curriculum learning. MeanFlow demonstrates strong empirical performance: it
-achieves an FID of 3.43 with a single function evaluation (1-NFE) on ImageNet
-256x256 trained from scratch, significantly outperforming previous
-state-of-the-art one-step diffusion/flow models. Our study substantially
-narrows the gap between one-step diffusion/flow models and their multi-step
-predecessors, and we hope it will motivate future research to revisit the
-foundations of these powerful models.
+    <id>http://arxiv.org/abs/2505.14681v1</id>
+    <updated>2025-05-20T17:59:16Z</updated>
+    <published>2025-05-20T17:59:16Z</published>
+    <title>Two Experts Are All You Need for Steering Thinking: Reinforcing
+  Cognitive Effort in MoE Reasoning Models Without Additional Training</title>
+    <summary>  Mixture-of-Experts (MoE) architectures within Large Reasoning Models (LRMs)
+have achieved impressive reasoning capabilities by selectively activating
+experts to facilitate structured cognitive processes. Despite notable advances,
+existing reasoning models often suffer from cognitive inefficiencies like
+overthinking and underthinking. To address these limitations, we introduce a
+novel inference-time steering methodology called Reinforcing Cognitive Experts
+(RICE), designed to improve reasoning performance without additional training
+or complex heuristics. Leveraging normalized Pointwise Mutual Information
+(nPMI), we systematically identify specialized experts, termed ''cognitive
+experts'' that orchestrate meta-level reasoning operations characterized by
+tokens like ''&lt;think&gt;''. Empirical evaluations with leading MoE-based LRMs
+(DeepSeek-R1 and Qwen3-235B) on rigorous quantitative and scientific reasoning
+benchmarks demonstrate noticeable and consistent improvements in reasoning
+accuracy, cognitive efficiency, and cross-domain generalization. Crucially, our
+lightweight approach substantially outperforms prevalent reasoning-steering
+techniques, such as prompt design and decoding constraints, while preserving
+the model's general instruction-following skills. These results highlight
+reinforcing cognitive experts as a promising, practical, and interpretable
+direction to enhance cognitive efficiency within advanced reasoning models.
 </summary>
     <author>
-      <name>Zhengyang Geng</name>
+      <name>Mengru Wang</name>
     </author>
     <author>
-      <name>Mingyang Deng</name>
+      <name>Xingyu Chen</name>
     </author>
     <author>
-      <name>Xingjian Bai</name>
-    </author>
-    <author>
-      <name>J. Zico Kolter</name>
-    </author>
-    <author>
-      <name>Kaiming He</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Tech report</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.13447v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.13447v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.13446v1</id>
-    <updated>2025-05-19T17:59:35Z</updated>
-    <published>2025-05-19T17:59:35Z</published>
-    <title>Unlocking Non-Invasive Brain-to-Text</title>
-    <summary>  Despite major advances in surgical brain-to-text (B2T), i.e. transcribing
-speech from invasive brain recordings, non-invasive alternatives have yet to
-surpass even chance on standard metrics. This remains a barrier to building a
-non-invasive brain-computer interface (BCI) capable of restoring communication
-in paralysed individuals without surgery. Here, we present the first
-non-invasive B2T result that significantly exceeds these critical baselines,
-raising BLEU by $1.4\mathrm{-}2.6\times$ over prior work. This result is driven
-by three contributions: (1) we extend recent word-classification models with
-LLM-based rescoring, transforming single-word predictors into closed-vocabulary
-B2T systems; (2) we introduce a predictive in-filling approach to handle
-out-of-vocabulary (OOV) words, substantially expanding the effective
-vocabulary; and (3) we demonstrate, for the first time, how to scale
-non-invasive B2T models across datasets, unlocking deep learning at scale and
-improving accuracy by $2.1\mathrm{-}2.3\times$. Through these contributions, we
-offer new insights into the roles of data quality and vocabulary size.
-Together, our results remove a major obstacle to realising practical
-non-invasive B2T systems.
-</summary>
-    <author>
-      <name>Dulhan Jayalath</name>
-    </author>
-    <author>
-      <name>Gilad Landau</name>
-    </author>
-    <author>
-      <name>Oiwi Parker Jones</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">27 pages, 10 figures, 10 tables. Under review</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.13446v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.13446v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.13445v1</id>
-    <updated>2025-05-19T17:59:31Z</updated>
-    <published>2025-05-19T17:59:31Z</published>
-    <title>Trust, But Verify: A Self-Verification Approach to Reinforcement
-  Learning with Verifiable Rewards</title>
-    <summary>  Large Language Models (LLMs) show great promise in complex reasoning, with
-Reinforcement Learning with Verifiable Rewards (RLVR) being a key enhancement
-strategy. However, a prevalent issue is ``superficial self-reflection'', where
-models fail to robustly verify their own outputs. We introduce RISE
-(Reinforcing Reasoning with Self-Verification), a novel online RL framework
-designed to tackle this. RISE explicitly and simultaneously trains an LLM to
-improve both its problem-solving and self-verification abilities within a
-single, integrated RL process. The core mechanism involves leveraging
-verifiable rewards from an outcome verifier to provide on-the-fly feedback for
-both solution generation and self-verification tasks. In each iteration, the
-model generates solutions, then critiques its own on-policy generated
-solutions, with both trajectories contributing to the policy update. Extensive
-experiments on diverse mathematical reasoning benchmarks show that RISE
-consistently improves model's problem-solving accuracy while concurrently
-fostering strong self-verification skills. Our analyses highlight the
-advantages of online verification and the benefits of increased verification
-compute. Additionally, RISE models exhibit more frequent and accurate
-self-verification behaviors during reasoning. These advantages reinforce RISE
-as a flexible and effective path towards developing more robust and self-aware
-reasoners.
-</summary>
-    <author>
-      <name>Xiaoyuan Liu</name>
-    </author>
-    <author>
-      <name>Tian Liang</name>
+      <name>Yue Wang</name>
     </author>
     <author>
       <name>Zhiwei He</name>
@@ -169,73 +160,144 @@ reasoners.
       <name>Jiahao Xu</name>
     </author>
     <author>
+      <name>Tian Liang</name>
+    </author>
+    <author>
+      <name>Qiuzhi Liu</name>
+    </author>
+    <author>
+      <name>Yunzhi Yao</name>
+    </author>
+    <author>
       <name>Wenxuan Wang</name>
     </author>
     <author>
-      <name>Pinjia He</name>
-    </author>
-    <author>
-      <name>Zhaopeng Tu</name>
+      <name>Ruotian Ma</name>
     </author>
     <author>
       <name>Haitao Mi</name>
     </author>
     <author>
+      <name>Ningyu Zhang</name>
+    </author>
+    <author>
+      <name>Zhaopeng Tu</name>
+    </author>
+    <author>
+      <name>Xiaolong Li</name>
+    </author>
+    <author>
       <name>Dong Yu</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">code available at https://github.com/xyliu-cs/RISE</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.13445v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.13445v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Work in progress</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.14681v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.14681v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.13443v1</id>
-    <updated>2025-05-19T17:59:23Z</updated>
-    <published>2025-05-19T17:59:23Z</published>
-    <title>Wonderings on Wiggly Bispectra: Non-linear Evolution and Reconstruction
-  of Oscillations in the Squeezed Bispectrum</title>
-    <summary>  Oscillations in the primordial bispectrum are sourced by a range of
-inflationary phenomena, including features in the inflaton potential and
-interactions with massive fields through the Cosmological Collider scenario.
-These signatures offer a powerful window into early-universe physics. In this
-work, we study how oscillations of the form $\lim_{q\ll k}B(q,k)\propto
-\cos(\mu \ln(q/k))$ impact the non-linear squeezed matter bispectrum. Using a
-suite of $N$-body simulations with non-Gaussian initial conditions, we show
-that non-linear evolution significantly damps these oscillations, effectively
-erasing the signal on scales $k \gtrsim 0.3~h/{\rm Mpc}$ at redshift $z=0$.
-This damping is well-described by the Zel'dovich approximation and can be
-modeled deep into the non-linear regime using non-perturbative separate
-universe simulations. Promisingly, we show that reconstruction techniques
-developed for baryon acoustic oscillation (BAO) analyses can largely undo this
-damping, improving constraints on the amplitude (phase) of oscillations in the
-primordial squeezed bispectrum by up to a factor of five (four) at $z=0$. We
-also discuss several challenges with modeling the non-linear evolution of the
-squeezed bispectrum in the Cosmological Collider scenario, where the bispectrum
-is suppressed by a factor of $(q/k)^{3/2}$ relative to the template studied
-here. Our findings pave the way for future searches for oscillatory bispectra
-using large-scale structure data.
+    <id>http://arxiv.org/abs/2505.14679v1</id>
+    <updated>2025-05-20T17:59:04Z</updated>
+    <published>2025-05-20T17:59:04Z</published>
+    <title>UltraEdit: Training-, Subject-, and Memory-Free Lifelong Editing in
+  Large Language Models</title>
+    <summary>  Lifelong learning enables large language models (LLMs) to adapt to evolving
+information by continually updating their internal knowledge. An ideal system
+should support efficient, wide-ranging updates while preserving existing
+capabilities and ensuring reliable deployment. Model editing stands out as a
+promising solution for this goal, offering a focused and efficient way to
+revise a model's internal knowledge. Although recent paradigms have made
+notable progress, they often struggle to meet the demands of practical lifelong
+adaptation at scale. To bridge this gap, we propose ULTRAEDIT-a fundamentally
+new editing solution that is training-, subject- and memory-free, making it
+particularly well-suited for ultra-scalable, real-world lifelong model editing.
+ULTRAEDIT performs editing through a self-contained process that relies solely
+on lightweight linear algebra operations to compute parameter shifts, enabling
+fast and consistent parameter modifications with minimal overhead. To improve
+scalability in lifelong settings, ULTRAEDIT employs a lifelong normalization
+strategy that continuously updates feature statistics across turns, allowing it
+to adapt to distributional shifts and maintain consistency over time. ULTRAEDIT
+achieves editing speeds over 7x faster than the previous state-of-the-art
+method-which was also the fastest known approach-while consuming less than 1/3
+the VRAM, making it the only method currently capable of editing a 7B LLM on a
+24GB consumer-grade GPU. Furthermore, we construct ULTRAEDITBENCH-the largest
+dataset in the field to date, with over 2M editing pairs-and demonstrate that
+our method supports up to 1M edits while maintaining high accuracy.
+Comprehensive experiments on four datasets and six models show that ULTRAEDIT
+consistently achieves superior performance across diverse model editing
+scenarios. Our code is available at: https://github.com/XiaojieGu/UltraEdit.
 </summary>
     <author>
-      <name>Samuel Goldstein</name>
+      <name>Xiaojie Gu</name>
     </author>
     <author>
-      <name>Oliver H. E. Philcox</name>
+      <name>Guangxu Chen</name>
     </author>
     <author>
-      <name>Emanuele Fondi</name>
+      <name>Jungang Li</name>
     </author>
     <author>
-      <name>William R. Coulton</name>
+      <name>Jia-Chen Gu</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">6+3 figures, 12+4 pages, lots of wiggles! Prepared for submission to
-  Phys. Rev. D</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.13443v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.13443v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Xuming Hu</name>
+    </author>
+    <author>
+      <name>Kai Zhang</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.14679v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.14679v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.14677v1</id>
+    <updated>2025-05-20T17:58:35Z</updated>
+    <published>2025-05-20T17:58:35Z</published>
+    <title>Visionary-R1: Mitigating Shortcuts in Visual Reasoning with
+  Reinforcement Learning</title>
+    <summary>  Learning general-purpose reasoning capabilities has long been a challenging
+problem in AI. Recent research in large language models (LLMs), such as
+DeepSeek-R1, has shown that reinforcement learning techniques like GRPO can
+enable pre-trained LLMs to develop reasoning capabilities using simple
+question-answer pairs. In this paper, we aim to train visual language models
+(VLMs) to perform reasoning on image data through reinforcement learning and
+visual question-answer pairs, without any explicit chain-of-thought (CoT)
+supervision. Our findings indicate that simply applying reinforcement learning
+to a VLM -- by prompting the model to produce a reasoning chain before
+providing an answer -- can lead the model to develop shortcuts from easy
+questions, thereby reducing its ability to generalize across unseen data
+distributions. We argue that the key to mitigating shortcut learning is to
+encourage the model to interpret images prior to reasoning. Therefore, we train
+the model to adhere to a caption-reason-answer output format: initially
+generating a detailed caption for an image, followed by constructing an
+extensive reasoning chain. When trained on 273K CoT-free visual question-answer
+pairs and using only reinforcement learning, our model, named Visionary-R1,
+outperforms strong multimodal models, such as GPT-4o, Claude3.5-Sonnet, and
+Gemini-1.5-Pro, on multiple visual reasoning benchmarks.
+</summary>
+    <author>
+      <name>Jiaer Xia</name>
+    </author>
+    <author>
+      <name>Yuhang Zang</name>
+    </author>
+    <author>
+      <name>Peng Gao</name>
+    </author>
+    <author>
+      <name>Yixuan Li</name>
+    </author>
+    <author>
+      <name>Kaiyang Zhou</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.14677v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.14677v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
