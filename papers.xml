@@ -3,301 +3,58 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-05-21T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">426663</opensearch:totalResults>
+  <updated>2025-05-22T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">427058</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2505.14687v1</id>
-    <updated>2025-05-20T17:59:59Z</updated>
-    <published>2025-05-20T17:59:59Z</published>
-    <title>Grouping First, Attending Smartly: Training-Free Acceleration for
-  Diffusion Transformers</title>
-    <summary>  Diffusion-based Transformers have demonstrated impressive generative
-capabilities, but their high computational costs hinder practical deployment,
-for example, generating an $8192\times 8192$ image can take over an hour on an
-A100 GPU. In this work, we propose GRAT (\textbf{GR}ouping first,
-\textbf{AT}tending smartly), a training-free attention acceleration strategy
-for fast image and video generation without compromising output quality. The
-key insight is to exploit the inherent sparsity in learned attention maps
-(which tend to be locally focused) in pretrained Diffusion Transformers and
-leverage better GPU parallelism. Specifically, GRAT first partitions contiguous
-tokens into non-overlapping groups, aligning both with GPU execution patterns
-and the local attention structures learned in pretrained generative
-Transformers. It then accelerates attention by having all query tokens within
-the same group share a common set of attendable key and value tokens. These key
-and value tokens are further restricted to structured regions, such as
-surrounding blocks or criss-cross regions, significantly reducing computational
-overhead (e.g., attaining a \textbf{35.8$\times$} speedup over full attention
-when generating $8192\times 8192$ images) while preserving essential attention
-patterns and long-range context. We validate GRAT on pretrained Flux and
-HunyuanVideo for image and video generation, respectively. In both cases, GRAT
-achieves substantially faster inference without any fine-tuning, while
-maintaining the performance of full attention. We hope GRAT will inspire future
-research on accelerating Diffusion Transformers for scalable visual generation.
+    <id>http://arxiv.org/abs/2505.15817v1</id>
+    <updated>2025-05-21T17:59:54Z</updated>
+    <published>2025-05-21T17:59:54Z</published>
+    <title>Learning to Reason via Mixture-of-Thought for Logical Reasoning</title>
+    <summary>  Human beings naturally utilize multiple reasoning modalities to learn and
+solve logical problems, i.e., different representational formats such as
+natural language, code, and symbolic logic. In contrast, most existing
+LLM-based approaches operate with a single reasoning modality during training,
+typically natural language. Although some methods explored modality selection
+or augmentation at inference time, the training process remains modality-blind,
+limiting synergy among modalities. To fill in this gap, we propose
+Mixture-of-Thought (MoT), a framework that enables LLMs to reason across three
+complementary modalities: natural language, code, and a newly introduced
+symbolic modality, truth-table, which systematically enumerates logical cases
+and partially mitigates key failure modes in natural language reasoning. MoT
+adopts a two-phase design: (1) self-evolving MoT training, which jointly learns
+from filtered, self-generated rationales across modalities; and (2) MoT
+inference, which fully leverages the synergy of three modalities to produce
+better predictions. Experiments on logical reasoning benchmarks including FOLIO
+and ProofWriter demonstrate that our MoT framework consistently and
+significantly outperforms strong LLM baselines with single-modality
+chain-of-thought approaches, achieving up to +11.7pp average accuracy gain.
+Further analyses show that our MoT framework benefits both training and
+inference stages; that it is particularly effective on harder logical reasoning
+problems; and that different modalities contribute complementary strengths,
+with truth-table reasoning helping to overcome key bottlenecks in natural
+language inference.
 </summary>
     <author>
-      <name>Sucheng Ren</name>
+      <name>Tong Zheng</name>
     </author>
     <author>
-      <name>Qihang Yu</name>
+      <name>Lichang Chen</name>
     </author>
     <author>
-      <name>Ju He</name>
+      <name>Simeng Han</name>
     </author>
     <author>
-      <name>Alan Yuille</name>
+      <name>R. Thomas McCoy</name>
     </author>
     <author>
-      <name>Liang-Chieh Chen</name>
+      <name>Heng Huang</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project website at oliverrensu.github.io/project/GRAT</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.14687v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.14687v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.14684v2</id>
-    <updated>2025-05-21T17:02:34Z</updated>
-    <published>2025-05-20T17:59:31Z</published>
-    <title>Mind the Gap: Bridging Thought Leap for Improved Chain-of-Thought Tuning</title>
-    <summary>  Large language models (LLMs) have achieved remarkable progress on
-mathematical tasks through Chain-of-Thought (CoT) reasoning. However, existing
-mathematical CoT datasets often suffer from Thought Leaps due to experts
-omitting intermediate steps, which negatively impacts model learning and
-generalization. We propose the CoT Thought Leap Bridge Task, which aims to
-automatically detect leaps and generate missing intermediate reasoning steps to
-restore the completeness and coherence of CoT. To facilitate this, we
-constructed a specialized training dataset called ScaleQM+, based on the
-structured ScaleQuestMath dataset, and trained CoT-Bridge to bridge thought
-leaps. Through comprehensive experiments on mathematical reasoning benchmarks,
-we demonstrate that models fine-tuned on bridged datasets consistently
-outperform those trained on original datasets, with improvements of up to
-+5.87% on NuminaMath. Our approach effectively enhances distilled data (+3.02%)
-and provides better starting points for reinforcement learning (+3.1%),
-functioning as a plug-and-play module compatible with existing optimization
-techniques. Furthermore, CoT-Bridge demonstrate improved generalization to
-out-of-domain logical reasoning tasks, confirming that enhancing reasoning
-completeness yields broadly applicable benefits.
-</summary>
-    <author>
-      <name>Haolei Xu</name>
-    </author>
-    <author>
-      <name>Yuchen Yan</name>
-    </author>
-    <author>
-      <name>Yongliang Shen</name>
-    </author>
-    <author>
-      <name>Wenqi Zhang</name>
-    </author>
-    <author>
-      <name>Guiyang Hou</name>
-    </author>
-    <author>
-      <name>Shengpei Jiang</name>
-    </author>
-    <author>
-      <name>Kaitao Song</name>
-    </author>
-    <author>
-      <name>Weiming Lu</name>
-    </author>
-    <author>
-      <name>Jun Xiao</name>
-    </author>
-    <author>
-      <name>Yueting Zhuang</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project: https://zju-real.github.io/CoT-Bridge/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.14684v2" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.14684v2" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">38 pages</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.15817v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.15817v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.14681v1</id>
-    <updated>2025-05-20T17:59:16Z</updated>
-    <published>2025-05-20T17:59:16Z</published>
-    <title>Two Experts Are All You Need for Steering Thinking: Reinforcing
-  Cognitive Effort in MoE Reasoning Models Without Additional Training</title>
-    <summary>  Mixture-of-Experts (MoE) architectures within Large Reasoning Models (LRMs)
-have achieved impressive reasoning capabilities by selectively activating
-experts to facilitate structured cognitive processes. Despite notable advances,
-existing reasoning models often suffer from cognitive inefficiencies like
-overthinking and underthinking. To address these limitations, we introduce a
-novel inference-time steering methodology called Reinforcing Cognitive Experts
-(RICE), designed to improve reasoning performance without additional training
-or complex heuristics. Leveraging normalized Pointwise Mutual Information
-(nPMI), we systematically identify specialized experts, termed ''cognitive
-experts'' that orchestrate meta-level reasoning operations characterized by
-tokens like ''&lt;think&gt;''. Empirical evaluations with leading MoE-based LRMs
-(DeepSeek-R1 and Qwen3-235B) on rigorous quantitative and scientific reasoning
-benchmarks demonstrate noticeable and consistent improvements in reasoning
-accuracy, cognitive efficiency, and cross-domain generalization. Crucially, our
-lightweight approach substantially outperforms prevalent reasoning-steering
-techniques, such as prompt design and decoding constraints, while preserving
-the model's general instruction-following skills. These results highlight
-reinforcing cognitive experts as a promising, practical, and interpretable
-direction to enhance cognitive efficiency within advanced reasoning models.
-</summary>
-    <author>
-      <name>Mengru Wang</name>
-    </author>
-    <author>
-      <name>Xingyu Chen</name>
-    </author>
-    <author>
-      <name>Yue Wang</name>
-    </author>
-    <author>
-      <name>Zhiwei He</name>
-    </author>
-    <author>
-      <name>Jiahao Xu</name>
-    </author>
-    <author>
-      <name>Tian Liang</name>
-    </author>
-    <author>
-      <name>Qiuzhi Liu</name>
-    </author>
-    <author>
-      <name>Yunzhi Yao</name>
-    </author>
-    <author>
-      <name>Wenxuan Wang</name>
-    </author>
-    <author>
-      <name>Ruotian Ma</name>
-    </author>
-    <author>
-      <name>Haitao Mi</name>
-    </author>
-    <author>
-      <name>Ningyu Zhang</name>
-    </author>
-    <author>
-      <name>Zhaopeng Tu</name>
-    </author>
-    <author>
-      <name>Xiaolong Li</name>
-    </author>
-    <author>
-      <name>Dong Yu</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Work in progress</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.14681v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.14681v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.14679v1</id>
-    <updated>2025-05-20T17:59:04Z</updated>
-    <published>2025-05-20T17:59:04Z</published>
-    <title>UltraEdit: Training-, Subject-, and Memory-Free Lifelong Editing in
-  Large Language Models</title>
-    <summary>  Lifelong learning enables large language models (LLMs) to adapt to evolving
-information by continually updating their internal knowledge. An ideal system
-should support efficient, wide-ranging updates while preserving existing
-capabilities and ensuring reliable deployment. Model editing stands out as a
-promising solution for this goal, offering a focused and efficient way to
-revise a model's internal knowledge. Although recent paradigms have made
-notable progress, they often struggle to meet the demands of practical lifelong
-adaptation at scale. To bridge this gap, we propose ULTRAEDIT-a fundamentally
-new editing solution that is training-, subject- and memory-free, making it
-particularly well-suited for ultra-scalable, real-world lifelong model editing.
-ULTRAEDIT performs editing through a self-contained process that relies solely
-on lightweight linear algebra operations to compute parameter shifts, enabling
-fast and consistent parameter modifications with minimal overhead. To improve
-scalability in lifelong settings, ULTRAEDIT employs a lifelong normalization
-strategy that continuously updates feature statistics across turns, allowing it
-to adapt to distributional shifts and maintain consistency over time. ULTRAEDIT
-achieves editing speeds over 7x faster than the previous state-of-the-art
-method-which was also the fastest known approach-while consuming less than 1/3
-the VRAM, making it the only method currently capable of editing a 7B LLM on a
-24GB consumer-grade GPU. Furthermore, we construct ULTRAEDITBENCH-the largest
-dataset in the field to date, with over 2M editing pairs-and demonstrate that
-our method supports up to 1M edits while maintaining high accuracy.
-Comprehensive experiments on four datasets and six models show that ULTRAEDIT
-consistently achieves superior performance across diverse model editing
-scenarios. Our code is available at: https://github.com/XiaojieGu/UltraEdit.
-</summary>
-    <author>
-      <name>Xiaojie Gu</name>
-    </author>
-    <author>
-      <name>Guangxu Chen</name>
-    </author>
-    <author>
-      <name>Jungang Li</name>
-    </author>
-    <author>
-      <name>Jia-Chen Gu</name>
-    </author>
-    <author>
-      <name>Xuming Hu</name>
-    </author>
-    <author>
-      <name>Kai Zhang</name>
-    </author>
-    <link href="http://arxiv.org/abs/2505.14679v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.14679v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.14677v1</id>
-    <updated>2025-05-20T17:58:35Z</updated>
-    <published>2025-05-20T17:58:35Z</published>
-    <title>Visionary-R1: Mitigating Shortcuts in Visual Reasoning with
-  Reinforcement Learning</title>
-    <summary>  Learning general-purpose reasoning capabilities has long been a challenging
-problem in AI. Recent research in large language models (LLMs), such as
-DeepSeek-R1, has shown that reinforcement learning techniques like GRPO can
-enable pre-trained LLMs to develop reasoning capabilities using simple
-question-answer pairs. In this paper, we aim to train visual language models
-(VLMs) to perform reasoning on image data through reinforcement learning and
-visual question-answer pairs, without any explicit chain-of-thought (CoT)
-supervision. Our findings indicate that simply applying reinforcement learning
-to a VLM -- by prompting the model to produce a reasoning chain before
-providing an answer -- can lead the model to develop shortcuts from easy
-questions, thereby reducing its ability to generalize across unseen data
-distributions. We argue that the key to mitigating shortcut learning is to
-encourage the model to interpret images prior to reasoning. Therefore, we train
-the model to adhere to a caption-reason-answer output format: initially
-generating a detailed caption for an image, followed by constructing an
-extensive reasoning chain. When trained on 273K CoT-free visual question-answer
-pairs and using only reinforcement learning, our model, named Visionary-R1,
-outperforms strong multimodal models, such as GPT-4o, Claude3.5-Sonnet, and
-Gemini-1.5-Pro, on multiple visual reasoning benchmarks.
-</summary>
-    <author>
-      <name>Jiaer Xia</name>
-    </author>
-    <author>
-      <name>Yuhang Zang</name>
-    </author>
-    <author>
-      <name>Peng Gao</name>
-    </author>
-    <author>
-      <name>Yixuan Li</name>
-    </author>
-    <author>
-      <name>Kaiyang Zhou</name>
-    </author>
-    <link href="http://arxiv.org/abs/2505.14677v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.14677v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
