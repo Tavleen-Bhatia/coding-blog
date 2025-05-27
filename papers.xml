@@ -3,276 +3,269 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-05-25T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">427469</opensearch:totalResults>
+  <updated>2025-05-26T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">427948</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2505.17022v1</id>
-    <updated>2025-05-22T17:59:58Z</updated>
-    <published>2025-05-22T17:59:58Z</published>
-    <title>GoT-R1: Unleashing Reasoning Capability of MLLM for Visual Generation
-  with Reinforcement Learning</title>
-    <summary>  Visual generation models have made remarkable progress in creating realistic
-images from text prompts, yet struggle with complex prompts that specify
-multiple objects with precise spatial relationships and attributes. Effective
-handling of such prompts requires explicit reasoning about the semantic content
-and spatial layout. We present GoT-R1, a framework that applies reinforcement
-learning to enhance semantic-spatial reasoning in visual generation. Building
-upon the Generation Chain-of-Thought approach, GoT-R1 enables models to
-autonomously discover effective reasoning strategies beyond predefined
-templates through carefully designed reinforcement learning. To achieve this,
-we propose a dual-stage multi-dimensional reward framework that leverages MLLMs
-to evaluate both the reasoning process and final output, enabling effective
-supervision across the entire generation pipeline. The reward system assesses
-semantic alignment, spatial accuracy, and visual quality in a unified approach.
-Experimental results demonstrate significant improvements on T2I-CompBench
-benchmark, particularly in compositional tasks involving precise spatial
-relationships and attribute binding. GoT-R1 advances the state-of-the-art in
-image generation by successfully transferring sophisticated reasoning
-capabilities to the visual generation domain. To facilitate future research, we
-make our code and pretrained models publicly available at
-https://github.com/gogoduan/GoT-R1.
+    <id>http://arxiv.org/abs/2505.18152v1</id>
+    <updated>2025-05-23T17:59:29Z</updated>
+    <published>2025-05-23T17:59:29Z</published>
+    <title>Fann or Flop: A Multigenre, Multiera Benchmark for Arabic Poetry
+  Understanding in LLMs</title>
+    <summary>  Arabic poetry stands as one of the most sophisticated and culturally embedded
+forms of expression in the Arabic language, known for its layered meanings,
+stylistic diversity, and deep historical continuity. Although large language
+models (LLMs) have demonstrated strong performance across languages and tasks,
+their ability to understand Arabic poetry remains largely unexplored. In this
+work, we introduce `Fann or Flop`, the first benchmark designed to assess the
+comprehension of Arabic poetry by LLMs in twelve historical eras, covering 21
+core poetic genres and a variety of metrical forms, from classical structures
+to contemporary free verse. The benchmark comprises a curated corpus of poems
+with explanations that assess semantic understanding, metaphor interpretation,
+prosodic awareness, and cultural context. We argue that poetic comprehension
+offers a strong indicator for testing how good the LLM is in understanding
+classical Arabic through the Arabic poetry. Unlike surface-level tasks, this
+domain demands deeper interpretive reasoning and cultural sensitivity. Our
+evaluation of state-of-the-art LLMs shows that most models struggle with poetic
+understanding despite strong results on standard Arabic benchmarks. We release
+`Fann or Flop` along with the evaluation suite as an open-source resource to
+enable rigorous evaluation and advancement for Arabic language models. Code is
+available at: https://github.com/mbzuai-oryx/FannOrFlop.
 </summary>
     <author>
-      <name>Chengqi Duan</name>
+      <name>Wafa Alghallabi</name>
     </author>
     <author>
-      <name>Rongyao Fang</name>
+      <name>Ritesh Thawkar</name>
     </author>
     <author>
-      <name>Yuqing Wang</name>
+      <name>Sara Ghaboura</name>
     </author>
     <author>
-      <name>Kun Wang</name>
+      <name>Ketan More</name>
     </author>
     <author>
-      <name>Linjiang Huang</name>
+      <name>Omkar Thawakar</name>
     </author>
     <author>
-      <name>Xingyu Zeng</name>
+      <name>Hisham Cholakkal</name>
     </author>
     <author>
-      <name>Hongsheng Li</name>
+      <name>Salman Khan</name>
     </author>
     <author>
-      <name>Xihui Liu</name>
+      <name>Rao Muhammad Anwer</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Github page refer to: https://github.com/gogoduan/GoT-R1</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.17022v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.17022v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Github:https://github.com/mbzuai-oryx/FannOrFlop,
+  Dataset:https://huggingface.co/datasets/omkarthawakar/FannOrFlop</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.18152v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.18152v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.17018v1</id>
-    <updated>2025-05-22T17:59:53Z</updated>
-    <published>2025-05-22T17:59:53Z</published>
-    <title>SophiaVL-R1: Reinforcing MLLMs Reasoning with Thinking Reward</title>
-    <summary>  Recent advances have shown success in eliciting strong reasoning abilities in
-multimodal large language models (MLLMs) through rule-based reinforcement
-learning (RL) with outcome rewards. However, this paradigm typically lacks
-supervision over the thinking process leading to the final outcome.As a result,
-the model may learn sub-optimal reasoning strategies, which can hinder its
-generalization ability. In light of this, we propose SophiaVL-R1, as an attempt
-to add reward signals for the thinking process in this paradigm. To achieve
-this, we first train a thinking reward model that evaluates the quality of the
-entire thinking process. Given that the thinking reward may be unreliable for
-certain samples due to reward hacking, we propose the Trust-GRPO method, which
-assigns a trustworthiness weight to the thinking reward during training. This
-weight is computed based on the thinking reward comparison of responses leading
-to correct answers versus incorrect answers, helping to mitigate the impact of
-potentially unreliable thinking rewards. Moreover, we design an annealing
-training strategy that gradually reduces the thinking reward over time,
-allowing the model to rely more on the accurate rule-based outcome reward in
-later training stages. Experiments show that our SophiaVL-R1 surpasses a series
-of reasoning MLLMs on various benchmarks (e.g., MathVisita, MMMU),
-demonstrating strong reasoning and generalization capabilities. Notably, our
-SophiaVL-R1-7B even outperforms LLaVA-OneVision-72B on most benchmarks, despite
-the latter having 10 times more parameters. All code, models, and datasets are
-made publicly available at https://github.com/kxfan2002/SophiaVL-R1.
+    <id>http://arxiv.org/abs/2505.18150v1</id>
+    <updated>2025-05-23T17:58:57Z</updated>
+    <published>2025-05-23T17:58:57Z</published>
+    <title>Generative Distribution Embeddings</title>
+    <summary>  Many real-world problems require reasoning across multiple scales, demanding
+models which operate not on single data points, but on entire distributions. We
+introduce generative distribution embeddings (GDE), a framework that lifts
+autoencoders to the space of distributions. In GDEs, an encoder acts on sets of
+samples, and the decoder is replaced by a generator which aims to match the
+input distribution. This framework enables learning representations of
+distributions by coupling conditional generative models with encoder networks
+which satisfy a criterion we call distributional invariance. We show that GDEs
+learn predictive sufficient statistics embedded in the Wasserstein space, such
+that latent GDE distances approximately recover the $W_2$ distance, and latent
+interpolation approximately recovers optimal transport trajectories for
+Gaussian and Gaussian mixture distributions. We systematically benchmark GDEs
+against existing approaches on synthetic datasets, demonstrating consistently
+stronger performance. We then apply GDEs to six key problems in computational
+biology: learning representations of cell populations from lineage-tracing data
+(150K cells), predicting perturbation effects on single-cell transcriptomes (1M
+cells), predicting perturbation effects on cellular phenotypes (20M single-cell
+images), modeling tissue-specific DNA methylation patterns (253M sequences),
+designing synthetic yeast promoters (34M sequences), and spatiotemporal
+modeling of viral protein sequences (1M sequences).
 </summary>
     <author>
-      <name>Kaixuan Fan</name>
+      <name>Nic Fishman</name>
     </author>
     <author>
-      <name>Kaituo Feng</name>
+      <name>Gokul Gowri</name>
     </author>
     <author>
-      <name>Haoming Lyu</name>
+      <name>Peng Yin</name>
     </author>
     <author>
-      <name>Dongzhan Zhou</name>
+      <name>Jonathan Gootenberg</name>
     </author>
     <author>
-      <name>Xiangyu Yue</name>
+      <name>Omar Abudayyeh</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page:https://github.com/kxfan2002/SophiaVL-R1</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.17018v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.17018v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.17017v1</id>
-    <updated>2025-05-22T17:59:49Z</updated>
-    <published>2025-05-22T17:59:49Z</published>
-    <title>Delving into RL for Image Generation with CoT: A Study on DPO vs. GRPO</title>
-    <summary>  Recent advancements underscore the significant role of Reinforcement Learning
-(RL) in enhancing the Chain-of-Thought (CoT) reasoning capabilities of large
-language models (LLMs). Two prominent RL algorithms, Direct Preference
-Optimization (DPO) and Group Relative Policy Optimization (GRPO), are central
-to these developments, showcasing different pros and cons. Autoregressive image
-generation, also interpretable as a sequential CoT reasoning process, presents
-unique challenges distinct from LLM-based CoT reasoning. These encompass
-ensuring text-image consistency, improving image aesthetic quality, and
-designing sophisticated reward models, rather than relying on simpler
-rule-based rewards. While recent efforts have extended RL to this domain, these
-explorations typically lack an in-depth analysis of the domain-specific
-challenges and the characteristics of different RL strategies. To bridge this
-gap, we provide the first comprehensive investigation of the GRPO and DPO
-algorithms in autoregressive image generation, evaluating their in-domain
-performance and out-of-domain generalization, while scrutinizing the impact of
-different reward models on their respective capabilities. Our findings reveal
-that GRPO and DPO exhibit distinct advantages, and crucially, that reward
-models possessing stronger intrinsic generalization capabilities potentially
-enhance the generalization potential of the applied RL algorithms. Furthermore,
-we systematically explore three prevalent scaling strategies to enhance both
-their in-domain and out-of-domain proficiency, deriving unique insights into
-efficiently scaling performance for each paradigm. We hope our study paves a
-new path for inspiring future work on developing more effective RL algorithms
-to achieve robust CoT reasoning in the realm of autoregressive image
-generation. Code is released at
-https://github.com/ZiyuGuo99/Image-Generation-CoT
-</summary>
-    <author>
-      <name>Chengzhuo Tong</name>
-    </author>
-    <author>
-      <name>Ziyu Guo</name>
-    </author>
-    <author>
-      <name>Renrui Zhang</name>
-    </author>
-    <author>
-      <name>Wenyu Shan</name>
-    </author>
-    <author>
-      <name>Xinyu Wei</name>
-    </author>
-    <author>
-      <name>Zhenghao Xing</name>
-    </author>
-    <author>
-      <name>Hongsheng Li</name>
-    </author>
-    <author>
-      <name>Pheng-Ann Heng</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Code is released at https://github.com/ZiyuGuo99/Image-Generation-CoT</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.17017v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.17017v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.17016v1</id>
-    <updated>2025-05-22T17:59:45Z</updated>
-    <published>2025-05-22T17:59:45Z</published>
-    <title>Interactive Post-Training for Vision-Language-Action Models</title>
-    <summary>  We introduce RIPT-VLA, a simple and scalable reinforcement-learning-based
-interactive post-training paradigm that fine-tunes pretrained
-Vision-Language-Action (VLA) models using only sparse binary success rewards.
-Existing VLA training pipelines rely heavily on offline expert demonstration
-data and supervised imitation, limiting their ability to adapt to new tasks and
-environments under low-data regimes. RIPT-VLA addresses this by enabling
-interactive post-training with a stable policy optimization algorithm based on
-dynamic rollout sampling and leave-one-out advantage estimation.
-  RIPT-VLA has the following characteristics. First, it applies to various VLA
-models, resulting in an improvement on the lightweight QueST model by 21.2%,
-and the 7B OpenVLA-OFT model to an unprecedented 97.5% success rate. Second, it
-is computationally efficient and data-efficient: with only one demonstration,
-RIPT-VLA enables an unworkable SFT model (4%) to succeed with a 97% success
-rate within 15 iterations. Furthermore, we demonstrate that the policy learned
-by RIPT-VLA generalizes across different tasks and scenarios and is robust to
-the initial state context. These results highlight RIPT-VLA as a practical and
-effective paradigm for post-training VLA models through minimal supervision.
-</summary>
-    <author>
-      <name>Shuhan Tan</name>
-    </author>
-    <author>
-      <name>Kairan Dou</name>
-    </author>
-    <author>
-      <name>Yue Zhao</name>
-    </author>
-    <author>
-      <name>Philipp Krähenbühl</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://ariostgx.github.io/ript_vla/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.17016v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.17016v1" rel="related" type="application/pdf"/>
+    <link href="http://arxiv.org/abs/2505.18150v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.18150v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.17013v1</id>
-    <updated>2025-05-22T17:59:09Z</updated>
-    <published>2025-05-22T17:59:09Z</published>
-    <title>When Are Concepts Erased From Diffusion Models?</title>
-    <summary>  Concept erasure, the ability to selectively prevent a model from generating
-specific concepts, has attracted growing interest, with various approaches
-emerging to address the challenge. However, it remains unclear how thoroughly
-these methods erase the target concept. We begin by proposing two conceptual
-models for the erasure mechanism in diffusion models: (i) reducing the
-likelihood of generating the target concept, and (ii) interfering with the
-model's internal guidance mechanisms. To thoroughly assess whether a concept
-has been truly erased from the model, we introduce a suite of independent
-evaluations. Our evaluation framework includes adversarial attacks, novel
-probing techniques, and analysis of the model's alternative generations in
-place of the erased concept. Our results shed light on the tension between
-minimizing side effects and maintaining robustness to adversarial prompts.
-Broadly, our work underlines the importance of comprehensive evaluation for
-erasure in diffusion models.
+    <id>http://arxiv.org/abs/2505.18148v1</id>
+    <updated>2025-05-23T17:57:42Z</updated>
+    <published>2025-05-23T17:57:42Z</published>
+    <title>Lost in the Haystack: Smaller Needles are More Difficult for LLMs to
+  Find</title>
+    <summary>  Large language models (LLMs) face significant challenges with
+needle-in-a-haystack tasks, where relevant information ("the needle") must be
+drawn from a large pool of irrelevant context ("the haystack"). Previous
+studies have highlighted positional bias and distractor quantity as critical
+factors affecting model performance, yet the influence of gold context size has
+received little attention. We address this gap by systematically studying how
+variations in gold context length impact LLM performance on long-context
+question answering tasks. Our experiments reveal that LLM performance drops
+sharply when the gold context is shorter, i.e., smaller gold contexts
+consistently degrade model performance and amplify positional sensitivity,
+posing a major challenge for agentic systems that must integrate scattered,
+fine-grained information of varying lengths. This pattern holds across three
+diverse domains (general knowledge, biomedical reasoning, and mathematical
+reasoning) and seven state-of-the-art LLMs of various sizes and architectures.
+Our work provides clear insights to guide the design of robust, context-aware
+LLM-driven systems.
 </summary>
     <author>
-      <name>Kevin Lu</name>
+      <name>Owen Bianchi</name>
     </author>
     <author>
-      <name>Nicky Kriplani</name>
+      <name>Mathew J. Koretsky</name>
     </author>
     <author>
-      <name>Rohit Gandikota</name>
+      <name>Maya Willey</name>
     </author>
     <author>
-      <name>Minh Pham</name>
+      <name>Chelsea X. Alvarado</name>
     </author>
     <author>
-      <name>David Bau</name>
+      <name>Tanay Nayak</name>
     </author>
     <author>
-      <name>Chinmay Hegde</name>
+      <name>Adi Asija</name>
     </author>
     <author>
-      <name>Niv Cohen</name>
+      <name>Nicole Kuznetsov</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page:
-  https://nyu-dice-lab.github.io/when-are-concepts-erased/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.17013v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.17013v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Mike A. Nalls</name>
+    </author>
+    <author>
+      <name>Faraz Faghri</name>
+    </author>
+    <author>
+      <name>Daniel Khashabi</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Under Review</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.18148v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.18148v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.18147v1</id>
+    <updated>2025-05-23T17:57:37Z</updated>
+    <published>2025-05-23T17:57:37Z</published>
+    <title>Nonadiabatic reactive scattering of hydrogen on different surface facets
+  of copper</title>
+    <summary>  Dissociative chemisorption is a key process in hydrogen-metal surface
+chemistry, where nonadiabatic effects due to low-lying electron-hole-pair
+excitations may affect reaction outcomes. Molecular dynamics with electronic
+friction simulations can capture weak nonadiabatic effects at metal surfaces,
+but require as input energy landscapes and electronic friction tensors. Here,
+we present full-dimensional machine learning surrogate models of the electronic
+friction tensor to study reactive hydrogen chemistry at the low-index surface
+facets Cu(100), Cu(110), Cu(111), and Cu(211). We combine these surrogate
+models with machine learning interatomic potentials to simulate
+quantum-state-resolved H$_2$ reactive scattering on pristine copper surfaces.
+The predicted sticking coefficient and survival probabilities are in excellent
+agreement with experiment. Comparison between adiabatic and nonadiabatic
+simulations reveals that the influence of electron-hole pair excitations on the
+scattering dynamics is weak and that the probability for dissociative
+adsorption is dominated by the shape of the underlying potential energy surface
+and the initial vibrational quantum state. Nonadiabatic effects only lead to
+subtle changes in rovibrationally inelastic state-to-state scattering
+probabilities. The differences between jellium-based isotropic local density
+friction and full ab-initio response-theory-based orbital-dependent friction
+are even more subtle. The presented machine learning models represent the most
+accurate publicly available, full-dimensional models for H$_2$ on copper to
+date.
+</summary>
+    <author>
+      <name>Wojciech G. Stark</name>
+    </author>
+    <author>
+      <name>Connor L. Box</name>
+    </author>
+    <author>
+      <name>Matthias Sachs</name>
+    </author>
+    <author>
+      <name>Nils Hertl</name>
+    </author>
+    <author>
+      <name>Reinhard J. Maurer</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">16 pages, 10 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.18147v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.18147v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.chem-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.chem-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.mtrl-sci" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.18145v1</id>
+    <updated>2025-05-23T17:55:52Z</updated>
+    <published>2025-05-23T17:55:52Z</published>
+    <title>Stochastic agent-based Monte Carlo simulations for reaction-diffusion
+  models, population dynamics, and epidemic spreading</title>
+    <summary>  We provide a succinct overview of the implementation of Monte Carlo
+algorithms based on Markovian stochastic dynamics to study interacting and
+reacting many-particle systems away from thermal equilibrium. Such agent-based
+computer simulations constitute an effective tool to introduce undergraduate
+and beginning graduate students to current frontier research without requiring
+much prior knowledge or experience: Starting from direct visualization of
+simulation data, students may gain immediate insight into emerging macroscopic
+features of a complex model system and subsequently apply more sophisticated
+data analysis to quantitatively characterize its often rich dynamical
+properties, both in stationary and transient regimes. We utilize numerical
+investigations of paradigmatic reaction-diffusion systems, as well as
+stochastic models for population dynamics and epidemic spreading, to exemplify
+how interdisciplinary computational research can be effectively utilized in
+bottom-up undergraduate and graduate education through learning by doing. In
+addition, we give helpful hints for the practical setup of Monte Carlo
+simulation algorithms, provide sample codes, explain some typical data analysis
+tools, and describe various potential error sources and pitfalls, with tips for
+avoiding them.
+</summary>
+    <author>
+      <name>Mohamed Swailem</name>
+    </author>
+    <author>
+      <name>Ulrich Dobramysl</name>
+    </author>
+    <author>
+      <name>Ruslan Mukhamadiarov</name>
+    </author>
+    <author>
+      <name>Uwe C. Täuber</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">66 pages, 18 figures, submitted to American Journal of Physics (2025)</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.18145v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.18145v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cond-mat.stat-mech" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.stat-mech" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.PE" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
