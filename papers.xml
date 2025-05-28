@@ -3,269 +3,255 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-05-26T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">427948</opensearch:totalResults>
+  <updated>2025-05-27T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">428723</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2505.18152v1</id>
-    <updated>2025-05-23T17:59:29Z</updated>
-    <published>2025-05-23T17:59:29Z</published>
-    <title>Fann or Flop: A Multigenre, Multiera Benchmark for Arabic Poetry
-  Understanding in LLMs</title>
-    <summary>  Arabic poetry stands as one of the most sophisticated and culturally embedded
-forms of expression in the Arabic language, known for its layered meanings,
-stylistic diversity, and deep historical continuity. Although large language
-models (LLMs) have demonstrated strong performance across languages and tasks,
-their ability to understand Arabic poetry remains largely unexplored. In this
-work, we introduce `Fann or Flop`, the first benchmark designed to assess the
-comprehension of Arabic poetry by LLMs in twelve historical eras, covering 21
-core poetic genres and a variety of metrical forms, from classical structures
-to contemporary free verse. The benchmark comprises a curated corpus of poems
-with explanations that assess semantic understanding, metaphor interpretation,
-prosodic awareness, and cultural context. We argue that poetic comprehension
-offers a strong indicator for testing how good the LLM is in understanding
-classical Arabic through the Arabic poetry. Unlike surface-level tasks, this
-domain demands deeper interpretive reasoning and cultural sensitivity. Our
-evaluation of state-of-the-art LLMs shows that most models struggle with poetic
-understanding despite strong results on standard Arabic benchmarks. We release
-`Fann or Flop` along with the evaluation suite as an open-source resource to
-enable rigorous evaluation and advancement for Arabic language models. Code is
-available at: https://github.com/mbzuai-oryx/FannOrFlop.
+    <id>http://arxiv.org/abs/2505.20152v1</id>
+    <updated>2025-05-26T15:55:28Z</updated>
+    <published>2025-05-26T15:55:28Z</published>
+    <title>Hard Negative Contrastive Learning for Fine-Grained Geometric
+  Understanding in Large Multimodal Models</title>
+    <summary>  Benefiting from contrastively trained visual encoders on large-scale natural
+scene images, Large Multimodal Models (LMMs) have achieved remarkable
+performance across various visual perception tasks. However, the inherent
+limitations of contrastive learning upon summarized descriptions fundamentally
+restrict the capabilities of models in meticulous reasoning, particularly in
+crucial scenarios of geometric problem-solving. To enhance geometric
+understanding, we propose a novel hard negative contrastive learning framework
+for the vision encoder, which combines image-based contrastive learning using
+generation-based hard negatives created by perturbing diagram generation code,
+and text-based contrastive learning using rule-based negatives derived from
+modified geometric descriptions and retrieval-based negatives selected based on
+caption similarity. We train CLIP using our strong negative learning method,
+namely MMCLIP (Multimodal Math CLIP), and subsequently train an LMM for
+geometric problem-solving. Experiments show that our trained model, MMGeoLM,
+significantly outperforms other open-source models on three geometric reasoning
+benchmarks. Even with a size of 7B, it can rival powerful closed-source models
+like GPT-4o. We further study the impact of different negative sample
+construction methods and the number of negative samples on the geometric
+reasoning performance of LMM, yielding fruitful conclusions. The code and
+dataset are available at https://github.com/THU-KEG/MMGeoLM.
 </summary>
     <author>
-      <name>Wafa Alghallabi</name>
+      <name>Kai Sun</name>
     </author>
     <author>
-      <name>Ritesh Thawkar</name>
+      <name>Yushi Bai</name>
     </author>
     <author>
-      <name>Sara Ghaboura</name>
+      <name>Zhen Yang</name>
     </author>
     <author>
-      <name>Ketan More</name>
+      <name>Jiajie Zhang</name>
     </author>
     <author>
-      <name>Omkar Thawakar</name>
+      <name>Ji Qi</name>
     </author>
     <author>
-      <name>Hisham Cholakkal</name>
+      <name>Lei Hou</name>
     </author>
     <author>
-      <name>Salman Khan</name>
+      <name>Juanzi Li</name>
     </author>
-    <author>
-      <name>Rao Muhammad Anwer</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Github:https://github.com/mbzuai-oryx/FannOrFlop,
-  Dataset:https://huggingface.co/datasets/omkarthawakar/FannOrFlop</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.18152v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.18152v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <link href="http://arxiv.org/abs/2505.20152v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.20152v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.18150v1</id>
-    <updated>2025-05-23T17:58:57Z</updated>
-    <published>2025-05-23T17:58:57Z</published>
-    <title>Generative Distribution Embeddings</title>
-    <summary>  Many real-world problems require reasoning across multiple scales, demanding
-models which operate not on single data points, but on entire distributions. We
-introduce generative distribution embeddings (GDE), a framework that lifts
-autoencoders to the space of distributions. In GDEs, an encoder acts on sets of
-samples, and the decoder is replaced by a generator which aims to match the
-input distribution. This framework enables learning representations of
-distributions by coupling conditional generative models with encoder networks
-which satisfy a criterion we call distributional invariance. We show that GDEs
-learn predictive sufficient statistics embedded in the Wasserstein space, such
-that latent GDE distances approximately recover the $W_2$ distance, and latent
-interpolation approximately recovers optimal transport trajectories for
-Gaussian and Gaussian mixture distributions. We systematically benchmark GDEs
-against existing approaches on synthetic datasets, demonstrating consistently
-stronger performance. We then apply GDEs to six key problems in computational
-biology: learning representations of cell populations from lineage-tracing data
-(150K cells), predicting perturbation effects on single-cell transcriptomes (1M
-cells), predicting perturbation effects on cellular phenotypes (20M single-cell
-images), modeling tissue-specific DNA methylation patterns (253M sequences),
-designing synthetic yeast promoters (34M sequences), and spatiotemporal
-modeling of viral protein sequences (1M sequences).
+    <id>http://arxiv.org/abs/2505.20150v1</id>
+    <updated>2025-05-26T15:53:09Z</updated>
+    <published>2025-05-26T15:53:09Z</published>
+    <title>On the (Non) Injectivity of Piecewise Linear Janossy Pooling</title>
+    <summary>  Multiset functions, which are functions that map multisets to vectors, are a
+fundamental tool in the construction of neural networks for multisets and
+graphs. To guarantee that the vector representation of the multiset is
+faithful, it is often desirable to have multiset mappings that are both
+injective and bi-Lipschitz. Currently, there are several constructions of
+multiset functions achieving both these guarantees, leading to improved
+performance in some tasks but often also to higher compute time than standard
+constructions. Accordingly, it is natural to inquire whether simpler multiset
+functions achieving the same guarantees are available. In this paper, we make a
+large step towards giving a negative answer to this question. We consider the
+family of k-ary Janossy pooling, which includes many of the most popular
+multiset models, and prove that no piecewise linear Janossy pooling function
+can be injective. On the positive side, we show that when restricted to
+multisets without multiplicities, even simple deep-sets models suffice for
+injectivity and bi-Lipschitzness.
 </summary>
     <author>
-      <name>Nic Fishman</name>
+      <name>Ilai Reshef</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Technion - Israel Institute of Technology</arxiv:affiliation>
     </author>
     <author>
-      <name>Gokul Gowri</name>
+      <name>Nadav Dym</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Technion - Israel Institute of Technology</arxiv:affiliation>
     </author>
-    <author>
-      <name>Peng Yin</name>
-    </author>
-    <author>
-      <name>Jonathan Gootenberg</name>
-    </author>
-    <author>
-      <name>Omar Abudayyeh</name>
-    </author>
-    <link href="http://arxiv.org/abs/2505.18150v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.18150v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">14 pages, 2 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.20150v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.20150v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.18148v1</id>
-    <updated>2025-05-23T17:57:42Z</updated>
-    <published>2025-05-23T17:57:42Z</published>
-    <title>Lost in the Haystack: Smaller Needles are More Difficult for LLMs to
-  Find</title>
-    <summary>  Large language models (LLMs) face significant challenges with
-needle-in-a-haystack tasks, where relevant information ("the needle") must be
-drawn from a large pool of irrelevant context ("the haystack"). Previous
-studies have highlighted positional bias and distractor quantity as critical
-factors affecting model performance, yet the influence of gold context size has
-received little attention. We address this gap by systematically studying how
-variations in gold context length impact LLM performance on long-context
-question answering tasks. Our experiments reveal that LLM performance drops
-sharply when the gold context is shorter, i.e., smaller gold contexts
-consistently degrade model performance and amplify positional sensitivity,
-posing a major challenge for agentic systems that must integrate scattered,
-fine-grained information of varying lengths. This pattern holds across three
-diverse domains (general knowledge, biomedical reasoning, and mathematical
-reasoning) and seven state-of-the-art LLMs of various sizes and architectures.
-Our work provides clear insights to guide the design of robust, context-aware
-LLM-driven systems.
+    <id>http://arxiv.org/abs/2505.20149v1</id>
+    <updated>2025-05-26T15:49:44Z</updated>
+    <published>2025-05-26T15:49:44Z</published>
+    <title>Improvement Strategies for Few-Shot Learning in OCT Image Classification
+  of Rare Retinal Diseases</title>
+    <summary>  This paper focuses on using few-shot learning to improve the accuracy of
+classifying OCT diagnosis images with major and rare classes. We used the
+GAN-based augmentation strategy as a baseline and introduced several novel
+methods to further enhance our model. The proposed strategy contains U-GAT-IT
+for improving the generative part and uses the data balance technique to narrow
+down the skew of accuracy between all categories. The best model obtained was
+built with CBAM attention mechanism and fine-tuned InceptionV3, and achieved an
+overall accuracy of 97.85%, representing a significant improvement over the
+original baseline.
 </summary>
     <author>
-      <name>Owen Bianchi</name>
+      <name>Cheng-Yu Tai</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Dixson</arxiv:affiliation>
     </author>
     <author>
-      <name>Mathew J. Koretsky</name>
+      <name>Ching-Wen Chen</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Dixson</arxiv:affiliation>
     </author>
     <author>
-      <name>Maya Willey</name>
+      <name>Chi-Chin Wu</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Dixson</arxiv:affiliation>
     </author>
     <author>
-      <name>Chelsea X. Alvarado</name>
+      <name>Bo-Chen Chiu</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Dixson</arxiv:affiliation>
     </author>
     <author>
-      <name>Tanay Nayak</name>
+      <name> Cheng-Hung</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Dixson</arxiv:affiliation>
     </author>
     <author>
-      <name>Adi Asija</name>
+      <name> Lin</name>
     </author>
     <author>
-      <name>Nicole Kuznetsov</name>
+      <name>Cheng-Kai Lu</name>
     </author>
     <author>
-      <name>Mike A. Nalls</name>
+      <name>Jia-Kang Wang</name>
     </author>
     <author>
-      <name>Faraz Faghri</name>
+      <name>Tzu-Lun Huang</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.20149v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.20149v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.20147v1</id>
+    <updated>2025-05-26T15:46:53Z</updated>
+    <published>2025-05-26T15:46:53Z</published>
+    <title>FUDOKI: Discrete Flow-based Unified Understanding and Generation via
+  Kinetic-Optimal Velocities</title>
+    <summary>  The rapid progress of large language models (LLMs) has catalyzed the
+emergence of multimodal large language models (MLLMs) that unify visual
+understanding and image generation within a single framework. However, most
+existing MLLMs rely on autoregressive (AR) architectures, which impose inherent
+limitations on future development, such as the raster-scan order in image
+generation and restricted reasoning abilities in causal context modeling. In
+this work, we challenge the dominance of AR-based approaches by introducing
+FUDOKI, a unified multimodal model purely based on discrete flow matching, as
+an alternative to conventional AR paradigms. By leveraging metric-induced
+probability paths with kinetic optimal velocities, our framework goes beyond
+the previous masking-based corruption process, enabling iterative refinement
+with self-correction capability and richer bidirectional context integration
+during generation. To mitigate the high cost of training from scratch, we
+initialize FUDOKI from pre-trained AR-based MLLMs and adaptively transition to
+the discrete flow matching paradigm. Experimental results show that FUDOKI
+achieves performance comparable to state-of-the-art AR-based MLLMs across both
+visual understanding and image generation tasks, highlighting its potential as
+a foundation for next-generation unified multimodal models. Furthermore, we
+show that applying test-time scaling techniques to FUDOKI yields significant
+performance gains, further underscoring its promise for future enhancement
+through reinforcement learning.
+</summary>
+    <author>
+      <name>Jin Wang</name>
     </author>
     <author>
-      <name>Daniel Khashabi</name>
+      <name>Yao Lai</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Under Review</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.18148v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.18148v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Aoxue Li</name>
+    </author>
+    <author>
+      <name>Shifeng Zhang</name>
+    </author>
+    <author>
+      <name>Jiacheng Sun</name>
+    </author>
+    <author>
+      <name>Ning Kang</name>
+    </author>
+    <author>
+      <name>Chengyue Wu</name>
+    </author>
+    <author>
+      <name>Zhenguo Li</name>
+    </author>
+    <author>
+      <name>Ping Luo</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">37 pages, 12 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.20147v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.20147v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.20144v1</id>
+    <updated>2025-05-26T15:45:56Z</updated>
+    <published>2025-05-26T15:45:56Z</published>
+    <title>SeMe: Training-Free Language Model Merging via Semantic Alignment</title>
+    <summary>  Despite the remarkable capabilities of Language Models (LMs) across diverse
+tasks, no single model consistently outperforms others, necessitating efficient
+methods to combine their strengths without expensive retraining. Existing model
+merging techniques, such as parameter averaging and task-guided fusion, often
+rely on data-dependent computations or fail to preserve internal knowledge,
+limiting their robustness and scalability. We introduce SeMe (Semantic-based
+Merging), a novel, data-free, and training-free approach that leverages latent
+semantic alignment to merge LMs at a fine-grained, layer-wise level. Unlike
+prior work, SeMe not only preserves model behaviors but also explicitly
+stabilizes internal knowledge, addressing a critical gap in LM fusion. Through
+extensive experiments across diverse architectures and tasks, we demonstrate
+that SeMe outperforms existing methods in both performance and efficiency while
+eliminating reliance on external data. Our work establishes a new paradigm for
+knowledge-aware model merging and provides insights into the semantic structure
+of LMs, paving the way for more scalable and interpretable model composition.
+</summary>
+    <author>
+      <name>Jian Gu</name>
+    </author>
+    <author>
+      <name>Aldeida Aleti</name>
+    </author>
+    <author>
+      <name>Chunyang Chen</name>
+    </author>
+    <author>
+      <name>Hongyu Zhang</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">an early-stage version</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.20144v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.20144v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.18147v1</id>
-    <updated>2025-05-23T17:57:37Z</updated>
-    <published>2025-05-23T17:57:37Z</published>
-    <title>Nonadiabatic reactive scattering of hydrogen on different surface facets
-  of copper</title>
-    <summary>  Dissociative chemisorption is a key process in hydrogen-metal surface
-chemistry, where nonadiabatic effects due to low-lying electron-hole-pair
-excitations may affect reaction outcomes. Molecular dynamics with electronic
-friction simulations can capture weak nonadiabatic effects at metal surfaces,
-but require as input energy landscapes and electronic friction tensors. Here,
-we present full-dimensional machine learning surrogate models of the electronic
-friction tensor to study reactive hydrogen chemistry at the low-index surface
-facets Cu(100), Cu(110), Cu(111), and Cu(211). We combine these surrogate
-models with machine learning interatomic potentials to simulate
-quantum-state-resolved H$_2$ reactive scattering on pristine copper surfaces.
-The predicted sticking coefficient and survival probabilities are in excellent
-agreement with experiment. Comparison between adiabatic and nonadiabatic
-simulations reveals that the influence of electron-hole pair excitations on the
-scattering dynamics is weak and that the probability for dissociative
-adsorption is dominated by the shape of the underlying potential energy surface
-and the initial vibrational quantum state. Nonadiabatic effects only lead to
-subtle changes in rovibrationally inelastic state-to-state scattering
-probabilities. The differences between jellium-based isotropic local density
-friction and full ab-initio response-theory-based orbital-dependent friction
-are even more subtle. The presented machine learning models represent the most
-accurate publicly available, full-dimensional models for H$_2$ on copper to
-date.
-</summary>
-    <author>
-      <name>Wojciech G. Stark</name>
-    </author>
-    <author>
-      <name>Connor L. Box</name>
-    </author>
-    <author>
-      <name>Matthias Sachs</name>
-    </author>
-    <author>
-      <name>Nils Hertl</name>
-    </author>
-    <author>
-      <name>Reinhard J. Maurer</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">16 pages, 10 figures</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.18147v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.18147v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="physics.chem-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.chem-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cond-mat.mtrl-sci" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.18145v1</id>
-    <updated>2025-05-23T17:55:52Z</updated>
-    <published>2025-05-23T17:55:52Z</published>
-    <title>Stochastic agent-based Monte Carlo simulations for reaction-diffusion
-  models, population dynamics, and epidemic spreading</title>
-    <summary>  We provide a succinct overview of the implementation of Monte Carlo
-algorithms based on Markovian stochastic dynamics to study interacting and
-reacting many-particle systems away from thermal equilibrium. Such agent-based
-computer simulations constitute an effective tool to introduce undergraduate
-and beginning graduate students to current frontier research without requiring
-much prior knowledge or experience: Starting from direct visualization of
-simulation data, students may gain immediate insight into emerging macroscopic
-features of a complex model system and subsequently apply more sophisticated
-data analysis to quantitatively characterize its often rich dynamical
-properties, both in stationary and transient regimes. We utilize numerical
-investigations of paradigmatic reaction-diffusion systems, as well as
-stochastic models for population dynamics and epidemic spreading, to exemplify
-how interdisciplinary computational research can be effectively utilized in
-bottom-up undergraduate and graduate education through learning by doing. In
-addition, we give helpful hints for the practical setup of Monte Carlo
-simulation algorithms, provide sample codes, explain some typical data analysis
-tools, and describe various potential error sources and pitfalls, with tips for
-avoiding them.
-</summary>
-    <author>
-      <name>Mohamed Swailem</name>
-    </author>
-    <author>
-      <name>Ulrich Dobramysl</name>
-    </author>
-    <author>
-      <name>Ruslan Mukhamadiarov</name>
-    </author>
-    <author>
-      <name>Uwe C. Täuber</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">66 pages, 18 figures, submitted to American Journal of Physics (2025)</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.18145v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.18145v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cond-mat.stat-mech" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cond-mat.stat-mech" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="q-bio.PE" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
