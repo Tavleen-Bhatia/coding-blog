@@ -3,255 +3,292 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-05-27T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">428723</opensearch:totalResults>
+  <updated>2025-05-28T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">429187</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2505.20152v1</id>
-    <updated>2025-05-26T15:55:28Z</updated>
-    <published>2025-05-26T15:55:28Z</published>
-    <title>Hard Negative Contrastive Learning for Fine-Grained Geometric
-  Understanding in Large Multimodal Models</title>
-    <summary>  Benefiting from contrastively trained visual encoders on large-scale natural
-scene images, Large Multimodal Models (LMMs) have achieved remarkable
-performance across various visual perception tasks. However, the inherent
-limitations of contrastive learning upon summarized descriptions fundamentally
-restrict the capabilities of models in meticulous reasoning, particularly in
-crucial scenarios of geometric problem-solving. To enhance geometric
-understanding, we propose a novel hard negative contrastive learning framework
-for the vision encoder, which combines image-based contrastive learning using
-generation-based hard negatives created by perturbing diagram generation code,
-and text-based contrastive learning using rule-based negatives derived from
-modified geometric descriptions and retrieval-based negatives selected based on
-caption similarity. We train CLIP using our strong negative learning method,
-namely MMCLIP (Multimodal Math CLIP), and subsequently train an LMM for
-geometric problem-solving. Experiments show that our trained model, MMGeoLM,
-significantly outperforms other open-source models on three geometric reasoning
-benchmarks. Even with a size of 7B, it can rival powerful closed-source models
-like GPT-4o. We further study the impact of different negative sample
-construction methods and the number of negative samples on the geometric
-reasoning performance of LMM, yielding fruitful conclusions. The code and
-dataset are available at https://github.com/THU-KEG/MMGeoLM.
+    <id>http://arxiv.org/abs/2505.21503v1</id>
+    <updated>2025-05-27T17:59:50Z</updated>
+    <published>2025-05-27T17:59:50Z</published>
+    <title>Silence is Not Consensus: Disrupting Agreement Bias in Multi-Agent LLMs
+  via Catfish Agent for Clinical Decision Making</title>
+    <summary>  Large language models (LLMs) have demonstrated strong potential in clinical
+question answering, with recent multi-agent frameworks further improving
+diagnostic accuracy via collaborative reasoning. However, we identify a
+recurring issue of Silent Agreement, where agents prematurely converge on
+diagnoses without sufficient critical analysis, particularly in complex or
+ambiguous cases. We present a new concept called Catfish Agent, a
+role-specialized LLM designed to inject structured dissent and counter silent
+agreement. Inspired by the ``catfish effect'' in organizational psychology, the
+Catfish Agent is designed to challenge emerging consensus to stimulate deeper
+reasoning. We formulate two mechanisms to encourage effective and context-aware
+interventions: (i) a complexity-aware intervention that modulates agent
+engagement based on case difficulty, and (ii) a tone-calibrated intervention
+articulated to balance critique and collaboration. Evaluations on nine medical
+Q&amp;A and three medical VQA benchmarks show that our approach consistently
+outperforms both single- and multi-agent LLMs frameworks, including leading
+commercial models such as GPT-4o and DeepSeek-R1.
 </summary>
     <author>
-      <name>Kai Sun</name>
+      <name>Yihan Wang</name>
     </author>
     <author>
-      <name>Yushi Bai</name>
+      <name>Qiao Yan</name>
     </author>
     <author>
-      <name>Zhen Yang</name>
+      <name>Zhenghao Xing</name>
     </author>
     <author>
-      <name>Jiajie Zhang</name>
+      <name>Lihao Liu</name>
     </author>
     <author>
-      <name>Ji Qi</name>
+      <name>Junjun He</name>
     </author>
     <author>
-      <name>Lei Hou</name>
+      <name>Chi-Wing Fu</name>
     </author>
     <author>
-      <name>Juanzi Li</name>
-    </author>
-    <link href="http://arxiv.org/abs/2505.20152v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.20152v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.20150v1</id>
-    <updated>2025-05-26T15:53:09Z</updated>
-    <published>2025-05-26T15:53:09Z</published>
-    <title>On the (Non) Injectivity of Piecewise Linear Janossy Pooling</title>
-    <summary>  Multiset functions, which are functions that map multisets to vectors, are a
-fundamental tool in the construction of neural networks for multisets and
-graphs. To guarantee that the vector representation of the multiset is
-faithful, it is often desirable to have multiset mappings that are both
-injective and bi-Lipschitz. Currently, there are several constructions of
-multiset functions achieving both these guarantees, leading to improved
-performance in some tasks but often also to higher compute time than standard
-constructions. Accordingly, it is natural to inquire whether simpler multiset
-functions achieving the same guarantees are available. In this paper, we make a
-large step towards giving a negative answer to this question. We consider the
-family of k-ary Janossy pooling, which includes many of the most popular
-multiset models, and prove that no piecewise linear Janossy pooling function
-can be injective. On the positive side, we show that when restricted to
-multisets without multiplicities, even simple deep-sets models suffice for
-injectivity and bi-Lipschitzness.
-</summary>
-    <author>
-      <name>Ilai Reshef</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Technion - Israel Institute of Technology</arxiv:affiliation>
+      <name>Xiaowei Hu</name>
     </author>
     <author>
-      <name>Nadav Dym</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Technion - Israel Institute of Technology</arxiv:affiliation>
+      <name>Pheng-Ann Heng</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">14 pages, 2 figures</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.20150v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.20150v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.20149v1</id>
-    <updated>2025-05-26T15:49:44Z</updated>
-    <published>2025-05-26T15:49:44Z</published>
-    <title>Improvement Strategies for Few-Shot Learning in OCT Image Classification
-  of Rare Retinal Diseases</title>
-    <summary>  This paper focuses on using few-shot learning to improve the accuracy of
-classifying OCT diagnosis images with major and rare classes. We used the
-GAN-based augmentation strategy as a baseline and introduced several novel
-methods to further enhance our model. The proposed strategy contains U-GAT-IT
-for improving the generative part and uses the data balance technique to narrow
-down the skew of accuracy between all categories. The best model obtained was
-built with CBAM attention mechanism and fine-tuned InceptionV3, and achieved an
-overall accuracy of 97.85%, representing a significant improvement over the
-original baseline.
-</summary>
-    <author>
-      <name>Cheng-Yu Tai</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Dixson</arxiv:affiliation>
-    </author>
-    <author>
-      <name>Ching-Wen Chen</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Dixson</arxiv:affiliation>
-    </author>
-    <author>
-      <name>Chi-Chin Wu</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Dixson</arxiv:affiliation>
-    </author>
-    <author>
-      <name>Bo-Chen Chiu</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Dixson</arxiv:affiliation>
-    </author>
-    <author>
-      <name> Cheng-Hung</name>
-      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">Dixson</arxiv:affiliation>
-    </author>
-    <author>
-      <name> Lin</name>
-    </author>
-    <author>
-      <name>Cheng-Kai Lu</name>
-    </author>
-    <author>
-      <name>Jia-Kang Wang</name>
-    </author>
-    <author>
-      <name>Tzu-Lun Huang</name>
-    </author>
-    <link href="http://arxiv.org/abs/2505.20149v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.20149v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.20147v1</id>
-    <updated>2025-05-26T15:46:53Z</updated>
-    <published>2025-05-26T15:46:53Z</published>
-    <title>FUDOKI: Discrete Flow-based Unified Understanding and Generation via
-  Kinetic-Optimal Velocities</title>
-    <summary>  The rapid progress of large language models (LLMs) has catalyzed the
-emergence of multimodal large language models (MLLMs) that unify visual
-understanding and image generation within a single framework. However, most
-existing MLLMs rely on autoregressive (AR) architectures, which impose inherent
-limitations on future development, such as the raster-scan order in image
-generation and restricted reasoning abilities in causal context modeling. In
-this work, we challenge the dominance of AR-based approaches by introducing
-FUDOKI, a unified multimodal model purely based on discrete flow matching, as
-an alternative to conventional AR paradigms. By leveraging metric-induced
-probability paths with kinetic optimal velocities, our framework goes beyond
-the previous masking-based corruption process, enabling iterative refinement
-with self-correction capability and richer bidirectional context integration
-during generation. To mitigate the high cost of training from scratch, we
-initialize FUDOKI from pre-trained AR-based MLLMs and adaptively transition to
-the discrete flow matching paradigm. Experimental results show that FUDOKI
-achieves performance comparable to state-of-the-art AR-based MLLMs across both
-visual understanding and image generation tasks, highlighting its potential as
-a foundation for next-generation unified multimodal models. Furthermore, we
-show that applying test-time scaling techniques to FUDOKI yields significant
-performance gains, further underscoring its promise for future enhancement
-through reinforcement learning.
-</summary>
-    <author>
-      <name>Jin Wang</name>
-    </author>
-    <author>
-      <name>Yao Lai</name>
-    </author>
-    <author>
-      <name>Aoxue Li</name>
-    </author>
-    <author>
-      <name>Shifeng Zhang</name>
-    </author>
-    <author>
-      <name>Jiacheng Sun</name>
-    </author>
-    <author>
-      <name>Ning Kang</name>
-    </author>
-    <author>
-      <name>Chengyue Wu</name>
-    </author>
-    <author>
-      <name>Zhenguo Li</name>
-    </author>
-    <author>
-      <name>Ping Luo</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">37 pages, 12 figures</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.20147v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.20147v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.20144v1</id>
-    <updated>2025-05-26T15:45:56Z</updated>
-    <published>2025-05-26T15:45:56Z</published>
-    <title>SeMe: Training-Free Language Model Merging via Semantic Alignment</title>
-    <summary>  Despite the remarkable capabilities of Language Models (LMs) across diverse
-tasks, no single model consistently outperforms others, necessitating efficient
-methods to combine their strengths without expensive retraining. Existing model
-merging techniques, such as parameter averaging and task-guided fusion, often
-rely on data-dependent computations or fail to preserve internal knowledge,
-limiting their robustness and scalability. We introduce SeMe (Semantic-based
-Merging), a novel, data-free, and training-free approach that leverages latent
-semantic alignment to merge LMs at a fine-grained, layer-wise level. Unlike
-prior work, SeMe not only preserves model behaviors but also explicitly
-stabilizes internal knowledge, addressing a critical gap in LM fusion. Through
-extensive experiments across diverse architectures and tasks, we demonstrate
-that SeMe outperforms existing methods in both performance and efficiency while
-eliminating reliance on external data. Our work establishes a new paradigm for
-knowledge-aware model merging and provides insights into the semantic structure
-of LMs, paving the way for more scalable and interpretable model composition.
-</summary>
-    <author>
-      <name>Jian Gu</name>
-    </author>
-    <author>
-      <name>Aldeida Aleti</name>
-    </author>
-    <author>
-      <name>Chunyang Chen</name>
-    </author>
-    <author>
-      <name>Hongyu Zhang</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">an early-stage version</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.20144v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.20144v1" rel="related" type="application/pdf"/>
+    <link href="http://arxiv.org/abs/2505.21503v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.21503v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.OT" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.21496v1</id>
+    <updated>2025-05-27T17:58:06Z</updated>
+    <published>2025-05-27T17:58:06Z</published>
+    <title>UI-Genie: A Self-Improving Approach for Iteratively Boosting MLLM-based
+  Mobile GUI Agents</title>
+    <summary>  In this paper, we introduce UI-Genie, a self-improving framework addressing
+two key challenges in GUI agents: verification of trajectory outcome is
+challenging and high-quality training data are not scalable. These challenges
+are addressed by a reward model and a self-improving pipeline, respectively.
+The reward model, UI-Genie-RM, features an image-text interleaved architecture
+that efficiently pro- cesses historical context and unifies action-level and
+task-level rewards. To sup- port the training of UI-Genie-RM, we develop
+deliberately-designed data genera- tion strategies including rule-based
+verification, controlled trajectory corruption, and hard negative mining. To
+address the second challenge, a self-improvement pipeline progressively expands
+solvable complex GUI tasks by enhancing both the agent and reward models
+through reward-guided exploration and outcome verification in dynamic
+environments. For training the model, we generate UI- Genie-RM-517k and
+UI-Genie-Agent-16k, establishing the first reward-specific dataset for GUI
+agents while demonstrating high-quality synthetic trajectory gen- eration
+without manual annotation. Experimental results show that UI-Genie achieves
+state-of-the-art performance across multiple GUI agent benchmarks with three
+generations of data-model self-improvement. We open-source our complete
+framework implementation and generated datasets to facilitate further research
+in https://github.com/Euphoria16/UI-Genie.
+</summary>
+    <author>
+      <name>Han Xiao</name>
+    </author>
+    <author>
+      <name>Guozhi Wang</name>
+    </author>
+    <author>
+      <name>Yuxiang Chai</name>
+    </author>
+    <author>
+      <name>Zimu Lu</name>
+    </author>
+    <author>
+      <name>Weifeng Lin</name>
+    </author>
+    <author>
+      <name>Hao He</name>
+    </author>
+    <author>
+      <name>Lue Fan</name>
+    </author>
+    <author>
+      <name>Liuyang Bian</name>
+    </author>
+    <author>
+      <name>Rui Hu</name>
+    </author>
+    <author>
+      <name>Liang Liu</name>
+    </author>
+    <author>
+      <name>Shuai Ren</name>
+    </author>
+    <author>
+      <name>Yafei Wen</name>
+    </author>
+    <author>
+      <name>Xiaoxin Chen</name>
+    </author>
+    <author>
+      <name>Aojun Zhou</name>
+    </author>
+    <author>
+      <name>Hongsheng Li</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">https://github.com/Euphoria16/UI-Genie</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.21496v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.21496v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.21493v1</id>
+    <updated>2025-05-27T17:56:27Z</updated>
+    <published>2025-05-27T17:56:27Z</published>
+    <title>Reinforcing General Reasoning without Verifiers</title>
+    <summary>  The recent paradigm shift towards training large language models (LLMs) using
+DeepSeek-R1-Zero-style reinforcement learning (RL) on verifiable rewards has
+led to impressive advancements in code and mathematical reasoning. However,
+this methodology is limited to tasks where rule-based answer verification is
+possible and does not naturally extend to real-world domains such as chemistry,
+healthcare, engineering, law, biology, business, and economics. Current
+practical workarounds use an additional LLM as a model-based verifier; however,
+this introduces issues such as reliance on a strong verifier LLM,
+susceptibility to reward hacking, and the practical burden of maintaining the
+verifier model in memory during training. To address this and extend
+DeepSeek-R1-Zero-style training to general reasoning domains, we propose a
+verifier-free method (VeriFree) that bypasses answer verification and instead
+uses RL to directly maximize the probability of generating the reference
+answer. We compare VeriFree with verifier-based methods and demonstrate that,
+in addition to its significant practical benefits and reduced compute
+requirements, VeriFree matches and even surpasses verifier-based methods on
+extensive evaluations across MMLU-Pro, GPQA, SuperGPQA, and math-related
+benchmarks. Moreover, we provide insights into this method from multiple
+perspectives: as an elegant integration of training both the policy and
+implicit verifier in a unified model, and as a variational optimization
+approach. Code is available at https://github.com/sail-sg/VeriFree.
+</summary>
+    <author>
+      <name>Xiangxin Zhou</name>
+    </author>
+    <author>
+      <name>Zichen Liu</name>
+    </author>
+    <author>
+      <name>Anya Sims</name>
+    </author>
+    <author>
+      <name>Haonan Wang</name>
+    </author>
+    <author>
+      <name>Tianyu Pang</name>
+    </author>
+    <author>
+      <name>Chongxuan Li</name>
+    </author>
+    <author>
+      <name>Liang Wang</name>
+    </author>
+    <author>
+      <name>Min Lin</name>
+    </author>
+    <author>
+      <name>Chao Du</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.21493v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.21493v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.21488v1</id>
+    <updated>2025-05-27T17:54:24Z</updated>
+    <published>2025-05-27T17:54:24Z</published>
+    <title>Be Decisive: Noise-Induced Layouts for Multi-Subject Generation</title>
+    <summary>  Generating multiple distinct subjects remains a challenge for existing
+text-to-image diffusion models. Complex prompts often lead to subject leakage,
+causing inaccuracies in quantities, attributes, and visual features. Preventing
+leakage among subjects necessitates knowledge of each subject's spatial
+location. Recent methods provide these spatial locations via an external layout
+control. However, enforcing such a prescribed layout often conflicts with the
+innate layout dictated by the sampled initial noise, leading to misalignment
+with the model's prior. In this work, we introduce a new approach that predicts
+a spatial layout aligned with the prompt, derived from the initial noise, and
+refines it throughout the denoising process. By relying on this noise-induced
+layout, we avoid conflicts with externally imposed layouts and better preserve
+the model's prior. Our method employs a small neural network to predict and
+refine the evolving noise-induced layout at each denoising step, ensuring clear
+boundaries between subjects while maintaining consistency. Experimental results
+show that this noise-aligned strategy achieves improved text-image alignment
+and more stable multi-subject generation compared to existing layout-guided
+techniques, while preserving the rich diversity of the model's original
+distribution.
+</summary>
+    <author>
+      <name>Omer Dahary</name>
+    </author>
+    <author>
+      <name>Yehonathan Cohen</name>
+    </author>
+    <author>
+      <name>Or Patashnik</name>
+    </author>
+    <author>
+      <name>Kfir Aberman</name>
+    </author>
+    <author>
+      <name>Daniel Cohen-Or</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">SIGGRAPH 2025. Project page: https://omer11a.github.io/be-decisive/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.21488v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.21488v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.GR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.21487v1</id>
+    <updated>2025-05-27T17:54:07Z</updated>
+    <published>2025-05-27T17:54:07Z</published>
+    <title>Hardware-Efficient Attention for Fast Decoding</title>
+    <summary>  LLM decoding is bottlenecked for large batches and long contexts by loading
+the key-value (KV) cache from high-bandwidth memory, which inflates per-token
+latency, while the sequential nature of decoding limits parallelism. We analyze
+the interplay among arithmetic intensity, parallelization, and model quality
+and question whether current architectures fully exploit modern hardware. This
+work redesigns attention to perform more computation per byte loaded from
+memory to maximize hardware efficiency without trading off parallel
+scalability. We first propose Grouped-Tied Attention (GTA), a simple variant
+that combines and reuses key and value states, reducing memory transfers
+without compromising model quality. We then introduce Grouped Latent Attention
+(GLA), a parallel-friendly latent attention paired with low-level optimizations
+for fast decoding while maintaining high model quality. Experiments show that
+GTA matches Grouped-Query Attention (GQA) quality while using roughly half the
+KV cache and that GLA matches Multi-head Latent Attention (MLA) and is easier
+to shard. Our optimized GLA kernel is up to 2$\times$ faster than FlashMLA, for
+example, in a speculative decoding setting when the query length exceeds one.
+Furthermore, by fetching a smaller KV cache per device, GLA reduces end-to-end
+latency and increases throughput in online serving benchmarks by up to
+2$\times$.
+</summary>
+    <author>
+      <name>Ted Zadouri</name>
+    </author>
+    <author>
+      <name>Hubert Strauss</name>
+    </author>
+    <author>
+      <name>Tri Dao</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">37 pages, 15 figures, 45 tables</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.21487v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.21487v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
