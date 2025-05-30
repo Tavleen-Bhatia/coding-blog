@@ -3,292 +3,278 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-05-28T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">429187</opensearch:totalResults>
+  <updated>2025-05-29T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">429614</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2505.21503v1</id>
-    <updated>2025-05-27T17:59:50Z</updated>
-    <published>2025-05-27T17:59:50Z</published>
-    <title>Silence is Not Consensus: Disrupting Agreement Bias in Multi-Agent LLMs
-  via Catfish Agent for Clinical Decision Making</title>
-    <summary>  Large language models (LLMs) have demonstrated strong potential in clinical
-question answering, with recent multi-agent frameworks further improving
-diagnostic accuracy via collaborative reasoning. However, we identify a
-recurring issue of Silent Agreement, where agents prematurely converge on
-diagnoses without sufficient critical analysis, particularly in complex or
-ambiguous cases. We present a new concept called Catfish Agent, a
-role-specialized LLM designed to inject structured dissent and counter silent
-agreement. Inspired by the ``catfish effect'' in organizational psychology, the
-Catfish Agent is designed to challenge emerging consensus to stimulate deeper
-reasoning. We formulate two mechanisms to encourage effective and context-aware
-interventions: (i) a complexity-aware intervention that modulates agent
-engagement based on case difficulty, and (ii) a tone-calibrated intervention
-articulated to balance critique and collaboration. Evaluations on nine medical
-Q&amp;A and three medical VQA benchmarks show that our approach consistently
-outperforms both single- and multi-agent LLMs frameworks, including leading
-commercial models such as GPT-4o and DeepSeek-R1.
+    <id>http://arxiv.org/abs/2505.22662v1</id>
+    <updated>2025-05-28T17:59:53Z</updated>
+    <published>2025-05-28T17:59:53Z</published>
+    <title>AutoL2S: Auto Long-Short Reasoning for Efficient Large Language Models</title>
+    <summary>  The reasoning-capable large language models (LLMs) demonstrate strong
+performance on complex reasoning tasks but often suffer from overthinking,
+generating unnecessarily long chain-of-thought (CoT) reasoning paths for easy
+reasoning questions, thereby increasing inference cost and latency. Recent
+approaches attempt to address this challenge by manually deciding when to apply
+long or short reasoning. However, they lack the flexibility to adapt CoT length
+dynamically based on question complexity. In this paper, we propose Auto
+Long-Short Reasoning (AutoL2S), a dynamic and model-agnostic framework that
+enables LLMs to dynamically compress their generated reasoning path based on
+the complexity of the reasoning question. AutoL2S enables a learned paradigm,
+in which LLMs themselves can decide when longer reasoning is necessary and when
+shorter reasoning suffices, by training on data annotated with our proposed
+method, which includes both long and short CoT paths and a special &lt;EASY&gt;
+token. We then use &lt;EASY&gt; token to indicate when the model can skip generating
+lengthy CoT reasoning. This proposed annotation strategy can enhance the LLMs'
+ability to generate shorter CoT reasoning paths with improved quality after
+training. Extensive evaluation results show that AutoL2S reduces the length of
+reasoning generation by up to 57% without compromising performance,
+demonstrating the effectiveness of AutoL2S for scalable and efficient LLM
+reasoning.
 </summary>
     <author>
-      <name>Yihan Wang</name>
+      <name>Feng Luo</name>
     </author>
     <author>
-      <name>Qiao Yan</name>
+      <name>Yu-Neng Chuang</name>
     </author>
     <author>
-      <name>Zhenghao Xing</name>
+      <name>Guanchu Wang</name>
     </author>
     <author>
-      <name>Lihao Liu</name>
+      <name>Hoang Anh Duy Le</name>
     </author>
     <author>
-      <name>Junjun He</name>
+      <name>Shaochen Zhong</name>
     </author>
     <author>
-      <name>Chi-Wing Fu</name>
+      <name>Hongyi Liu</name>
     </author>
     <author>
-      <name>Xiaowei Hu</name>
+      <name>Jiayi Yuan</name>
     </author>
     <author>
-      <name>Pheng-Ann Heng</name>
+      <name>Yang Sui</name>
     </author>
-    <link href="http://arxiv.org/abs/2505.21503v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.21503v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Vladimir Braverman</name>
+    </author>
+    <author>
+      <name>Vipin Chaudhary</name>
+    </author>
+    <author>
+      <name>Xia Hu</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.22662v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.22662v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="q-bio.OT" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.21496v1</id>
-    <updated>2025-05-27T17:58:06Z</updated>
-    <published>2025-05-27T17:58:06Z</published>
-    <title>UI-Genie: A Self-Improving Approach for Iteratively Boosting MLLM-based
-  Mobile GUI Agents</title>
-    <summary>  In this paper, we introduce UI-Genie, a self-improving framework addressing
-two key challenges in GUI agents: verification of trajectory outcome is
-challenging and high-quality training data are not scalable. These challenges
-are addressed by a reward model and a self-improving pipeline, respectively.
-The reward model, UI-Genie-RM, features an image-text interleaved architecture
-that efficiently pro- cesses historical context and unifies action-level and
-task-level rewards. To sup- port the training of UI-Genie-RM, we develop
-deliberately-designed data genera- tion strategies including rule-based
-verification, controlled trajectory corruption, and hard negative mining. To
-address the second challenge, a self-improvement pipeline progressively expands
-solvable complex GUI tasks by enhancing both the agent and reward models
-through reward-guided exploration and outcome verification in dynamic
-environments. For training the model, we generate UI- Genie-RM-517k and
-UI-Genie-Agent-16k, establishing the first reward-specific dataset for GUI
-agents while demonstrating high-quality synthetic trajectory gen- eration
-without manual annotation. Experimental results show that UI-Genie achieves
-state-of-the-art performance across multiple GUI agent benchmarks with three
-generations of data-model self-improvement. We open-source our complete
-framework implementation and generated datasets to facilitate further research
-in https://github.com/Euphoria16/UI-Genie.
-</summary>
-    <author>
-      <name>Han Xiao</name>
-    </author>
-    <author>
-      <name>Guozhi Wang</name>
-    </author>
-    <author>
-      <name>Yuxiang Chai</name>
-    </author>
-    <author>
-      <name>Zimu Lu</name>
-    </author>
-    <author>
-      <name>Weifeng Lin</name>
-    </author>
-    <author>
-      <name>Hao He</name>
-    </author>
-    <author>
-      <name>Lue Fan</name>
-    </author>
-    <author>
-      <name>Liuyang Bian</name>
-    </author>
-    <author>
-      <name>Rui Hu</name>
-    </author>
-    <author>
-      <name>Liang Liu</name>
-    </author>
-    <author>
-      <name>Shuai Ren</name>
-    </author>
-    <author>
-      <name>Yafei Wen</name>
-    </author>
-    <author>
-      <name>Xiaoxin Chen</name>
-    </author>
-    <author>
-      <name>Aojun Zhou</name>
-    </author>
-    <author>
-      <name>Hongsheng Li</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">https://github.com/Euphoria16/UI-Genie</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.21496v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.21496v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.21493v1</id>
-    <updated>2025-05-27T17:56:27Z</updated>
-    <published>2025-05-27T17:56:27Z</published>
-    <title>Reinforcing General Reasoning without Verifiers</title>
-    <summary>  The recent paradigm shift towards training large language models (LLMs) using
-DeepSeek-R1-Zero-style reinforcement learning (RL) on verifiable rewards has
-led to impressive advancements in code and mathematical reasoning. However,
-this methodology is limited to tasks where rule-based answer verification is
-possible and does not naturally extend to real-world domains such as chemistry,
-healthcare, engineering, law, biology, business, and economics. Current
-practical workarounds use an additional LLM as a model-based verifier; however,
-this introduces issues such as reliance on a strong verifier LLM,
-susceptibility to reward hacking, and the practical burden of maintaining the
-verifier model in memory during training. To address this and extend
-DeepSeek-R1-Zero-style training to general reasoning domains, we propose a
-verifier-free method (VeriFree) that bypasses answer verification and instead
-uses RL to directly maximize the probability of generating the reference
-answer. We compare VeriFree with verifier-based methods and demonstrate that,
-in addition to its significant practical benefits and reduced compute
-requirements, VeriFree matches and even surpasses verifier-based methods on
-extensive evaluations across MMLU-Pro, GPQA, SuperGPQA, and math-related
-benchmarks. Moreover, we provide insights into this method from multiple
-perspectives: as an elegant integration of training both the policy and
-implicit verifier in a unified model, and as a variational optimization
-approach. Code is available at https://github.com/sail-sg/VeriFree.
+    <id>http://arxiv.org/abs/2505.22660v2</id>
+    <updated>2025-05-29T17:14:34Z</updated>
+    <published>2025-05-28T17:59:37Z</published>
+    <title>Maximizing Confidence Alone Improves Reasoning</title>
+    <summary>  Reinforcement learning (RL) has enabled machine learning models to achieve
+significant advances in many fields. Most recently, RL has empowered frontier
+language models to solve challenging math, science, and coding problems.
+However, central to any RL algorithm is the reward function, and reward
+engineering is a notoriously difficult problem in any domain. In this paper, we
+propose RENT: Reinforcement Learning via Entropy Minimization -- a fully
+unsupervised RL method that requires no external reward or ground-truth
+answers, and instead uses the model's entropy of its underlying distribution as
+an intrinsic reward. We find that by reinforcing the chains of thought that
+yield high model confidence on its generated answers, the model improves its
+reasoning ability. In our experiments, we showcase these improvements on an
+extensive suite of commonly-used reasoning benchmarks, including GSM8K,
+MATH500, AMC, AIME, and GPQA, and models of varying sizes from the Qwen and
+Mistral families. The generality of our unsupervised learning method lends
+itself to applicability in a wide range of domains where external supervision
+is unavailable.
 </summary>
     <author>
-      <name>Xiangxin Zhou</name>
+      <name>Mihir Prabhudesai</name>
     </author>
     <author>
-      <name>Zichen Liu</name>
+      <name>Lili Chen</name>
     </author>
     <author>
-      <name>Anya Sims</name>
+      <name>Alex Ippoliti</name>
     </author>
     <author>
-      <name>Haonan Wang</name>
+      <name>Katerina Fragkiadaki</name>
     </author>
     <author>
-      <name>Tianyu Pang</name>
+      <name>Hao Liu</name>
     </author>
     <author>
-      <name>Chongxuan Li</name>
+      <name>Deepak Pathak</name>
     </author>
-    <author>
-      <name>Liang Wang</name>
-    </author>
-    <author>
-      <name>Min Lin</name>
-    </author>
-    <author>
-      <name>Chao Du</name>
-    </author>
-    <link href="http://arxiv.org/abs/2505.21493v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.21493v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Website: https://rent-rl.github.io/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.22660v2" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.22660v2" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.21488v1</id>
-    <updated>2025-05-27T17:54:24Z</updated>
-    <published>2025-05-27T17:54:24Z</published>
-    <title>Be Decisive: Noise-Induced Layouts for Multi-Subject Generation</title>
-    <summary>  Generating multiple distinct subjects remains a challenge for existing
-text-to-image diffusion models. Complex prompts often lead to subject leakage,
-causing inaccuracies in quantities, attributes, and visual features. Preventing
-leakage among subjects necessitates knowledge of each subject's spatial
-location. Recent methods provide these spatial locations via an external layout
-control. However, enforcing such a prescribed layout often conflicts with the
-innate layout dictated by the sampled initial noise, leading to misalignment
-with the model's prior. In this work, we introduce a new approach that predicts
-a spatial layout aligned with the prompt, derived from the initial noise, and
-refines it throughout the denoising process. By relying on this noise-induced
-layout, we avoid conflicts with externally imposed layouts and better preserve
-the model's prior. Our method employs a small neural network to predict and
-refine the evolving noise-induced layout at each denoising step, ensuring clear
-boundaries between subjects while maintaining consistency. Experimental results
-show that this noise-aligned strategy achieves improved text-image alignment
-and more stable multi-subject generation compared to existing layout-guided
-techniques, while preserving the rich diversity of the model's original
-distribution.
+    <id>http://arxiv.org/abs/2505.22657v1</id>
+    <updated>2025-05-28T17:59:13Z</updated>
+    <published>2025-05-28T17:59:13Z</published>
+    <title>3DLLM-Mem: Long-Term Spatial-Temporal Memory for Embodied 3D Large
+  Language Model</title>
+    <summary>  Humans excel at performing complex tasks by leveraging long-term memory
+across temporal and spatial experiences. In contrast, current Large Language
+Models (LLMs) struggle to effectively plan and act in dynamic, multi-room 3D
+environments. We posit that part of this limitation is due to the lack of
+proper 3D spatial-temporal memory modeling in LLMs. To address this, we first
+introduce 3DMem-Bench, a comprehensive benchmark comprising over 26,000
+trajectories and 2,892 embodied tasks, question-answering and captioning,
+designed to evaluate an agent's ability to reason over long-term memory in 3D
+environments. Second, we propose 3DLLM-Mem, a novel dynamic memory management
+and fusion model for embodied spatial-temporal reasoning and actions in LLMs.
+Our model uses working memory tokens, which represents current observations, as
+queries to selectively attend to and fuse the most useful spatial and temporal
+features from episodic memory, which stores past observations and interactions.
+Our approach allows the agent to focus on task-relevant information while
+maintaining memory efficiency in complex, long-horizon environments.
+Experimental results demonstrate that 3DLLM-Mem achieves state-of-the-art
+performance across various tasks, outperforming the strongest baselines by
+16.5% in success rate on 3DMem-Bench's most challenging in-the-wild embodied
+tasks.
 </summary>
     <author>
-      <name>Omer Dahary</name>
+      <name>Wenbo Hu</name>
     </author>
     <author>
-      <name>Yehonathan Cohen</name>
+      <name>Yining Hong</name>
     </author>
     <author>
-      <name>Or Patashnik</name>
+      <name>Yanjun Wang</name>
     </author>
     <author>
-      <name>Kfir Aberman</name>
+      <name>Leison Gao</name>
     </author>
     <author>
-      <name>Daniel Cohen-Or</name>
+      <name>Zibu Wei</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">SIGGRAPH 2025. Project page: https://omer11a.github.io/be-decisive/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.21488v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.21488v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Xingcheng Yao</name>
+    </author>
+    <author>
+      <name>Nanyun Peng</name>
+    </author>
+    <author>
+      <name>Yonatan Bitton</name>
+    </author>
+    <author>
+      <name>Idan Szpektor</name>
+    </author>
+    <author>
+      <name>Kai-Wei Chang</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">demos at: https://3dllm-mem.github.io</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.22657v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.22657v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.GR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.21487v1</id>
-    <updated>2025-05-27T17:54:07Z</updated>
-    <published>2025-05-27T17:54:07Z</published>
-    <title>Hardware-Efficient Attention for Fast Decoding</title>
-    <summary>  LLM decoding is bottlenecked for large batches and long contexts by loading
-the key-value (KV) cache from high-bandwidth memory, which inflates per-token
-latency, while the sequential nature of decoding limits parallelism. We analyze
-the interplay among arithmetic intensity, parallelization, and model quality
-and question whether current architectures fully exploit modern hardware. This
-work redesigns attention to perform more computation per byte loaded from
-memory to maximize hardware efficiency without trading off parallel
-scalability. We first propose Grouped-Tied Attention (GTA), a simple variant
-that combines and reuses key and value states, reducing memory transfers
-without compromising model quality. We then introduce Grouped Latent Attention
-(GLA), a parallel-friendly latent attention paired with low-level optimizations
-for fast decoding while maintaining high model quality. Experiments show that
-GTA matches Grouped-Query Attention (GQA) quality while using roughly half the
-KV cache and that GLA matches Multi-head Latent Attention (MLA) and is easier
-to shard. Our optimized GLA kernel is up to 2$\times$ faster than FlashMLA, for
-example, in a speculative decoding setting when the query length exceeds one.
-Furthermore, by fetching a smaller KV cache per device, GLA reduces end-to-end
-latency and increases throughput in online serving benchmarks by up to
-2$\times$.
+    <id>http://arxiv.org/abs/2505.22655v1</id>
+    <updated>2025-05-28T17:59:08Z</updated>
+    <published>2025-05-28T17:59:08Z</published>
+    <title>Position: Uncertainty Quantification Needs Reassessment for
+  Large-language Model Agents</title>
+    <summary>  Large-language models (LLMs) and chatbot agents are known to provide wrong
+outputs at times, and it was recently found that this can never be fully
+prevented. Hence, uncertainty quantification plays a crucial role, aiming to
+quantify the level of ambiguity in either one overall number or two numbers for
+aleatoric and epistemic uncertainty. This position paper argues that this
+traditional dichotomy of uncertainties is too limited for the open and
+interactive setup that LLM agents operate in when communicating with a user,
+and that we need to research avenues that enrich uncertainties in this novel
+scenario. We review the literature and find that popular definitions of
+aleatoric and epistemic uncertainties directly contradict each other and lose
+their meaning in interactive LLM agent settings. Hence, we propose three novel
+research directions that focus on uncertainties in such human-computer
+interactions: Underspecification uncertainties, for when users do not provide
+all information or define the exact task at the first go, interactive learning,
+to ask follow-up questions and reduce the uncertainty about the current
+context, and output uncertainties, to utilize the rich language and speech
+space to express uncertainties as more than mere numbers. We expect that these
+new ways of dealing with and communicating uncertainties will lead to LLM agent
+interactions that are more transparent, trustworthy, and intuitive.
 </summary>
     <author>
-      <name>Ted Zadouri</name>
+      <name>Michael Kirchhof</name>
     </author>
     <author>
-      <name>Hubert Strauss</name>
+      <name>Gjergji Kasneci</name>
     </author>
     <author>
-      <name>Tri Dao</name>
+      <name>Enkelejda Kasneci</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">37 pages, 15 figures, 45 tables</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.21487v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.21487v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted at ICML 2025</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.22655v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.22655v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.22653v1</id>
+    <updated>2025-05-28T17:59:03Z</updated>
+    <published>2025-05-28T17:59:03Z</published>
+    <title>The Climb Carves Wisdom Deeper Than the Summit: On the Noisy Rewards in
+  Learning to Reason</title>
+    <summary>  Recent studies on post-training large language models (LLMs) for reasoning
+through reinforcement learning (RL) typically focus on tasks that can be
+accurately verified and rewarded, such as solving math problems. In contrast,
+our research investigates the impact of reward noise, a more practical
+consideration for real-world scenarios involving the post-training of LLMs
+using reward models. We found that LLMs demonstrate strong robustness to
+substantial reward noise. For example, manually flipping 40% of the reward
+function's outputs in math tasks still allows a Qwen-2.5-7B model to achieve
+rapid convergence, improving its performance on math tasks from 5% to 72%,
+compared to the 75% accuracy achieved by a model trained with noiseless
+rewards. Surprisingly, by only rewarding the appearance of key reasoning
+phrases (namely reasoning pattern reward, RPR), such as ``first, I need
+to''-without verifying the correctness of answers, the model achieved peak
+downstream performance (over 70% accuracy for Qwen-2.5-7B) comparable to models
+trained with strict correctness verification and accurate rewards. Recognizing
+the importance of the reasoning process over the final results, we combined RPR
+with noisy reward models. RPR helped calibrate the noisy reward models,
+mitigating potential false negatives and enhancing the LLM's performance on
+open-ended tasks. These findings suggest the importance of improving models'
+foundational abilities during the pre-training phase while providing insights
+for advancing post-training techniques. Our code and scripts are available at
+https://github.com/trestad/Noisy-Rewards-in-Learning-to-Reason.
+</summary>
+    <author>
+      <name>Ang Lv</name>
+    </author>
+    <author>
+      <name>Ruobing Xie</name>
+    </author>
+    <author>
+      <name>Xingwu Sun</name>
+    </author>
+    <author>
+      <name>Zhanhui Kang</name>
+    </author>
+    <author>
+      <name>Rui Yan</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Preprint</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.22653v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.22653v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
