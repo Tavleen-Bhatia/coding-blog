@@ -3,278 +3,253 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-05-29T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">429614</opensearch:totalResults>
+  <updated>2025-05-30T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">430040</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2505.22662v1</id>
-    <updated>2025-05-28T17:59:53Z</updated>
-    <published>2025-05-28T17:59:53Z</published>
-    <title>AutoL2S: Auto Long-Short Reasoning for Efficient Large Language Models</title>
-    <summary>  The reasoning-capable large language models (LLMs) demonstrate strong
-performance on complex reasoning tasks but often suffer from overthinking,
-generating unnecessarily long chain-of-thought (CoT) reasoning paths for easy
-reasoning questions, thereby increasing inference cost and latency. Recent
-approaches attempt to address this challenge by manually deciding when to apply
-long or short reasoning. However, they lack the flexibility to adapt CoT length
-dynamically based on question complexity. In this paper, we propose Auto
-Long-Short Reasoning (AutoL2S), a dynamic and model-agnostic framework that
-enables LLMs to dynamically compress their generated reasoning path based on
-the complexity of the reasoning question. AutoL2S enables a learned paradigm,
-in which LLMs themselves can decide when longer reasoning is necessary and when
-shorter reasoning suffices, by training on data annotated with our proposed
-method, which includes both long and short CoT paths and a special &lt;EASY&gt;
-token. We then use &lt;EASY&gt; token to indicate when the model can skip generating
-lengthy CoT reasoning. This proposed annotation strategy can enhance the LLMs'
-ability to generate shorter CoT reasoning paths with improved quality after
-training. Extensive evaluation results show that AutoL2S reduces the length of
-reasoning generation by up to 57% without compromising performance,
-demonstrating the effectiveness of AutoL2S for scalable and efficient LLM
-reasoning.
+    <id>http://arxiv.org/abs/2505.23765v1</id>
+    <updated>2025-05-29T17:59:55Z</updated>
+    <published>2025-05-29T17:59:55Z</published>
+    <title>From Chat Logs to Collective Insights: Aggregative Question Answering</title>
+    <summary>  Conversational agents powered by large language models (LLMs) are rapidly
+becoming integral to our daily interactions, generating unprecedented amounts
+of conversational data. Such datasets offer a powerful lens into societal
+interests, trending topics, and collective concerns. Yet, existing approaches
+typically treat these interactions as independent and miss critical insights
+that could emerge from aggregating and reasoning across large-scale
+conversation logs. In this paper, we introduce Aggregative Question Answering,
+a novel task requiring models to reason explicitly over thousands of
+user-chatbot interactions to answer aggregative queries, such as identifying
+emerging concerns among specific demographics. To enable research in this
+direction, we construct a benchmark, WildChat-AQA, comprising 6,027 aggregative
+questions derived from 182,330 real-world chatbot conversations. Experiments
+show that existing methods either struggle to reason effectively or incur
+prohibitive computational costs, underscoring the need for new approaches
+capable of extracting collective insights from large-scale conversational data.
 </summary>
     <author>
-      <name>Feng Luo</name>
+      <name>Wentao Zhang</name>
     </author>
     <author>
-      <name>Yu-Neng Chuang</name>
+      <name>Woojeong Kim</name>
     </author>
     <author>
-      <name>Guanchu Wang</name>
+      <name>Yuntian Deng</name>
     </author>
-    <author>
-      <name>Hoang Anh Duy Le</name>
-    </author>
-    <author>
-      <name>Shaochen Zhong</name>
-    </author>
-    <author>
-      <name>Hongyi Liu</name>
-    </author>
-    <author>
-      <name>Jiayi Yuan</name>
-    </author>
-    <author>
-      <name>Yang Sui</name>
-    </author>
-    <author>
-      <name>Vladimir Braverman</name>
-    </author>
-    <author>
-      <name>Vipin Chaudhary</name>
-    </author>
-    <author>
-      <name>Xia Hu</name>
-    </author>
-    <link href="http://arxiv.org/abs/2505.22662v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.22662v1" rel="related" type="application/pdf"/>
+    <link href="http://arxiv.org/abs/2505.23765v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.23765v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.22660v2</id>
-    <updated>2025-05-29T17:14:34Z</updated>
-    <published>2025-05-28T17:59:37Z</published>
-    <title>Maximizing Confidence Alone Improves Reasoning</title>
-    <summary>  Reinforcement learning (RL) has enabled machine learning models to achieve
-significant advances in many fields. Most recently, RL has empowered frontier
-language models to solve challenging math, science, and coding problems.
-However, central to any RL algorithm is the reward function, and reward
-engineering is a notoriously difficult problem in any domain. In this paper, we
-propose RENT: Reinforcement Learning via Entropy Minimization -- a fully
-unsupervised RL method that requires no external reward or ground-truth
-answers, and instead uses the model's entropy of its underlying distribution as
-an intrinsic reward. We find that by reinforcing the chains of thought that
-yield high model confidence on its generated answers, the model improves its
-reasoning ability. In our experiments, we showcase these improvements on an
-extensive suite of commonly-used reasoning benchmarks, including GSM8K,
-MATH500, AMC, AIME, and GPQA, and models of varying sizes from the Qwen and
-Mistral families. The generality of our unsupervised learning method lends
-itself to applicability in a wide range of domains where external supervision
-is unavailable.
-</summary>
-    <author>
-      <name>Mihir Prabhudesai</name>
-    </author>
-    <author>
-      <name>Lili Chen</name>
-    </author>
-    <author>
-      <name>Alex Ippoliti</name>
-    </author>
-    <author>
-      <name>Katerina Fragkiadaki</name>
-    </author>
-    <author>
-      <name>Hao Liu</name>
-    </author>
-    <author>
-      <name>Deepak Pathak</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Website: https://rent-rl.github.io/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.22660v2" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.22660v2" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.22657v1</id>
-    <updated>2025-05-28T17:59:13Z</updated>
-    <published>2025-05-28T17:59:13Z</published>
-    <title>3DLLM-Mem: Long-Term Spatial-Temporal Memory for Embodied 3D Large
-  Language Model</title>
-    <summary>  Humans excel at performing complex tasks by leveraging long-term memory
-across temporal and spatial experiences. In contrast, current Large Language
-Models (LLMs) struggle to effectively plan and act in dynamic, multi-room 3D
-environments. We posit that part of this limitation is due to the lack of
-proper 3D spatial-temporal memory modeling in LLMs. To address this, we first
-introduce 3DMem-Bench, a comprehensive benchmark comprising over 26,000
-trajectories and 2,892 embodied tasks, question-answering and captioning,
-designed to evaluate an agent's ability to reason over long-term memory in 3D
-environments. Second, we propose 3DLLM-Mem, a novel dynamic memory management
-and fusion model for embodied spatial-temporal reasoning and actions in LLMs.
-Our model uses working memory tokens, which represents current observations, as
-queries to selectively attend to and fuse the most useful spatial and temporal
-features from episodic memory, which stores past observations and interactions.
-Our approach allows the agent to focus on task-relevant information while
-maintaining memory efficiency in complex, long-horizon environments.
-Experimental results demonstrate that 3DLLM-Mem achieves state-of-the-art
-performance across various tasks, outperforming the strongest baselines by
-16.5% in success rate on 3DMem-Bench's most challenging in-the-wild embodied
-tasks.
+    <id>http://arxiv.org/abs/2505.23762v1</id>
+    <updated>2025-05-29T17:59:51Z</updated>
+    <published>2025-05-29T17:59:51Z</published>
+    <title>ZeroGUI: Automating Online GUI Learning at Zero Human Cost</title>
+    <summary>  The rapid advancement of large Vision-Language Models (VLMs) has propelled
+the development of pure-vision-based GUI Agents, capable of perceiving and
+operating Graphical User Interfaces (GUI) to autonomously fulfill user
+instructions. However, existing approaches usually adopt an offline learning
+framework, which faces two core limitations: (1) heavy reliance on high-quality
+manual annotations for element grounding and action supervision, and (2)
+limited adaptability to dynamic and interactive environments. To address these
+limitations, we propose ZeroGUI, a scalable, online learning framework for
+automating GUI Agent training at Zero human cost. Specifically, ZeroGUI
+integrates (i) VLM-based automatic task generation to produce diverse training
+goals from the current environment state, (ii) VLM-based automatic reward
+estimation to assess task success without hand-crafted evaluation functions,
+and (iii) two-stage online reinforcement learning to continuously interact with
+and learn from GUI environments. Experiments on two advanced GUI Agents
+(UI-TARS and Aguvis) demonstrate that ZeroGUI significantly boosts performance
+across OSWorld and AndroidLab environments. The code is available at
+https://github.com/OpenGVLab/ZeroGUI.
 </summary>
     <author>
-      <name>Wenbo Hu</name>
+      <name>Chenyu Yang</name>
     </author>
     <author>
-      <name>Yining Hong</name>
+      <name>Shiqian Su</name>
     </author>
     <author>
-      <name>Yanjun Wang</name>
+      <name>Shi Liu</name>
     </author>
     <author>
-      <name>Leison Gao</name>
+      <name>Xuan Dong</name>
     </author>
     <author>
-      <name>Zibu Wei</name>
+      <name>Yue Yu</name>
     </author>
     <author>
-      <name>Xingcheng Yao</name>
+      <name>Weijie Su</name>
     </author>
     <author>
-      <name>Nanyun Peng</name>
+      <name>Xuehui Wang</name>
     </author>
     <author>
-      <name>Yonatan Bitton</name>
+      <name>Zhaoyang Liu</name>
     </author>
     <author>
-      <name>Idan Szpektor</name>
+      <name>Jinguo Zhu</name>
     </author>
     <author>
-      <name>Kai-Wei Chang</name>
+      <name>Hao Li</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">demos at: https://3dllm-mem.github.io</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.22657v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.22657v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Wenhai Wang</name>
+    </author>
+    <author>
+      <name>Yu Qiao</name>
+    </author>
+    <author>
+      <name>Xizhou Zhu</name>
+    </author>
+    <author>
+      <name>Jifeng Dai</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.23762v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.23762v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.22655v1</id>
-    <updated>2025-05-28T17:59:08Z</updated>
-    <published>2025-05-28T17:59:08Z</published>
-    <title>Position: Uncertainty Quantification Needs Reassessment for
-  Large-language Model Agents</title>
-    <summary>  Large-language models (LLMs) and chatbot agents are known to provide wrong
-outputs at times, and it was recently found that this can never be fully
-prevented. Hence, uncertainty quantification plays a crucial role, aiming to
-quantify the level of ambiguity in either one overall number or two numbers for
-aleatoric and epistemic uncertainty. This position paper argues that this
-traditional dichotomy of uncertainties is too limited for the open and
-interactive setup that LLM agents operate in when communicating with a user,
-and that we need to research avenues that enrich uncertainties in this novel
-scenario. We review the literature and find that popular definitions of
-aleatoric and epistemic uncertainties directly contradict each other and lose
-their meaning in interactive LLM agent settings. Hence, we propose three novel
-research directions that focus on uncertainties in such human-computer
-interactions: Underspecification uncertainties, for when users do not provide
-all information or define the exact task at the first go, interactive learning,
-to ask follow-up questions and reduce the uncertainty about the current
-context, and output uncertainties, to utilize the rich language and speech
-space to express uncertainties as more than mere numbers. We expect that these
-new ways of dealing with and communicating uncertainties will lead to LLM agent
-interactions that are more transparent, trustworthy, and intuitive.
+    <id>http://arxiv.org/abs/2505.23761v1</id>
+    <updated>2025-05-29T17:59:50Z</updated>
+    <published>2025-05-29T17:59:50Z</published>
+    <title>Differential Information: An Information-Theoretic Perspective on
+  Preference Optimization</title>
+    <summary>  Direct Preference Optimization (DPO) has become a standard technique for
+aligning language models with human preferences in a supervised manner. Despite
+its empirical success, the theoretical justification behind its log-ratio
+reward parameterization remains incomplete. In this work, we address this gap
+by utilizing the Differential Information Distribution (DID): a distribution
+over token sequences that captures the information gained during policy
+updates. First, we show that when preference labels encode the differential
+information required to transform a reference policy into a target policy, the
+log-ratio reward in DPO emerges as the uniquely optimal form for learning the
+target policy via preference optimization. This result naturally yields a
+closed-form expression for the optimal sampling distribution over rejected
+responses. Second, we find that the condition for preferences to encode
+differential information is fundamentally linked to an implicit assumption
+regarding log-margin ordered policies-an inductive bias widely used in
+preference optimization yet previously unrecognized. Finally, by analyzing the
+entropy of the DID, we characterize how learning low-entropy differential
+information reinforces the policy distribution, while high-entropy differential
+information induces a smoothing effect, which explains the log-likelihood
+displacement phenomenon. We validate our theoretical findings in synthetic
+experiments and extend them to real-world instruction-following datasets. Our
+results suggest that learning high-entropy differential information is crucial
+for general instruction-following, while learning low-entropy differential
+information benefits knowledge-intensive question answering. Overall, our work
+presents a unifying perspective on the DPO objective, the structure of
+preference data, and resulting policy behaviors through the lens of
+differential information.
 </summary>
     <author>
-      <name>Michael Kirchhof</name>
+      <name>Yunjae Won</name>
     </author>
     <author>
-      <name>Gjergji Kasneci</name>
+      <name>Hyunji Lee</name>
     </author>
     <author>
-      <name>Enkelejda Kasneci</name>
+      <name>Hyeonbin Hwang</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted at ICML 2025</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.22655v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.22655v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Minjoon Seo</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">41 pages, 13 figures; due to the 1,920-character limitation imposed
+  on the abstract field by arXiv, the abstract included on the arXiv page is
+  slightly abbreviated compared to the version presented in the PDF</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.23761v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.23761v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.22653v1</id>
-    <updated>2025-05-28T17:59:03Z</updated>
-    <published>2025-05-28T17:59:03Z</published>
-    <title>The Climb Carves Wisdom Deeper Than the Summit: On the Noisy Rewards in
-  Learning to Reason</title>
-    <summary>  Recent studies on post-training large language models (LLMs) for reasoning
-through reinforcement learning (RL) typically focus on tasks that can be
-accurately verified and rewarded, such as solving math problems. In contrast,
-our research investigates the impact of reward noise, a more practical
-consideration for real-world scenarios involving the post-training of LLMs
-using reward models. We found that LLMs demonstrate strong robustness to
-substantial reward noise. For example, manually flipping 40% of the reward
-function's outputs in math tasks still allows a Qwen-2.5-7B model to achieve
-rapid convergence, improving its performance on math tasks from 5% to 72%,
-compared to the 75% accuracy achieved by a model trained with noiseless
-rewards. Surprisingly, by only rewarding the appearance of key reasoning
-phrases (namely reasoning pattern reward, RPR), such as ``first, I need
-to''-without verifying the correctness of answers, the model achieved peak
-downstream performance (over 70% accuracy for Qwen-2.5-7B) comparable to models
-trained with strict correctness verification and accurate rewards. Recognizing
-the importance of the reasoning process over the final results, we combined RPR
-with noisy reward models. RPR helped calibrate the noisy reward models,
-mitigating potential false negatives and enhancing the LLM's performance on
-open-ended tasks. These findings suggest the importance of improving models'
-foundational abilities during the pre-training phase while providing insights
-for advancing post-training techniques. Our code and scripts are available at
-https://github.com/trestad/Noisy-Rewards-in-Learning-to-Reason.
+    <id>http://arxiv.org/abs/2505.23760v1</id>
+    <updated>2025-05-29T17:59:48Z</updated>
+    <published>2025-05-29T17:59:48Z</published>
+    <title>Model Immunization from a Condition Number Perspective</title>
+    <summary>  Model immunization aims to pre-train models that are difficult to fine-tune
+on harmful tasks while retaining their utility on other non-harmful tasks.
+Though prior work has shown empirical evidence for immunizing text-to-image
+models, the key understanding of when immunization is possible and a precise
+definition of an immunized model remain unclear. In this work, we propose a
+framework, based on the condition number of a Hessian matrix, to analyze model
+immunization for linear models. Building on this framework, we design an
+algorithm with regularization terms to control the resulting condition numbers
+after pre-training. Empirical results on linear models and non-linear deep-nets
+demonstrate the effectiveness of the proposed algorithm on model immunization.
+The code is available at
+https://github.com/amberyzheng/model-immunization-cond-num.
 </summary>
     <author>
-      <name>Ang Lv</name>
+      <name>Amber Yijia Zheng</name>
     </author>
     <author>
-      <name>Ruobing Xie</name>
+      <name>Cedar Site Bai</name>
     </author>
     <author>
-      <name>Xingwu Sun</name>
+      <name>Brian Bullins</name>
     </author>
     <author>
-      <name>Zhanhui Kang</name>
+      <name>Raymond A. Yeh</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">ICML 2025</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.23760v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.23760v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.23759v1</id>
+    <updated>2025-05-29T17:59:47Z</updated>
+    <published>2025-05-29T17:59:47Z</published>
+    <title>Puzzled by Puzzles: When Vision-Language Models Can't Take a Hint</title>
+    <summary>  Rebus puzzles, visual riddles that encode language through imagery, spatial
+arrangement, and symbolic substitution, pose a unique challenge to current
+vision-language models (VLMs). Unlike traditional image captioning or question
+answering tasks, rebus solving requires multi-modal abstraction, symbolic
+reasoning, and a grasp of cultural, phonetic and linguistic puns. In this
+paper, we investigate the capacity of contemporary VLMs to interpret and solve
+rebus puzzles by constructing a hand-generated and annotated benchmark of
+diverse English-language rebus puzzles, ranging from simple pictographic
+substitutions to spatially-dependent cues ("head" over "heels"). We analyze how
+different VLMs perform, and our findings reveal that while VLMs exhibit some
+surprising capabilities in decoding simple visual clues, they struggle
+significantly with tasks requiring abstract reasoning, lateral thinking, and
+understanding visual metaphors.
+</summary>
+    <author>
+      <name>Heekyung Lee</name>
     </author>
     <author>
-      <name>Rui Yan</name>
+      <name>Jiaxin Ge</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Preprint</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.22653v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.22653v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Tsung-Han Wu</name>
+    </author>
+    <author>
+      <name>Minwoo Kang</name>
+    </author>
+    <author>
+      <name>Trevor Darrell</name>
+    </author>
+    <author>
+      <name>David M. Chan</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.23759v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.23759v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
