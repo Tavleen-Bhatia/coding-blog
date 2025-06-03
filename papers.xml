@@ -3,253 +3,289 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-06-01T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">430042</opensearch:totalResults>
+  <updated>2025-06-02T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">430440</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2505.23765v1</id>
-    <updated>2025-05-29T17:59:55Z</updated>
-    <published>2025-05-29T17:59:55Z</published>
-    <title>From Chat Logs to Collective Insights: Aggregative Question Answering</title>
-    <summary>  Conversational agents powered by large language models (LLMs) are rapidly
-becoming integral to our daily interactions, generating unprecedented amounts
-of conversational data. Such datasets offer a powerful lens into societal
-interests, trending topics, and collective concerns. Yet, existing approaches
-typically treat these interactions as independent and miss critical insights
-that could emerge from aggregating and reasoning across large-scale
-conversation logs. In this paper, we introduce Aggregative Question Answering,
-a novel task requiring models to reason explicitly over thousands of
-user-chatbot interactions to answer aggregative queries, such as identifying
-emerging concerns among specific demographics. To enable research in this
-direction, we construct a benchmark, WildChat-AQA, comprising 6,027 aggregative
-questions derived from 182,330 real-world chatbot conversations. Experiments
-show that existing methods either struggle to reason effectively or incur
-prohibitive computational costs, underscoring the need for new approaches
-capable of extracting collective insights from large-scale conversational data.
+    <id>http://arxiv.org/abs/2505.24878v1</id>
+    <updated>2025-05-30T17:59:55Z</updated>
+    <published>2025-05-30T17:59:55Z</published>
+    <title>Open CaptchaWorld: A Comprehensive Web-based Platform for Testing and
+  Benchmarking Multimodal LLM Agents</title>
+    <summary>  CAPTCHAs have been a critical bottleneck for deploying web agents in
+real-world applications, often blocking them from completing end-to-end
+automation tasks. While modern multimodal LLM agents have demonstrated
+impressive performance in static perception tasks, their ability to handle
+interactive, multi-step reasoning challenges like CAPTCHAs is largely untested.
+To address this gap, we introduce Open CaptchaWorld, the first web-based
+benchmark and platform specifically designed to evaluate the visual reasoning
+and interaction capabilities of MLLM-powered agents through diverse and dynamic
+CAPTCHA puzzles. Our benchmark spans 20 modern CAPTCHA types, totaling 225
+CAPTCHAs, annotated with a new metric we propose: CAPTCHA Reasoning Depth,
+which quantifies the number of cognitive and motor steps required to solve each
+puzzle. Experimental results show that humans consistently achieve near-perfect
+scores, state-of-the-art MLLM agents struggle significantly, with success rates
+at most 40.0% by Browser-Use Openai-o3, far below human-level performance,
+93.3%. This highlights Open CaptchaWorld as a vital benchmark for diagnosing
+the limits of current multimodal agents and guiding the development of more
+robust multimodal reasoning systems. Code and Data are available at this https
+URL.
 </summary>
     <author>
-      <name>Wentao Zhang</name>
+      <name>Yaxin Luo</name>
     </author>
     <author>
-      <name>Woojeong Kim</name>
+      <name>Zhaoyi Li</name>
     </author>
     <author>
-      <name>Yuntian Deng</name>
-    </author>
-    <link href="http://arxiv.org/abs/2505.23765v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.23765v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.23762v1</id>
-    <updated>2025-05-29T17:59:51Z</updated>
-    <published>2025-05-29T17:59:51Z</published>
-    <title>ZeroGUI: Automating Online GUI Learning at Zero Human Cost</title>
-    <summary>  The rapid advancement of large Vision-Language Models (VLMs) has propelled
-the development of pure-vision-based GUI Agents, capable of perceiving and
-operating Graphical User Interfaces (GUI) to autonomously fulfill user
-instructions. However, existing approaches usually adopt an offline learning
-framework, which faces two core limitations: (1) heavy reliance on high-quality
-manual annotations for element grounding and action supervision, and (2)
-limited adaptability to dynamic and interactive environments. To address these
-limitations, we propose ZeroGUI, a scalable, online learning framework for
-automating GUI Agent training at Zero human cost. Specifically, ZeroGUI
-integrates (i) VLM-based automatic task generation to produce diverse training
-goals from the current environment state, (ii) VLM-based automatic reward
-estimation to assess task success without hand-crafted evaluation functions,
-and (iii) two-stage online reinforcement learning to continuously interact with
-and learn from GUI environments. Experiments on two advanced GUI Agents
-(UI-TARS and Aguvis) demonstrate that ZeroGUI significantly boosts performance
-across OSWorld and AndroidLab environments. The code is available at
-https://github.com/OpenGVLab/ZeroGUI.
-</summary>
-    <author>
-      <name>Chenyu Yang</name>
+      <name>Jiacheng Liu</name>
     </author>
     <author>
-      <name>Shiqian Su</name>
+      <name>Jiacheng Cui</name>
     </author>
     <author>
-      <name>Shi Liu</name>
+      <name>Xiaohan Zhao</name>
     </author>
     <author>
-      <name>Xuan Dong</name>
+      <name>Zhiqiang Shen</name>
     </author>
-    <author>
-      <name>Yue Yu</name>
-    </author>
-    <author>
-      <name>Weijie Su</name>
-    </author>
-    <author>
-      <name>Xuehui Wang</name>
-    </author>
-    <author>
-      <name>Zhaoyang Liu</name>
-    </author>
-    <author>
-      <name>Jinguo Zhu</name>
-    </author>
-    <author>
-      <name>Hao Li</name>
-    </author>
-    <author>
-      <name>Wenhai Wang</name>
-    </author>
-    <author>
-      <name>Yu Qiao</name>
-    </author>
-    <author>
-      <name>Xizhou Zhu</name>
-    </author>
-    <author>
-      <name>Jifeng Dai</name>
-    </author>
-    <link href="http://arxiv.org/abs/2505.23762v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.23762v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Code at: https://github.com/MetaAgentX/OpenCaptchaWorld</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.24878v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.24878v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.23761v1</id>
-    <updated>2025-05-29T17:59:50Z</updated>
-    <published>2025-05-29T17:59:50Z</published>
-    <title>Differential Information: An Information-Theoretic Perspective on
-  Preference Optimization</title>
-    <summary>  Direct Preference Optimization (DPO) has become a standard technique for
-aligning language models with human preferences in a supervised manner. Despite
-its empirical success, the theoretical justification behind its log-ratio
-reward parameterization remains incomplete. In this work, we address this gap
-by utilizing the Differential Information Distribution (DID): a distribution
-over token sequences that captures the information gained during policy
-updates. First, we show that when preference labels encode the differential
-information required to transform a reference policy into a target policy, the
-log-ratio reward in DPO emerges as the uniquely optimal form for learning the
-target policy via preference optimization. This result naturally yields a
-closed-form expression for the optimal sampling distribution over rejected
-responses. Second, we find that the condition for preferences to encode
-differential information is fundamentally linked to an implicit assumption
-regarding log-margin ordered policies-an inductive bias widely used in
-preference optimization yet previously unrecognized. Finally, by analyzing the
-entropy of the DID, we characterize how learning low-entropy differential
-information reinforces the policy distribution, while high-entropy differential
-information induces a smoothing effect, which explains the log-likelihood
-displacement phenomenon. We validate our theoretical findings in synthetic
-experiments and extend them to real-world instruction-following datasets. Our
-results suggest that learning high-entropy differential information is crucial
-for general instruction-following, while learning low-entropy differential
-information benefits knowledge-intensive question answering. Overall, our work
-presents a unifying perspective on the DPO objective, the structure of
-preference data, and resulting policy behaviors through the lens of
-differential information.
-</summary>
-    <author>
-      <name>Yunjae Won</name>
-    </author>
-    <author>
-      <name>Hyunji Lee</name>
-    </author>
-    <author>
-      <name>Hyeonbin Hwang</name>
-    </author>
-    <author>
-      <name>Minjoon Seo</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">41 pages, 13 figures; due to the 1,920-character limitation imposed
-  on the abstract field by arXiv, the abstract included on the arXiv page is
-  slightly abbreviated compared to the version presented in the PDF</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.23761v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.23761v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.23760v1</id>
-    <updated>2025-05-29T17:59:48Z</updated>
-    <published>2025-05-29T17:59:48Z</published>
-    <title>Model Immunization from a Condition Number Perspective</title>
-    <summary>  Model immunization aims to pre-train models that are difficult to fine-tune
-on harmful tasks while retaining their utility on other non-harmful tasks.
-Though prior work has shown empirical evidence for immunizing text-to-image
-models, the key understanding of when immunization is possible and a precise
-definition of an immunized model remain unclear. In this work, we propose a
-framework, based on the condition number of a Hessian matrix, to analyze model
-immunization for linear models. Building on this framework, we design an
-algorithm with regularization terms to control the resulting condition numbers
-after pre-training. Empirical results on linear models and non-linear deep-nets
-demonstrate the effectiveness of the proposed algorithm on model immunization.
-The code is available at
-https://github.com/amberyzheng/model-immunization-cond-num.
-</summary>
-    <author>
-      <name>Amber Yijia Zheng</name>
-    </author>
-    <author>
-      <name>Cedar Site Bai</name>
-    </author>
-    <author>
-      <name>Brian Bullins</name>
-    </author>
-    <author>
-      <name>Raymond A. Yeh</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">ICML 2025</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.23760v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.23760v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2505.23759v1</id>
-    <updated>2025-05-29T17:59:47Z</updated>
-    <published>2025-05-29T17:59:47Z</published>
-    <title>Puzzled by Puzzles: When Vision-Language Models Can't Take a Hint</title>
-    <summary>  Rebus puzzles, visual riddles that encode language through imagery, spatial
-arrangement, and symbolic substitution, pose a unique challenge to current
-vision-language models (VLMs). Unlike traditional image captioning or question
-answering tasks, rebus solving requires multi-modal abstraction, symbolic
-reasoning, and a grasp of cultural, phonetic and linguistic puns. In this
-paper, we investigate the capacity of contemporary VLMs to interpret and solve
-rebus puzzles by constructing a hand-generated and annotated benchmark of
-diverse English-language rebus puzzles, ranging from simple pictographic
-substitutions to spatially-dependent cues ("head" over "heels"). We analyze how
-different VLMs perform, and our findings reveal that while VLMs exhibit some
-surprising capabilities in decoding simple visual clues, they struggle
-significantly with tasks requiring abstract reasoning, lateral thinking, and
-understanding visual metaphors.
+    <id>http://arxiv.org/abs/2505.24876v1</id>
+    <updated>2025-05-30T17:59:53Z</updated>
+    <published>2025-05-30T17:59:53Z</published>
+    <title>Agent-X: Evaluating Deep Multimodal Reasoning in Vision-Centric Agentic
+  Tasks</title>
+    <summary>  Deep reasoning is fundamental for solving complex tasks, especially in
+vision-centric scenarios that demand sequential, multimodal understanding.
+However, existing benchmarks typically evaluate agents with fully synthetic,
+single-turn queries, limited visual modalities, and lack a framework to assess
+reasoning quality over multiple steps as required in real-world settings. To
+address this, we introduce Agent-X, a large-scale benchmark for evaluating
+vision-centric agents multi-step and deep reasoning capabilities in real-world,
+multimodal settings. Agent- X features 828 agentic tasks with authentic visual
+contexts, including images, multi-image comparisons, videos, and instructional
+text. These tasks span six major agentic environments: general visual
+reasoning, web browsing, security and surveillance, autonomous driving, sports,
+and math reasoning. Our benchmark requires agents to integrate tool use with
+explicit, stepwise decision-making in these diverse settings. In addition, we
+propose a fine-grained, step-level evaluation framework that assesses the
+correctness and logical coherence of each reasoning step and the effectiveness
+of tool usage throughout the task. Our results reveal that even the
+best-performing models, including GPT, Gemini, and Qwen families, struggle to
+solve multi-step vision tasks, achieving less than 50% full-chain success.
+These findings highlight key bottlenecks in current LMM reasoning and tool-use
+capabilities and identify future research directions in vision-centric agentic
+reasoning models. Our data and code are publicly available at
+https://github.com/mbzuai-oryx/Agent-X
 </summary>
     <author>
-      <name>Heekyung Lee</name>
+      <name>Tajamul Ashraf</name>
     </author>
     <author>
-      <name>Jiaxin Ge</name>
+      <name>Amal Saqib</name>
     </author>
     <author>
-      <name>Tsung-Han Wu</name>
+      <name>Hanan Ghani</name>
     </author>
     <author>
-      <name>Minwoo Kang</name>
+      <name>Muhra AlMahri</name>
     </author>
     <author>
-      <name>Trevor Darrell</name>
+      <name>Yuhao Li</name>
     </author>
     <author>
-      <name>David M. Chan</name>
+      <name>Noor Ahsan</name>
     </author>
-    <link href="http://arxiv.org/abs/2505.23759v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.23759v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Umair Nawaz</name>
+    </author>
+    <author>
+      <name>Jean Lahoud</name>
+    </author>
+    <author>
+      <name>Hisham Cholakkal</name>
+    </author>
+    <author>
+      <name>Mubarak Shah</name>
+    </author>
+    <author>
+      <name>Philip Torr</name>
+    </author>
+    <author>
+      <name>Fahad Shahbaz Khan</name>
+    </author>
+    <author>
+      <name>Rao Muhammad Anwer</name>
+    </author>
+    <author>
+      <name>Salman Khan</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.24876v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.24876v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.24875v1</id>
+    <updated>2025-05-30T17:59:48Z</updated>
+    <published>2025-05-30T17:59:48Z</published>
+    <title>ReasonGen-R1: CoT for Autoregressive Image generation models through SFT
+  and RL</title>
+    <summary>  Although chain-of-thought reasoning and reinforcement learning (RL) have
+driven breakthroughs in NLP, their integration into generative vision models
+remains underexplored. We introduce ReasonGen-R1, a two-stage framework that
+first imbues an autoregressive image generator with explicit text-based
+"thinking" skills via supervised fine-tuning on a newly generated reasoning
+dataset of written rationales, and then refines its outputs using Group
+Relative Policy Optimization. To enable the model to reason through text before
+generating images, We automatically generate and release a corpus of model
+crafted rationales paired with visual prompts, enabling controlled planning of
+object layouts, styles, and scene compositions. Our GRPO algorithm uses reward
+signals from a pretrained vision language model to assess overall visual
+quality, optimizing the policy in each update. Evaluations on GenEval, DPG, and
+the T2I benchmark demonstrate that ReasonGen-R1 consistently outperforms strong
+baselines and prior state-of-the-art models. More: aka.ms/reasongen.
+</summary>
+    <author>
+      <name>Yu Zhang</name>
+    </author>
+    <author>
+      <name>Yunqi Li</name>
+    </author>
+    <author>
+      <name>Yifan Yang</name>
+    </author>
+    <author>
+      <name>Rui Wang</name>
+    </author>
+    <author>
+      <name>Yuqing Yang</name>
+    </author>
+    <author>
+      <name>Dai Qi</name>
+    </author>
+    <author>
+      <name>Jianmin Bao</name>
+    </author>
+    <author>
+      <name>Dongdong Chen</name>
+    </author>
+    <author>
+      <name>Chong Luo</name>
+    </author>
+    <author>
+      <name>Lili Qiu</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.24875v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.24875v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.24874v1</id>
+    <updated>2025-05-30T17:59:46Z</updated>
+    <published>2025-05-30T17:59:46Z</published>
+    <title>The Road to Generalizable Neuro-Symbolic Learning Should be Paved with
+  Foundation Models</title>
+    <summary>  Neuro-symbolic learning was proposed to address challenges with training
+neural networks for complex reasoning tasks with the added benefits of
+interpretability, reliability, and efficiency. Neuro-symbolic learning methods
+traditionally train neural models in conjunction with symbolic programs, but
+they face significant challenges that limit them to simplistic problems. On the
+other hand, purely-neural foundation models now reach state-of-the-art
+performance through prompting rather than training, but they are often
+unreliable and lack interpretability. Supplementing foundation models with
+symbolic programs, which we call neuro-symbolic prompting, provides a way to
+use these models for complex reasoning tasks. Doing so raises the question:
+What role does specialized model training as part of neuro-symbolic learning
+have in the age of foundation models? To explore this question, we highlight
+three pitfalls of traditional neuro-symbolic learning with respect to the
+compute, data, and programs leading to generalization problems. This position
+paper argues that foundation models enable generalizable neuro-symbolic
+solutions, offering a path towards achieving the original goals of
+neuro-symbolic learning without the downsides of training from scratch.
+</summary>
+    <author>
+      <name>Adam Stein</name>
+    </author>
+    <author>
+      <name>Aaditya Naik</name>
+    </author>
+    <author>
+      <name>Neelay Velingker</name>
+    </author>
+    <author>
+      <name>Mayur Naik</name>
+    </author>
+    <author>
+      <name>Eric Wong</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">19 pages, 11 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.24874v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.24874v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.24872v1</id>
+    <updated>2025-05-30T17:59:43Z</updated>
+    <published>2025-05-30T17:59:43Z</published>
+    <title>ProxyThinker: Test-Time Guidance through Small Visual Reasoners</title>
+    <summary>  Recent advancements in reinforcement learning with verifiable rewards have
+pushed the boundaries of the visual reasoning capabilities in large
+vision-language models (LVLMs). However, training LVLMs with reinforcement
+fine-tuning (RFT) is computationally expensive, posing a significant challenge
+to scaling model size. In this work, we propose ProxyThinker, an inference-time
+technique that enables large models to inherit the visual reasoning
+capabilities from small, slow-thinking visual reasoners without any training.
+By subtracting the output distributions of base models from those of RFT
+reasoners, ProxyThinker modifies the decoding dynamics and successfully elicits
+the slow-thinking reasoning demonstrated by the emerged sophisticated behaviors
+such as self-verification and self-correction. ProxyThinker consistently boosts
+performance on challenging visual benchmarks on spatial, mathematical, and
+multi-disciplinary reasoning, enabling untuned base models to compete with the
+performance of their full-scale RFT counterparts. Furthermore, our
+implementation efficiently coordinates multiple language models with
+parallelism techniques and achieves up to 38 $\times$ faster inference compared
+to previous decoding-time methods, paving the way for the practical deployment
+of ProxyThinker. Code is available at
+https://github.com/MrZilinXiao/ProxyThinker.
+</summary>
+    <author>
+      <name>Zilin Xiao</name>
+    </author>
+    <author>
+      <name>Jaywon Koo</name>
+    </author>
+    <author>
+      <name>Siru Ouyang</name>
+    </author>
+    <author>
+      <name>Jefferson Hernandez</name>
+    </author>
+    <author>
+      <name>Yu Meng</name>
+    </author>
+    <author>
+      <name>Vicente Ordonez</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.24872v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.24872v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
