@@ -3,289 +3,318 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-06-03T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">430441</opensearch:totalResults>
+  <updated>2025-06-04T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">431547</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2505.24878v1</id>
-    <updated>2025-05-30T17:59:55Z</updated>
-    <published>2025-05-30T17:59:55Z</published>
-    <title>Open CaptchaWorld: A Comprehensive Web-based Platform for Testing and
-  Benchmarking Multimodal LLM Agents</title>
-    <summary>  CAPTCHAs have been a critical bottleneck for deploying web agents in
-real-world applications, often blocking them from completing end-to-end
-automation tasks. While modern multimodal LLM agents have demonstrated
-impressive performance in static perception tasks, their ability to handle
-interactive, multi-step reasoning challenges like CAPTCHAs is largely untested.
-To address this gap, we introduce Open CaptchaWorld, the first web-based
-benchmark and platform specifically designed to evaluate the visual reasoning
-and interaction capabilities of MLLM-powered agents through diverse and dynamic
-CAPTCHA puzzles. Our benchmark spans 20 modern CAPTCHA types, totaling 225
-CAPTCHAs, annotated with a new metric we propose: CAPTCHA Reasoning Depth,
-which quantifies the number of cognitive and motor steps required to solve each
-puzzle. Experimental results show that humans consistently achieve near-perfect
-scores, state-of-the-art MLLM agents struggle significantly, with success rates
-at most 40.0% by Browser-Use Openai-o3, far below human-level performance,
-93.3%. This highlights Open CaptchaWorld as a vital benchmark for diagnosing
-the limits of current multimodal agents and guiding the development of more
-robust multimodal reasoning systems. Code and Data are available at this https
-URL.
+    <id>http://arxiv.org/abs/2506.03150v1</id>
+    <updated>2025-06-03T17:59:52Z</updated>
+    <published>2025-06-03T17:59:52Z</published>
+    <title>IllumiCraft: Unified Geometry and Illumination Diffusion for
+  Controllable Video Generation</title>
+    <summary>  Although diffusion-based models can generate high-quality and high-resolution
+video sequences from textual or image inputs, they lack explicit integration of
+geometric cues when controlling scene lighting and visual appearance across
+frames. To address this limitation, we propose IllumiCraft, an end-to-end
+diffusion framework accepting three complementary inputs: (1)
+high-dynamic-range (HDR) video maps for detailed lighting control; (2)
+synthetically relit frames with randomized illumination changes (optionally
+paired with a static background reference image) to provide appearance cues;
+and (3) 3D point tracks that capture precise 3D geometry information. By
+integrating the lighting, appearance, and geometry cues within a unified
+diffusion architecture, IllumiCraft generates temporally coherent videos
+aligned with user-defined prompts. It supports background-conditioned and
+text-conditioned video relighting and provides better fidelity than existing
+controllable video generation methods. Project Page:
+https://yuanze-lin.me/IllumiCraft_page
 </summary>
     <author>
-      <name>Yaxin Luo</name>
+      <name>Yuanze Lin</name>
     </author>
     <author>
-      <name>Zhaoyi Li</name>
+      <name>Yi-Wen Chen</name>
     </author>
     <author>
-      <name>Jiacheng Liu</name>
+      <name>Yi-Hsuan Tsai</name>
     </author>
     <author>
-      <name>Jiacheng Cui</name>
+      <name>Ronald Clark</name>
     </author>
     <author>
-      <name>Xiaohan Zhao</name>
+      <name>Ming-Hsuan Yang</name>
     </author>
-    <author>
-      <name>Zhiqiang Shen</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Code at: https://github.com/MetaAgentX/OpenCaptchaWorld</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.24878v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.24878v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.24876v1</id>
-    <updated>2025-05-30T17:59:53Z</updated>
-    <published>2025-05-30T17:59:53Z</published>
-    <title>Agent-X: Evaluating Deep Multimodal Reasoning in Vision-Centric Agentic
-  Tasks</title>
-    <summary>  Deep reasoning is fundamental for solving complex tasks, especially in
-vision-centric scenarios that demand sequential, multimodal understanding.
-However, existing benchmarks typically evaluate agents with fully synthetic,
-single-turn queries, limited visual modalities, and lack a framework to assess
-reasoning quality over multiple steps as required in real-world settings. To
-address this, we introduce Agent-X, a large-scale benchmark for evaluating
-vision-centric agents multi-step and deep reasoning capabilities in real-world,
-multimodal settings. Agent- X features 828 agentic tasks with authentic visual
-contexts, including images, multi-image comparisons, videos, and instructional
-text. These tasks span six major agentic environments: general visual
-reasoning, web browsing, security and surveillance, autonomous driving, sports,
-and math reasoning. Our benchmark requires agents to integrate tool use with
-explicit, stepwise decision-making in these diverse settings. In addition, we
-propose a fine-grained, step-level evaluation framework that assesses the
-correctness and logical coherence of each reasoning step and the effectiveness
-of tool usage throughout the task. Our results reveal that even the
-best-performing models, including GPT, Gemini, and Qwen families, struggle to
-solve multi-step vision tasks, achieving less than 50% full-chain success.
-These findings highlight key bottlenecks in current LMM reasoning and tool-use
-capabilities and identify future research directions in vision-centric agentic
-reasoning models. Our data and code are publicly available at
-https://github.com/mbzuai-oryx/Agent-X
-</summary>
-    <author>
-      <name>Tajamul Ashraf</name>
-    </author>
-    <author>
-      <name>Amal Saqib</name>
-    </author>
-    <author>
-      <name>Hanan Ghani</name>
-    </author>
-    <author>
-      <name>Muhra AlMahri</name>
-    </author>
-    <author>
-      <name>Yuhao Li</name>
-    </author>
-    <author>
-      <name>Noor Ahsan</name>
-    </author>
-    <author>
-      <name>Umair Nawaz</name>
-    </author>
-    <author>
-      <name>Jean Lahoud</name>
-    </author>
-    <author>
-      <name>Hisham Cholakkal</name>
-    </author>
-    <author>
-      <name>Mubarak Shah</name>
-    </author>
-    <author>
-      <name>Philip Torr</name>
-    </author>
-    <author>
-      <name>Fahad Shahbaz Khan</name>
-    </author>
-    <author>
-      <name>Rao Muhammad Anwer</name>
-    </author>
-    <author>
-      <name>Salman Khan</name>
-    </author>
-    <link href="http://arxiv.org/abs/2505.24876v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.24876v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.24875v1</id>
-    <updated>2025-05-30T17:59:48Z</updated>
-    <published>2025-05-30T17:59:48Z</published>
-    <title>ReasonGen-R1: CoT for Autoregressive Image generation models through SFT
-  and RL</title>
-    <summary>  Although chain-of-thought reasoning and reinforcement learning (RL) have
-driven breakthroughs in NLP, their integration into generative vision models
-remains underexplored. We introduce ReasonGen-R1, a two-stage framework that
-first imbues an autoregressive image generator with explicit text-based
-"thinking" skills via supervised fine-tuning on a newly generated reasoning
-dataset of written rationales, and then refines its outputs using Group
-Relative Policy Optimization. To enable the model to reason through text before
-generating images, We automatically generate and release a corpus of model
-crafted rationales paired with visual prompts, enabling controlled planning of
-object layouts, styles, and scene compositions. Our GRPO algorithm uses reward
-signals from a pretrained vision language model to assess overall visual
-quality, optimizing the policy in each update. Evaluations on GenEval, DPG, and
-the T2I benchmark demonstrate that ReasonGen-R1 consistently outperforms strong
-baselines and prior state-of-the-art models. More: aka.ms/reasongen.
-</summary>
-    <author>
-      <name>Yu Zhang</name>
-    </author>
-    <author>
-      <name>Yunqi Li</name>
-    </author>
-    <author>
-      <name>Yifan Yang</name>
-    </author>
-    <author>
-      <name>Rui Wang</name>
-    </author>
-    <author>
-      <name>Yuqing Yang</name>
-    </author>
-    <author>
-      <name>Dai Qi</name>
-    </author>
-    <author>
-      <name>Jianmin Bao</name>
-    </author>
-    <author>
-      <name>Dongdong Chen</name>
-    </author>
-    <author>
-      <name>Chong Luo</name>
-    </author>
-    <author>
-      <name>Lili Qiu</name>
-    </author>
-    <link href="http://arxiv.org/abs/2505.24875v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.24875v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.24874v1</id>
-    <updated>2025-05-30T17:59:46Z</updated>
-    <published>2025-05-30T17:59:46Z</published>
-    <title>The Road to Generalizable Neuro-Symbolic Learning Should be Paved with
-  Foundation Models</title>
-    <summary>  Neuro-symbolic learning was proposed to address challenges with training
-neural networks for complex reasoning tasks with the added benefits of
-interpretability, reliability, and efficiency. Neuro-symbolic learning methods
-traditionally train neural models in conjunction with symbolic programs, but
-they face significant challenges that limit them to simplistic problems. On the
-other hand, purely-neural foundation models now reach state-of-the-art
-performance through prompting rather than training, but they are often
-unreliable and lack interpretability. Supplementing foundation models with
-symbolic programs, which we call neuro-symbolic prompting, provides a way to
-use these models for complex reasoning tasks. Doing so raises the question:
-What role does specialized model training as part of neuro-symbolic learning
-have in the age of foundation models? To explore this question, we highlight
-three pitfalls of traditional neuro-symbolic learning with respect to the
-compute, data, and programs leading to generalization problems. This position
-paper argues that foundation models enable generalizable neuro-symbolic
-solutions, offering a path towards achieving the original goals of
-neuro-symbolic learning without the downsides of training from scratch.
-</summary>
-    <author>
-      <name>Adam Stein</name>
-    </author>
-    <author>
-      <name>Aaditya Naik</name>
-    </author>
-    <author>
-      <name>Neelay Velingker</name>
-    </author>
-    <author>
-      <name>Mayur Naik</name>
-    </author>
-    <author>
-      <name>Eric Wong</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">19 pages, 11 figures</arxiv:comment>
-    <link href="http://arxiv.org/abs/2505.24874v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.24874v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2505.24872v1</id>
-    <updated>2025-05-30T17:59:43Z</updated>
-    <published>2025-05-30T17:59:43Z</published>
-    <title>ProxyThinker: Test-Time Guidance through Small Visual Reasoners</title>
-    <summary>  Recent advancements in reinforcement learning with verifiable rewards have
-pushed the boundaries of the visual reasoning capabilities in large
-vision-language models (LVLMs). However, training LVLMs with reinforcement
-fine-tuning (RFT) is computationally expensive, posing a significant challenge
-to scaling model size. In this work, we propose ProxyThinker, an inference-time
-technique that enables large models to inherit the visual reasoning
-capabilities from small, slow-thinking visual reasoners without any training.
-By subtracting the output distributions of base models from those of RFT
-reasoners, ProxyThinker modifies the decoding dynamics and successfully elicits
-the slow-thinking reasoning demonstrated by the emerged sophisticated behaviors
-such as self-verification and self-correction. ProxyThinker consistently boosts
-performance on challenging visual benchmarks on spatial, mathematical, and
-multi-disciplinary reasoning, enabling untuned base models to compete with the
-performance of their full-scale RFT counterparts. Furthermore, our
-implementation efficiently coordinates multiple language models with
-parallelism techniques and achieves up to 38 $\times$ faster inference compared
-to previous decoding-time methods, paving the way for the practical deployment
-of ProxyThinker. Code is available at
-https://github.com/MrZilinXiao/ProxyThinker.
-</summary>
-    <author>
-      <name>Zilin Xiao</name>
-    </author>
-    <author>
-      <name>Jaywon Koo</name>
-    </author>
-    <author>
-      <name>Siru Ouyang</name>
-    </author>
-    <author>
-      <name>Jefferson Hernandez</name>
-    </author>
-    <author>
-      <name>Yu Meng</name>
-    </author>
-    <author>
-      <name>Vicente Ordonez</name>
-    </author>
-    <link href="http://arxiv.org/abs/2505.24872v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2505.24872v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Tech Report</arxiv:comment>
+    <link href="http://arxiv.org/abs/2506.03150v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.03150v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.03149v1</id>
+    <updated>2025-06-03T17:59:47Z</updated>
+    <published>2025-06-03T17:59:47Z</published>
+    <title>Causal Estimation of Tokenisation Bias</title>
+    <summary>  Modern language models are typically trained over subword sequences, but
+ultimately define probabilities over character-strings. Ideally, the choice of
+the tokeniser -- which maps character-strings to subwords -- should not affect
+the probability assigned to the underlying character-string; in practice, it
+does. We define this mismatch as tokenisation bias. In this work, we quantify
+one particular type of tokenisation bias: the effect of including or not a
+subword (e.g., $\langle hello \rangle$) in a tokeniser's vocabulary on the
+probability a trained model assigns to the corresponding characters (i.e.,
+\textit{``hello''}). Estimating this effect is challenging because each model
+is trained with only one tokeniser. We address this by framing tokenisation
+bias as a causal effect and estimating it using the regression discontinuity
+design. Specifically, we exploit the fact that tokenisation algorithms rank
+subwords and add the first $K$ to a tokeniser's vocabulary, where $K$ is an
+arbitrary cutoff point. As such, we can estimate a causal effect by comparing
+similar subwords around this cutoff. Experimentally, we find that tokenisation
+consistently affects models' outputs across scales, vocabularies, and
+tokenisers. Notably, a subword's presence in a small model's vocabulary may
+increase its characters' probability by up to 17 times, highlighting
+tokenisation as a key design choice in language modelling.
+</summary>
+    <author>
+      <name>Pietro Lesci</name>
+    </author>
+    <author>
+      <name>Clara Meister</name>
+    </author>
+    <author>
+      <name>Thomas Hofmann</name>
+    </author>
+    <author>
+      <name>Andreas Vlachos</name>
+    </author>
+    <author>
+      <name>Tiago Pimentel</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Published as a conference paper at ACL 2025</arxiv:comment>
+    <link href="http://arxiv.org/abs/2506.03149v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.03149v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.03148v1</id>
+    <updated>2025-06-03T17:59:45Z</updated>
+    <published>2025-06-03T17:59:45Z</published>
+    <title>Self-Supervised Spatial Correspondence Across Modalities</title>
+    <summary>  We present a method for finding cross-modal space-time correspondences. Given
+two images from different visual modalities, such as an RGB image and a depth
+map, our model identifies which pairs of pixels correspond to the same physical
+points in the scene. To solve this problem, we extend the contrastive random
+walk framework to simultaneously learn cycle-consistent feature representations
+for both cross-modal and intra-modal matching. The resulting model is simple
+and has no explicit photo-consistency assumptions. It can be trained entirely
+using unlabeled data, without the need for any spatially aligned multimodal
+image pairs. We evaluate our method on both geometric and semantic
+correspondence tasks. For geometric matching, we consider challenging tasks
+such as RGB-to-depth and RGB-to-thermal matching (and vice versa); for semantic
+matching, we evaluate on photo-sketch and cross-style image alignment. Our
+method achieves strong performance across all benchmarks.
+</summary>
+    <author>
+      <name>Ayush Shrivastava</name>
+    </author>
+    <author>
+      <name>Andrew Owens</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">CVPR 2025. Project link: https://www.ayshrv.com/cmrw . Code:
+  https://github.com/ayshrv/cmrw</arxiv:comment>
+    <link href="http://arxiv.org/abs/2506.03148v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.03148v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.03144v1</id>
+    <updated>2025-06-03T17:59:14Z</updated>
+    <published>2025-06-03T17:59:14Z</published>
+    <title>MERIT: Multilingual Semantic Retrieval with Interleaved Multi-Condition
+  Query</title>
+    <summary>  Semantic retrieval is crucial for modern applications yet remains
+underexplored in current research. Existing datasets are limited to single
+languages, single images, or singular retrieval conditions, often failing to
+fully exploit the expressive capacity of visual information as evidenced by
+maintained performance when images are replaced with captions. However,
+practical retrieval scenarios frequently involve interleaved multi-condition
+queries with multiple images. Hence, this paper introduces MERIT, the first
+multilingual dataset for interleaved multi-condition semantic retrieval,
+comprising 320,000 queries with 135,000 products in 5 languages, covering 7
+distinct product categories. Extensive experiments on MERIT identify existing
+models's limitation: focusing solely on global semantic information while
+neglecting specific conditional elements in queries. Consequently, we propose
+Coral, a novel fine-tuning framework that adapts pre-trained MLLMs by
+integrating embedding reconstruction to preserve fine-grained conditional
+elements and contrastive learning to extract comprehensive global semantics.
+Experiments demonstrate that Coral achieves a 45.9% performance improvement
+over conventional approaches on MERIT, with strong generalization capabilities
+validated across 8 established retrieval benchmarks. Collectively, our
+contributions - a novel dataset, identification of critical limitations in
+existing approaches, and an innovative fine-tuning framework - establish a
+foundation for future research in interleaved multi-condition semantic
+retrieval.
+</summary>
+    <author>
+      <name>Wei Chow</name>
+    </author>
+    <author>
+      <name>Yuan Gao</name>
+    </author>
+    <author>
+      <name>Linfeng Li</name>
+    </author>
+    <author>
+      <name>Xian Wang</name>
+    </author>
+    <author>
+      <name>Qi Xu</name>
+    </author>
+    <author>
+      <name>Hang Song</name>
+    </author>
+    <author>
+      <name>Lingdong Kong</name>
+    </author>
+    <author>
+      <name>Ran Zhou</name>
+    </author>
+    <author>
+      <name>Yi Zeng</name>
+    </author>
+    <author>
+      <name>Yidong Cai</name>
+    </author>
+    <author>
+      <name>Botian Jiang</name>
+    </author>
+    <author>
+      <name>Shilin Xu</name>
+    </author>
+    <author>
+      <name>Jiajun Zhang</name>
+    </author>
+    <author>
+      <name>Minghui Qiu</name>
+    </author>
+    <author>
+      <name>Xiangtai Li</name>
+    </author>
+    <author>
+      <name>Tianshu Yang</name>
+    </author>
+    <author>
+      <name>Siliang Tang</name>
+    </author>
+    <author>
+      <name>Juncheng Li</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Preprint; Project Page, Code, and Dataset at:
+  https://merit-2025.github.io/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2506.03144v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.03144v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.03143v1</id>
+    <updated>2025-06-03T17:59:08Z</updated>
+    <published>2025-06-03T17:59:08Z</published>
+    <title>GUI-Actor: Coordinate-Free Visual Grounding for GUI Agents</title>
+    <summary>  One of the principal challenges in building VLM-powered GUI agents is visual
+grounding, i.e., localizing the appropriate screen region for action execution
+based on both the visual content and the textual plans. Most existing work
+formulates this as a text-based coordinate generation task. However, these
+approaches suffer from several limitations: weak spatial-semantic alignment,
+inability to handle ambiguous supervision targets, and a mismatch between the
+dense nature of screen coordinates and the coarse, patch-level granularity of
+visual features extracted by models like Vision Transformers. In this paper, we
+propose GUI-Actor, a VLM-based method for coordinate-free GUI grounding. At its
+core, GUI-Actor introduces an attention-based action head that learns to align
+a dedicated &lt;ACTOR&gt; token with all relevant visual patch tokens, enabling the
+model to propose one or more action regions in a single forward pass. In line
+with this, we further design a grounding verifier to evaluate and select the
+most plausible action region from the candidates proposed for action execution.
+Extensive experiments show that GUI-Actor outperforms prior state-of-the-art
+methods on multiple GUI action grounding benchmarks, with improved
+generalization to unseen screen resolutions and layouts. Notably, GUI-Actor-7B
+even surpasses UI-TARS-72B (38.1) on ScreenSpot-Pro, achieving scores of 40.7
+with Qwen2-VL and 44.6 with Qwen2.5-VL as backbones. Furthermore, by
+incorporating the verifier, we find that fine-tuning only the newly introduced
+action head (~100M parameters for 7B model) while keeping the VLM backbone
+frozen is sufficient to achieve performance comparable to previous
+state-of-the-art models, highlighting that GUI-Actor can endow the underlying
+VLM with effective grounding capabilities without compromising its
+general-purpose strengths.
+</summary>
+    <author>
+      <name>Qianhui Wu</name>
+    </author>
+    <author>
+      <name>Kanzhi Cheng</name>
+    </author>
+    <author>
+      <name>Rui Yang</name>
+    </author>
+    <author>
+      <name>Chaoyun Zhang</name>
+    </author>
+    <author>
+      <name>Jianwei Yang</name>
+    </author>
+    <author>
+      <name>Huiqiang Jiang</name>
+    </author>
+    <author>
+      <name>Jian Mu</name>
+    </author>
+    <author>
+      <name>Baolin Peng</name>
+    </author>
+    <author>
+      <name>Bo Qiao</name>
+    </author>
+    <author>
+      <name>Reuben Tan</name>
+    </author>
+    <author>
+      <name>Si Qin</name>
+    </author>
+    <author>
+      <name>Lars Liden</name>
+    </author>
+    <author>
+      <name>Qingwei Lin</name>
+    </author>
+    <author>
+      <name>Huan Zhang</name>
+    </author>
+    <author>
+      <name>Tong Zhang</name>
+    </author>
+    <author>
+      <name>Jianbing Zhang</name>
+    </author>
+    <author>
+      <name>Dongmei Zhang</name>
+    </author>
+    <author>
+      <name>Jianfeng Gao</name>
+    </author>
+    <link href="http://arxiv.org/abs/2506.03143v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.03143v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
