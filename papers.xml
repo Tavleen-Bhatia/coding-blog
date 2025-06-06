@@ -3,318 +3,274 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-06-04T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">431547</opensearch:totalResults>
+  <updated>2025-06-05T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">431891</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2506.03150v1</id>
-    <updated>2025-06-03T17:59:52Z</updated>
-    <published>2025-06-03T17:59:52Z</published>
-    <title>IllumiCraft: Unified Geometry and Illumination Diffusion for
-  Controllable Video Generation</title>
-    <summary>  Although diffusion-based models can generate high-quality and high-resolution
-video sequences from textual or image inputs, they lack explicit integration of
-geometric cues when controlling scene lighting and visual appearance across
-frames. To address this limitation, we propose IllumiCraft, an end-to-end
-diffusion framework accepting three complementary inputs: (1)
-high-dynamic-range (HDR) video maps for detailed lighting control; (2)
-synthetically relit frames with randomized illumination changes (optionally
-paired with a static background reference image) to provide appearance cues;
-and (3) 3D point tracks that capture precise 3D geometry information. By
-integrating the lighting, appearance, and geometry cues within a unified
-diffusion architecture, IllumiCraft generates temporally coherent videos
-aligned with user-defined prompts. It supports background-conditioned and
-text-conditioned video relighting and provides better fidelity than existing
-controllable video generation methods. Project Page:
-https://yuanze-lin.me/IllumiCraft_page
+    <id>http://arxiv.org/abs/2506.04227v1</id>
+    <updated>2025-06-04T17:59:06Z</updated>
+    <published>2025-06-04T17:59:06Z</published>
+    <title>Object-centric 3D Motion Field for Robot Learning from Human Videos</title>
+    <summary>  Learning robot control policies from human videos is a promising direction
+for scaling up robot learning. However, how to extract action knowledge (or
+action representations) from videos for policy learning remains a key
+challenge. Existing action representations such as video frames, pixelflow, and
+pointcloud flow have inherent limitations such as modeling complexity or loss
+of information. In this paper, we propose to use object-centric 3D motion field
+to represent actions for robot learning from human videos, and present a novel
+framework for extracting this representation from videos for zero-shot control.
+We introduce two novel components in its implementation. First, a novel
+training pipeline for training a ''denoising'' 3D motion field estimator to
+extract fine object 3D motions from human videos with noisy depth robustly.
+Second, a dense object-centric 3D motion field prediction architecture that
+favors both cross-embodiment transfer and policy generalization to background.
+We evaluate the system in real world setups. Experiments show that our method
+reduces 3D motion estimation error by over 50% compared to the latest method,
+achieve 55% average success rate in diverse tasks where prior approaches
+fail~($\lesssim 10$\%), and can even acquire fine-grained manipulation skills
+like insertion.
 </summary>
     <author>
-      <name>Yuanze Lin</name>
+      <name>Zhao-Heng Yin</name>
     </author>
     <author>
-      <name>Yi-Wen Chen</name>
+      <name>Sherry Yang</name>
     </author>
     <author>
-      <name>Yi-Hsuan Tsai</name>
+      <name>Pieter Abbeel</name>
     </author>
-    <author>
-      <name>Ronald Clark</name>
-    </author>
-    <author>
-      <name>Ming-Hsuan Yang</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Tech Report</arxiv:comment>
-    <link href="http://arxiv.org/abs/2506.03150v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.03150v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project: https://zhaohengyin.github.io/3DMF</arxiv:comment>
+    <link href="http://arxiv.org/abs/2506.04227v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.04227v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.04218v1</id>
+    <updated>2025-06-04T17:57:53Z</updated>
+    <published>2025-06-04T17:57:53Z</published>
+    <title>Pseudo-Simulation for Autonomous Driving</title>
+    <summary>  Existing evaluation paradigms for Autonomous Vehicles (AVs) face critical
+limitations. Real-world evaluation is often challenging due to safety concerns
+and a lack of reproducibility, whereas closed-loop simulation can face
+insufficient realism or high computational costs. Open-loop evaluation, while
+being efficient and data-driven, relies on metrics that generally overlook
+compounding errors. In this paper, we propose pseudo-simulation, a novel
+paradigm that addresses these limitations. Pseudo-simulation operates on real
+datasets, similar to open-loop evaluation, but augments them with synthetic
+observations generated prior to evaluation using 3D Gaussian Splatting. Our key
+idea is to approximate potential future states the AV might encounter by
+generating a diverse set of observations that vary in position, heading, and
+speed. Our method then assigns a higher importance to synthetic observations
+that best match the AV's likely behavior using a novel proximity-based
+weighting scheme. This enables evaluating error recovery and the mitigation of
+causal confusion, as in closed-loop benchmarks, without requiring sequential
+interactive simulation. We show that pseudo-simulation is better correlated
+with closed-loop simulations (R^2=0.8) than the best existing open-loop
+approach (R^2=0.7). We also establish a public leaderboard for the community to
+benchmark new methodologies with pseudo-simulation. Our code is available at
+https://github.com/autonomousvision/navsim.
+</summary>
+    <author>
+      <name>Wei Cao</name>
+    </author>
+    <author>
+      <name>Marcel Hallgarten</name>
+    </author>
+    <author>
+      <name>Tianyu Li</name>
+    </author>
+    <author>
+      <name>Daniel Dauner</name>
+    </author>
+    <author>
+      <name>Xunjiang Gu</name>
+    </author>
+    <author>
+      <name>Caojun Wang</name>
+    </author>
+    <author>
+      <name>Yakov Miron</name>
+    </author>
+    <author>
+      <name>Marco Aiello</name>
+    </author>
+    <author>
+      <name>Hongyang Li</name>
+    </author>
+    <author>
+      <name>Igor Gilitschenski</name>
+    </author>
+    <author>
+      <name>Boris Ivanovic</name>
+    </author>
+    <author>
+      <name>Marco Pavone</name>
+    </author>
+    <author>
+      <name>Andreas Geiger</name>
+    </author>
+    <author>
+      <name>Kashyap Chitta</name>
+    </author>
+    <link href="http://arxiv.org/abs/2506.04218v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.04218v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.04215v1</id>
+    <updated>2025-06-04T17:57:30Z</updated>
+    <published>2025-06-04T17:57:30Z</published>
+    <title>Thinking Beyond Visibility: A Near-Optimal Policy Framework for Locally
+  Interdependent Multi-Agent MDPs</title>
+    <summary>  Decentralized Partially Observable Markov Decision Processes (Dec-POMDPs) are
+known to be NEXP-Complete and intractable to solve. However, for problems such
+as cooperative navigation, obstacle avoidance, and formation control, basic
+assumptions can be made about local visibility and local dependencies. The work
+DeWeese and Qu 2024 formalized these assumptions in the construction of the
+Locally Interdependent Multi-Agent MDP. In this setting, it establishes three
+closed-form policies that are tractable to compute in various situations and
+are exponentially close to optimal with respect to visibility. However, it is
+also shown that these solutions can have poor performance when the visibility
+is small and fixed, often getting stuck during simulations due to the so called
+"Penalty Jittering" phenomenon. In this work, we establish the Extended Cutoff
+Policy Class which is, to the best of our knowledge, the first non-trivial
+class of near optimal closed-form partially observable policies that are
+exponentially close to optimal with respect to the visibility for any Locally
+Interdependent Multi-Agent MDP. These policies are able to remember agents
+beyond their visibilities which allows them to perform significantly better in
+many small and fixed visibility settings, resolve Penalty Jittering
+occurrences, and under certain circumstances guarantee fully observable joint
+optimal behavior despite the partial observability. We also propose a
+generalized form of the Locally Interdependent Multi-Agent MDP that allows for
+transition dependence and extended reward dependence, then replicate our
+theoretical results in this setting.
+</summary>
+    <author>
+      <name>Alex DeWeese</name>
+    </author>
+    <author>
+      <name>Guannan Qu</name>
+    </author>
+    <link href="http://arxiv.org/abs/2506.04215v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.04215v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2506.03149v1</id>
-    <updated>2025-06-03T17:59:47Z</updated>
-    <published>2025-06-03T17:59:47Z</published>
-    <title>Causal Estimation of Tokenisation Bias</title>
-    <summary>  Modern language models are typically trained over subword sequences, but
-ultimately define probabilities over character-strings. Ideally, the choice of
-the tokeniser -- which maps character-strings to subwords -- should not affect
-the probability assigned to the underlying character-string; in practice, it
-does. We define this mismatch as tokenisation bias. In this work, we quantify
-one particular type of tokenisation bias: the effect of including or not a
-subword (e.g., $\langle hello \rangle$) in a tokeniser's vocabulary on the
-probability a trained model assigns to the corresponding characters (i.e.,
-\textit{``hello''}). Estimating this effect is challenging because each model
-is trained with only one tokeniser. We address this by framing tokenisation
-bias as a causal effect and estimating it using the regression discontinuity
-design. Specifically, we exploit the fact that tokenisation algorithms rank
-subwords and add the first $K$ to a tokeniser's vocabulary, where $K$ is an
-arbitrary cutoff point. As such, we can estimate a causal effect by comparing
-similar subwords around this cutoff. Experimentally, we find that tokenisation
-consistently affects models' outputs across scales, vocabularies, and
-tokenisers. Notably, a subword's presence in a small model's vocabulary may
-increase its characters' probability by up to 17 times, highlighting
-tokenisation as a key design choice in language modelling.
+    <id>http://arxiv.org/abs/2506.04214v1</id>
+    <updated>2025-06-04T17:57:26Z</updated>
+    <published>2025-06-04T17:57:26Z</published>
+    <title>Sounding that Object: Interactive Object-Aware Image to Audio Generation</title>
+    <summary>  Generating accurate sounds for complex audio-visual scenes is challenging,
+especially in the presence of multiple objects and sound sources. In this
+paper, we propose an {\em interactive object-aware audio generation} model that
+grounds sound generation in user-selected visual objects within images. Our
+method integrates object-centric learning into a conditional latent diffusion
+model, which learns to associate image regions with their corresponding sounds
+through multi-modal attention. At test time, our model employs image
+segmentation to allow users to interactively generate sounds at the {\em
+object} level. We theoretically validate that our attention mechanism
+functionally approximates test-time segmentation masks, ensuring the generated
+audio aligns with selected objects. Quantitative and qualitative evaluations
+show that our model outperforms baselines, achieving better alignment between
+objects and their associated sounds. Project page:
+https://tinglok.netlify.app/files/avobject/
 </summary>
     <author>
-      <name>Pietro Lesci</name>
+      <name>Tingle Li</name>
     </author>
     <author>
-      <name>Clara Meister</name>
+      <name>Baihe Huang</name>
     </author>
     <author>
-      <name>Thomas Hofmann</name>
+      <name>Xiaobin Zhuang</name>
     </author>
     <author>
-      <name>Andreas Vlachos</name>
+      <name>Dongya Jia</name>
     </author>
     <author>
-      <name>Tiago Pimentel</name>
+      <name>Jiawei Chen</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Published as a conference paper at ACL 2025</arxiv:comment>
-    <link href="http://arxiv.org/abs/2506.03149v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.03149v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Yuping Wang</name>
+    </author>
+    <author>
+      <name>Zhuo Chen</name>
+    </author>
+    <author>
+      <name>Gopala Anumanchipalli</name>
+    </author>
+    <author>
+      <name>Yuxuan Wang</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">ICML 2025</arxiv:comment>
+    <link href="http://arxiv.org/abs/2506.04214v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.04214v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2506.03148v1</id>
-    <updated>2025-06-03T17:59:45Z</updated>
-    <published>2025-06-03T17:59:45Z</published>
-    <title>Self-Supervised Spatial Correspondence Across Modalities</title>
-    <summary>  We present a method for finding cross-modal space-time correspondences. Given
-two images from different visual modalities, such as an RGB image and a depth
-map, our model identifies which pairs of pixels correspond to the same physical
-points in the scene. To solve this problem, we extend the contrastive random
-walk framework to simultaneously learn cycle-consistent feature representations
-for both cross-modal and intra-modal matching. The resulting model is simple
-and has no explicit photo-consistency assumptions. It can be trained entirely
-using unlabeled data, without the need for any spatially aligned multimodal
-image pairs. We evaluate our method on both geometric and semantic
-correspondence tasks. For geometric matching, we consider challenging tasks
-such as RGB-to-depth and RGB-to-thermal matching (and vice versa); for semantic
-matching, we evaluate on photo-sketch and cross-style image alignment. Our
-method achieves strong performance across all benchmarks.
-</summary>
-    <author>
-      <name>Ayush Shrivastava</name>
-    </author>
-    <author>
-      <name>Andrew Owens</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">CVPR 2025. Project link: https://www.ayshrv.com/cmrw . Code:
-  https://github.com/ayshrv/cmrw</arxiv:comment>
-    <link href="http://arxiv.org/abs/2506.03148v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.03148v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2506.03144v1</id>
-    <updated>2025-06-03T17:59:14Z</updated>
-    <published>2025-06-03T17:59:14Z</published>
-    <title>MERIT: Multilingual Semantic Retrieval with Interleaved Multi-Condition
-  Query</title>
-    <summary>  Semantic retrieval is crucial for modern applications yet remains
-underexplored in current research. Existing datasets are limited to single
-languages, single images, or singular retrieval conditions, often failing to
-fully exploit the expressive capacity of visual information as evidenced by
-maintained performance when images are replaced with captions. However,
-practical retrieval scenarios frequently involve interleaved multi-condition
-queries with multiple images. Hence, this paper introduces MERIT, the first
-multilingual dataset for interleaved multi-condition semantic retrieval,
-comprising 320,000 queries with 135,000 products in 5 languages, covering 7
-distinct product categories. Extensive experiments on MERIT identify existing
-models's limitation: focusing solely on global semantic information while
-neglecting specific conditional elements in queries. Consequently, we propose
-Coral, a novel fine-tuning framework that adapts pre-trained MLLMs by
-integrating embedding reconstruction to preserve fine-grained conditional
-elements and contrastive learning to extract comprehensive global semantics.
-Experiments demonstrate that Coral achieves a 45.9% performance improvement
-over conventional approaches on MERIT, with strong generalization capabilities
-validated across 8 established retrieval benchmarks. Collectively, our
-contributions - a novel dataset, identification of critical limitations in
-existing approaches, and an innovative fine-tuning framework - establish a
-foundation for future research in interleaved multi-condition semantic
-retrieval.
-</summary>
-    <author>
-      <name>Wei Chow</name>
-    </author>
-    <author>
-      <name>Yuan Gao</name>
-    </author>
-    <author>
-      <name>Linfeng Li</name>
-    </author>
-    <author>
-      <name>Xian Wang</name>
-    </author>
-    <author>
-      <name>Qi Xu</name>
-    </author>
-    <author>
-      <name>Hang Song</name>
-    </author>
-    <author>
-      <name>Lingdong Kong</name>
-    </author>
-    <author>
-      <name>Ran Zhou</name>
-    </author>
-    <author>
-      <name>Yi Zeng</name>
-    </author>
-    <author>
-      <name>Yidong Cai</name>
-    </author>
-    <author>
-      <name>Botian Jiang</name>
-    </author>
-    <author>
-      <name>Shilin Xu</name>
-    </author>
-    <author>
-      <name>Jiajun Zhang</name>
-    </author>
-    <author>
-      <name>Minghui Qiu</name>
-    </author>
-    <author>
-      <name>Xiangtai Li</name>
-    </author>
-    <author>
-      <name>Tianshu Yang</name>
-    </author>
-    <author>
-      <name>Siliang Tang</name>
-    </author>
-    <author>
-      <name>Juncheng Li</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Preprint; Project Page, Code, and Dataset at:
-  https://merit-2025.github.io/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2506.03144v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.03144v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2506.03143v1</id>
-    <updated>2025-06-03T17:59:08Z</updated>
-    <published>2025-06-03T17:59:08Z</published>
-    <title>GUI-Actor: Coordinate-Free Visual Grounding for GUI Agents</title>
-    <summary>  One of the principal challenges in building VLM-powered GUI agents is visual
-grounding, i.e., localizing the appropriate screen region for action execution
-based on both the visual content and the textual plans. Most existing work
-formulates this as a text-based coordinate generation task. However, these
-approaches suffer from several limitations: weak spatial-semantic alignment,
-inability to handle ambiguous supervision targets, and a mismatch between the
-dense nature of screen coordinates and the coarse, patch-level granularity of
-visual features extracted by models like Vision Transformers. In this paper, we
-propose GUI-Actor, a VLM-based method for coordinate-free GUI grounding. At its
-core, GUI-Actor introduces an attention-based action head that learns to align
-a dedicated &lt;ACTOR&gt; token with all relevant visual patch tokens, enabling the
-model to propose one or more action regions in a single forward pass. In line
-with this, we further design a grounding verifier to evaluate and select the
-most plausible action region from the candidates proposed for action execution.
-Extensive experiments show that GUI-Actor outperforms prior state-of-the-art
-methods on multiple GUI action grounding benchmarks, with improved
-generalization to unseen screen resolutions and layouts. Notably, GUI-Actor-7B
-even surpasses UI-TARS-72B (38.1) on ScreenSpot-Pro, achieving scores of 40.7
-with Qwen2-VL and 44.6 with Qwen2.5-VL as backbones. Furthermore, by
-incorporating the verifier, we find that fine-tuning only the newly introduced
-action head (~100M parameters for 7B model) while keeping the VLM backbone
-frozen is sufficient to achieve performance comparable to previous
-state-of-the-art models, highlighting that GUI-Actor can endow the underlying
-VLM with effective grounding capabilities without compromising its
-general-purpose strengths.
+    <id>http://arxiv.org/abs/2506.04211v1</id>
+    <updated>2025-06-04T17:56:46Z</updated>
+    <published>2025-06-04T17:56:46Z</published>
+    <title>Diffusion Domain Teacher: Diffusion Guided Domain Adaptive Object
+  Detector</title>
+    <summary>  Object detectors often suffer a decrease in performance due to the large
+domain gap between the training data (source domain) and real-world data
+(target domain). Diffusion-based generative models have shown remarkable
+abilities in generating high-quality and diverse images, suggesting their
+potential for extracting valuable feature from various domains. To effectively
+leverage the cross-domain feature representation of diffusion models, in this
+paper, we train a detector with frozen-weight diffusion model on the source
+domain, then employ it as a teacher model to generate pseudo labels on the
+unlabeled target domain, which are used to guide the supervised learning of the
+student model on the target domain. We refer to this approach as Diffusion
+Domain Teacher (DDT). By employing this straightforward yet potent framework,
+we significantly improve cross-domain object detection performance without
+compromising the inference speed. Our method achieves an average mAP
+improvement of 21.2% compared to the baseline on 6 datasets from three common
+cross-domain detection benchmarks (Cross-Camera, Syn2Real, Real2Artistic},
+surpassing the current state-of-the-art (SOTA) methods by an average of 5.7%
+mAP. Furthermore, extensive experiments demonstrate that our method
+consistently brings improvements even in more powerful and complex models,
+highlighting broadly applicable and effective domain adaptation capability of
+our DDT. The code is available at
+https://github.com/heboyong/Diffusion-Domain-Teacher.
 </summary>
     <author>
-      <name>Qianhui Wu</name>
+      <name>Boyong He</name>
     </author>
     <author>
-      <name>Kanzhi Cheng</name>
+      <name>Yuxiang Ji</name>
     </author>
     <author>
-      <name>Rui Yang</name>
+      <name>Zhuoyue Tan</name>
     </author>
     <author>
-      <name>Chaoyun Zhang</name>
+      <name>Liaoni Wu</name>
     </author>
-    <author>
-      <name>Jianwei Yang</name>
-    </author>
-    <author>
-      <name>Huiqiang Jiang</name>
-    </author>
-    <author>
-      <name>Jian Mu</name>
-    </author>
-    <author>
-      <name>Baolin Peng</name>
-    </author>
-    <author>
-      <name>Bo Qiao</name>
-    </author>
-    <author>
-      <name>Reuben Tan</name>
-    </author>
-    <author>
-      <name>Si Qin</name>
-    </author>
-    <author>
-      <name>Lars Liden</name>
-    </author>
-    <author>
-      <name>Qingwei Lin</name>
-    </author>
-    <author>
-      <name>Huan Zhang</name>
-    </author>
-    <author>
-      <name>Tong Zhang</name>
-    </author>
-    <author>
-      <name>Jianbing Zhang</name>
-    </author>
-    <author>
-      <name>Dongmei Zhang</name>
-    </author>
-    <author>
-      <name>Jianfeng Gao</name>
-    </author>
-    <link href="http://arxiv.org/abs/2506.03143v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.03143v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">MM2024 poster, with appendix and codes</arxiv:comment>
+    <link href="http://arxiv.org/abs/2506.04211v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.04211v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
