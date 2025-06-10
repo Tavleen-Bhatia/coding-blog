@@ -3,276 +3,365 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-06-08T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">432240</opensearch:totalResults>
+  <updated>2025-06-09T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">432588</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2506.05349v1</id>
-    <updated>2025-06-05T17:59:58Z</updated>
-    <published>2025-06-05T17:59:58Z</published>
-    <title>VideoMathQA: Benchmarking Mathematical Reasoning via Multimodal
-  Understanding in Videos</title>
-    <summary>  Mathematical reasoning in real-world video settings presents a fundamentally
-different challenge than in static images or text. It requires interpreting
-fine-grained visual information, accurately reading handwritten or digital
-text, and integrating spoken cues, often dispersed non-linearly over time. In
-such multimodal contexts, success hinges not just on perception, but on
-selectively identifying and integrating the right contextual details from a
-rich and noisy stream of content. To this end, we introduce VideoMathQA, a
-benchmark designed to evaluate whether models can perform such temporally
-extended cross-modal reasoning on videos. The benchmark spans 10 diverse
-mathematical domains, covering videos ranging from 10 seconds to over 1 hour.
-It requires models to interpret structured visual content, understand
-instructional narratives, and jointly ground concepts across visual, audio, and
-textual modalities. We employ graduate-level experts to ensure high quality,
-totaling over $920$ man-hours of annotation. To reflect real-world scenarios,
-questions are designed around three core reasoning challenges: direct problem
-solving, where answers are grounded in the presented question; conceptual
-transfer, which requires applying learned methods to new problems; and deep
-instructional comprehension, involving multi-step reasoning over extended
-explanations and partially worked-out solutions. Each question includes
-multi-step reasoning annotations, enabling fine-grained diagnosis of model
-capabilities. Through this benchmark, we highlight the limitations of existing
-approaches and establish a systematic evaluation framework for models that must
-reason, rather than merely perceive, across temporally extended and
-modality-rich mathematical problem settings. Our benchmark and evaluation code
-are available at: https://mbzuai-oryx.github.io/VideoMathQA
+    <id>http://arxiv.org/abs/2506.06281v1</id>
+    <updated>2025-06-06T17:59:50Z</updated>
+    <published>2025-06-06T17:59:50Z</published>
+    <title>TerraFM: A Scalable Foundation Model for Unified Multisensor Earth
+  Observation</title>
+    <summary>  Modern Earth observation (EO) increasingly leverages deep learning to harness
+the scale and diversity of satellite imagery across sensors and regions. While
+recent foundation models have demonstrated promising generalization across EO
+tasks, many remain limited by the scale, geographical coverage, and spectral
+diversity of their training data, factors critical for learning globally
+transferable representations. In this work, we introduce TerraFM, a scalable
+self-supervised learning model that leverages globally distributed Sentinel-1
+and Sentinel-2 imagery, combined with large spatial tiles and land-cover aware
+sampling to enrich spatial and semantic coverage. By treating sensing
+modalities as natural augmentations in our self-supervised approach, we unify
+radar and optical inputs via modality-specific patch embeddings and adaptive
+cross-attention fusion. Our training strategy integrates local-global
+contrastive learning and introduces a dual-centering mechanism that
+incorporates class-frequency-aware regularization to address long-tailed
+distributions in land cover.TerraFM achieves strong generalization on both
+classification and segmentation tasks, outperforming prior models on GEO-Bench
+and Copernicus-Bench. Our code and pretrained models are publicly available at:
+https://github.com/mbzuai-oryx/TerraFM .
 </summary>
     <author>
-      <name>Hanoona Rasheed</name>
+      <name>Muhammad Sohail Danish</name>
     </author>
     <author>
-      <name>Abdelrahman Shaker</name>
+      <name>Muhammad Akhtar Munir</name>
     </author>
     <author>
-      <name>Anqi Tang</name>
+      <name>Syed Roshaan Ali Shah</name>
     </author>
     <author>
-      <name>Muhammad Maaz</name>
+      <name>Muhammad Haris Khan</name>
     </author>
     <author>
-      <name>Ming-Hsuan Yang</name>
+      <name>Rao Muhammad Anwer</name>
+    </author>
+    <author>
+      <name>Jorma Laaksonen</name>
+    </author>
+    <author>
+      <name>Fahad Shahbaz Khan</name>
     </author>
     <author>
       <name>Salman Khan</name>
     </author>
-    <author>
-      <name>Fahad Khan</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">VideoMathQA Technical Report</arxiv:comment>
-    <link href="http://arxiv.org/abs/2506.05349v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.05349v1" rel="related" type="application/pdf"/>
+    <link href="http://arxiv.org/abs/2506.06281v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.06281v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2506.05345v1</id>
-    <updated>2025-06-05T17:59:55Z</updated>
-    <published>2025-06-05T17:59:55Z</published>
-    <title>Inference-Time Hyper-Scaling with KV Cache Compression</title>
-    <summary>  Inference-time scaling trades efficiency for increased reasoning accuracy by
-generating longer or more parallel sequences. However, in Transformer LLMs,
-generation cost is bottlenecked by the size of the key-value (KV) cache, rather
-than the number of generated tokens. Hence, we explore inference-time
-hyper-scaling: by compressing the KV cache, we can generate more tokens within
-the same compute budget and further improve the accuracy of scaled inference.
-The success of this approach, however, hinges on the ability of compression
-methods to preserve accuracy even at high compression ratios. To make
-hyper-scaling practical, we introduce Dynamic Memory Sparsification (DMS), a
-novel method for sparsifying KV caches that only requires 1K training steps to
-achieve 8$\times$ compression, while maintaining better accuracy than
-training-free sparse attention. Instead of prematurely discarding cached
-tokens, DMS delays token eviction, implicitly merging representations and
-preserving critical information. We demonstrate the effectiveness of
-inference-time hyper-scaling with DMS on multiple families of LLMs, showing
-that it boosts accuracy for comparable inference runtime and memory load. For
-instance, we enhance Qwen-R1 32B by an average of 9.1 points on AIME 24, 7.6 on
-GPQA, and 9.6 on LiveCodeBench across compute budgets.
+    <id>http://arxiv.org/abs/2506.06280v1</id>
+    <updated>2025-06-06T17:59:28Z</updated>
+    <published>2025-06-06T17:59:28Z</published>
+    <title>Eigenspectrum Analysis of Neural Networks without Aspect Ratio Bias</title>
+    <summary>  Diagnosing deep neural networks (DNNs) through the eigenspectrum of weight
+matrices has been an active area of research in recent years. At a high level,
+eigenspectrum analysis of DNNs involves measuring the heavytailness of the
+empirical spectral densities (ESD) of weight matrices. It provides insight into
+how well a model is trained and can guide decisions on assigning better
+layer-wise training hyperparameters. In this paper, we address a challenge
+associated with such eigenspectrum methods: the impact of the aspect ratio of
+weight matrices on estimated heavytailness metrics. We demonstrate that
+matrices of varying sizes (and aspect ratios) introduce a non-negligible bias
+in estimating heavytailness metrics, leading to inaccurate model diagnosis and
+layer-wise hyperparameter assignment. To overcome this challenge, we propose
+FARMS (Fixed-Aspect-Ratio Matrix Subsampling), a method that normalizes the
+weight matrices by subsampling submatrices with a fixed aspect ratio. Instead
+of measuring the heavytailness of the original ESD, we measure the average ESD
+of these subsampled submatrices. We show that measuring the heavytailness of
+these submatrices with the fixed aspect ratio can effectively mitigate the
+aspect ratio bias. We validate our approach across various optimization
+techniques and application domains that involve eigenspectrum analysis of
+weights, including image classification in computer vision (CV) models,
+scientific machine learning (SciML) model training, and large language model
+(LLM) pruning. Our results show that despite its simplicity, FARMS uniformly
+improves the accuracy of eigenspectrum analysis while enabling more effective
+layer-wise hyperparameter assignment in these application domains. In one of
+the LLM pruning experiments, FARMS reduces the perplexity of the LLaMA-7B model
+by 17.3% when compared with the state-of-the-art method.
 </summary>
     <author>
-      <name>Adrian Łańcucki</name>
+      <name>Yuanzhe Hu</name>
     </author>
     <author>
-      <name>Konrad Staniszewski</name>
+      <name>Kinshuk Goel</name>
     </author>
     <author>
-      <name>Piotr Nawrot</name>
-    </author>
-    <author>
-      <name>Edoardo M. Ponti</name>
-    </author>
-    <link href="http://arxiv.org/abs/2506.05345v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.05345v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2506.05346v1</id>
-    <updated>2025-06-05T17:59:55Z</updated>
-    <published>2025-06-05T17:59:55Z</published>
-    <title>Why LLM Safety Guardrails Collapse After Fine-tuning: A Similarity
-  Analysis Between Alignment and Fine-tuning Datasets</title>
-    <summary>  Recent advancements in large language models (LLMs) have underscored their
-vulnerability to safety alignment jailbreaks, particularly when subjected to
-downstream fine-tuning. However, existing mitigation strategies primarily focus
-on reactively addressing jailbreak incidents after safety guardrails have been
-compromised, removing harmful gradients during fine-tuning, or continuously
-reinforcing safety alignment throughout fine-tuning. As such, they tend to
-overlook a critical upstream factor: the role of the original safety-alignment
-data. This paper therefore investigates the degradation of safety guardrails
-through the lens of representation similarity between upstream alignment
-datasets and downstream fine-tuning tasks. Our experiments demonstrate that
-high similarity between these datasets significantly weakens safety guardrails,
-making models more susceptible to jailbreaks. Conversely, low similarity
-between these two types of datasets yields substantially more robust models and
-thus reduces harmfulness score by up to 10.33%. By highlighting the importance
-of upstream dataset design in the building of durable safety guardrails and
-reducing real-world vulnerability to jailbreak attacks, these findings offer
-actionable insights for fine-tuning service providers.
-</summary>
-    <author>
-      <name>Lei Hsiung</name>
-    </author>
-    <author>
-      <name>Tianyu Pang</name>
-    </author>
-    <author>
-      <name>Yung-Chen Tang</name>
-    </author>
-    <author>
-      <name>Linyue Song</name>
-    </author>
-    <author>
-      <name>Tsung-Yi Ho</name>
-    </author>
-    <author>
-      <name>Pin-Yu Chen</name>
+      <name>Vlad Killiakov</name>
     </author>
     <author>
       <name>Yaoqing Yang</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://hsiung.cc/llm-similarity-risk/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2506.05346v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.05346v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">30 pages, 14 figures, published to ICML 2025</arxiv:comment>
+    <link href="http://arxiv.org/abs/2506.06280v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.06280v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2506.05343v1</id>
-    <updated>2025-06-05T17:59:54Z</updated>
-    <published>2025-06-05T17:59:54Z</published>
-    <title>ContentV: Efficient Training of Video Generation Models with Limited
-  Compute</title>
-    <summary>  Recent advances in video generation demand increasingly efficient training
-recipes to mitigate escalating computational costs. In this report, we present
-ContentV, an 8B-parameter text-to-video model that achieves state-of-the-art
-performance (85.14 on VBench) after training on 256 x 64GB Neural Processing
-Units (NPUs) for merely four weeks. ContentV generates diverse, high-quality
-videos across multiple resolutions and durations from text prompts, enabled by
-three key innovations: (1) A minimalist architecture that maximizes reuse of
-pre-trained image generation models for video generation; (2) A systematic
-multi-stage training strategy leveraging flow matching for enhanced efficiency;
-and (3) A cost-effective reinforcement learning with human feedback framework
-that improves generation quality without requiring additional human
-annotations. All the code and models are available at:
-https://contentv.github.io.
+    <id>http://arxiv.org/abs/2506.06278v2</id>
+    <updated>2025-06-09T17:28:11Z</updated>
+    <published>2025-06-06T17:58:54Z</published>
+    <title>Distillation Robustifies Unlearning</title>
+    <summary>  Current LLM unlearning methods are not robust: they can be reverted easily
+with a few steps of finetuning. This is true even for the idealized unlearning
+method of training to imitate an oracle model that was never exposed to
+unwanted information, suggesting that output-based finetuning is insufficient
+to achieve robust unlearning. In a similar vein, we find that training a
+randomly initialized student to imitate an unlearned model transfers desired
+behaviors while leaving undesired capabilities behind. In other words,
+distillation robustifies unlearning. Building on this insight, we propose
+Unlearn-Noise-Distill-on-Outputs (UNDO), a scalable method that distills an
+unlearned model into a partially noised copy of itself. UNDO introduces a
+tunable tradeoff between compute cost and robustness, establishing a new Pareto
+frontier on synthetic language and arithmetic tasks. At its strongest setting,
+UNDO matches the robustness of a model retrained from scratch with perfect data
+filtering while using only 60-80% of the compute and requiring only 0.01% of
+the pretraining data to be labeled. We also show that UNDO robustifies
+unlearning on the more realistic Weapons of Mass Destruction Proxy (WMDP)
+benchmark. Since distillation is widely used in practice, incorporating an
+unlearning step beforehand offers a convenient path to robust capability
+removal.
 </summary>
     <author>
-      <name>Wenfeng Lin</name>
+      <name>Bruce W. Lee</name>
     </author>
     <author>
-      <name>Renjie Chen</name>
+      <name>Addie Foote</name>
     </author>
     <author>
-      <name>Boyuan Liu</name>
+      <name>Alex Infanger</name>
     </author>
     <author>
-      <name>Shiyue Yan</name>
+      <name>Leni Shor</name>
     </author>
     <author>
-      <name>Ruoyu Feng</name>
+      <name>Harish Kamath</name>
     </author>
     <author>
-      <name>Jiangchuan Wei</name>
+      <name>Jacob Goldman-Wetzler</name>
     </author>
     <author>
-      <name>Yichen Zhang</name>
+      <name>Bryce Woodworth</name>
     </author>
     <author>
-      <name>Yimeng Zhou</name>
+      <name>Alex Cloud</name>
     </author>
     <author>
-      <name>Chao Feng</name>
+      <name>Alexander Matt Turner</name>
     </author>
-    <author>
-      <name>Jiao Ran</name>
-    </author>
-    <author>
-      <name>Qi Wu</name>
-    </author>
-    <author>
-      <name>Zuotao Liu</name>
-    </author>
-    <author>
-      <name>Mingyu Guo</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://contentv.github.io</arxiv:comment>
-    <link href="http://arxiv.org/abs/2506.05343v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.05343v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <link href="http://arxiv.org/abs/2506.06278v2" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.06278v2" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2506.05341v1</id>
-    <updated>2025-06-05T17:59:42Z</updated>
-    <published>2025-06-05T17:59:42Z</published>
-    <title>Direct Numerical Layout Generation for 3D Indoor Scene Synthesis via
-  Spatial Reasoning</title>
-    <summary>  Realistic 3D indoor scene synthesis is vital for embodied AI and digital
-content creation. It can be naturally divided into two subtasks: object
-generation and layout generation. While recent generative models have
-significantly advanced object-level quality and controllability, layout
-generation remains challenging due to limited datasets. Existing methods either
-overfit to these datasets or rely on predefined constraints to optimize
-numerical layout that sacrifice flexibility. As a result, they fail to generate
-scenes that are both open-vocabulary and aligned with fine-grained user
-instructions. We introduce DirectLayout, a framework that directly generates
-numerical 3D layouts from text descriptions using generalizable spatial
-reasoning of large language models (LLMs). DirectLayout decomposes the
-generation into three stages: producing a Bird's-Eye View (BEV) layout, lifting
-it into 3D space, and refining object placements. To enable explicit spatial
-reasoning and help the model grasp basic principles of object placement, we
-employ Chain-of-Thought (CoT) Activation based on the 3D-Front dataset.
-Additionally, we design CoT-Grounded Generative Layout Reward to enhance
-generalization and spatial planning. During inference, DirectLayout addresses
-asset-layout mismatches via Iterative Asset-Layout Alignment through in-context
-learning. Extensive experiments demonstrate that DirectLayout achieves
-impressive semantic consistency, generalization and physical plausibility.
+    <id>http://arxiv.org/abs/2506.06276v1</id>
+    <updated>2025-06-06T17:58:39Z</updated>
+    <published>2025-06-06T17:58:39Z</published>
+    <title>STARFlow: Scaling Latent Normalizing Flows for High-resolution Image
+  Synthesis</title>
+    <summary>  We present STARFlow, a scalable generative model based on normalizing flows
+that achieves strong performance in high-resolution image synthesis. The core
+of STARFlow is Transformer Autoregressive Flow (TARFlow), which combines the
+expressive power of normalizing flows with the structured modeling capabilities
+of Autoregressive Transformers. We first establish the theoretical universality
+of TARFlow for modeling continuous distributions. Building on this foundation,
+we introduce several key architectural and algorithmic innovations to
+significantly enhance scalability: (1) a deep-shallow design, wherein a deep
+Transformer block captures most of the model representational capacity,
+complemented by a few shallow Transformer blocks that are computationally
+efficient yet substantially beneficial; (2) modeling in the latent space of
+pretrained autoencoders, which proves more effective than direct pixel-level
+modeling; and (3) a novel guidance algorithm that significantly boosts sample
+quality. Crucially, our model remains an end-to-end normalizing flow, enabling
+exact maximum likelihood training in continuous spaces without discretization.
+STARFlow achieves competitive performance in both class-conditional and
+text-conditional image generation tasks, approaching state-of-the-art diffusion
+models in sample quality. To our knowledge, this work is the first successful
+demonstration of normalizing flows operating effectively at this scale and
+resolution.
 </summary>
     <author>
-      <name>Xingjian Ran</name>
+      <name>Jiatao Gu</name>
     </author>
     <author>
-      <name>Yixuan Li</name>
+      <name>Tianrong Chen</name>
     </author>
     <author>
-      <name>Linning Xu</name>
+      <name>David Berthelot</name>
     </author>
     <author>
-      <name>Mulin Yu</name>
+      <name>Huangjie Zheng</name>
     </author>
     <author>
-      <name>Bo Dai</name>
+      <name>Yuyang Wang</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://directlayout.github.io/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2506.05341v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.05341v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Ruixiang Zhang</name>
+    </author>
+    <author>
+      <name>Laurent Dinh</name>
+    </author>
+    <author>
+      <name>Miguel Angel Bautista</name>
+    </author>
+    <author>
+      <name>Josh Susskind</name>
+    </author>
+    <author>
+      <name>Shuangfei Zhai</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">TLDR: We show for the first time that normalizing flows can be scaled
+  for high-resolution and text-conditioned image synthesis</arxiv:comment>
+    <link href="http://arxiv.org/abs/2506.06276v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.06276v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.06275v1</id>
+    <updated>2025-06-06T17:58:36Z</updated>
+    <published>2025-06-06T17:58:36Z</published>
+    <title>Movie Facts and Fibs (MF$^2$): A Benchmark for Long Movie Understanding</title>
+    <summary>  Despite recent progress in vision-language models (VLMs), holistic
+understanding of long-form video content remains a significant challenge,
+partly due to limitations in current benchmarks. Many focus on peripheral,
+``needle-in-a-haystack'' details, encouraging context-insensitive retrieval
+over deep comprehension. Others rely on large-scale, semi-automatically
+generated questions (often produced by language models themselves) that are
+easier for models to answer but fail to reflect genuine understanding. In this
+paper, we introduce MF$^2$, a new benchmark for evaluating whether models can
+comprehend, consolidate, and recall key narrative information from full-length
+movies (50-170 minutes long). MF$^2$ includes over 50 full-length,
+open-licensed movies, each paired with manually constructed sets of claim pairs
+-- one true (fact) and one plausible but false (fib), totalling over 850 pairs.
+These claims target core narrative elements such as character motivations and
+emotions, causal chains, and event order, and refer to memorable moments that
+humans can recall without rewatching the movie. Instead of multiple-choice
+formats, we adopt a binary claim evaluation protocol: for each pair, models
+must correctly identify both the true and false claims. This reduces biases
+like answer ordering and enables a more precise assessment of reasoning. Our
+experiments demonstrate that both open-weight and closed state-of-the-art
+models fall well short of human performance, underscoring the relative ease of
+the task for humans and their superior ability to retain and reason over
+critical narrative information -- an ability current VLMs lack.
+</summary>
+    <author>
+      <name>Emmanouil Zaranis</name>
+    </author>
+    <author>
+      <name>António Farinhas</name>
+    </author>
+    <author>
+      <name>Saul Santos</name>
+    </author>
+    <author>
+      <name>Beatriz Canaverde</name>
+    </author>
+    <author>
+      <name>Miguel Moura Ramos</name>
+    </author>
+    <author>
+      <name>Aditya K Surikuchi</name>
+    </author>
+    <author>
+      <name>André Viveiros</name>
+    </author>
+    <author>
+      <name>Baohao Liao</name>
+    </author>
+    <author>
+      <name>Elena Bueno-Benito</name>
+    </author>
+    <author>
+      <name>Nithin Sivakumaran</name>
+    </author>
+    <author>
+      <name>Pavlo Vasylenko</name>
+    </author>
+    <author>
+      <name>Shoubin Yu</name>
+    </author>
+    <author>
+      <name>Sonal Sannigrahi</name>
+    </author>
+    <author>
+      <name>Wafaa Mohammed</name>
+    </author>
+    <author>
+      <name>Ben Peters</name>
+    </author>
+    <author>
+      <name>Danae Sánchez Villegas</name>
+    </author>
+    <author>
+      <name>Elias Stengel-Eskin</name>
+    </author>
+    <author>
+      <name>Giuseppe Attanasio</name>
+    </author>
+    <author>
+      <name>Jaehong Yoon</name>
+    </author>
+    <author>
+      <name>Stella Frank</name>
+    </author>
+    <author>
+      <name>Alessandro Suglia</name>
+    </author>
+    <author>
+      <name>Chrysoula Zerva</name>
+    </author>
+    <author>
+      <name>Desmond Elliott</name>
+    </author>
+    <author>
+      <name>Mariella Dimiccoli</name>
+    </author>
+    <author>
+      <name>Mohit Bansal</name>
+    </author>
+    <author>
+      <name>Oswald Lanz</name>
+    </author>
+    <author>
+      <name>Raffaella Bernardi</name>
+    </author>
+    <author>
+      <name>Raquel Fernández</name>
+    </author>
+    <author>
+      <name>Sandro Pezzelle</name>
+    </author>
+    <author>
+      <name>Vlad Niculae</name>
+    </author>
+    <author>
+      <name>André F. T. Martins</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Under Review</arxiv:comment>
+    <link href="http://arxiv.org/abs/2506.06275v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.06275v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
