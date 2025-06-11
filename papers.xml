@@ -3,365 +3,236 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-06-09T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">432588</opensearch:totalResults>
+  <updated>2025-06-10T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">433206</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2506.06281v1</id>
-    <updated>2025-06-06T17:59:50Z</updated>
-    <published>2025-06-06T17:59:50Z</published>
-    <title>TerraFM: A Scalable Foundation Model for Unified Multisensor Earth
-  Observation</title>
-    <summary>  Modern Earth observation (EO) increasingly leverages deep learning to harness
-the scale and diversity of satellite imagery across sensors and regions. While
-recent foundation models have demonstrated promising generalization across EO
-tasks, many remain limited by the scale, geographical coverage, and spectral
-diversity of their training data, factors critical for learning globally
-transferable representations. In this work, we introduce TerraFM, a scalable
-self-supervised learning model that leverages globally distributed Sentinel-1
-and Sentinel-2 imagery, combined with large spatial tiles and land-cover aware
-sampling to enrich spatial and semantic coverage. By treating sensing
-modalities as natural augmentations in our self-supervised approach, we unify
-radar and optical inputs via modality-specific patch embeddings and adaptive
-cross-attention fusion. Our training strategy integrates local-global
-contrastive learning and introduces a dual-centering mechanism that
-incorporates class-frequency-aware regularization to address long-tailed
-distributions in land cover.TerraFM achieves strong generalization on both
-classification and segmentation tasks, outperforming prior models on GEO-Bench
-and Copernicus-Bench. Our code and pretrained models are publicly available at:
-https://github.com/mbzuai-oryx/TerraFM .
+    <id>http://arxiv.org/abs/2506.08013v1</id>
+    <updated>2025-06-09T17:59:59Z</updated>
+    <published>2025-06-09T17:59:59Z</published>
+    <title>StableMTL: Repurposing Latent Diffusion Models for Multi-Task Learning
+  from Partially Annotated Synthetic Datasets</title>
+    <summary>  Multi-task learning for dense prediction is limited by the need for extensive
+annotation for every task, though recent works have explored training with
+partial task labels. Leveraging the generalization power of diffusion models,
+we extend the partial learning setup to a zero-shot setting, training a
+multi-task model on multiple synthetic datasets, each labeled for only a subset
+of tasks. Our method, StableMTL, repurposes image generators for latent
+regression. Adapting a denoising framework with task encoding, per-task
+conditioning and a tailored training scheme. Instead of per-task losses
+requiring careful balancing, a unified latent loss is adopted, enabling
+seamless scaling to more tasks. To encourage inter-task synergy, we introduce a
+multi-stream model with a task-attention mechanism that converts N-to-N task
+interactions into efficient 1-to-N attention, promoting effective cross-task
+sharing. StableMTL outperforms baselines on 7 tasks across 8 benchmarks.
 </summary>
     <author>
-      <name>Muhammad Sohail Danish</name>
+      <name>Anh-Quan Cao</name>
     </author>
     <author>
-      <name>Muhammad Akhtar Munir</name>
+      <name>Ivan Lopes</name>
     </author>
     <author>
-      <name>Syed Roshaan Ali Shah</name>
+      <name>Raoul de Charette</name>
     </author>
-    <author>
-      <name>Muhammad Haris Khan</name>
-    </author>
-    <author>
-      <name>Rao Muhammad Anwer</name>
-    </author>
-    <author>
-      <name>Jorma Laaksonen</name>
-    </author>
-    <author>
-      <name>Fahad Shahbaz Khan</name>
-    </author>
-    <author>
-      <name>Salman Khan</name>
-    </author>
-    <link href="http://arxiv.org/abs/2506.06281v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.06281v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2506.06280v1</id>
-    <updated>2025-06-06T17:59:28Z</updated>
-    <published>2025-06-06T17:59:28Z</published>
-    <title>Eigenspectrum Analysis of Neural Networks without Aspect Ratio Bias</title>
-    <summary>  Diagnosing deep neural networks (DNNs) through the eigenspectrum of weight
-matrices has been an active area of research in recent years. At a high level,
-eigenspectrum analysis of DNNs involves measuring the heavytailness of the
-empirical spectral densities (ESD) of weight matrices. It provides insight into
-how well a model is trained and can guide decisions on assigning better
-layer-wise training hyperparameters. In this paper, we address a challenge
-associated with such eigenspectrum methods: the impact of the aspect ratio of
-weight matrices on estimated heavytailness metrics. We demonstrate that
-matrices of varying sizes (and aspect ratios) introduce a non-negligible bias
-in estimating heavytailness metrics, leading to inaccurate model diagnosis and
-layer-wise hyperparameter assignment. To overcome this challenge, we propose
-FARMS (Fixed-Aspect-Ratio Matrix Subsampling), a method that normalizes the
-weight matrices by subsampling submatrices with a fixed aspect ratio. Instead
-of measuring the heavytailness of the original ESD, we measure the average ESD
-of these subsampled submatrices. We show that measuring the heavytailness of
-these submatrices with the fixed aspect ratio can effectively mitigate the
-aspect ratio bias. We validate our approach across various optimization
-techniques and application domains that involve eigenspectrum analysis of
-weights, including image classification in computer vision (CV) models,
-scientific machine learning (SciML) model training, and large language model
-(LLM) pruning. Our results show that despite its simplicity, FARMS uniformly
-improves the accuracy of eigenspectrum analysis while enabling more effective
-layer-wise hyperparameter assignment in these application domains. In one of
-the LLM pruning experiments, FARMS reduces the perplexity of the LLaMA-7B model
-by 17.3% when compared with the state-of-the-art method.
-</summary>
-    <author>
-      <name>Yuanzhe Hu</name>
-    </author>
-    <author>
-      <name>Kinshuk Goel</name>
-    </author>
-    <author>
-      <name>Vlad Killiakov</name>
-    </author>
-    <author>
-      <name>Yaoqing Yang</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">30 pages, 14 figures, published to ICML 2025</arxiv:comment>
-    <link href="http://arxiv.org/abs/2506.06280v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.06280v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2506.06278v2</id>
-    <updated>2025-06-09T17:28:11Z</updated>
-    <published>2025-06-06T17:58:54Z</published>
-    <title>Distillation Robustifies Unlearning</title>
-    <summary>  Current LLM unlearning methods are not robust: they can be reverted easily
-with a few steps of finetuning. This is true even for the idealized unlearning
-method of training to imitate an oracle model that was never exposed to
-unwanted information, suggesting that output-based finetuning is insufficient
-to achieve robust unlearning. In a similar vein, we find that training a
-randomly initialized student to imitate an unlearned model transfers desired
-behaviors while leaving undesired capabilities behind. In other words,
-distillation robustifies unlearning. Building on this insight, we propose
-Unlearn-Noise-Distill-on-Outputs (UNDO), a scalable method that distills an
-unlearned model into a partially noised copy of itself. UNDO introduces a
-tunable tradeoff between compute cost and robustness, establishing a new Pareto
-frontier on synthetic language and arithmetic tasks. At its strongest setting,
-UNDO matches the robustness of a model retrained from scratch with perfect data
-filtering while using only 60-80% of the compute and requiring only 0.01% of
-the pretraining data to be labeled. We also show that UNDO robustifies
-unlearning on the more realistic Weapons of Mass Destruction Proxy (WMDP)
-benchmark. Since distillation is widely used in practice, incorporating an
-unlearning step beforehand offers a convenient path to robust capability
-removal.
-</summary>
-    <author>
-      <name>Bruce W. Lee</name>
-    </author>
-    <author>
-      <name>Addie Foote</name>
-    </author>
-    <author>
-      <name>Alex Infanger</name>
-    </author>
-    <author>
-      <name>Leni Shor</name>
-    </author>
-    <author>
-      <name>Harish Kamath</name>
-    </author>
-    <author>
-      <name>Jacob Goldman-Wetzler</name>
-    </author>
-    <author>
-      <name>Bryce Woodworth</name>
-    </author>
-    <author>
-      <name>Alex Cloud</name>
-    </author>
-    <author>
-      <name>Alexander Matt Turner</name>
-    </author>
-    <link href="http://arxiv.org/abs/2506.06278v2" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.06278v2" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2506.06276v1</id>
-    <updated>2025-06-06T17:58:39Z</updated>
-    <published>2025-06-06T17:58:39Z</published>
-    <title>STARFlow: Scaling Latent Normalizing Flows for High-resolution Image
-  Synthesis</title>
-    <summary>  We present STARFlow, a scalable generative model based on normalizing flows
-that achieves strong performance in high-resolution image synthesis. The core
-of STARFlow is Transformer Autoregressive Flow (TARFlow), which combines the
-expressive power of normalizing flows with the structured modeling capabilities
-of Autoregressive Transformers. We first establish the theoretical universality
-of TARFlow for modeling continuous distributions. Building on this foundation,
-we introduce several key architectural and algorithmic innovations to
-significantly enhance scalability: (1) a deep-shallow design, wherein a deep
-Transformer block captures most of the model representational capacity,
-complemented by a few shallow Transformer blocks that are computationally
-efficient yet substantially beneficial; (2) modeling in the latent space of
-pretrained autoencoders, which proves more effective than direct pixel-level
-modeling; and (3) a novel guidance algorithm that significantly boosts sample
-quality. Crucially, our model remains an end-to-end normalizing flow, enabling
-exact maximum likelihood training in continuous spaces without discretization.
-STARFlow achieves competitive performance in both class-conditional and
-text-conditional image generation tasks, approaching state-of-the-art diffusion
-models in sample quality. To our knowledge, this work is the first successful
-demonstration of normalizing flows operating effectively at this scale and
-resolution.
-</summary>
-    <author>
-      <name>Jiatao Gu</name>
-    </author>
-    <author>
-      <name>Tianrong Chen</name>
-    </author>
-    <author>
-      <name>David Berthelot</name>
-    </author>
-    <author>
-      <name>Huangjie Zheng</name>
-    </author>
-    <author>
-      <name>Yuyang Wang</name>
-    </author>
-    <author>
-      <name>Ruixiang Zhang</name>
-    </author>
-    <author>
-      <name>Laurent Dinh</name>
-    </author>
-    <author>
-      <name>Miguel Angel Bautista</name>
-    </author>
-    <author>
-      <name>Josh Susskind</name>
-    </author>
-    <author>
-      <name>Shuangfei Zhai</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">TLDR: We show for the first time that normalizing flows can be scaled
-  for high-resolution and text-conditioned image synthesis</arxiv:comment>
-    <link href="http://arxiv.org/abs/2506.06276v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.06276v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Code is available at https://github.com/astra-vision/StableMTL</arxiv:comment>
+    <link href="http://arxiv.org/abs/2506.08013v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.08013v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2506.06275v1</id>
-    <updated>2025-06-06T17:58:36Z</updated>
-    <published>2025-06-06T17:58:36Z</published>
-    <title>Movie Facts and Fibs (MF$^2$): A Benchmark for Long Movie Understanding</title>
-    <summary>  Despite recent progress in vision-language models (VLMs), holistic
-understanding of long-form video content remains a significant challenge,
-partly due to limitations in current benchmarks. Many focus on peripheral,
-``needle-in-a-haystack'' details, encouraging context-insensitive retrieval
-over deep comprehension. Others rely on large-scale, semi-automatically
-generated questions (often produced by language models themselves) that are
-easier for models to answer but fail to reflect genuine understanding. In this
-paper, we introduce MF$^2$, a new benchmark for evaluating whether models can
-comprehend, consolidate, and recall key narrative information from full-length
-movies (50-170 minutes long). MF$^2$ includes over 50 full-length,
-open-licensed movies, each paired with manually constructed sets of claim pairs
--- one true (fact) and one plausible but false (fib), totalling over 850 pairs.
-These claims target core narrative elements such as character motivations and
-emotions, causal chains, and event order, and refer to memorable moments that
-humans can recall without rewatching the movie. Instead of multiple-choice
-formats, we adopt a binary claim evaluation protocol: for each pair, models
-must correctly identify both the true and false claims. This reduces biases
-like answer ordering and enables a more precise assessment of reasoning. Our
-experiments demonstrate that both open-weight and closed state-of-the-art
-models fall well short of human performance, underscoring the relative ease of
-the task for humans and their superior ability to retain and reason over
-critical narrative information -- an ability current VLMs lack.
+    <id>http://arxiv.org/abs/2506.08015v1</id>
+    <updated>2025-06-09T17:59:59Z</updated>
+    <published>2025-06-09T17:59:59Z</published>
+    <title>4DGT: Learning a 4D Gaussian Transformer Using Real-World Monocular
+  Videos</title>
+    <summary>  We propose 4DGT, a 4D Gaussian-based Transformer model for dynamic scene
+reconstruction, trained entirely on real-world monocular posed videos. Using 4D
+Gaussian as an inductive bias, 4DGT unifies static and dynamic components,
+enabling the modeling of complex, time-varying environments with varying object
+lifespans. We proposed a novel density control strategy in training, which
+enables our 4DGT to handle longer space-time input and remain efficient
+rendering at runtime. Our model processes 64 consecutive posed frames in a
+rolling-window fashion, predicting consistent 4D Gaussians in the scene. Unlike
+optimization-based methods, 4DGT performs purely feed-forward inference,
+reducing reconstruction time from hours to seconds and scaling effectively to
+long video sequences. Trained only on large-scale monocular posed video
+datasets, 4DGT can outperform prior Gaussian-based networks significantly in
+real-world videos and achieve on-par accuracy with optimization-based methods
+on cross-domain videos. Project page: https://4dgt.github.io
 </summary>
     <author>
-      <name>Emmanouil Zaranis</name>
+      <name>Zhen Xu</name>
     </author>
     <author>
-      <name>António Farinhas</name>
+      <name>Zhengqin Li</name>
     </author>
     <author>
-      <name>Saul Santos</name>
+      <name>Zhao Dong</name>
     </author>
     <author>
-      <name>Beatriz Canaverde</name>
+      <name>Xiaowei Zhou</name>
     </author>
     <author>
-      <name>Miguel Moura Ramos</name>
+      <name>Richard Newcombe</name>
     </author>
     <author>
-      <name>Aditya K Surikuchi</name>
+      <name>Zhaoyang Lv</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://4dgt.github.io</arxiv:comment>
+    <link href="http://arxiv.org/abs/2506.08015v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.08015v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.08010v1</id>
+    <updated>2025-06-09T17:59:57Z</updated>
+    <published>2025-06-09T17:59:57Z</published>
+    <title>Vision Transformers Don't Need Trained Registers</title>
+    <summary>  We investigate the mechanism underlying a previously identified phenomenon in
+Vision Transformers -- the emergence of high-norm tokens that lead to noisy
+attention maps. We observe that in multiple models (e.g., CLIP, DINOv2), a
+sparse set of neurons is responsible for concentrating high-norm activations on
+outlier tokens, leading to irregular attention patterns and degrading
+downstream visual processing. While the existing solution for removing these
+outliers involves retraining models from scratch with additional learned
+register tokens, we use our findings to create a training-free approach to
+mitigate these artifacts. By shifting the high-norm activations from our
+discovered register neurons into an additional untrained token, we can mimic
+the effect of register tokens on a model already trained without registers. We
+demonstrate that our method produces cleaner attention and feature maps,
+enhances performance over base models across multiple downstream visual tasks,
+and achieves results comparable to models explicitly trained with register
+tokens. We then extend test-time registers to off-the-shelf vision-language
+models to improve their interpretability. Our results suggest that test-time
+registers effectively take on the role of register tokens at test-time,
+offering a training-free solution for any pre-trained model released without
+them.
+</summary>
+    <author>
+      <name>Nick Jiang</name>
     </author>
     <author>
-      <name>André Viveiros</name>
+      <name>Amil Dravid</name>
     </author>
     <author>
-      <name>Baohao Liao</name>
+      <name>Alexei Efros</name>
     </author>
     <author>
-      <name>Elena Bueno-Benito</name>
+      <name>Yossi Gandelsman</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page and code: https://avdravid.github.io/test-time-registers</arxiv:comment>
+    <link href="http://arxiv.org/abs/2506.08010v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.08010v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.08011v1</id>
+    <updated>2025-06-09T17:59:57Z</updated>
+    <published>2025-06-09T17:59:57Z</published>
+    <title>Play to Generalize: Learning to Reason Through Game Play</title>
+    <summary>  Developing generalizable reasoning capabilities in multimodal large language
+models (MLLMs) remains challenging. Motivated by cognitive science literature
+suggesting that gameplay promotes transferable cognitive skills, we propose a
+novel post-training paradigm, Visual Game Learning, or ViGaL, where MLLMs
+develop out-of-domain generalization of multimodal reasoning through playing
+arcade-like games. Specifically, we show that post-training a 7B-parameter MLLM
+via reinforcement learning (RL) on simple arcade-like games, e.g. Snake,
+significantly enhances its downstream performance on multimodal math benchmarks
+like MathVista, and on multi-discipline questions like MMMU, without seeing any
+worked solutions, equations, or diagrams during RL, suggesting the capture of
+transferable reasoning skills. Remarkably, our model outperforms specialist
+models tuned on multimodal reasoning data in multimodal reasoning benchmarks,
+while preserving the base model's performance on general visual benchmarks, a
+challenge where specialist models often fall short. Our findings suggest a new
+post-training paradigm: synthetic, rule-based games can serve as controllable
+and scalable pre-text tasks that unlock generalizable multimodal reasoning
+abilities in MLLMs.
+</summary>
+    <author>
+      <name>Yunfei Xie</name>
     </author>
     <author>
-      <name>Nithin Sivakumaran</name>
+      <name>Yinsong Ma</name>
     </author>
     <author>
-      <name>Pavlo Vasylenko</name>
+      <name>Shiyi Lan</name>
     </author>
     <author>
-      <name>Shoubin Yu</name>
+      <name>Alan Yuille</name>
     </author>
     <author>
-      <name>Sonal Sannigrahi</name>
+      <name>Junfei Xiao</name>
     </author>
     <author>
-      <name>Wafaa Mohammed</name>
+      <name>Chen Wei</name>
     </author>
-    <author>
-      <name>Ben Peters</name>
-    </author>
-    <author>
-      <name>Danae Sánchez Villegas</name>
-    </author>
-    <author>
-      <name>Elias Stengel-Eskin</name>
-    </author>
-    <author>
-      <name>Giuseppe Attanasio</name>
-    </author>
-    <author>
-      <name>Jaehong Yoon</name>
-    </author>
-    <author>
-      <name>Stella Frank</name>
-    </author>
-    <author>
-      <name>Alessandro Suglia</name>
-    </author>
-    <author>
-      <name>Chrysoula Zerva</name>
-    </author>
-    <author>
-      <name>Desmond Elliott</name>
-    </author>
-    <author>
-      <name>Mariella Dimiccoli</name>
-    </author>
-    <author>
-      <name>Mohit Bansal</name>
-    </author>
-    <author>
-      <name>Oswald Lanz</name>
-    </author>
-    <author>
-      <name>Raffaella Bernardi</name>
-    </author>
-    <author>
-      <name>Raquel Fernández</name>
-    </author>
-    <author>
-      <name>Sandro Pezzelle</name>
-    </author>
-    <author>
-      <name>Vlad Niculae</name>
-    </author>
-    <author>
-      <name>André F. T. Martins</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Under Review</arxiv:comment>
-    <link href="http://arxiv.org/abs/2506.06275v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.06275v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://yunfeixie233.github.io/ViGaL/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2506.08011v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.08011v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.08012v1</id>
+    <updated>2025-06-09T17:59:57Z</updated>
+    <published>2025-06-09T17:59:57Z</published>
+    <title>GUI-Reflection: Empowering Multimodal GUI Models with Self-Reflection
+  Behavior</title>
+    <summary>  Multimodal Large Language Models (MLLMs) have shown great potential in
+revolutionizing Graphical User Interface (GUI) automation. However, existing
+GUI models mostly rely on learning from nearly error-free offline trajectories,
+thus lacking reflection and error recovery capabilities. To bridge this gap, we
+propose GUI-Reflection, a novel framework that explicitly integrates
+self-reflection and error correction capabilities into end-to-end multimodal
+GUI models throughout dedicated training stages: GUI-specific pre-training,
+offline supervised fine-tuning (SFT), and online reflection tuning.
+GUI-reflection enables self-reflection behavior emergence with fully automated
+data generation and learning processes without requiring any human annotation.
+Specifically, 1) we first propose scalable data pipelines to automatically
+construct reflection and error correction data from existing successful
+trajectories. While existing GUI models mainly focus on grounding and UI
+understanding ability, we propose the GUI-Reflection Task Suite to learn and
+evaluate reflection-oriented abilities explicitly. 2) Furthermore, we built a
+diverse and efficient environment for online training and data collection of
+GUI models on mobile devices. 3) We also present an iterative online reflection
+tuning algorithm leveraging the proposed environment, enabling the model to
+continuously enhance its reflection and error correction abilities. Our
+framework equips GUI agents with self-reflection and correction capabilities,
+paving the way for more robust, adaptable, and intelligent GUI automation, with
+all data, models, environments, and tools to be released publicly.
+</summary>
+    <author>
+      <name>Penghao Wu</name>
+    </author>
+    <author>
+      <name>Shengnan Ma</name>
+    </author>
+    <author>
+      <name>Bo Wang</name>
+    </author>
+    <author>
+      <name>Jiaheng Yu</name>
+    </author>
+    <author>
+      <name>Lewei Lu</name>
+    </author>
+    <author>
+      <name>Ziwei Liu</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page at https://penghao-wu.github.io/GUI_Reflection/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2506.08012v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.08012v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
