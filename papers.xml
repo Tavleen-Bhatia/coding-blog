@@ -3,236 +3,300 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-06-10T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">433206</opensearch:totalResults>
+  <updated>2025-06-12T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">433865</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2506.08013v1</id>
-    <updated>2025-06-09T17:59:59Z</updated>
-    <published>2025-06-09T17:59:59Z</published>
-    <title>StableMTL: Repurposing Latent Diffusion Models for Multi-Task Learning
-  from Partially Annotated Synthetic Datasets</title>
-    <summary>  Multi-task learning for dense prediction is limited by the need for extensive
-annotation for every task, though recent works have explored training with
-partial task labels. Leveraging the generalization power of diffusion models,
-we extend the partial learning setup to a zero-shot setting, training a
-multi-task model on multiple synthetic datasets, each labeled for only a subset
-of tasks. Our method, StableMTL, repurposes image generators for latent
-regression. Adapting a denoising framework with task encoding, per-task
-conditioning and a tailored training scheme. Instead of per-task losses
-requiring careful balancing, a unified latent loss is adopted, enabling
-seamless scaling to more tasks. To encourage inter-task synergy, we introduce a
-multi-stream model with a task-attention mechanism that converts N-to-N task
-interactions into efficient 1-to-N attention, promoting effective cross-task
-sharing. StableMTL outperforms baselines on 7 tasks across 8 benchmarks.
+    <id>http://arxiv.org/abs/2506.09997v1</id>
+    <updated>2025-06-11T17:59:58Z</updated>
+    <published>2025-06-11T17:59:58Z</published>
+    <title>DGS-LRM: Real-Time Deformable 3D Gaussian Reconstruction From Monocular
+  Videos</title>
+    <summary>  We introduce the Deformable Gaussian Splats Large Reconstruction Model
+(DGS-LRM), the first feed-forward method predicting deformable 3D Gaussian
+splats from a monocular posed video of any dynamic scene. Feed-forward scene
+reconstruction has gained significant attention for its ability to rapidly
+create digital replicas of real-world environments. However, most existing
+models are limited to static scenes and fail to reconstruct the motion of
+moving objects. Developing a feed-forward model for dynamic scene
+reconstruction poses significant challenges, including the scarcity of training
+data and the need for appropriate 3D representations and training paradigms. To
+address these challenges, we introduce several key technical contributions: an
+enhanced large-scale synthetic dataset with ground-truth multi-view videos and
+dense 3D scene flow supervision; a per-pixel deformable 3D Gaussian
+representation that is easy to learn, supports high-quality dynamic view
+synthesis, and enables long-range 3D tracking; and a large transformer network
+that achieves real-time, generalizable dynamic scene reconstruction. Extensive
+qualitative and quantitative experiments demonstrate that DGS-LRM achieves
+dynamic scene reconstruction quality comparable to optimization-based methods,
+while significantly outperforming the state-of-the-art predictive dynamic
+reconstruction method on real-world examples. Its predicted physically grounded
+3D deformation is accurate and can readily adapt for long-range 3D tracking
+tasks, achieving performance on par with state-of-the-art monocular video 3D
+tracking methods.
 </summary>
     <author>
-      <name>Anh-Quan Cao</name>
+      <name>Chieh Hubert Lin</name>
     </author>
     <author>
-      <name>Ivan Lopes</name>
+      <name>Zhaoyang Lv</name>
     </author>
     <author>
-      <name>Raoul de Charette</name>
+      <name>Songyin Wu</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Code is available at https://github.com/astra-vision/StableMTL</arxiv:comment>
-    <link href="http://arxiv.org/abs/2506.08013v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.08013v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Zhen Xu</name>
+    </author>
+    <author>
+      <name>Thu Nguyen-Phuoc</name>
+    </author>
+    <author>
+      <name>Hung-Yu Tseng</name>
+    </author>
+    <author>
+      <name>Julian Straub</name>
+    </author>
+    <author>
+      <name>Numair Khan</name>
+    </author>
+    <author>
+      <name>Lei Xiao</name>
+    </author>
+    <author>
+      <name>Ming-Hsuan Yang</name>
+    </author>
+    <author>
+      <name>Yuheng Ren</name>
+    </author>
+    <author>
+      <name>Richard Newcombe</name>
+    </author>
+    <author>
+      <name>Zhao Dong</name>
+    </author>
+    <author>
+      <name>Zhengqin Li</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://hubert0527.github.io/dgslrm/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2506.09997v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.09997v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.GR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.GR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.09998v1</id>
+    <updated>2025-06-11T17:59:58Z</updated>
+    <published>2025-06-11T17:59:58Z</published>
+    <title>Flipping Against All Odds: Reducing LLM Coin Flip Bias via Verbalized
+  Rejection Sampling</title>
+    <summary>  Large language models (LLMs) can often accurately describe probability
+distributions using natural language, yet they still struggle to generate
+faithful samples from them. This mismatch limits their use in tasks requiring
+reliable stochasticity, such as Monte Carlo methods, agent-based simulations,
+and randomized decision-making. We investigate this gap between knowledge and
+sampling in the context of Bernoulli distributions. We introduce Verbalized
+Rejection Sampling (VRS), a natural-language adaptation of classical rejection
+sampling that prompts the LLM to reason about and accept or reject proposed
+samples. Despite relying on the same Bernoulli mechanism internally, VRS
+substantially reduces sampling bias across models. We provide theoretical
+analysis showing that, under mild assumptions, VRS improves over direct
+sampling, with gains attributable to both the algorithm and prompt design. More
+broadly, our results show how classical probabilistic tools can be verbalized
+and embedded into LLM workflows to improve reliability, without requiring
+access to model internals or heavy prompt engineering.
+</summary>
+    <author>
+      <name>Tim Z. Xiao</name>
+    </author>
+    <author>
+      <name>Johannes Zenn</name>
+    </author>
+    <author>
+      <name>Zhen Liu</name>
+    </author>
+    <author>
+      <name>Weiyang Liu</name>
+    </author>
+    <author>
+      <name>Robert Bamler</name>
+    </author>
+    <author>
+      <name>Bernhard Schölkopf</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Technical Report v1 (21 pages, 14 figures)</arxiv:comment>
+    <link href="http://arxiv.org/abs/2506.09998v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.09998v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.09993v1</id>
+    <updated>2025-06-11T17:59:46Z</updated>
+    <published>2025-06-11T17:59:46Z</published>
+    <title>Text-Aware Image Restoration with Diffusion Models</title>
+    <summary>  Image restoration aims to recover degraded images. However, existing
+diffusion-based restoration methods, despite great success in natural image
+restoration, often struggle to faithfully reconstruct textual regions in
+degraded images. Those methods frequently generate plausible but incorrect
+text-like patterns, a phenomenon we refer to as text-image hallucination. In
+this paper, we introduce Text-Aware Image Restoration (TAIR), a novel
+restoration task that requires the simultaneous recovery of visual contents and
+textual fidelity. To tackle this task, we present SA-Text, a large-scale
+benchmark of 100K high-quality scene images densely annotated with diverse and
+complex text instances. Furthermore, we propose a multi-task diffusion
+framework, called TeReDiff, that integrates internal features from diffusion
+models into a text-spotting module, enabling both components to benefit from
+joint training. This allows for the extraction of rich text representations,
+which are utilized as prompts in subsequent denoising steps. Extensive
+experiments demonstrate that our approach consistently outperforms
+state-of-the-art restoration methods, achieving significant gains in text
+recognition accuracy. See our project page: https://cvlab-kaist.github.io/TAIR/
+</summary>
+    <author>
+      <name>Jaewon Min</name>
+    </author>
+    <author>
+      <name>Jin Hyeon Kim</name>
+    </author>
+    <author>
+      <name>Paul Hyunbin Cho</name>
+    </author>
+    <author>
+      <name>Jaeeun Lee</name>
+    </author>
+    <author>
+      <name>Jihye Park</name>
+    </author>
+    <author>
+      <name>Minkyu Park</name>
+    </author>
+    <author>
+      <name>Sangpil Kim</name>
+    </author>
+    <author>
+      <name>Hyunhee Park</name>
+    </author>
+    <author>
+      <name>Seungryong Kim</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://cvlab-kaist.github.io/TAIR/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2506.09993v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.09993v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2506.08015v1</id>
-    <updated>2025-06-09T17:59:59Z</updated>
-    <published>2025-06-09T17:59:59Z</published>
-    <title>4DGT: Learning a 4D Gaussian Transformer Using Real-World Monocular
-  Videos</title>
-    <summary>  We propose 4DGT, a 4D Gaussian-based Transformer model for dynamic scene
-reconstruction, trained entirely on real-world monocular posed videos. Using 4D
-Gaussian as an inductive bias, 4DGT unifies static and dynamic components,
-enabling the modeling of complex, time-varying environments with varying object
-lifespans. We proposed a novel density control strategy in training, which
-enables our 4DGT to handle longer space-time input and remain efficient
-rendering at runtime. Our model processes 64 consecutive posed frames in a
-rolling-window fashion, predicting consistent 4D Gaussians in the scene. Unlike
-optimization-based methods, 4DGT performs purely feed-forward inference,
-reducing reconstruction time from hours to seconds and scaling effectively to
-long video sequences. Trained only on large-scale monocular posed video
-datasets, 4DGT can outperform prior Gaussian-based networks significantly in
-real-world videos and achieve on-par accuracy with optimization-based methods
-on cross-domain videos. Project page: https://4dgt.github.io
+    <id>http://arxiv.org/abs/2506.09994v1</id>
+    <updated>2025-06-11T17:59:46Z</updated>
+    <published>2025-06-11T17:59:46Z</published>
+    <title>eFlesh: Highly customizable Magnetic Touch Sensing using Cut-Cell
+  Microstructures</title>
+    <summary>  If human experience is any guide, operating effectively in unstructured
+environments -- like homes and offices -- requires robots to sense the forces
+during physical interaction. Yet, the lack of a versatile, accessible, and
+easily customizable tactile sensor has led to fragmented, sensor-specific
+solutions in robotic manipulation -- and in many cases, to force-unaware,
+sensorless approaches. With eFlesh, we bridge this gap by introducing a
+magnetic tactile sensor that is low-cost, easy to fabricate, and highly
+customizable. Building an eFlesh sensor requires only four components: a
+hobbyist 3D printer, off-the-shelf magnets (&lt;$5), a CAD model of the desired
+shape, and a magnetometer circuit board. The sensor is constructed from tiled,
+parameterized microstructures, which allow for tuning the sensor's geometry and
+its mechanical response. We provide an open-source design tool that converts
+convex OBJ/STL files into 3D-printable STLs for fabrication. This modular
+design framework enables users to create application-specific sensors, and to
+adjust sensitivity depending on the task. Our sensor characterization
+experiments demonstrate the capabilities of eFlesh: contact localization RMSE
+of 0.5 mm, and force prediction RMSE of 0.27 N for normal force and 0.12 N for
+shear force. We also present a learned slip detection model that generalizes to
+unseen objects with 95% accuracy, and visuotactile control policies that
+improve manipulation performance by 40% over vision-only baselines -- achieving
+91% average success rate for four precise tasks that require sub-mm accuracy
+for successful completion. All design files, code and the CAD-to-eFlesh STL
+conversion tool are open-sourced and available on https://e-flesh.com.
 </summary>
     <author>
-      <name>Zhen Xu</name>
+      <name>Venkatesh Pattabiraman</name>
     </author>
     <author>
-      <name>Zhengqin Li</name>
+      <name>Zizhou Huang</name>
     </author>
     <author>
-      <name>Zhao Dong</name>
+      <name>Daniele Panozzo</name>
     </author>
     <author>
-      <name>Xiaowei Zhou</name>
+      <name>Denis Zorin</name>
     </author>
     <author>
-      <name>Richard Newcombe</name>
+      <name>Lerrel Pinto</name>
     </author>
     <author>
-      <name>Zhaoyang Lv</name>
+      <name>Raunaq Bhirangi</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://4dgt.github.io</arxiv:comment>
-    <link href="http://arxiv.org/abs/2506.08015v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.08015v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2506.08010v1</id>
-    <updated>2025-06-09T17:59:57Z</updated>
-    <published>2025-06-09T17:59:57Z</published>
-    <title>Vision Transformers Don't Need Trained Registers</title>
-    <summary>  We investigate the mechanism underlying a previously identified phenomenon in
-Vision Transformers -- the emergence of high-norm tokens that lead to noisy
-attention maps. We observe that in multiple models (e.g., CLIP, DINOv2), a
-sparse set of neurons is responsible for concentrating high-norm activations on
-outlier tokens, leading to irregular attention patterns and degrading
-downstream visual processing. While the existing solution for removing these
-outliers involves retraining models from scratch with additional learned
-register tokens, we use our findings to create a training-free approach to
-mitigate these artifacts. By shifting the high-norm activations from our
-discovered register neurons into an additional untrained token, we can mimic
-the effect of register tokens on a model already trained without registers. We
-demonstrate that our method produces cleaner attention and feature maps,
-enhances performance over base models across multiple downstream visual tasks,
-and achieves results comparable to models explicitly trained with register
-tokens. We then extend test-time registers to off-the-shelf vision-language
-models to improve their interpretability. Our results suggest that test-time
-registers effectively take on the role of register tokens at test-time,
-offering a training-free solution for any pre-trained model released without
-them.
-</summary>
-    <author>
-      <name>Nick Jiang</name>
-    </author>
-    <author>
-      <name>Amil Dravid</name>
-    </author>
-    <author>
-      <name>Alexei Efros</name>
-    </author>
-    <author>
-      <name>Yossi Gandelsman</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page and code: https://avdravid.github.io/test-time-registers</arxiv:comment>
-    <link href="http://arxiv.org/abs/2506.08010v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.08010v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <link href="http://arxiv.org/abs/2506.09994v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.09994v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2506.08011v1</id>
-    <updated>2025-06-09T17:59:57Z</updated>
-    <published>2025-06-09T17:59:57Z</published>
-    <title>Play to Generalize: Learning to Reason Through Game Play</title>
-    <summary>  Developing generalizable reasoning capabilities in multimodal large language
-models (MLLMs) remains challenging. Motivated by cognitive science literature
-suggesting that gameplay promotes transferable cognitive skills, we propose a
-novel post-training paradigm, Visual Game Learning, or ViGaL, where MLLMs
-develop out-of-domain generalization of multimodal reasoning through playing
-arcade-like games. Specifically, we show that post-training a 7B-parameter MLLM
-via reinforcement learning (RL) on simple arcade-like games, e.g. Snake,
-significantly enhances its downstream performance on multimodal math benchmarks
-like MathVista, and on multi-discipline questions like MMMU, without seeing any
-worked solutions, equations, or diagrams during RL, suggesting the capture of
-transferable reasoning skills. Remarkably, our model outperforms specialist
-models tuned on multimodal reasoning data in multimodal reasoning benchmarks,
-while preserving the base model's performance on general visual benchmarks, a
-challenge where specialist models often fall short. Our findings suggest a new
-post-training paradigm: synthetic, rule-based games can serve as controllable
-and scalable pre-text tasks that unlock generalizable multimodal reasoning
-abilities in MLLMs.
+    <id>http://arxiv.org/abs/2506.09991v1</id>
+    <updated>2025-06-11T17:59:23Z</updated>
+    <published>2025-06-11T17:59:23Z</published>
+    <title>Multiverse: Your Language Models Secretly Decide How to Parallelize and
+  Merge Generation</title>
+    <summary>  Autoregressive Large Language Models (AR-LLMs) frequently exhibit implicit
+parallelism in sequential generation. Inspired by this, we introduce
+Multiverse, a new generative model that enables natively parallel generation.
+Multiverse internalizes a MapReduce paradigm, generating automatically through
+three stages: (i) a Map stage for adaptive task decomposition, (ii) a Process
+stage for parallel subtask execution, and (iii) a Reduce stage for lossless
+result synthesis. Next, we build a real-world Multiverse reasoning model with
+co-design of data, algorithm, and system, enabling rapid and seamless transfer
+from frontier AR-LLMs. Starting from sequential reasoning chains, we create
+Multiverse 1K by converting them into structured training data using an
+automated LLM-assisted pipeline, avoiding costly human annotations.
+Algorithmically, we design Multiverse Attention to separate parallel reasoning
+steps while keeping compatibility with causal attention for efficient training.
+Systematically, we implement Multiverse Engine to enable parallel inference. It
+features a dedicated scheduler that dynamically switches between sequential and
+parallel generation, triggered directly by the model. After a 3-hour
+fine-tuning with 1K examples, our Multiverse-32B stands as the only
+open-sourced non-AR model achieving performance on par with leading AR-LLMs of
+the same scale, evidenced by AIME24 &amp; 25 scores of 54% and 46%, respectively.
+Moreover, our budget control experiments show that Multiverse-32B exhibits
+superior scaling, outperforming AR-LLMs by 1.87% on average using the same
+context length. Such scaling further leads to practical efficiency gain,
+achieving up to 2x speedup across varying batch sizes. We have open-sourced the
+entire Multiverse ecosystem, including data, model weights, engine, supporting
+tools, as well as complete data curation prompts and detailed training and
+evaluation recipes.
 </summary>
     <author>
-      <name>Yunfei Xie</name>
+      <name>Xinyu Yang</name>
     </author>
     <author>
-      <name>Yinsong Ma</name>
+      <name>Yuwei An</name>
     </author>
     <author>
-      <name>Shiyi Lan</name>
+      <name>Hongyi Liu</name>
     </author>
     <author>
-      <name>Alan Yuille</name>
+      <name>Tianqi Chen</name>
     </author>
     <author>
-      <name>Junfei Xiao</name>
+      <name>Beidi Chen</name>
     </author>
-    <author>
-      <name>Chen Wei</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://yunfeixie233.github.io/ViGaL/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2506.08011v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.08011v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2506.08012v1</id>
-    <updated>2025-06-09T17:59:57Z</updated>
-    <published>2025-06-09T17:59:57Z</published>
-    <title>GUI-Reflection: Empowering Multimodal GUI Models with Self-Reflection
-  Behavior</title>
-    <summary>  Multimodal Large Language Models (MLLMs) have shown great potential in
-revolutionizing Graphical User Interface (GUI) automation. However, existing
-GUI models mostly rely on learning from nearly error-free offline trajectories,
-thus lacking reflection and error recovery capabilities. To bridge this gap, we
-propose GUI-Reflection, a novel framework that explicitly integrates
-self-reflection and error correction capabilities into end-to-end multimodal
-GUI models throughout dedicated training stages: GUI-specific pre-training,
-offline supervised fine-tuning (SFT), and online reflection tuning.
-GUI-reflection enables self-reflection behavior emergence with fully automated
-data generation and learning processes without requiring any human annotation.
-Specifically, 1) we first propose scalable data pipelines to automatically
-construct reflection and error correction data from existing successful
-trajectories. While existing GUI models mainly focus on grounding and UI
-understanding ability, we propose the GUI-Reflection Task Suite to learn and
-evaluate reflection-oriented abilities explicitly. 2) Furthermore, we built a
-diverse and efficient environment for online training and data collection of
-GUI models on mobile devices. 3) We also present an iterative online reflection
-tuning algorithm leveraging the proposed environment, enabling the model to
-continuously enhance its reflection and error correction abilities. Our
-framework equips GUI agents with self-reflection and correction capabilities,
-paving the way for more robust, adaptable, and intelligent GUI automation, with
-all data, models, environments, and tools to be released publicly.
-</summary>
-    <author>
-      <name>Penghao Wu</name>
-    </author>
-    <author>
-      <name>Shengnan Ma</name>
-    </author>
-    <author>
-      <name>Bo Wang</name>
-    </author>
-    <author>
-      <name>Jiaheng Yu</name>
-    </author>
-    <author>
-      <name>Lewei Lu</name>
-    </author>
-    <author>
-      <name>Ziwei Liu</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page at https://penghao-wu.github.io/GUI_Reflection/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2506.08012v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.08012v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <link href="http://arxiv.org/abs/2506.09991v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.09991v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
