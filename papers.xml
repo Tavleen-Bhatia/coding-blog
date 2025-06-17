@@ -3,300 +3,241 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-06-15T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">434183</opensearch:totalResults>
+  <updated>2025-06-16T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">434520</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2506.10982v1</id>
-    <updated>2025-06-12T17:59:58Z</updated>
-    <published>2025-06-12T17:59:58Z</published>
-    <title>Rethinking Losses for Diffusion Bridge Samplers</title>
-    <summary>  Diffusion bridges are a promising class of deep-learning methods for sampling
-from unnormalized distributions. Recent works show that the Log Variance (LV)
-loss consistently outperforms the reverse Kullback-Leibler (rKL) loss when
-using the reparametrization trick to compute rKL-gradients. While the on-policy
-LV loss yields identical gradients to the rKL loss when combined with the
-log-derivative trick for diffusion samplers with non-learnable forward
-processes, this equivalence does not hold for diffusion bridges or when
-diffusion coefficients are learned. Based on this insight we argue that for
-diffusion bridges the LV loss does not represent an optimization objective that
-can be motivated like the rKL loss via the data processing inequality. Our
-analysis shows that employing the rKL loss with the log-derivative trick
-(rKL-LD) does not only avoid these conceptual problems but also consistently
-outperforms the LV loss. Experimental results with different types of diffusion
-bridges on challenging benchmarks show that samplers trained with the rKL-LD
-loss achieve better performance. From a practical perspective we find that
-rKL-LD requires significantly less hyperparameter optimization and yields more
-stable training behavior.
+    <id>http://arxiv.org/abs/2506.12015v1</id>
+    <updated>2025-06-13T17:59:58Z</updated>
+    <published>2025-06-13T17:59:58Z</published>
+    <title>EMLoC: Emulator-based Memory-efficient Fine-tuning with LoRA Correction</title>
+    <summary>  Open-source foundation models have seen rapid adoption and development,
+enabling powerful general-purpose capabilities across diverse domains. However,
+fine-tuning large foundation models for domain-specific or personalized tasks
+remains prohibitively expensive for most users due to the significant memory
+overhead beyond that of inference. We introduce EMLoC, an Emulator-based
+Memory-efficient fine-tuning framework with LoRA Correction, which enables
+model fine-tuning within the same memory budget required for inference. EMLoC
+constructs a task-specific light-weight emulator using activation-aware
+singular value decomposition (SVD) on a small downstream calibration set.
+Fine-tuning then is performed on this lightweight emulator via LoRA. To tackle
+the misalignment between the original model and the compressed emulator, we
+propose a novel compensation algorithm to correct the fine-tuned LoRA module,
+which thus can be merged into the original model for inference. EMLoC supports
+flexible compression ratios and standard training pipelines, making it
+adaptable to a wide range of applications. Extensive experiments demonstrate
+that EMLoC outperforms other baselines across multiple datasets and modalities.
+Moreover, without quantization, EMLoC enables fine-tuning of a 38B model on a
+single 24GB consumer GPU-bringing efficient and practical model adaptation to
+individual users.
 </summary>
     <author>
-      <name>Sebastian Sanokowski</name>
+      <name>Hsi-Che Lin</name>
     </author>
     <author>
-      <name>Lukas Gruber</name>
+      <name>Yu-Chu Yu</name>
     </author>
     <author>
-      <name>Christoph Bartmann</name>
+      <name>Kai-Po Chang</name>
     </author>
     <author>
-      <name>Sepp Hochreiter</name>
+      <name>Yu-Chiang Frank Wang</name>
     </author>
-    <author>
-      <name>Sebastian Lehner</name>
-    </author>
-    <link href="http://arxiv.org/abs/2506.10982v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.10982v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Under review. Project page: https://hsi-che-lin.github.io/EMLoC/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2506.12015v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.12015v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2506.10978v1</id>
-    <updated>2025-06-12T17:59:51Z</updated>
-    <published>2025-06-12T17:59:51Z</published>
-    <title>Fine-Grained Perturbation Guidance via Attention Head Selection</title>
-    <summary>  Recent guidance methods in diffusion models steer reverse sampling by
-perturbing the model to construct an implicit weak model and guide generation
-away from it. Among these approaches, attention perturbation has demonstrated
-strong empirical performance in unconditional scenarios where classifier-free
-guidance is not applicable. However, existing attention perturbation methods
-lack principled approaches for determining where perturbations should be
-applied, particularly in Diffusion Transformer (DiT) architectures where
-quality-relevant computations are distributed across layers. In this paper, we
-investigate the granularity of attention perturbations, ranging from the layer
-level down to individual attention heads, and discover that specific heads
-govern distinct visual concepts such as structure, style, and texture quality.
-Building on this insight, we propose "HeadHunter", a systematic framework for
-iteratively selecting attention heads that align with user-centric objectives,
-enabling fine-grained control over generation quality and visual attributes. In
-addition, we introduce SoftPAG, which linearly interpolates each selected
-head's attention map toward an identity matrix, providing a continuous knob to
-tune perturbation strength and suppress artifacts. Our approach not only
-mitigates the oversmoothing issues of existing layer-level perturbation but
-also enables targeted manipulation of specific visual styles through
-compositional head selection. We validate our method on modern large-scale
-DiT-based text-to-image models including Stable Diffusion 3 and FLUX.1,
-demonstrating superior performance in both general quality enhancement and
-style-specific guidance. Our work provides the first head-level analysis of
-attention perturbation in diffusion models, uncovering interpretable
-specialization within attention layers and enabling practical design of
-effective perturbation strategies.
-</summary>
-    <author>
-      <name>Donghoon Ahn</name>
-    </author>
-    <author>
-      <name>Jiwon Kang</name>
-    </author>
-    <author>
-      <name>Sanghyun Lee</name>
-    </author>
-    <author>
-      <name>Minjae Kim</name>
-    </author>
-    <author>
-      <name>Jaewon Min</name>
-    </author>
-    <author>
-      <name>Wooseok Jang</name>
-    </author>
-    <author>
-      <name>Saungwu Lee</name>
-    </author>
-    <author>
-      <name>Sayak Paul</name>
-    </author>
-    <author>
-      <name>Susung Hong</name>
-    </author>
-    <author>
-      <name>Seungryong Kim</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://cvlab-kaist.github.io/HeadHunter/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2506.10978v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.10978v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2506.10975v1</id>
-    <updated>2025-06-12T17:59:33Z</updated>
-    <published>2025-06-12T17:59:33Z</published>
-    <title>GenWorld: Towards Detecting AI-generated Real-world Simulation Videos</title>
-    <summary>  The flourishing of video generation technologies has endangered the
-credibility of real-world information and intensified the demand for
-AI-generated video detectors. Despite some progress, the lack of high-quality
-real-world datasets hinders the development of trustworthy detectors. In this
-paper, we propose GenWorld, a large-scale, high-quality, and real-world
-simulation dataset for AI-generated video detection. GenWorld features the
-following characteristics: (1) Real-world Simulation: GenWorld focuses on
-videos that replicate real-world scenarios, which have a significant impact due
-to their realism and potential influence; (2) High Quality: GenWorld employs
-multiple state-of-the-art video generation models to provide realistic and
-high-quality forged videos; (3) Cross-prompt Diversity: GenWorld includes
-videos generated from diverse generators and various prompt modalities (e.g.,
-text, image, video), offering the potential to learn more generalizable
-forensic features. We analyze existing methods and find they fail to detect
-high-quality videos generated by world models (i.e., Cosmos), revealing
-potential drawbacks of ignoring real-world clues. To address this, we propose a
-simple yet effective model, SpannDetector, to leverage multi-view consistency
-as a strong criterion for real-world AI-generated video detection. Experiments
-show that our method achieves superior results, highlighting a promising
-direction for explainable AI-generated video detection based on physical
-plausibility. We believe that GenWorld will advance the field of AI-generated
-video detection. Project Page: https://chen-wl20.github.io/GenWorld
-</summary>
-    <author>
-      <name>Weiliang Chen</name>
-    </author>
-    <author>
-      <name>Wenzhao Zheng</name>
-    </author>
-    <author>
-      <name>Yu Zheng</name>
-    </author>
-    <author>
-      <name>Lei Chen</name>
-    </author>
-    <author>
-      <name>Jie Zhou</name>
-    </author>
-    <author>
-      <name>Jiwen Lu</name>
-    </author>
-    <author>
-      <name>Yueqi Duan</name>
-    </author>
-    <link href="http://arxiv.org/abs/2506.10975v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.10975v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2506.10974v1</id>
-    <updated>2025-06-12T17:59:32Z</updated>
-    <published>2025-06-12T17:59:32Z</published>
-    <title>AutoMind: Adaptive Knowledgeable Agent for Automated Data Science</title>
-    <summary>  Large Language Model (LLM) agents have shown great potential in addressing
-real-world data science problems. LLM-driven data science agents promise to
-automate the entire machine learning pipeline, yet their real-world
-effectiveness remains limited. Existing frameworks depend on rigid, pre-defined
-workflows and inflexible coding strategies; consequently, they excel only on
-relatively simple, classical problems and fail to capture the empirical
-expertise that human practitioners bring to complex, innovative tasks. In this
-work, we introduce AutoMind, an adaptive, knowledgeable LLM-agent framework
-that overcomes these deficiencies through three key advances: (1) a curated
-expert knowledge base that grounds the agent in domain expert knowledge, (2) an
-agentic knowledgeable tree search algorithm that strategically explores
-possible solutions, and (3) a self-adaptive coding strategy that dynamically
-tailors code generation to task complexity. Evaluations on two automated data
-science benchmarks demonstrate that AutoMind delivers superior performance
-versus state-of-the-art baselines. Additional analyses confirm favorable
-effectiveness, efficiency, and qualitative solution quality, highlighting
-AutoMind as an efficient and robust step toward fully automated data science.
+    <id>http://arxiv.org/abs/2506.12014v1</id>
+    <updated>2025-06-13T17:59:39Z</updated>
+    <published>2025-06-13T17:59:39Z</published>
+    <title>code_transformed: The Influence of Large Language Models on Code</title>
+    <summary>  Coding remains one of the most fundamental modes of interaction between
+humans and machines. With the rapid advancement of Large Language Models
+(LLMs), code generation capabilities have begun to significantly reshape
+programming practices. This development prompts a central question: Have LLMs
+transformed code style, and how can such transformation be characterized? In
+this paper, we present a pioneering study that investigates the impact of LLMs
+on code style, with a focus on naming conventions, complexity, maintainability,
+and similarity. By analyzing code from over 19,000 GitHub repositories linked
+to arXiv papers published between 2020 and 2025, we identify measurable trends
+in the evolution of coding style that align with characteristics of
+LLM-generated code. For instance, the proportion of snake\_case variable names
+in Python code increased from 47% in Q1 2023 to 51% in Q1 2025. Furthermore, we
+investigate how LLMs approach algorithmic problems by examining their reasoning
+processes. Given the diversity of LLMs and usage scenarios, among other
+factors, it is difficult or even impossible to precisely estimate the
+proportion of code generated or assisted by LLMs. Our experimental results
+provide the first large-scale empirical evidence that LLMs affect real-world
+programming style.
 </summary>
     <author>
-      <name>Yixin Ou</name>
+      <name>Yuliang Xu</name>
     </author>
     <author>
-      <name>Yujie Luo</name>
+      <name>Siming Huang</name>
     </author>
     <author>
-      <name>Jingsheng Zheng</name>
+      <name>Mingmeng Geng</name>
     </author>
     <author>
-      <name>Lanning Wei</name>
+      <name>Yao Wan</name>
     </author>
     <author>
-      <name>Shuofei Qiao</name>
+      <name>Xuanhua Shi</name>
     </author>
     <author>
-      <name>Jintian Zhang</name>
+      <name>Dongping Chen</name>
     </author>
-    <author>
-      <name>Da Zheng</name>
-    </author>
-    <author>
-      <name>Huajun Chen</name>
-    </author>
-    <author>
-      <name>Ningyu Zhang</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Ongoing work. Code is at https://github.com/innovatingAI/AutoMind</arxiv:comment>
-    <link href="http://arxiv.org/abs/2506.10974v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.10974v1" rel="related" type="application/pdf"/>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">We release all the experimental dataset and source code at:
+  https://github.com/ignorancex/LLM_code</arxiv:comment>
+    <link href="http://arxiv.org/abs/2506.12014v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.12014v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2506.10973v1</id>
-    <updated>2025-06-12T17:59:31Z</updated>
-    <published>2025-06-12T17:59:31Z</published>
-    <title>Principled Approaches for Extending Neural Architectures to Function
-  Spaces for Operator Learning</title>
-    <summary>  A wide range of scientific problems, such as those described by
-continuous-time dynamical systems and partial differential equations (PDEs),
-are naturally formulated on function spaces. While function spaces are
-typically infinite-dimensional, deep learning has predominantly advanced
-through applications in computer vision and natural language processing that
-focus on mappings between finite-dimensional spaces. Such fundamental
-disparities in the nature of the data have limited neural networks from
-achieving a comparable level of success in scientific applications as seen in
-other fields. Neural operators are a principled way to generalize neural
-networks to mappings between function spaces, offering a pathway to replicate
-deep learning's transformative impact on scientific problems. For instance,
-neural operators can learn solution operators for entire classes of PDEs, e.g.,
-physical systems with different boundary conditions, coefficient functions, and
-geometries. A key factor in deep learning's success has been the careful
-engineering of neural architectures through extensive empirical testing.
-Translating these neural architectures into neural operators allows operator
-learning to enjoy these same empirical optimizations. However, prior neural
-operator architectures have often been introduced as standalone models, not
-directly derived as extensions of existing neural network architectures. In
-this paper, we identify and distill the key principles for constructing
-practical implementations of mappings between infinite-dimensional function
-spaces. Using these principles, we propose a recipe for converting several
-popular neural architectures into neural operators with minimal modifications.
-This paper aims to guide practitioners through this process and details the
-steps to make neural operators work in practice. Our code can be found at
-https://github.com/neuraloperator/NNs-to-NOs
+    <id>http://arxiv.org/abs/2506.12010v1</id>
+    <updated>2025-06-13T17:58:14Z</updated>
+    <published>2025-06-13T17:58:14Z</published>
+    <title>A Random Matrix Theory of Pauli Tomography</title>
+    <summary>  Quantum state tomography (QST), the process of reconstructing some unknown
+quantum state $\hat\rho$ from repeated measurements on copies of said state, is
+a foundationally important task in the context of quantum computation and
+simulation. For this reason, a detailed characterization of the error
+$\Delta\hat\rho = \hat\rho-\hat\rho^\prime$ in a QST reconstruction
+$\hat\rho^\prime$ is of clear importance to quantum theory and experiment. In
+this work, we develop a fully random matrix theory (RMT) treatment of state
+tomography in informationally-complete bases; and in doing so we reveal deep
+connections between QST errors $\Delta\hat\rho$ and the gaussian unitary
+ensemble (GUE). By exploiting this connection we prove that wide classes of
+functions of the spectrum of $\Delta\hat\rho$ can be evaluated by substituting
+samples of an appropriate GUE for realizations of $\Delta\hat\rho$. This
+powerful and flexible result enables simple analytic treatments of the mean
+value and variance of the error as quantified by the trace distance
+$\|\Delta\hat\rho\|_\mathrm{Tr}$ (which we validate numerically for common
+tomographic protocols), allows us to derive a bound on the QST sample
+complexity, and subsequently demonstrate that said bound doesn't change under
+the most widely-used rephysicalization procedure. These results collectively
+demonstrate the flexibility, strength, and broad applicability of our approach;
+and lays the foundation for broader studies of RMT treatments of QST in the
+future.
 </summary>
     <author>
-      <name>Julius Berner</name>
+      <name>Nathan Keenan</name>
     </author>
     <author>
-      <name>Miguel Liu-Schiaffini</name>
+      <name>John Goold</name>
     </author>
     <author>
-      <name>Jean Kossaifi</name>
+      <name>Alex Nico-Katz</name>
+    </author>
+    <link href="http://arxiv.org/abs/2506.12010v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.12010v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.TH" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.12009v1</id>
+    <updated>2025-06-13T17:57:18Z</updated>
+    <published>2025-06-13T17:57:18Z</published>
+    <title>Affogato: Learning Open-Vocabulary Affordance Grounding with Automated
+  Data Generation at Scale</title>
+    <summary>  Affordance grounding-localizing object regions based on natural language
+descriptions of interactions-is a critical challenge for enabling intelligent
+agents to understand and interact with their environments. However, this task
+remains challenging due to the need for fine-grained part-level localization,
+the ambiguity arising from multiple valid interaction regions, and the scarcity
+of large-scale datasets. In this work, we introduce Affogato, a large-scale
+benchmark comprising 150K instances, annotated with open-vocabulary text
+descriptions and corresponding 3D affordance heatmaps across a diverse set of
+objects and interactions. Building on this benchmark, we develop simple yet
+effective vision-language models that leverage pretrained part-aware vision
+backbones and a text-conditional heatmap decoder. Our models trained with the
+Affogato dataset achieve promising performance on the existing 2D and 3D
+benchmarks, and notably, exhibit effectiveness in open-vocabulary cross-domain
+generalization. The Affogato dataset is shared in public:
+https://huggingface.co/datasets/project-affogato/affogato
+</summary>
+    <author>
+      <name>Junha Lee</name>
     </author>
     <author>
-      <name>Valentin Duruisseaux</name>
+      <name>Eunha Park</name>
     </author>
     <author>
-      <name>Boris Bonev</name>
+      <name>Chunghyun Park</name>
     </author>
     <author>
-      <name>Kamyar Azizzadenesheli</name>
+      <name>Dahyun Kang</name>
     </author>
     <author>
-      <name>Anima Anandkumar</name>
+      <name>Minsu Cho</name>
     </author>
-    <link href="http://arxiv.org/abs/2506.10973v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.10973v1" rel="related" type="application/pdf"/>
+    <link href="http://arxiv.org/abs/2506.12009v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.12009v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.12007v1</id>
+    <updated>2025-06-13T17:56:49Z</updated>
+    <published>2025-06-13T17:56:49Z</published>
+    <title>SIMSHIFT: A Benchmark for Adapting Neural Surrogates to Distribution
+  Shifts</title>
+    <summary>  Neural surrogates for Partial Differential Equations (PDEs) often suffer
+significant performance degradation when evaluated on unseen problem
+configurations, such as novel material types or structural dimensions.
+Meanwhile, Domain Adaptation (DA) techniques have been widely used in vision
+and language processing to generalize from limited information about unseen
+configurations. In this work, we address this gap through two focused
+contributions. First, we introduce SIMSHIFT, a novel benchmark dataset and
+evaluation suite composed of four industrial simulation tasks: hot rolling,
+sheet metal forming, electric motor design and heatsink design. Second, we
+extend established domain adaptation methods to state of the art neural
+surrogates and systematically evaluate them. These approaches use parametric
+descriptions and ground truth simulations from multiple source configurations,
+together with only parametric descriptions from target configurations. The goal
+is to accurately predict target simulations without access to ground truth
+simulation data. Extensive experiments on SIMSHIFT highlight the challenges of
+out of distribution neural surrogate modeling, demonstrate the potential of DA
+in simulation, and reveal open problems in achieving robust neural surrogates
+under distribution shifts in industrially relevant scenarios. Our codebase is
+available at https://github.com/psetinek/simshift
+</summary>
+    <author>
+      <name>Paul Setinek</name>
+    </author>
+    <author>
+      <name>Gianluca Galletti</name>
+    </author>
+    <author>
+      <name>Thomas Gross</name>
+    </author>
+    <author>
+      <name>Dominik Schnürer</name>
+    </author>
+    <author>
+      <name>Johannes Brandstetter</name>
+    </author>
+    <author>
+      <name>Werner Zellinger</name>
+    </author>
+    <link href="http://arxiv.org/abs/2506.12007v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.12007v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.NA" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.FA" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.NA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.comp-ph" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
