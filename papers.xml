@@ -3,241 +3,239 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-06-16T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">434520</opensearch:totalResults>
+  <updated>2025-06-17T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">435093</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2506.12015v1</id>
-    <updated>2025-06-13T17:59:58Z</updated>
-    <published>2025-06-13T17:59:58Z</published>
-    <title>EMLoC: Emulator-based Memory-efficient Fine-tuning with LoRA Correction</title>
-    <summary>  Open-source foundation models have seen rapid adoption and development,
-enabling powerful general-purpose capabilities across diverse domains. However,
-fine-tuning large foundation models for domain-specific or personalized tasks
-remains prohibitively expensive for most users due to the significant memory
-overhead beyond that of inference. We introduce EMLoC, an Emulator-based
-Memory-efficient fine-tuning framework with LoRA Correction, which enables
-model fine-tuning within the same memory budget required for inference. EMLoC
-constructs a task-specific light-weight emulator using activation-aware
-singular value decomposition (SVD) on a small downstream calibration set.
-Fine-tuning then is performed on this lightweight emulator via LoRA. To tackle
-the misalignment between the original model and the compressed emulator, we
-propose a novel compensation algorithm to correct the fine-tuned LoRA module,
-which thus can be merged into the original model for inference. EMLoC supports
-flexible compression ratios and standard training pipelines, making it
-adaptable to a wide range of applications. Extensive experiments demonstrate
-that EMLoC outperforms other baselines across multiple datasets and modalities.
-Moreover, without quantization, EMLoC enables fine-tuning of a 38B model on a
-single 24GB consumer GPU-bringing efficient and practical model adaptation to
-individual users.
+    <id>http://arxiv.org/abs/2506.13763v1</id>
+    <updated>2025-06-16T17:59:54Z</updated>
+    <published>2025-06-16T17:59:54Z</published>
+    <title>Diagnosing and Improving Diffusion Models by Estimating the Optimal Loss
+  Value</title>
+    <summary>  Diffusion models have achieved remarkable success in generative modeling.
+Despite more stable training, the loss of diffusion models is not indicative of
+absolute data-fitting quality, since its optimal value is typically not zero
+but unknown, leading to confusion between large optimal loss and insufficient
+model capacity. In this work, we advocate the need to estimate the optimal loss
+value for diagnosing and improving diffusion models. We first derive the
+optimal loss in closed form under a unified formulation of diffusion models,
+and develop effective estimators for it, including a stochastic variant
+scalable to large datasets with proper control of variance and bias. With this
+tool, we unlock the inherent metric for diagnosing the training quality of
+mainstream diffusion model variants, and develop a more performant training
+schedule based on the optimal loss. Moreover, using models with 120M to 1.5B
+parameters, we find that the power law is better demonstrated after subtracting
+the optimal loss from the actual training loss, suggesting a more principled
+setting for investigating the scaling law for diffusion models.
 </summary>
     <author>
-      <name>Hsi-Che Lin</name>
+      <name>Yixian Xu</name>
     </author>
     <author>
-      <name>Yu-Chu Yu</name>
+      <name>Shengjie Luo</name>
     </author>
     <author>
-      <name>Kai-Po Chang</name>
+      <name>Liwei Wang</name>
     </author>
     <author>
-      <name>Yu-Chiang Frank Wang</name>
+      <name>Di He</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Under review. Project page: https://hsi-che-lin.github.io/EMLoC/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2506.12015v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.12015v1" rel="related" type="application/pdf"/>
+    <author>
+      <name>Chang Liu</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">29 pages, 8 figures, 3 tables. Preprint. Work in Progress</arxiv:comment>
+    <link href="http://arxiv.org/abs/2506.13763v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.13763v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2506.12014v1</id>
-    <updated>2025-06-13T17:59:39Z</updated>
-    <published>2025-06-13T17:59:39Z</published>
-    <title>code_transformed: The Influence of Large Language Models on Code</title>
-    <summary>  Coding remains one of the most fundamental modes of interaction between
-humans and machines. With the rapid advancement of Large Language Models
-(LLMs), code generation capabilities have begun to significantly reshape
-programming practices. This development prompts a central question: Have LLMs
-transformed code style, and how can such transformation be characterized? In
-this paper, we present a pioneering study that investigates the impact of LLMs
-on code style, with a focus on naming conventions, complexity, maintainability,
-and similarity. By analyzing code from over 19,000 GitHub repositories linked
-to arXiv papers published between 2020 and 2025, we identify measurable trends
-in the evolution of coding style that align with characteristics of
-LLM-generated code. For instance, the proportion of snake\_case variable names
-in Python code increased from 47% in Q1 2023 to 51% in Q1 2025. Furthermore, we
-investigate how LLMs approach algorithmic problems by examining their reasoning
-processes. Given the diversity of LLMs and usage scenarios, among other
-factors, it is difficult or even impossible to precisely estimate the
-proportion of code generated or assisted by LLMs. Our experimental results
-provide the first large-scale empirical evidence that LLMs affect real-world
-programming style.
+    <id>http://arxiv.org/abs/2506.13762v1</id>
+    <updated>2025-06-16T17:59:48Z</updated>
+    <published>2025-06-16T17:59:48Z</published>
+    <title>Touch begins where vision ends: Generalizable policies for contact-rich
+  manipulation</title>
+    <summary>  Data-driven approaches struggle with precise manipulation; imitation learning
+requires many hard-to-obtain demonstrations, while reinforcement learning
+yields brittle, non-generalizable policies. We introduce VisuoTactile Local
+(ViTaL) policy learning, a framework that solves fine-grained manipulation
+tasks by decomposing them into two phases: a reaching phase, where a
+vision-language model (VLM) enables scene-level reasoning to localize the
+object of interest, and a local interaction phase, where a reusable,
+scene-agnostic ViTaL policy performs contact-rich manipulation using egocentric
+vision and tactile sensing. This approach is motivated by the observation that
+while scene context varies, the low-level interaction remains consistent across
+task instances. By training local policies once in a canonical setting, they
+can generalize via a localize-then-execute strategy. ViTaL achieves around 90%
+success on contact-rich tasks in unseen environments and is robust to
+distractors. ViTaL's effectiveness stems from three key insights: (1)
+foundation models for segmentation enable training robust visual encoders via
+behavior cloning; (2) these encoders improve the generalizability of policies
+learned using residual RL; and (3) tactile sensing significantly boosts
+performance in contact-rich tasks. Ablation studies validate each of these
+insights, and we demonstrate that ViTaL integrates well with high-level VLMs,
+enabling robust, reusable low-level skills. Results and videos are available at
+https://vitalprecise.github.io.
 </summary>
     <author>
-      <name>Yuliang Xu</name>
+      <name>Zifan Zhao</name>
     </author>
     <author>
-      <name>Siming Huang</name>
+      <name>Siddhant Haldar</name>
     </author>
     <author>
-      <name>Mingmeng Geng</name>
+      <name>Jinda Cui</name>
     </author>
     <author>
-      <name>Yao Wan</name>
+      <name>Lerrel Pinto</name>
     </author>
     <author>
-      <name>Xuanhua Shi</name>
+      <name>Raunaq Bhirangi</name>
     </author>
-    <author>
-      <name>Dongping Chen</name>
-    </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">We release all the experimental dataset and source code at:
-  https://github.com/ignorancex/LLM_code</arxiv:comment>
-    <link href="http://arxiv.org/abs/2506.12014v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.12014v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2506.12010v1</id>
-    <updated>2025-06-13T17:58:14Z</updated>
-    <published>2025-06-13T17:58:14Z</published>
-    <title>A Random Matrix Theory of Pauli Tomography</title>
-    <summary>  Quantum state tomography (QST), the process of reconstructing some unknown
-quantum state $\hat\rho$ from repeated measurements on copies of said state, is
-a foundationally important task in the context of quantum computation and
-simulation. For this reason, a detailed characterization of the error
-$\Delta\hat\rho = \hat\rho-\hat\rho^\prime$ in a QST reconstruction
-$\hat\rho^\prime$ is of clear importance to quantum theory and experiment. In
-this work, we develop a fully random matrix theory (RMT) treatment of state
-tomography in informationally-complete bases; and in doing so we reveal deep
-connections between QST errors $\Delta\hat\rho$ and the gaussian unitary
-ensemble (GUE). By exploiting this connection we prove that wide classes of
-functions of the spectrum of $\Delta\hat\rho$ can be evaluated by substituting
-samples of an appropriate GUE for realizations of $\Delta\hat\rho$. This
-powerful and flexible result enables simple analytic treatments of the mean
-value and variance of the error as quantified by the trace distance
-$\|\Delta\hat\rho\|_\mathrm{Tr}$ (which we validate numerically for common
-tomographic protocols), allows us to derive a bound on the QST sample
-complexity, and subsequently demonstrate that said bound doesn't change under
-the most widely-used rephysicalization procedure. These results collectively
-demonstrate the flexibility, strength, and broad applicability of our approach;
-and lays the foundation for broader studies of RMT treatments of QST in the
-future.
-</summary>
-    <author>
-      <name>Nathan Keenan</name>
-    </author>
-    <author>
-      <name>John Goold</name>
-    </author>
-    <author>
-      <name>Alex Nico-Katz</name>
-    </author>
-    <link href="http://arxiv.org/abs/2506.12010v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.12010v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="stat.TH" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2506.12009v1</id>
-    <updated>2025-06-13T17:57:18Z</updated>
-    <published>2025-06-13T17:57:18Z</published>
-    <title>Affogato: Learning Open-Vocabulary Affordance Grounding with Automated
-  Data Generation at Scale</title>
-    <summary>  Affordance grounding-localizing object regions based on natural language
-descriptions of interactions-is a critical challenge for enabling intelligent
-agents to understand and interact with their environments. However, this task
-remains challenging due to the need for fine-grained part-level localization,
-the ambiguity arising from multiple valid interaction regions, and the scarcity
-of large-scale datasets. In this work, we introduce Affogato, a large-scale
-benchmark comprising 150K instances, annotated with open-vocabulary text
-descriptions and corresponding 3D affordance heatmaps across a diverse set of
-objects and interactions. Building on this benchmark, we develop simple yet
-effective vision-language models that leverage pretrained part-aware vision
-backbones and a text-conditional heatmap decoder. Our models trained with the
-Affogato dataset achieve promising performance on the existing 2D and 3D
-benchmarks, and notably, exhibit effectiveness in open-vocabulary cross-domain
-generalization. The Affogato dataset is shared in public:
-https://huggingface.co/datasets/project-affogato/affogato
-</summary>
-    <author>
-      <name>Junha Lee</name>
-    </author>
-    <author>
-      <name>Eunha Park</name>
-    </author>
-    <author>
-      <name>Chunghyun Park</name>
-    </author>
-    <author>
-      <name>Dahyun Kang</name>
-    </author>
-    <author>
-      <name>Minsu Cho</name>
-    </author>
-    <link href="http://arxiv.org/abs/2506.12009v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.12009v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <link href="http://arxiv.org/abs/2506.13762v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.13762v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2506.12007v1</id>
-    <updated>2025-06-13T17:56:49Z</updated>
-    <published>2025-06-13T17:56:49Z</published>
-    <title>SIMSHIFT: A Benchmark for Adapting Neural Surrogates to Distribution
-  Shifts</title>
-    <summary>  Neural surrogates for Partial Differential Equations (PDEs) often suffer
-significant performance degradation when evaluated on unseen problem
-configurations, such as novel material types or structural dimensions.
-Meanwhile, Domain Adaptation (DA) techniques have been widely used in vision
-and language processing to generalize from limited information about unseen
-configurations. In this work, we address this gap through two focused
-contributions. First, we introduce SIMSHIFT, a novel benchmark dataset and
-evaluation suite composed of four industrial simulation tasks: hot rolling,
-sheet metal forming, electric motor design and heatsink design. Second, we
-extend established domain adaptation methods to state of the art neural
-surrogates and systematically evaluate them. These approaches use parametric
-descriptions and ground truth simulations from multiple source configurations,
-together with only parametric descriptions from target configurations. The goal
-is to accurately predict target simulations without access to ground truth
-simulation data. Extensive experiments on SIMSHIFT highlight the challenges of
-out of distribution neural surrogate modeling, demonstrate the potential of DA
-in simulation, and reveal open problems in achieving robust neural surrogates
-under distribution shifts in industrially relevant scenarios. Our codebase is
-available at https://github.com/psetinek/simshift
+    <id>http://arxiv.org/abs/2506.13759v1</id>
+    <updated>2025-06-16T17:59:08Z</updated>
+    <published>2025-06-16T17:59:08Z</published>
+    <title>Discrete Diffusion in Large Language and Multimodal Models: A Survey</title>
+    <summary>  In this work, we provide a systematic survey of Discrete Diffusion Language
+Models (dLLMs) and Discrete Diffusion Multimodal Language Models (dMLLMs).
+Unlike autoregressive (AR) models, dLLMs and dMLLMs adopt a multi-token,
+parallel decoding paradigm using full attention and a denoising-based
+generation strategy. This paradigm naturally enables parallel generation,
+fine-grained output controllability, and dynamic, response-aware perception.
+These capabilities are previously difficult to achieve with AR models.
+Recently, a growing number of industrial-scale proprietary d(M)LLMs, as well as
+a large number of open-source academic d(M)LLMs, have demonstrated performance
+comparable to their autoregressive counterparts, while achieving up to 10x
+acceleration in inference speed.
+  The advancement of discrete diffusion LLMs and MLLMs has been largely driven
+by progress in two domains. The first is the development of autoregressive LLMs
+and MLLMs, which has accumulated vast amounts of data, benchmarks, and
+foundational infrastructure for training and inference. The second contributing
+domain is the evolution of the mathematical models underlying discrete
+diffusion. Together, these advancements have catalyzed a surge in dLLMs and
+dMLLMs research in early 2025.
+  In this work, we present a comprehensive overview of the research in the dLLM
+and dMLLM domains. We trace the historical development of dLLMs and dMLLMs,
+formalize the underlying mathematical frameworks, and categorize representative
+models. We further analyze key techniques for training and inference, and
+summarize emerging applications across language, vision-language, and
+biological domains. We conclude by discussing future directions for research
+and deployment.
+  Paper collection: https://github.com/LiQiiiii/DLLM-Survey
 </summary>
     <author>
-      <name>Paul Setinek</name>
+      <name>Runpeng Yu</name>
     </author>
     <author>
-      <name>Gianluca Galletti</name>
+      <name>Qi Li</name>
     </author>
     <author>
-      <name>Thomas Gross</name>
+      <name>Xinchao Wang</name>
     </author>
-    <author>
-      <name>Dominik Schnürer</name>
-    </author>
-    <author>
-      <name>Johannes Brandstetter</name>
-    </author>
-    <author>
-      <name>Werner Zellinger</name>
-    </author>
-    <link href="http://arxiv.org/abs/2506.12007v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.12007v1" rel="related" type="application/pdf"/>
+    <link href="http://arxiv.org/abs/2506.13759v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.13759v1" rel="related" type="application/pdf"/>
     <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.13758v1</id>
+    <updated>2025-06-16T17:59:02Z</updated>
+    <published>2025-06-16T17:59:02Z</published>
+    <title>AI reconstruction of European weather from the Euro-Atlantic regimes</title>
+    <summary>  We present a non-linear AI-model designed to reconstruct monthly mean
+anomalies of the European temperature and precipitation based on the
+Euro-Atlantic Weather regimes (WR) indices. WR represent recurrent,
+quasi-stationary, and persistent states of the atmospheric circulation that
+exert considerable influence over the European weather, therefore offering an
+opportunity for sub-seasonal to seasonal forecasting. While much research has
+focused on studying the correlation and impacts of the WR on European weather,
+the estimation of ground-level climate variables, such as temperature and
+precipitation, from Euro-Atlantic WR remains largely unexplored and is
+currently limited to linear methods. The presented AI model can capture and
+introduce complex non-linearities in the relation between the WR indices,
+describing the state of the Euro-Atlantic atmospheric circulation and the
+corresponding surface temperature and precipitation anomalies in Europe. We
+discuss the AI-model performance in reconstructing the monthly mean two-meter
+temperature and total precipitation anomalies in the European winter and
+summer, also varying the number of WR used to describe the monthly atmospheric
+circulation. We assess the impact of errors on the WR indices in the
+reconstruction and show that a mean absolute relative error below 80% yields
+improved seasonal reconstruction compared to the ECMWF operational seasonal
+forecast system, SEAS5. As a demonstration of practical applicability, we
+evaluate the model using WR indices predicted by SEAS5, finding slightly better
+or comparable skill relative to the SEAS5 forecast itself. Our findings
+demonstrate that WR-based anomaly reconstruction, powered by AI tools, offers a
+promising pathway for sub-seasonal and seasonal forecasting.
+</summary>
+    <author>
+      <name>A. Camilletti</name>
+    </author>
+    <author>
+      <name>G. Franch</name>
+    </author>
+    <author>
+      <name>E. Tomasi</name>
+    </author>
+    <author>
+      <name>M. Cristoforetti</name>
+    </author>
+    <link href="http://arxiv.org/abs/2506.13758v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.13758v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.13756v1</id>
+    <updated>2025-06-16T17:58:29Z</updated>
+    <published>2025-06-16T17:58:29Z</published>
+    <title>UltraZoom: Generating Gigapixel Images from Regular Photos</title>
+    <summary>  We present UltraZoom, a system for generating gigapixel-resolution images of
+objects from casually captured inputs, such as handheld phone photos. Given a
+full-shot image (global, low-detail) and one or more close-ups (local,
+high-detail), UltraZoom upscales the full image to match the fine detail and
+scale of the close-up examples. To achieve this, we construct a per-instance
+paired dataset from the close-ups and adapt a pretrained generative model to
+learn object-specific low-to-high resolution mappings. At inference, we apply
+the model in a sliding window fashion over the full image. Constructing these
+pairs is non-trivial: it requires registering the close-ups within the full
+image for scale estimation and degradation alignment. We introduce a simple,
+robust method for getting registration on arbitrary materials in casual,
+in-the-wild captures. Together, these components form a system that enables
+seamless pan and zoom across the entire object, producing consistent,
+photorealistic gigapixel imagery from minimal input.
+</summary>
+    <author>
+      <name>Jingwei Ma</name>
+    </author>
+    <author>
+      <name>Vivek Jayaram</name>
+    </author>
+    <author>
+      <name>Brian Curless</name>
+    </author>
+    <author>
+      <name>Ira Kemelmacher-Shlizerman</name>
+    </author>
+    <author>
+      <name>Steven M. Seitz</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://ultra-zoom.github.io/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2506.13756v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.13756v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.GR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.GR" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="physics.comp-ph" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
