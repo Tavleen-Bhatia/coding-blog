@@ -3,239 +3,241 @@
   <link href="http://arxiv.org/api/query?search_query%3Dall%3Adeep%20learning%26id_list%3D%26start%3D0%26max_results%3D5" rel="self" type="application/atom+xml"/>
   <title type="html">ArXiv Query: search_query=all:deep learning&amp;id_list=&amp;start=0&amp;max_results=5</title>
   <id>http://arxiv.org/api/o6m5I8YDMO+W1ZfiBhSOoh9xyHo</id>
-  <updated>2025-06-17T00:00:00-04:00</updated>
-  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">435093</opensearch:totalResults>
+  <updated>2025-06-18T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">435412</opensearch:totalResults>
   <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
   <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">5</opensearch:itemsPerPage>
   <entry>
-    <id>http://arxiv.org/abs/2506.13763v1</id>
-    <updated>2025-06-16T17:59:54Z</updated>
-    <published>2025-06-16T17:59:54Z</published>
-    <title>Diagnosing and Improving Diffusion Models by Estimating the Optimal Loss
-  Value</title>
-    <summary>  Diffusion models have achieved remarkable success in generative modeling.
-Despite more stable training, the loss of diffusion models is not indicative of
-absolute data-fitting quality, since its optimal value is typically not zero
-but unknown, leading to confusion between large optimal loss and insufficient
-model capacity. In this work, we advocate the need to estimate the optimal loss
-value for diagnosing and improving diffusion models. We first derive the
-optimal loss in closed form under a unified formulation of diffusion models,
-and develop effective estimators for it, including a stochastic variant
-scalable to large datasets with proper control of variance and bias. With this
-tool, we unlock the inherent metric for diagnosing the training quality of
-mainstream diffusion model variants, and develop a more performant training
-schedule based on the optimal loss. Moreover, using models with 120M to 1.5B
-parameters, we find that the power law is better demonstrated after subtracting
-the optimal loss from the actual training loss, suggesting a more principled
-setting for investigating the scaling law for diffusion models.
+    <id>http://arxiv.org/abs/2506.14769v1</id>
+    <updated>2025-06-17T17:59:12Z</updated>
+    <published>2025-06-17T17:59:12Z</published>
+    <title>CDP: Towards Robust Autoregressive Visuomotor Policy Learning via Causal
+  Diffusion</title>
+    <summary>  Diffusion Policy (DP) enables robots to learn complex behaviors by imitating
+expert demonstrations through action diffusion. However, in practical
+applications, hardware limitations often degrade data quality, while real-time
+constraints restrict model inference to instantaneous state and scene
+observations. These limitations seriously reduce the efficacy of learning from
+expert demonstrations, resulting in failures in object localization, grasp
+planning, and long-horizon task execution. To address these challenges, we
+propose Causal Diffusion Policy (CDP), a novel transformer-based diffusion
+model that enhances action prediction by conditioning on historical action
+sequences, thereby enabling more coherent and context-aware visuomotor policy
+learning. To further mitigate the computational cost associated with
+autoregressive inference, a caching mechanism is also introduced to store
+attention key-value pairs from previous timesteps, substantially reducing
+redundant computations during execution. Extensive experiments in both
+simulated and real-world environments, spanning diverse 2D and 3D manipulation
+tasks, demonstrate that CDP uniquely leverages historical action sequences to
+achieve significantly higher accuracy than existing methods. Moreover, even
+when faced with degraded input observation quality, CDP maintains remarkable
+precision by reasoning through temporal continuity, which highlights its
+practical robustness for robotic control under realistic, imperfect conditions.
 </summary>
     <author>
-      <name>Yixian Xu</name>
+      <name>Jiahua Ma</name>
     </author>
     <author>
-      <name>Shengjie Luo</name>
+      <name>Yiran Qin</name>
     </author>
     <author>
-      <name>Liwei Wang</name>
+      <name>Yixiong Li</name>
     </author>
     <author>
-      <name>Di He</name>
+      <name>Xuanqi Liao</name>
     </author>
     <author>
-      <name>Chang Liu</name>
+      <name>Yulan Guo</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">29 pages, 8 figures, 3 tables. Preprint. Work in Progress</arxiv:comment>
-    <link href="http://arxiv.org/abs/2506.13763v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.13763v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Ruimao Zhang</name>
+    </author>
+    <link href="http://arxiv.org/abs/2506.14769v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.14769v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2506.13762v1</id>
-    <updated>2025-06-16T17:59:48Z</updated>
-    <published>2025-06-16T17:59:48Z</published>
-    <title>Touch begins where vision ends: Generalizable policies for contact-rich
-  manipulation</title>
-    <summary>  Data-driven approaches struggle with precise manipulation; imitation learning
-requires many hard-to-obtain demonstrations, while reinforcement learning
-yields brittle, non-generalizable policies. We introduce VisuoTactile Local
-(ViTaL) policy learning, a framework that solves fine-grained manipulation
-tasks by decomposing them into two phases: a reaching phase, where a
-vision-language model (VLM) enables scene-level reasoning to localize the
-object of interest, and a local interaction phase, where a reusable,
-scene-agnostic ViTaL policy performs contact-rich manipulation using egocentric
-vision and tactile sensing. This approach is motivated by the observation that
-while scene context varies, the low-level interaction remains consistent across
-task instances. By training local policies once in a canonical setting, they
-can generalize via a localize-then-execute strategy. ViTaL achieves around 90%
-success on contact-rich tasks in unseen environments and is robust to
-distractors. ViTaL's effectiveness stems from three key insights: (1)
-foundation models for segmentation enable training robust visual encoders via
-behavior cloning; (2) these encoders improve the generalizability of policies
-learned using residual RL; and (3) tactile sensing significantly boosts
-performance in contact-rich tasks. Ablation studies validate each of these
-insights, and we demonstrate that ViTaL integrates well with high-level VLMs,
-enabling robust, reusable low-level skills. Results and videos are available at
-https://vitalprecise.github.io.
-</summary>
-    <author>
-      <name>Zifan Zhao</name>
-    </author>
-    <author>
-      <name>Siddhant Haldar</name>
-    </author>
-    <author>
-      <name>Jinda Cui</name>
-    </author>
-    <author>
-      <name>Lerrel Pinto</name>
-    </author>
-    <author>
-      <name>Raunaq Bhirangi</name>
-    </author>
-    <link href="http://arxiv.org/abs/2506.13762v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.13762v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2506.13759v1</id>
-    <updated>2025-06-16T17:59:08Z</updated>
-    <published>2025-06-16T17:59:08Z</published>
-    <title>Discrete Diffusion in Large Language and Multimodal Models: A Survey</title>
-    <summary>  In this work, we provide a systematic survey of Discrete Diffusion Language
-Models (dLLMs) and Discrete Diffusion Multimodal Language Models (dMLLMs).
-Unlike autoregressive (AR) models, dLLMs and dMLLMs adopt a multi-token,
-parallel decoding paradigm using full attention and a denoising-based
-generation strategy. This paradigm naturally enables parallel generation,
-fine-grained output controllability, and dynamic, response-aware perception.
-These capabilities are previously difficult to achieve with AR models.
-Recently, a growing number of industrial-scale proprietary d(M)LLMs, as well as
-a large number of open-source academic d(M)LLMs, have demonstrated performance
-comparable to their autoregressive counterparts, while achieving up to 10x
-acceleration in inference speed.
-  The advancement of discrete diffusion LLMs and MLLMs has been largely driven
-by progress in two domains. The first is the development of autoregressive LLMs
-and MLLMs, which has accumulated vast amounts of data, benchmarks, and
-foundational infrastructure for training and inference. The second contributing
-domain is the evolution of the mathematical models underlying discrete
-diffusion. Together, these advancements have catalyzed a surge in dLLMs and
-dMLLMs research in early 2025.
-  In this work, we present a comprehensive overview of the research in the dLLM
-and dMLLM domains. We trace the historical development of dLLMs and dMLLMs,
-formalize the underlying mathematical frameworks, and categorize representative
-models. We further analyze key techniques for training and inference, and
-summarize emerging applications across language, vision-language, and
-biological domains. We conclude by discussing future directions for research
-and deployment.
-  Paper collection: https://github.com/LiQiiiii/DLLM-Survey
+    <id>http://arxiv.org/abs/2506.14767v1</id>
+    <updated>2025-06-17T17:58:17Z</updated>
+    <published>2025-06-17T17:58:17Z</published>
+    <title>A Variational Framework for Improving Naturalness in Generative Spoken
+  Language Models</title>
+    <summary>  The success of large language models in text processing has inspired their
+adaptation to speech modeling. However, since speech is continuous and complex,
+it is often discretized for autoregressive modeling. Speech tokens derived from
+self-supervised models (known as semantic tokens) typically focus on the
+linguistic aspects of speech but neglect prosodic information. As a result,
+models trained on these tokens can generate speech with reduced naturalness.
+Existing approaches try to fix this by adding pitch features to the semantic
+tokens. However, pitch alone cannot fully represent the range of paralinguistic
+attributes, and selecting the right features requires careful hand-engineering.
+To overcome this, we propose an end-to-end variational approach that
+automatically learns to encode these continuous speech attributes to enhance
+the semantic tokens. Our approach eliminates the need for manual extraction and
+selection of paralinguistic features. Moreover, it produces preferred speech
+continuations according to human raters. Code, samples and models are available
+at https://github.com/b04901014/vae-gslm.
 </summary>
     <author>
-      <name>Runpeng Yu</name>
+      <name>Li-Wei Chen</name>
     </author>
     <author>
-      <name>Qi Li</name>
+      <name>Takuya Higuchi</name>
     </author>
     <author>
-      <name>Xinchao Wang</name>
+      <name>Zakaria Aldeneh</name>
     </author>
-    <link href="http://arxiv.org/abs/2506.13759v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.13759v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Ahmed Hussen Abdelaziz</name>
+    </author>
+    <author>
+      <name>Alexander Rudnicky</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">International Conference on Machine Learning (ICML) 2025</arxiv:comment>
+    <link href="http://arxiv.org/abs/2506.14767v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.14767v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2506.13758v1</id>
-    <updated>2025-06-16T17:59:02Z</updated>
-    <published>2025-06-16T17:59:02Z</published>
-    <title>AI reconstruction of European weather from the Euro-Atlantic regimes</title>
-    <summary>  We present a non-linear AI-model designed to reconstruct monthly mean
-anomalies of the European temperature and precipitation based on the
-Euro-Atlantic Weather regimes (WR) indices. WR represent recurrent,
-quasi-stationary, and persistent states of the atmospheric circulation that
-exert considerable influence over the European weather, therefore offering an
-opportunity for sub-seasonal to seasonal forecasting. While much research has
-focused on studying the correlation and impacts of the WR on European weather,
-the estimation of ground-level climate variables, such as temperature and
-precipitation, from Euro-Atlantic WR remains largely unexplored and is
-currently limited to linear methods. The presented AI model can capture and
-introduce complex non-linearities in the relation between the WR indices,
-describing the state of the Euro-Atlantic atmospheric circulation and the
-corresponding surface temperature and precipitation anomalies in Europe. We
-discuss the AI-model performance in reconstructing the monthly mean two-meter
-temperature and total precipitation anomalies in the European winter and
-summer, also varying the number of WR used to describe the monthly atmospheric
-circulation. We assess the impact of errors on the WR indices in the
-reconstruction and show that a mean absolute relative error below 80% yields
-improved seasonal reconstruction compared to the ECMWF operational seasonal
-forecast system, SEAS5. As a demonstration of practical applicability, we
-evaluate the model using WR indices predicted by SEAS5, finding slightly better
-or comparable skill relative to the SEAS5 forecast itself. Our findings
-demonstrate that WR-based anomaly reconstruction, powered by AI tools, offers a
-promising pathway for sub-seasonal and seasonal forecasting.
-</summary>
-    <author>
-      <name>A. Camilletti</name>
-    </author>
-    <author>
-      <name>G. Franch</name>
-    </author>
-    <author>
-      <name>E. Tomasi</name>
-    </author>
-    <author>
-      <name>M. Cristoforetti</name>
-    </author>
-    <link href="http://arxiv.org/abs/2506.13758v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.13758v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2506.13756v1</id>
-    <updated>2025-06-16T17:58:29Z</updated>
-    <published>2025-06-16T17:58:29Z</published>
-    <title>UltraZoom: Generating Gigapixel Images from Regular Photos</title>
-    <summary>  We present UltraZoom, a system for generating gigapixel-resolution images of
-objects from casually captured inputs, such as handheld phone photos. Given a
-full-shot image (global, low-detail) and one or more close-ups (local,
-high-detail), UltraZoom upscales the full image to match the fine detail and
-scale of the close-up examples. To achieve this, we construct a per-instance
-paired dataset from the close-ups and adapt a pretrained generative model to
-learn object-specific low-to-high resolution mappings. At inference, we apply
-the model in a sliding window fashion over the full image. Constructing these
-pairs is non-trivial: it requires registering the close-ups within the full
-image for scale estimation and degradation alignment. We introduce a simple,
-robust method for getting registration on arbitrary materials in casual,
-in-the-wild captures. Together, these components form a system that enables
-seamless pan and zoom across the entire object, producing consistent,
-photorealistic gigapixel imagery from minimal input.
+    <id>http://arxiv.org/abs/2506.14764v1</id>
+    <updated>2025-06-17T17:57:55Z</updated>
+    <published>2025-06-17T17:57:55Z</published>
+    <title>Gravitational-wave background detection using machine learning</title>
+    <summary>  Extracting the faint gravitational-wave background (GWB) signal from dominant
+detector noise and disentangling its %diverse astrophysical and cosmological
+components remain significant challenges for traditional methods like
+cross-correlation analysis. We propose a novel hybrid approach that combines
+deep learning with Bayesian inference to identify and characterize the GWB more
+rapidly than current techniques. Our method utilizes a custom-designed
+multi-scale multi-headed autoencoder (MSMHAutoencoder) architecture to separate
+GWB signals from detector noise, and subsequently Marcov Chain Monte Carlo
+parameter estimation to disentangle the GWB components. Using simulated data
+representative of the LIGO-Virgo-KAGRA network at design sensitivity, we show
+that our MSMHAutoencoder can detect with high confidence (log noise Bayes
+factor of 3) a GWB from binary black hole mergers with fractional energy
+density $\Omega_{\text{BBH}} \approx 10^{-9}$ at 25 Hz. In the presence of such
+an astrophysical GWB, we can simultaneously measure a cosmological component as
+faint as $\Omega_{\text{Cosmo}} \approx 1.3 \times 10^{-10}$ using 47.4 days of
+training data.
 </summary>
     <author>
-      <name>Jingwei Ma</name>
+      <name>Hugo Einsle</name>
     </author>
     <author>
-      <name>Vivek Jayaram</name>
+      <name>Marie-Anne Bizouard</name>
     </author>
     <author>
-      <name>Brian Curless</name>
+      <name>Tania Regimbau</name>
     </author>
     <author>
-      <name>Ira Kemelmacher-Shlizerman</name>
+      <name>Mairi Sakellariadou</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">17 pages, 7 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2506.14764v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.14764v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.HE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph.IM" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.14762v1</id>
+    <updated>2025-06-17T17:55:42Z</updated>
+    <published>2025-06-17T17:55:42Z</published>
+    <title>Markov Regime-Switching Intelligent Driver Model for Interpretable
+  Car-Following Behavior</title>
+    <summary>  Accurate and interpretable car-following models are essential for traffic
+simulation and autonomous vehicle development. However, classical models like
+the Intelligent Driver Model (IDM) are fundamentally limited by their
+parsimonious and single-regime structure. They fail to capture the multi-modal
+nature of human driving, where a single driving state (e.g., speed, relative
+speed, and gap) can elicit many different driver actions. This forces the model
+to average across distinct behaviors, reducing its fidelity and making its
+parameters difficult to interpret. To overcome this, we introduce a
+regime-switching framework that allows driving behavior to be governed by
+different IDM parameter sets, each corresponding to an interpretable behavioral
+mode. This design enables the model to dynamically switch between interpretable
+behavioral modes, rather than averaging across diverse driving contexts. We
+instantiate the framework using a Factorial Hidden Markov Model with IDM
+dynamics (FHMM-IDM), which explicitly separates intrinsic driving regimes
+(e.g., aggressive acceleration, steady-state following) from external traffic
+scenarios (e.g., free-flow, congestion, stop-and-go) through two independent
+latent Markov processes. Bayesian inference via Markov chain Monte Carlo (MCMC)
+is used to jointly estimate the regime-specific parameters, transition
+dynamics, and latent state trajectories. Experiments on the HighD dataset
+demonstrate that FHMM-IDM uncovers interpretable structure in human driving,
+effectively disentangling internal driver actions from contextual traffic
+conditions and revealing dynamic regime-switching patterns. This framework
+provides a tractable and principled solution to modeling context-dependent
+driving behavior under uncertainty, offering improvements in the fidelity of
+traffic simulations, the efficacy of safety analyses, and the development of
+more human-centric ADAS.
+</summary>
+    <author>
+      <name>Chengyuan Zhang</name>
     </author>
     <author>
-      <name>Steven M. Seitz</name>
+      <name>Cathy Wu</name>
     </author>
-    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project page: https://ultra-zoom.github.io/</arxiv:comment>
-    <link href="http://arxiv.org/abs/2506.13756v1" rel="alternate" type="text/html"/>
-    <link title="pdf" href="http://arxiv.org/pdf/2506.13756v1" rel="related" type="application/pdf"/>
-    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.GR" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.GR" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <author>
+      <name>Lijun Sun</name>
+    </author>
+    <link href="http://arxiv.org/abs/2506.14762v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.14762v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="stat.AP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.AP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.14761v1</id>
+    <updated>2025-06-17T17:55:11Z</updated>
+    <published>2025-06-17T17:55:11Z</published>
+    <title>From Bytes to Ideas: Language Modeling with Autoregressive U-Nets</title>
+    <summary>  Tokenization imposes a fixed granularity on the input text, freezing how a
+language model operates on data and how far in the future it predicts. Byte
+Pair Encoding (BPE) and similar schemes split text once, build a static
+vocabulary, and leave the model stuck with that choice. We relax this rigidity
+by introducing an autoregressive U-Net that learns to embed its own tokens as
+it trains. The network reads raw bytes, pools them into words, then pairs of
+words, then up to 4 words, giving it a multi-scale view of the sequence. At
+deeper stages, the model must predict further into the future -- anticipating
+the next few words rather than the next byte -- so deeper stages focus on
+broader semantic patterns while earlier stages handle fine details. When
+carefully tuning and controlling pretraining compute, shallow hierarchies tie
+strong BPE baselines, and deeper hierarchies have a promising trend. Because
+tokenization now lives inside the model, the same system can handle
+character-level tasks and carry knowledge across low-resource languages.
+</summary>
+    <author>
+      <name>Mathurin Videau</name>
+    </author>
+    <author>
+      <name>Badr Youbi Idrissi</name>
+    </author>
+    <author>
+      <name>Alessandro Leite</name>
+    </author>
+    <author>
+      <name>Marc Schoenauer</name>
+    </author>
+    <author>
+      <name>Olivier Teytaud</name>
+    </author>
+    <author>
+      <name>David Lopez-Paz</name>
+    </author>
+    <link href="http://arxiv.org/abs/2506.14761v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2506.14761v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
   </entry>
 </feed>
